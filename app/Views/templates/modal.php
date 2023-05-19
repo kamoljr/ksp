@@ -25,7 +25,7 @@
       <div class="modal-content">
         <div class="modal-header bg-primary-600" style="padding-bottom:10px;padding-top:10px;">
           <h3 class="">
-            <?= $app_name; ?>
+            <?= $app_name; ?> 
           </h3>
         </div>
         <div class="modal-body bg-primary-600" style="padding-top:0px;padding-left:5px;">
