@@ -1,0 +1,16 @@
+CRITICAL - 2023-04-23 17:38:14 --> Undefined property: stdClass::$budget_id
+in APPPATH/Controllers/Home.php on line 17.
+ 1 APPPATH/Controllers/Home.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$budget_id', '/Applications/MAMP/htdocs/app/Controllers/Home.php', 17)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-23 17:39:03 --> syntax error, unexpected token "."
+in APPPATH/Controllers/Home.php on line 17.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('/Applications/MAMP/htdocs/app/Controllers/Home.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH/CodeIgniter.php(892): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH/CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,440 @@
+INFO - 2023-05-07 05:18:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-07 05:18:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-07 05:18:32 --> [DEPRECATED] Creation of dynamic property App\Controllers\Login::$login_m is deprecated in APPPATH/Controllers/Login.php on line 7.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->index()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-07 05:18:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-07 05:18:33 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH/Controllers/Pages.php on line 24.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pages->view('dashboard')
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-07 05:18:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-07 05:18:36 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH/Controllers/Pages.php on line 24.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pages->view('unit')
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-07 05:18:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-07 05:18:36 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH/Controllers/Pages.php on line 62.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pages->navigation()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-07 05:18:37 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '='.
+CRITICAL - 2023-05-07 05:18:37 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '='.
+in SYSTEMPATH/Database/sqlsrv/Connection.php on line 478.
+ 1 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute('SELECT distinct description_id  
+      FROM app_permission inner join app on app_permission.app_id = app.app_id inner join description on app.description_id = description = description_id  Where app_permission.app_id = 1')
+ 2 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT distinct description_id  
+      FROM app_permission inner join app on app_permission.app_id = app.app_id inner join description on app.description_id = description = description_id  Where app_permission.app_id = 1')
+ 3 APPPATH/Models/app_m.php(19): CodeIgniter\Database\BaseConnection->query('SELECT distinct description_id  
+      FROM app_permission inner join app on app_permission.app_id = app.app_id inner join description on app.description_id = description = description_id  Where app_permission.app_id = 1')
+ 4 APPPATH/Controllers/Pages.php(63): App\Models\App_m->getappall()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pages->navigation()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-07 05:18:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-07 05:18:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Unit_cn::$unit_m is deprecated in APPPATH/Controllers/Member/Unit_cn.php on line 27.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\member\Unit_cn->load_data()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Unit_cn))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-07 05:18:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-07 05:18:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Unit_cn::$unit_m is deprecated in APPPATH/Controllers/Member/Unit_cn.php on line 27.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\member\Unit_cn->load_data()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Unit_cn))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-07 05:18:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-07 05:18:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH/Controllers/Pages.php on line 24.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pages->view('unit')
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-07 05:18:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-07 05:18:49 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH/Controllers/Pages.php on line 62.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pages->navigation()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-07 05:18:49 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '='.
+CRITICAL - 2023-05-07 05:18:49 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '='.
+in SYSTEMPATH/Database/sqlsrv/Connection.php on line 478.
+ 1 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute('SELECT distinct description_id  
+      FROM app_permission inner join app on app_permission.app_id = app.app_id inner join description on app.description_id = description = description_id  Where app_permission.app_id = 1')
+ 2 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT distinct description_id  
+      FROM app_permission inner join app on app_permission.app_id = app.app_id inner join description on app.description_id = description = description_id  Where app_permission.app_id = 1')
+ 3 APPPATH/Models/app_m.php(19): CodeIgniter\Database\BaseConnection->query('SELECT distinct description_id  
+      FROM app_permission inner join app on app_permission.app_id = app.app_id inner join description on app.description_id = description = description_id  Where app_permission.app_id = 1')
+ 4 APPPATH/Controllers/Pages.php(63): App\Models\App_m->getappall()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pages->navigation()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-07 05:18:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-07 05:18:49 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Unit_cn::$unit_m is deprecated in APPPATH/Controllers/Member/Unit_cn.php on line 27.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\member\Unit_cn->load_data()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Unit_cn))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-07 05:18:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-07 05:18:49 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Unit_cn::$unit_m is deprecated in APPPATH/Controllers/Member/Unit_cn.php on line 27.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\member\Unit_cn->load_data()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Unit_cn))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-07 05:20:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-07 05:20:18 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH/Controllers/Pages.php on line 24.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pages->view('unit')
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-07 05:20:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-07 05:20:19 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH/Controllers/Pages.php on line 62.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pages->navigation()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-07 05:20:19 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '='.
+CRITICAL - 2023-05-07 05:20:19 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '='.
+in SYSTEMPATH/Database/sqlsrv/Connection.php on line 478.
+ 1 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute('SELECT distinct description_id  
+      FROM app_permission inner join app on app_permission.app_id = app.app_id inner join description on app.description_id = description = description_id  Where app_permission.user_id = 1')
+ 2 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT distinct description_id  
+      FROM app_permission inner join app on app_permission.app_id = app.app_id inner join description on app.description_id = description = description_id  Where app_permission.user_id = 1')
+ 3 APPPATH/Models/app_m.php(19): CodeIgniter\Database\BaseConnection->query('SELECT distinct description_id  
+      FROM app_permission inner join app on app_permission.app_id = app.app_id inner join description on app.description_id = description = description_id  Where app_permission.user_id = 1')
+ 4 APPPATH/Controllers/Pages.php(63): App\Models\App_m->getappall()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pages->navigation()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-07 05:20:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-07 05:20:19 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Unit_cn::$unit_m is deprecated in APPPATH/Controllers/Member/Unit_cn.php on line 27.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\member\Unit_cn->load_data()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Unit_cn))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-07 05:20:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-07 05:20:19 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Unit_cn::$unit_m is deprecated in APPPATH/Controllers/Member/Unit_cn.php on line 27.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\member\Unit_cn->load_data()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Unit_cn))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-07 05:27:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-07 05:27:53 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH/Controllers/Pages.php on line 24.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pages->view('unit')
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-07 05:27:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-07 05:27:53 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH/Controllers/Pages.php on line 62.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pages->navigation()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-07 05:27:54 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '='.
+CRITICAL - 2023-05-07 05:27:54 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '='.
+in SYSTEMPATH/Database/sqlsrv/Connection.php on line 478.
+ 1 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute('SELECT distinct description_id  
+      FROM app_permission inner join app on app_permission.app_id = app.app_id inner join description on app.description_id = description = description_id  Where app_permission.user_id = 1')
+ 2 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT distinct description_id  
+      FROM app_permission inner join app on app_permission.app_id = app.app_id inner join description on app.description_id = description = description_id  Where app_permission.user_id = 1')
+ 3 APPPATH/Models/app_m.php(19): CodeIgniter\Database\BaseConnection->query('SELECT distinct description_id  
+      FROM app_permission inner join app on app_permission.app_id = app.app_id inner join description on app.description_id = description = description_id  Where app_permission.user_id = 1')
+ 4 APPPATH/Controllers/Pages.php(63): App\Models\App_m->getappall()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pages->navigation()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-07 05:27:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-07 05:27:54 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Unit_cn::$unit_m is deprecated in APPPATH/Controllers/Member/Unit_cn.php on line 27.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\member\Unit_cn->load_data()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Unit_cn))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-07 05:27:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-07 05:27:54 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Unit_cn::$unit_m is deprecated in APPPATH/Controllers/Member/Unit_cn.php on line 27.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\member\Unit_cn->load_data()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Unit_cn))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-07 05:28:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-07 05:28:12 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH/Controllers/Pages.php on line 24.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pages->view('project')
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-07 05:28:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-07 05:28:12 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH/Controllers/Pages.php on line 62.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pages->navigation()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-07 05:28:12 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '='.
+CRITICAL - 2023-05-07 05:28:12 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '='.
+in SYSTEMPATH/Database/sqlsrv/Connection.php on line 478.
+ 1 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute('SELECT distinct description_id  
+      FROM app_permission inner join app on app_permission.app_id = app.app_id inner join description on app.description_id = description = description_id  Where app_permission.user_id = 1')
+ 2 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT distinct description_id  
+      FROM app_permission inner join app on app_permission.app_id = app.app_id inner join description on app.description_id = description = description_id  Where app_permission.user_id = 1')
+ 3 APPPATH/Models/app_m.php(19): CodeIgniter\Database\BaseConnection->query('SELECT distinct description_id  
+      FROM app_permission inner join app on app_permission.app_id = app.app_id inner join description on app.description_id = description = description_id  Where app_permission.user_id = 1')
+ 4 APPPATH/Controllers/Pages.php(63): App\Models\App_m->getappall()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pages->navigation()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-07 05:29:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-07 05:29:47 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH/Controllers/Pages.php on line 24.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pages->view('project')
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-07 05:29:47 --> Invalid file: "budget/filenotfound/filenotfound.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('budget/filenotfound/filenotfound.php')
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('budget/filenotfound/filenotfound.php', [], true)
+ 3 APPPATH/Views/templates/pages.php(122): view('budget/filenotfound/filenotfound.php')
+ 4 SYSTEMPATH/View/View.php(213): include('/Applications/MAMP/htdocs/app/Views/templates/pages.php')
+ 5 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('/templates/pages.php', [], true)
+ 7 APPPATH/Controllers/Pages.php(54): view('/templates/pages.php', [...])
+ 8 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pages->view('project')
+ 9 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+10 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-07 05:30:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-07 05:30:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH/Controllers/Pages.php on line 24.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pages->view('unit')
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-07 05:30:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-07 05:30:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Unit_cn::$unit_m is deprecated in APPPATH/Controllers/Member/Unit_cn.php on line 27.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\member\Unit_cn->load_data()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Unit_cn))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-07 05:30:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-07 05:30:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Unit_cn::$unit_m is deprecated in APPPATH/Controllers/Member/Unit_cn.php on line 27.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\member\Unit_cn->load_data()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Unit_cn))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-07 05:30:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-07 05:30:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH/Controllers/Pages.php on line 62.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pages->navigation()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-07 05:30:40 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '='.
+CRITICAL - 2023-05-07 05:30:40 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '='.
+in SYSTEMPATH/Database/sqlsrv/Connection.php on line 478.
+ 1 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute('SELECT distinct description_id  
+      FROM app_permission inner join app on app_permission.app_id = app.app_id inner join description on app.description_id = description = description_id  Where app_permission.user_id = 1')
+ 2 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT distinct description_id  
+      FROM app_permission inner join app on app_permission.app_id = app.app_id inner join description on app.description_id = description = description_id  Where app_permission.user_id = 1')
+ 3 APPPATH/Models/app_m.php(19): CodeIgniter\Database\BaseConnection->query('SELECT distinct description_id  
+      FROM app_permission inner join app on app_permission.app_id = app.app_id inner join description on app.description_id = description = description_id  Where app_permission.user_id = 1')
+ 4 APPPATH/Controllers/Pages.php(63): App\Models\App_m->getappall()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pages->navigation()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-07 05:35:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-07 05:35:53 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH/Controllers/Pages.php on line 24.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pages->view('unit')
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-07 05:35:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-07 05:35:54 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH/Controllers/Pages.php on line 62.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pages->navigation()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-07 05:35:54 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '='.
+CRITICAL - 2023-05-07 05:35:54 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '='.
+in SYSTEMPATH/Database/sqlsrv/Connection.php on line 478.
+ 1 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute('SELECT distinct description_id  
+      FROM app_permission inner join app on app_permission.app_id = app.app_id inner join description on app.description_id = description = description_id  Where app.url = \'\' and mom_id = 0 and app_permission.user_id = 1')
+ 2 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT distinct description_id  
+      FROM app_permission inner join app on app_permission.app_id = app.app_id inner join description on app.description_id = description = description_id  Where app.url = \'\' and mom_id = 0 and app_permission.user_id = 1')
+ 3 APPPATH/Models/app_m.php(19): CodeIgniter\Database\BaseConnection->query('SELECT distinct description_id  
+      FROM app_permission inner join app on app_permission.app_id = app.app_id inner join description on app.description_id = description = description_id  Where app.url = \'\' and mom_id = 0 and app_permission.user_id = 1')
+ 4 APPPATH/Controllers/Pages.php(63): App\Models\App_m->getappall()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pages->navigation()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-07 05:35:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-07 05:35:54 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Unit_cn::$unit_m is deprecated in APPPATH/Controllers/Member/Unit_cn.php on line 27.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\member\Unit_cn->load_data()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Unit_cn))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-07 05:35:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-07 05:35:54 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Unit_cn::$unit_m is deprecated in APPPATH/Controllers/Member/Unit_cn.php on line 27.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\member\Unit_cn->load_data()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Unit_cn))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-07 05:38:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-07 05:38:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH/Controllers/Pages.php on line 24.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pages->view('unit')
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-07 05:38:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-07 05:38:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH/Controllers/Pages.php on line 62.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pages->navigation()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-07 05:38:12 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Ambiguous column name 'description_id'.
+CRITICAL - 2023-05-07 05:38:12 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Ambiguous column name 'description_id'.
+in SYSTEMPATH/Database/sqlsrv/Connection.php on line 478.
+ 1 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute('SELECT distinct description_id  
+      FROM app_permission inner join app
+      on app_permission.app_id = app.app_id 
+      inner join description on 
+      app.description_id = description.description_id
+      Where app.url = \'\' and mom_id = 0 and app_permission.user_id = 1')
+ 2 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT distinct description_id  
+      FROM app_permission inner join app
+      on app_permission.app_id = app.app_id 
+      inner join description on 
+      app.description_id = description.description_id
+      Where app.url = \'\' and mom_id = 0 and app_permission.user_id = 1')
+ 3 APPPATH/Models/app_m.php(23): CodeIgniter\Database\BaseConnection->query('SELECT distinct description_id  
+      FROM app_permission inner join app
+      on app_permission.app_id = app.app_id 
+      inner join description on 
+      app.description_id = description.description_id
+      Where app.url = \'\' and mom_id = 0 and app_permission.user_id = 1')
+ 4 APPPATH/Controllers/Pages.php(63): App\Models\App_m->getappall()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pages->navigation()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-07 05:38:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-07 05:38:12 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Unit_cn::$unit_m is deprecated in APPPATH/Controllers/Member/Unit_cn.php on line 27.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\member\Unit_cn->load_data()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Unit_cn))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-07 05:38:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-07 05:38:12 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Unit_cn::$unit_m is deprecated in APPPATH/Controllers/Member/Unit_cn.php on line 27.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\member\Unit_cn->load_data()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Unit_cn))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-07 05:38:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-07 05:38:56 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH/Controllers/Pages.php on line 24.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pages->view('unit')
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-07 05:38:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-07 05:38:57 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH/Controllers/Pages.php on line 62.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pages->navigation()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-07 05:38:57 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Ambiguous column name 'description_id'.
+CRITICAL - 2023-05-07 05:38:57 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Ambiguous column name 'description_id'.
+in SYSTEMPATH/Database/sqlsrv/Connection.php on line 478.
+ 1 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute('SELECT distinct description_id  
+      FROM app_permission inner join app
+      on app_permission.app_id = app.app_id 
+      inner join description on 
+      app.description_id = description.description_id
+      Where app.url = \'\' and app.mom_id = 0 and app_permission.user_id = 1')
+ 2 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT distinct description_id  
+      FROM app_permission inner join app
+      on app_permission.app_id = app.app_id 
+      inner join description on 
+      app.description_id = description.description_id
+      Where app.url = \'\' and app.mom_id = 0 and app_permission.user_id = 1')
+ 3 APPPATH/Models/app_m.php(23): CodeIgniter\Database\BaseConnection->query('SELECT distinct description_id  
+      FROM app_permission inner join app
+      on app_permission.app_id = app.app_id 
+      inner join description on 
+      app.description_id = description.description_id
+      Where app.url = \'\' and app.mom_id = 0 and app_permission.user_id = 1')
+ 4 APPPATH/Controllers/Pages.php(63): App\Models\App_m->getappall()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pages->navigation()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-07 05:38:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-07 05:38:57 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Unit_cn::$unit_m is deprecated in APPPATH/Controllers/Member/Unit_cn.php on line 27.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\member\Unit_cn->load_data()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Unit_cn))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-07 05:38:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-07 05:38:57 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Unit_cn::$unit_m is deprecated in APPPATH/Controllers/Member/Unit_cn.php on line 27.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\member\Unit_cn->load_data()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Unit_cn))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-07 05:39:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-07 05:39:21 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH/Controllers/Pages.php on line 24.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pages->view('unit')
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-07 05:39:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-07 05:39:21 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH/Controllers/Pages.php on line 62.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pages->navigation()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-07 05:39:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-07 05:39:21 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH/Controllers/Pages.php on line 24.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pages->view('public', 'pages', 'navigationsub')
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-07 05:39:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-07 05:39:22 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Unit_cn::$unit_m is deprecated in APPPATH/Controllers/Member/Unit_cn.php on line 27.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\member\Unit_cn->load_data()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Unit_cn))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-07 05:39:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-07 05:39:22 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Unit_cn::$unit_m is deprecated in APPPATH/Controllers/Member/Unit_cn.php on line 27.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\member\Unit_cn->load_data()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Unit_cn))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-07 05:44:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-07 05:44:27 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH/Controllers/Pages.php on line 24.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pages->view('unit')
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-07 05:44:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-07 05:44:27 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH/Controllers/Pages.php on line 62.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pages->navigation()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-07 05:44:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-07 05:44:27 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Unit_cn::$unit_m is deprecated in APPPATH/Controllers/Member/Unit_cn.php on line 27.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\member\Unit_cn->load_data()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Unit_cn))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-07 05:44:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-07 05:44:28 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Unit_cn::$unit_m is deprecated in APPPATH/Controllers/Member/Unit_cn.php on line 27.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\member\Unit_cn->load_data()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Unit_cn))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

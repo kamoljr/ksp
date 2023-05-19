@@ -1,0 +1,144 @@
+INFO - 2023-05-05 03:55:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 03:55:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-05 03:55:33 --> [DEPRECATED] Creation of dynamic property App\Controllers\Login::$login_m is deprecated in APPPATH/Controllers/Login.php on line 7.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->index()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-05 03:55:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-05 03:55:34 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH/Controllers/Pages.php on line 21.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pages->view('dashboard')
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-05 03:55:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-05 03:55:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH/Controllers/Pages.php on line 21.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pages->view('unit')
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-05 03:55:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-05 03:55:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH/Controllers/Pages.php on line 53.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pages->navigation()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-05 03:55:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-05 03:55:38 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH/Controllers/Pages.php on line 21.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pages->view('public', 'pages', 'navigationsub')
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-05 03:55:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-05 03:55:38 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH/Controllers/Pages.php on line 21.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pages->view('public', 'pages', 'navigationsub')
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-05 03:55:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-05 03:55:38 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH/Controllers/Pages.php on line 21.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pages->view('public', 'pages', 'navigationsub')
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-05 03:55:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-05 03:55:39 --> [DEPRECATED] Creation of dynamic property App\Controllers\Unit_cn::$unit_m is deprecated in APPPATH/Controllers/Unit_cn.php on line 26.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Unit_cn->load_data()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unit_cn))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-05 03:55:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-05 03:55:39 --> [DEPRECATED] Creation of dynamic property App\Controllers\Unit_cn::$unit_m is deprecated in APPPATH/Controllers/Unit_cn.php on line 26.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Unit_cn->load_data()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unit_cn))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-05 07:09:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-05 07:09:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH/Controllers/Pages.php on line 23.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pages->view('unit')
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 07:09:51 --> Undefined array key "cropimage"
+in APPPATH/Views/templates/navmenu.php on line 18.
+ 1 APPPATH/Views/templates/navmenu.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "cropimage"', '/Applications/MAMP/htdocs/app/Views/templates/navmenu.php', 18)
+ 2 SYSTEMPATH/View/View.php(213): include('/Applications/MAMP/htdocs/app/Views/templates/navmenu.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('templates/navmenu.php', [], true)
+ 5 APPPATH/Views/templates/pages.php(105): view('templates/navmenu.php')
+ 6 SYSTEMPATH/View/View.php(213): include('/Applications/MAMP/htdocs/app/Views/templates/pages.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('/templates/pages.php', [], true)
+ 9 APPPATH/Controllers/Pages.php(49): view('/templates/pages.php', [...])
+10 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pages->view('unit')
+11 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+12 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-05 07:09:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 07:09:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-05 07:09:55 --> [DEPRECATED] Creation of dynamic property App\Controllers\Login::$login_m is deprecated in APPPATH/Controllers/Login.php on line 7.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->index()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-05 07:09:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-05 07:09:55 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH/Controllers/Pages.php on line 23.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pages->view('dashboard')
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-05 07:09:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-05 07:09:56 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH/Controllers/Pages.php on line 57.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pages->navigation()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-05 07:10:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-05 07:10:00 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH/Controllers/Pages.php on line 23.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pages->view('unit')
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-05 07:10:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-05 07:10:00 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH/Controllers/Pages.php on line 57.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pages->navigation()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-05 07:10:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-05 07:10:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH/Controllers/Pages.php on line 23.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pages->view('users', 'unit')
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 07:10:16 --> Undefined array key "description_en"
+in APPPATH/Controllers/Pages.php on line 34.
+ 1 APPPATH/Controllers/Pages.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "description_en"', '/Applications/MAMP/htdocs/app/Controllers/Pages.php', 34)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pages->view('users', 'unit')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-05 07:12:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-05 07:12:12 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH/Controllers/Pages.php on line 23.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pages->view('users', 'unit')
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-05 07:12:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-05 07:12:12 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH/Controllers/Pages.php on line 57.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pages->navigation()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-05 07:14:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-05 07:14:22 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH/Controllers/Pages.php on line 23.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pages->view('users', 'unit')
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-05 07:14:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-05 07:14:23 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH/Controllers/Pages.php on line 57.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pages->navigation()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
