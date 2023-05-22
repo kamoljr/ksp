@@ -55,6 +55,8 @@
 <script src="<?= base_url() . '/'; ?>js/app.bundle.js"></script>
 <script src="<?= base_url() . '/'; ?>js/datagrid/datatables/datatables.bundle.js"></script>
 <script src="<?= base_url() . '/'; ?>js/formplugins/select2/select2.bundle.js"></script>
+<script src="<?= base_url() . '/'; ?>js/validate.js"></script>
+
 <script>
 	function createmenu() {
 		var str_select;

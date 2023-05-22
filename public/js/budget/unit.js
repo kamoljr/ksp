@@ -156,3 +156,29 @@ function savedata(){
     }
   });
 }
+
+$(document).ready(function(){
+  $(function() {
+    $("#form_save").validate({  
+
+      rules: {
+        unit_name: {
+        required: true,
+        maxlength: 1000
+        },
+
+      },
+
+      messages: {
+        unit_name: "กรุณาป้อน ส่วนงาน",
+      },
+      
+      submitHandler: function(form) {
+        console.log('sss');
+        //form.submit();
+        //savedata()
+      }
+    });
+
+  });
+})

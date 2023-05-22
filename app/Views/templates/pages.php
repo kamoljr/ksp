@@ -34,6 +34,7 @@
         href="<?= base_url().'/';?>css/datagrid/datatables/datatables.bundle.css">
 
     <link rel="stylesheet" href="<?= base_url().'/';?>css/bootstrap-float-label.min.css" />
+    
 
 </head>
 
@@ -138,7 +139,7 @@
     <?=view("templates/pagesetting.php")?>
 
     <?=view("templates/modal.php")?>
-
+                        
 </body>
 
 </html>
@@ -148,6 +149,10 @@
     font-size: 20px !important;
     color: white;
     font-family: 'TH Sarabun New' !important;
+}
+.error { 
+ color: #ff0000;
+ font-weight: normal;
 }
 </style>
 

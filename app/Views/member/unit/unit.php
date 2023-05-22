@@ -55,10 +55,11 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <div class="panel-content" style="padding-top: 0px;">
 
                     <div class="frame-wrap mt-3 mb-0 w-100">
-                      
-                            
-                        <button id="btnadd" type="button" class="btn btn-primary" data-toggle="modal" data-target=".default-example-modal-right">เพิ่ม</button>
-                         
+
+
+                        <button id="btnadd" type="button" class="btn btn-primary" data-toggle="modal"
+                            data-target=".default-example-modal-right">เพิ่ม</button>
+
 
                         <div class="collapse" id="collapsedivadd" style="padding-top: 15px;">
                             <div class="card card-body"></div>
@@ -222,20 +223,9 @@ $(document).ready(function() {
         ],
         // ปิด แก้ไข การ sort ของ คอลัมภ์ และ การเรียง ซ้าย ขวา กลาง ของ คอลัมภ์
     });
-
-
-    $(document).on('submit', '#myform1', function() {
-        var form = $(this)[0];
-        if (form.checkValidity() === false) {
-            event.preventDefault();
-            event.stopPropagation();
-        } else {
-            event.preventDefault();
-            event.stopPropagation();
-            savedata();
-        }
-        form.classList.add('was-validated');
-    });
+   
+		
+  
 
     $(document).on('click', '.close-dialog', function() {
         $('#collapsedivadd').slideUp();
@@ -301,29 +291,5 @@ $(document).ready(function() {
     });
     searchdata();
 });
-</script>
-
-<script>
-  // Example starter JavaScript for disabling form submissions if there are invalid fields
-  
-  (function () {
-    'use strict';
-    window.addEventListener('load', function () {
-    
-      // Fetch all the forms we want to apply custom Bootstrap validation styles to
-      var forms = document.getElementsByClassName('needs-validation');
-      // Loop over them and prevent submission
-      var validation = Array.prototype.filter.call(forms, function (form) {
-        form.addEventListener('submit', function (event) {
-          if (form.checkValidity() === false) {
-            event.preventDefault();
-            event.stopPropagation();
-            form.classList.add('was-validated');
-          }
-          
-        }, false);
-      });
-    }, false);
-  })();
 
 </script>
