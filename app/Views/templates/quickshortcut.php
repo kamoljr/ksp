@@ -1,7 +1,7 @@
 <div class="dropdown-header bg-trans-gradient d-flex justify-content-center align-items-center rounded-top">
     <h4 class="m-0 text-center color-white">
         Quick Shortcut
-        <small class="mb-0 opacity-80">User Applications & Addons</small>
+        <small class="mb-0 opacity-80">เลือกระบบงานที่ต้องการ</small>
     </h4>
 </div>
 <div class="custom-scroll h-100">

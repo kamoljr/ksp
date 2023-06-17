@@ -43,7 +43,7 @@ function searchdata(){
 
   let txt = `
   <strong>ผลการค้นหา : </strong>
-  <strong>ปีงบประมาณ :</strong> <u>${text1}</u>&emsp;
+  <strong>ชื่อส่วนงาน :</strong> <u>${text1}</u>&emsp;
   ${text2}
   `;
 
@@ -56,14 +56,59 @@ function searchdata(){
 }
 
 function set_del_id(ids){
-  $("#RowId").val(ids);
+  $("#ids").val(ids);
+  $("#del_detail").text('รหัส ' + ids);
+  
+  // เช็คมีการใช้ รายการนี้ไป ?
+  
+  url = "/public/member/unit_cn/chk_del";
+  aoData = 'ids='+ids;
+  ans = find_count_reccord(url, aoData);
+
+  if (ans == 0) {
+    console.log("not found");
+    $("#btn_del_data").show();
+    $("#div_del_detail").hide();
+  } else { 
+    console.log('found');
+    $("#btn_del_data").hide();
+    $("#div_del_detail").show();
+  }
 }
 
-function deldata(){
-  var aoData = 'ids='+$("#RowId").val();
+function find_count_reccord(url,aoData) { // not found return 0
+  var aoData = aoData;
+  ans = "";
   $.ajax({
       type: "POST",
-      url: "/public/unit_cn/del_data",
+      url: url,
+      dataType: "json",
+      async:false,
+      
+      beforeSend: function () {
+       
+      },
+      data: aoData,
+      success: function(response) {
+        ans = response[0].count_reccord;
+      },
+      complete: function () {
+        
+      },
+      error: function(response) {
+    
+      }
+  });
+  return ans;
+}
+
+
+function deldata() {
+  $("#del_detail").text('');
+  var aoData = 'ids='+$("#ids").val();
+  $.ajax({
+      type: "POST",
+      url: "/public/member/unit_cn/del_data",
       dataType: "json",
       beforeSend: function () {
         $("#overlay").fadeIn(200);　
@@ -90,8 +135,13 @@ function GoCurrentPage(){
   table.page(CurrentPage).draw(false);
 }
 
-
 function editdata(d,mode){
+  $('.default-example-modal-right').modal('toggle');
+  $(".dialog-data").show();
+  $(".dialog-success").hide();
+
+  $("#icon_add_form").hide();
+  
 
   $("#ids").val(d.unit_id);
   $("#txtid").text(d.unit_id);
@@ -99,7 +149,7 @@ function editdata(d,mode){
   let aoData = "ids="+d.unit_id;
   $.ajax({
     type: "POST",
-    url: "/public/unit_cn/edit_data",
+    url: "/public/member/unit_cn/edit_data",
     dataType: "json",
     beforeSend: function () {
       $("#overlay").fadeIn(200);　
@@ -108,7 +158,7 @@ function editdata(d,mode){
     success: function(response) {
         $("#unit_name").val(response[0].unit_name);
     },
-    complete: function () { // Set our complete callback, adding the .hidden class and hiding the spinner.
+    complete: function () {
       setTimeout(function(){
         $("#overlay").fadeOut(200);
       },100);
@@ -118,37 +168,70 @@ function editdata(d,mode){
     }
   });
   let txt = '';
+
+  $("#btn_dialog_close").show();
+
   if (mode == 'edit'){
     txt = 'แก้ไข';
+    $('.form-ele').prop('disabled', false);
+    $('.stars').show(); // ซ่อนดาวแดง
+    $("#btn_save_change").show();
+
+    $("#icon_edit_form").show();
+    $("#icon_view_form").hide();
+
   }else{
     txt = 'แสดง';
-    $("#btn1").hide();
     $('.form-ele').prop('disabled', true);
     $('.stars').hide(); // ซ่อนดาวแดง
+    $("#btn_save_change").hide();
 
+    $("#icon_view_form").show();
+    $("#icon_edit_form").hide();
+    
   }
+
+  $('#lbl_rowid').text("รหัส "+d.unit_id);
+
+  $('.div_show_rowid').css('display','block');
+  
   $(".lblmode").text(txt);
 
 }
-function savedata(){
-  var aoData = $('#myform1').serialize();
+function savedata() {
+  
+  var aoData = $('#form_save').serialize();
   $.ajax({
     type: "POST",
-    url: "/public/unit_cn/save_data",
+    url: "/public/member/unit_cn/save_data",
     dataType: "json",
     beforeSend: function () {
       $("#overlay").fadeIn(200);　
     },
     data: aoData,
     success: function(response) {
-        //console.log(response)
-        $(".dialog-data").hide();
-        $(".dialog-success").show();
+    
+      $(".dialog-data").hide();
+      $(".dialog-success").show();
+
+
+      $("#btn_save_change").hide();
+      $("#btn_dialog_close").hide();
+      
+      
+      setTimeout(() => {
+        if ($("#ids").val() == "") {
+          table = $('#dynamic-table').DataTable();
+          table.draw();
+        } else { 
+          GoCurrentPage();
+        }
+        
+        $('.default-example-modal-right').modal('toggle');
+      }, "500");
     },
     complete: function () { // Set our complete callback, adding the .hidden class and hiding the spinner.
-      setTimeout(function(){
-        $("#overlay").fadeOut(200);
-      },100);
+      $("#overlay").fadeOut(200);
     },
     error: function(response) {
         //console.log(response);
@@ -174,9 +257,8 @@ $(document).ready(function(){
       },
       
       submitHandler: function(form) {
-        console.log('sss');
-        //form.submit();
-        //savedata()
+       
+        savedata()
       }
     });
 

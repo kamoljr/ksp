@@ -4,13 +4,17 @@
             <?=$app_name;?>
         </h1>
     </div>
-    <div class="">
-        <ol class="breadcrumb page-breadcrumb" style="margin-bottom: 15px;">
-            <li class="breadcrumb-item"><a href="dashboard">dashboard</a></li>
+   
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb" style="margin-bottom: 15px;">
+            <li class="breadcrumb-item" style = "text-overflow:clip;max-width:100%;">
+                <a href="dashboard">dashboard</a>
+            </li>
             <?if ($app_name != 'dashboard'){;?>
-            <li class="breadcrumb-item"><?=$description;?></li>
+             <li class="breadcrumb-item" style = "text-overflow:clip;max-width:100%;"><?=$description;?></li>
             <? }?>
-            <li class="breadcrumb-item active"><?=$app_name;?></li>
+            <li class="breadcrumb-item active" style = "text-overflow:clip;max-width:100%;"><?=$app_name;?></li>
         </ol>
-    </div>
+    </nav>
 </div>
+

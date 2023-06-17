@@ -27,7 +27,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                             <div class="card-body">
                                 <form action="<?=$actual_link?>" method="post" accept-charset="utf-8" id="form-search"
                                     name="form-search">
-                                    <input type="hidden" id="RowId" name="RowId" value="" />
+                                   
                                     <div class="row">
                                         <div class="col-sm">
                                             <label class="form-label" for="unit_name_search">ชื่อส่วนงาน</label>
@@ -55,15 +55,12 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <div class="panel-content" style="padding-top: 0px;">
 
                     <div class="frame-wrap mt-3 mb-0 w-100">
-
-
+                        
                         <button id="btnadd" type="button" class="btn btn-primary" data-toggle="modal"
-                            data-target=".default-example-modal-right">เพิ่ม</button>
+                            data-target=".default-example-modal-right" style ="display: flex;"> <span class="ni ni-big-plus fa-2x" style ="padding-right:10px;"></span> <span style = "padding-top:5px;">เพิ่ม</span> </button>
 
+                            
 
-                        <div class="collapse" id="collapsedivadd" style="padding-top: 15px;">
-                            <div class="card card-body"></div>
-                        </div>
                     </div>
                     <!-- datatable start -->
                     <table id="dynamic-table" class="table table-md table-bordered table-hover table-striped w-100">
@@ -88,27 +85,11 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
 <!-- this overlay is activated only when mobile menu is triggered -->
 <div class="page-content-overlay" data-action="toggle" data-class="mobile-nav-on"></div>
 <!-- END Page Content -->
-<?
-$displaymode = '';
-if ($_SESSION['displaymode'] == 'L') {
-    $displaymode = 'inline';
-} else {
-    $displaymode = 'dialog';
-}?>
+
 <script src="<?= base_url().'/';?>js/budget/<?=$pages;?>.js"></script>
 <script>
-let displaymode = '<?=$displaymode?>'; //inline dialog
-
 $(document).ready(function() {
     //create_select_budget_year();
-
-    if (displaymode == "inline") {
-        //$("#btnadd").removeAttr("data-toggle data-target")
-    } else {
-        //$("#btnadd").attr("data-toggle", "modal");
-        //$("#btnadd").attr("data-target", ".default-example-modal-right-lg");
-    }
-
     var table = $("#dynamic-table").DataTable({
         orderCellsTop: true,
         fixedHeader: true,
@@ -136,10 +117,7 @@ $(document).ready(function() {
                 value: columns,
             });
             // เปิด แก้ไข ใส่ค่า ตัวค้นหา
-            aoData.push({
-                name: 'budget_year',
-                value: $("#budget_year_search").val()
-            });
+            
             aoData.push({
                 name: 'unit_name',
                 value: $("#unit_name_search").val()
@@ -160,24 +138,19 @@ $(document).ready(function() {
             {
                 data: "unit_id",
                 render: function(data, type, row) {
-                    let txtex = "";
-                    if (displaymode == "dialog") {
-                        txtex =
-                            'data-toggle="modal" data-target=".default-example-modal-right-lg"';
-                    }
-
+                    
+                    txtex = 'data-toggle="modal" data-target=".default-example-modal-right-lg"';
+                  
                     str_btn = "";
-
-                    //str_btn = str_btn + '<a href="javascript:void(0);" class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed"><i class="fal fa-search"></i></a>&nbsp;&nbsp;';
                     str_btn = str_btn +
-                        `<a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data" mode = 'view'><i class="fal fa-search"></i></a>&nbsp;&nbsp;`;
+                        `<a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data" mode = 'view'><i class="ni ni-eye"></i></a>&nbsp;&nbsp;`;
 
                     str_btn = str_btn +
-                        `<a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data" mode = 'edit'><i class="fal fa-edit"></i></a>&nbsp;&nbsp;`;
+                        `<a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data" mode = 'edit'><i class="ni ni-pencil"></i></a>&nbsp;&nbsp;`;
 
                     str_btn =
                         str_btn +
-                        `<a href="javascript:void(0);" class="btn btn-outline-danger btn-icon btn-xs rounded-circle waves-effect waves-themed"data-toggle="modal" data-target="#example-modal-alert" onclick=set_del_id('${row.unit_id}')><i class="fal fa-times"></i></a>`;
+                        `<a href="javascript:void(0);" class="btn btn-outline-danger btn-icon btn-xs rounded-circle waves-effect waves-themed"data-toggle="modal" data-target="#example-modal-alert" onclick=set_del_id('${row.unit_id}')><i class="ni ni-trash"></i></a>`;
                     return str_btn;
                 },
             },
@@ -224,15 +197,16 @@ $(document).ready(function() {
         // ปิด แก้ไข การ sort ของ คอลัมภ์ และ การเรียง ซ้าย ขวา กลาง ของ คอลัมภ์
     });
    
-		
-  
 
-    $(document).on('click', '.close-dialog', function() {
-        $('#collapsedivadd').slideUp();
-        $('#collapsedivadd').html(``);
-        $("#dialogmode").html('');
-        GoCurrentPage();
-    });
+		// $('#dynamic-table tbody').on('click', 'tr', function () {
+		// 		if ($(this).hasClass('selected')) {
+		// 				$(this).removeClass('selected');
+		// 		} else {
+		// 				table.$('tr.selected').removeClass('selected');
+		// 				$(this).addClass('selected');
+		// 		}
+		// });
+	
     $(document).on('change', '.searchdata', function() {
         searchdata();
     });
@@ -240,34 +214,15 @@ $(document).ready(function() {
     $('#dynamic-table tbody').on('click', 'td .edit-data', function() {
 
         let mode = $(this).attr("mode");
-        $('#collapsedivadd').slideUp();
-        $('#collapsedivadd').html(``);
-        $('#dialogmode').html(``);
+       
 
-        table.rows().every(function() {
-            if (this.child.isShown()) {
-                this.child.hide();
-                //$(this.node()).removeClass('shown');
-            }
-        });
         var tr = $(this).closest('tr');
         var row = table.row(tr);
         var d = row.data();
-        var unit_id = d.unit_id;
+        //var unit_id = d.unit_id;
 
-        if (displaymode == 'inline') {
-            row.child(format(d)).show();
-            //tr.addClass('shown');
-            if (unit_id != '') {
-                editdata(d, mode);
-            }
-        } else {
-            $('#dialogmode').html(`<?=view("{$description_en}/{$pages}/{$pages}add.php")?>`);
-
-            if (unit_id != '') {
-                editdata(d, mode);
-            }
-        }
+        editdata(d, mode);
+          
     });
 
     function format(d) {
@@ -277,19 +232,41 @@ $(document).ready(function() {
 
 
     $(document).on('click', '#btnadd', function() {
-        $("#dialogmode").html('');
-        table = $('#dynamic-table').DataTable();
-        table.draw();
-        if (displaymode == 'inline') {
-            $('#collapsedivadd').html(`<?=view("{$description_en}/{$pages}/{$pages}add.php")?>`);
-            $('#collapsedivadd').slideDown();
-        } else {
-            $('#dialogmode').html(`<?=view("{$description_en}/{$pages}/{$pages}add.php")?>`);
-        }
+	    $("#ids").val('');
+        
         $(".lblmode").text("เพิ่ม");
-        $("#rowid").hide();
+
+        $("#icon_add_form").show();
+        $("#icon_edit_form").hide();
+        $("#icon_view_form").hide();
+
+		$('.div_show_rowid').css('display','none');
+
+		$(".clear-element").val('');
+				
+		$('.form-ele').prop('disabled', false);
+    	$('.stars').show(); // ซ่อนดาวแดง
+		$(".dialog-data").show();
+      	$(".dialog-success").hide();
+
+		$("#btn_save_change").show();
+		$("#btn_dialog_close").show();
+				
+    });
+
+    $(document).on('click', '#btn_dialog_close', function() {
+				$('.default-example-modal-right').modal('toggle');
     });
     searchdata();
 });
 
 </script>
+<style>
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+</style>
