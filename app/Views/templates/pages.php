@@ -2,6 +2,8 @@
 <html lang="th">
 
 <head>
+    <script src="<?= base_url().'/';?>/fontawesome-free-6.4.0-web/js/all.js" data-auto-replace-svg="nest"></script>
+      
 
     <script>
     <? if (!isset($_SESSION['user_name'])) {?>

@@ -493,5 +493,11 @@
         color:white;
         font-family: 'TH Sarabun New' !important;
     }
+    .col_add{
+        padding-bottom:25px;
+        padding-left:10px;
+        padding-right:10px;
+        margin-bottom:0px !important;
+    }
 
 </style>

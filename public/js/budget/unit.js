@@ -31,20 +31,18 @@ function create_select_budget_year(){
 
 
 function searchdata(){
-  text1 = $("#select_budget_year_search option:selected" ).text();
-  if (text1 == ''){text1='ทั้งหมด';}
-
+  //text1 = $("#select_budget_year_search option:selected" ).text();
+  //if (text1 == '') { text1 = 'ทั้งหมด'; }
+  
   text2 = $("#unit_name_search" ).val();
   if (text2 == ''){
-    text2='';
-  }else{
-    text2=`<strong>ชื่อส่วนงาน :</strong> <u>${text2}</u>`;
+    text2='ทั้งหทด';
   }
 
   let txt = `
   <strong>ผลการค้นหา : </strong>
-  <strong>ชื่อส่วนงาน :</strong> <u>${text1}</u>&emsp;
-  ${text2}
+  <strong>ชื่อส่วนงาน :</strong> <u>${text2}</u>&emsp;
+  
   `;
 
   $("#searchresults").html(txt);

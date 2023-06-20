@@ -1,73 +1,10 @@
-<?php
-namespace App\Models;
-
+<?php 
+namespace App\Models\member;
 use CodeIgniter\Model;
 
-//suse CodeIgniter\HTTP\RequestInterface;
-class user_name_m extends Model
+class unit_m extends Model
 {
-  public function get_data()
-  {
-    $query = "SELECT
-    user_id,user_name
-    FROM [user] as tu
-    WHERE tu.del_item = 'N'";
-    $totalCol = $_POST["iColumns"];
-
-    $user_name = $_POST["user_name"];
-
-    $columns = $_POST["columns"];
-
-    $start = $_POST["iDisplayStart"];
-
-    $page_length = $_POST["iDisplayLength"];
-
-    if ($user_name != "") {
-      $query .= "  and (tu.user_name like '%$user_name%' )";
-    }
-
-    $totalRecords = count($this->db->query($query)->getResultArray());
-
-    $columns = explode(',', $columns);
-
-    for ($i = 0; $i < $_POST["iSortingCols"]; $i++) {
-      $sortcol = $_POST["iSortCol_" . $i];
-      if ($_POST["bSortable_" . $sortcol]) {
-        $query .= " ORDER BY ($columns[$sortcol])" . $_POST["sSortDir_" . $i];
-      }
-    }
-
-    //$this->db->limit($page_length, $start);
-
-
-    $query .= " OFFSET $start ROWS FETCH FIRST $page_length ROWS ONLY;";
-
-    //echo $query;
-    $result = $this->db->query($query);
-    $data = $result->getResultArray();
-
-    $resData = json_encode([
-      "aaData" => $data,
-      "iTotalDisplayRecords" => $totalRecords,
-      "iTotalRecords" => $totalRecords,
-      //"sColumns" => $_POST["sColumn"],
-      "sColumns" => '',
-      "sEcho" => $_POST["sEcho"],
-    ]);
-
-    return $resData;
-  }
-  public function edit_data()
-  {
-    $ids = $_POST["ids"];
-
-    $sql = "Select user_name,cropimage From [user] where user_id = " . $ids;
-    //echo $sql;
-    $result = $this->db->query($sql);
-    $data = $result->getResultArray();
-    $resData = json_encode($data);
-    return $resData;
-  }
+  
   public function load_select1()
   {
     $sql = "Select budget_year From strategy where del_item = 'N' order by budget_year desc";
@@ -79,29 +16,116 @@ class user_name_m extends Model
     return $resData;
   }
 
+  public function get_data()
+  {
+    $totalCol = $_POST["iColumns"];
+    $unit_name = $_POST["unit_name"];
+    
+    $columns = $_POST["columns"];
+    $start = $_POST["iDisplayStart"];
+    $page_length = $_POST["iDisplayLength"];
+
+    $query = "SELECT
+    tu.unit_id,tu.unit_name
+    FROM unit_name as tu
+    WHERE tu.del_item = 'N'";
+
+     if ($unit_name != "") {
+       $query .= "  and (tu.unit_name like '%$unit_name%' )";
+    }
+    //echo $query;
+    $totalRecords = count($this->db->query($query)->getResultArray());
+
+    $columns = explode(',', $columns);
+
+    for ($i = 0; $i < $_POST["iSortingCols"]; $i++) {
+      $sortcol = $_POST["iSortCol_" . $i];
+      if ($_POST["bSortable_" . $sortcol]) {
+        $query .= " ORDER BY ($columns[$sortcol])" . $_POST["sSortDir_" . $i];
+      }
+    }
+    //$query .= " LIMIT $start,$page_length";
+    $query .= " OFFSET $start ROWS FETCH FIRST $page_length ROWS ONLY;";
+    
+    
+    //echo $query;
+    $result = $this->db->query($query);
+    $data = $result->getResultArray();
+
+    $resData = json_encode([
+      "aaData" => $data,
+      "iTotalDisplayRecords" => $totalRecords,
+      "iTotalRecords" => $totalRecords,
+      "sColumns" => $columns,
+      "sEcho" => $_POST["sEcho"],
+    ]);
+
+    return $resData;
+  }
+  public function edit_data()
+  {
+    $ids = $_POST["ids"];
+
+    $sql = "Select unit_name From unit_name where unit_id = " . $ids;
+
+    $result = $this->db->query($sql);
+    $data = $result->getResultArray();
+    $resData = json_encode($data);
+    //print_r($resData);
+    return $resData;
+  }
+  public function chk_del()
+  {
+    $ids = $_POST["ids"];
+
+    $sql = "Select count(group_id) as count_reccord From group_name where del_item = 'N' and unit_id = " . $ids;// ไม่เจอ return 0
+
+    $result = $this->db->query($sql);
+    $data = $result->getResultArray();
+    $resData = json_encode($data);
+    //print_r($resData);
+    return $resData;
+  }
+  
   public function save_data()
   {
     $ids = $_POST["ids"];
-    $user_name = $_POST["user_name"];
-    $imgdata = $_POST["imgdata"];
+    $unit_name = $_POST["unit_name"];
 
+    $count_reccord = 0;
     if ($ids == '') {
-      $sql = "INSERT INTO [user] (user_name,cropimage) VALUES ('$user_name','$imgdata')";
+      $sql1 = "Select count(unit_id) as count_reccord From unit_name where del_item = 'N' and unit_name = '".$unit_name."'";
+      
     } else {
-      $sql = "Update [user] set user_name = '$user_name',cropimage = '$imgdata' Where user_id = $ids";
+      $sql1 = "Select count(unit_id) as count_reccord From unit_name where del_item = 'N' and unit_name = '".$unit_name."'";
     }
-    //echo $sql;
+
+    
+    // $result = $this->db->query($sql1);
+    // $data = $result->getResultObject();
+    // $count_reccord = $data[0]->count_reccord;
+    
+    if ($ids == '') {
+      $sql = "INSERT INTO unit_name (unit_name) VALUES ('$unit_name')";
+    } else {
+      $sql = "Update unit_name set unit_name = '$unit_name' Where unit_id = $ids";
+    }
+   
 
     $result = $this->db->query($sql);
-    return $result;
+
+    
+    return $result;//succes return 1 not succrs return 0 
   }
+
   public function del_data()
   {
     $ids = $_POST["ids"];
 
-    $sql = "Update user set del_item = 'Y' Where user_id = " . $ids;
+    $sql = "Update unit_name set del_item = 'Y' Where unit_id = ".$ids;
+    //echo $sql;
 
     $result = $this->db->query($sql);
-    return $result->resultID;
+    return $result;
   }
 }
