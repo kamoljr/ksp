@@ -43,7 +43,33 @@
 	</div>
 
 	<!-- <div id = 'Div_nav'></div> -->
-	<ul id="js-nav-menu" class="nav-menu"></ul>
+	<ul id="js-nav-menu" class="nav-menu">
+		<!-- <li class="open">
+			<a href="javascript:void(0);" title="จัดการผู้ใช้งานระบบ" class=" waves-effect waves-themed" aria-expanded="true">
+				
+				<i class="fa-solid fa-user-gear"></i>&nbsp;&nbsp;
+				<span class="nav-link-text">ผู้ใช้งานระบบ</span>
+				<b class="collapse-sign"><em class="fal fa-angle-up"></em></b>
+			</a>
+		</li>
+		<li class="open">
+			<a href="javascript:void(0);" title="จัดการผู้ใช้งานระบบ" class=" waves-effect waves-themed" aria-expanded="true">
+				
+				<i class="fa-solid fa-chess"></i> &nbsp;&nbsp;
+				<span class="nav-link-text">แผนยุทธศาสตร์และแผนงาน </span>
+				<b class="collapse-sign"><em class="fal fa-angle-up"></em></b>
+			</a>
+		</li>
+		<li class="open">
+			<a href="javascript:void(0);" title="จัดการผู้ใช้งานระบบ" class=" waves-effect waves-themed" aria-expanded="true">
+			
+				<i class="fa-solid fa-coins"></i> &nbsp;&nbsp;
+				<span class="nav-link-text">งบประมาณ</span>
+				<b class="collapse-sign"><em class="fal fa-angle-up"></em></b>
+			</a>
+		</li> -->
+		
+	</ul>
 	<div class="filter-message js-filter-message bg-success-600"></div>
 </nav>
 
