@@ -49,7 +49,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
             <h5 class="color-white" style = "font-weight:100;">โครงสร้างปี : 2566-1	</h5>
         </div>
         <div class="modal-footer">
-          <button type="submit" class="btn btn-warning" id ="btn_save_change">คัดลอกโครงสร้าง</button>
+          <!-- <button type="submit" class="btn btn-warning" id ="btn_save_change">คัดลอกโครงสร้าง</button> -->
         
         </div>
       </div>
@@ -72,9 +72,9 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
         <div class = "row">
           <div class = "col-sm-12 text-center align-items-center" style = "margin-top:20px;">
             
-            <button id="btnadd" type="button" class="btn btn-primary" data-toggle="modal" data-target=".default-example-modal-right"> <span style = "padding-top:5px;">เพิ่มสำนัก</span> </button>
+            <!-- <button id="btnadd" type="button" class="btn btn-primary" data-toggle="modal" data-target=".default-example-modal-right"> <span style = "padding-top:5px;">เพิ่มสำนัก</span> </button>
             
-            <button id="btnadd" type="button" class="btn btn-primary" data-toggle="modal" data-target=".default-example-modal-right"> <span style = "padding-top:5px;">เพิ่มกลุ่มงาน</span> </button>
+            <button id="btnadd" type="button" class="btn btn-primary" data-toggle="modal" data-target=".default-example-modal-right"> <span style = "padding-top:5px;">เพิ่มกลุ่มงาน</span> </button> -->
           
             
           </div>
@@ -84,99 +84,224 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
 
             <li class="column to-do-column">
               <div class="column-header font-header-org text-center">
-                <h5>สำนักมาตรฐานวิชาชีพ	</h5>
+                <div class="custom-control-inline" style="margin-right:0px !important;">
+                 
+                  สำนักมาตรฐานวิชาชีพ
+                    <div class="demo" style="display:inline-block;background-color: #ffff;padding-top:4px;padding-left:5px;width:30px;height:55px;padding-bottom:0;border-radius: 0.2rem;">
+                      <a href="javascript:void(0);" style = "margin-bottom:5px !important;" class="btn btn-outline-primary btn-xs btn-icon rounded-circle" style="">
+                          <i class="ni ni-pencil"></i>
+                      </a>
+                      <a href="javascript:void(0);" class="btn btn-outline-danger btn-xs btn-icon rounded-circle">
+                          <i class="ni ni-trash"></i>
+                      </a>
+                  </div>
+                </div>
+                 
+<!--                  
+                  <div class="demo" style="display:inline-block;background-color: #ffff;padding-top:5px;padding-left:8px;width:67px;height:30px;padding-bottom:0;border-radius: 0.2rem;">
+                     
+                  
+                      <a href="javascript:void(0);" class="btn btn-outline-primary btn-xs btn-icon rounded-circle" style="">
+                          <i class="ni ni-pencil"></i>
+                      </a>
+                      <a href="javascript:void(0);" class="btn btn-outline-danger btn-xs btn-icon rounded-circle">
+                          <i class="ni ni-trash"></i>
+                      </a>
+                  </div> -->
               </div>
               <ul class="task-list" id="to-do">
                 <li class="task">
-                  
+                  <!--
                   <p style = "padding-left:5px;">กลุ่มมาตรฐานการประกอบวิชาชีพ	</p>
-                  <a href="javascript:void(0);" class="btn btn-xs btn-icon">
-                      <i class="fal fa-times"></i>
-                  </a>  
+                   <div class="demo text-right" style="padding-top:5px;display:block">
+                      <a href="javascript:void(0);" class="btn btn-outline-primary btn-xs btn-icon rounded-circle" style="margin-bottom:10px !important;">
+                          <i class="ni ni-pencil"></i>
+                      </a>
+                      <a href="javascript:void(0);" class="btn btn-outline-danger btn-xs btn-icon rounded-circle">
+                          <i class="ni ni-trash"></i>
+                      </a>
+                  </div>   
+                  -->
+                  <p style = "padding-left:5px;">กลุ่มมาตรฐานการประกอบวิชาชีพ	</p>
+                  <div class="demo text-right" style="padding-top:5px;display:block">
+                      <a href="javascript:void(0);" class="btn btn-outline-primary btn-xs btn-icon rounded-circle" style="margin-bottom:10px !important;">
+                          <i class="ni ni-pencil"></i>
+                      </a>
+                      <a href="javascript:void(0);" class="btn btn-outline-danger btn-xs btn-icon rounded-circle">
+                          <i class="ni ni-trash"></i>
+                      </a>
+                  </div>
+                  
                 </li>
                 <li class="task">
                   <p style = "padding-left:5px;">กลุ่มรับรองความรู้และความชำนาญ	</p>
-                  <a href="javascript:void(0);" class="btn btn-xs btn-icon">
-                      <i class="fal fa-times"></i>
-                  </a>  
+                  <div class="demo text-right" style="padding-top:5px;display:block">
+                      <a href="javascript:void(0);" class="btn btn-outline-primary btn-xs btn-icon rounded-circle" style="margin-bottom:10px !important;">
+                          <i class="ni ni-pencil"></i>
+                      </a>
+                      <a href="javascript:void(0);" class="btn btn-outline-danger btn-xs btn-icon rounded-circle">
+                          <i class="ni ni-trash"></i>
+                      </a>
+                  </div>
                 </li>
                 <li class="task">
                   <p style = "padding-left:5px;">ทดสอบความรู้ในการประกอบวิชาชีพ	</p>
-                  <a href="javascript:void(0);" class="btn btn-xs btn-icon">
-                      <i class="fal fa-times"></i>
-                  </a>
+                  <div class="demo text-right" style="padding-top:5px;display:block">
+                      <a href="javascript:void(0);" class="btn btn-outline-primary btn-xs btn-icon rounded-circle" style="margin-bottom:10px !important;">
+                          <i class="ni ni-pencil"></i>
+                      </a>
+                      <a href="javascript:void(0);" class="btn btn-outline-danger btn-xs btn-icon rounded-circle">
+                          <i class="ni ni-trash"></i>
+                      </a>
+                  </div>
                 </li>
                 <li class="task">
                   <p style = "padding-left:5px;">กลุ่มรับรองปริญญาและประกาศนียบัตร	</p>
-                  <a href="javascript:void(0);" class="btn btn-xs btn-icon">
-                      <i class="fal fa-times"></i>
-                  </a>
+                  <div class="demo text-right" style="padding-top:5px;display:block">
+                      <a href="javascript:void(0);" class="btn btn-outline-primary btn-xs btn-icon rounded-circle" style="margin-bottom:10px !important;">
+                          <i class="ni ni-pencil"></i>
+                      </a>
+                      <a href="javascript:void(0);" class="btn btn-outline-danger btn-xs btn-icon rounded-circle">
+                          <i class="ni ni-trash"></i>
+                      </a>
+                  </div>
                 </li>
               </ul>
             </li>
 
             <li class="column doing-column">
               <div class="column-header  font-header-org text-center">
-                <h5>สำนักทะเบียนและใบอนุญาตประกอบวิชาชีพ	</h5>
+                <!-- <h6>สำนักทะเบียนและใบอนุญาตประกอบวิชาชีพ	</h6> -->
+                <div class="custom-control-inline" style="margin-right:0px !important;">
+                 
+                  สำนักทะเบียนและใบอนุญาตประกอบวิชาชีพ
+                    <div class="demo" style="display:inline-block;background-color: #ffff;padding-top:4px;padding-left:5px;width:30px;height:55px;padding-bottom:0;border-radius: 0.2rem;">
+                      <a href="javascript:void(0);" style = "margin-bottom:5px !important;" class="btn btn-outline-primary btn-xs btn-icon rounded-circle" style="">
+                          <i class="ni ni-pencil"></i>
+                      </a>
+                      <a href="javascript:void(0);" class="btn btn-outline-danger btn-xs btn-icon rounded-circle">
+                          <i class="ni ni-trash"></i>
+                      </a>
+                  </div>
+                </div>
               </div>
               <ul class="task-list" id="doing">
                 <li class="task">
                   <p style = "padding-left:5px;">กลุ่มบริการผู้ขอประกอบวิชาชีพ	</p>
-                  <a href="javascript:void(0);" class="btn btn-xs btn-icon">
-                      <i class="fal fa-times"></i>
-                  </a>
+                  <div class="demo text-right" style="padding-top:5px;display:block">
+                      <a href="javascript:void(0);" class="btn btn-outline-primary btn-xs btn-icon rounded-circle" style="margin-bottom:10px !important;">
+                          <i class="ni ni-pencil"></i>
+                      </a>
+                      <a href="javascript:void(0);" class="btn btn-outline-danger btn-xs btn-icon rounded-circle">
+                          <i class="ni ni-trash"></i>
+                      </a>
+                  </div>
                 </li>
                 <li class="task">
                   <p style = "padding-left:5px;">กลุ่มทะเบียนใบอนุญาตประกอบวิชาชีพ	</p>
-                  <a href="javascript:void(0);" class="btn btn-xs btn-icon">
-                      <i class="fal fa-times"></i>
-                  </a>
+                  <div class="demo text-right" style="padding-top:5px;display:block">
+                      <a href="javascript:void(0);" class="btn btn-outline-primary btn-xs btn-icon rounded-circle" style="margin-bottom:10px !important;">
+                          <i class="ni ni-pencil"></i>
+                      </a>
+                      <a href="javascript:void(0);" class="btn btn-outline-danger btn-xs btn-icon rounded-circle">
+                          <i class="ni ni-trash"></i>
+                      </a>
+                  </div>
                 </li>
                 <li class="task">
                   <p style = "padding-left:5px;">กลุ่มใบอนุญาตประกอบวิชาชีพ 1	</p>
-                  <a href="javascript:void(0);" class="btn btn-xs btn-icon">
-                      <i class="fal fa-times"></i>
-                  </a>
+                  <div class="demo text-right" style="padding-top:5px;display:block">
+                      <a href="javascript:void(0);" class="btn btn-outline-primary btn-xs btn-icon rounded-circle" style="margin-bottom:10px !important;">
+                          <i class="ni ni-pencil"></i>
+                      </a>
+                      <a href="javascript:void(0);" class="btn btn-outline-danger btn-xs btn-icon rounded-circle">
+                          <i class="ni ni-trash"></i>
+                      </a>
+                  </div>
                 </li>
               </ul>
             </li>
 
             <li class="column done-column">
               <div class="column-header  font-header-org text-center">
-                <h5>สำนักจรรยาบรรณวิชาชีพและนิติการ		</h5>
+                <!-- <h6>สำนักจรรยาบรรณวิชาชีพและนิติการ		</h6> -->
+                <div class="custom-control-inline" style="margin-right:0px !important;">
+                 
+                  สำนักจรรยาบรรณวิชาชีพและนิติการ
+                    <div class="demo" style="display:inline-block;background-color: #ffff;padding-top:4px;padding-left:5px;width:30px;height:55px;padding-bottom:0;border-radius: 0.2rem;">
+                      <a href="javascript:void(0);" style = "margin-bottom:5px !important;" class="btn btn-outline-primary btn-xs btn-icon rounded-circle" style="">
+                          <i class="ni ni-pencil"></i>
+                      </a>
+                      <a href="javascript:void(0);" class="btn btn-outline-danger btn-xs btn-icon rounded-circle">
+                          <i class="ni ni-trash"></i>
+                      </a>
+                  </div>
+                </div>
               </div>
               <ul class="task-list" id="done">
                 <li class="task">
                   <p style = "padding-left:5px;">กลุ่มกำกับดูแลจรรยาบรรณวิชาชีพ	</p>
-                  <a href="javascript:void(0);" class="btn btn-xs btn-icon">
-                      <i class="fal fa-times"></i>
-                  </a>
+                  <div class="demo text-right" style="padding-top:5px;display:block">
+                      <a href="javascript:void(0);" class="btn btn-outline-primary btn-xs btn-icon rounded-circle" style="margin-bottom:10px !important;">
+                          <i class="ni ni-pencil"></i>
+                      </a>
+                      <a href="javascript:void(0);" class="btn btn-outline-danger btn-xs btn-icon rounded-circle">
+                          <i class="ni ni-trash"></i>
+                      </a>
+                  </div>
                 </li>
                 <li class="task">
-                  <p style = "padding-left:10px;">กลุ่มนิติการ	</p>
-                  <a href="javascript:void(0);" class="btn btn-xs btn-icon">
-                      <i class="fal fa-times"></i>
-                  </a>
+                  <p style = "padding-left:10px;" >กลุ่มนิติการ	</p>
+                  <div class="demo text-right" style="padding-top:5px;display:block">
+                      <a href="javascript:void(0);" class="btn btn-outline-primary btn-xs btn-icon rounded-circle" style="margin-bottom:10px !important;">
+                          <i class="ni ni-pencil"></i>
+                      </a>
+                      <a href="javascript:void(0);" class="btn btn-outline-danger btn-xs btn-icon rounded-circle">
+                          <i class="ni ni-trash"></i>
+                      </a>
+                  </div>
                 </li>
               </ul>
             </li>
 
             <li class="column trash-column">
               <div class="column-header  font-header-org text-center">
-                <h5>สำนักพัฒนาและส่งเสริมวิชาชีพ	</h5>
+                <!-- <h6>สำนักพัฒนาและส่งเสริมวิชาชีพ	</h6> -->
+                <div class="custom-control-inline" style="margin-right:0px !important;">
+                 
+                  สำนักพัฒนาและส่งเสริมวิชาชีพ
+                    <div class="demo" style="display:inline-block;background-color: #ffff;padding-top:4px;padding-left:5px;width:30px;height:55px;padding-bottom:0;border-radius: 0.2rem;">
+                      <a href="javascript:void(0);" style = "margin-bottom:5px !important;" class="btn btn-outline-primary btn-xs btn-icon rounded-circle" style="">
+                          <i class="ni ni-pencil"></i>
+                      </a>
+                      <a href="javascript:void(0);" class="btn btn-outline-danger btn-xs btn-icon rounded-circle">
+                          <i class="ni ni-trash"></i>
+                      </a>
+                  </div>
+                </div>
               </div>
               <ul class="task-list" id="trash">
                 <li class="task">
                   <p style = "padding-left:5px;">กลุ่มพัฒนาการประกอบวิชาชีพ	</p>
-                  <a href="javascript:void(0);" class="btn btn-xs btn-icon">
-                      <i class="fal fa-times"></i>
-                  </a>
+                  <div class="demo text-right" style="padding-top:5px;display:block">
+                      <a href="javascript:void(0);" class="btn btn-outline-primary btn-xs btn-icon rounded-circle" style="margin-bottom:10px !important;">
+                          <i class="ni ni-pencil"></i>
+                      </a>
+                      <a href="javascript:void(0);" class="btn btn-outline-danger btn-xs btn-icon rounded-circle">
+                          <i class="ni ni-trash"></i>
+                      </a>
+                  </div>
                 </li>
                 <li class="task">
                   <p style = "padding-left:5px;">กลุ่มวิเทศสัมพันธ์	</p>
-                  <a href="javascript:void(0);" class="btn btn-xs btn-icon">
-                      <i class="fal fa-times"></i>
-                  </a>
+                  <div class="demo text-right" style="padding-top:5px;display:block">
+                      <a href="javascript:void(0);" class="btn btn-outline-primary btn-xs btn-icon rounded-circle" style="margin-bottom:10px !important;">
+                          <i class="ni ni-pencil"></i>
+                      </a>
+                      <a href="javascript:void(0);" class="btn btn-outline-danger btn-xs btn-icon rounded-circle">
+                          <i class="ni ni-trash"></i>
+                      </a>
+                  </div>
                 </li>
 
               </ul>
@@ -187,20 +312,42 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
 
             <li class="column doing-column">
               <div class="column-header font-header-org text-center">
-                <h5>สำนักนโยบายและแผน		</h5>
+                <!-- <h6>สำนักนโยบายและแผน		</h6> -->
+                <div class="custom-control-inline" style="margin-right:0px !important;">
+                 
+                  สำนักนโยบายและแผน
+                    <div class="demo" style="display:inline-block;background-color: #ffff;padding-top:4px;padding-left:5px;width:30px;height:55px;padding-bottom:0;border-radius: 0.2rem;">
+                      <a href="javascript:void(0);" style = "margin-bottom:5px !important;" class="btn btn-outline-primary btn-xs btn-icon rounded-circle" style="">
+                          <i class="ni ni-pencil"></i>
+                      </a>
+                      <a href="javascript:void(0);" class="btn btn-outline-danger btn-xs btn-icon rounded-circle">
+                          <i class="ni ni-trash"></i>
+                      </a>
+                  </div>
+                </div>
               </div>
               <ul class="task-list" id="to-do">
                 <li class="task">
                   <p style = "padding-left:5px;">กลุ่มวิจัย ติดตาม และประเมินผล	</p>
-                  <a href="javascript:void(0);" class="btn btn-xs btn-icon">
-                      <i class="fal fa-times"></i>
-                  </a>
+                  <div class="demo text-right" style="padding-top:5px;display:block">
+                      <a href="javascript:void(0);" class="btn btn-outline-primary btn-xs btn-icon rounded-circle" style="margin-bottom:10px !important;">
+                          <i class="ni ni-pencil"></i>
+                      </a>
+                      <a href="javascript:void(0);" class="btn btn-outline-danger btn-xs btn-icon rounded-circle">
+                          <i class="ni ni-trash"></i>
+                      </a>
+                  </div>
                 </li>
                 <li class="task">
                   <p style = "padding-left:5px;">กลุ่มแผนและงบประมาณ	</p>
-                  <a href="javascript:void(0);" class="btn btn-xs btn-icon">
-                      <i class="fal fa-times"></i>
-                  </a>
+                  <div class="demo text-right" style="padding-top:5px;display:block">
+                      <a href="javascript:void(0);" class="btn btn-outline-primary btn-xs btn-icon rounded-circle" style="margin-bottom:10px !important;">
+                          <i class="ni ni-pencil"></i>
+                      </a>
+                      <a href="javascript:void(0);" class="btn btn-outline-danger btn-xs btn-icon rounded-circle">
+                          <i class="ni ni-trash"></i>
+                      </a>
+                  </div>
                 </li>
                
               </ul>
@@ -208,47 +355,96 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
 
             <li class="column to-do-column">
               <div class="column-header font-header-org text-center">
-                <h5>สำนักเทคโนโลยีสารสนเทศ		</h5>
+                <!-- <h6>สำนักเทคโนโลยีสารสนเทศ		</h6> -->
+                <div class="custom-control-inline" style="margin-right:0px !important;">
+                 
+                  สำนักเทคโนโลยีสารสนเทศ
+                    <div class="demo" style="display:inline-block;background-color: #ffff;padding-top:4px;padding-left:5px;width:30px;height:55px;padding-bottom:0;border-radius: 0.2rem;">
+                      <a href="javascript:void(0);" style = "margin-bottom:5px !important;" class="btn btn-outline-primary btn-xs btn-icon rounded-circle" style="">
+                          <i class="ni ni-pencil"></i>
+                      </a>
+                      <a href="javascript:void(0);" class="btn btn-outline-danger btn-xs btn-icon rounded-circle">
+                          <i class="ni ni-trash"></i>
+                      </a>
+                  </div>
+                </div>
               </div>
               <ul class="task-list" id="to-do">
                 <li class="task">
                   <p style = "padding-left:5px;">กลุ่มวิทยบริการและวารสาร	</p>
-                  <a href="javascript:void(0);" class="btn btn-xs btn-icon">
-                      <i class="fal fa-times"></i>
-                  </a>
+                  <div class="demo text-right" style="padding-top:5px;display:block">
+                      <a href="javascript:void(0);" class="btn btn-outline-primary btn-xs btn-icon rounded-circle" style="margin-bottom:10px !important;">
+                          <i class="ni ni-pencil"></i>
+                      </a>
+                      <a href="javascript:void(0);" class="btn btn-outline-danger btn-xs btn-icon rounded-circle">
+                          <i class="ni ni-trash"></i>
+                      </a>
+                  </div>
                 </li>
                 <li class="task">
                   <p style = "padding-left:5px;">กลุ่มเทคโนโลยีสารสนเทศและการสื่อสาร	</p>
-                  <a href="javascript:void(0);" class="btn btn-xs btn-icon">
-                      <i class="fal fa-times"></i>
-                  </a>
+                  <div class="demo text-right" style="padding-top:5px;display:block">
+                      <a href="javascript:void(0);" class="btn btn-outline-primary btn-xs btn-icon rounded-circle" style="margin-bottom:10px !important;">
+                          <i class="ni ni-pencil"></i>
+                      </a>
+                      <a href="javascript:void(0);" class="btn btn-outline-danger btn-xs btn-icon rounded-circle">
+                          <i class="ni ni-trash"></i>
+                      </a>
+                  </div>
                 </li>
                
               </ul>
             </li>
 
             <li class="column done-column">
-              <div class="column-header font-header-org text-center">
-                <h5>สำนักอำนวยการ		</h5>
+              <div class="column-header font-header-org text-center align-items">
+                <!-- <h6>สำนักอำนวยการ</h6> -->
+                <div class="custom-control-inline" style="margin-right:0px !important;">
+                 
+                  สำนักอำนวยการ &nbsp;
+                    <div class="demo" style="display:inline-block;background-color: #ffff;padding-top:4px;padding-left:5px;width:30px;height:55px;padding-bottom:0;border-radius: 0.2rem;">
+                      <a href="javascript:void(0);" style = "margin-bottom:5px !important;" class="btn btn-outline-primary btn-xs btn-icon rounded-circle" style="">
+                          <i class="ni ni-pencil"></i>
+                      </a>
+                      <a href="javascript:void(0);" class="btn btn-outline-danger btn-xs btn-icon rounded-circle">
+                          <i class="ni ni-trash"></i>
+                      </a>
+                  </div>
+                </div>
               </div>
               <ul class="task-list" id="to-do">
                 <li class="task">
                   <p style = "padding-left:5px;">กลุ่มบริหารงานกลาง	</p>
-                  <a href="javascript:void(0);" class="btn btn-xs btn-icon">
-                      <i class="fal fa-times"></i>
-                  </a>
+                  <div class="demo text-right" style="padding-top:5px;display:block">
+                      <a href="javascript:void(0);" class="btn btn-outline-primary btn-xs btn-icon rounded-circle" style="margin-bottom:10px !important;">
+                          <i class="ni ni-pencil"></i>
+                      </a>
+                      <a href="javascript:void(0);" class="btn btn-outline-danger btn-xs btn-icon rounded-circle">
+                          <i class="ni ni-trash"></i>
+                      </a>
+                  </div>
                 </li>
                 <li class="task">
                   <p style = "padding-left:5px;">กลุ่มการเงินและบัญชี	</p>
-                  <a href="javascript:void(0);" class="btn btn-xs btn-icon">
-                      <i class="fal fa-times"></i>
-                  </a>
+                  <div class="demo text-right" style="padding-top:5px;display:block">
+                      <a href="javascript:void(0);" class="btn btn-outline-primary btn-xs btn-icon rounded-circle" style="margin-bottom:10px !important;">
+                          <i class="ni ni-pencil"></i>
+                      </a>
+                      <a href="javascript:void(0);" class="btn btn-outline-danger btn-xs btn-icon rounded-circle">
+                          <i class="ni ni-trash"></i>
+                      </a>
+                  </div>
                 </li>
                 <li class="task">
                   <p style = "padding-left:5px;">กลุ่มการประชุมและประสานงาน	</p>
-                  <a href="javascript:void(0);" class="btn btn-xs btn-icon">
-                      <i class="fal fa-times"></i>
-                  </a>
+                  <div class="demo text-right" style="padding-top:5px;display:block">
+                      <a href="javascript:void(0);" class="btn btn-outline-primary btn-xs btn-icon rounded-circle" style="margin-bottom:10px !important;">
+                          <i class="ni ni-pencil"></i>
+                      </a>
+                      <a href="javascript:void(0);" class="btn btn-outline-danger btn-xs btn-icon rounded-circle">
+                          <i class="ni ni-trash"></i>
+                      </a>
+                  </div>
                 </li>
                 
               </ul>
@@ -363,14 +559,16 @@ function emptyTrash() {
   width: 8.4rem;
   margin: 0 0.6rem;
   background: #a8a8a8;
-  border: #000013 0.2rem solid;
-  border-radius: 0.2rem;
+  border: #a8a8a8 0.2rem solid;
+  border-radius: 0.4rem;
   
 }
 
 .column-header {
   padding: 0.1rem;
-  border-bottom: #000013 0.2rem solid;
+  border-bottom: #a8a8a8 0.2rem solid;
+  height: 70px;
+  padding-top:5px;
 }
 
 .column-header h4 {
@@ -378,19 +576,19 @@ function emptyTrash() {
 }
 
 .to-do-column .column-header {
-  background: #ff872f;
+  background: #7a59ad;
 }
 
 .doing-column .column-header {
-  background: #13a4d9;
+  background: #56b0a5;
 }
 
 .done-column .column-header {
-  background: #15d072;
+  background: #fd3995;
 }
 
 .trash-column .column-header {
-  background: #ff4444;
+  background: #ffba28;
 }
 
 .task-list {
@@ -457,8 +655,8 @@ li {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   margin: 0.4rem;
-  height: 4rem;
-  border: #000013 0.15rem solid;
+  height: 5rem;
+  border: #5d5b5b 0.07rem solid;
   border-radius: 0.2rem;
   cursor: move;
   text-align: center;

@@ -48,6 +48,27 @@
               </label>
               <input type="text" class="form-control form-ele clear-element" id="Password_add" name="Password_add" placeholder="Password" value="">
             </div> 
+            <div class="col-md-6 mb-6 col_add">
+              <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="Password_add">
+                จำนวนครั้งที่ป้อนผิด
+                <span class="text-danger stars">  </span>
+              </label>
+              <input type="text" class="form-control form-ele" id="as1" name="as1" placeholder="" value="0">
+            </div> 
+            <div class="col-md-6 mb-6 col_add">
+              <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="defaultUnchecked">
+                  <label class="custom-control-label" for="defaultUnchecked"></label>
+                  <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="Password_add">
+                    รักษาการ ผู้อำนวยการสำนัก
+                    <span class="text-danger stars">  </span>
+                  </label>
+                  <select id="unit_name_add1" name="unit_name_add1" class="" placeholder="ส่วนงาน">
+                    <option value="">เลือกส่วนงาน</option><option value="17">กลุ่มพัฒนาระบบงาน</option><option value="18">สถาบันคุรุพัฒนา</option><option value="11">สำนักจรรยาบรรณวิชาชีพและนิติการ</option><option value="3">สำนักทะเบียนและใบอนุญาตประกอบวิชาชีพ</option><option value="9">สำนักเทคโนโลยีสารสนเทศ</option><option value="16">สำนักเทคโนโลยีสารสนเทศและการสื่อสาร</option><option value="5">สำนักนโยบายและแผน</option><option value="4">สำนักพัฒนาและส่งเสริมวิชาชีพ</option><option value="2">สำนักมาตรฐานวิชาชีพ</option><option value="14">สำนักยกย่องเชิดชูเกียรติวิชาชีพ</option><option value="12">สำนักส่งเสริมและพัฒนาคุรุสภาจังหวัด</option><option value="7">สำนักอำนวยการ</option><option value="8">หน่วยตรวจสอบภายใน</option>
+                </select>
+
+              </div>
+            </div> 
           </div>
         </div>
       </div>
@@ -74,7 +95,7 @@
                   ส่วนงาน
                   <span class="text-danger stars"> * </span>
                 </label>
-                <select id="unit_name_add" name="unit_name_add" class="select2" placeholder="ส่วนงาน">
+                <select id="unit_name_add" name="unit_name_add" class="" placeholder="ส่วนงาน">
                     <option value="">เลือกส่วนงาน</option><option value="17">กลุ่มพัฒนาระบบงาน</option><option value="18">สถาบันคุรุพัฒนา</option><option value="11">สำนักจรรยาบรรณวิชาชีพและนิติการ</option><option value="3">สำนักทะเบียนและใบอนุญาตประกอบวิชาชีพ</option><option value="9">สำนักเทคโนโลยีสารสนเทศ</option><option value="16">สำนักเทคโนโลยีสารสนเทศและการสื่อสาร</option><option value="5">สำนักนโยบายและแผน</option><option value="4">สำนักพัฒนาและส่งเสริมวิชาชีพ</option><option value="2">สำนักมาตรฐานวิชาชีพ</option><option value="14">สำนักยกย่องเชิดชูเกียรติวิชาชีพ</option><option value="12">สำนักส่งเสริมและพัฒนาคุรุสภาจังหวัด</option><option value="7">สำนักอำนวยการ</option><option value="8">หน่วยตรวจสอบภายใน</option>
                 </select>
               </div> 
@@ -83,7 +104,7 @@
                   กลุ่มงาน
                   <span class="text-danger stars"> * </span>
                 </label>
-                <select id="group_name_add" name="group_name_add" class="select2"placeholder="กลุ่มงาน">
+                <select id="group_name_add" name="group_name_add" class=""placeholder="กลุ่มงาน">
                   <option value="">
                     เลือกกลุ่มงาน
                   </option>
@@ -103,7 +124,7 @@
                   ตำแหน่ง
                   <span class="text-danger stars"> * </span>
                 </label>
-                <select id="chief_add" name="chief_add" class="select2"placeholder="ตำแหน่ง">
+                <select id="chief_add" name="chief_add" class=""placeholder="ตำแหน่ง">
                   <option value="">
                     เลือกตำแหน่ง
                   </option>
@@ -124,6 +145,41 @@
                 <input type="text" class="form-control form-ele clear-element" id="position_name" name="position_name" placeholder="คำอธิบายตำแหน่ง" value="">
               </div> 
             </div>
+        </div>
+      </div>
+
+
+
+
+      <div id="panel-2" class="panel">
+        <div class="panel-container show" style = "padding:15px;">
+          
+              <div class="form-row dialog-data "> 
+
+                <div class="col-sm-6 sm-6 col_add">
+                  <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="position_name">
+                    ยกเลิกผู้ใช้งาน
+                    <span class="text-danger stars">  </span>
+                  </label>
+                  
+                  <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                      <label class="custom-control-label" for="customSwitch1"></label>
+                  </div>
+                </div> 
+              </div>
+              <div class="form-row dialog-data ">
+                <div class="col-sm-12 sm-12 col_add">
+                  <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="position_name">
+                    หมายเหตุการยกเลิก
+                    <span class="text-danger stars">  </span>
+                  </label>
+                  
+                  <textarea class="form-control" id="example-textarea" rows="5" placeholder="หมายเหตุการยกเลิก"></textarea>
+                </div> 
+              </div>
+            </div>
+
         </div>
       </div>
 

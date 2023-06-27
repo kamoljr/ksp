@@ -160,6 +160,9 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <th class="text-center">
                   กลุ่มงาน/ส่วนงาน
                 </th>
+                <th class="text-center">
+                  ปลดล๊อค
+                </th>
                 <th width="90">
                 </th>
               </tr>
@@ -174,6 +177,12 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 </td>
                 <td>
                   สำนักอำนวยการ/</br>กลุ่มการประชุมและประสานงาน
+                </td>
+                <td>
+                  <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                      <label class="custom-control-label" for="customSwitch1"></label>
+                  </div>
                 </td>
                 <td>
                   <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
@@ -206,6 +215,12 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   สำนักอำนวยการ/</br>กลุ่มการเงินและบัญชี
                 </td>
                 <td>
+                  <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input" id="customSwitch2">
+                      <label class="custom-control-label" for="customSwitch2"></label>
+                  </div>
+                </td>
+                <td>
                   <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
                   mode='view'>
                     <i class="ni ni-eye">
@@ -230,6 +245,12 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <td>นายสมคิด วงศ์เศวต</td>
                 <td>
                   สำนักอำนวยการ/</br>กลุ่มสวัสดิการ
+                </td>
+                <td>
+                  <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input" id="customSwitch3" checked="">
+                      <label class="custom-control-label" for="customSwitch3"></label>
+                  </div>
                 </td>
                 <td>
                   <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
@@ -274,6 +295,9 @@ $(document).ready(function() {
   $('#unit_name_add').select2({
     dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
   });
+  $('#unit_name_add1').select2({
+    dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
+  });
   $('#group_name_add').select2({
     dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
   });
@@ -291,11 +315,11 @@ $(document).ready(function() {
     processing: true,
     bPaginate: true,
     columnDefs: [{
-      targets: [3],
+      targets: [3,4],
       orderable: false,
     },
     {
-      targets: [0],
+      targets: [0,3],
       className: "text-center",
     },
     {

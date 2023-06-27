@@ -1,7 +1,6 @@
 <?
 $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; // get full url
 ?>
-
 <div class="row">
   <div class="col-xl-12">
     <div id="panel-1" class="panel" style="margin-bottom: 15px;">
@@ -14,14 +13,6 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <i class="fal fa-search width-2 fs-xl">
                 </i>
                 ค้นหาโดย
-                <!-- xx<i class="fa-light fa-money-bill-transfer"></i>aa
-    aaaaa  
-    <i class="fa-solid fa-money-bill-transfer"></i>
-    <i class="fa-thin fa-money-bill-transfer"></i>
-    <i class="fa-light fa-money-bill-transfer"></i>
-    <i class="fal fa-chess"></i>
-
-    bbbb -->
                 <span class="ml-auto">
                   <span class="collapsed-reveal">
                     <i class="fal fa-chevron-up fs-xl">
@@ -40,13 +31,45 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <form action="<?=$actual_link?>" method="post" accept-charset="utf-8"
                 id="form-search" name="form-search">
                   <div class="row">
-                    
-                    <div class="col-sm-12">
-                      <label class="form-label" for="group_name_search">
-                        กลุ่มผู้ใช้งาน
+                    <div class="col-sm-6">
+                      <label class="form-label" for="year_search">
+                        ปี
                       </label>
-                      <input id="group_name_search" name="group_name_search" class="form-control searchdata"
-                      type="text" placeholder="กลุ่มผู้ใช้งาน" />
+                      <select id="year_search" name="year_search" class="select2"
+                      placeholder="ปี">
+                     
+                        <option value="17">
+                          2566
+                        </option>
+                        <option value="18">
+                          2565
+                        </option>
+                        <option value="11">
+                          2564
+                        </option>
+                        
+                      </select>
+                    </div>
+                    <div class="col-sm-6">
+                      <label class="form-label" for="unit_name_search">
+                        โครงการ
+                      </label>
+                      <select id="unit_name_search" name="unit_name_search" class="select2"
+                      placeholder="โครงการ">
+                        <option value="">
+                          ทั้งหมด
+                        </option>
+                        <option value="17">
+                          โครงการทดสอบ 1
+                        </option>
+                        <option value="18">
+                          โครงการทดสอบ 2
+                        </option>
+                        <option value="11">
+                          โครงการทดสอบ 3
+                        </option>
+                        
+                      </select>
                     </div>
                   </div>
                 </form>
@@ -59,7 +82,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
     </div>
     <div class="alert alert-warning" id='searchresults' name='searchresults'
     style="margin-bottom: 15px;">
-      ค้นหาโดย : ทั้งหมด
+      ค้นหาโดย : ปี 2566
     </div>
   </div>
 </div>
@@ -85,10 +108,13 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <th width = "20px;">
                 </th>
                 <th class="text-center">
-                  กลุ่มใช้งาน
+                  ชื่อ-สกุล
                 </th>
                 <th class="text-center">
-                  คำอธิบาย
+                  กลุ่มงาน/ส่วนงาน
+                </th>
+                <th class="text-center">
+                  โครงการ
                 </th>
                 <th width="90">
                 </th>
@@ -100,10 +126,13 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   1
                 </td>
                 <td>
-                  กลุ่มผู้ใช้งานทั่วไป
+                  นางสาวดวงแก้ว อดิศวร 
                 </td>
                 <td>
-                  ผู้ใช้งานทั่วไป
+                  สำนักอำนวยการ/</br>กลุ่มการประชุมและประสานงาน
+                </td>
+                <td>
+                  โครงการทดสอบ 1
                 </td>
                 <td>
                   <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
@@ -130,36 +159,13 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   2
                 </td>
                 <td>
-                  ผู้ใช้งานกลุ่มเทคโน
+                  นายวีระ เทพทัต
                 </td>
                 <td>
-                  ผู้ดูแลระบบ
+                  สำนักอำนวยการ/</br>กลุ่มการเงินและบัญชี
                 </td>
                 <td>
-                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
-                  mode='view'>
-                    <i class="ni ni-eye">
-                    </i>
-                  </a>
-                  &nbsp;&nbsp;
-                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
-                  mode='edit'>
-                    <i class="ni ni-pencil">
-                    </i>
-                  </a>
-                  &nbsp;&nbsp;
-                  <a href="javascript:void(0);" class="btn btn-outline-danger btn-icon btn-xs rounded-circle waves-effect waves-themed"
-                  data-toggle="modal" data-target="#example-modal-alert">
-                    <i class="ni ni-trash">
-                    </i>
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>ผู้ใช้งานกลุ่มงบประมาณ</td>
-                <td>
-                  ผู้ใช้งานกลุ่มงบประมาณ
+                  โครงการทดสอบ 2
                 </td>
                 <td>
                   <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
@@ -181,33 +187,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   </a>
                 </td>
               </tr>
-              <tr>
-                <td>4</td>
-                <td>ผู้ใช้งานกลุ่มการเงินและบัญชี</td>
-                <td>
-                  ผู้ใช้งานกลุ่มการเงินและบัญชี
-                </td>
-                <td>
-                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
-                  mode='view'>
-                    <i class="ni ni-eye">
-                    </i>
-                  </a>
-                  &nbsp;&nbsp;
-                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
-                  mode='edit'>
-                    <i class="ni ni-pencil">
-                    </i>
-                  </a>
-                  &nbsp;&nbsp;
-                  <a href="javascript:void(0);" class="btn btn-outline-danger btn-icon btn-xs rounded-circle waves-effect waves-themed"
-                  data-toggle="modal" data-target="#example-modal-alert">
-                    <i class="ni ni-trash">
-                    </i>
-                  </a>
-                </td>
-              </tr>
-
+              
             </tbody>
           </table>
           <!-- datatable end -->
@@ -222,8 +202,6 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
 <!-- END Page Content -->
 
 <script src="<?= base_url().'/';?>js/budget/<?=$pages;?>.js"></script>
-
-
 <script>
     
 $(document).ready(function() {
@@ -231,10 +209,7 @@ $(document).ready(function() {
   $('#unit_name_add').select2({
     dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
   });
-  $('#group_name_add').select2({
-    dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
-  });
-  $('#chief_add').select2({
+  $('#unit_name_add1').select2({
     dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
   });
 
@@ -248,11 +223,11 @@ $(document).ready(function() {
     processing: true,
     bPaginate: true,
     columnDefs: [{
-      targets: [3],
+      targets: [3,4],
       orderable: false,
     },
     {
-      targets: [0],
+      targets: [0,3],
       className: "text-center",
     },
     {
@@ -290,13 +265,6 @@ $(document).ready(function() {
   function() {
     $('.default-example-modal-right').modal('toggle');
   });
-  });
+});
 
 </script>
-<style type="text/css">
-   .mobileHide { display: inline;}
-   /* Smartphone Portrait and Landscape */
-   @media only screen
-   and (min-device-width : 320px)
-   and (max-device-width : 480px){  .mobileHide { display: none;}}
-</style>

@@ -737,7 +737,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
 
 
        
-    </div>
+  </div>
 </div> 
 
 
