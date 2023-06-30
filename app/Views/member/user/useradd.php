@@ -5,12 +5,12 @@
     <div class="card p-4 rounded-plus bg-faded" style="padding-top:10px !important;">
       <h5 class="color-primary-500" style = "font-weight:600;display: flex;">
         <i class="ni ni-big-plus fa-2x" id = "icon_add_form" style = "padding-right:10px;"></i>
-        <i class="ni ni-pencil fa-2x" id = "icon_edit_form" style = "padding-right:10px;"></i>
-        <i class="ni ni-eye fa-2x" id = "icon_view_form" style = "padding-right:10px;"></i>
+        <!-- <i class="ni ni-pencil fa-2x" id = "icon_edit_form" style = "padding-right:10px;"></i>
+        <i class="ni ni-eye fa-2x" id = "icon_view_form" style = "padding-right:10px;"></i> -->
         <label class = "lblmode" style = "padding-top:7px;"></label>
-        <label  style = "padding-top:7px;"><?= $app_name; ?></label>
+        <label  style = "padding-top:7px;" id = "menu_name"><?//= $app_name; ?></label>
       </h5>
-      <div id="panel-1" class="panel">
+      <div id="panel-1" class="panel div_add">
         <div class="panel-container show" style = "padding:15px;">
         
           <div class="form-row dialog-data ">
@@ -27,13 +27,21 @@
               <input type="text" class="form-control form-ele clear-element" id="user_name_add" name="user_name_add" placeholder="ชื่อ-นามสกุล" value="">
             </div> 
 
-            <div class="col-md-6 mb-6 col_add">
+            <!-- <div class="col-md-6 mb-6 col_add">
               <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="tel_add">
                 เบอร์โทร
                 <span class="text-danger stars"> * </span>
               </label>
               <input type="text" class="form-control form-ele clear-element" id="tel_add" name="tel_add" placeholder="เบอร์โทร" value="">
+            </div>  -->
+            <div class="col-md-6 mb-6 col_add">
+              <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="tel_add">
+                เลือกรูป
+                <span class="text-danger stars"> * </span>
+              </label>
+              <input type="file" id="example-fileinput" class="form-control-file">
             </div> 
+            
             <div class="col-md-6 mb-6 col_add">
               <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="Login_add">
                 Login
@@ -81,7 +89,7 @@
 
 
 
-      <div id="panel-2" class="panel">
+      <div id="panel-2" class="panel div_add">
         <div class="panel-container show" style = "padding:15px;">
           
             <div class="form-row dialog-data "> 
@@ -151,27 +159,14 @@
 
 
 
-      <div id="panel-2" class="panel">
+      <div id="panel-2 " class="panel div_des">
         <div class="panel-container show" style = "padding:15px;">
           
-              <div class="form-row dialog-data "> 
-
-                <div class="col-sm-6 sm-6 col_add">
-                  <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="position_name">
-                    ยกเลิกผู้ใช้งาน
-                    <span class="text-danger stars">  </span>
-                  </label>
-                  
-                  <div class="custom-control custom-switch">
-                      <input type="checkbox" class="custom-control-input" id="customSwitch1">
-                      <label class="custom-control-label" for="customSwitch1"></label>
-                  </div>
-                </div> 
-              </div>
+              
               <div class="form-row dialog-data ">
                 <div class="col-sm-12 sm-12 col_add">
                   <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="position_name">
-                    หมายเหตุการยกเลิก
+                    หมายเหตุการจำหน่าย
                     <span class="text-danger stars">  </span>
                   </label>
                   

@@ -139,7 +139,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
       <div class="panel-container">
         <div class="panel-content" style="padding-top: 0px;">
           <div class="frame-wrap mt-3 mb-0 w-100">
-            <button id="btnadd" type="button" class="btn btn-primary" data-toggle="modal"
+            <button id="btnadd" type="button" class="btn btn-primary btn_add" data-toggle="modal"
             data-target=".default-example-modal-right" style="display: flex;">
               <span class="ni ni-big-plus fa-2x" style="padding-right:10px;">
               </span>
@@ -163,6 +163,9 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <th class="text-center">
                   ปลดล๊อค
                 </th>
+                <th class="text-center">
+                  จำหน่าย
+                </th>
                 <th width="90">
                 </th>
               </tr>
@@ -182,6 +185,12 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   <div class="custom-control custom-switch">
                       <input type="checkbox" class="custom-control-input" id="customSwitch1">
                       <label class="custom-control-label" for="customSwitch1"></label>
+                  </div>
+                </td>
+                <td>
+                  <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input des_user" id="customSwitch_del_1">
+                      <label class="custom-control-label" for="customSwitch_del_1"></label>
                   </div>
                 </td>
                 <td>
@@ -221,6 +230,12 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   </div>
                 </td>
                 <td>
+                  <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input des_user" id="customSwitch_del_2">
+                      <label class="custom-control-label" for="customSwitch_del_2"></label>
+                  </div>
+                </td>
+                <td>
                   <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
                   mode='view'>
                     <i class="ni ni-eye">
@@ -250,6 +265,12 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   <div class="custom-control custom-switch">
                       <input type="checkbox" class="custom-control-input" id="customSwitch3" checked="">
                       <label class="custom-control-label" for="customSwitch3"></label>
+                  </div>
+                </td>
+                <td>
+                  <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input des_user" id="customSwitch_dl_3">
+                      <label class="custom-control-label" for="customSwitch_del_3"></label>
                   </div>
                 </td>
                 <td>
@@ -315,11 +336,11 @@ $(document).ready(function() {
     processing: true,
     bPaginate: true,
     columnDefs: [{
-      targets: [3,4],
+      targets: [5,4],
       orderable: false,
     },
     {
-      targets: [0,3],
+      targets: [0,3,4],
       className: "text-center",
     },
     {
@@ -357,6 +378,22 @@ $(document).ready(function() {
   function() {
     $('.default-example-modal-right').modal('toggle');
   });
+  });
+  $(document).on('click', '.des_user', function() {
+    // console.log('unit');
+    $(".div_des").show();
+    $(".div_add").hide();
+    $("#menu_name").text("จำหน่าย")
+    $(".lblmode").text("")
+    $('.default-example-modal-right').modal('toggle');
+   
+  });
+  $(document).on('click', '.btn_add', function() {
+    // console.log('unit');
+    $(".div_des").hide();
+    $(".div_add").show();
+    $("#menu_name").text("ผู้ใช้งานระบบ")
+    $('.default-example-modal-right').modal('toggle');
   });
 
 </script>

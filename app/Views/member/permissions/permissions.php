@@ -76,8 +76,8 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
             <h6 class="color-white" style = "font-weight:100;display: flex;">กำหนดสิทธิ์การใช้งาน : นายสมคิด วงศ์เศวต</h6>
         </div>
         <div class="modal-footer">
-          <button type="submit" class="btn btn-primary" id ="btn_save_change">บันทึก</button>
-          <button type="button" class="btn btn-light" id = "btn_dialog_close">รีเซต</button>
+          <!-- <button type="submit" class="btn btn-primary" id ="btn_save_change">บันทึก</button>
+          <button type="button" class="btn btn-light" id = "btn_dialog_close">รีเซต</button> -->
         </div>
       </div>
     </div>
@@ -729,7 +729,21 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
       </div>
     </div>
     
+   <div class="card-footer " style = "padding-top:0px;padding-bottom:0px;margin:0px;">
 
+
+      <div class="row no-gutters align-items-center " >
+        <div class="col" style = "padding-top:10px;">
+        
+
+            <!-- <h6 class="color-white" style = "font-weight:100;display: flex;">กำหนดสิทธิ์การใช้งาน : นายสมคิด วงศ์เศวต</h6> -->
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary" id ="btn_save_change">บันทึก</button>
+          <button type="button" class="btn btn-light" id = "btn_dialog_close">รีเซต</button>
+        </div>
+      </div>
+    </div>
 
 
 

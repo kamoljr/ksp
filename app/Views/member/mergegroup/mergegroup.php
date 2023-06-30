@@ -14,6 +14,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
   <div class="col-sm-6">
     <div class="input-group input-group-lg mb-g ">
       
+     
 
       <select id="group_name_search" name="group_name_search" class="select2" placeholder="กลุ่มงาน">
         <option value="17">
@@ -79,24 +80,25 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
           <ul class="columns">
 
             <li class="column to-do-column" >
-              <div class="column-header font-header-org text-center hover-to-show-link" style = "position:relative;">
-                <div class="" style="margin-right:0px !important;">
-                 
-                  สำนักมาตรฐานวิชาชีพ
-                  
-                </div>
-                <div class="demo hover-to-show" style="margin-left:1px;background-color: #ffff;padding-top:2px;padding-left:5px;width:127px;height:25px;padding-bottom:0;border-radius: 0.2rem;opacity:.8;position:absolute;bottom:1px;left: 0;">
+                
+                <div class="column-header font-header-org text-center hover-to-show-link" style = "position:relative;">
+                  <div class="" style="margin-right:0px !important;">
+                
+                    สำนักมาตรฐานวิชาชีพ
+                    
+                  </div>
+                  <div class="demo hover-to-show" style="margin-left:1px;background-color: #ffff;padding-top:2px;padding-left:5px;width:127px;height:25px;padding-bottom:0;border-radius: 0.2rem;opacity:.8;position:absolute;bottom:1px;left: 0;">
 
-                  <a href="javascript:void(0);" style = "" class="btn_unit btn btn-primary btn-xs btn-icon rounded-circle" style="">
-                      <i class="ni ni-pencil"></i>
-                  </a>
-                  &nbsp;&nbsp;
-                  <a href="javascript:void(0);" class="btn btn-danger btn-xs btn-icon rounded-circle">
-                      <i class="ni ni-trash"></i>
-                  </a>
-                </div>
+                    <a href="javascript:void(0);" style = "" class="btn_unit btn btn-primary btn-xs btn-icon rounded-circle" style="">
+                        <i class="ni ni-pencil"></i>
+                    </a>
+                    &nbsp;&nbsp;
+                    <a href="javascript:void(0);" class="btn_del_unit btn btn-danger btn-xs btn-icon rounded-circle">
+                        <i class="ni ni-trash"></i>
+                    </a>
+                  </div>
 
-              </div>
+                </div>
               <ul class="task-list unit1" id="to-do" >
                 <li class="task hover-to-show-link" value = '11'>
                   <div class="" style = "position:relative;">
@@ -105,11 +107,11 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                     </div>
                     <div class="demo hover-to-show" style="margin-left:5px;background-color: #ffff;padding-top:2px;padding-left:5px;width:105px;height:25px;padding-bottom:0;border-radius: 0.2rem;opacity:.8;position:absolute;bottom:-15px;left: 0;">
 
-                      <a href="javascript:void(0);" style = "" class="btn btn-primary btn-xs btn-icon rounded-circle" style="">
+                      <a href="javascript:void(0);" style = "" class="btn btn-primary btn-xs btn-icon rounded-circle btn_group" style="">
                           <i class="ni ni-pencil"></i>
                       </a>
                       &nbsp;&nbsp;
-                      <a href="javascript:void(0);" class="btn btn-danger btn-xs btn-icon rounded-circle">
+                      <a href="javascript:void(0);" class="btn btn-danger btn-xs btn-icon rounded-circle btn_del_group">
                           <i class="ni ni-trash"></i>
                       </a>
                     </div>
@@ -732,7 +734,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
       <div class="modal-content">
           <div class="modal-header">
               <h4 class="modal-title text-white">
-                  ยืนยันย้ายส่วนงาน
+                  <label id = "text_modal-transparent">ยืนยันย้ายส่วนงาน</label>
                   <small class="m-0 text-white opacity-70">
                       <!-- Below is a static modal example -->
                   </small>
@@ -763,7 +765,31 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
 <script>
 $(document).ready(function() {
   $(".select2").select2();
+  $('#unit_name_add').select2({
+    dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
+  });
+  $('#unit_name_adds').select2({
+    dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
+  });
+  $('#unit_name_add2').select2({
+    dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
+  });
+  $('#group_names').select2({
+    dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
+  });
+  $(document).on('click', '#btn_dialog_close', function() {
+	  $('.default-example-modal-right').modal('toggle');
+  });
+  $(document).on('click', '.btn_copy', function() {
+	  $('.example-modal-centered-transparent').modal('toggle');
+    $("#text_modal-transparent").text("ต้องการคัดลอกโครงการ ใช่หรือไม่");
+  });
+  $(document).on('click', '.btn_del_unit', function() {
+	  $('.example-modal-centered-transparent').modal('toggle');
+    $("#text_modal-transparent").text("ต้องการลบส่วนงาน ใช่หรือไม่");
+  });
 });
+
 
 /* Custom Dragula JS */
 
@@ -788,6 +814,7 @@ dragula([
      
     });
     $('.example-modal-centered-transparent').modal('toggle'); 
+    $("#text_modal-transparent").text("ต้องการย้ายส่วนงาน ใช่หรือไม่");
   }).on('over', function (el, container) {
     container.className += ' ex-over';
    //console.log("c");
@@ -795,9 +822,30 @@ dragula([
    container.className = container.className.replace('ex-over', '');
    //console.log("d");
   });
-
+  
   $(document).on('click', '.btn_unit', function() {
+    console.log('unit');
+    $(".unitadd").show();
+    $(".groupadd").hide();
+    $(".deladd").hide();
     $('.default-example-modal-right').modal('toggle');
+    $("#ex_name").text("เพิ่มส่วงนงาน")
+  });
+  $(document).on('click', '.btn_group', function() {
+    console.log('group');
+    $(".unitadd").hide();
+    $(".deladd").hide();
+    $(".groupadd").show();
+    $('.default-example-modal-right').modal('toggle');
+    $("#ex_name").text("เพิ่มกลุ่มงาน")
+  });
+
+  $(document).on('click', '.btn_del_group', function() {
+    $(".unitadd").hide();
+    $(".deladd").show();
+    $(".groupadd").hide();
+    $('.default-example-modal-right').modal('toggle');
+    $("#ex_name").text("รวมกลุ่มงาน")
   });
 
 /* Vanilla JS to add a new task */
@@ -884,6 +932,10 @@ function emptyTrash() {
   border-bottom: #a8a8a8 0.2rem solid;
   /* height: 70px; */
   height: auto;
+  min-height: 65px;
+  /* height: 50px; */
+  /* max-height: 100%;  */
+  /* overflow: auto;  */
   padding-top:5px;
   padding-bottom:15px;
 }

@@ -25,17 +25,17 @@
     ?>
     
     
-    <a href="#" class="menu-item btn" data-action="app-print" data-toggle="tooltip" data-placement="left"
+    <a href="#" class="menu-item btn btn_copy"  data-toggle="tooltip" data-placement="left"
         title="คัดลอกโครงสร้าง" style = "background:#d39615">
         <i class="fa-regular fa-clipboard"></i>
     </a>
-    <a href="#" class="menu-item btn" data-action="app-print" data-toggle="tooltip" data-placement="left"
+    <a href="#" class="menu-item btn btn_group"  data-toggle="tooltip" data-placement="left"
         title="เพิ่มกลุ่มงาน" style = "background:#d39615">
          <!-- <i class="fa-solid fa-plus"></i> -->
          <i class="fa-solid fa-circle-plus fa-xs"></i>
     </a>
-    <a href="#" class="menu-item btn" data-action="app-print" data-toggle="tooltip" data-placement="left"
-        title="เพิ่มสำนัก" style = "background:#d39615">
+    <a href="#" class="menu-item btn btn_unit"  data-toggle="tooltip" data-placement="left"
+        title="เพิ่มส่วนงาน" style = "background:#d39615">
         <!-- <i class="fa-solid fa-circle-plus"></i> -->
         <i class="fa-regular fa-square-plus"></i>
     </a>
