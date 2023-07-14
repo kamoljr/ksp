@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>
-        Login - - SmartAdmin v4.0.1
+        สำนักงานเลขาธิการคุรุสภา
     </title>
     <meta name="description" content="Login">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,6 +22,7 @@
     <link rel="mask-icon" href="/public/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <!-- Optional: page related CSS-->
     <link rel="stylesheet" media="screen, print" href="/public/css/page-login.css">
+    <script src="<?= base_url().'/';?>/fontawesome-free-6.4.0-web/js/all.js" data-auto-replace-svg="nest"></script>
 </head>
 
 <body>
@@ -58,8 +59,24 @@
                            echo session("message");
                      }
                       ?>
+                <div class = "row">
+                    <div class="form-group col-sm-12">
+                        <button type="submit" class="btn btn-default text-center" style = "width:100%">Login</button>
+                    </div>
+                    
 
-                <button type="submit" class="btn btn-default float-right">Login</button>
+                    <div class="form-group col-sm-12 text-right" >
+                     <a href="javascript:void(0);" style = "padding:3px;" class="bg-warning-400 rounded px-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="ส่งรหัสผ่านใหม่ทาง Email">
+                        <!-- <i class="fal fa-exclamation-triangle"></i> -->
+                        <!-- <i class="fal fa-wrench"></i> -->
+                        <!-- <i class="fa-solid fa-envelope"></i> -->
+                        <!-- <i class="fa-regular fa-envelope"></i> -->
+                        <small >หากลืมรหัสผ่าน</small>
+                    </a>
+                    <!-- <button type="button" class="btn btn-xs btn-default float-right">Reset Password</button> -->
+                    </div>
+                </div>
+                
             </form>
         </div>
 

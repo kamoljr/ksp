@@ -7,7 +7,7 @@
 <div class="custom-scroll h-100">
     <ul class="app-list">
         <li>
-            <a href="/public/pages/view/project" class="app-list-item hover-white">
+            <a href="mergegroup" class="app-list-item hover-white">
                 <span class="icon-stack">
                     <i class="base-2 icon-stack-3x color-primary-600"></i>
                     <i class="base-3 icon-stack-2x color-primary-700"></i>
@@ -19,7 +19,7 @@
             </a>
         </li>
         <li>
-            <a href="/public/pages/view/project" class="app-list-item hover-white">
+            <a href="strategylvone" class="app-list-item hover-white">
                 <span class="icon-stack">
                     <!-- <i class="base-2 icon-stack-3x color-primary-600"></i>
                     <i class="base-3 icon-stack-2x color-primary-700"></i>
@@ -38,7 +38,7 @@
             </a>
         </li>
         <li>
-            <a href="/public/pages/view/project" class="app-list-item hover-white">
+            <a href="#" class="app-list-item hover-white">
                 <span class="icon-stack">
                     <!-- <i class="base-2 icon-stack-3x color-primary-600"></i>
                     <i class="base-3 icon-stack-2x color-primary-700"></i>
@@ -49,12 +49,12 @@
                     <i class="fa-solid fa-coins icon-stack-1x text-white"></i>
                 </span>
                 <span class="app-list-name">
-                    ประมาณ
+                    งบประมาณ
                 </span>
             </a>
         </li>
         <li>
-            <a href="/public/pages/view/project" class="app-list-item hover-white">
+            <a href="#" class="app-list-item hover-white">
                 <span class="icon-stack">
                     <!-- <i class="base-2 icon-stack-3x color-primary-600"></i>
                     <i class="base-3 icon-stack-2x color-primary-700"></i>
@@ -70,7 +70,7 @@
             </a>
         </li>
         <li>
-            <a href="/public/pages/view/project" class="app-list-item hover-white">
+            <a href="#" class="app-list-item hover-white">
                 <span class="icon-stack">
                     <!-- <i class="base-2 icon-stack-3x color-primary-600"></i>
                     <i class="base-3 icon-stack-2x color-primary-700"></i>
@@ -87,7 +87,7 @@
             </a>
         </li>
         <li>
-            <a href="/public/pages/view/project" class="app-list-item hover-white">
+            <a href="#" class="app-list-item hover-white">
                 <span class="icon-stack">
                     <!-- <i class="base-2 icon-stack-3x color-primary-600"></i>
                     <i class="base-3 icon-stack-2x color-primary-700"></i>
@@ -103,7 +103,7 @@
             </a>
         </li>
         <li>
-            <a href="/public/pages/view/project" class="app-list-item hover-white">
+            <a href="#" class="app-list-item hover-white">
                 <span class="icon-stack">
                     <!-- <i class="base-2 icon-stack-3x color-primary-600"></i>
                     <i class="base-3 icon-stack-2x color-primary-700"></i>
@@ -119,7 +119,7 @@
             </a>
         </li>
         <li>
-            <a href="/public/pages/view/project" class="app-list-item hover-white">
+            <a href="#" class="app-list-item hover-white">
                 <span class="icon-stack">
                     <!-- <i class="base-2 icon-stack-3x color-primary-600"></i>
                     <i class="base-3 icon-stack-2x color-primary-700"></i>
@@ -133,7 +133,7 @@
             </a>
         </li>
         <li>
-            <a href="/public/pages/view/project" class="app-list-item hover-white">
+            <a href="#" class="app-list-item hover-white">
                 <span class="icon-stack">
                     <!-- <i class="base-2 icon-stack-3x color-primary-600"></i>
                     <i class="base-3 icon-stack-2x color-primary-700"></i>
@@ -149,7 +149,7 @@
             </a>
         </li>
         <li>
-            <a href="/public/pages/view/project" class="app-list-item hover-white">
+            <a href="#" class="app-list-item hover-white">
                 <span class="icon-stack">
                     <!-- <i class="base-2 icon-stack-3x color-primary-600"></i>
                     <i class="base-3 icon-stack-2x color-primary-700"></i>
@@ -164,7 +164,7 @@
             </a>
         </li>
         <li>
-            <a href="/public/pages/view/project" class="app-list-item hover-white">
+            <a href="#" class="app-list-item hover-white">
                 <span class="icon-stack">
                     <!-- <i class="base-2 icon-stack-3x color-primary-600"></i>
                     <i class="base-3 icon-stack-2x color-primary-700"></i>
@@ -180,7 +180,7 @@
             </a>
         </li>
         <li>
-            <a href="/public/pages/view/project" class="app-list-item hover-white">
+            <a href="#" class="app-list-item hover-white">
                 <span class="icon-stack">
                     <!-- <i class="base-2 icon-stack-3x color-primary-600"></i>
                     <i class="base-3 icon-stack-2x color-primary-700"></i>
@@ -196,7 +196,7 @@
             </a>
         </li>
         <li>
-            <a href="/public/pages/view/project" class="app-list-item hover-white">
+            <a href="#" class="app-list-item hover-white">
                 <span class="icon-stack">
                     <!-- <i class="base-2 icon-stack-3x color-primary-600"></i>
                     <i class="base-3 icon-stack-2x color-primary-700"></i>

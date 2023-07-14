@@ -35,11 +35,11 @@
               <input type="text" class="form-control form-ele clear-element" id="tel_add" name="tel_add" placeholder="เบอร์โทร" value="">
             </div>  -->
             <div class="col-md-6 mb-6 col_add">
-              <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="tel_add">
-                เลือกรูป
+              <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="Password_add">
+                E-mail
                 <span class="text-danger stars"> * </span>
               </label>
-              <input type="file" id="example-fileinput" class="form-control-file">
+              <input type="text" class="form-control form-ele" id="as1" name="as1" placeholder="" value="">
             </div> 
             
             <div class="col-md-6 mb-6 col_add">
@@ -63,19 +63,12 @@
               </label>
               <input type="text" class="form-control form-ele" id="as1" name="as1" placeholder="" value="0">
             </div> 
-            <div class="col-md-6 mb-6 col_add">
-              <div class="custom-control custom-checkbox">
-                  <input type="checkbox" class="custom-control-input" id="defaultUnchecked">
-                  <label class="custom-control-label" for="defaultUnchecked"></label>
-                  <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="Password_add">
-                    รักษาการ ผู้อำนวยการสำนัก
-                    <span class="text-danger stars">  </span>
-                  </label>
-                  <select id="unit_name_add1" name="unit_name_add1" class="" placeholder="ส่วนงาน">
-                    <option value="">เลือกส่วนงาน</option><option value="17">กลุ่มพัฒนาระบบงาน</option><option value="18">สถาบันคุรุพัฒนา</option><option value="11">สำนักจรรยาบรรณวิชาชีพและนิติการ</option><option value="3">สำนักทะเบียนและใบอนุญาตประกอบวิชาชีพ</option><option value="9">สำนักเทคโนโลยีสารสนเทศ</option><option value="16">สำนักเทคโนโลยีสารสนเทศและการสื่อสาร</option><option value="5">สำนักนโยบายและแผน</option><option value="4">สำนักพัฒนาและส่งเสริมวิชาชีพ</option><option value="2">สำนักมาตรฐานวิชาชีพ</option><option value="14">สำนักยกย่องเชิดชูเกียรติวิชาชีพ</option><option value="12">สำนักส่งเสริมและพัฒนาคุรุสภาจังหวัด</option><option value="7">สำนักอำนวยการ</option><option value="8">หน่วยตรวจสอบภายใน</option>
-                </select>
-
-              </div>
+             <div class="col-md-6 mb-6 col_add">
+              <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="tel_add">
+                เลือกรูป
+                <span class="text-danger stars">  </span>
+              </label>
+              <input type="file" id="example-fileinput" class="form-control-file">
             </div> 
           </div>
         </div>
@@ -152,6 +145,21 @@
                 </label>
                 <input type="text" class="form-control form-ele clear-element" id="position_name" name="position_name" placeholder="คำอธิบายตำแหน่ง" value="">
               </div> 
+
+              <div class="col-md-6 mb-6 col_add">
+              <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="defaultUnchecked">
+                  <label class="custom-control-label" for="defaultUnchecked"></label>
+                  <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="Password_add">
+                    รักษาการ ผู้อำนวยการสำนัก
+                    <span class="text-danger stars">  </span>
+                  </label>
+                  <select id="unit_name_add1" name="unit_name_add1" class="" placeholder="ส่วนงาน">
+                    <option value="">เลือกส่วนงาน</option><option value="17">กลุ่มพัฒนาระบบงาน</option><option value="18">สถาบันคุรุพัฒนา</option><option value="11">สำนักจรรยาบรรณวิชาชีพและนิติการ</option><option value="3">สำนักทะเบียนและใบอนุญาตประกอบวิชาชีพ</option><option value="9">สำนักเทคโนโลยีสารสนเทศ</option><option value="16">สำนักเทคโนโลยีสารสนเทศและการสื่อสาร</option><option value="5">สำนักนโยบายและแผน</option><option value="4">สำนักพัฒนาและส่งเสริมวิชาชีพ</option><option value="2">สำนักมาตรฐานวิชาชีพ</option><option value="14">สำนักยกย่องเชิดชูเกียรติวิชาชีพ</option><option value="12">สำนักส่งเสริมและพัฒนาคุรุสภาจังหวัด</option><option value="7">สำนักอำนวยการ</option><option value="8">หน่วยตรวจสอบภายใน</option>
+                </select>
+
+              </div>
+            </div> 
             </div>
         </div>
       </div>
@@ -184,11 +192,11 @@
       <?=view("templates/modalclose.php")?>
     </div>
   </div>
-
-</div>  
 <div class="modal-footer">
   <button type="button" class="btn btn-secondary" id = "btn_dialog_close">Close</button>
   <button type="submit" class="btn btn-primary" id ="btn_save_change">Save changes</button>
 </div>
+</div>  
+
 </form>
 

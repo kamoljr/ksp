@@ -19,7 +19,7 @@ class App_m extends Model
       ,app_mom.app_id,app_mom.mom_id,app_mom.url,app_mom.app_name 
       FROM app_permission inner join app as app_mom on app_permission.app_id = app_mom.app_id 
       inner join description on app_mom.description_id = description.description_id 
-      Where app_mom.mom_id = 0 and app_permission.user_id = ".$user_id." and description.description_id = ".$description_id." order by app_mom.run_no";
+      Where app_mom.status_show = 'Y' and app_mom.mom_id = 0 and app_permission.user_id = ".$user_id." and description.description_id = ".$description_id." order by app_mom.run_no";
       
       //echo $sql;
       $result = $this->db->query($sql);

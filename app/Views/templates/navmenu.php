@@ -44,31 +44,34 @@
 
 	<!-- <div id = 'Div_nav'></div> -->
 	<ul id="js-nav-menu" class="nav-menu">
-		<!-- <li class="open">
-			<a href="javascript:void(0);" title="จัดการผู้ใช้งานระบบ" class=" waves-effect waves-themed" aria-expanded="true">
-				
-				<i class="fa-solid fa-user-gear"></i>&nbsp;&nbsp;
-				<span class="nav-link-text">ผู้ใช้งานระบบ</span>
-				<b class="collapse-sign"><em class="fal fa-angle-up"></em></b>
-			</a>
-		</li>
-		<li class="open">
-			<a href="javascript:void(0);" title="จัดการผู้ใช้งานระบบ" class=" waves-effect waves-themed" aria-expanded="true">
-				
-				<i class="fa-solid fa-chess"></i> &nbsp;&nbsp;
-				<span class="nav-link-text">แผนยุทธศาสตร์และแผนงาน </span>
-				<b class="collapse-sign"><em class="fal fa-angle-up"></em></b>
-			</a>
-		</li>
-		<li class="open">
-			<a href="javascript:void(0);" title="จัดการผู้ใช้งานระบบ" class=" waves-effect waves-themed" aria-expanded="true">
-			
-				<i class="fa-solid fa-coins"></i> &nbsp;&nbsp;
-				<span class="nav-link-text">งบประมาณ</span>
-				<b class="collapse-sign"><em class="fal fa-angle-up"></em></b>
-			</a>
-		</li> -->
+<!-- 		
+		<li><a href="javascript:void(0);" title="จัดการผู้ใช้งานระบบ" class=" waves-effect waves-themed"><span class="icon-stack" style = "padding-right:30px;"><i class=" fal fa-solid fa-user-gear fs-lg text-white"></i></span><span class="nav-link-text">จัดการผู้ใช้งานระบบ</span><b class="collapse-sign"><em class="fal fa-angle-down"></em></b></a></li>
+
+		<li><a href="javascript:void(0);" title="จัดการผู้ใช้งานระบบ" class=" waves-effect waves-themed"><span class="icon-stack" style = "padding-right:30px;"><i class=" fal fa-solid fa-chess fs-lg text-white"></i></span><span class="nav-link-text">แผนยุทธศาสตร์และแผนงาน</span><b class="collapse-sign"><em class="fal fa-angle-down"></em></b></a></li>
+
+		<li><a href="javascript:void(0);" title="จัดการผู้ใช้งานระบบ" class=" waves-effect waves-themed"><span class="icon-stack" style = "padding-right:30px;"><i class=" fal fa-solid fa-coins fs-lg text-white"></i></span><span class="nav-link-text">งบประมาณ</span><b class="collapse-sign"><em class="fal fa-angle-down"></em></b></a></li>
+
+		<li><a href="javascript:void(0);" title="จัดการผู้ใช้งานระบบ" class=" waves-effect waves-themed"><span class="icon-stack" style = "padding-right:30px;"><i class=" fal fa-solid fa-money-bill-transfer fs-lg text-white"></i></span><span class="nav-link-text">เบิกจ่าย</span><b class="collapse-sign"><em class="fal fa-angle-down"></em></b></a></li>
+
+		<li><a href="javascript:void(0);" title="จัดการผู้ใช้งานระบบ" class=" waves-effect waves-themed"><span class="icon-stack" style = "padding-right:30px;"><i class=" fal fa-solid fa-receipt fs-lg text-white"></i></span><span class="nav-link-text">การเงิน</span><b class="collapse-sign"><em class="fal fa-angle-down"></em></b></a></li>
+
+		<li><a href="javascript:void(0);" title="จัดการผู้ใช้งานระบบ" class=" waves-effect waves-themed"><span class="icon-stack" style = "padding-right:30px;"><i class=" fal fa-solid fa-hand-holding-dollar fs-lg text-white"></i></span><span class="nav-link-text">รายรับและนำส่งเงิน</span><b class="collapse-sign"><em class="fal fa-angle-down"></em></b></a></li>
+
+		<li><a href="javascript:void(0);" title="จัดการผู้ใช้งานระบบ" class=" waves-effect waves-themed"><span class="icon-stack" style = "padding-right:30px;"><i class=" fal fa-solid fa-file-invoice fs-lg text-white"></i></span><span class="nav-link-text">จัดซื้อ/จัดจ้าง</span><b class="collapse-sign"><em class="fal fa-angle-down"></em></b></a></li>
 		
+		<li><a href="javascript:void(0);" title="จัดการผู้ใช้งานระบบ" class=" waves-effect waves-themed"><span class="icon-stack" style = "padding-right:30px;"><i class=" fal fa-solid fa-people-carry-box fs-lg text-white"></i></span><span class="nav-link-text">ครุภัณฑ์</span><b class="collapse-sign"><em class="fal fa-angle-down"></em></b></a></li>
+		
+		<li><a href="javascript:void(0);" title="จัดการผู้ใช้งานระบบ" class=" waves-effect waves-themed"><span class="icon-stack" style = "padding-right:30px;"><i class=" fal fa-solid fa-boxes-packing fs-lg text-white"></i></span><span class="nav-link-text">วัสดุ</span><b class="collapse-sign"><em class="fal fa-angle-down"></em></b></a></li>
+		
+		<li><a href="javascript:void(0);" title="จัดการผู้ใช้งานระบบ" class=" waves-effect waves-themed"><span class="icon-stack" style = "padding-right:30px;"><i class=" fal fa-solid fa-van-shuttle fs-lg text-white"></i></span><span class="nav-link-text">จองรถ</span><b class="collapse-sign"><em class="fal fa-angle-down"></em></b></a></li>
+		
+		<li><a href="javascript:void(0);" title="จัดการผู้ใช้งานระบบ" class=" waves-effect waves-themed"><span class="icon-stack" style = "padding-right:30px;"><i class=" fal fa-solid fa-calendar-days fs-lg text-white"></i></span><span class="nav-link-text">จองห้องประชุม</span><b class="collapse-sign"><em class="fal fa-angle-down"></em></b></a></li>
+		
+		<li><a href="javascript:void(0);" title="จัดการผู้ใช้งานระบบ" class=" waves-effect waves-themed"><span class="icon-stack" style = "padding-right:30px;"><i class=" fal fa-solid fa-square-poll-vertical fs-lg text-white"></i></span><span class="nav-link-text">ติดตามผล</span><b class="collapse-sign"><em class="fal fa-angle-down"></em></b></a></li>
+		
+		<li><a href="javascript:void(0);" title="จัดการผู้ใช้งานระบบ" class=" waves-effect waves-themed"><span class="icon-stack" style = "padding-right:30px;"><i class=" fal fa-solid fa-screwdriver-wrench fs-lg text-white"></i></span><span class="nav-link-text">แจ้งงานบริการ</span><b class="collapse-sign"><em class="fal fa-angle-down"></em></b></a></li> -->
+
+
 	</ul>
 	<div class="filter-message js-filter-message bg-success-600"></div>
 </nav>
@@ -109,7 +112,8 @@
 					
 					if (count_child > 0) {
 						href = 'javascript:void(0);';
-						plus_circle = '<i class="fal fa-plus-circle"></i>';
+						 plus_circle = '<i class="fal fa-plus-circle"></i>';
+						 //plus_circle = '<span class="icon-stack" style = "padding-right:30px;"><i class=" fal fa-solid fa-user-gear fs-lg text-white"></i></span>';
 						nav_tab = '';
 						if (app_id == '<?= $mom_id ?>') {
 							aactive = 'class= "active open"';

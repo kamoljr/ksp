@@ -30,9 +30,10 @@
         <i class="float-right text-muted fw-n">F11</i>
     </a>
     <div class="dropdown-divider m-0"></div>
-    <a href="#" class="dropdown-item" data-action="app-reset">
+    <a href="reset" class="dropdown-item" >
         <span data-i18n="drpdwn.reset_layout">Reset Password</span>
     </a>
+    
     <!-- <a href="#" class="dropdown-item" data-action="app-print">
         <span data-i18n="drpdwn.print">Print</span>
         <i class="float-right text-muted fw-n">Ctrl + P</i>

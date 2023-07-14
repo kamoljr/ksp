@@ -6,7 +6,7 @@
         <a href="#" class="page-logo-link press-scale-down d-flex align-items-center position-relative"
             data-toggle="modal" data-target="#modal-shortcut">
             <img src="<?= base_url().'/';?>img/logo.png" alt="สำนักงานเลขาธิการคุรุสภา" aria-roledescription="logo">
-            <span class="page-logo-text mr-1">หหหสำนักงานเลขาธิการคุรุสภา</span>
+            <span class="page-logo-text mr-1">สำนักงานเลขาธิการคุรุสภา</span>
             <span class="position-absolute text-white opacity-50 small pos-top pos-right mr-2 mt-n2"></span>
             <i class="fal fa-angle-down d-inline-block ml-1 fs-lg color-primary-300"></i>
         </a>
@@ -99,7 +99,9 @@
                     </li> -->
                     <li class="nav-item">
                         <a class="nav-link px-4 fs-md js-waves-on fw-500" data-toggle="tab"
-                            href="<?//= base_url().'/';?>#tab-feeds" data-i18n="drpdwn.feeds">Feeds</a>
+                            href="<?//= base_url().'/';?>#tab-feeds" data-i18n="drpdwn.feeds">
+                            <!-- Feeds -->
+                        </a>
                     </li>
                     <!-- <li class="nav-item">
                         <a class="nav-link px-4 fs-md js-waves-on fw-500" data-toggle="tab"
@@ -111,11 +113,12 @@
                         <h5 class="mt-4 pt-4 fw-500">
                             <span class="d-block fa-3x pb-4 text-muted">
                                 <i class="ni ni-arrow-up text-gradient opacity-70"></i>
-                            </span> Select a tab above to activate
+                            </span> 
+                            <!-- Select a tab above to activate -->
                             <small class="mt-3 fs-b fw-400 text-muted">
-                                This blank page message helps protect your privacy, or you can show the first message
-                                here automatically through
-                                <a href="#">settings page</a>
+                                <!-- This blank page message helps protect your privacy, or you can show the first message
+                                here automatically through -->
+                                <!-- <a href="#">settings page</a> -->
                             </small>
                         </h5>
                     </div>
@@ -179,7 +182,7 @@
                                 <li>
                                     <a href="#" class="d-flex align-items-center">
                                         <span class="status status-success mr-2">
-                                            <!-- <img src="<?//= base_url().'/';?>img/demo/avatars/avatar-m.png" data-src="<?//= base_url().'/';?>img/demo/avatars/avatar-h.png" class="profile-image rounded-circle" alt="Sarah McBrook" /> -->
+                                            
                                             <span class="profile-image rounded-circle d-inline-block"
                                                 style="background-image:url('img/demo/avatars/avatar-h.png')"></span>
                                         </span>
