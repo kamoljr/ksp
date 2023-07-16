@@ -1,108 +1,7 @@
 <?
 $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; // get full url
 ?>
-<div class="row">
-  <div class="col-xl-12">
-    <div id="panel-1" class="panel" style="margin-bottom: 15px;">
-      <div class="panel-container">
-        <div id="js_list_accordion" class="accordion accordion-hover accordion-clean">
-          <div class="card border-top-left-radius-0 border-top-right-radius-0">
-            <div class="card-header">
-              <a href="javascript:void(0);" class="card-title" data-toggle="collapse"
-              data-target="#js_list_accordion-a" aria-expanded="true" data-filter-tags="settings">
-                <i class="fal fa-search width-2 fs-xl">
-                </i>
-                ค้นหาโดย
-                <span class="ml-auto">
-                  <span class="collapsed-reveal">
-                    <i class="fal fa-chevron-up fs-xl">
-                    </i>
-                  </span>
-                  <span class="collapsed-hidden">
-                    <i class="fal fa-chevron-down fs-xl">
-                    </i>
-                  </span>
-                </span>
-              </a>
-            </div>
-            <!-- จุดที่ 1 เปิด แก้ส่วนค้นหาโดย -->
-            <div id="js_list_accordion-a" class="collapse show" data-parent="#js_list_accordion">
-              <div class="card-body">
-                <form action="<?=$actual_link?>" method="post" accept-charset="utf-8"
-                id="form-search" name="form-search">
-                  <div class="row">
-                    <!-- <div class="col-sm-6">
-                      <label class="form-label" for="unit_name_search">
-                        ส่วนงาน
-                      </label>
-                      <select id="unit_name_search" name="unit_name_search" class="select2"
-                      placeholder="ส่วนงาน">
-                        <option value="">
-                          ทั้งหมด
-                        </option>
-                        <option value="17">
-                          กลุ่มพัฒนาระบบงาน
-                        </option>
-                        <option value="18">
-                          สถาบันคุรุพัฒนา
-                        </option>
-                        <option value="11">
-                          สำนักจรรยาบรรณวิชาชีพและนิติการ
-                        </option>
-                        <option value="3">
-                          สำนักทะเบียนและใบอนุญาตประกอบวิชาชีพ
-                        </option>
-                        <option value="9">
-                          สำนักเทคโนโลยีสารสนเทศ
-                        </option>
-                        <option value="16">
-                          สำนักเทคโนโลยีสารสนเทศและการสื่อสาร
-                        </option>
-                        <option value="5">
-                          สำนักนโยบายและแผน
-                        </option>
-                        <option value="4">
-                          สำนักพัฒนาและส่งเสริมวิชาชีพ
-                        </option>
-                        <option value="2">
-                          สำนักมาตรฐานวิชาชีพ
-                        </option>
-                        <option value="14">
-                          สำนักยกย่องเชิดชูเกียรติวิชาชีพ
-                        </option>
-                        <option value="12">
-                          สำนักส่งเสริมและพัฒนาคุรุสภาจังหวัด
-                        </option>
-                        <option value="7" selected>
-                          สำนักอำนวยการ
-                        </option>
-                        <option value="8">
-                          หน่วยตรวจสอบภายใน
-                        </option>
-                      </select>
-                    </div> -->
-                    <div class="col-sm-12">
-                      <label class="form-label" for="group_name_search">
-                        แผนยุทธศาสตร์ชาติ
-                      </label>
-                      <input id="group_name_search" name="group_name_search" class="form-control searchdata"
-                      type="text" placeholder="แผนยุทธศาสตร์ชาติ" />
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-            <!-- ปิด แก้ส่วนค้นหาโดย -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="alert alert-warning" id='searchresults' name='searchresults'
-    style="margin-bottom: 15px;">
-      ค้นหาโดย : ทั้งหมด
-    </div>
-  </div>
-</div>
+
 <div class="row">
   <div class="col-xl-12">
     <div id="panel-1" class="panel">
@@ -125,10 +24,10 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <th width = "20px;">
                 </th>
                 <th class="text-center">
-                  แผนยุทธศาสตร์ชาติ
+                  วิสัยทัศน์
                 </th>
-                <th width = "60px;"class="text-center">
-                  
+                <th width = "100px;"class="text-center">
+                  ปีเริ่ม - ปีสิ้นสุด
                 </th>
                 <th width="90">
                 </th>
@@ -140,21 +39,10 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   1
                 </td>
                 <td>
-                  ด้านการพัฒนาและเสริมสร้างศักยภาพทรัพยากรมนุยษ์
+                  คุรุสภาเป็นองค์กรวิชาชีพที่มีระบบและกลไก ในการส่งเสริม สนับสนุน เชื่อมโยง การผลิต การคัดกรองและพัฒนาผู้ประกอบวิชาชีพครูและบุคลากรทางการศึกษาที่มีคุณภาพได้มาตรฐานสากล
                 </td>
                 <td>
-                  <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
-                    <div class="btn-group" role="group">
-                        <button id="btnGroupVerticalDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          ไปยัง
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop1">
-                            <a class="dropdown-item" href="plantargetlvone">เป้าหมาย</a>
-                            <a class="dropdown-item" href="indicatorlvone">ตัวชี้วัด</a>
-                            <a class="dropdown-item" href="pointlvone">ประเด็นยุทธศาสตร์</a>
-                        </div>
-                    </div>
-                  </div>
+                  2566-2570
                 </td>
                 <td>
                   <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
@@ -214,11 +102,11 @@ $(document).ready(function() {
       orderable: false,
     },
     {
-      targets: [0],
+      targets: [0,2],
       className: "text-center",
     },
     {
-      targets: [1, 2],
+      targets: [1],
       className: "text-left",
     }]
 

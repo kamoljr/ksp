@@ -68,6 +68,13 @@
                 </label>
                 <input type="text" class="form-control form-ele clear-element" id="target_add" name="target_add" placeholder="เป้าหมายแผนระดับ2" value="" >
               </div> 
+              <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
+                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;padding-left:10px;" for="group_name_add">
+                  คำอธิบาย
+                  <span class="text-danger stars">  </span>
+                </label>
+                <input type="text" class="form-control form-ele clear-element" id="target_add" name="target_add" placeholder="คำอธิบาย" value="" >
+              </div> 
               <!-- <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
                 <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="tel_add">
                   เบอร์โทร

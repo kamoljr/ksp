@@ -66,7 +66,7 @@
                     
 
                     <div class="form-group col-sm-12 text-right" >
-                     <a href="javascript:void(0);" style = "padding:3px;" class="bg-warning-400 rounded px-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="ส่งรหัสผ่านใหม่ทาง Email">
+                     <a href="javascript:void(0);" style = "padding:3px;" class="bg-primary-50 rounded px-1 text-white" data-toggle="tooltip" data-placement="top" title="" data-original-title="ส่งรหัสผ่านใหม่ทาง Email">
                         <!-- <i class="fal fa-exclamation-triangle"></i> -->
                         <!-- <i class="fal fa-wrench"></i> -->
                         <!-- <i class="fa-solid fa-envelope"></i> -->
