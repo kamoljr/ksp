@@ -27,10 +27,10 @@
 
           <div class="col-sm-12 " style = "padding-top:20px;margin: auto;" >
               <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="user_name_add">
-                กลุ่มผู้ใช้งาน
+                ระดับผู้ใช้งาน
                 <span class="text-danger stars"> * </span>
               </label>
-              <input type="text" class="form-control form-ele clear-element" id="user_name_add" name="user_name_add" placeholder="กลุ่มผู้ใช้งาน" value="">
+              <input type="text" class="form-control form-ele clear-element" id="user_name_add" name="user_name_add" placeholder="ระดับผู้ใช้งาน" value="">
           </div>
           <div class="col-sm-12 " style = "padding-bottom:30px;margin: auto;" >
             

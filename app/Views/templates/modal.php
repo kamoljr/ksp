@@ -37,7 +37,7 @@
 <!-- Modal Right Large -->
 <div class="flex-1" >
   <div class="modal fade default-example-modal-right" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-right" style="max-width:900px;">
+    <div class="modal-dialog modal-dialog-right" style="max-width:750px;">
       <div class="modal-content bg-primary-800 bg-brand-gradient">
         <div class="modal-header " style="padding-bottom:0px;padding-top:10px;">
           <h5 class=" text-white text">

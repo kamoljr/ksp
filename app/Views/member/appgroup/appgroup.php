@@ -43,10 +43,10 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                     
                     <div class="col-sm-12">
                       <label class="form-label" for="group_name_search">
-                        กลุ่มผู้ใช้งาน
+                        ระดับผู้ใช้งาน
                       </label>
                       <input id="group_name_search" name="group_name_search" class="form-control searchdata"
-                      type="text" placeholder="กลุ่มผู้ใช้งาน" />
+                      type="text" placeholder="ระดับผู้ใช้งาน" />
                     </div>
                   </div>
                 </form>
@@ -85,7 +85,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <th width = "20px;">
                 </th>
                 <th class="text-center">
-                  กลุ่มใช้งาน
+                  ระดับผู้ใช้งาน
                 </th>
                 <th class="text-center">
                   คำอธิบาย
@@ -100,7 +100,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   1
                 </td>
                 <td>
-                  กลุ่มผู้ใช้งานทั่วไป
+                  ระดับผู้ใช้งานทั่วไป
                 </td>
                 <td>
                   ผู้ใช้งานทั่วไป

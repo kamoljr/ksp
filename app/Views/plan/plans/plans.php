@@ -117,6 +117,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                         <div class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop1">
                             <a class="dropdown-item" href="planindicator">ตัวชี้วัดแผนงาน</a>
                             <a class="dropdown-item" href="planmission">พันธกิจ</a>
+                            <a class="dropdown-item" href="productproject">ผลผลิต​/โครงการระดับผลผลิต</a>
                             
                         </div>
                     </div>
