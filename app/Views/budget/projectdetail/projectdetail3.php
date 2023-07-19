@@ -37,7 +37,7 @@
          
 
           <div class="frame-wrap mt-3 mb-0 w-100" style="padding-bottom: 15px;">
-            <button id="btnadd" type="button" class="btn btn-primary" data-toggle="modal"
+            <button id="btnadd" type="button" class="btn btn-primary btnadd" value = "ind" data-toggle="modal"
             data-target=".default-example-modal-right" style="display: flex;">
               <span class="ni ni-big-plus fa-2x" style="padding-right:10px;">
               </span>

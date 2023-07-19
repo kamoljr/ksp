@@ -37,7 +37,7 @@
          
 
           <div class="frame-wrap mt-3 mb-0 w-100" style="padding-bottom: 15px;">
-            <button id="btnadd" type="button" class="btn btn-primary" data-toggle="modal"
+            <button id="btnadd" type="button" class="btn btn-primary btnadd" value = "target1" data-toggle="modal"
             data-target=".default-example-modal-right" style="display: flex;">
               <span class="ni ni-big-plus fa-2x" style="padding-right:10px;">
               </span>
@@ -50,36 +50,19 @@
           <table id="dynamic-table4" class="table table-md table-bordered table-hover table-striped w-100">
             <thead class="bg-primary-600">
               <tr>
-               
-               
-              
-                <th class="text-center" width = "80px;" >
-                 
-                </th>
-                <th class="text-center" >
-                 เป้าหมายเขิงปริมาณ
-                </th>
-             
-              
-                <th width="90">
-
-                </th>
-               
+                <th class="text-center" width = "10px;" ></th>
+                <th class="text-center" >เป้าหมายเขิงปริมาณ</th>
+                <th width="90">แผนปีปัจจุบัน</th>
+                <th width="50">หน่วยนับ</th>
+                <th width="70"></th>
               </tr>
-            
             </thead>
             <tbody>
               <tr>
-                <td>
-                  1
-                </td>
-                <td>
-                  2
-                </td>
-                
-              
-             
-        
+                <td>1</td>
+                <td>แนวทางการพัฒนาสถาบันคุรุพัฒนาเป็นราชวิทยาลัยวิชาชีพชั้นสูงสําหรับครูและบุคลากรทางการศึกษา</td>
+                <td>1</td>
+                <td>ฉบับ</td>
                 <td>
                   <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
                   mode='view'>
@@ -98,16 +81,59 @@
                     <i class="ni ni-trash">
                     </i>
                   </a>
-                  
-                  
                 </td>
-               
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>ผู้เข้ารับการอบรมหลักสูตรอบรมมาตรฐานความรู้วิชาชีพคร</td>
+                <td>2,000</td>
+                <td>คน</td>
+                <td>
+                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
+                  mode='view'>
+                    <i class="ni ni-eye">
+                    </i>
+                  </a>
+                  &nbsp;&nbsp;
+                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
+                  mode='edit'>
+                    <i class="ni ni-pencil">
+                    </i>
+                  </a>
+                  &nbsp;&nbsp;
+                  <a href="javascript:void(0);" class="btn btn-outline-danger btn-icon btn-xs rounded-circle waves-effect waves-themed"
+                  data-toggle="modal" data-target="#example-modal-alert">
+                    <i class="ni ni-trash">
+                    </i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>จํานวนองค์ความรู้ของวิชาชีพจํานวน</td>
+                <td>5</td>
+                <td>สมรรถนะ</td>
+                <td>
+                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
+                  mode='view'>
+                    <i class="ni ni-eye">
+                    </i>
+                  </a>
+                  &nbsp;&nbsp;
+                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
+                  mode='edit'>
+                    <i class="ni ni-pencil">
+                    </i>
+                  </a>
+                  &nbsp;&nbsp;
+                  <a href="javascript:void(0);" class="btn btn-outline-danger btn-icon btn-xs rounded-circle waves-effect waves-themed"
+                  data-toggle="modal" data-target="#example-modal-alert">
+                    <i class="ni ni-trash">
+                    </i>
+                  </a>
+                </td>
               </tr>
              
-              
-              
-             
-              
               
             </tbody>
           </table>

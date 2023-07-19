@@ -158,10 +158,13 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   ชื่อ-สกุล
                 </th>
                 <th class="text-center">
-                  กลุ่มงาน/ส่วนงาน
+                  กลุ่มงาน
                 </th>
                 <th class="text-center">
-                  ปลดล๊อค
+                  ส่วนงาน
+                </th>
+                <th class="text-center">
+                  ระงับสิทธิ
                 </th>
                 <th class="text-center">
                   จำหน่าย
@@ -179,7 +182,10 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   นางสาวดวงแก้ว อดิศวร 
                 </td>
                 <td>
-                  สำนักอำนวยการ/</br>กลุ่มการประชุมและประสานงาน
+                  กลุ่มการประชุมและประสานงาน
+                </td>
+                <td>
+                  สำนักอำนวยการ
                 </td>
                 <td>
                   <div class="custom-control custom-switch">
@@ -221,7 +227,10 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   นายวีระ เทพทัต
                 </td>
                 <td>
-                  สำนักอำนวยการ/</br>กลุ่มการเงินและบัญชี
+                  กลุ่มการเงินและบัญชี
+                </td>
+                <td>
+                  สำนักอำนวยการ
                 </td>
                 <td>
                   <div class="custom-control custom-switch">
@@ -259,7 +268,10 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <td>3</td>
                 <td>นายสมคิด วงศ์เศวต</td>
                 <td>
-                  สำนักอำนวยการ/</br>กลุ่มสวัสดิการ
+                  กลุ่มสวัสดิการ
+                </td>
+                <td>
+                  สำนักอำนวยการ
                 </td>
                 <td>
                   <div class="custom-control custom-switch">
@@ -336,11 +348,11 @@ $(document).ready(function() {
     processing: true,
     bPaginate: true,
     columnDefs: [{
-      targets: [5,4],
+      targets: [5,4,6],
       orderable: false,
     },
     {
-      targets: [0,3,4],
+      targets: [0,3,4,5],
       className: "text-center",
     },
     {
@@ -392,7 +404,7 @@ $(document).ready(function() {
     // console.log('unit');
     $(".div_des").hide();
     $(".div_add").show();
-    $("#menu_name").text("ผู้ใช้งานระบบ")
+    $("#menu_name").text("ผู้ใช้งาน")
     $('.default-example-modal-right').modal('toggle');
   });
 

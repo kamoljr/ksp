@@ -44,7 +44,22 @@
                 </label>
                 <input type="text" class="form-control form-ele clear-element" id="tel_add" name="tel_add" placeholder="เบอร์โทร" value="">
               </div> 
-
+              <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
+                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="tel_add">
+                  ผู้อำนวยการกลุ่ม : <label>นายทดสอบระบบ 1 </label>
+                    <a href="javascript:void(0);" id = "btn_boss2" style = "" class="btn btn-primary btn-xs btn-icon rounded-circle" style="">
+                        <i class="ni ni-pencil"></i>
+                    </a>
+                  <!-- <span class="text-danger stars"> * </span> -->
+                </label>
+                <div class = "boss2">
+                  <select id="boss2" name="boss2" placeholder="ผู้อำนวยการกลุ่ม">
+                      <option value="">นายทดสอบระบบ 2</option>
+                      <option value="17">นายทดสอบระบบ 3</option>
+                      <option value="18">นายทดสอบระบบ 4</option>
+                  </select>
+                </div>
+              </div> 
 
             </div>
 

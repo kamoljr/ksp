@@ -89,6 +89,14 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
 <script src="<?= base_url().'/';?>js/budget/<?=$pages;?>.js"></script>
 <script>
 $(document).ready(function() {
+    $(".boss1").hide();
+  
+  $(document).on('click', '#btn_boss1', function() {
+	  $(".boss1").show();
+  });
+  $('#boss1').select2({
+    dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
+  });
     //create_select_budget_year();
     var table = $("#dynamic-table").DataTable({
         orderCellsTop: true,

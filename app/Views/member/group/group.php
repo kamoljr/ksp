@@ -236,8 +236,15 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
 
 <script src="<?= base_url().'/';?>js/budget/<?=$pages;?>.js"></script>
 <script>
-    
+
 $(document).ready(function() {
+  $(".boss2").hide();
+  
+  $(document).on('click', '#btn_boss2', function() {
+	  $(".boss2").show();
+  });
+  
+  
   $(".select2").select2();
   $('#unit_name_add').select2({
     dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
@@ -290,11 +297,14 @@ $(document).ready(function() {
     $("#btn_dialog_close").show();
 
   });
-
+  $('#boss2').select2({
+    dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
+  });
   $(document).on('click', '#btn_dialog_close',
   function() {
     $('.default-example-modal-right').modal('toggle');
   });
+  
 });
 
 </script>

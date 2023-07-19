@@ -54,12 +54,12 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                                                             <i class="fa-solid fa-check"></i>
                                                             <span class="hidden-sm-down ml-1"> เป้าหมายคุณภาพ</span>
                                                         </a>
-                                                        <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-6" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                                                        <!-- <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-6" role="tab" aria-controls="v-pills-settings" aria-selected="false">
                                                             
-                                                            <!-- <i class="fa-solid fa-check"></i>  -->
+                                                           
                                                             &nbsp;&nbsp;&nbsp;
                                                             <span class="hidden-sm-down ml-1"> กิจกรรม</span>
-                                                        </a>
+                                                        </a> -->
                                                         <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-7" role="tab" aria-controls="v-pills-settings" aria-selected="false">
                                                             
                                                             <!-- <i class="fa-solid fa-check"></i> -->
@@ -90,16 +90,16 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                                                             <?=view("budget/projectdetail/projectdetail4.php")?>
                                                         </div>
                                                         <div class="tab-pane fade" id="v-pills-5" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                                                            5
+                                                            <?=view("budget/projectdetail/projectdetail5.php")?>
                                                         </div>
                                                         <div class="tab-pane fade" id="v-pills-6" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                                                            6
+                                                            <?=view("budget/projectdetail/projectdetail8.php")?>
                                                         </div>
                                                         <div class="tab-pane fade" id="v-pills-7" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                                                            7
+                                                            <?=view("budget/projectdetail/projectdetail6.php")?>
                                                         </div>
-                                                        <div class="tab-pane fade" id="v-pills-7" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                                                            8
+                                                        <div class="tab-pane fade" id="v-pills-8" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                                            <?=view("budget/projectdetail/projectdetail7.php")?>
                                                         </div>
                                                         
                                                 </div>
@@ -115,7 +115,16 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
 
 
 
+<style>
+.td-col-h{
+  padding:0px !important;
+  color:#ffffff !important;
+}
+.td-col{
+  padding:0px !important;
 
+}
+</style>
 
 
 
@@ -178,7 +187,34 @@ $(document).ready(function() {
       orderable: false,
     },
     {
-      targets: [0,2],
+      targets: [0,2,3],
+      className: "text-center",
+    },
+    {
+      targets: [1],
+      className: "text-left",
+    },
+    {
+      targets: [],
+      className: "text-right",
+    }]
+
+  });
+  var table = $("#dynamic-table5").DataTable({
+    orderCellsTop: true,
+    fixedHeader: true,
+    bLengthChange: false,
+    searching: false,
+    bAutoWidth: false,
+    bStateSave: true,
+    processing: true,
+    bPaginate: true,
+    columnDefs: [{
+      targets: [3],
+      orderable: false,
+    },
+    {
+      targets: [0,2,3],
       className: "text-center",
     },
     {
@@ -192,9 +228,41 @@ $(document).ready(function() {
 
   });
 
-  $(document).on('click', '#btnadd',
+  var table = $("#dynamic-table6").DataTable({
+    orderCellsTop: true,
+    fixedHeader: true,
+    bLengthChange: false,
+    searching: false,
+    bAutoWidth: false,
+    bStateSave: true,
+    processing: true,
+    bPaginate: true,
+    columnDefs: [{
+      targets: [],
+      orderable: false,
+    },
+    {
+      targets: [0],
+      className: "text-center",
+    },
+    {
+      targets: [1],
+      className: "text-left",
+    },
+    {
+      targets: [2],
+      className: "text-right",
+    }]
+
+  });
+
+  $(document).on('click', '.btnadd',
   function() {
-    $("#ids").val('');
+    console.log(this.value);
+    btnadd_value = this.value;
+    // $("#ids").val('');
+
+
 
     $(".lblmode").text("เพิ่ม");
 
@@ -212,8 +280,21 @@ $(document).ready(function() {
     $(".dialog-success").hide();
 
     $("#btn_save_change").show();
-    $("#btn_dialog_close").show();
+    $("#btn_dialog_close").show()
+    
+    $(".project_step_name").text("");
+    $(".dialog_hide_all").hide();
+    if (btnadd_value == "ind"){
+      $(".project_step_name").text("ตัวชี้วัด");
+      $(".dialog-data-ind").show();
+    }else if (btnadd_value == "target1"){
+      $(".dialog-data-target1").show();
+      $(".project_step_name").text("เป้าหมายเชิงปริมาณ");
+    }else if (btnadd_value == "target2"){
+      $(".dialog-data-target2").show();
+      $(".project_step_name").text("เป้าหมายเชิงคุณภาพ");
 
+    }
   });
 
   $(document).on('click', '#btn_dialog_close',

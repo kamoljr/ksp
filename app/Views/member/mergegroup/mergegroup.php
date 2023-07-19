@@ -764,6 +764,18 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
 
 <script>
 $(document).ready(function() {
+  $(".boss2").hide();
+  
+  $(document).on('click', '#btn_boss2', function() {
+	  $(".boss2").show();
+  });
+  
+  $(".boss1").hide();
+  
+  $(document).on('click', '#btn_boss1', function() {
+	  $(".boss1").show();
+  });
+
   $(".select2").select2();
   $('#unit_name_add').select2({
     dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
@@ -777,6 +789,15 @@ $(document).ready(function() {
   $('#group_names').select2({
     dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
   });
+  $('#boss2').select2({
+    dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
+  });
+  $('#boss1').select2({
+    dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
+  });
+
+  
+
   $(document).on('click', '#btn_dialog_close', function() {
 	  $('.default-example-modal-right').modal('toggle');
   });

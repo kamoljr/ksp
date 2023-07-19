@@ -25,14 +25,29 @@
                 <span><label id = "lbl_rowid"></label></span> 
               </div>
 
-              <div class="col-md-12 mb-12">
+              <div class="col-md-12 mb-12" style = "padding-bottom:15px;">
                 <label class="form-label color-fusion-500" for="unit_name">
                   ชื่อส่วนงาน
                   <span class="text-danger stars"> * </span>
                 </label>
                 <input type="text" class="form-control form-ele clear-element" id="unit_name" name="unit_name" placeholder="ขื่อส่วนงาน" value="">
               </div> 
-
+              <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
+                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="tel_add">
+                  ผู้อำนวยการส่วนงาน : <label>นายทดสอบระบบ 1 </label>
+                    <a href="javascript:void(0);" id = "btn_boss1" style = "" class="btn btn-primary btn-xs btn-icon rounded-circle" style="">
+                        <i class="ni ni-pencil"></i>
+                    </a>
+                  <!-- <span class="text-danger stars"> * </span> -->
+                </label>
+                <div class = "boss1">
+                  <select id="boss1" name="boss1" class="" placeholder="ผู้อำนวยการส่วนงาน">
+                      <option value="">นายทดสอบระบบ 2</option>
+                      <option value="17">นายทดสอบระบบ 3</option>
+                      <option value="18">นายทดสอบระบบ 4</option>
+                  </select>
+                </div>
+              </div>
 
             </div>
 
