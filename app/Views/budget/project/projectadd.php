@@ -4,11 +4,11 @@
   <div class="col-xl-12 ml-auto mr-auto" style="padding-top:0px;padding-left:10px;">
     <div class="card p-4 rounded-plus bg-faded" style="padding-top:10px !important;">
       <h5 class="color-primary-500" style = "font-weight:600;display: flex;">
-        <i class="ni ni-big-plus fa-2x" id = "icon_add_form" style = "padding-right:10px;"></i>
+        <i class="fa-solid fa-copy fa-lg" id = "icon_add_form" style = "padding-right:10px;"></i>
         <!-- <i class="ni ni-pencil fa-2x" id = "icon_edit_form" style = "padding-right:10px;"></i>
         <i class="ni ni-eye fa-2x" id = "icon_view_form" style = "padding-right:10px;"></i> -->
         <label class = "lblmode" style = "padding-top:7px;"></label>
-        <label  style = "padding-top:7px;">ตัวชี้วัด</label>s
+        <label  style = "padding-top:7px;">คัดลอกโครงการ</label>
       </h5>
       <div id="panel-2" class="panel">
         <div class="panel-container show">
@@ -16,25 +16,41 @@
 
             <div class="form-row dialog-data dialog-add-ind">
               
-              <div class="alert alert-primary col-md-12 mb-12 div_show_rowid text-white " style = "padding:10px;margin-bottom:10px;background-color:rgb(223 180 90)">
+              <!-- <div class="alert alert-primary col-md-12 mb-12 div_show_rowid text-white " style = "padding:10px;margin-bottom:10px;background-color:rgb(223 180 90)">
                 <i class="ni ni-key"></i>
                 <span><label id = "lbl_rowid"></label></span> 
-              </div>
-
+              </div> -->
+              <div class="col-md-12 mb-12" style = "padding-bottom:15px;">
+                <label class="form-label color-fusion-500" style ="font-weight:550;" for="group_name_add">
+                    <h4>ปีงบประมาณ : 2565<h4>
+                  <span class="text-danger stars">  </span>
+                </label>
+                <!-- <input type="text" class="form-control form-ele clear-element" id="group_name_add" name="group_name_add" placeholder="แผนงาน" value="" > -->
+              </div> 
+              <div class="col-md-12 mb-12" style = "padding-bottom:15px;">
+                <label class="form-label color-fusion-500" style ="font-weight:550;" for="group_name_add">
+                    <h4>ส่วนงาน/กลุ่มงาน : สำนักนโยบายและแผน/กลุ่มแผนและงบประมาณ<h4>
+                  <span class="text-danger stars">  </span>
+                </label>
+                <!-- <input type="text" class="form-control form-ele clear-element" id="group_name_add" name="group_name_add" placeholder="แผนงาน" value="" > -->
+              </div> 
               <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
                 <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;padding-bottom:5px;" for="group_name_add">
-                  ตัวชี้วัดss
+                  โครงการ
                   <span class="text-danger stars"> * </span>
                 </label>
-                <input type="text" class="form-control form-ele clear-element" id="group_name_add" name="group_name_add" placeholder="ตัวชี้วัด" value="" >
+                <select id="project_add" name="project_add" class=""
+                      placeholder="โครงการ">
+                        <option value="">
+                          งานรับรองความรู้รับรองคุณวุฒิและรับรองประสบการณ์เพื่อการประกอบวิชาชีพทางการศึกษา
+                        </option>
+                        <option value="17">
+                          งานรับรองปริญญาและประกาศนียบัตรตามมาตรฐานวิชาชีพ     
+                        </option>
+                        
+                      </select>
               </div> 
-              <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
-                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="group_name_add">
-                  แผนงาน
-                  <span class="text-danger stars"> * </span>
-                </label>
-                <input type="text" class="form-control form-ele clear-element" id="group_name_add" name="group_name_add" placeholder="แผนงาน" value="" >
-              </div> 
+              
 
             </div>
 

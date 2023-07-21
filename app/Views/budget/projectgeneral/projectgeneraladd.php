@@ -30,7 +30,7 @@
                     <option value="">เลือกส่วนงาน</option><option value="17">กลุ่มพัฒนาระบบงาน</option><option value="18">สถาบันคุรุพัฒนา</option><option value="11">สำนักจรรยาบรรณวิชาชีพและนิติการ</option><option value="3">สำนักทะเบียนและใบอนุญาตประกอบวิชาชีพ</option><option value="9">สำนักเทคโนโลยีสารสนเทศ</option><option value="16">สำนักเทคโนโลยีสารสนเทศและการสื่อสาร</option><option value="5">สำนักนโยบายและแผน</option><option value="4">สำนักพัฒนาและส่งเสริมวิชาชีพ</option><option value="2">สำนักมาตรฐานวิชาชีพ</option><option value="14">สำนักยกย่องเชิดชูเกียรติวิชาชีพ</option><option value="12">สำนักส่งเสริมและพัฒนาคุรุสภาจังหวัด</option><option value="7">สำนักอำนวยการ</option><option value="8">หน่วยตรวจสอบภายใน</option>
                 </select>
               </div>  -->
-              <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
+              <!-- <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
                 <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;padding-bottom:5px;" for="group_name_add">
                   ประเภทแผนงาน
                   <span class="text-danger stars"> * </span>
@@ -53,13 +53,13 @@
                         <label class="custom-control-label color-fusion-300" for="defaultInline3Radio">แผนงานบูรณาการ</label>
                     </div>
                 </div>
-              </div> 
+              </div>  -->
               <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
                 <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="group_name_add">
-                  แผนงาน
+                  ข้อมูลทั่วไปงาน/โครงการ
                   <span class="text-danger stars"> * </span>
                 </label>
-                <input type="text" class="form-control form-ele clear-element" id="group_name_add" name="group_name_add" placeholder="แผนงาน" value="" >
+                <input type="text" class="form-control form-ele clear-element" id="group_name_add" name="group_name_add" placeholder="ข้อมูลทั่วไปงาน/โครงการ" value="" >
               </div> 
               <!-- <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
                 <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="tel_add">

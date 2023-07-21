@@ -150,9 +150,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   จำนวนเงิน
                 </th>
                 
-                <th width = "60px;"class="text-center">
-                  ไปยัง
-                </th>
+               
                 <th width="90">
                 </th>
                
@@ -170,9 +168,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   160,000
                 </td>
                
-                <td>
-                  <button type="button" class="btn btn-xs btn-primary" onclick="window.location='projectactdetail';">จัดการ</button>
-                </td>
+               
                
                 <td>
                   <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
@@ -209,9 +205,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 </td>
                 
                 
-                <td>
-                  <button type="button" class="btn btn-xs btn-primary" onclick="window.location='projectactdetail';">จัดการ</button>
-                </td>
+              
                
                 <td>
                   <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
@@ -246,10 +240,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <td>
                   0
                 </td>
-                <td>
-                  <button type="button" class="btn btn-xs btn-primary" onclick="window.location='projectactdetail';">จัดการ</button>
-                </td>
-                
+              
                
                 <td>
                   <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
@@ -311,7 +302,7 @@ $(document).ready(function() {
     processing: true,
     bPaginate: true,
     columnDefs: [{
-      targets: [3,4],
+      targets: [3],
       orderable: false,
     },
     {

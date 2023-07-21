@@ -205,12 +205,7 @@
                             <h5 class="p-0">
                                 Theme colors <small>(overlays base css)</small>
                             </h5>
-                            <!-- <div class="fs-xs text-muted p-2 alert alert-warning mt-3 mb-0">
-                                <i class="fal fa-exclamation-triangle text-warning mr-2"></i>Due to network latency and
-                                CPU utilization, you may experience a brief flickering effect on page load which may
-                                show the intial applied theme for a split second. Setting the prefered style/theme in
-                                the header will prevent this from happening.
-                            </div> -->
+                         
                         </div>
                     </div>
                     <div class="expanded theme-colors pl-5 pr-3">

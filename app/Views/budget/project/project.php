@@ -73,16 +73,38 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
     <div id="panel-1" class="panel">
       <div class="panel-container">
         <div class="panel-content" style="padding-top: 0px;">
-          <div class="frame-wrap mt-3 mb-0 w-100">
-            <!-- <button id="btnadd" type="button" class="btn btn-primary" data-toggle="modal" data-target=".default-example-modal-right" style="display: flex;"> -->
-            <button id="btnadd" type="button" class="btn btn-primary" style="display: flex;" onclick="window.location='projectdetail';">
-              <span class="ni ni-big-plus fa-2x" style="padding-right:10px;">
-              </span>
-              <span style="padding-top:5px;">
-                เพิ่ม
-              </span>
-            </button>
-          </div>
+          
+         
+          <div class="">
+                                           
+                                            <div class="d-flex justify-content-between  mb-3" style = "margin-bottom:0px !important;">
+                                                <div class="p-2">
+                                                  <div class="frame-wrap mt-3 mb-0 w-100">
+                                                    <!-- <button id="btnadd" type="button" class="btn btn-primary" data-toggle="modal" data-target=".default-example-modal-right" style="display: flex;"> -->
+                                                  <button id="btnadd" type="button" class="btn btn-primary" style="display: flex;" onclick="window.location='projectdetail';">
+                                                      <span class="ni ni-big-plus fa-2x" style="padding-right:10px;">
+                                                      </span>
+                                                      <span style="padding-top:5px;">
+                                                        เพิ่ม
+                                                      </span>
+                                                    </button>
+                                                  </div>
+                                                </div>
+                                                <div class="p-2 "></div>
+                                                <div class="p-2 "> <div class="frame-wrap mt-3 mb-0 w-100" >
+                                                    <!-- <button id="btnadd" type="button" class="btn btn-primary" data-toggle="modal" data-target=".default-example-modal-right" style="display: flex;"> -->
+                                                 <button id="btnadd" type="button" class="btn btn-primary btn_add" data-toggle="modal"
+            data-target=".default-example-modal-right" style="display: flex;">
+                                                      <span class="fa-solid fa-copy fa-lg" style="padding-right:10px;">
+                                                      </span>
+                                                      <span style="padding-top:5px;">
+                                                        คัดลอกโครงการ
+                                                      </span>
+                                                    </button>
+                                                  </div></div>
+                                            </div>
+                                          
+                                        </div>
           <!-- <div class = "row">
             <div class = "col-xl-6" style = "margin-left:260px;">
               <div class="row">
@@ -165,7 +187,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   200,000
                 </td>
                 <td>
-                 <div class="custom-control custom-checkbox d-block bg-warning-500" style = "padding:0px;margin:0px;">
+                 <div class="custom-control custom-checkbox d-block bg-warning-500" style = "padding-left:0px;padding-right:0px;margin:0px;padding-bottom:0px;padding-top:4px;">
                       <!-- <span class="width-1 height-1 rounded-circle d-block bg-secondary" style = "padding:0px;margin-left:20px;margin-top:0px;margin-bottom:0px;margin-right:0px;"></span> -->
                       <label ><small class= "">ส่งโครงการ</small></label>
                   </div>
@@ -214,7 +236,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   300,000
                 </td>
                 <td>
-                 <div class="custom-control custom-checkbox d-block bg-success-800" style = "padding:0px;margin:0px;">
+                 <div class="custom-control custom-checkbox d-block bg-success-800" style = "padding-left:0px;padding-right:0px;margin:0px;padding-bottom:0px;padding-top:4px;">
                       <!-- <span class="width-1 height-1 rounded-circle d-block bg-secondary" style = "padding:0px;margin-left:20px;margin-top:0px;margin-bottom:0px;margin-right:0px;"></span> -->
                       <label ><small class= "">ล๊อคเบิกจ่าย</small></label>
                   </div>
@@ -263,7 +285,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   500,000
                 </td>
                 <td>
-                 <div class="custom-control custom-checkbox d-block bg-info-800" style = "padding:0px;margin:0px;">
+                 <div class="custom-control custom-checkbox d-block bg-info-800" style = "padding-left:0px;padding-right:0px;margin:0px;padding-bottom:0px;padding-top:4px;">
                       <!-- <span class="width-1 height-1 rounded-circle d-block bg-secondary" style = "padding:0px;margin-left:20px;margin-top:0px;margin-bottom:0px;margin-right:0px;"></span> -->
                       <label ><small class= "">ล๊อคเพื่อตรวจสอบ</small></label>
                   </div>
@@ -312,7 +334,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   520,000
                 </td>
                 <td>
-                 <div class="custom-control custom-checkbox d-block bg-fusion-100" style = "padding:0px;margin:0px;">
+                 <div class="custom-control custom-checkbox d-block bg-fusion-100" style = "padding-left:0px;padding-right:0px;margin:0px;padding-bottom:0px;padding-top:4px;">
                       <!-- <span class="width-1 height-1 rounded-circle d-block bg-secondary" style = "padding:0px;margin-left:20px;margin-top:0px;margin-bottom:0px;margin-right:0px;"></span> -->
                       <label ><small class= "">ระหว่างดำเนินการ</small></label>
                   </div>
@@ -375,6 +397,9 @@ $(document).ready(function() {
   $('#unit_name_add').select2({
     dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
   });
+  $('#project_add').select2({
+    dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
+  });
 
   var table = $("#dynamic-table").DataTable({
     orderCellsTop: true,
@@ -408,7 +433,7 @@ $(document).ready(function() {
   function() {
     $("#ids").val('');
 
-    $(".lblmode").text("เพิ่ม");
+    $(".lblmode").text("");
 
     $("#icon_add_form").show();
     $("#icon_edit_form").hide();

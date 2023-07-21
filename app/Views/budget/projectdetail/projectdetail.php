@@ -16,15 +16,15 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
       <!-- <h5 class="color-primary-500" style = "font-weight:600;display: flex;">
         sss
       </h5> -->
-                                  <div id="panel-12" class="panel">
+                                  <div id="panel-12" class="panel bg-primary">
                                     <div class=" text-center ml-auto mr-auto" style = "text-align:center !important;">
-                                        <h4 class="color-primary-500 text-center" style = "font-weight:500;padding-top:20px;">
+                                        <h4 class="text-white text-center" style = "font-weight:500;padding-top:10px;">
                                           เพิ่มโครงการ
                                         </h4>
                                         
                                     </div>
                                     <div class="panel-container show">
-                                        <div class="panel-content">
+                                        <div class="panel-content bg-white">
                                             <div class="row">
                                                 <div class="col-auto" style="padding-left:0px !important;padding-right:0px !important;">
                                                   
@@ -124,6 +124,23 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
   padding:0px !important;
 
 }
+/* 
+a:link {
+  color: black;
+}
+
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: white;
+}
+
+a:active {
+  color: white;
+} */
 </style>
 
 
