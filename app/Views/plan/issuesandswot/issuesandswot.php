@@ -31,7 +31,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <form action="<?=$actual_link?>" method="post" accept-charset="utf-8"
                 id="form-search" name="form-search">
                   <div class="row">
-                    <div class="col-sm-12">
+                    <div class="col-sm-6">
                       <label class="form-label" for="unit_name_search">
                         ปีงบประมาณ
                       </label>
@@ -42,6 +42,27 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                         </option>
                         <option value="17">
                           2565
+                        </option>
+                        
+                      </select>
+                    </div>
+                    <div class="col-sm-6">
+                      <label class="form-label" for="unit_name_search">
+                        SWOT
+                      </label>
+                      <select id="swot_search" name="swot_search" class="select2"
+                      placeholder="ปีงบประมาณ">
+                        <option value="">
+                          S
+                        </option>
+                        <option value="17">
+                          W
+                        </option>
+                        <option value="17">
+                          O
+                        </option>
+                        <option value="17">
+                          T
                         </option>
                         
                       </select>
@@ -84,14 +105,12 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <th width = "20px;">
                 </th>
                 <th class="text-center">
-                  แผนงาน
+                  ประเด็น
                 </th>
-                <th class="text-center">
-                  ประเภท
+                <th class="text-center" width="50">
+                  SWOT
                 </th>
-                <th width = "60px;"class="text-center">
-                  ไปยัง
-                </th>
+                
                 <th width="90">
                 </th>
               </tr>
@@ -102,27 +121,13 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   1
                 </td>
                 <td>
-                  แผนงานบุคลากรภาครัฐ
+                  คณะกรรมการคุรุสภามีอำนาจในแต่งตั้งคณะอนุกรรมการเพื่อกระทำการอันอยู่ในอำนาจของคณะกรรมการคุรุสภา
                 </td>
                 <td>
-                  แผนงานบุคลากรภาครัฐ
+                  S
                 </td>
               
-                <td>
-                  <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
-                    <div class="btn-group" role="group">
-                        <button id="btnGroupVerticalDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          ไปยัง
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop1">
-                            <a class="dropdown-item" href="planindicator">ตัวชี้วัดแผนงาน</a>
-                            <a class="dropdown-item" href="planmission">พันธกิจ</a>
-                            <a class="dropdown-item" href="productproject">ผลผลิต​/โครงการระดับผลผลิต</a>
-                            
-                        </div>
-                    </div>
-                  </div>
-                </td>
+                
                 <td>
                   <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
                   mode='view'>
@@ -148,26 +153,13 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   2
                 </td>
                 <td>
-                  แผนงานยุทธศาสตร์
+                  คณะกรรมการมาตรฐานวิชาชีพมีอำนาจในการแต่งตั้งคณะอนุกรรมการเพื่อกระทำการอันอยู่ในอำนาจของคณะกรรมการมาตรฐานวิชาชีพ
                 </td>
                 <td>
-                  แผนงานยุทธศาสตร์
+                  S
                 </td>
               
-                <td>
-                  <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
-                    <div class="btn-group" role="group">
-                        <button id="btnGroupVerticalDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          ไปยัง
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop1">
-                            <a class="dropdown-item" href="planindicator">ตัวชี้วัดแผนงาน</a>
-                            <a class="dropdown-item" href="planmission">พันธกิจ</a>
-                            
-                        </div>
-                    </div>
-                  </div>
-                </td>
+                
                 <td>
                   <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
                   mode='view'>
@@ -193,26 +185,13 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   3
                 </td>
                 <td>
-                  แผนงานพื้นฐาน
+                  สำนักงานเลขาธิการคุรุสภาขาดการติดตาม และวิเคราะห์ผลกระทบของการปรับเปลี่ยนโครงสร้างองค์กร ในแต่ละครั้ง
                 </td>
                 <td>
-                  แผนงานพื้นฐาน
+                  W
                 </td>
               
-                <td>
-                  <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
-                    <div class="btn-group" role="group">
-                        <button id="btnGroupVerticalDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          ไปยัง
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop1">
-                            <a class="dropdown-item" href="planindicator">ตัวชี้วัดแผนงาน</a>
-                            <a class="dropdown-item" href="planmission">พันธกิจ</a>
-                            
-                        </div>
-                    </div>
-                  </div>
-                </td>
+                
                 <td>
                   <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
                   mode='view'>
@@ -233,6 +212,71 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   </a>
                 </td>
               </tr>
+              <tr>
+                <td>
+                  4
+                </td>
+                <td>
+                  ภาครัฐมีแนวทางการขยายระยะเวลาการเกษียณอายุราชการให้สอดคล้องกับลักษณะงานและศักยภาพของผู้ปฏิบัติงาน รวมทั้งการเปลี่ยนแปลงโครงสร้างประชากรของสังคมไทย
+                </td>
+                <td>
+                  O
+                </td>
+              
+                
+                <td>
+                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
+                  mode='view'>
+                    <i class="ni ni-eye">
+                    </i>
+                  </a>
+                  &nbsp;&nbsp;
+                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
+                  mode='edit'>
+                    <i class="ni ni-pencil">
+                    </i>
+                  </a>
+                  &nbsp;&nbsp;
+                  <a href="javascript:void(0);" class="btn btn-outline-danger btn-icon btn-xs rounded-circle waves-effect waves-themed"
+                  data-toggle="modal" data-target="#example-modal-alert">
+                    <i class="ni ni-trash">
+                    </i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  5
+                </td>
+                <td>
+                  ผู้ประกอบวิชาชีพมีจำนวนมากและบางส่วนยังไม่เข้าใจ หรือมีความเข้าใจผิดในบทบาทของคุรุสภา และไม่เห็นความแตกต่างระหว่างผู้รับ/ไม่รับใบอนุญาตประกอบวิชาชีพ
+                </td>
+                <td>
+                  T
+                </td>
+              
+                
+                <td>
+                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
+                  mode='view'>
+                    <i class="ni ni-eye">
+                    </i>
+                  </a>
+                  &nbsp;&nbsp;
+                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
+                  mode='edit'>
+                    <i class="ni ni-pencil">
+                    </i>
+                  </a>
+                  &nbsp;&nbsp;
+                  <a href="javascript:void(0);" class="btn btn-outline-danger btn-icon btn-xs rounded-circle waves-effect waves-themed"
+                  data-toggle="modal" data-target="#example-modal-alert">
+                    <i class="ni ni-trash">
+                    </i>
+                  </a>
+                </td>
+              </tr>
+              
               
               
             </tbody>
@@ -267,15 +311,15 @@ $(document).ready(function() {
     processing: true,
     bPaginate: true,
     columnDefs: [{
-      targets: [3,4],
+      targets: [3],
       orderable: false,
     },
     {
-      targets: [0],
+      targets: [0,2],
       className: "text-center",
     },
     {
-      targets: [1, 2],
+      targets: [1],
       className: "text-left",
     }]
 

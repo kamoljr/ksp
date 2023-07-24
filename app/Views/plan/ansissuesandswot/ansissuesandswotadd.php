@@ -30,40 +30,33 @@
                     <option value="">เลือกส่วนงาน</option><option value="17">กลุ่มพัฒนาระบบงาน</option><option value="18">สถาบันคุรุพัฒนา</option><option value="11">สำนักจรรยาบรรณวิชาชีพและนิติการ</option><option value="3">สำนักทะเบียนและใบอนุญาตประกอบวิชาชีพ</option><option value="9">สำนักเทคโนโลยีสารสนเทศ</option><option value="16">สำนักเทคโนโลยีสารสนเทศและการสื่อสาร</option><option value="5">สำนักนโยบายและแผน</option><option value="4">สำนักพัฒนาและส่งเสริมวิชาชีพ</option><option value="2">สำนักมาตรฐานวิชาชีพ</option><option value="14">สำนักยกย่องเชิดชูเกียรติวิชาชีพ</option><option value="12">สำนักส่งเสริมและพัฒนาคุรุสภาจังหวัด</option><option value="7">สำนักอำนวยการ</option><option value="8">หน่วยตรวจสอบภายใน</option>
                 </select>
               </div>  -->
-              <div class="col-md-12 mb-12" style = "padding-bottom:0px;">
-                <label class="form-label color-fusion-500" style ="font-weight:550;" for="group_name_add">
-                    <h4>ปี : 2566<h4>
-                  <span class="text-danger stars">  </span>
-                </label>
-               
-              </div> 
               <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
                 <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;padding-bottom:5px;" for="group_name_add">
-                  SWOT
+                  ประเภทแผนงาน
                   <span class="text-danger stars"> * </span>
                 </label>
                 <div class="frame-wrap">
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" class="custom-control-input" id="defaultInline1Radio" name="inlineDefaultRadiosExample" checked="">
-                        <label class="custom-control-label color-fusion-300" for="defaultInline1Radio" >Strengths</label>
+                        <input type="radio" class="custom-control-input" id="defaultInline1Radio" name="inlineDefaultRadiosExample">
+                        <label class="custom-control-label color-fusion-300" for="defaultInline1Radio" >แผนงานบุคลากรภาครัฐ</label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" class="custom-control-input" id="defaultInline2Radio" name="inlineDefaultRadiosExample" >
-                        <label class="custom-control-label color-fusion-300" for="defaultInline2Radio">Weaknesses</label>
+                        <input type="radio" class="custom-control-input" id="defaultInline2Radio" name="inlineDefaultRadiosExample" checked="">
+                        <label class="custom-control-label color-fusion-300" for="defaultInline2Radio">แผนงานยุทธศาสตร์</label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline">
                         <input type="radio" class="custom-control-input" id="defaultInline4Radio" name="inlineDefaultRadiosExample">
-                        <label class="custom-control-label color-fusion-300" for="defaultInline4Radio">Opportunities</label>
+                        <label class="custom-control-label color-fusion-300" for="defaultInline4Radio">แผนงานพื้นฐาน</label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline">
                         <input type="radio" class="custom-control-input" id="defaultInline3Radio" name="inlineDefaultRadiosExample" >
-                        <label class="custom-control-label color-fusion-300" for="defaultInline3Radio">Threats</label>
+                        <label class="custom-control-label color-fusion-300" for="defaultInline3Radio">แผนงานบูรณาการ</label>
                     </div>
                 </div>
               </div> 
               <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
                 <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="group_name_add">
-                  ประเด็น
+                  แผนงาน
                   <span class="text-danger stars"> * </span>
                 </label>
                 <input type="text" class="form-control form-ele clear-element" id="group_name_add" name="group_name_add" placeholder="แผนงาน" value="" >
