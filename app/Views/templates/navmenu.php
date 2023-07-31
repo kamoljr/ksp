@@ -87,6 +87,9 @@
 <script src="<?= base_url() . '/'; ?>js/validate.js"></script>
 <script src="<?= base_url() . '/'; ?>js/datetimepicker.js"></script>
 
+
+
+
 <script>
 	function createmenu() {
 		var str_select;

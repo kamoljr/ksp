@@ -5,7 +5,7 @@ class App_m extends Model
 {
 
     public function getapp($pages = ''){
-      $sql = "SELECT mom_id,app_id,url,app_name,description.description ,app.description_id ,description.description_en FROM app inner join description on app.description_id = description.description_id Where url = '".$pages."'";
+      $sql = "SELECT mom_id,app_id,url,app_name,app_name_des,description.description ,app.description_id ,description.description_en FROM app inner join description on app.description_id = description.description_id Where url = '".$pages."'";
       //echo $sql;
   		$query   = $this->db->query($sql);
   		$results = $query->getResultArray();

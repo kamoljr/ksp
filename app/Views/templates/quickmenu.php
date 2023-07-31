@@ -42,7 +42,15 @@
     <?
     }
     ?>
-    
+    <?
+    if ($pages == "wdproject"){ 
+    ?>
+    <a href="#" class="menu-item btn "  id  = "btn_quit_show_budget" title="แสดงเงินคงเหลือ" style = "background:#448ee0f5">
+        <i class="fa-solid fa-info"></i>
+    </a>
+    <?
+    }
+    ?>
     <!-- <a href="#" class="menu-item btn" data-action="app-voice" data-toggle="tooltip" data-placement="left"
         title="Voice command">
         <i class="fal fa-microphone"></i>

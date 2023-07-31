@@ -15,6 +15,7 @@ class Pages extends BaseController
 		$app_id = "";
 		$url = "";
 		$app_name = "";
+		$app_name_des = "";
 		$description = "";
 		$description_id = "";
 		$description_name = "";
@@ -32,6 +33,7 @@ class Pages extends BaseController
 			$app_id = $row['app_id'];
 			$url = $row['url'];
 			$app_name = $row['app_name'];
+			$app_name_des = $row['app_name_des'];
 			$description = $row['description'];
 			$description_id = $row['description_id'];
 			$description_en = $row['description_en'];
@@ -45,6 +47,7 @@ class Pages extends BaseController
 		$data['description'] = $description;
 		$data['description_id'] = $description_id;
 		$data['app_name'] = $app_name;
+		$data['app_name_des'] = $app_name_des;
 		$data['description_en'] = $description_en;
 		
 		//echo APPPATH.'/Views/'.$description_en.'/'.$pages.'/'.$pages.'.phpss';

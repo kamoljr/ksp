@@ -1,7 +1,7 @@
 <div class="row">
     <div class="col-sm">
         <h1 class="subheader-title color-primary-700">
-            <?=$app_name;?>
+            <?=$app_name_des;?>
         </h1>
     </div>
    
@@ -13,7 +13,7 @@
             <?if ($app_name != 'dashboard'){;?>
              <li class="breadcrumb-item" style = "text-overflow:clip;max-width:100%;"><?=$description;?></li>
             <? }?>
-            <li class="breadcrumb-item active" style = "text-overflow:clip;max-width:100%;"><?=$app_name;?></li>
+            <li class="breadcrumb-item active" style = "text-overflow:clip;max-width:100%;"><?=$app_name_des;?></li>
         </ol>
     </nav>
 </div>
