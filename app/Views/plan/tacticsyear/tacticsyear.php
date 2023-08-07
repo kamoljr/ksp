@@ -67,7 +67,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
     <div id="panel-1" class="panel">
       <div class="panel-container">
         <div class="panel-content" style="padding-top: 0px;">
-          <div class="frame-wrap mt-3 mb-0 w-100">
+          <!-- <div class="frame-wrap mt-3 mb-0 w-100">
             <button id="btnadd" type="button" class="btn btn-primary" data-toggle="modal"
             data-target=".default-example-modal-right" style="display: flex;">
               <span class="ni ni-big-plus fa-2x" style="padding-right:10px;">
@@ -76,7 +76,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 เพิ่ม
               </span>
             </button>
-          </div>
+          </div> -->
           <!-- datatable start -->
           <table id="dynamic-table" class="table table-md table-bordered table-hover table-striped w-100">
             <thead class="bg-primary-600">
@@ -87,8 +87,8 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   กลยุทธ์
                 </th>
                 
-                <th width="90">
-                </th>
+                <!-- <th width="90">
+                </th> -->
               </tr>
             </thead>
             <tbody>
@@ -100,7 +100,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   แผนงานบุคลากรเร่งพัฒนาระบบบริหารจัดการ ที่มีประสิทธิภาพโดยใช้เทคโนโลยีสารสนเทศที่เหมาะสม และมีธรรมาภิบาล	ภาครัฐ
                 </td>
                 
-                <td>
+                <!-- <td>
                   <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
                   mode='view'>
                     <i class="ni ni-eye">
@@ -118,7 +118,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                     <i class="ni ni-trash">
                     </i>
                   </a>
-                </td>
+                </td> -->
               </tr>
               <tr>
                 <td>
@@ -128,7 +128,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   ประสาน ส่งเสริม ศึกษาและวิจัยเกี่ยวกับการประกอบวิชาชีพและพัฒนาวิชาชีพ	
                 </td>
                 
-                <td>
+                <!-- <td>
                   <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
                   mode='view'>
                     <i class="ni ni-eye">
@@ -146,7 +146,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                     <i class="ni ni-trash">
                     </i>
                   </a>
-                </td>
+                </td> -->
               </tr>
              
               
@@ -183,7 +183,7 @@ $(document).ready(function() {
     processing: true,
     bPaginate: true,
     columnDefs: [{
-      targets: [2],
+      targets: [1],
       orderable: false,
     },
     {

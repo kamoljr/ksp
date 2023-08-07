@@ -49,6 +49,8 @@ class Pages extends BaseController
 		$data['app_name'] = $app_name;
 		$data['app_name_des'] = $app_name_des;
 		$data['description_en'] = $description_en;
+
+		$data['ip_apps'] = 'localhost';
 		
 		//echo APPPATH.'/Views/'.$description_en.'/'.$pages.'/'.$pages.'.phpss';
 		if (!is_file(APPPATH.'/Views/'.$description_en.'/'.$pages.'/'.$pages.'.php')){

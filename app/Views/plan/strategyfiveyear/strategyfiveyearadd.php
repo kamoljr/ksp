@@ -44,13 +44,13 @@
                 </label>
                 <textarea class="form-control" id="validationTextarea3" placeholder="" rows="1"></textarea>
               </div>
-              <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
+              <!-- <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
                 <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="group_name_add">
                   พันธกิจ(Mission)
                   <span class="text-danger stars"> * </span>
                 </label>
                 <textarea class="form-control" id="validationTextarea3" placeholder="" rows="1"></textarea>
-              </div>
+              </div> -->
               <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
                 <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="group_name_add">
                   ค่านิยม(Values)
@@ -58,13 +58,13 @@
                 </label>
                 <textarea class="form-control" id="validationTextarea3" placeholder="" rows="1"></textarea>
               </div> 
-              <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
+              <!-- <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
                 <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="group_name_add">
                   วัตถุประสงค์(objective)
                   <span class="text-danger stars"> * </span>
                 </label>
                 <textarea class="form-control" id="validationTextarea3" placeholder="" rows="1"></textarea>
-              </div> 
+              </div>  -->
               <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
                 <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="group_name_add">
                   ผลสัมฤทธิ์

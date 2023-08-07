@@ -31,11 +31,14 @@
     <link rel="icon" type="image/png" sizes="32x32" href="<?= base_url().'/';?>img/favicon/favicon-32x32.png">
     <link rel="mask-icon" href="<?= base_url().'/';?>img/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <link rel="stylesheet" media="screen, print" href="<?= base_url().'/';?>css/customstyle.css">
-    <link rel="stylesheet" media="screen, print" href="<?= base_url().'/';?>css/formplugins/select2/select2.bundle.css">
+    
     <link rel="stylesheet" media="screen, print" href="<?= base_url().'/';?>css/datagrid/datatables/datatables.bundle.css">
 
     <link rel="stylesheet" href="<?= base_url().'/';?>css/bootstrap-float-label.min.css" />
     
+    <link rel="stylesheet" media="screen, print" href="<?= base_url().'/';?>css/formplugins/select2/select2.bundle.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" /> -->
+
 
 </head>
 
@@ -90,6 +93,7 @@
     var resetSettings = function() {
         localStorage.setItem("themeSettings", "");
     }
+    
     </script>
     <!-- BEGIN Page Wrapper -->
     <div class="page-wrapper">
@@ -102,7 +106,7 @@
                         <img src="<?= base_url().'/';?>img/logo.png" alt="KSP WebApp" aria-roledescription="logo"
                             style='width:50px;'>
                         <span class="page-logo-text mr-1 kspname"
-                            style='font-size:20px !important;'>สำนักงานเลขาธิการคุรุสภา</span>
+                            style='font-size:14px !important;'>สำนักงานเลขาธิการคุรุสภา</span>
                         <!-- <span class="position-absolute text-white opacity-50 small pos-top pos-right mr-2 mt-n2"></span> -->
                         <!-- <i class="fal fa-angle-down d-inline-block ml-1 fs-lg color-primary-300"></i> -->
                     </a>
@@ -155,5 +159,7 @@
  color: #ff0000;
  font-weight: normal;
 }
+
+
 </style>
 

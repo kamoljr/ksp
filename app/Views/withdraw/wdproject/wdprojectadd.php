@@ -11,68 +11,209 @@
         <label  style = "padding-top:7px;">เพิ่มโครงสร้างค่าใช้จ่าย</label>
       </h5>
       <div id="panel-2" class="panel">
-        <div class="panel-container show">
-          <div class="panel-content">
+        <div class="panel-container show " style = "color:#666666;">
+          <div class="panel-content" style = "padding:8px;">
 
-            <div class="form-row dialog-data dialog-add-ind">
-              
-              <!-- <div class="alert alert-primary col-md-12 mb-12 div_show_rowid text-white " style = "padding:10px;margin-bottom:10px;background-color:rgb(223 180 90)">
-                <i class="ni ni-key"></i>
-                <span><label id = "lbl_rowid"></label></span> 
-              </div> -->
-              <div class="col-md-12 mb-12" style = "padding-bottom:15px;">
-                <label class="form-label color-fusion-500" style ="font-weight:550;" for="group_name_add">
-                    <h4>ประเภทงบ : งบดำเนินงาน<h4>
-                  <span class="text-danger stars">  </span>
-                </label>
-              </div> 
-              <div class="col-md-12 mb-12" style = "padding-bottom:15px;">
-                <label class="form-label color-fusion-500" style ="font-weight:550;" for="group_name_add">
-                    <h4>รายการขั้นก่อนหน้า : ค่าใช้สอย<h4>
-                  <span class="text-danger stars">  </span>
-                </label>
-              </div> 
-
-              <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
-                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;padding-bottom:5px;" for="group_name_add">
-                  รายการค่าใช้จ่าย
-                  <span class="text-danger stars"> * </span>
-                </label>
-                <input type="text" class="form-control form-ele clear-element" id="group_name_add" name="group_name_add" placeholder="ตัวชี้วัด" value="" >
-              </div> 
-              <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
-                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="group_name_add">
-                  หน่วยนับ
-                  <span class="text-danger stars"> * </span>
-                </label>
-                <input type="text" class="form-control form-ele clear-element" id="group_name_add" name="group_name_add" placeholder="แผนงาน" value="" >
-              </div> 
-              <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
-                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="group_name_add">
-                  สูตรคำนวณ
-                  <span class="text-danger stars"> * </span>
-                </label>
-                <input type="text" class="form-control form-ele clear-element" id="group_name_add" name="group_name_add" placeholder="แผนงาน" value="" >
-                
-                
-              </div> 
-
-              <div class="col-md-12 mb-12" style = "padding-bottom:0px;">
-                <label class="form-label color-fusion-500" style ="font-weight:550;" for="group_name_add">
-                    <h6><pre>สูตรคำนวณให้ใส่หน่วยของตัวคูณ โดยใช้เครื่องหมาย (,) คั่นแต่ละตัวคูณ เช่น คน,ช.ม.,วัน,บาท,ครั้ง
-- ถ้าต้องการสร้างตัวเลือกในสูตรให้ใส่เครื่องหมาย [] ครอบตัวเลข เช่น คน,ช.ม.,วัน,[100][120][150]บาท,ครั้ง</pre><h6>
-                 
-                </label>
-              </div> 
-
-
-
+            <div class="panel-content fourd-form-row-a" style = "">
+              <div class="form-row dialog-data " style = "padding-bottom:0px;">
+                <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:14px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    โครงการ
+                  </label>
+                </div>
+                <div class="col-md-10 mb-10" style="padding-bottom:0px;font-size:14px;margin-bottom:0px;">
+                  <label class="form-label" for="">
+                    งานอาคารสถานที่
+                  </label>
+                </div>
+              </div>
+            </div>
+           
+            <div class="panel-content fourd-form-row-b" >
+              <div class="form-row dialog-data ">
+                <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:14px;margin-bottom:0px !important;">
+                  <label class="form-label" for="">
+                    เงินคงเหลือ
+                  </label>
+                </div>
+                <div class="col-md-10 mb-10" style="padding-bottom:0px;font-size:14px;margin-bottom:0px;">
+                  <label class="form-label" for="">
+                    เงินงบประมาณ : 800,000.00 บาท : เงินนอกงบประมาณ : 500,000.00 บาท
+                  </label>
+                </div>
+              </div>
             </div>
 
+            <div class="panel-content fourd-form-row-a" >
+              <div class="form-row dialog-data " style = "padding-bottom:0px;">
+                <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:14px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    กิจกรรม
+                  </label>
+                </div>
+                <div class="col-md-10 mb-10" style="padding-bottom:0px;font-size:14px;margin-bottom:0px;">
+                  <select id="acc_add" name="acc_add" class="" placeholder="กิจกรรม" style = "">
+                    <option value="" selected>
+                      งานอาคารสถานที่
+                    </option>
+                    <option value="17">
+                      โครงการจัดหาครุภัณฑ์และปรับปรุงสิ่งก่อสร้าง
+                    </option>
+                    <option value="17">
+                      งานบริหารการพัสดุ
+                    </option>
+                    
+                  </select>
+                </div>
+              </div>
+            </div>
 
+            <div class="panel-content fourd-form-row-b" >
+              <div class="form-row dialog-data " style = "padding-bottom:0px;">
+                <div class="col-md-12 mb-12 text-center" style="padding-bottom:0px;font-weight:550;font-size:14px;margin-bottom:0px !important;font-weight:550;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    รายละเอียด ใบบันทึกการอนุมัติเบิกจ่ายเงิน
+                  </label>
+                </div>
+                
+              </div>
+            </div>
 
+            <div class="panel-content fourd-form-row-c" >
+              <div class="form-row dialog-data " style = "padding-bottom:0px;">
+                <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:14px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    ชื่อผู้รับเงิน
+                  </label>
+                </div>
+                <div class="col-md-4 mb-4" style="padding-top:5px;padding-bottom:0px;font-size:14px;margin-bottom:0px !important;">
+                  <input type="text" class="form-control form-ele clear-element" id="position_name" name="position_name" placeholder="ชื่อผู้รับเงิน" value="">
+                </div>
+            
+                <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:14px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    ตำแหน่งชื่อผู้รับเงิน
+                  </label>
+                </div>
+                <div class="col-md-4 mb-4" style="padding-top:5px;padding-bottom:0px;font-size:14px;margin-bottom:0px !important;">
+                  <input type="text" class="form-control form-ele clear-element" id="position_name" name="position_name" placeholder="ตำแหน่งชื่อผู้รับเงิน" value="">
+                </div>
+              </div>
+            </div>
 
+            <div class="panel-content fourd-form-row-b" >
+              <div class="form-row dialog-data " style = "padding-bottom:0px;">
+                <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:14px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    เรื่อง
+                  </label>
+                </div>
+                <div class="col-md-4 mb-4" style="padding-top:5px;padding-bottom:0px;font-size:14px;margin-bottom:0px !important;">
+                  <input type="text" class="form-control form-ele clear-element" id="position_name" name="position_name" placeholder="เรื่อง" value="">
+                </div>
+            
+                <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:14px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    เรียน
+                  </label>
+                </div>
+                <div class="col-md-4 mb-4" style="padding-top:5px;padding-bottom:0px;font-size:14px;margin-bottom:0px !important;">
+                  <input type="text" class="form-control form-ele clear-element" id="position_name" name="position_name" placeholder="เรียน" value="">
+                </div>
+              </div>
+            </div>
 
+            <div class="panel-content fourd-form-row-c" style = "line-height:85px;">
+              <div class="form-row dialog-data " style = "padding-bottom:0px;">
+                <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:14px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    รายละเอียด
+                  </label>
+                </div>
+                <div class="col-md-10 mb-10" style="padding-top:5px;padding-bottom:0px;font-size:14px;margin-bottom:0px !important;">
+                  <textarea class="form-control" id="example-textarea" rows="3"></textarea>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel-content fourd-form-row-b" >
+              <div class="form-row dialog-data " style = "padding-bottom:0px;">
+                <div class="col-md-12 mb-12 text-center" style="padding-bottom:0px;font-weight:550;font-size:14px;margin-bottom:0px !important;font-weight:550;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    รายการค่าใช้จ่าย
+                  </label>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="panel-content fourd-form-row-c" style = "background-color:#ecf2e0b0;">
+              <div class="form-row dialog-data " style = "padding-bottom:0px;">
+                <div class="col-md-3 mb-3" style="padding-bottom:0px;font-weight:550;font-size:14px;margin-bottom:0px !important;">
+                  <label class="form-label " style ="font-size:14px;" for="position_name">
+                  ประเภทงบ
+                  <span class="text-danger stars"> * </span> 
+                  </label>
+                  <select id="exp_type_add" name="exp_type_add" class="js-example-responsive" style = "100%" placeholder="ประเภทงบ">
+                    <option value="" selected>
+                      -
+                    </option>
+                    <option value="">
+                      งบดำเนินงาน
+                    </option>
+                    <option value="17">
+                      งบลงทุน
+                    </option>
+                    <option value="17">
+                      งบเงินอุดหนุน
+                    </option>
+                    <option value="17">
+                      งบรายจ่ายอื่น
+                    </option>
+                    
+                  </select>
+                </div>
+                <div class="col-md-3 mb-3" style="padding-bottom:0px;font-weight:550;font-size:14px;margin-bottom:0px !important;">
+                  <label class="form-label " style ="font-size:14px;" for="position_name">
+                  ค่าใช้จ่าย
+                  <span class="text-danger stars"> * </span> 
+                  </label>
+                  <select id="exp_add" name="exp_add" class="" placeholder="ค่าใช่้จ่าย">
+                    <option value="" selected>
+                      -
+                    </option>
+                    <option value="">
+                      เงินสมนาคุณที่ปรึกษา
+                    </option>
+                    <option value="17">
+                      ค่าเบี้ยประชุม
+                    </option>
+                    <option value="17">
+                      ค่าเบี้ยประชุมคณะกรรมการ
+                    </option>
+                  </select>
+                </div>
+                
+                <div class="col-md-3 mb-3" style="padding-top:5px;padding-bottom:0px;font-size:14px;margin-bottom:0px !important;">
+                  <label class="form-label " style ="font-size:14px;" for="position_name">
+                  รายละเอียด
+                  <span class="text-danger stars"> * </span>
+                  </label>
+                  <textarea class="form-control" id="example-textarea" rows="1"></textarea>
+                </div>
+
+                <div class="col-md-3 mb-3" style="padding-top:5px;padding-bottom:0px;font-size:14px;margin-bottom:0px !important;">
+                  <label class="form-label " style ="font-size:14px;" for="position_name">
+                  จำนวนเงิน(บาท)
+                  <span class="text-danger stars"> * </span>
+                  </label>
+                  <input type="text" class="form-control form-ele clear-element" id="position_name" name="position_name" placeholder="จำนวนเงิน(บาท)" value="">
+                </div>
+            
+                
+              </div>
+            </div>
+            <div id = "addexpend"></div >
 
 
 

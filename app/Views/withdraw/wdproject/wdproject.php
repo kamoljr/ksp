@@ -76,7 +76,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                       </select>
                     </div>
                     <div class="col-sm-3">
-                      <label class="form-label" for="act_search">
+                      <label class="form-label" for="act_search" style = "display:block;">
                         กิจกรรม
                       </label>
                       <select id="act_search" name="act_search" class="select2"
@@ -98,7 +98,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                       </select>
                     </div>
                     <div class="col-sm-2">
-                      <label class="form-label" for="type_search">
+                      <label class="form-label" for="type_search" style = "display:block;">
                         ประเภท
                       </label>
                       <select id="type_search" name="act_search" class="select2"
@@ -154,7 +154,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
         <div class="panel-content" style="padding-top: 0px;">
           <div class="frame-wrap mt-3 mb-0 w-100">
           
-            <div class="frame-wrap mt-3 mb-0 w-100" style="padding-bottom:16px;">
+            <div class="frame-wrap mt-3 mb-0 w-100" style="padding-bottom:0px;">
             <button id="btnadd" type="button" class="btn btn-primary" data-toggle="modal"
             data-target=".default-example-modal-right" style="display: flex;">
               <span class="ni ni-big-plus fa-2x" style="padding-right:10px;">
@@ -213,16 +213,15 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
           <!-- <div class="panel-tag" style = "padding-top:20px;margin-bottom:0px;font-size:12px;">
           
           </div> -->
-          <div class="alert alert-warning" id='searchresults' name='searchresults'
+          <!-- <div class="alert alert-warning" id='searchresults' name='searchresults'
           style="font-size:14px;font-weight:500;margin-bottom: 15px;color:#f8f6f1;background-color:#7cb1ecf5;border-color:#e5eaf0;width:50%;display:inline;">
             เงินงบประมาณ : 1,000,000.00 บาท คงเหลือ : 800,000.00 บาท 
           </div>
           <div class="alert alert-warning" id='searchresults' name='searchresults'
           style="font-size:14px;font-weight:500;padding-right:24px;margin-bottom: 15px;color:#f8f6f1;background-color:#95d097fa;border-color:#e5eaf0;width:50%;display:inline;">
             เงินนอกงบประมาณ : 500,000.00 บาท คงเหลือ : 500,000.00 บาท 
-          </div>
+          </div> -->
 
-          
           <!-- datatable start -->
           <table id="dynamic-table" class="table table-md table-bordered table-hover table-striped w-100">
             <thead class="bg-primary-600">
@@ -829,11 +828,23 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                  
                   <div class="card mb-g">
                       <div class="card-body p-3">
-                          <!-- <h5 class="text-primary">
-                              จำนวนเงินงบประมาณ
+                          <h5 class="text-primary text-center" style = "margin-bottom:0px;">
+                              เงินในงบประมาณ
                              
-                          </h5> -->
-                           <div class="row" style = "padding:5px;">
+                          </h5>
+                            <div class="row" style = "padding-top:10px;padding-left:0px;padding-right:0px;padding-bottom:5px;">
+                                <!-- <span class="width-1 height-1 rounded-circle d-block" style = "padding:0px;margin-left:0px;margin-top:0px;margin-bottom:0px;margin-right:0px; background-color:#ffffff;"></span> -->
+                                <div class="col" style = "padding-top:0px;">
+                                
+                                    อนุมัติ (บาท)
+                                </div>
+                                
+                                <div class="col text-right" style = "padding-top:0px;">
+                                
+                                    1,000,000.00
+                                </div>
+                            </div>
+                            <div class="row" style = "padding:5px;">
                                 <div class="col text-primary text-center" style = "font-size:15px;">
                                     เงินงบประมาณคงเหลือ
                                 </div>
@@ -845,6 +856,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                           </div>
                           <div class="fw-300 mb-3">
                             
+                              
                               <div class="row" style = "padding:5px;">
                                   <span class="width-1 height-1 rounded-circle d-block" style = "padding:0px;margin-left:0px;margin-top:0px;margin-bottom:0px;margin-right:0px; background-color:#2196f3;"></span>
                                   <div class="col" style = "padding-top:5px;">
@@ -1003,10 +1015,23 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
 
                   <div class="card mb-g">
                       <div class="card-body p-3">
-                          <!-- <h5 class="text-primary">
-                              จำนวนเงินงบประมาณ
+                          <h5 class=" text-center" style = "margin-bottom:0px;color:#f37db4;">
+                              เงินนอกงบประมาณ
                              
-                          </h5> -->
+                          </h5>
+                            <div class="row" style = "padding-top:10px;padding-left:0px;padding-right:0px;padding-bottom:5px;">
+                                <!-- <span class="width-1 height-1 rounded-circle d-block" style = "padding:0px;margin-left:0px;margin-top:0px;margin-bottom:0px;margin-right:0px; background-color:#ffffff;"></span> -->
+                                <div class="col" style = "padding-top:0px;">
+                                
+                                    อนุมัติ (บาท)
+                                </div>
+                                
+                                <div class="col text-right" style = "padding-top:0px;">
+                                
+                                    1,000,000.00
+                                </div>
+                            </div>
+
                            <div class="row" style = "padding:5px;">
                                 <div class="col text-center" style = "font-size:15px;color:#f37db4;">
                                     เงินนอกงบประมาณคงเหลือ
@@ -1081,7 +1106,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                                 </div>
                                 
                             </div>
-                            <div class="row">
+                            <div class="row" style = "border:1px;">
                               <div class = "col-sm-4" style = "padding:5px; ">
                                 
                               </div>
@@ -1111,7 +1136,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                               5px;font-size:12px; ">
                                 200,000
                               </div>
-                              <div class = "col-sm-4 text-right" style = "padding:5px;font-size:12px; ">
+                                <div class = "col-sm-4 text-right" style = "padding:5px;font-size:12px; ">
                                 100,000
                               </div>
                             </div>
@@ -1176,6 +1201,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
 </div>
 <!-- ----------------- -->
 <style>
+  
   table.dataTable td {
     padding-left: 2px;
     padding-right: 2px;
@@ -1195,7 +1221,39 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
 
 
 
-
+  .fourd-form-row-a{
+    background-color:#8f73deb0;
+    padding-left:10px !important;
+    padding-right:5px !important;
+    padding-top:0px !important;
+    padding-bottom:0px !important;
+    border-radius: 5px !important;
+    vertical-align: middle;
+    line-height: 48px;
+    color:#000;
+  }
+  .fourd-form-row-b{
+    background-color:#fff;
+    padding-left:10px !important;
+    padding-right:5px !important;
+    padding-top:0px !important;
+    padding-bottom:0px !important;
+    border-radius: 5px !important;
+    vertical-align: middle;
+    line-height: 48px;
+    color:#000;
+  }
+  .fourd-form-row-c{
+    background-color:#f2ecde;
+    padding-left:10px !important;
+    padding-right:5px !important;
+    padding-top:0px !important;
+    padding-bottom:0px !important;
+    border-radius: 5px !important;
+    vertical-align: middle;
+    line-height: 48px;
+    color:#000;
+  }
 
 
 </style>
@@ -1204,7 +1262,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
 
 <script>
 function renderChart() {
-  console.log('xxxx');
+
   Chart.pluginService.register({
       beforeDraw: function (chart) {
           var width = chart.chart.width,
@@ -1378,15 +1436,33 @@ function renderChartout() {
   });
 }
 
-
-
-  
 $(document).ready(function() {
 
   $(".select2").select2();
-  $('#unit_name_add').select2({
-    dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
+ 
+
+  $(document).ready(function() {
+    $('#acc_add').select2({
+      dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
+     
+        
+    });
+   
   });
+  
+  $(document).ready(function() {
+    $('#exp_add').select2({
+      dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
+    });
+  });
+
+  $(document).ready(function() {
+    $('#exp_type_add').select2({
+      dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
+    });
+  });
+  
+  
 
   var table = $("#dynamic-table").DataTable({
     orderCellsTop: true,
@@ -1446,7 +1522,10 @@ $(document).ready(function() {
 
   });
 
+  
+
   $(document).on('click', '#btn_dialog_close',
+
   function() {
     $('.default-example-modal-right').modal('toggle');
   });
@@ -1462,6 +1541,73 @@ $(document).ready(function() {
    });
 
 });
+ii = 1;
+$(document).on('change', '#exp_type_add',
+  function() {
+    ii++;
+  strtxt = `<div class="panel-content fourd-form-row-c" style = "background-color:#ecf2e0b0;">
+              <div class="form-row dialog-data " style = "padding-bottom:0px;">
+                <div class="col-md-3 mb-3" style="padding-bottom:0px;font-weight:550;font-size:14px;margin-bottom:0px !important;">
+                
+                  <select id="exp_type_add${ii}" name="exp_type_add1" class="selectdialog" placeholder="ประเภทงบ">
+                    <option value="" selected>
+                      -
+                    </option>
+                    <option value="">
+                      งบดำเนินงาน
+                    </option>
+                    <option value="17">
+                      งบลงทุน
+                    </option>
+                    <option value="17">
+                      งบเงินอุดหนุน
+                    </option>
+                    <option value="17">
+                      งบรายจ่ายอื่น
+                    </option>
+                    
+                  </select>
+                </div>
+                <div class="col-md-3 mb-3" style="padding-bottom:0px;font-weight:550;font-size:14px;margin-bottom:0px !important;">
+                 
+                  <select id="exp_add" name="exp_add" class="selectdialog" placeholder="ค่าใช่้จ่าย">
+                    <option value="" selected>
+                      -
+                    </option>
+                    <option value="">
+                      เงินสมนาคุณที่ปรึกษา
+                    </option>
+                    <option value="17">
+                      ค่าเบี้ยประชุม
+                    </option>
+                    <option value="17">
+                      ค่าเบี้ยประชุมคณะกรรมการ
+                    </option>
+                  </select>
+                </div>
+                
+                <div class="col-md-3 mb-3" style="padding-top:5px;padding-bottom:0px;font-size:14px;margin-bottom:0px !important;">
+                 
+                  <textarea class="form-control" id="example-textarea" rows="1"></textarea>
+                </div>
 
+                <div class="col-md-3 mb-3" style="padding-top:5px;padding-bottom:0px;font-size:14px;margin-bottom:0px !important;">
+                 
+                  <input type="text" class="form-control form-ele clear-element" id="position_name" name="position_name" placeholder="จำนวนเงิน(บาท)" value="">
+                </div>
+            
+                
+              </div>
+            </div>`
+    $("#addexpend").append(strtxt);
+     
+    $(document).ready(function() {
+      $('.selectdialog').select2({
+        dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
+      });
+    });
 
+   
+
+});
 </script>

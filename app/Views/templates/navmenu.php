@@ -83,10 +83,13 @@
 <script src="<?= base_url() . '/'; ?>js/vendors.bundle.js"></script>
 <script src="<?= base_url() . '/'; ?>js/app.bundle.js"></script>
 <script src="<?= base_url() . '/'; ?>js/datagrid/datatables/datatables.bundle.js"></script>
-<script src="<?= base_url() . '/'; ?>js/formplugins/select2/select2.bundle.js"></script>
+
 <script src="<?= base_url() . '/'; ?>js/validate.js"></script>
 <script src="<?= base_url() . '/'; ?>js/datetimepicker.js"></script>
 
+
+<script src="<?= base_url() . '/'; ?>js/formplugins/select2/select2.bundle.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script> -->
 
 
 

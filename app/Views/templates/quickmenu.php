@@ -51,6 +51,15 @@
     <?
     }
     ?>
+    <?
+    if ($pages == "projectconfirm"){ 
+    ?>
+    <a href="#" class="menu-item btn "  id  = "btn_show_status_of_project" title="แสดงจำนวนโครงการตามสถานะ" style = "background:#448ee0f5">
+        <i class="fa-solid fa-info"></i>
+    </a>
+    <?
+    }
+    ?>
     <!-- <a href="#" class="menu-item btn" data-action="app-voice" data-toggle="tooltip" data-placement="left"
         title="Voice command">
         <i class="fal fa-microphone"></i>

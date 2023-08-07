@@ -42,7 +42,7 @@
                   วิสัยทัศน์(Vision)
                   <span class="text-danger stars"> * </span>
                 </label>
-                <textarea class="form-control" id="validationTextarea3" placeholder="" rows="1"></textarea>
+                <textarea class="form-control" id="validationTextarea3" placeholder="" rows="1"> ดึงข้อมูลวิสัยทัศน์ของแผน 5 ปีมาใส่</textarea>
               </div>
               
               <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
@@ -50,7 +50,7 @@
                   ค่านิยม(Values)
                   <span class="text-danger stars"> * </span>
                 </label>
-                <textarea class="form-control" id="validationTextarea3" placeholder="" rows="1"></textarea>
+                <textarea class="form-control" id="validationTextarea3" placeholder="" rows="1">ดึงข้อมูลค่านิยมของแผน 5 ปีมาใส่</textarea>
               </div> 
               <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
                 <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="group_name_add">
@@ -71,14 +71,14 @@
                   ผลสัมฤทธิ์และประโยชน์ที่คาดว่าจะได้รับ
                   <span class="text-danger stars"> * </span>
                 </label>
-                <textarea class="form-control" id="validationTextarea3" placeholder="" rows="1"></textarea>
+                <textarea class="form-control" id="validationTextarea3" placeholder="" rows="1">ดึงข้อมูลผลสัมฤทธิ์ของแผน 5 ปีมาใส่</textarea>
               </div> 
               <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
                 <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="group_name_add">
                   ตัวชี้วัดผลสัมฤทธิ์
                   <span class="text-danger stars"> * </span>
                 </label>
-                <textarea class="form-control" id="validationTextarea3" placeholder="" rows="1"></textarea>
+                <textarea class="form-control" id="validationTextarea3" placeholder="" rows="1">ดึงข้อมูลตัวชี้วัดผลสัมฤทธิ์ของแผน 5 ปีมาใส่</textarea>
               </div> 
               
               <!-- <div class="col-md-12 mb-12" style = "padding-bottom:25px;">

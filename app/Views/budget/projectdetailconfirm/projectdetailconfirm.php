@@ -77,14 +77,14 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                                                            
                                                             <!-- <i class="fa-solid fa-check"></i> -->
                                                             <!-- <span class="hidden-sm-down ml-1"> งบรายจ่าย</span> -->
-                                                            &nbsp;&nbsp;&nbsp;
+                                                            <i class="fa-solid fa-xmark"></i>
                                                             <span class="hidden-sm-down ml-1"> ตรวจสอบและเปลี่ยนสถานะ</span>
                                                         </a>
                                                         <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-10" role="tab" aria-controls="v-pills-settings" aria-selected="false">
                                                            
                                                             <!-- <i class="fa-solid fa-check"></i> -->
                                                             <!-- <span class="hidden-sm-down ml-1"> งบรายจ่าย</span> -->
-                                                            &nbsp;&nbsp;&nbsp;
+                                                            <i class="fa-solid fa-xmark"></i>
                                                             <span class="hidden-sm-down ml-1"> แหล่งเงินงบประมาณ</span>
                                                         </a>
                                                       
@@ -92,7 +92,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                                                            
                                                             <!-- <i class="fa-solid fa-check"></i> -->
                                                             <!-- <span class="hidden-sm-down ml-1"> งบรายจ่าย</span> -->
-                                                            &nbsp;&nbsp;&nbsp;
+                                                            <i class="fa-solid fa-xmark"></i>
                                                             <span class="hidden-sm-down ml-1"> เบิกพลางก่อน</span>
                                                         </a>
                                                         
@@ -172,6 +172,8 @@ a:hover {
 a:active {
   color: white;
 } */
+
+
 </style>
 
 
@@ -188,7 +190,9 @@ a:active {
 <script src="<?= base_url().'/';?>js/budget/<?=$pages;?>.js"></script>
 <script>
     
+    
 $(document).ready(function() {
+  
   $(".select2").select2();
   $('#unit_name_add').select2({
     dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
@@ -367,4 +371,47 @@ $(function(){
     //     closeOnDateSelect:true,
     // });       
 });
+
+$('#slide-range').on('input',function () {
+  
+  var newVal = $(this).val();
+
+  $("#input-Amount").val(newVal);
+});
+$('#input-Amount').on('input', function(){
+  //console.log($(this).val())
+  $('#slide-range').val($(this).val())
+});
 </script>
+
+<style>
+  input[type="range"]::-moz-range-progress {
+  height:10px;
+  border-radius:8px;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(1, #A90F00),
+    color-stop(1, #E2E2E2)
+  );
+  background-color: #43e5f7; 
+  outline:none;
+  border:0;
+}
+input[type="range"]::-moz-range-track {  
+  height:10px;
+  border-radius:8px;
+  background-color: #D3D3D3;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(1, #D3D3D3),
+    color-stop(1, #D3D3D3)
+  );
+  outline:none;
+  border:0;
+  
+}
+</style>

@@ -163,43 +163,43 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
               </span>
             </button>
           </div> -->
-          <!-- <div class = "row">
-            <div class = "col-xl-6" style = "margin-left:260px;">
+          <div class = "row" id = "divcolorstatus">
+            <div class = "col-xl-8" style = "margin-left:260px;padding-top:15px;">
               <div class="row">
                 <div class="col-xl-2 custom-control-inline text-center" style = "padding:0px;margin:0px;">
                   <div class="custom-control custom-checkbox d-block" style = "padding:0px;margin:0px;">
                       <span class="width-1 height-1 rounded-circle d-block bg-secondary" style = "padding:0px;margin-left:30px;margin-top:0px;margin-bottom:0px;margin-right:0px;"></span>
-                      <small>ระหว่างดำเนินการ</small>
+                      <small>ระหว่างดำเนินการ(4)</small>
                   </div>
                 </div>
                 <div class="col-sm-2 custom-control-inline text-center" style = "padding:0px;margin:0px;">
                   <div class="custom-control custom-checkbox d-block" style = "padding:0px;margin:0px;">
                       <span class="width-1 height-1 rounded-circle d-block bg-warning" style = "padding:0px;margin-left:24px;margin-top:0px;margin-bottom:0px;margin-right:0px;"></span>
-                      <small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ส่งกลับ</small>
+                      <small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ส่งกลับ(2)</small>
                   </div>
                 </div>
                 <div class="col-sm-2 custom-control-inline text-center" style = "padding:0px;margin:0px;">
                   <div class="custom-control custom-checkbox d-block" style = "padding:0px;margin:0px;">
                       <span class="width-1 height-1 rounded-circle d-block bg-primary" style = "padding:0px;margin-left:15px;margin-top:0px;margin-bottom:0px;margin-right:0px;"></span>
-                      <small>ส่งโครงการ</small>
+                      <small>ส่งโครงการ(3)</small>
                   </div>
                 </div>
                 <div class="col-sm-2 custom-control-inline text-center" style = "padding:0px;margin:0px;">
                   <div class="custom-control custom-checkbox d-block" style = "padding:0px;margin:0px;">
                       <span class="width-1 height-1 rounded-circle d-block bg-info" style = "padding:0px;margin-left:23px;margin-top:0px;margin-bottom:0px;margin-right:0px;"></span>
-                      <small>ล๊อค ตรวจสอบ</small>
+                      <small>ล๊อค ตรวจสอบ(20)</small>
                   </div>
                 </div>
                 <div class="col-sm-2 custom-control-inline text-center" style = "padding:0px;margin:0px;">
                   <div class="custom-control custom-checkbox d-block" style = "padding:0px;margin:0px;">
                       <span class="width-1 height-1 rounded-circle d-block bg-success" style = "padding:0px;margin-left:20px;margin-top:0px;margin-bottom:0px;margin-right:0px;"></span>
-                      <small>ล๊อค เบิกจ่าย</small>
+                      <small>ล๊อค เบิกจ่าย(5)</small>
                   </div>
                 </div>
                 <div class="col-sm-2 custom-control-inline text-center" style = "padding:0px;margin:0px;">
                   <div class="custom-control custom-checkbox d-block" style = "padding:0px;margin:0px;">
                       <span class="width-1 height-1 rounded-circle d-block bg-danger" style = "padding:0px;margin-left:15px;margin-top:0px;margin-bottom:0px;margin-right:0px;"></span>
-                      <small>ปิดโครงการ</small>
+                      <small>ปิดโครงการ(0)</small>
                   </div>
                 </div>
                 
@@ -207,7 +207,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
               </div>
 
             </div>
-          </div> -->
+          </div>
 
           <!-- datatable start -->
           <table id="dynamic-table" class="table table-md table-bordered table-hover table-striped w-100">
@@ -223,6 +223,9 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 </th>
                 <th width = "100px;"class="text-center">
                   สถานะ
+                </th>
+                <th width = "100px;"class="text-center">
+                  ปิดโครงการ
                 </th>
                 <th width = "60px;"class="text-center">
                   ไปยัง
@@ -248,6 +251,12 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                  <div class="custom-control custom-checkbox d-block bg-warning-500" style = "padding-left:0px;padding-right:0px;margin:0px;padding-bottom:0px;padding-top:4px;">
                       <!-- <span class="width-1 height-1 rounded-circle d-block bg-secondary" style = "padding:0px;margin-left:20px;margin-top:0px;margin-bottom:0px;margin-right:0px;"></span> -->
                       <label ><small class= "">ส่งโครงการ</small></label>
+                  </div>
+                </td>
+                <td>
+                <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                      <label class="custom-control-label" for="customSwitch1"></label>
                   </div>
                 </td>
                 <td>
@@ -301,6 +310,12 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   </div>
                 </td>
                 <td>
+                <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input" id="customSwitch2" checked="">
+                      <label class="custom-control-label" for="customSwitch2"></label>
+                  </div>
+                </td>
+                <td>
                   <button type="button" class="btn btn-xs btn-primary" onclick="window.location='projectactconfirmconfirm';">กิจกรรม</button>
                 </td>
                
@@ -351,6 +366,13 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   </div>
                 </td>
                 <td>
+                  <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input" id="customSwitch3">
+                      <label class="custom-control-label" for="customSwitch3"></label>
+                  </div>
+                </td>
+                </td>
+                <td>
                   <button type="button" class="btn btn-xs btn-primary" onclick="window.location='projectactconfirm';">กิจกรรม</button>
                 </td>
                
@@ -399,6 +421,13 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                       <!-- <span class="width-1 height-1 rounded-circle d-block bg-secondary" style = "padding:0px;margin-left:20px;margin-top:0px;margin-bottom:0px;margin-right:0px;"></span> -->
                       <label ><small class= "">ระหว่างดำเนินการ</small></label>
                   </div>
+                </td>
+                <td>
+                <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input" id="customSwitch2">
+                      <label class="custom-control-label" for="customSwitch2"></label>
+                  </div>
+                </td>
                 </td>
                 <td>
                   <button type="button" class="btn btn-xs btn-primary" onclick="window.location='projectactconfirm';">กิจกรรม</button>
@@ -455,6 +484,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
 <script>
     
 $(document).ready(function() {
+  $("#divcolorstatus").hide();
   $(".select2").select2();
   $('#unit_name_add').select2({
     dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
@@ -470,11 +500,11 @@ $(document).ready(function() {
     processing: true,
     bPaginate: true,
     columnDefs: [{
-      targets: [3,4,5,6],
+      targets: [3,4,5,6,7],
       orderable: false,
     },
     {
-      targets: [0,3],
+      targets: [0,3,4],
       className: "text-center",
     },
     {
@@ -516,6 +546,12 @@ $(document).ready(function() {
   function() {
     $('.default-example-modal-right').modal('toggle');
   });
+
+  $(document).on('click', '#btn_show_status_of_project',
+  function() {
+    $("#divcolorstatus").show();// ปุ่มแสดงสีสถานะ
+  });
+
 });
 
 </script>

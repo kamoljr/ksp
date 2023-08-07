@@ -63,14 +63,14 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                                                         <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-7" role="tab" aria-controls="v-pills-settings" aria-selected="false">
                                                             
                                                             <!-- <i class="fa-solid fa-check"></i> -->
-                                                            &nbsp;&nbsp;&nbsp;
+                                                            <i class="fa-solid fa-xmark"></i>
                                                             <span class="hidden-sm-down ml-1"> งบรายจ่าย</span>
                                                         </a>
                                                         <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-8" role="tab" aria-controls="v-pills-settings" aria-selected="false">
                                                            
                                                             <!-- <i class="fa-solid fa-check"></i> -->
                                                             <!-- <span class="hidden-sm-down ml-1"> งบรายจ่าย</span> -->
-                                                            &nbsp;&nbsp;&nbsp;
+                                                            <i class="fa-solid fa-xmark"></i>
                                                             <span class="hidden-sm-down ml-1"> ส่งโครงการ</span>
                                                         </a>
                                                     </div>

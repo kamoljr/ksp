@@ -56,6 +56,21 @@
               </div> 
 
               <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
+                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;display:block;" for="group_name_add">
+                  เบิกได้ไม่เกิน
+                  <span class="text-danger stars"> * </span>
+                </label>
+
+
+                <input id="slide-range" class = "" type="range" min="0" max="1200000" step="1" value="1200000" style = "width:60%;">
+                <div class="input-amount">
+                  <input id="input-Amount" class = "form-control" name="price" value="1200000" style = "width:30%;display:inline;">
+                  <span class="unit">บาท</span>
+                </div>
+
+              </div>
+
+              <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
                 <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="group_name_add">
                   รายละเอียด
                   <span class="text-danger stars"> * </span>

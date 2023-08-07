@@ -32,13 +32,38 @@
                   <h4>แผนงาน : แผนงานพื้นฐาน</h4>
                 </label>
               </div> 
-              
+              <div class="col-md-12 mb-12" style = "padding-bottom:25px;padding-left:10px;padding-right:10px;">
+                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="unit_name_add">
+                  เชื่อมพันธกิจแผน 5 ปี 
+                  <span class="text-danger stars"> * </span>
+                </label>
+                <select id="unit_name_add" name="unit_name_add" class="select2" placeholder="ส่วนงาน">
+                  
+                    <option value="17">
+                          พัฒนามาตรฐานวิชาชีพและกํากับดูแลการประกอบวิชาชีพ
+                        </option>
+                        <option value="17">
+                        	พัฒนาวิชาชีพและส่งเสริมครูและบุคลากรทางการศึกษาให้มีคุณภาพตามมาตรฐานวิชาชีพ
+                        </option>
+                        <option value="17">
+                        	ประสานส่งเสริมการศึกษาและวิจัยเกี่ยวกับการประกอบวิชาชีพ
+                        </option>
+                        <option value="17">
+                        	พัฒนาระบบบริหารจัดการโดยใช้เทคโนโลยีที่เหมาะสม
+                        </option>
+                </select>
+              </div> 
+              <div class="col-md-12 mb-12" style = "padding-bottom:10px;padding-right:10px;">
+                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;"  for="unit_name_add">
+                  วัตถุประสงค์ : ข้อมูลวัตถุประสงค์ของพันธกิจแผน 5 ปี 
+                </label>
+              </div> 
               <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
                 <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="group_name_add">
                   พันธกิจ
                   <span class="text-danger stars"> * </span>
                 </label>
-                <input type="text" class="form-control form-ele clear-element" id="group_name_add" name="group_name_add" placeholder="พันธกิจ" value="" >
+                <input type="text" class="form-control form-ele clear-element" id="group_name_add" name="group_name_add" placeholder="พัฒนามาตรฐานวิชาชีพและกํากับดูแลการประกอบวิชาชีพ" value="พัฒนามาตรฐานวิชาชีพและกํากับดูแลการประกอบวิชาชีพ" >
               </div> 
               <!-- <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
                 <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="tel_add">

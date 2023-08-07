@@ -20,20 +20,33 @@
                 <i class="ni ni-key"></i>
                 <span><label id = "lbl_rowid"></label></span> 
               </div> -->
-              <div class="col-md-12 mb-12" style = "padding-bottom:15px;">
-                <label class="form-label color-fusion-500" style ="font-weight:550;" for="group_name_add">
-                    <h4>ปีงบประมาณ : 2565<h4>
-                  <span class="text-danger stars">  </span>
-                </label>
-                <!-- <input type="text" class="form-control form-ele clear-element" id="group_name_add" name="group_name_add" placeholder="แผนงาน" value="" > -->
-              </div> 
-              <div class="col-md-12 mb-12" style = "padding-bottom:15px;">
+             <div class="col-md-12 mb-12" style = "padding-bottom:15px;">
                 <label class="form-label color-fusion-500" style ="font-weight:550;" for="group_name_add">
                     <h4>ส่วนงาน/กลุ่มงาน : สำนักนโยบายและแผน/กลุ่มแผนและงบประมาณ<h4>
                   <span class="text-danger stars">  </span>
                 </label>
                 <!-- <input type="text" class="form-control form-ele clear-element" id="group_name_add" name="group_name_add" placeholder="แผนงาน" value="" > -->
               </div> 
+              <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
+                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;padding-bottom:5px;" for="group_name_add">
+                  ปีงบประมาณ
+                  <span class="text-danger stars"> * </span>
+                </label>
+                <select id="year_add" name="project_add" class=""
+                      placeholder="โครงการ">
+                        <option value="">
+                          2566
+                        </option>
+                        <option value="17">
+                          2565     
+                        </option>
+                        <option value="17">
+                          2564     
+                        </option>
+                        
+                      </select>
+              </div> 
+              
               <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
                 <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;padding-bottom:5px;" for="group_name_add">
                   โครงการ

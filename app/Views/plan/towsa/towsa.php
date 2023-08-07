@@ -113,8 +113,9 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
           </div><br>
           <table style = "width:100%;padding-top:30px !importantl;" class = "myFormat">
             <tr>
+             
               <td style = "padding:0px;width:30%;vertical-align: top;"><br><br><br><br><br><br>
-                <img src="http://localhost/public//img/bgplanreport.png" alt="KSP WebApp" aria-roledescription="logo" style="width:100%;height:100%;">
+                <img src="http://<?=$ip_apps?>/public//img/bgplanreport.png" alt="KSP WebApp" aria-roledescription="logo" style="width:100%;height:100%;">
               </td>
               <td style = "padding:0px;vertical-align: top;">
                 

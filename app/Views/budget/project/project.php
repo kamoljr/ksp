@@ -400,6 +400,9 @@ $(document).ready(function() {
   $('#project_add').select2({
     dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
   });
+  $('#year_add').select2({
+    dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
+  });
 
   var table = $("#dynamic-table").DataTable({
     orderCellsTop: true,
