@@ -32,7 +32,7 @@
               </div>  -->
               <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
                 <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;padding-bottom:5px;" for="group_name_add">
-                  ประเภทแผนงาน
+                  แผนงาน
                   <span class="text-danger stars"> * </span>
                 </label>
                 <div class="frame-wrap">
@@ -56,10 +56,10 @@
               </div> 
               <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
                 <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="group_name_add">
-                  แผนงาน
+                  ด้าน
                   <span class="text-danger stars"> * </span>
                 </label>
-                <input type="text" class="form-control form-ele clear-element" id="group_name_add" name="group_name_add" placeholder="แผนงาน" value="" >
+                <input type="text" class="form-control form-ele clear-element" id="group_name_add" name="group_name_add" placeholder="ด้าน" value="" >
               </div> 
               <!-- <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
                 <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="tel_add">

@@ -31,7 +31,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <form action="<?=$actual_link?>" method="post" accept-charset="utf-8"
                 id="form-search" name="form-search">
                   <div class="row">
-                    <div class="col-sm-6">
+                    <div class="col-sm-2">
                       <label class="form-label" for="unit_name_search">
                         ปีงบประมาณ
                       </label>
@@ -46,7 +46,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                         
                       </select>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-5">
                       <label class="form-label" for="unit_name_search">
                         แผนงาน
                       </label>
@@ -61,6 +61,19 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                         <option value="17" selected>
                           แผนงานพื้นฐาน
                         </option>
+                        
+                      </select>
+                    </div>
+                    <div class="col-sm-5">
+                      <label class="form-label" for="unit_name_search">
+                        ด้าน
+                      </label>
+                      <select id="plan_search1" name="plan_search1" class="select2"
+                      placeholder="แผนงาน">
+                        <option value="">
+                          ด้านการพัฒนาและเสริมสร้างศักยภาพทรัพยากรมนุษย์
+                        </option>
+                       
                         
                       </select>
                     </div>
@@ -104,6 +117,9 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <th class="text-center">
                   พันธกิจ
                 </th>
+                <th class="text-center">
+                  วัตถุประสงค์
+                </th>
                
                
                 <th width="90">
@@ -117,6 +133,9 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 </td>
                 <td>
                   พัฒนามาตรฐานวิชาชีพและกํากับดูแลการประกอบวิชาชีพ
+                </td>
+                <td>
+                  
                 </td>
                
               
@@ -148,7 +167,9 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <td>
                   พัฒนาวิชาชีพและส่งเสริมครูและบุคลากรทางการศึกษาให้มีคุณภาพตามมาตรฐานวิชาชีพ
                 </td>
-             
+             <td>
+                  
+                </td>
                 
                 <td>
                   <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
@@ -177,7 +198,9 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <td>
                   ประสานส่งเสริมการศึกษาและวิจัยเกี่ยวกับการประกอบวิชาชีพ
                 </td>
-               
+               <td>
+                  
+                </td>
               
                
                 <td>
@@ -208,7 +231,9 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   พัฒนาระบบบริหารจัดการโดยใช้เทคโนโลยีที่เหมาะสม
                 </td>
                 
-              
+              <td>
+                  
+                </td>
                
                 <td>
                   <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"

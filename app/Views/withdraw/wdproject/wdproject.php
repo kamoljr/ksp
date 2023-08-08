@@ -151,20 +151,57 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
   <div class="col-xl-12">
     <div id="panel-1" class="panel">
       <div class="panel-container">
-        <div class="panel-content" style="padding-top: 0px;">
-          <div class="frame-wrap mt-3 mb-0 w-100">
+        <div class="panel-content" style="padding-top: 15px;">
+       
+
+           
+              <div class = "row" style = "padding-top:10px;padding-bottom:10px;vertical-align: middle;line-height: 30px;border-radius: 5px !important;background-color:#f0e7fd;width:35%;margin-left:3px;">
+                <div class ="col-sm-8" style = "padding-top:5px;">
+                  <select id="withdraw_type" name="withdraw_type" class="select2" placeholder="ประเภทเบิกจ่าย">
+                    <option value="">
+                      -
+                    </option>
+                    <option value="1" >
+                      เบิกจ่าย
+                    </option>
+                    <option value="2" >
+                      79 วรรค 2
+                    </option>
+                    <option value="17">
+                      กันวงเงิน(ไม่ผ่านพัสดุ)
+                    </option>
+                    <option value="17">
+                      เบิกกันวงเงิน(ไม่ผ่านพัสดุ)
+                    </option>
+                    <option value="17">
+                      เงินยืม
+                    </option>
+                    <option value="17">
+                      เบิกเงินยืม
+                    </option>
+                    <option value="17">
+                      เหลือมปี(ไม่ผ่านพัสดุ)
+                    </option>
+                    
+                    <option value="17">
+                      เบิกกันเหลือมปี(ไม่ผ่านพัสดุ)
+                    </option>
+                    
+                  </select>
+                </div>
+                <div class ="col-sm-4" style = "line-height:25px important;">
+                  <button id="btnadd" type="button" class="btn btn-primary" data-toggle="modal"
+                  data-target=".default-example-modal-right" style = "padding-top:3;padding-bottom:6;padding-left:8;padding-right:8;vertical-align: middle;line-height: 25px;">
+                    <span class="ni ni-big-plus fa-2x" style="padding-right:10px;">
+                    </span>
+                    <span style="">
+                      เพิ่ม
+                    </span>
+                  </button>
+                </div>
+              </div>
           
-            <div class="frame-wrap mt-3 mb-0 w-100" style="padding-bottom:0px;">
-            <button id="btnadd" type="button" class="btn btn-primary" data-toggle="modal"
-            data-target=".default-example-modal-right" style="display: flex;">
-              <span class="ni ni-big-plus fa-2x" style="padding-right:10px;">
-              </span>
-              <span style="padding-top:5px;">
-                เพิ่ม
-              </span>
-            </button>
-          </div>
-          </div>
+          
           <!-- <div class = "row">
             <div class = "col-xl-6" style = "margin-left:260px;">
               <div class="row">
@@ -307,8 +344,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <td>
                   <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data" data-toggle="modal"
             data-target=".default-example-modal-right" mode='view' style='padding-top:2px !important;'>
-                    <i class="ni ni-plus">
-                    </i>
+                    <i class="fa-regular fa-eye"></i>
                   </a>
                   &nbsp;&nbsp;
                   <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
@@ -359,8 +395,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <td>
                   <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data" data-toggle="modal"
             data-target=".default-example-modal-right" mode='view' style='padding-top:2px !important;'>
-                    <i class="ni ni-plus">
-                    </i>
+                    <i class="fa-regular fa-eye"></i>
                   </a>
                   &nbsp;&nbsp;
                   <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
@@ -411,8 +446,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <td>
                   <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data" data-toggle="modal"
             data-target=".default-example-modal-right" mode='view' style='padding-top:2px !important;'>
-                    <i class="ni ni-plus">
-                    </i>
+                    <i class="fa-regular fa-eye"></i>
                   </a>
                   &nbsp;&nbsp;
                   
@@ -464,8 +498,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <td>
                   <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data" data-toggle="modal"
             data-target=".default-example-modal-right" mode='view' style='padding-top:2px !important;'>
-                    <i class="ni ni-plus">
-                    </i>
+                    <i class="fa-regular fa-eye"></i>
                   </a>
                   &nbsp;&nbsp;
                   <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
@@ -516,8 +549,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <td>
                   <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data" data-toggle="modal"
             data-target=".default-example-modal-right" mode='view' style='padding-top:2px !important;'>
-                    <i class="ni ni-plus">
-                    </i>
+                    <i class="fa-regular fa-eye"></i>
                   </a>
                   &nbsp;&nbsp;
                   <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
@@ -569,8 +601,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <td>
                   <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data" data-toggle="modal"
             data-target=".default-example-modal-right" mode='view' style='padding-top:2px !important;'>
-                    <i class="ni ni-plus">
-                    </i>
+                    <i class="fa-regular fa-eye"></i>
                   </a>
                   &nbsp;&nbsp;
                   <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
@@ -620,8 +651,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <td>
                   <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data" data-toggle="modal"
             data-target=".default-example-modal-right" mode='view' style='padding-top:2px !important;'>
-                    <i class="ni ni-plus">
-                    </i>
+                    <i class="fa-regular fa-eye"></i>
                   </a>
                   &nbsp;&nbsp;
                   <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
@@ -671,8 +701,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <td>
                   <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data" data-toggle="modal"
             data-target=".default-example-modal-right" mode='view' style='padding-top:2px !important;'>
-                    <i class="ni ni-plus">
-                    </i>
+                    <i class="fa-regular fa-eye"></i>
                   </a>
                   &nbsp;&nbsp;
                   <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
@@ -726,8 +755,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <td>
                   <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data" data-toggle="modal"
             data-target=".default-example-modal-right" mode='view' style='padding-top:2px !important;'>
-                    <i class="ni ni-plus">
-                    </i>
+                    <i class="fa-regular fa-eye"></i>
                   </a>
                   &nbsp;&nbsp;
                   <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
@@ -778,8 +806,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <td>
                   <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data" data-toggle="modal"
             data-target=".default-example-modal-right" mode='view' style='padding-top:2px !important;'>
-                    <i class="ni ni-plus">
-                    </i>
+                    <i class="fa-regular fa-eye"></i>
                   </a>
                   &nbsp;&nbsp;
                   <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
@@ -1244,7 +1271,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
     color:#000;
   }
   .fourd-form-row-c{
-    background-color:#f2ecde;
+    background-color:#ffedc1;
     padding-left:10px !important;
     padding-right:5px !important;
     padding-top:0px !important;
@@ -1457,7 +1484,7 @@ $(document).ready(function() {
   });
 
   $(document).ready(function() {
-    $('#exp_type_add').select2({
+    $('#exp_type_add0').select2({
       dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
     });
   });
@@ -1541,36 +1568,61 @@ $(document).ready(function() {
    });
 
 });
-ii = 1;
-$(document).on('change', '#exp_type_add',
-  function() {
-    ii++;
-  strtxt = `<div class="panel-content fourd-form-row-c" style = "background-color:#ecf2e0b0;">
+
+maxii = 0;
+function getval(sel,ii){
+
+  
+  console.log('ii='+ii);
+  //console.log('sel='+sel.value);
+  console.log('maxii='+maxii);
+  if (sel.value != ""){
+    if (ii==maxii){
+      getval1(sel);
+      maxii++;
+    }
+   
+  }else{
+   // if (ii>0){
+      $("#expend_row_id"+ii).hide();
+
+      // $('.default-example-modal-right').focus();
+   // }
+  }
+  
+
+}
+
+function getval1(sel)
+{
+  ii++
+    
+  strtxt = `<div id = "expend_row_id${ii}" class="panel-content fourd-form-row-c" style = "background-color:#ecf2e0b0;">
               <div class="form-row dialog-data " style = "padding-bottom:0px;">
-                <div class="col-md-3 mb-3" style="padding-bottom:0px;font-weight:550;font-size:14px;margin-bottom:0px !important;">
+                <div class="col-sm-2 sm-2" style="padding-bottom:0px;font-weight:550;font-size:14px;margin-bottom:0px !important;">
                 
-                  <select id="exp_type_add${ii}" name="exp_type_add1" class="selectdialog" placeholder="ประเภทงบ">
+                  <select id="exp_type_add${ii}" name="exp_type_add${ii}" class="selectdialog addexpend" placeholder="ประเภทงบ" onchange="getval(this,${ii});">
                     <option value="" selected>
                       -
                     </option>
-                    <option value="">
+                    <option value="2">
                       งบดำเนินงาน
                     </option>
-                    <option value="17">
+                    <option value="3">
                       งบลงทุน
                     </option>
-                    <option value="17">
+                    <option value="4">
                       งบเงินอุดหนุน
                     </option>
-                    <option value="17">
+                    <option value="5">
                       งบรายจ่ายอื่น
                     </option>
                     
                   </select>
                 </div>
-                <div class="col-md-3 mb-3" style="padding-bottom:0px;font-weight:550;font-size:14px;margin-bottom:0px !important;">
+                <div class="col-sm-3 sm-3" style="padding-bottom:0px;font-weight:550;font-size:14px;margin-bottom:0px !important;">
                  
-                  <select id="exp_add" name="exp_add" class="selectdialog" placeholder="ค่าใช่้จ่าย">
+                  <select id="exp_add${ii}" name="exp_add${ii}" class="selectdialog" placeholder="ค่าใช่้จ่าย">
                     <option value="" selected>
                       -
                     </option>
@@ -1586,12 +1638,12 @@ $(document).on('change', '#exp_type_add',
                   </select>
                 </div>
                 
-                <div class="col-md-3 mb-3" style="padding-top:5px;padding-bottom:0px;font-size:14px;margin-bottom:0px !important;">
+                <div class="col-sm-5 sm-5" style="padding-top:5px;padding-bottom:0px;font-size:14px;margin-bottom:0px !important;">
                  
                   <textarea class="form-control" id="example-textarea" rows="1"></textarea>
                 </div>
 
-                <div class="col-md-3 mb-3" style="padding-top:5px;padding-bottom:0px;font-size:14px;margin-bottom:0px !important;">
+                <div class="col-sm-2 sm-2" style="padding-top:5px;padding-bottom:0px;font-size:14px;margin-bottom:0px !important;">
                  
                   <input type="text" class="form-control form-ele clear-element" id="position_name" name="position_name" placeholder="จำนวนเงิน(บาท)" value="">
                 </div>
@@ -1599,13 +1651,23 @@ $(document).on('change', '#exp_type_add',
                 
               </div>
             </div>`
-    $("#addexpend").append(strtxt);
+      $("#addexpend").append(strtxt);
      
-    $(document).ready(function() {
-      $('.selectdialog').select2({
-        dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
+      $(document).ready(function() {
+        $('.selectdialog').select2({
+          dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
+        });
       });
-    });
+    
+      // console.log('ii='+ii);
+      bb=ii-1;
+      // console.log($("#exp_type_add"+bb).val()+'xx');
+      console.log('sss'+sel.value);
+}
+
+$(document).on('change', '.addexpend',
+  function() {
+   
 
    
 

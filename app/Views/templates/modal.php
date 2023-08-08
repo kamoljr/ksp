@@ -42,6 +42,10 @@
   }else if ($pages == "wdproject"){
      $dialog_max_width = "1000";
   }
+
+  if ($description_id == '4'){
+    $dialog_max_width = "1000";
+  }
 ?>
 <div class="flex-1" >
   <div class="modal fade default-example-modal-right " role="dialog" aria-hidden="true" style ="overflow: scroll !important;">
@@ -49,7 +53,7 @@
       <div class="modal-content bg-primary-800 bg-brand-gradient">
         <div class="modal-header " style="padding-bottom:0px;padding-top:10px;">
           <h5 class=" text-white text">
-            <?= $app_name; ?> 
+            <?= $app_name_des; ?> 
           </h5>
         </div>
         <?

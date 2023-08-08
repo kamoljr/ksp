@@ -87,7 +87,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   แผนงาน
                 </th>
                 <th class="text-center">
-                  ประเภท
+                  ด้าน
                 </th>
                 <th width = "60px;"class="text-center">
                   ไปยัง
@@ -97,7 +97,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
               </tr>
             </thead>
             <tbody>
-              <tr>
+              <!-- <tr>
                 <td>
                   1
                 </td>
@@ -105,7 +105,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   แผนงานบุคลากรภาครัฐ
                 </td>
                 <td>
-                  แผนงานบุคลากรภาครัฐ
+                  
                 </td>
               
                 <td>
@@ -142,16 +142,16 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                     </i>
                   </a>
                 </td>
-              </tr>
+              </tr> -->
               <tr>
                 <td>
-                  2
+                  1
                 </td>
                 <td>
                   แผนงานยุทธศาสตร์
                 </td>
                 <td>
-                  แผนงานยุทธศาสตร์
+                  เพื่อสนับสนุนด้านการพัฒนาและเสริมสร้างศักยภาพทรัพยากรมนุษย
                 </td>
               
                 <td>
@@ -190,13 +190,13 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
               </tr>
               <tr>
                 <td>
-                  3
+                  2
                 </td>
                 <td>
                   แผนงานพื้นฐาน
                 </td>
                 <td>
-                  แผนงานพื้นฐาน
+                  ด้านการพัฒนาและเสริมสร้างศักยภาพทรัพยากรมนุษย
                 </td>
               
                 <td>

@@ -60,6 +60,9 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
     style="margin-bottom: 15px;">
       ค้นหาโดย : ปีงบประมาณ 2566
     </div>
+    <div class="panel-tag" style = "margin-bottom:5px;padding-top:5px;padding-bottom:5px;">
+       ดึงข้อมูลมาจากเมนู SWOT
+    </div>
   </div>
 </div>
 <div class="row">

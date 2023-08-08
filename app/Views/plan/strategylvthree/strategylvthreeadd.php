@@ -23,13 +23,13 @@
 
               <div class="col-md-3 mb-3" style = "padding-bottom:0px;padding-left:10px;padding-right:10px;">
                 <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="unit_name_add">
-                  <h4>แผนยุทธศาสตร์ชาติ : </h4>
+                  <h5>แผนยุทธศาสตร์ชาติ : </h5>
                   <span class="text-danger stars">  </span>
                 </label>
               </div> 
               <div class="col-md-9 mb-9 " style = "padding-bottom:0px;padding-left:10px;padding-right:10px;">
                 <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="unit_name_add">
-                  <h4> ด้านการพัฒนาและเสริมสร้างศักยภาพทรัพยากรมนุยษ์</h4>
+                  <h5> ด้านการพัฒนาและเสริมสร้างศักยภาพทรัพยากรมนุยษ์</h5>
                   <span class="text-danger stars">  </span>
                 </label>
               </div> 
@@ -37,20 +37,20 @@
               <div class="col-md-3 mb-3" style = "padding-bottom:0px;padding-left:10px;padding-right:10px;">
                 <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="unit_name_add">
                   
-                  <h4>แผนระดับ 2 :</h4>
+                  <h5>แผนระดับ 2 :</h5>
                   <span class="text-danger stars">  </span>
                 </label>
               </div> 
               <div class="col-md-9 mb-9" style = "padding-bottom:0px;padding-left:10px;padding-right:10px;">
                 <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="unit_name_add">
                   
-                  <h4>ประเด็น 12 การพัฒนาการเรียนรู้ (พ.ศ. 2561-2580)</h4>
+                  <h5>ประเด็น 12 การพัฒนาการเรียนรู้ (พ.ศ. 2561-2580)</h5>
                   <span class="text-danger stars">  </span>
                 </label>
               </div> 
               <div class="col-md-12 mb-12" style = "padding-bottom:25px;padding-left:10px;">
                 <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="group_name_add">
-                  แผนระดับ2
+                  แผนระดับ3
                   <span class="text-danger stars"> * </span>
                 </label>
                 <input type="text" class="form-control form-ele clear-element" id="group_name_add" name="group_name_add" placeholder="แผนระดับ2" value="" >

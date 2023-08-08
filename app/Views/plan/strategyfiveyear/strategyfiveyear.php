@@ -1,7 +1,75 @@
 <?
 $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; // get full url
 ?>
-
+<div class="row">
+  <div class="col-xl-12">
+    <div id="panel-1" class="panel" style="margin-bottom: 15px;">
+      <div class="panel-container">
+        <div id="js_list_accordion" class="accordion accordion-hover accordion-clean">
+          <div class="card border-top-left-radius-0 border-top-right-radius-0">
+            <div class="card-header">
+              <a href="javascript:void(0);" class="card-title" data-toggle="collapse"
+              data-target="#js_list_accordion-a" aria-expanded="true" data-filter-tags="settings">
+                <i class="fal fa-search width-2 fs-xl">
+                </i>
+                ค้นหาโดย
+                <span class="ml-auto">
+                  <span class="collapsed-reveal">
+                    <i class="fal fa-chevron-up fs-xl">
+                    </i>
+                  </span>
+                  <span class="collapsed-hidden">
+                    <i class="fal fa-chevron-down fs-xl">
+                    </i>
+                  </span>
+                </span>
+              </a>
+            </div>
+            <!-- จุดที่ 1 เปิด แก้ส่วนค้นหาโดย -->
+            <div id="js_list_accordion-a" class="collapse show" data-parent="#js_list_accordion">
+              <div class="card-body">
+                <form action="<?=$actual_link?>" method="post" accept-charset="utf-8"
+                id="form-search" name="form-search">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <label class="form-label" for="unit_name_search">
+                        แผนยุทธศาสตร์ชาติ
+                      </label>
+                      <select id="unit_name_search" name="unit_name_search" class="select2"
+                      placeholder="แผนยุทธศาสตร์ชาติ">
+                        <option value="">
+                          ด้านการพัฒนาและเสริมสร้างศักยภาพทรัพยากรมนุยษ์
+                        </option>
+                        
+                      </select>
+                    </div>
+                    <div class="col-sm-6">
+                      <label class="form-label" for="group_name_search">
+                        แผนระดับ2
+                      </label>
+                      <select id="plan2_search" name="plan2_search" class="select2"
+                      placeholder="แผนระดับ2">
+                        <option value="">
+                          ประเด็น 12 การพัฒนาการเรียนรู้ (พ.ศ. 2561-2580)
+                        </option>
+                        
+                      </select>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <!-- ปิด แก้ส่วนค้นหาโดย -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="alert alert-warning" id='searchresults' name='searchresults'
+    style="margin-bottom: 15px;">
+      ค้นหาโดย : <u>แผนยุทธศาสตร์ชาติ</u> ด้านการพัฒนาและเสริมสร้างศักยภาพทรัพยากรมนุยษ์ <u>แผนระดับ2</u> ประเด็น 12 การพัฒนาการเรียนรู้ (พ.ศ. 2561-2580)
+    </div>
+  </div>
+</div>
 <div class="row">
   <div class="col-xl-12">
     <div id="panel-1" class="panel">

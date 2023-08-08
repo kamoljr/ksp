@@ -48,8 +48,23 @@
                         <input type="radio" class="custom-control-input" id="defaultInline4Radio" name="inlineDefaultRadiosExample">
                         <label class="custom-control-label color-fusion-300" for="defaultInline4Radio">แผนงานพื้นฐาน</label>
                     </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" class="custom-control-input" id="defaultInline5Radio" name="inlineDefaultRadiosExample">
+                        <label class="custom-control-label color-fusion-300" for="defaultInline5Radio">แผนงานบูรณาการ</label>
+                    </div>
                    
                 </div>
+              </div> 
+              <div class="col-md-12 mb-12" style = "padding-bottom:25px;padding-left:10px;padding-right:10px;">
+                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="unit_name_add">
+                  ด้าน
+                  <span class="text-danger stars"> * </span>
+                </label>
+                <select id="unit_name_add" name="unit_name_add" class="select2" placeholder="ส่วนงาน">
+                   <option>เพื่อสนับสนุนด้านการพัฒนาและเสริมสร้างศักยภาพทรัพยากรมนุษย</option>
+                   <option>ด้านการพัฒนาและเสริมสร้างศักยภาพทรัพยากรมนุษย์</option>
+                  
+                </select>
               </div> 
               <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
                 <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;padding-bottom:5px;" for="group_name_add">

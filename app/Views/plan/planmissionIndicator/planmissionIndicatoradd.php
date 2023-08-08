@@ -39,41 +39,27 @@
               </div> 
               <div class="col-md-12 mb-12" style = "padding-bottom:25px;padding-left:10px;padding-right:10px;">
                 <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="unit_name_add">
-                  เชื่อมตัวชี้วัดแผนงาน
+                  เชื่อมตัวชี้วัดแผนยุทธศาสตร์คุรุสภา 5 ปี
                   <span class="text-danger stars"> * </span>
                 </label>
                 <select id="unit_name_add" name="unit_name_add" class="select2" placeholder="ส่วนงาน">
                   
                     <option value="17">
-                      จํานวนหลักสูตรปริญญาและประกาศนียบัตรทางการศึกษาภายในประเทศได้รับการประเมินมาตรฐานหลักสูตรและมาตรฐานการผลิตจากคุรุสภา 50 หลักสูตร
+                      ข้อมูลตัวชี้วัดแผน 5 ปี รายารที่ 1
                     </option>
                     <option value="17">
-                      จํานวนผู้รับบริการด้านงานทะเบียนและใบอนุญาตประกอบวิชาชีพทางการศึกษา 182,000 คน
+                      ข้อมูลตัวชี้วัดแผน 5 ปี รายารที่ 2
                     </option>
-                    <option value="17">
-                      จํานวนคดีการประพฤติผิดจรรยาบรรณของวิชาชีพได้รับการสืบสวน/สอบสวนข้อเท็จจริงการประพฤติผิดจรรยาบรรณของวิชาชีพ 60 เรื่อง
-                    </option>
-                    <option value="17">
-                      จํานวนผู้ประกอบวิชาชีพทางการศึกษาที่เข้าร่วมกิจกรรมพัฒนาตามมาตรฐานและจรรยาบรรณของวิชาชีพ 5,000 คน
-                    </option>
-                    <option value="17">
-                      จํานวนผู้ประกอบวิชาชีพทางการศึกษาได้รับการยกย่องเชิดชูเกียรติ 8,878 คน
-                    </option>
-                    <option value="17">
-                      จํานวนผู้เข้าร่วมงานวันครู 220,000 คน
-                    </option>
-                    <option value="17">
-                      ร้อยละของครูและบุคลากรทางการศึกษาทุกระดับและประเภทการศึกษาจากกลุ่มเป้าหมายในแต่ละปีงบประมาณได้รับการส่งเสริมและพัฒนาตามมาตรฐานวิชาชีพ ร้อยละ 80
-                    </option>
+                    
                        
                 </select>
               </div>
               <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
                 <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="group_name_add">
-                  ตัวชี้วัดพันธกิจ
+                  ตัวชี้วัด
                   <span class="text-danger stars"> * </span>
                 </label>
-                <input type="text" class="form-control form-ele clear-element" id="group_name_add" name="group_name_add" placeholder="พันธกิจ" value="" >
+                <input type="text" class="form-control form-ele clear-element" id="group_name_add" name="group_name_add" placeholder="ข้อมูลตัวชี้วัดแผน 5 ปี รายารที่ 1" value="ข้อมูลตัวชี้วัดแผน 5 ปี รายารที่ 1" >
               </div> 
               <!-- <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
                 <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="tel_add">

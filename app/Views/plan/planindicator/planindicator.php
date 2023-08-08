@@ -78,14 +78,18 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
     style="margin-bottom: 15px;">
       ค้นหาโดย : <u>ปีงบประมาณ</u> 2566 <u>แผนงาน</u> แผนงานพื้นฐาน
     </div>
+    <div class="panel-tag" style = "margin-bottom:5px;padding-top:5px;padding-bottom:5px;">
+       ดึงข้อมูลมาจากเมนูตัวชี้วัดผลผลิต​/โครงการ
+    </div>
   </div>
 </div>
+
 <div class="row">
   <div class="col-xl-12">
     <div id="panel-1" class="panel">
       <div class="panel-container">
         <div class="panel-content" style="padding-top: 0px;">
-          <div class="frame-wrap mt-3 mb-0 w-100" style = "padding-bottom:15px;">
+          <!-- <div class="frame-wrap mt-3 mb-0 w-100" style = "padding-bottom:15px;">
             <button id="btnadd" type="button" class="btn btn-primary" data-toggle="modal"
             data-target=".default-example-modal-right" style="display: flex;">
               <span class="ni ni-big-plus fa-2x" style="padding-right:10px;">
@@ -94,7 +98,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 เพิ่ม
               </span>
             </button>
-          </div>
+          </div> -->
           <!-- datatable start -->
           <table id="dynamic-table" class="table table-md table-bordered table-hover table-striped w-100">
             <thead class="bg-primary-600">
@@ -102,14 +106,17 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <th width = "20px;">
                 </th>
                 <th class="text-center">
-                  ตัวชี้วัดแผนงานงาน
+                  ผลผลิต/โครงการ
+                </th>
+                <th class="text-center">
+                  ตัวชี้วัด
                 </th>
                 <th class="text-center" width = "90px;">
                   ประเภทตัวชี้วัด
                 </th>
                
-                <th width="90">
-                </th>
+                <!-- <th width="90">
+                </th> -->
               </tr>
             </thead>
             <tbody>
@@ -118,14 +125,17 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   1
                 </td>
                 <td>
-                  จํานวนหลักสูตรปริญญาและประกาศนียบัตรทางการศึกษาภายในประเทศได้รับการประเมินมาตรฐานหลักสูตรและมาตรฐานการผลิตจากคุรุสภา 50 หลักสูตร
+                  ผู้ประกอบวิชาชีพครูและบุคลากรทางการศึกษามีคุณภาพตามมาตรฐานวิชาชีพและจรรยาบรรณของวิชาชีพ
+                </td>
+                <td>
+                  จํานวนหลักสูตรปริญญาและประกาศนียบัตรทางการศึกษาภายในประเทศได้รับการประเมินมาตรฐานหลักสูตรและมาตรฐานการผลิตจากคุรุสภา
                 </td>
                 <td>
                   ตัวชี้วัดผลผลิต
                 </td>
               
                 
-                <td>
+                <!-- <td>
                   <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
                   mode='view'>
                     <i class="ni ni-eye">
@@ -143,21 +153,24 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                     <i class="ni ni-trash">
                     </i>
                   </a>
-                </td>
+                </td> -->
               </tr>
               <tr>
                 <td>
                   2
                 </td>
                 <td>
-                  จํานวนผู้รับบริการด้านงานทะเบียนและใบอนุญาตประกอบวิชาชีพทางการศึกษา 182,000 คน
+                  ผู้ประกอบวิชาชีพครูและบุคลากรทางการศึกษามีคุณภาพตามมาตรฐานวิชาชีพและจรรยาบรรณของวิชาชีพ
+                </td>
+                <td>
+                 จํานวนผู้รับบริการด้านงานทะเบียนและใบอนุญาตประกอบวิชาชีพทางการศึกษา
                 </td>
                 <td>
                   ตัวชี้วัดผลผลิต
                 </td>
               
                 
-                <td>
+                <!-- <td>
                   <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
                   mode='view'>
                     <i class="ni ni-eye">
@@ -175,21 +188,24 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                     <i class="ni ni-trash">
                     </i>
                   </a>
-                </td>
+                </td> -->
               </tr>
               <tr>
                 <td>
                   3
                 </td>
                 <td>
-                  จํานวนคดีการประพฤติผิดจรรยาบรรณของวิชาชีพได้รับการสืบสวน/สอบสวนข้อเท็จจริงการประพฤติผิดจรรยาบรรณของวิชาชีพ 60 เรื่อง
+                  ผู้ประกอบวิชาชีพครูและบุคลากรทางการศึกษามีคุณภาพตามมาตรฐานวิชาชีพและจรรยาบรรณของวิชาชีพ
+                </td>
+                <td>
+                 จํานวนคดีการประพฤติผิดจรรยาบรรณของวิชาชีพได้รับการสืบสวน/สอบสวนข้อเท็จจริงการประพฤติผิดจรรยาบรรณของวิชาชี
                 </td>
                 <td>
                   ตัวชี้วัดผลผลิต
                 </td>
               
-               
-                <td>
+                
+                <!-- <td>
                   <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
                   mode='view'>
                     <i class="ni ni-eye">
@@ -207,134 +223,9 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                     <i class="ni ni-trash">
                     </i>
                   </a>
-                </td>
+                </td> -->
               </tr>
-              <tr>
-                <td>
-                  4
-                </td>
-                <td>
-                  จํานวนผู้ประกอบวิชาชีพทางการศึกษาที่เข้าร่วมกิจกรรมพัฒนาตามมาตรฐานและจรรยาบรรณของวิชาชีพ 5,000 คน
-                </td>
-                <td>
-                  ตัวชี้วัดผลผลิต
-                </td>
               
-               
-                <td>
-                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
-                  mode='view'>
-                    <i class="ni ni-eye">
-                    </i>
-                  </a>
-                  &nbsp;&nbsp;
-                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
-                  mode='edit'>
-                    <i class="ni ni-pencil">
-                    </i>
-                  </a>
-                  &nbsp;&nbsp;
-                  <a href="javascript:void(0);" class="btn btn-outline-danger btn-icon btn-xs rounded-circle waves-effect waves-themed"
-                  data-toggle="modal" data-target="#example-modal-alert">
-                    <i class="ni ni-trash">
-                    </i>
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  5
-                </td>
-                <td>
-                  จํานวนผู้ประกอบวิชาชีพทางการศึกษาได้รับการยกย่องเชิดชูเกียรติ 8,878 คน
-                </td>
-                <td>
-                  ตัวชี้วัดผลผลิต
-                </td>
-              
-               
-                <td>
-                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
-                  mode='view'>
-                    <i class="ni ni-eye">
-                    </i>
-                  </a>
-                  &nbsp;&nbsp;
-                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
-                  mode='edit'>
-                    <i class="ni ni-pencil">
-                    </i>
-                  </a>
-                  &nbsp;&nbsp;
-                  <a href="javascript:void(0);" class="btn btn-outline-danger btn-icon btn-xs rounded-circle waves-effect waves-themed"
-                  data-toggle="modal" data-target="#example-modal-alert">
-                    <i class="ni ni-trash">
-                    </i>
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  6
-                </td>
-                <td>
-                  จํานวนผู้เข้าร่วมงานวันครู 220,000 คน
-                </td>
-                <td>
-                  ตัวชี้วัดผลผลิต
-                </td>
-              
-               
-                <td>
-                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
-                  mode='view'>
-                    <i class="ni ni-eye">
-                    </i>
-                  </a>
-                  &nbsp;&nbsp;
-                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
-                  mode='edit'>
-                    <i class="ni ni-pencil">
-                    </i>
-                  </a>
-                  &nbsp;&nbsp;
-                  <a href="javascript:void(0);" class="btn btn-outline-danger btn-icon btn-xs rounded-circle waves-effect waves-themed"
-                  data-toggle="modal" data-target="#example-modal-alert">
-                    <i class="ni ni-trash">
-                    </i>
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  7
-                </td>
-                <td>
-                  ร้อยละของครูและบุคลากรทางการศึกษาทุกระดับและประเภทการศึกษาจากกลุ่มเป้าหมายในแต่ละปีงบประมาณได้รับการส่งเสริมและพัฒนาตามมาตรฐานวิชาชีพ ร้อยละ 80
-                </td>
-                <td>ตัวชี้วัดผลลัพธ์</td>
-              
-               
-                <td>
-                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
-                  mode='view'>
-                    <i class="ni ni-eye">
-                    </i>
-                  </a>
-                  &nbsp;&nbsp;
-                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
-                  mode='edit'>
-                    <i class="ni ni-pencil">
-                    </i>
-                  </a>
-                  &nbsp;&nbsp;
-                  <a href="javascript:void(0);" class="btn btn-outline-danger btn-icon btn-xs rounded-circle waves-effect waves-themed"
-                  data-toggle="modal" data-target="#example-modal-alert">
-                    <i class="ni ni-trash">
-                    </i>
-                  </a>
-                </td>
-              </tr>
               
               
             </tbody>
@@ -359,7 +250,7 @@ $(document).ready(function() {
     dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
   });
 
-  var table = $("#dynamic-table").DataTable({
+   var table = $("#dynamic-table").DataTable({
     orderCellsTop: true,
     fixedHeader: true,
     bLengthChange: false,
@@ -369,11 +260,11 @@ $(document).ready(function() {
     processing: true,
     bPaginate: true,
     columnDefs: [{
-      targets: [3,2],
+      targets: [],
       orderable: false,
     },
     {
-      targets: [0,2],
+      targets: [0,3],
       className: "text-center",
     },
     {
