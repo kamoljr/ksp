@@ -315,7 +315,59 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
               
              
               
-              
+                <tr>
+                <td>
+                  11
+                </td>
+                <td>
+                 	รายการทดสอบ เบิกจ่าย
+                  <br>&nbsp;&nbsp;&nbsp;&nbsp;(กิจกรรม : การให้บริการห้องประชุม)
+                </td>
+                <td>
+                 350
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td> </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>29 ก.ค. 66</td>
+                <td>
+                  <div class="custom-control custom-checkbox d-block bg-fusion-100" style = "padding-left:2px;padding-right:2px;margin:0px;padding-bottom:0px;padding-top:4px;">
+                      
+                      <label ><small class= "">ยังไม่ตรวจสอบ</small></label>
+                      
+                  </div>
+                  <!-- <label style = "margin:0px;"><small class= "">(9 ส.ค 66)</small></label> -->
+                </td>
+                <td>
+                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data btnview" data-toggle="modal" data-target=".default-example-modal-right" mode='view' style='padding-top:2px !important;'>
+                    <i class="fa-regular fa-eye"></i>
+                  </a>
+                  &nbsp;&nbsp;
+                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
+                  mode='edit'>
+                    <i class="ni ni-pencil">
+                    </i>
+                  </a>
+                  &nbsp;&nbsp;
+                  <a href="javascript:void(0);" class="btn btn-outline-danger btn-icon btn-xs rounded-circle waves-effect waves-themed"
+                  data-toggle="modal" data-target="#example-modal-alert">
+                    <i class="ni ni-trash">
+                    </i>
+                  </a>
+                </td>
+                <td>
+                  <a href="javascript:void(0);" class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed"
+                  data-toggle="modal" data-target="#example-modal-alert" style = "padding-top:2px;">
+                    <i class="fa fa-print">
+                    </i>
+                  </a>
+                </td>
+              </tr>
+
                <tr>
                 <td>
                   9
@@ -334,12 +386,14 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <td></td>
                 <td>5,000</td>
                 <td></td>
-                <td>23 ก.ย. 65</td>
+                <td>23 ก.ค. 66</td>
                 <td>
-                  <div class="custom-control custom-checkbox d-block bg-fusion-100" style = "padding-left:2px;padding-right:2px;margin:0px;padding-bottom:0px;padding-top:4px;">
+                  <div class="custom-control custom-checkbox d-block bg-success-600" style = "padding-left:2px;padding-right:2px;margin:0px;padding-bottom:0px;padding-top:4px;">
                       
-                      <label ><small class= "">ยังไม่ตรวจสอบ</small></label>
+                      <label ><small class= "">รออนุมัติ</small></label>
+                      
                   </div>
+                  <label style = "margin:0px;"><small class= "">(9 ส.ค 66)</small></label>
                 </td>
                 <td>
                   <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data" data-toggle="modal"
@@ -385,12 +439,13 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <td></td>
                 <td></td>
                 <td>5,000</td>
-                <td>24 ก.ย. 65</td>
+                <td>24 ก.ค. 66</td>
                 <td>
                   <div class="custom-control custom-checkbox d-block bg-success-600 text-center" style = "padding-left:2px;padding-right:2px;margin:0px;padding-bottom:0px;padding-top:4px;">
                       
                       <label ><small class= "">รอการอนุมัติ</small></label>
                   </div>
+                  <label style = "margin:0px;"><small class= "">(10 ส.ค 66)</small></label>
                 </td>
                 <td>
                   <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data" data-toggle="modal"
@@ -436,12 +491,13 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <td></td>
                 <td></td>
                 <td></td>
-                <td>20 ก.ย. 65</td>
+                <td>20 ก.ค. 66</td>
                 <td>
                   <div class="custom-control custom-checkbox d-block bg-info-600 text-center" style = "padding-left:2px;padding-right:2px;margin:0px;padding-bottom:0px;padding-top:4px;">
                       
                       <label ><small class= "">รับเงินแล้ว</small></label>
                   </div>
+                  <label style = "margin:0px;"><small class= "">(10 ส.ค 66)</small></label>
                 </td>
                 <td>
                   <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data" data-toggle="modal"
@@ -488,12 +544,13 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <td>4,000.00</td>
                 <td></td>
                 <td></td>
-                <td>21 ก.ย. 65</td>
+                <td>21 ก.ค. 66</td>
                 <td>
                   <div class="custom-control custom-checkbox d-block bg-success-600 text-center" style = "padding-left:2px;padding-right:2px;margin:0px;padding-bottom:0px;padding-top:4px;">
                       
                       <label ><small class= "">รอการอนุมัติ</small></label>
                   </div>
+                  <label style = "margin:0px;"><small class= "">(11 ส.ค 66)</small></label>
                 </td>
                 <td>
                   <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data" data-toggle="modal"
@@ -539,15 +596,16 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <td>500</td>
                 <td></td>
                 <td></td>
-                <td>22 ก.ย. 65</td>
+                <td>22 ก.ค. 66</td>
                 <td>
                   <div class="custom-control custom-checkbox d-block bg-info-600 text-center" style = "padding-left:2px;padding-right:2px;margin:0px;padding-bottom:0px;padding-top:4px;">
                       
                       <label ><small class= "">นำส่งแล้ว</small></label>
                   </div>
+                  <label style = "margin:0px;"><small class= "">(11 ส.ค 66)</small></label>
                 </td>
                 <td>
-                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data" data-toggle="modal"
+                  <!-- <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data" data-toggle="modal"
             data-target=".default-example-modal-right" mode='view' style='padding-top:2px !important;'>
                     <i class="fa-regular fa-eye"></i>
                   </a>
@@ -562,14 +620,14 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   data-toggle="modal" data-target="#example-modal-alert">
                     <i class="ni ni-trash">
                     </i>
-                  </a>
+                  </a> -->
                 </td>
                 <td>
-                  <a href="javascript:void(0);" class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed"
+                  <!-- <a href="javascript:void(0);" class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed"
                   data-toggle="modal" data-target="#example-modal-alert" style = "padding-top:2px;">
                     <i class="fa fa-print">
                     </i>
-                  </a>
+                  </a> -->
                 </td>
               </tr>
               
@@ -591,12 +649,13 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <td></td>
                 <td></td>
                 <td></td>
-                <td>16 ก.ย. 65</td>
+                <td>16 ก.ค. 66</td>
                 <td>
                   <div class="custom-control custom-checkbox d-block bg-success-600 text-center" style = "padding-left:2px;padding-right:2px;margin:0px;padding-bottom:0px;padding-top:4px;">
                       
                       <label ><small class= "">รอการอนุมัติ</small></label>
                   </div>
+                  <label style = "margin:0px;"><small class= "">(12 ส.ค 66)</small></label>
                 </td>
                 <td>
                   <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data" data-toggle="modal"
@@ -641,12 +700,13 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <td></td>
                 <td></td>
                 <td></td>
-                <td>18 ก.ย. 65</td>
+                <td>18 ก.ค. 66</td>
                 <td>
                   <div class="custom-control custom-checkbox d-block bg-info-600 text-center" style = "padding-left:2px;padding-right:2px;margin:0px;padding-bottom:0px;padding-top:4px;">
                       
                       <label ><small class= "">รับเงินแล้ว</small></label>
                   </div>
+                  <label style = "margin:0px;"><small class= "">(13 ส.ค 66)</small></label>
                 </td>
                 <td>
                   <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data" data-toggle="modal"
@@ -691,12 +751,13 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <td></td>
                 <td></td>
                 <td></td>
-                <td>19 ก.ย. 65</td>
+                <td>19 ก.ค. 66</td>
                 <td>
                   <div class="custom-control custom-checkbox d-block bg-warning-600 text-center" style = "padding-left:2px;padding-right:2px;margin:0px;padding-bottom:0px;padding-top:4px;">
                       
                       <label ><small class= "">ไม่ยืนยัน</small></label>
                   </div>
+                  <label style = "margin:0px;"><small class= "">(14 .ส.ค 66)</small></label>
                 </td>
                 <td>
                   <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data" data-toggle="modal"
@@ -745,12 +806,13 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <td></td>
                 <td></td>
                 <td></td>
-                <td>15 ก.ย. 65</td>
+                <td>15 ก.ค. 66</td>
                 <td>
                   <div class="custom-control custom-checkbox d-block bg-info-600 text-center" style = "padding-left:2px;padding-right:2px;margin:0px;padding-bottom:0px;padding-top:4px;">
                       
                       <label ><small class= "">รับเงินแล้ว</small></label>
                   </div>
+                  <label style = "margin:0px;"><small class= "">(14 .ส.ค 66)</small></label>
                 </td>
                 <td>
                   <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data" data-toggle="modal"
@@ -796,12 +858,13 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <td></td>
                 <td></td>
                 <td></td>
-                <td>14 ก.ย. 65</td>
+                <td>14 ก.ค. 66</td>
                 <td>
                   <div class="custom-control custom-checkbox d-block bg-info-600 text-center" style = "padding-left:2px;padding-right:2px;margin:0px;padding-bottom:0px;padding-top:4px;">
                       
                       <label ><small class= "">รับเงินแล้ว</small></label>
                   </div>
+                  <label style = "margin:0px;"><small class= "">(14 .ส.ค 66)</small></label>
                 </td>
                 <td>
                   <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data" data-toggle="modal"
@@ -1281,7 +1344,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
     line-height: 48px;
     color:#000;
   }
-
+  table.myFormat tr td { font-size: 8px;padding:5px; }
 
 </style>
 <script src="<?= base_url().'/';?>js/budget/<?=$pages;?>.js"></script>
@@ -1466,6 +1529,7 @@ function renderChartout() {
 $(document).ready(function() {
 
   $(".select2").select2();
+  $(".div_view").hide();
  
 
   $(document).ready(function() {
@@ -1488,7 +1552,68 @@ $(document).ready(function() {
       dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
     });
   });
-  
+  $(document).ready(function() {
+    $('#listboard').select2({
+      dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
+    });
+  });
+  var table = $("#dynamic-table1").DataTable({
+    orderCellsTop: true,
+    fixedHeader: true,
+    bLengthChange: false,
+    searching: false,
+    bAutoWidth: false,
+    bStateSave: true,
+    processing: true,
+    bPaginate: true,
+    orderable:false,
+    "ordering": false,
+    "paging": false,
+    "info":     false,
+    columnDefs: [{
+     
+    },
+    {
+      targets: [0,1],
+      className: "text-center",
+    },
+    {
+      targets: [0,4],
+      className: "text-right",
+    },
+    {
+      targets: [2,3],
+      className: "text-left",
+    }]
+
+  });
+
+  var table = $("#dynamic-table-ex").DataTable({
+    orderCellsTop: true,
+    fixedHeader: true,
+    bLengthChange: false,
+    searching: false,
+    bAutoWidth: false,
+    bStateSave: true,
+    processing: true,
+    bPaginate: true,
+    orderable:false,
+    "ordering": false,
+    "paging": false,
+    "info":     false,
+    columnDefs: [{
+     
+    },
+    {
+      targets: [0],
+      className: "text-center",
+    },
+    {
+      targets: [0],
+      className: "text-left",
+    }]
+
+  });
   
 
   var table = $("#dynamic-table").DataTable({
@@ -1508,7 +1633,7 @@ $(document).ready(function() {
       orderable: false,
     },
     {
-      targets: [0,,10,13],
+      targets: [0,,10,11,13],
       className: "text-center",
     },
     {
@@ -1521,6 +1646,7 @@ $(document).ready(function() {
     }]
 
   });
+  
 
   $(document).on('click', '#btnadd',
   function() {
@@ -1531,6 +1657,7 @@ $(document).ready(function() {
     $("#icon_add_form").show();
     $("#icon_edit_form").hide();
     $("#icon_view_form").hide();
+    
 
     $('.div_show_rowid').css('display', 'none');
 
@@ -1545,7 +1672,17 @@ $(document).ready(function() {
     $("#btn_dialog_close").show();
 
 
+    $(".div_edit").show();
+    $(".div_view").hide();
 
+  });
+  $(document).on('click', '.btnview',
+  function() {
+   
+
+
+    $(".div_edit").hide();
+    $(".div_view").show();
 
   });
 

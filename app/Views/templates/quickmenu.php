@@ -43,7 +43,7 @@
     }
     ?>
     <?
-    if ($pages == "wdproject"){ 
+    if ($pages == "wdproject" || $pages == "cnproject" || $pages == "payproject" || $pages == "tranferproject"){ 
     ?>
     <a href="#" class="menu-item btn "  id  = "btn_quit_show_budget" title="แสดงเงินคงเหลือ" style = "background:#448ee0f5">
         <i class="fa-solid fa-info"></i>

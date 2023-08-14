@@ -77,14 +77,14 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                                                            
                                                             <!-- <i class="fa-solid fa-check"></i> -->
                                                             <!-- <span class="hidden-sm-down ml-1"> งบรายจ่าย</span> -->
-                                                            <i class="fa-solid fa-xmark"></i>
+                                                            <i class="fa-solid fa-xmark" style = "color: #f25353; "></i>
                                                             <span class="hidden-sm-down ml-1"> ตรวจสอบและเปลี่ยนสถานะ</span>
                                                         </a>
                                                         <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-10" role="tab" aria-controls="v-pills-settings" aria-selected="false">
                                                            
                                                             <!-- <i class="fa-solid fa-check"></i> -->
                                                             <!-- <span class="hidden-sm-down ml-1"> งบรายจ่าย</span> -->
-                                                            <i class="fa-solid fa-xmark"></i>
+                                                            <i class="fa-solid fa-xmark" style = "color: #f25353; "></i>
                                                             <span class="hidden-sm-down ml-1"> แหล่งเงินงบประมาณ</span>
                                                         </a>
                                                       
@@ -92,7 +92,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                                                            
                                                             <!-- <i class="fa-solid fa-check"></i> -->
                                                             <!-- <span class="hidden-sm-down ml-1"> งบรายจ่าย</span> -->
-                                                            <i class="fa-solid fa-xmark"></i>
+                                                            <i class="fa-solid fa-xmark" style = "color: #f25353; "></i>
                                                             <span class="hidden-sm-down ml-1"> เบิกพลางก่อน</span>
                                                         </a>
                                                         

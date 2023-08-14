@@ -30,7 +30,7 @@
                    <option>ด้านการพัฒนาและเสริมสร้างศักยภาพทรัพยากรมนุยษ์</option>
                 </select> -->
               </div> 
-              <div class="col-md-12 mb-12" style = "padding-bottom:25px;padding-left:10px;padding-right:10px;">
+              <!-- <div class="col-md-12 mb-12" style = "padding-bottom:25px;padding-left:10px;padding-right:10px;">
                 <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="unit_name_add">
                   เชื่อมตัวชี้วัดแผนระดับ 3
                   <span class="text-danger stars"> * </span>
@@ -41,6 +41,19 @@
                         </option>
                     <option value="17">
                           	ข้อมูลตัวชี้วัดแผนระดับ 3
+                        </option>
+                       
+                </select>
+              </div> -->
+              <div class="col-md-12 mb-12" style = "padding-bottom:25px;padding-left:10px;padding-right:10px;">
+                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="unit_name_add">
+                  เชื่อมตัวชี้วัดแผนระดับ2
+                  <span class="text-danger stars"> * </span>
+                </label>
+                <select id="unit_name_add" name="unit_name_add" class="select2" placeholder="ส่วนงาน">
+                  
+                    <option value="17">
+                          		อันดับขีดความสามารถในการแข่งขันของประเทศด้านการศึกษา
                         </option>
                        
                 </select>

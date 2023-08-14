@@ -103,6 +103,28 @@
                 </label>
                 
               </div>
+              
+              <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
+                
+                  <div class="custom-control  custom-control-inline" style ="line-height:30px;vertical-align: middle;padding-left:0px !important;padding-top:0px !important;padding-left:0px !important;">
+                  
+                    <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;padding-bottom:5px; display:block !important;" for="group_name_add">ผู้รับผิดชอบ<span class="text-danger stars"> * </span></label><br>
+                      <select id="users_search" name="users_search" class="select2" placeholder="แผนงาน">
+                        <option value="">
+                          นางสาวดวงแก้ว อดิศวร
+                        </option>
+                        <option value="17">
+                          นายวีระ เทพทัต	
+                        </option>
+                        <option value="17" selected>
+                          นายสมคิด วงศ์เศวต
+                        </option>
+                      </select>&nbsp;
+                            
+                      <button type="button" class="btn btn-sm btn-primary" onclick="calcash2()"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+
+              </div> 
 
               
 

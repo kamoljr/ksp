@@ -22,7 +22,22 @@
                 <i class="ni ni-key"></i>
                 <span><label id = "lbl_rowid"></label></span> 
               </div>
-
+              <div class="col-md-12 mb-12" style = "padding-bottom:25px;padding-left:10px;padding-right:10px;">
+                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="unit_name_add">
+                  เชื่อมตัวชี้วัดแผนงาน
+                  <span class="text-danger stars"> * </span>
+                </label>
+                <select id="unit_name_add" name="unit_name_add" class="select2" placeholder="เชื่อมตัวชี้วัดแผนยุทธศาสตร์ชาติ">
+                  
+                    <option value="17">
+                          		จํานวนหลักสูตรปริญญาและประกาศนียบัตรทางการศึกษาภายในประเทศได้รับการประเมินมาตรฐานหลักสูตรและมาตรฐานการผลิตจากคุรุสภา	
+                        </option>
+                    <option value="17">
+                          		จํานวนผู้รับบริการด้านงานทะเบียนและใบอนุญาตประกอบวิชาชีพทางการศึกษา	
+                        </option>
+                       
+                </select>
+              </div>
               <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
                 <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;padding-bottom:5px;" for="group_name_add">
                   ประเภทตัวชี้วัด
@@ -87,7 +102,7 @@
                   เชื่อมตัวชี้วัดพันธกิจ
                   <span class="text-danger stars"> * </span>
                 </label>
-                <select id="unit_name_add" name="unit_name_add" class="" placeholder="ส่วนงาน">
+                <select id="unit_name2_add" name="unit_name2_add" class="" placeholder="ส่วนงาน">
                   
                     <option value="17">
                           	จํานวนหลักสูตรปริญญาและประกาศนียบัตรทางการศึกษาภายในประเทศได้รับการประเมินมาตรฐานหลักสูตรและมาตรฐานการผลิตจากคุรุสภา

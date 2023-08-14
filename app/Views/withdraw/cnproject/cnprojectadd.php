@@ -10,10 +10,30 @@
         <label class = "lblmode" style = "padding-top:7px;"></label>
         <label  style = "padding-top:7px;"> ตรวจสอบเบิกจ่ายโครงการ</label>
       </h4>
+
+
+
+
+
+
       <div id="panel-2" class="panel">
         <div class="panel-container show " style = "color:#666666;">
           <div class="panel-content" style = "padding:8px;">
 
+            <div class="panel-content fourd-form-row-b" style = "">
+              <div class="form-row dialog-data " style = "padding-bottom:0px;line-height:30px;vertical-align: middle;padding-top:5px;">
+                <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    รหัสรายการ
+                  </label>
+                </div>
+                <div class="col-md-10 mb-10" style="padding-bottom:0px;font-size:13px;margin-bottom:0px;">
+                  <label class="form-label" for="">
+                    9
+                  </label>
+                </div>
+              </div>
+            </div>
             <div class="panel-content fourd-form-row-a" style = "">
               <div class="form-row dialog-data " style = "padding-bottom:0px;line-height:30px;vertical-align: middle;padding-top:5px;">
                 <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
@@ -165,7 +185,7 @@
               <div class="form-row dialog-data " style = "padding-bottom:0px;line-height:30px;vertical-align: middle;padding-top:0px !important;">
                 <div class="col-sm-12 sm-12" style="padding-top:0px !important;font-weight:550;font-size:13px;margin-bottom:0px !important;">
                   <!-- datatable start -->
-                      <table id="dynamic-table1" class="myFormat table table-md table-bordered table-hover table-striped w-100" style = "padding-top:0px !important;margin-top:0px !important;">
+                      <table id="dynamic-table1" class="myFormat table table-md table-bordered table-hover table-striped w-100" style = "padding-top:0px !important;margin-top:0px !important;line-height:10px;">
                         <thead class="bg-info-50">
                           <tr>
                             
@@ -267,6 +287,61 @@
                 </div>
               </div>
             </div>
+            <!-- <div class="panel-content fourd-form-row-b" >
+              <div class="form-row dialog-data " style = "padding-bottom:0px;">
+                <div class="col-md-12 mb-12 text-center" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;font-weight:550;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    ตรวจสอบรายการ
+                  </label>
+                </div>
+                
+              </div>
+            </div> -->
+            <div class="panel-content fourd-form-row-c" style = "background-color:#c4ecd0de !important;">
+              
+              <div class="form-row dialog-data " style = "padding-bottom:0px;margin-top:8px;">
+                <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;padding-top:5px;">
+                    สถานะ
+                  </label>
+                </div>
+                <div class="col-md-10 mb-10" style="padding-top:5px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
+                  <div class="">
+                    <div class="custom-control custom-radio custom-control-inline" style ="line-height:25px;vertical-align: middle;">
+                        <input type="radio" class="custom-control-input" id="defaultInline1Radio" name="inlineDefaultRadiosExample" style = "margin-top:15px;" checked>
+                        <label class="custom-control-label " for="defaultInline1Radio" >ยังไม่ตรวจสอบ</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline" style ="line-height:25px;vertical-align: middle;">
+                        <input type="radio" class="custom-control-input" id="defaultInline2Radio" name="inlineDefaultRadiosExample">
+                        <label class="custom-control-label " for="defaultInline2Radio">ไม่ยืนยัน</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline" style ="line-height:25px;vertical-align: middle;">
+                        <input type="radio" class="custom-control-input" id="defaultInline4Radio" name="inlineDefaultRadiosExample">
+                        <label class="custom-control-label " for="defaultInline4Radio">รออนุมัติ</label>
+                    </div>
+                  
+                  </div>
+                </div>
+            
+               
+              </div>
+              <div class="form-row dialog-data " style = "padding-bottom:0px;margin-top:8px;">
+                <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;padding-top:5px;">
+                    หมายเหตุ
+                  </label>
+                </div>
+                <div class="col-md-10 mb-10" style="padding-top:5px;padding-bottom:15px;font-size:13px;margin-bottom:0px !important;">
+                  <div class="">
+                     <textarea class="form-control" id="example-textarea" rows="2"></textarea>
+                  
+                  </div>
+                </div>
+            
+               
+              </div>
+
+            </div>
             <!-- <div id = "" class="panel-content fourd-form-row-c" style = "background-color:#e6f8c1b0;padding-bottom:0px;padding-top:0px;margin-bottom:0px;margin-top:0px;line-height:30px;">
               <div class="form-row dialog-data " style = "padding-bottom:15px;padding-top:0px;margin-bottom:0px;margin-top:0px;">
                 <div class="col-sm-6 sm-6" style="padding-top:0px;padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
@@ -305,9 +380,16 @@
         </div>
       </div>
 
+
+
+
+
+
+
+
+      
     </div>
   </div>
-
 </div>  
 <div class="modal-footer">
   <button type="button" class="btn btn-secondary" id = "btn_dialog_close">Close</button>

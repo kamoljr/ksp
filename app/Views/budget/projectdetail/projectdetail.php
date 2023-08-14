@@ -63,14 +63,14 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                                                         <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-7" role="tab" aria-controls="v-pills-settings" aria-selected="false">
                                                             
                                                             <!-- <i class="fa-solid fa-check"></i> -->
-                                                            <i class="fa-solid fa-xmark"></i>
+                                                            <i class="fa-solid fa-xmark" style = "color: #f25353; "></i>
                                                             <span class="hidden-sm-down ml-1"> งบรายจ่าย</span>
                                                         </a>
                                                         <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-8" role="tab" aria-controls="v-pills-settings" aria-selected="false">
                                                            
                                                             <!-- <i class="fa-solid fa-check"></i> -->
                                                             <!-- <span class="hidden-sm-down ml-1"> งบรายจ่าย</span> -->
-                                                            <i class="fa-solid fa-xmark"></i>
+                                                            <i class="fa-solid fa-xmark" style = "color: #f25353; "></i>
                                                             <span class="hidden-sm-down ml-1"> ส่งโครงการ</span>
                                                         </a>
                                                     </div>
@@ -160,6 +160,9 @@ a:active {
 $(document).ready(function() {
   $(".select2").select2();
   $('#unit_name_add').select2({
+    dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
+  });
+  $('#unit_name2_add').select2({
     dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
   });
 
@@ -314,7 +317,7 @@ $(document).ready(function() {
     }
   });
 
-  $(document).on('click', '#btn_dialog_close',
+$(document).on('click', '#btn_dialog_close',
   function() {
     $('.default-example-modal-right').modal('toggle');
   });

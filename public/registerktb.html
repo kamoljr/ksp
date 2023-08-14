@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        สํานักงานเลขาธิการวุฒิสภา
+    </title>
+    <meta name="description" content="Login">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, minimal-ui">
+    <!-- Call App Mode on ios devices -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- Remove Tap Highlight on Windows Phone IE -->
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- base css -->
+    <link rel="stylesheet" media="screen, print" href="css/vendors.bundle.css">
+    <link rel="stylesheet" media="screen, print" href="css/app.bundle.css">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <!-- Optional: page related CSS-->
+    <link rel="stylesheet" media="screen, print" href="css/fa-brands.css">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <div class="page-inner bg-brand-gradient">
+            <div class="page-content-wrapper bg-transparent m-0">
+                <div class="height-10 w-100 shadow-lg px-4 bg-brand-gradient">
+                    <div class="d-flex align-items-center container p-0">
+                        <div
+                            class="page-logo width-mobile-auto m-0 align-items-center justify-content-center p-0 bg-transparent bg-img-none shadow-0 height-9">
+                            <a href="javascript:void(0)"
+                                class="page-logo-link press-scale-down d-flex align-items-center">
+                                <img src="img/logo.png" alt="สํานักงานเลขาธิการวุฒิสภา" aria-roledescription="logo" style="width:50px;">
+                                <span class="page-logo-text mr-1">สํานักงานเลขาธิการวุฒิสภา</span>
+                            </a>
+                        </div>
+                        <span class="text-white opacity-50 ml-auto mr-2 hidden-sm-down">
+                            Loginโดย :
+                        </span>
+                        <a href="" class="btn-link text-white ml-auto ml-sm-0">
+                            นายธีภพ วิเชียรชาญ
+                        </a>
+                    </div>
+                </div>
+                <div class="flex-1"
+                    style="background: url(img/svg/pattern-1.svg) no-repeat center bottom fixed; background-size: cover;">
+                    <div class="container py-4 py-lg-5 my-lg-5 px-4 px-sm-0">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <h2 class="fs-xxl fw-500 mt-4 text-white text-center">
+                                    แบบแจ้งข้อมูลการรับเงินโอนผ่านระบบ KTB Corporate Online
+                                    <small class="h3 fw-300 mt-3 mb-5 text-white opacity-60 hidden-sm-down">
+
+                                    </small>
+                                </h2>
+                            </div>
+                            <div class="col-xl-6 ml-auto mr-auto" style = "padding-top:0px;">
+                                <div class="card p-4 rounded-plus bg-faded">
+                                    <!-- <div class="alert alert-primary text-dark" role="alert">
+                                        <strong>Heads Up!</strong> Due to server maintenance from 9:30GTA to 12GTA, the
+                                        verification emails could be delayed by up to 10 minutes.
+                                    </div> -->
+                                    <form id="js-login" novalidate="" action="intel_analytics_dashboard.html">
+                                        <div class="form-group row">
+                                            <label class="col-xl-12 form-label" for="fname">ชื่อ-นามสกุล</label>
+                                            <div class="col-6 pr-1">
+                                                <input type="text" id="fname" class="form-control"
+                                                    placeholder="ชื่อ" required>
+                                                <div class="invalid-feedback">No, you missed this one.</div>
+                                            </div>
+                                            <div class="col-6 pl-1">
+                                                <input type="text" id="lname" class="form-control"
+                                                    placeholder="นามสกุล" required>
+                                                <div class="invalid-feedback">No, you missed this one.</div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group row">
+                                        
+                                            <div class="col-6 pr-1">
+                                                <label class="form-label" for="fname">เลขประจำตัวประชาชน</label>
+                                                <input type="text" id="fname" class="form-control" placeholder="เลขประจำตัวประชาชน" required>
+                                                <div class="invalid-feedback">No, you missed this one.</div>
+                                            </div>
+                                            <div class="col-6 pl-1">
+                                                <label class="form-label" for="fname">เบอร์โทรศัพท์</label>
+                                                <input type="text" id="fname" class="form-control" placeholder="เบอร์โทรศัพท์" required>
+                                                <div class="invalid-feedback">No, you missed this one.</div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label" for="emailverify">Email</label>
+                                            <input type="email"  class="form-control" placeholder="Email">
+                                            <div class="invalid-feedback">No, you missed this one.</div>
+                                            <!-- <div class="help-block">Your email will also be your username</div> -->
+                                        </div>
+                                        <div class="form-group row">
+                                            
+                                            <div class="col-6 pr-1">
+                                                <label class="form-label" for="fname">สำนัก/กอง/ศุนย์</label>
+                                                <input type="text" id="fname" class="form-control" placeholder="สำนัก/กอง/ศุนย์" required>
+                                                <div class="invalid-feedback">No, you missed this one.</div>
+                                            </div>
+                                            <div class="col-6 pl-1">
+                                                <label class="form-label" for="fname">สังกัดกรม</label>
+                                                <input type="text" id="fname" class="form-control" placeholder="สังกัดกรม" required>
+                                                <div class="invalid-feedback">No, you missed this one.</div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                        
+                                            <div class="col-6 pr-1">
+                                                <label class="form-label" for="fname">กระทรวง</label>
+                                                <input type="text" id="fname" class="form-control" placeholder="กระทรวง" required>
+                                                <div class="invalid-feedback">No, you missed this one.</div>
+                                            </div>
+                                            <div class="col-6 pl-1">
+                                                <label class="form-label" for="fname">อยู่บ้านเลขที่</label>
+                                                <input type="text" id="fname" class="form-control" placeholder="อยู่บ้านเลขที่" required>
+                                                <div class="invalid-feedback">No, you missed this one.</div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                        
+                                            <div class="col-6 pr-1">
+                                                <label class="form-label" for="fname">ซอย</label>
+                                                <input type="text" id="fname" class="form-control" placeholder="ซอย" required>
+                                                <div class="invalid-feedback">No, you missed this one.</div>
+                                            </div>
+                                            <div class="col-6 pl-1">
+                                                <label class="form-label" for="fname">ถนน</label>
+                                                <input type="text" id="fname" class="form-control" placeholder="ถนน" required>
+                                                <div class="invalid-feedback">No, you missed this one.</div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                        
+                                            <div class="col-6 pr-1">
+                                                <label class="form-label" for="fname">ตำบล/แขวง</label>
+                                                <input type="text" id="fname" class="form-control" placeholder="ตำบล/แขวง" required>
+                                                <div class="invalid-feedback">No, you missed this one.</div>
+                                            </div>
+                                            <div class="col-6 pl-1">
+                                                <label class="form-label" for="fname">อำเภอ/เขต</label>
+                                                <input type="text" id="fname" class="form-control" placeholder="อำเภอ/เขต" required>
+                                                <div class="invalid-feedback">No, you missed this one.</div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                        
+                                            <div class="col-6 pr-1">
+                                                <label class="form-label" for="fname">จังหวัด</label>
+                                                <select class="custom-select form-control">
+                                                    <option selected=""></option>
+                                                    <option value="1">กรุงเทพ</option>
+                                                    <option value="1">นครราชสีมา</option>
+                                                    <option value="2">เชียงใหม่</option>
+                                                    <option value="2">กาญจนบุรี</option>
+                                                
+                                                </select>
+                                                <div class="invalid-feedback">No, you missed this one.</div>
+                                            </div>
+                                            <div class="col-6 pl-1">
+                                                <label class="form-label" for="fname">รหัสไฟรษณีย์</label>
+                                                <input type="text" id="fname" class="form-control" placeholder="รหัสไฟรษณีย์" required>
+                                                <div class="invalid-feedback">No, you missed this one.</div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label" for="emailverify">แนบสำเนาหน้าสมุดบัญชีเงินฝาก</label>
+                                            <div class="custom-file">
+                                                <input type="file" class="custom-file-input" id="customFile">
+                                                <label class="custom-file-label" for="customFile">เลือกไฟล์</label>
+                                            </div>
+                                            <div class="invalid-feedback">No, you missed this one.</div>
+                                            <!-- <div class="help-block">Your email will also be your username</div> -->
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label class="form-label" for="emailverify">ข้อมูลบัญชีเงินฝากธนาคาร</label>
+                                            <div class="frame-wrap">
+                                                <div class="custom-control custom-radio custom-control-inline" >
+                                                    <input type="radio" class="custom-control-input" id="defaultInline1Radio" name="inlineDefaultRadiosExample" checked>
+                                                    <label class="custom-control-label" for="defaultInline1Radio">กรณีเป็นพนักงานเจ้าหน้าที่ของสำนักงานเลขาธิการคุรุสภา</label>
+                                                </div>
+                                             
+                                                
+                                                <div class="form-group">
+                                                
+                                                    <div class="frame-wrap" style = "padding-left:30px;">
+                                                
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" class="custom-control-input" id="defaultInline2Radio1" name="inlineDefaultRadiosExample1"
+                                                                >
+                                                            <label class="custom-control-label" for="defaultInline2Radio1">เพื่อเข้าบัญชีเงินฝากธนาคารที่ใช้สำหรับรับเงินเดือน ค่าจ้าง หรือค่าตอบแทน</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" class="custom-control-input" id="defaultInline2Radio2" name="inlineDefaultRadiosExample1"
+                                                                >
+                                                            <label class="custom-control-label" for="defaultInline2Radio2">เพื่อเข้าบัญชีเงินฝากธนาคารอื่น (ตามที่เลขาธิการวุฒิสภาอนุญาติ)</label>
+                                                        </div>
+                                                
+                                                    </div>
+                                                </div>
+
+
+
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                           
+                                            <div class="frame-wrap">
+                                                
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" class="custom-control-input" id="defaultInline2Radio" name="inlineDefaultRadiosExample"
+                                                        >
+                                                    <label class="custom-control-label" for="defaultInline2Radio">กรณีเป็นกรรมการ/อนุกรรมการ/บุคคลภายนอก</label>
+                                                </div>
+                                        
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                        
+                                            <div class="col-6 pr-1">
+                                                <label class="form-label" for="fname">บัญชีเงินฝากธนาคาร</label>
+                                                <select class="custom-select form-control">
+                                                    <option selected=""></option>
+                                                    <option value="1">กรุงเทพ</option>
+                                                    <option value="2">กรุงไทย</option>
+                                                    <option value="2">ออมสิน</option>
+                                                
+                                                </select>
+                                                <div class="invalid-feedback">No, you missed this one.</div>
+                                            </div>
+                                            <div class="col-6 pl-1">
+                                                <label class="form-label" for="fname">สาขา</label>
+                                                <input type="text" id="fname" class="form-control" placeholder="สาขา" required>
+                                                <div class="invalid-feedback">No, you missed this one.</div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                        
+                                            <div class="col-6 pr-1">
+                                                <label class="form-label" for="fname">ประเภท</label>
+                                                
+                                                <select class="custom-select form-control">
+                                                    <option selected=""></option>
+                                                    <option value="1">ออมทรัพย์</option>
+                                                    <option value="2">ประจำ</option>
+                                                    
+                                                </select>
+                                                <div class="invalid-feedback">No, you missed this one.</div>
+                                            </div>
+                                            <div class="col-6 pl-1">
+                                                <label class="form-label" for="fname">เลขที่บัญชีเงินฝากธนาคาร</label>
+                                                <input type="text" id="fname" class="form-control" placeholder="เลขที่บัญชีเงินฝากธนาคาร" required>
+                                                <div class="invalid-feedback">No, you missed this one.</div>
+                                            </div>
+                                        </div>
+
+                                        
+                                        <div class="form-group demo">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="terms" required checked>
+                                                <label class="custom-control-label" for="terms">ข้อความแจ้งเตือนผ่านโทรศัพท์มือถือ (SMS)</label>
+                                                <div class="invalid-feedback">You must agree before proceeding</div>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="newsletter" checked>
+                                                <label class="custom-control-label" for="newsletter">จดหมายอิเล็กทรอนิกส์ (e-mail)
+                                                    </label>
+                                            </div>
+                                        </div>
+                                        <div class="row no-gutters">
+                                            <div class="col-md-4 ml-auto text-right">
+                                                <!-- <button id="js-login-btn" type="submit"
+                                                    class="btn btn-block btn-danger btn-lg mt-3">Send
+                                                    verification</button> -->
+
+                                                    <button id="js-login-btn" type="submit" class="btn btn-info btn-block btn-lg">บันทึกข้อมูล
+                                                        <!-- <i class="fab fa-google"></i> -->
+                                                    </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="position-absolute pos-bottom pos-left pos-right p-3 text-center text-white">
+                        <span class="hidden-md-down fw-700">
+                            © Copyright | สำนักงานเลขาธิการคุรุสภา
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <script src="js/vendors.bundle.js"></script>
+    <script src="js/app.bundle.js"></script>
+    <script>
+        $("#js-login-btn").click(function (event) {
+
+            // Fetch form to apply custom Bootstrap validation
+            var form = $("#js-login")
+
+            if (form[0].checkValidity() === false) {
+                event.preventDefault()
+                event.stopPropagation()
+            }
+
+            form.addClass('was-validated');
+            // Perform ajax submit here...
+        });
+
+    </script>
+</body>
+
+</html>

@@ -317,7 +317,53 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
               
               
              
-              
+                <tr>
+                <td>
+                  11
+                </td>
+                <td>
+                 	รายการทดสอบ เบิกจ่าย
+                  <br>&nbsp;&nbsp;&nbsp;&nbsp;(กิจกรรม : การให้บริการห้องประชุม)
+                </td>
+                <td>
+                 350
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td> </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>29 ก.ค. 66</td>
+                <td>
+                  <div class="custom-control custom-checkbox d-block bg-fusion-100" style = "padding-left:2px;padding-right:2px;margin:0px;padding-bottom:0px;padding-top:4px;">
+                      
+                      <label ><small class= "">ยังไม่ตรวจสอบ</small></label>
+                      
+                  </div>
+                  <!-- <label style = "margin:0px;"><small class= "">(9 ส.ค 66)</small></label> -->
+                </td>
+                <td>
+                 
+                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data" mode='edit'data-toggle="modal" data-target=".default-example-modal-right">
+                     <i class="fa-solid fa-gear"></i>
+                  </a>
+                  &nbsp;&nbsp;
+                  <a href="javascript:void(0);" class="btn btn-outline-danger btn-icon btn-xs rounded-circle waves-effect waves-themed"
+                  data-toggle="modal" data-target="#example-modal-alert">
+                    <i class="ni ni-trash">
+                    </i>
+                  </a>
+                </td>
+                <td>
+                  <a href="javascript:void(0);" class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed"
+                  data-toggle="modal" data-target="#example-modal-alert" style = "padding-top:2px;">
+                    <i class="fa fa-print">
+                    </i>
+                  </a>
+                </td>
+              </tr>
               
                <tr>
                 <td>
@@ -339,15 +385,15 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <td></td>
                 <td>23 ก.ย. 65</td>
                 <td>
-                  <div class="custom-control custom-checkbox d-block bg-fusion-100" style = "padding-left:2px;padding-right:2px;margin:0px;padding-bottom:0px;padding-top:4px;">
+                  <div class="custom-control custom-checkbox d-block bg-success-600" style = "padding-left:2px;padding-right:2px;margin:0px;padding-bottom:0px;padding-top:4px;">
                       
-                      <label ><small class= "">ยังไม่ตรวจสอบ</small></label>
+                      <label ><small class= "">รออนุมัติ</small></label>
                   </div>
+                  <label style = "margin:0px;"><small class= "">(9 ส.ค 66)</small></label>
                 </td>
                 <td>
                   
-                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data" data-toggle="modal"
-                  data-target=".default-example-modal-right"
+                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data" data-toggle="modal" data-target=".default-example-modal-right"
                   mode='edit'>
                     <i class="fa-solid fa-gear"></i>
                   </a>
@@ -390,6 +436,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                       
                       <label ><small class= "">รอการอนุมัติ</small></label>
                   </div>
+                  <label style = "margin:0px;"><small class= "">(10 ส.ค 66)</small></label>
                 </td>
                 <td>
                   
@@ -435,6 +482,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                       
                       <label ><small class= "">รับเงินแล้ว</small></label>
                   </div>
+                  <label style = "margin:0px;"><small class= "">(10 ส.ค 66)</small></label>
                 </td>
                 <td>
                   
@@ -481,6 +529,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                       
                       <label ><small class= "">รอการอนุมัติ</small></label>
                   </div>
+                  <label style = "margin:0px;"><small class= "">(11 ส.ค 66)</small></label>
                 </td>
                 <td>
                   
@@ -526,6 +575,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                       
                       <label ><small class= "">นำส่งแล้ว</small></label>
                   </div>
+                  <label style = "margin:0px;"><small class= "">(11 ส.ค 66)</small></label>
                 </td>
                 <td>
                   
@@ -572,6 +622,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                       
                       <label ><small class= "">รอการอนุมัติ</small></label>
                   </div>
+                  <label style = "margin:0px;"><small class= "">(12 ส.ค 66)</small></label>
                 </td>
                 <td>
                   
@@ -616,6 +667,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                       
                       <label ><small class= "">รับเงินแล้ว</small></label>
                   </div>
+                  <label style = "margin:0px;"><small class= "">(13 ส.ค 66)</small></label>
                 </td>
                 <td>
                   
@@ -660,6 +712,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                       
                       <label ><small class= "">ไม่ยืนยัน</small></label>
                   </div>
+                  <label style = "margin:0px;"><small class= "">(14 .ส.ค 66)</small></label>
                 </td>
                 <td>
                   
@@ -708,6 +761,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                       
                       <label ><small class= "">รับเงินแล้ว</small></label>
                   </div>
+                  <label style = "margin:0px;"><small class= "">(14 .ส.ค 66)</small></label>
                 </td>
                 <td>
                   
@@ -753,6 +807,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                       
                       <label ><small class= "">รับเงินแล้ว</small></label>
                   </div>
+                  <label style = "margin:0px;"><small class= "">(14 .ส.ค 66)</small></label>
                 </td>
                 <td>
                   
@@ -1411,6 +1466,7 @@ function renderChartout() {
 $(document).ready(function() {
 
   $(".select2").select2();
+  
  
 
   $(document).ready(function() {
@@ -1453,7 +1509,7 @@ $(document).ready(function() {
       orderable: false,
     },
     {
-      targets: [0,,10,13],
+      targets: [0,10,11,13],
       className: "text-center",
     },
     {
@@ -1496,7 +1552,7 @@ $(document).ready(function() {
     }]
 
   });
-
+  
   $(document).on('click', '#btnadd',
   function() {
     $("#ids").val('');

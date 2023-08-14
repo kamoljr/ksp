@@ -41,9 +41,13 @@
     $dialog_max_width = "1000";
   }else if ($pages == "wdproject"){
      $dialog_max_width = "1000";
+  }else if ($pages == "revenue"){
+     $dialog_max_width = "1000";
+  }else if ($pages == "sendmoney"){
+     $dialog_max_width = "1000";
   }
 
-  if ($description_id == '4'){
+  if ($description_id == '4' || $description_id == '5'){
     $dialog_max_width = "1000";
   }
 ?>

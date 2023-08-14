@@ -29,6 +29,7 @@
                 </label>
                 <!-- <input type="text" class="form-control form-ele clear-element" id="group_name_add" name="group_name_add" placeholder="แผนงาน" value="" > -->
               </div> 
+              
               <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
                 <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="group_name_add">
                   โครงการ
@@ -36,6 +37,25 @@
                 </label>
                 <input type="text" class="form-control form-ele clear-element" id="group_name_add" name="group_name_add" placeholder="โครงการ" value="" >
               </div> 
+
+              <!-- <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
+                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;padding-bottom:5px;" for="group_name_add">
+                  ประเภท
+                  <span class="text-danger stars"> * </span>
+                </label>
+                <div class="frame-wrap">
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" class="custom-control-input" id="defaultInline1Radio" name="inlineDefaultRadiosExample" checked="">
+                        <label class="custom-control-label color-fusion-300" for="defaultInline1Radio" >ผลผลิต</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" class="custom-control-input" id="defaultInline2Radio" name="inlineDefaultRadiosExample" >
+                        <label class="custom-control-label color-fusion-300" for="defaultInline2Radio">โครงการ</label>
+                    </div>
+                    
+                </div>
+              </div>  -->
+
               <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
                 <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;padding-bottom:5px;" for="group_name_add">
                   แผนงาน
@@ -54,6 +74,26 @@
                     
                   </select>
               </div> 
+
+              <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
+                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;padding-bottom:5px;" for="group_name_add">
+                  ผลผลิต/โครงการ
+                  <span class="text-danger stars"> * </span>
+                </label>
+                  <select id="product_add1" name="product_add1" class="select2" placeholder="แผนงาน">
+                    <!-- <option value="">
+                      	โครงการนวัตกรรมการพัฒนาจรรยาบรรณวิชาชีพครูผ่านการเรียนรู้ด้วยบอร์ดเกม (Board Game)
+                    </option>
+                    <option value="17">
+                      	โครงการพัฒนาสถาบันคุรุพัฒนาเป็นราชวิทยาลัยชั้นสูงสำหรับครูและบุคลากรท่งการศึกษา
+                    </option> -->
+                    <option value="17" selected>
+                      	[ผลผลิต]ผู้ประกอบวิชาชีพครูและบุคลากรทางการศึกษามีคุณภาพตามมาตรฐานวิชาชีพ
+                    </option>
+                    
+                  </select>
+              </div> 
+              
               <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
                 <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="group_name_add">
                   พันธกิจ

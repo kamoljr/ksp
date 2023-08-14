@@ -94,6 +94,9 @@
         localStorage.setItem("themeSettings", "");
     }
     
+
+    
+
     </script>
     <!-- BEGIN Page Wrapper -->
     <div class="page-wrapper">
@@ -145,6 +148,91 @@
 
     <?=view("templates/modal.php")?>
                         
+
+<div class="modal fade default-example-modal-left-sm-ex" tabindex="-1" role="dialog" aria-hidden="true" >
+    <div class="modal-dialog modal-dialog-left modal-sm" style="max-width:430px !important;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title h4">รายชื่อคณะกรรมการ</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fal fa-times"></i></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="panel-tag" style = "margin-bottom:0px;">
+                    	[1]ข้อมูลชื่อชุดคณะกรรมการ ชุดที่ 1
+                </div>
+
+                <!-- datatable start -->
+                <table id="dynamic-table-ex" class="table table-md table-bordered table-hover table-striped w-100">
+                    <thead class="bg-primary-600">
+                    <tr>
+                        <th width = "20px;">
+                        </th>
+                        <th class="text-center" width = "120px;">
+                        เลขบัตรประชาชน
+                        </th>
+                        <th class="text-center">
+                        ชื่อ-นามสกุล
+                        </th>
+                        
+                    </tr>
+                    </thead>
+                    <tbody>
+                
+                    <tr>
+                        <td>
+                        1
+                        </td>
+                        <td>
+                        8-7925-06788-08-4
+                        </td>
+                        <td>
+                        นางสาวชุติมณฑน์ แสงสุวรรณ
+                        </td>
+                      
+                    </tr>
+                    <tr>
+                        <td>
+                        2
+                        </td>
+                        <td>
+                        
+                        7-6895-40528-89-7
+                        </td>
+                        <td>
+                        นางนัทนิธิ แสงดารา
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td>
+                        3
+                        </td>
+                        <td>
+                        
+                        0-8352-23100-01-1
+                        </td>
+                        <td>
+                        นายป้องเกียรติ โชตวาณิช
+                        </td>
+                        
+                    </tr>
+                    
+                    
+                    
+                    
+                    </tbody>
+                </table>
+                <!-- datatable end -->
+
+
+            </div>
+            
+        </div>
+    </div>
+</div>
+
 </body>
 
 </html>
