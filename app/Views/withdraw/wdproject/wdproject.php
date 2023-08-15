@@ -75,7 +75,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                         
                       </select>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-2">
                       <label class="form-label" for="act_search" style = "display:block;">
                         กิจกรรม
                       </label>
@@ -101,7 +101,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                       <label class="form-label" for="type_search" style = "display:block;">
                         ประเภท
                       </label>
-                      <select id="type_search" name="act_search" class="select2"
+                      <select id="type_search" name="type_search" class="select2"
                       placeholder="ปีงบประมาณ">
                         <option value="" selected>
                           ทั้งหมด
@@ -119,7 +119,35 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                         
                       </select>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-2">
+                      <label class="form-label" for="status_search" style = "display:block;">
+                        สถานะ
+                      </label>
+                      <select id="status_search" name="status_search" class="select2"
+                      placeholder="สถานะ">
+                        <option value="" selected>
+                          ทั้งหมด
+                        </option>
+                        <option value="" >
+                          ยังไม่ตรวจสอบ
+                        </option>
+                        <option value="">
+                          ไม่ยืนยัน
+                        </option>
+                        <option value="17">
+                          รออนุมัติ
+                        </option>
+                        <option value="17">
+                          อนุมัติ
+                        </option>
+                        <option value="17">
+                          รับเงินแล้ว
+                        </option>
+                       
+                        
+                      </select>
+                    </div>
+                    <div class="col-sm-2">
                       <label class="form-label" for="text_search">
                          รหัสรายการ/เรื่อง
                       </label>
@@ -270,40 +298,39 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 </th>
                 
                 <th class="text-center" style = "vertical-align:middle;" width="50">
-                  เบิก<br>จ่าย
+                  เบิกจ่าย
                 </th>
                 <th class="text-center" style = "vertical-align:middle;" width="50">
-                  79<br>วรรค<br>2
+                  79<br>วรรค 2
                 </th>
                 <th class="text-center" style = "vertical-align:middle;" width="50">
-                  กัน<br>วง<br>เงิน
+                  กัน<br>วงเงิน
                 </th>
                 <th class="text-center" style = "vertical-align:middle;" width="50">
-                  เบิก<br>กัน<br>วงเงิน
+                  เบิก<br>กันวงเงิน
                 </th>
                 <th class="text-center" style = "vertical-align:middle;" width="50">
                   เงิน<br>ยืม
                 </th>
                 <th class="text-center" style = "vertical-align:middle;" width="50">
-                  เบิก<br>เงิน<br>ยืม
+                  เบิก<br>เงินยืม
                 </th>
                 <th class="text-center" style = "vertical-align:middle;" width="50">
-                  กัน<br>เหลื่อม<br>ปี
+                  กัน<br>เหลื่อมปี
                 </th>
                 <th class="text-center" style = "vertical-align:middle;" width="50">
-                  เบิก<br>กัน<br>เหลื่อมปี
+                  เบิกกัน<br>เหลื่อมปี
                 </th>
 
                 <th class="text-center" style = "vertical-align:middle;" width="70">
-                  แก้ไข<br>ล่าสุด
+                  แก้ไขล่าสุด
                 </th>
                 <th class="text-center" style = "vertical-align:middle;" width="65">
                   สถานะ
                 </th>
-                <th width="90">
+                <th width="70">
                 </th>
-                <th width="30">
-                </th>
+                
               </tr>
             </thead>
             <tbody>
@@ -343,29 +370,28 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   <!-- <label style = "margin:0px;"><small class= "">(9 ส.ค 66)</small></label> -->
                 </td>
                 <td>
-                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data btnview" data-toggle="modal" data-target=".default-example-modal-right" mode='view' style='padding-top:2px !important;'>
-                    <i class="fa-regular fa-eye"></i>
-                  </a>
-                  &nbsp;&nbsp;
-                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
-                  mode='edit'>
+                  
+                 
+                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data" mode='edit'>
                     <i class="ni ni-pencil">
                     </i>
                   </a>
-                  &nbsp;&nbsp;
-                  <a href="javascript:void(0);" class="btn btn-outline-danger btn-icon btn-xs rounded-circle waves-effect waves-themed"
-                  data-toggle="modal" data-target="#example-modal-alert">
+                   &nbsp;&nbsp;
+                  <a href="javascript:void(0);" class="btn btn-outline-danger btn-icon btn-xs rounded-circle waves-effect waves-themed" data-toggle="modal" data-target="#example-modal-alert" >
                     <i class="ni ni-trash">
                     </i>
                   </a>
-                </td>
-                <td>
-                  <a href="javascript:void(0);" class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed"
-                  data-toggle="modal" data-target="#example-modal-alert" style = "padding-top:2px;">
+                  <br>
+                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data btnview" data-toggle="modal" data-target=".default-example-modal-right" mode='view' style='margin-top:8px !important;'>
+                    <i class="fa-regular fa-eye"></i>
+                  </a>
+                  &nbsp;&nbsp;
+                   <a href="javascript:void(0);" class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed" data-toggle="modal" data-target="#example-modal-alert" style='margin-top:8px !important;'>
                     <i class="fa fa-print">
                     </i>
                   </a>
                 </td>
+               
               </tr>
 
                <tr>
@@ -396,26 +422,23 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   <label style = "margin:0px;"><small class= "">(9 ส.ค 66)</small></label>
                 </td>
                 <td>
-                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data" data-toggle="modal"
-            data-target=".default-example-modal-right" mode='view' style='padding-top:2px !important;'>
-                    <i class="fa-regular fa-eye"></i>
-                  </a>
-                  &nbsp;&nbsp;
-                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
-                  mode='edit'>
+                  
+                 
+                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data" mode='edit'>
                     <i class="ni ni-pencil">
                     </i>
                   </a>
-                  &nbsp;&nbsp;
-                  <a href="javascript:void(0);" class="btn btn-outline-danger btn-icon btn-xs rounded-circle waves-effect waves-themed"
-                  data-toggle="modal" data-target="#example-modal-alert">
+                   &nbsp;&nbsp;
+                  <a href="javascript:void(0);" class="btn btn-outline-danger btn-icon btn-xs rounded-circle waves-effect waves-themed" data-toggle="modal" data-target="#example-modal-alert" >
                     <i class="ni ni-trash">
                     </i>
                   </a>
-                </td>
-                <td>
-                  <a href="javascript:void(0);" class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed"
-                  data-toggle="modal" data-target="#example-modal-alert" style = "padding-top:2px;">
+                  <br>
+                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data btnview" data-toggle="modal" data-target=".default-example-modal-right" mode='view' style='margin-top:8px !important;'>
+                    <i class="fa-regular fa-eye"></i>
+                  </a>
+                  &nbsp;&nbsp;
+                   <a href="javascript:void(0);" class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed" data-toggle="modal" data-target="#example-modal-alert" style='margin-top:8px !important;'>
                     <i class="fa fa-print">
                     </i>
                   </a>
@@ -448,26 +471,23 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   <label style = "margin:0px;"><small class= "">(10 ส.ค 66)</small></label>
                 </td>
                 <td>
-                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data" data-toggle="modal"
-            data-target=".default-example-modal-right" mode='view' style='padding-top:2px !important;'>
-                    <i class="fa-regular fa-eye"></i>
-                  </a>
-                  &nbsp;&nbsp;
-                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
-                  mode='edit'>
+                  
+                 
+                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data" mode='edit'>
                     <i class="ni ni-pencil">
                     </i>
                   </a>
-                  &nbsp;&nbsp;
-                  <a href="javascript:void(0);" class="btn btn-outline-danger btn-icon btn-xs rounded-circle waves-effect waves-themed"
-                  data-toggle="modal" data-target="#example-modal-alert">
+                   &nbsp;&nbsp;
+                  <a href="javascript:void(0);" class="btn btn-outline-danger btn-icon btn-xs rounded-circle waves-effect waves-themed" data-toggle="modal" data-target="#example-modal-alert" >
                     <i class="ni ni-trash">
                     </i>
                   </a>
-                </td>
-                <td>
-                  <a href="javascript:void(0);" class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed"
-                  data-toggle="modal" data-target="#example-modal-alert" style = "padding-top:2px;">
+                  <br>
+                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data btnview" data-toggle="modal" data-target=".default-example-modal-right" mode='view' style='margin-top:8px !important;'>
+                    <i class="fa-regular fa-eye"></i>
+                  </a>
+                  &nbsp;&nbsp;
+                   <a href="javascript:void(0);" class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed" data-toggle="modal" data-target="#example-modal-alert" style='margin-top:8px !important;'>
                     <i class="fa fa-print">
                     </i>
                   </a>
@@ -500,27 +520,23 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   <label style = "margin:0px;"><small class= "">(10 ส.ค 66)</small></label>
                 </td>
                 <td>
-                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data" data-toggle="modal"
-            data-target=".default-example-modal-right" mode='view' style='padding-top:2px !important;'>
-                    <i class="fa-regular fa-eye"></i>
-                  </a>
-                  &nbsp;&nbsp;
                   
-                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
-                  mode='edit'>
+                 
+                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data" mode='edit'>
                     <i class="ni ni-pencil">
                     </i>
                   </a>
-                  &nbsp;&nbsp;
-                  <a href="javascript:void(0);" class="btn btn-outline-danger btn-icon btn-xs rounded-circle waves-effect waves-themed"
-                  data-toggle="modal" data-target="#example-modal-alert">
+                   &nbsp;&nbsp;
+                  <a href="javascript:void(0);" class="btn btn-outline-danger btn-icon btn-xs rounded-circle waves-effect waves-themed" data-toggle="modal" data-target="#example-modal-alert" >
                     <i class="ni ni-trash">
                     </i>
                   </a>
-                </td>
-                <td>
-                  <a href="javascript:void(0);" class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed"
-                  data-toggle="modal" data-target="#example-modal-alert" style = "padding-top:2px;">
+                  <br>
+                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data btnview" data-toggle="modal" data-target=".default-example-modal-right" mode='view' style='margin-top:8px !important;'>
+                    <i class="fa-regular fa-eye"></i>
+                  </a>
+                  &nbsp;&nbsp;
+                   <a href="javascript:void(0);" class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed" data-toggle="modal" data-target="#example-modal-alert" style='margin-top:8px !important;'>
                     <i class="fa fa-print">
                     </i>
                   </a>
@@ -553,26 +569,23 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   <label style = "margin:0px;"><small class= "">(11 ส.ค 66)</small></label>
                 </td>
                 <td>
-                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data" data-toggle="modal"
-            data-target=".default-example-modal-right" mode='view' style='padding-top:2px !important;'>
-                    <i class="fa-regular fa-eye"></i>
-                  </a>
-                  &nbsp;&nbsp;
-                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
-                  mode='edit'>
+                  
+                 
+                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data" mode='edit'>
                     <i class="ni ni-pencil">
                     </i>
                   </a>
-                  &nbsp;&nbsp;
-                  <a href="javascript:void(0);" class="btn btn-outline-danger btn-icon btn-xs rounded-circle waves-effect waves-themed"
-                  data-toggle="modal" data-target="#example-modal-alert">
+                   &nbsp;&nbsp;
+                  <a href="javascript:void(0);" class="btn btn-outline-danger btn-icon btn-xs rounded-circle waves-effect waves-themed" data-toggle="modal" data-target="#example-modal-alert" >
                     <i class="ni ni-trash">
                     </i>
                   </a>
-                </td>
-                <td>
-                  <a href="javascript:void(0);" class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed"
-                  data-toggle="modal" data-target="#example-modal-alert" style = "padding-top:2px;">
+                  <br>
+                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data btnview" data-toggle="modal" data-target=".default-example-modal-right" mode='view' style='margin-top:8px !important;'>
+                    <i class="fa-regular fa-eye"></i>
+                  </a>
+                  &nbsp;&nbsp;
+                   <a href="javascript:void(0);" class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed" data-toggle="modal" data-target="#example-modal-alert" style='margin-top:8px !important;'>
                     <i class="fa fa-print">
                     </i>
                   </a>
@@ -622,13 +635,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                     </i>
                   </a> -->
                 </td>
-                <td>
-                  <!-- <a href="javascript:void(0);" class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed"
-                  data-toggle="modal" data-target="#example-modal-alert" style = "padding-top:2px;">
-                    <i class="fa fa-print">
-                    </i>
-                  </a> -->
-                </td>
+              
               </tr>
               
               <tr>
@@ -658,26 +665,23 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   <label style = "margin:0px;"><small class= "">(12 ส.ค 66)</small></label>
                 </td>
                 <td>
-                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data" data-toggle="modal"
-            data-target=".default-example-modal-right" mode='view' style='padding-top:2px !important;'>
-                    <i class="fa-regular fa-eye"></i>
-                  </a>
-                  &nbsp;&nbsp;
-                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
-                  mode='edit'>
+                  
+                 
+                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data" mode='edit'>
                     <i class="ni ni-pencil">
                     </i>
                   </a>
-                  &nbsp;&nbsp;
-                  <a href="javascript:void(0);" class="btn btn-outline-danger btn-icon btn-xs rounded-circle waves-effect waves-themed"
-                  data-toggle="modal" data-target="#example-modal-alert">
+                   &nbsp;&nbsp;
+                  <a href="javascript:void(0);" class="btn btn-outline-danger btn-icon btn-xs rounded-circle waves-effect waves-themed" data-toggle="modal" data-target="#example-modal-alert" >
                     <i class="ni ni-trash">
                     </i>
                   </a>
-                </td>
-                <td>
-                  <a href="javascript:void(0);" class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed"
-                  data-toggle="modal" data-target="#example-modal-alert" style = "padding-top:2px;">
+                  <br>
+                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data btnview" data-toggle="modal" data-target=".default-example-modal-right" mode='view' style='margin-top:8px !important;'>
+                    <i class="fa-regular fa-eye"></i>
+                  </a>
+                  &nbsp;&nbsp;
+                   <a href="javascript:void(0);" class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed" data-toggle="modal" data-target="#example-modal-alert" style='margin-top:8px !important;'>
                     <i class="fa fa-print">
                     </i>
                   </a>
@@ -709,26 +713,23 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   <label style = "margin:0px;"><small class= "">(13 ส.ค 66)</small></label>
                 </td>
                 <td>
-                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data" data-toggle="modal"
-            data-target=".default-example-modal-right" mode='view' style='padding-top:2px !important;'>
-                    <i class="fa-regular fa-eye"></i>
-                  </a>
-                  &nbsp;&nbsp;
-                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
-                  mode='edit'>
+                  
+                 
+                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data" mode='edit'>
                     <i class="ni ni-pencil">
                     </i>
                   </a>
-                  &nbsp;&nbsp;
-                  <a href="javascript:void(0);" class="btn btn-outline-danger btn-icon btn-xs rounded-circle waves-effect waves-themed"
-                  data-toggle="modal" data-target="#example-modal-alert">
+                   &nbsp;&nbsp;
+                  <a href="javascript:void(0);" class="btn btn-outline-danger btn-icon btn-xs rounded-circle waves-effect waves-themed" data-toggle="modal" data-target="#example-modal-alert" >
                     <i class="ni ni-trash">
                     </i>
                   </a>
-                </td>
-                <td>
-                  <a href="javascript:void(0);" class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed"
-                  data-toggle="modal" data-target="#example-modal-alert" style = "padding-top:2px;">
+                  <br>
+                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data btnview" data-toggle="modal" data-target=".default-example-modal-right" mode='view' style='margin-top:8px !important;'>
+                    <i class="fa-regular fa-eye"></i>
+                  </a>
+                  &nbsp;&nbsp;
+                   <a href="javascript:void(0);" class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed" data-toggle="modal" data-target="#example-modal-alert" style='margin-top:8px !important;'>
                     <i class="fa fa-print">
                     </i>
                   </a>
@@ -760,26 +761,23 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   <label style = "margin:0px;"><small class= "">(14 .ส.ค 66)</small></label>
                 </td>
                 <td>
-                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data" data-toggle="modal"
-            data-target=".default-example-modal-right" mode='view' style='padding-top:2px !important;'>
-                    <i class="fa-regular fa-eye"></i>
-                  </a>
-                  &nbsp;&nbsp;
-                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
-                  mode='edit'>
+                  
+                 
+                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data" mode='edit'>
                     <i class="ni ni-pencil">
                     </i>
                   </a>
-                  &nbsp;&nbsp;
-                  <a href="javascript:void(0);" class="btn btn-outline-danger btn-icon btn-xs rounded-circle waves-effect waves-themed"
-                  data-toggle="modal" data-target="#example-modal-alert">
+                   &nbsp;&nbsp;
+                  <a href="javascript:void(0);" class="btn btn-outline-danger btn-icon btn-xs rounded-circle waves-effect waves-themed" data-toggle="modal" data-target="#example-modal-alert" >
                     <i class="ni ni-trash">
                     </i>
                   </a>
-                </td>
-                <td>
-                  <a href="javascript:void(0);" class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed"
-                  data-toggle="modal" data-target="#example-modal-alert" style = "padding-top:2px;">
+                  <br>
+                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data btnview" data-toggle="modal" data-target=".default-example-modal-right" mode='view' style='margin-top:8px !important;'>
+                    <i class="fa-regular fa-eye"></i>
+                  </a>
+                  &nbsp;&nbsp;
+                   <a href="javascript:void(0);" class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed" data-toggle="modal" data-target="#example-modal-alert" style='margin-top:8px !important;'>
                     <i class="fa fa-print">
                     </i>
                   </a>
@@ -815,26 +813,23 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   <label style = "margin:0px;"><small class= "">(14 .ส.ค 66)</small></label>
                 </td>
                 <td>
-                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data" data-toggle="modal"
-            data-target=".default-example-modal-right" mode='view' style='padding-top:2px !important;'>
-                    <i class="fa-regular fa-eye"></i>
-                  </a>
-                  &nbsp;&nbsp;
-                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
-                  mode='edit'>
+                  
+                 
+                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data" mode='edit'>
                     <i class="ni ni-pencil">
                     </i>
                   </a>
-                  &nbsp;&nbsp;
-                  <a href="javascript:void(0);" class="btn btn-outline-danger btn-icon btn-xs rounded-circle waves-effect waves-themed"
-                  data-toggle="modal" data-target="#example-modal-alert">
+                   &nbsp;&nbsp;
+                  <a href="javascript:void(0);" class="btn btn-outline-danger btn-icon btn-xs rounded-circle waves-effect waves-themed" data-toggle="modal" data-target="#example-modal-alert" >
                     <i class="ni ni-trash">
                     </i>
                   </a>
-                </td>
-                <td>
-                  <a href="javascript:void(0);" class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed"
-                  data-toggle="modal" data-target="#example-modal-alert" style = "padding-top:2px;">
+                  <br>
+                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data btnview" data-toggle="modal" data-target=".default-example-modal-right" mode='view' style='margin-top:8px !important;'>
+                    <i class="fa-regular fa-eye"></i>
+                  </a>
+                  &nbsp;&nbsp;
+                   <a href="javascript:void(0);" class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed" data-toggle="modal" data-target="#example-modal-alert" style='margin-top:8px !important;'>
                     <i class="fa fa-print">
                     </i>
                   </a>
@@ -867,26 +862,23 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   <label style = "margin:0px;"><small class= "">(14 .ส.ค 66)</small></label>
                 </td>
                 <td>
-                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data" data-toggle="modal"
-            data-target=".default-example-modal-right" mode='view' style='padding-top:2px !important;'>
-                    <i class="fa-regular fa-eye"></i>
-                  </a>
-                  &nbsp;&nbsp;
-                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
-                  mode='edit'>
+                  
+                 
+                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data" mode='edit'>
                     <i class="ni ni-pencil">
                     </i>
                   </a>
-                  &nbsp;&nbsp;
-                  <a href="javascript:void(0);" class="btn btn-outline-danger btn-icon btn-xs rounded-circle waves-effect waves-themed"
-                  data-toggle="modal" data-target="#example-modal-alert">
+                   &nbsp;&nbsp;
+                  <a href="javascript:void(0);" class="btn btn-outline-danger btn-icon btn-xs rounded-circle waves-effect waves-themed" data-toggle="modal" data-target="#example-modal-alert" >
                     <i class="ni ni-trash">
                     </i>
                   </a>
-                </td>
-                <td>
-                  <a href="javascript:void(0);" class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed"
-                  data-toggle="modal" data-target="#example-modal-alert" style = "padding-top:2px;">
+                  <br>
+                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data btnview" data-toggle="modal" data-target=".default-example-modal-right" mode='view' style='margin-top:8px !important;'>
+                    <i class="fa-regular fa-eye"></i>
+                  </a>
+                  &nbsp;&nbsp;
+                   <a href="javascript:void(0);" class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed" data-toggle="modal" data-target="#example-modal-alert" style='margin-top:8px !important;'>
                     <i class="fa fa-print">
                     </i>
                   </a>
@@ -1301,8 +1293,8 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
     font-size:12px;
   }
   table.dataTable th {
-    padding-left: 2px;
-    padding-right: 2px;
+    padding-left: 1px;
+    padding-right: 0px;
     padding-top: 10px;
     padding-bottom: 10px;
     margin:0px;
@@ -1629,11 +1621,11 @@ $(document).ready(function() {
     "ordering": false,
    
     columnDefs: [{
-      targets: [1,2,3,4,5,6,7,8,9,10,11,12,13],
+      targets: [1,2,3,4,5,6,7,8,9,10,11,12],
       orderable: false,
     },
     {
-      targets: [0,,10,11,13],
+      targets: [0,,10,11,12],
       className: "text-center",
     },
     {

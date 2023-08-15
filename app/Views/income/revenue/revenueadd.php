@@ -56,7 +56,7 @@
                       </div>
                       <div class="custom-control custom-radio custom-control-inline">
                           <input type="radio" class="custom-control-input" id="defaultInline4Radio" name="inlineDefaultRadiosExample" value = "4">
-                          <label class="custom-control-label color-fusion-300" for="defaultInline4Radio">กิจกรรมลูก</label>
+                          <label class="custom-control-label color-fusion-300" for="defaultInline4Radio">กิจการลูก</label>
                       </div>
                       <div class="custom-control custom-radio custom-control-inline">
                           <input type="radio" class="custom-control-input" id="defaultInline5Radio" name="inlineDefaultRadiosExample" value = "5">

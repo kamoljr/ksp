@@ -373,7 +373,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   นายณัฐกิตติ์ จิรวราพงศ์
                 </td>
                 <td>
-                  กิจกรรมลูก	
+                  กิจการลูก	
                 </td>
                 <td>
                   ธนาคาร

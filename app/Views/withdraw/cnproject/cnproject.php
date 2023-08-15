@@ -35,7 +35,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <form action="<?=$actual_link?>" method="post" accept-charset="utf-8"
                 id="form-search" name="form-search">
                   <div class="row">
-                    <div class="col-sm-1">
+                    <div class="col-sm-2">
                       <label class="form-label" for="unit_name_search">
                         ปีงบประมาณ
                       </label>
@@ -57,7 +57,39 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                         
                       </select>
                     </div>
+
                     <div class="col-sm-3">
+                      <label class="form-label" for="year_search">
+                        ประเภท
+                      </label>
+                      <select id="item_type_search" name="item_type_search" class="select2"  placeholder="ประเภท" >
+                        <option value="2" selected>
+                            ทั้งหมด
+                        </option>
+                        <option value="2">
+                            งาน/โครงการ
+                        </option>
+                        <option value="3">
+                            กิจการลูก
+                        </option>
+                        <option value="4">
+                            เงินรับฝาก
+                        </option>
+                        <option value="4">
+                            งบกลาง
+                        </option>
+                        <option value="4">
+                            งบบุคลากร
+                        </option>
+                        <option value="4">
+                            ขอคืนเงินรายได้
+                        </option>
+                        <option value="4">
+                            เงินให้กู้ยืม
+                        </option>
+                      </select>
+                    </div>
+                    <div class="col-sm-4">
                       <label class="form-label" for="year_search">
                         โครงการ
                       </label>
@@ -100,11 +132,16 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                         
                       </select>
                     </div>
+                    
+                  </div>
+
+
+                  <div class="row" style = "padding-top:15px;">
                     <div class="col-sm-2">
-                      <label class="form-label" for="type_search" style = "display:block;">
+                      <label class="form-label" for="status_search" style = "display:block;">
                         ประเภท
                       </label>
-                      <select id="type_search" name="act_search" class="select2"
+                      <select id="status_search" name="status_search" class="select2"
                       placeholder="ปีงบประมาณ">
                         <option value="" selected>
                           ทั้งหมด
@@ -122,14 +159,48 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                         
                       </select>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-2">
+                      <label class="form-label" for="type_search" style = "display:block;">
+                        สถานะ
+                      </label>
+                      <select id="type_search" name="act_search" class="select2"
+                      placeholder="สถานะ">
+                        <option value="" selected>
+                          ทั้งหมด
+                        </option>
+                        <option value="" >
+                          ยังไม่ตรวจสอบ
+                        </option>
+                        <option value="">
+                          ไม่ยืนยัน
+                        </option>
+                        <option value="17">
+                          รออนุมัติ
+                        </option>
+                        <option value="17">
+                          อนุมัติ
+                        </option>
+                        <option value="17">
+                          รับเงินแล้ว
+                        </option>
+                       
+                        
+                      </select>
+                    </div>
+                    <div class="col-sm-8">
                       <label class="form-label" for="text_search">
                          รหัสรายการ/เรื่อง
                       </label>
                       <input id="text_search" name="text_search" class="form-control searchdata"
                       type="text" placeholder="รหัสรายการ/เรื่อง" />
                     </div>
+                   
+
+                    
                   </div>
+
+
+
                 </form>
               </div>
             </div>
@@ -276,34 +347,34 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   เบิก<br>จ่าย
                 </th>
                 <th class="text-center" style = "vertical-align:middle;" width="50">
-                  79<br>วรรค<br>2
+                  79<br>วรรค 2
                 </th>
                 <th class="text-center" style = "vertical-align:middle;" width="50">
-                  กัน<br>วง<br>เงิน
+                  กัน<br>วงเงิน
                 </th>
                 <th class="text-center" style = "vertical-align:middle;" width="50">
-                  เบิก<br>กัน<br>วงเงิน
+                  เบิก<br>กันวงเงิน
                 </th>
                 <th class="text-center" style = "vertical-align:middle;" width="50">
                   เงิน<br>ยืม
                 </th>
                 <th class="text-center" style = "vertical-align:middle;" width="50">
-                  เบิก<br>เงิน<br>ยืม
+                  เบิก<br>เงินยืม
                 </th>
                 <th class="text-center" style = "vertical-align:middle;" width="50">
-                  กัน<br>เหลื่อม<br>ปี
+                  กัน<br>เหลื่อมปี
                 </th>
                 <th class="text-center" style = "vertical-align:middle;" width="50">
-                  เบิก<br>กัน<br>เหลื่อมปี
+                  เบิกกัน<br>เหลื่อมปี
                 </th>
 
                 <th class="text-center" style = "vertical-align:middle;" width="70">
-                  แก้ไข<br>ล่าสุด
+                  แก้ไขล่าสุด
                 </th>
-                <th class="text-center" style = "vertical-align:middle;" width="65">
+                <th class="text-center" style = "vertical-align:middle;" width="70">
                   สถานะ
                 </th>
-                <th width="55">
+                <th width="65">
                 </th>
                 <th width="30">
                 </th>
@@ -352,8 +423,8 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   &nbsp;&nbsp;
                   <a href="javascript:void(0);" class="btn btn-outline-danger btn-icon btn-xs rounded-circle waves-effect waves-themed"
                   data-toggle="modal" data-target="#example-modal-alert">
-                    <i class="ni ni-trash">
-                    </i>
+                    <i class="fa-solid fa-ban"></i>
+                    
                   </a>
                 </td>
                 <td>
@@ -575,11 +646,11 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                       
                       <label ><small class= "">นำส่งแล้ว</small></label>
                   </div>
-                  <label style = "margin:0px;"><small class= "">(11 ส.ค 66)</small></label>
+                  <label style = "margin:0px;"><small class= "">(22 ก.ย. 65)</small></label>
                 </td>
                 <td>
                   
-                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
+                  <!-- <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
                   mode='edit'>
                     <i class="fa-solid fa-gear"></i>
                   </a>
@@ -587,14 +658,14 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   <a href="javascript:void(0);" class="btn btn-outline-danger btn-icon btn-xs rounded-circle waves-effect waves-themed"
                   data-toggle="modal" data-target="#example-modal-alert">
                     <i class="fa-solid fa-ban"></i>
-                  </a>
+                  </a> -->
                 </td>
                 <td>
-                  <a href="javascript:void(0);" class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed"
+                  <!-- <a href="javascript:void(0);" class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed"
                   data-toggle="modal" data-target="#example-modal-alert" style = "padding-top:2px;">
                     <i class="fa fa-print">
                     </i>
-                  </a>
+                  </a> -->
                 </td>
               </tr>
               
@@ -1238,8 +1309,8 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
     font-size:12px;
   }
   table.dataTable th {
-    padding-left: 2px;
-    padding-right: 2px;
+    padding-left: 0px;
+    padding-right: 0px;
     padding-top: 10px;
     padding-bottom: 10px;
     margin:0px;

@@ -57,38 +57,6 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                         
                       </select>
                     </div>
-
-                    <div class="col-sm-3">
-                      <label class="form-label" for="year_search">
-                        ประเภท
-                      </label>
-                      <select id="item_type_search" name="item_type_search" class="select2"  placeholder="ประเภท" >
-                        <option value="2" selected>
-                            ทั้งหมด
-                        </option>
-                        <option value="2">
-                            งาน/โครงการ
-                        </option>
-                        <option value="3">
-                            กิจการลูก
-                        </option>
-                        <option value="4">
-                            เงินรับฝาก
-                        </option>
-                        <option value="4">
-                            งบกลาง
-                        </option>
-                        <option value="4">
-                            งบบุคลากร
-                        </option>
-                        <option value="4">
-                            ขอคืนเงินรายได้
-                        </option>
-                        <option value="4">
-                            เงินให้กู้ยืม
-                        </option>
-                      </select>
-                    </div>
                     <div class="col-sm-4">
                       <label class="form-label" for="year_search">
                         โครงการ
@@ -110,7 +78,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                         
                       </select>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-4">
                       <label class="form-label" for="act_search" style = "display:block;">
                         กิจกรรม
                       </label>
@@ -133,53 +101,14 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                       </select>
                     </div>
                     
-                  </div>
-
-
-                  <div class="row" style = "padding-top:15px;">
-                    
                     <div class="col-sm-2">
-                      <label class="form-label" for="status_search" style = "display:block;">
-                        สถานะ
-                      </label>
-                      <select id="status_search" name="status_search" class="select2"
-                      placeholder="สถานะ">
-                        <option value="" selected>
-                          ทั้งหมด
-                        </option>
-                        <option value="" >
-                          ยังไม่ตรวจสอบ
-                        </option>
-                        <option value="">
-                          ไม่ยืนยัน
-                        </option>
-                        <option value="17">
-                          รออนุมัติ
-                        </option>
-                        <option value="17">
-                          อนุมัติ
-                        </option>
-                        <option value="17">
-                          รับเงินแล้ว
-                        </option>
-                       
-                        
-                      </select>
-                    </div>
-                    <div class="col-sm-4">
                       <label class="form-label" for="text_search">
                          รหัสรายการ/เรื่อง
                       </label>
                       <input id="text_search" name="text_search" class="form-control searchdata"
                       type="text" placeholder="รหัสรายการ/เรื่อง" />
                     </div>
-                    
-
-                    
                   </div>
-
-
-
                 </form>
               </div>
             </div>
@@ -214,71 +143,67 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
           <table id="dynamic-table" class="table table-md table-bordered table-hover table-striped w-100">
             <thead class="bg-primary-600">
               <tr>
-               
                 <th width = "20px;">
                 </th>
-                <th class="text-center" width = "80px;">
-                  ประเภท
+                <th class="text-center" style = "vertical-align:middle;">
+                  โครงการ
                 </th>
-                <th class="text-center" >
-                  ชื่อโครงการ/รายการ
+                <th class="text-center" style = "vertical-align:middle;">
+                  กิจกรรม
                 </th>
-               
-                <th class="text-center">
+                <th class="text-center" style = "vertical-align:middle;">
                   เรื่อง
                 </th>
-                
-                <th class="text-center" width = "70px;">
-                  จำนวนเงิน
+                <th class="text-center" style = "vertical-align:middle;" width="100">
+                  จำนวนเงิน (บาท)
                 </th>
-              
-                <th class="text-center" style = "vertical-align:middle;" width="70">
+                <th class="text-center" style = "vertical-align:middle;" width="100">
                   แก้ไขล่าสุด
                 </th>
-                <th class="text-center" width = "65px;">
+                <th class="text-center" style = "vertical-align:middle;" width="90">
                   สถานะ
                 </th>
-                <th width="15">
+                <th width="30">
                 </th>
-                <th width="15">
+                <th width="30">
                 </th>
               </tr>
             </thead>
             <tbody>
-           
+              
+              
+              
+              
+              
+              
+             
+              
+              
+              
               <tr>
-               
                 <td>
                   1
                 </td>
                 <td>
-                  งาน/โครงการ
-                </td>
-                <td>
                   งานอาคารสถานที่
                 </td>
-                
                 <td>
-                  ขออนุมัติเบิกจ่ายค่าใช้จ่ายในการประชุมคณะกรรมการ
+                  การให้บริการห้องประชุม
+                </td>
+                <td>
+                 	รายกรทดสอบเบิก 79 วรรค 2  รายกาที่ 1
+                
                 </td>
                
-                <td>
-                  12,000.00
-                </td>
-                <td>
-                  7 ส.ค. 66
-                </td>
+                <td>7,339.13</td>
                
-                
+                <td>14 ก.ค. 66</td>
                 <td>
-                  <div class="custom-control custom-checkbox d-block bg-fusion-100" style = "padding-left:2px;padding-right:2px;margin:0px;padding-bottom:0px;padding-top:4px;">
+                  <div class="custom-control custom-checkbox d-block bg-fusion-100 text-center" style = "padding-left:2px;padding-right:2px;margin:0px;padding-bottom:0px;padding-top:4px;">
                       
-                      <label ><small class= "">ยังไม่จรวจสอบ</small></label>
+                      <label ><small class= "">ยังไม่ตรวจสอบ</small></label>
                   </div>
-                  <!-- <label style = "margin:0px;"><small class= "">(9 ส.ค 66)</small></label> -->
                 </td>
-               
-                 
                 <td>
                   
                   <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
@@ -289,319 +214,135 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 </td>
                 <td>
                   <a href="javascript:void(0);" class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed"
-                  data-toggle="modal" data-target="#example-modal-alert" style = "">
-                    <i class="fa-solid fa-print">
+                  data-toggle="modal" data-target="#example-modal-alert" style = "padding-top:2px;">
+                    <i class="fa fa-print">
                     </i>
                   </a>
                 </td>
-                
               </tr>
               <tr>
-               
                 <td>
                   2
                 </td>
                 <td>
-                  กิจการลูก
+                  งานอาคารสถานที่
                 </td>
                 <td>
-                  กองทุนสวัสดิการมและกองทุนบำเน็จ	
+                  การให้บริการด้านอาคารสถานที่  
                 </td>
+                <td>
+                 	รายกรทดสอบเบิก 79 วรรค 2 รายกาที่ 2
                 
-                <td>
-                  ขออนุมัติเบิกจ่ายค่าใช้จ่ายกองทุนสวัสดิการมและกองทุนบำเน็จ
                 </td>
                
-                <td>
-                  8,000.00
-                </td>
-                <td>
-                  7 ส.ค. 66
-                </td>
+                <td>25,200.00</td>
                
-                
+                <td>19 ก.ค. 66</td>
                 <td>
-                  <div class="custom-control custom-checkbox d-block bg-success-600" style = "padding-left:2px;padding-right:2px;margin:0px;padding-bottom:0px;padding-top:4px;">
+                  <div class="custom-control custom-checkbox d-block bg-fusion-100 text-center" style = "padding-left:2px;padding-right:2px;margin:0px;padding-bottom:0px;padding-top:4px;">
                       
-                      <label ><small class= "">รออนุมัติ</small></label>
+                      <label ><small class= "">ยังไม่ตรวจสอบ</small></label>
                   </div>
-                  <label style = "margin:0px;"><small class= "">(9 ส.ค 66)</small></label>
                 </td>
-               
-                 
                 <td>
                   
                   <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
-                  mode='edit' data-toggle="modal" data-target=".default-example-modal-right">
+                  mode='edit'>
                     <i class="fa-solid fa-pencil"></i>
                   </a>
                  
                 </td>
                 <td>
                   <a href="javascript:void(0);" class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed"
-                  data-toggle="modal" data-target="#example-modal-alert" style = "">
-                    <i class="fa-solid fa-print">
+                  data-toggle="modal" data-target="#example-modal-alert" style = "padding-top:2px;">
+                    <i class="fa fa-print">
                     </i>
                   </a>
                 </td>
-                
               </tr>
               <tr>
-               
                 <td>
                   3
                 </td>
                 <td>
-                  เงินรับฝาก
+                  งานบริหารทั่วไป
                 </td>
                 <td>
-                  ประกันสัญญา (2406)
+                  ประชุมผู้บริหารของหน่วยงาน
                 </td>
+                <td>
+                 	รายกรทดสอบเบิก 79 วรรค 2 รายกาที่ 3
                 
-                <td>
-                  ขออนุมัติเบิกจ่ายเงินประกันสัญญา
                 </td>
                
-                <td>
-                  9,200.00
-                </td>
-                <td>
-                  19 ส.ค. 66
-                </td>
+                <td>17,000.00</td>
                
-                
+                <td>21 ก.ค. 66</td>
                 <td>
-                  <div class="custom-control custom-checkbox d-block bg-success-600" style = "padding-left:2px;padding-right:2px;margin:0px;padding-bottom:0px;padding-top:4px;">
+                  <div class="custom-control custom-checkbox d-block bg-fusion-100 text-center" style = "padding-left:2px;padding-right:2px;margin:0px;padding-bottom:0px;padding-top:4px;">
                       
-                      <label ><small class= "">รออนุมัติ</small></label>
+                      <label ><small class= "">ยังไม่ตรวจสอบ</small></label>
                   </div>
-                  <label style = "margin:0px;"><small class= "">(11 ส.ค 66)</small></label>
                 </td>
-               
-                 
                 <td>
                   
                   <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
-                  mode='edit' data-toggle="modal" data-target=".default-example-modal-right">
+                  mode='edit'>
                     <i class="fa-solid fa-pencil"></i>
                   </a>
                  
                 </td>
                 <td>
                   <a href="javascript:void(0);" class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed"
-                  data-toggle="modal" data-target="#example-modal-alert" style = "">
-                    <i class="fa-solid fa-print">
+                  data-toggle="modal" data-target="#example-modal-alert" style = "padding-top:2px;">
+                    <i class="fa fa-print">
                     </i>
                   </a>
                 </td>
-                
               </tr>
-              
               <tr>
-               
                 <td>
                   4
                 </td>
                 <td>
-                  งบกลาง
+                  งานวันครู
                 </td>
                 <td>
-                  เงินสำรองจ่ายกรณีฉุกเฉินหรือจำเป็น	
+                  ประชุมคณะอนุกรรมการจัดงานวันครู
                 </td>
+                <td>
+                 	รายกรทดสอบเบิก 79 วรรค 2 รายกาที่ 4
                 
-                <td>
-                  ขออนุมัติเบิกจ่ายค่าใช้จ่ายเงินสำรองจ่ายกรณีฉุกเฉินหรือจำเป็น	
-                </td>
-                
-                <td>
-                  16,000.00
-                </td>
-                <td>
-                  7 ส.ค. 66
                 </td>
                
-                
+                <td>2,200.00</td>
+               
+                <td>30 ก.ค. 66</td>
                 <td>
-                  <div class="custom-control custom-checkbox d-block bg-success-600" style = "padding-left:2px;padding-right:2px;margin:0px;padding-bottom:0px;padding-top:4px;">
+                  <div class="custom-control custom-checkbox d-block bg-fusion-100 text-center" style = "padding-left:2px;padding-right:2px;margin:0px;padding-bottom:0px;padding-top:4px;">
                       
-                      <label ><small class= "">รออนุมัติ</small></label>
+                      <label ><small class= "">ยังไม่ตรวจสอบ</small></label>
                   </div>
-                  <label style = "margin:0px;"><small class= "">(9 ส.ค 66)</small></label>
                 </td>
-               
-                 
                 <td>
                   
                   <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
-                  mode='edit' data-toggle="modal" data-target=".default-example-modal-right">
+                  mode='edit'>
                     <i class="fa-solid fa-pencil"></i>
                   </a>
                  
                 </td>
                 <td>
                   <a href="javascript:void(0);" class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed"
-                  data-toggle="modal" data-target="#example-modal-alert" style = "">
-                    <i class="fa-solid fa-print">
+                  data-toggle="modal" data-target="#example-modal-alert" style = "padding-top:2px;">
+                    <i class="fa fa-print">
                     </i>
                   </a>
                 </td>
-                
               </tr>
-              <tr>
-               
-                <td>
-                  5
-                </td>
-                <td>
-                  งบบุคลากร
-                </td>
-                <td>
-                  งบบุคลากร
-                </td>
-                
-                <td>
-                  ขออนุมัติเบิกจ่ายค่าใช้จ่ายงบบุคลากร
-                </td>
-                
-                <td>
-                  9,000.00
-                </td>
-                <td>
-                  7 ส.ค. 66
-                </td>
-               
-                
-                <td>
-                  <div class="custom-control custom-checkbox d-block bg-success-600" style = "padding-left:2px;padding-right:2px;margin:0px;padding-bottom:0px;padding-top:4px;">
-                      
-                      <label ><small class= "">รออนุมัติ</small></label>
-                  </div>
-                  <label style = "margin:0px;"><small class= "">(9 ส.ค 66)</small></label>
-                </td>
-               
-                 
-                <td>
-                  
-                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
-                  mode='edit' data-toggle="modal" data-target=".default-example-modal-right">
-                    <i class="fa-solid fa-pencil"></i>
-                  </a>
-                 
-                </td>
-                <td>
-                  <a href="javascript:void(0);" class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed"
-                  data-toggle="modal" data-target="#example-modal-alert" style = "">
-                    <i class="fa-solid fa-print">
-                    </i>
-                  </a>
-                </td>
-                
-              </tr>
-              <tr>
-                
-                <td>
-                  6
-                </td>
-                <td>
-                  ขอคืนเงินรายได้
-                </td>
-                <td>
-                  ค่าธรรมเนียมต่อใบอนุญาตประกอบวิชาชีพ(42102)
-                </td>
-                
-                <td>
-                  ขออนุมัติเบิกจ่ายค่าใช้จ่ายค่าธรรมเนียมต่อใบอนุญาตประกอบวิชาชีพ
-                </td>
-               
-                <td>
-                  8,000.00
-                </td>
-                <td>
-                  7 ส.ค. 66
-                </td>
-               
-                
-                <td>
-                  <div class="custom-control custom-checkbox d-block bg-danger-600" style = "padding-left:2px;padding-right:2px;margin:0px;padding-bottom:0px;padding-top:4px;">
-                      
-                      <label ><small class= "">อนุมัติ</small></label>
-                  </div>
-                  <label style = "margin:0px;"><small class= "">(9 ส.ค 66)</small></label>
-                </td>
-               
-                 
-                <td>
-                  
-                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
-                  mode='edit' data-toggle="modal" data-target=".default-example-modal-right">
-                    <i class="fa-solid fa-pencil"></i>
-                  </a>
-                 
-                </td>
-                <td>
-                  <a href="javascript:void(0);" class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed"
-                  data-toggle="modal" data-target="#example-modal-alert" style = "">
-                    <i class="fa-solid fa-print">
-                    </i>
-                  </a>
-                </td>
-                
-              </tr>
-              <tr>
-                
-                <td>
-                  7
-                </td>
-                <td>
-                  เงินให้กู้ยืม
-                </td>
-                <td>
-                  ข้อมูลเงินให้กู้ยืมรายการที่ 1
-                </td>
-                
-                <td>
-                  ขออนุมัติเบิกจ่ายค่าใช้จ่ายค่าข้อมูลเงินให้กู้ยืมรายการที่ 1
-                </td>
-              
-                <td>
-                  1,000.00
-                </td>
-                <td>
-                  7 ส.ค. 66
-                </td>
-               
-                
-                <td>
-                  <div class="custom-control custom-checkbox d-block bg-info-600" style = "padding-left:2px;padding-right:2px;margin:0px;padding-bottom:0px;padding-top:4px;">
-                      
-                      <label ><small class= "">รับเงินแล้ว</small></label>
-                  </div>
-                  <label style = "margin:0px;"><small class= "">(9 ส.ค 66)</small></label>
-                </td>
-               
-                 
-               <td>
-                  
-                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
-                  mode='edit' data-toggle="modal" data-target=".default-example-modal-right">
-                    <i class="fa-solid fa-pencil"></i>
-                  </a>
-                 
-                </td>
-                <td>
-                  <a href="javascript:void(0);" class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed"
-                  data-toggle="modal" data-target="#example-modal-alert" style = "">
-                    <i class="fa-solid fa-print">
-                    </i>
-                  </a>
-                </td>
-                
-              </tr>
-             
-              
-             
-             
-              
+
+
+
               
             </tbody>
           </table>
@@ -1271,19 +1012,20 @@ $(document).ready(function() {
     bStateSave: true,
     processing: true,
     bPaginate: true,
+
+   
     columnDefs: [{
-      targets: [2,8],
+      targets: [6,7,8],
       orderable: false,
     },
     {
-      targets: [0,1,5,6,7,8],
+      targets: [0,5,6,7,8],
       className: "text-center",
     },
     {
-      targets: [3],
+      targets: [1,2,3],
       className: "text-left",
-    }
-    ,
+    },
     {
       targets: [4],
       className: "text-right",
