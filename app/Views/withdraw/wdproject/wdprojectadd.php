@@ -8,7 +8,7 @@
         <!-- <i class="ni ni-pencil fa-2x" id = "icon_edit_form" style = "padding-right:10px;"></i>
         <i class="ni ni-eye fa-2x" id = "icon_view_form" style = "padding-right:10px;"></i> -->
         <label class = "lblmode" style = "padding-top:7px;"></label>
-        <label  style = "padding-top:7px;"> รายการเบิกจ่าย</label>
+        <label  id = "lblwithdraw_type" style = "padding-top:7px;"> </label>
       </h4>
 
 
@@ -131,8 +131,9 @@
                 </div>
               </div>
             </div>
+            
 
-            <div class="panel-content fourd-form-row-c" style = "line-height:85px;">
+            <div class="panel-content fourd-form-row-c" style = "line-height:85px;margin-bottom:15px;">
               <div class="form-row dialog-data " style = "padding-bottom:0px;">
                 <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
                   <label class="form-label" for="" style = "margin:0;">
@@ -144,8 +145,30 @@
                 </div>
               </div>
             </div>
+            
+            <div class="panel-content fourd-form-row-b" id = "div_show_date_start_end" >
+              <div class="form-row dialog-data " style = "padding-bottom:0px;">
+                <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    วันเริ่มต้นการใช้เงิน
+                  </label>
+                </div>
+                <div class="col-md-4 mb-4" style="padding-top:0px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
+                  <input type="text" class="form-control form-ele clear-element datepk" id="position_name" name="position_name" placeholder="วันเริ่มต้นการใช้เงิน" value="">
+                </div>
+            
+                <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    วันสิ้นสุดการใช้เงิน
+                  </label>
+                </div>
+                <div class="col-md-4 mb-4" style="padding-top:0px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
+                  <input type="text" class="form-control form-ele clear-element datepk" id="position_name" name="position_name" placeholder="วันสิ้นสุดการใช้เงิน" value="">
+                </div>
+              </div>
+            </div>
 
-            <div class="panel-content fourd-form-row-b" style = "line-height:85px;background-color:#d5f0ca;margin-top:15px;">
+            <div class="panel-content fourd-form-row-b board_name" style = "line-height:85px;background-color:#d5f0ca;margin-top:0px;">
               <div class="form-row dialog-data " style = "padding-bottom:0px;">
                 <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
                   <label class="form-label" for="" style = "margin:0;">
@@ -301,6 +324,60 @@
                 <div class="col-md-4 mb-4" style="padding-top:5px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
                   <input type="text" class="form-control form-ele clear-element" id="position_name" name="position_name" placeholder="เงินนอกงบประมาณ" value="">
                 </div>
+              </div>
+            </div>
+            <div class="panel-content fourd-form-row-b div_status_pay" style = "margin-top:15px !important;background-color:#c4ecd0de !important;" >
+              <div class="form-row dialog-data " style = "padding-bottom:0px;">
+                <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    แนบไฟล์
+                  </label>
+                </div>
+                <div class="col-md-4 mb-4" style="padding-top:5px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
+                  
+                  <div class="custom-file">
+                      <input type="file" class="custom-file-input" id="customFile">
+                      <label class="custom-file-label" for="customFile">เลือกไฟล์</label>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4" style="padding-top:5px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
+                  
+                 
+                </div>
+            
+               
+              </div>
+            </div>
+            <div class="panel-content fourd-form-row-b div_status_pay" style = "" >
+              <div class="form-row dialog-data " style = "padding-bottom:0px;">
+                <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    
+                  </label>
+                </div>
+                <div class="col-md-4 mb-4" style="padding-top:5px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
+                  
+                  ชื่อไฟล์แนบ รายการที่ 1
+                </div>
+                
+            
+               
+              </div>
+            </div>
+            <div class="panel-content fourd-form-row-b div_status_pay" style = "" >
+              <div class="form-row dialog-data " style = "padding-bottom:0px;">
+                <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    
+                  </label>
+                </div>
+                <div class="col-md-4 mb-4" style="padding-top:5px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
+                  
+                  ชื่อไฟล์แนบ รายการที่ 2
+                </div>
+                
+            
+               
               </div>
             </div>
             <!-- <div id = "" class="panel-content fourd-form-row-c" style = "background-color:#e6f8c1b0;padding-bottom:0px;padding-top:0px;margin-bottom:0px;margin-top:0px;line-height:30px;">
@@ -663,6 +740,9 @@
                 <div class="col-md-4 mb-4" style="padding-top:5px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
                   
                   ชื่อไฟล์แนบ รายการที่ 1
+                  <a href="javascript:void(0);" class="btn btn-success btn-xs btn-icon rounded-circle">
+                      <i class="fal fa-download"></i>
+                  </a>
                 </div>
                 
             
@@ -679,12 +759,16 @@
                 <div class="col-md-4 mb-4" style="padding-top:5px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
                   
                   ชื่อไฟล์แนบ รายการที่ 2
+                  <a href="javascript:void(0);" class="btn btn-success btn-xs btn-icon rounded-circle">
+                      <i class="fal fa-download"></i>
+                  </a>
                 </div>
                 
             
                
               </div>
             </div>
+            
             <!-- <div id = "" class="panel-content fourd-form-row-c" style = "background-color:#e6f8c1b0;padding-bottom:0px;padding-top:0px;margin-bottom:0px;margin-top:0px;line-height:30px;">
               <div class="form-row dialog-data " style = "padding-bottom:15px;padding-top:0px;margin-bottom:0px;margin-top:0px;">
                 <div class="col-sm-6 sm-6" style="padding-top:0px;padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">

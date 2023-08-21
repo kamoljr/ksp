@@ -35,7 +35,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <form action="<?=$actual_link?>" method="post" accept-charset="utf-8"
                 id="form-search" name="form-search">
                   <div class="row">
-                    <div class="col-sm-2">
+                    <div class="col-sm-1">
                       <label class="form-label" for="unit_name_search">
                         ปีงบประมาณ
                       </label>
@@ -57,6 +57,26 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                         
                       </select>
                     </div>
+                    <div class="col-sm-2">
+                      <label class="form-label" for="year_search">
+                        ประเภท
+                      </label>
+                      <select id="item_type_search" name="item_type_search" class="select2"  placeholder="ประเภท" >
+                       
+                        <option value="2">
+                            งาน/โครงการ
+                        </option>
+                      
+                     
+                        <option value="4">
+                            งบกลาง
+                        </option>
+                        <option value="4">
+                            งบบุคลากร
+                        </option>
+                      
+                      </select>
+                    </div>
                     <div class="col-sm-4">
                       <label class="form-label" for="year_search">
                         โครงการ
@@ -76,7 +96,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                       </select>
                     </div>
                    
-                    <div class="col-sm-4">
+                    <div class="col-sm-3">
                       <label class="form-label" for="text_search">
                          รหัสรายการ/เรื่อง
                       </label>

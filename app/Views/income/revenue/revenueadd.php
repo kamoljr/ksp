@@ -24,6 +24,7 @@
                   <label class="form-label" for="" style = "margin:0;">
                     ได้รับเงินจาก
                   </label>
+                  <span class="text-danger stars"> * </span> 
                 </div>
                 <div class="col-md-10 mb-10" style="padding-top:5px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
                   <input type="text" class="form-control form-ele clear-element" id="position_name" name="position_name" placeholder="ได้รับเงินจาก" value="">

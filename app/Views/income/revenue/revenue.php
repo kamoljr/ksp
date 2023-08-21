@@ -130,17 +130,79 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
         <div class="panel-content" style="padding-top: 15px;">
        
 
-           
-          <div class="frame-wrap mt-3 mb-0 w-100">
-            <button id="btnadd" type="button" class="btn btn-primary" data-toggle="modal"
-            data-target=".default-example-modal-right" style="display: flex;">
-              <span class="ni ni-big-plus fa-2x" style="padding-right:10px;">
-              </span>
-              <span style="padding-top:5px;">
-                เพิ่ม
-              </span>
-            </button>
+          
+
+
+          <div class="d-flex justify-content-between  mb-3" style = "margin-bottom:0px !important;">
+            <div class="p-2">
+              <div class="frame-wrap mt-3 mb-0 w-100">
+                <button id="btnadd" type="button" class="btn btn-primary" data-toggle="modal"
+                data-target=".default-example-modal-right" style="display: flex;">
+                  <span class="ni ni-big-plus fa-2x" style="padding-right:10px;">
+                  </span>
+                  <span style="padding-top:5px;">
+                    เพิ่ม
+                  </span>
+                </button>
+              </div>
+            </div>
+
+            <div class="p-2 "></div>
+            <div class="p-2 "> 
+              <div class="frame-wrap mt-3 mb-0 w-100" >
+                  <button id="btnsend" type="button" class="btn btn-primary " style="display: flex;">
+                    <span class="fa-solid fa-arrow-up-right-from-square" style="padding-right:10px;padding-top:3px;">
+                    </span>
+                    <span style="padding-top:5px;">
+                      ออกใบนำส่ง
+                    </span>
+                  </button>
+                  <button id="btnprintsend" type="button" class="btn btn-primary " style="display: flex;">
+                    <span class="fa-solid fa-print" style="padding-right:10px;padding-top:3px;">
+                    </span>
+                    <span style="padding-top:5px;">
+                      พิมพ์ใบนำส่ง
+                    </span>
+                  </button>
+                
+              </div>
+            </div>
           </div>
+                
+
+
+
+
+
+          <!-- <div class="frame-wrap mt-3 mb-0 w-100">
+            
+            
+            <div class = "row">
+              <div class = "col-sm-2">
+                <button id="btnadd" type="button" class="btn btn-primary" data-toggle="modal"
+                data-target=".default-example-modal-right" style="display: flex;">
+                  <span class="ni ni-big-plus fa-2x" style="padding-right:10px;">
+                  </span>
+                  <span style="padding-top:5px;">
+                    เพิ่ม
+                  </span>
+                </button>
+              </div>
+              <div class = "col-sm-8 text-right" style = "text-align:right !important;">
+                
+              </div>
+              <div class = "col-sm-2 text-right" style = "text-align:right !important;">
+                <button id="btnadd" type="button" class="btn btn-primary" data-toggle="modal"
+                  data-target=".default-example-modal-right" style="display: flex;">
+                    <span class="fa fa-gear fa-2x" style="padding-right:10px;">
+                    </span>
+                    <span style="padding-top:5px;">
+                      นำส่ง
+                    </span>
+                  </button>
+              </div>
+            </div>
+          </div> -->
           
           <!-- datatable start -->
           <table id="dynamic-table" class="table table-md table-bordered table-hover table-striped w-100">
@@ -427,6 +489,61 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
   </div>
 </div>
 
+<div class="modal fade example-modal-centered-transparent" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-transparent" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h4 class="modal-title text-white">
+                  <label id = "text_modal-transparent">ยืนยันย้ายส่วนงาน</label>
+                  <small class="m-0 text-white opacity-70">
+                      <!-- Below is a static modal example -->
+                  </small>
+              </h4>
+              <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true"><i class="fal fa-times"></i></span>
+              </button>
+          </div>
+          <div class="modal-body">
+              ...
+          </div>
+          <div class="modal-footer">
+              <button type="button" id = "transparentclose"class="btn btn-secondary" data-dismiss="modal" onClick="">Close</button>
+              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="modal fade" id="default-example-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h4 class="modal-title">
+                    นำเข้า Excel 
+                    <small class="m-0 text-muted">
+                        
+                    </small>
+                </h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fal fa-times"></i></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group mb-0">
+                    <label class="form-label">เลือกไฟล์</label>
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="customFile">
+                        <label class="custom-file-label" for="customFile">เลือกไฟล์</label>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" id = "btn_close_dialog_import" class="btn btn-primary" onclick="alert('นำเข้า File Excel แล้ว')">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- this overlay is activated only when mobile menu is triggered -->
 <div class="page-content-overlay" data-action="toggle" data-class="mobile-nav-on"></div>
 <!-- END Page Content -->
@@ -1049,6 +1166,23 @@ function renderChartout() {
 }
 
 $(document).ready(function() {
+  $("#btnprintsend").hide();
+  $(document).on('click', '#btnsend', function() {
+	  $('.example-modal-centered-transparent').modal('toggle');
+    $("#text_modal-transparent").text("ออกใบนำส่งแล้ว เลขที่ใบนำส่ง 3/66");
+    
+
+    setTimeout(function(){
+      $("#btnsend").hide();
+      $("#btnprintsend").show();
+    }, 1000);
+
+  });
+  $(document).on('click', '#transparentclose', function() {
+	  $('.example-modal-centered-transparent').modal('toggle');
+    
+  });
+
   $(".div_income").show();
   $(".div_desposit").hide();
   $(".div_businesssub").hide();
@@ -1272,6 +1406,18 @@ $(document).ready(function() {
     $('.default-example-modal-right').modal('toggle');
   });
 
+  $(document).on('click', '#btn_show_div_revenue_import',
+
+  function() {
+    $('#default-example-modal').modal('toggle');
+  });
+  $(document).on('click', '#btn_close_dialog_import',
+
+  function() {
+    $('#default-example-modal').modal('toggle');
+  });
+
+  
   $(document).on('click', '#btn_quit_show_budget',
 
   function() {

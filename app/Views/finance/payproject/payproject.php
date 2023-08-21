@@ -307,7 +307,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
               </tr>
             </thead>
             <tbody>
-           
+              
               <tr>
                 <td>
                   <div class="custom-control custom-switch">
@@ -367,12 +367,69 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
               <tr>
                 <td>
                   <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input" id="customSwitch8">
+                      <label class="custom-control-label" for="customSwitch8"></label>
+                  </div>
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  งาน/โครงการ
+                </td>
+                <td>
+                  งานอาคารสถานที่
+                </td>
+                
+                <td>
+                  รายกรทดสอบ เงินยืม
+                  <br>&nbsp;&nbsp;&nbsp;&nbsp;(กิจกรรม : การให้บริการด้านอาคารสถานที่)<br> &nbsp;&nbsp;&nbsp;&nbsp;<label class = "text-danger">[มีเงินยืมค้าง <a href="#">รหัส 12</a>]</label>
+                </td>
+                <td>
+                  เงินยืม
+                </td>
+                <td>
+                  12,000.00
+                </td>
+                <td>
+                  7 ส.ค. 66
+                </td>
+               
+                
+                <td>
+                  <div class="custom-control custom-checkbox d-block bg-info-600" style = "padding-left:2px;padding-right:2px;margin:0px;padding-bottom:0px;padding-top:4px;">
+                      
+                      <label ><small class= "">รับเงินแล้ว</small></label>
+                  </div>
+                  <label style = "margin:0px;"><small class= "">(9 ส.ค 66)</small></label>
+                </td>
+               
+                 
+                <td>
+                 
+                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-secondary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"  style = "disable" mode='edit'>
+                     <i class="fa-solid fa-gear" style = "disable"></i>
+                  </a>
+                  
+                </td>
+                <td>
+                  <a href="javascript:void(0);" class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed"
+                  data-toggle="modal" data-target="#example-modal-alert" style = "">
+                    <i class="fa-solid fa-print">
+                    </i>
+                  </a>
+                </td>
+                
+              </tr>
+              <tr>
+                <td>
+                  <div class="custom-control custom-switch">
                       <input type="checkbox" class="custom-control-input" id="customSwitch2">
                       <label class="custom-control-label" for="customSwitch2"></label>
                   </div>
                 </td>
                 <td>
-                  2
+                  3
                 </td>
                 <td>
                   กิจการลูก
@@ -428,7 +485,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   </div>
                 </td>
                 <td>
-                  3
+                  4
                 </td>
                 <td>
                   เงินรับฝาก
@@ -485,7 +542,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   </div>
                 </td>
                 <td>
-                  4
+                  5
                 </td>
                 <td>
                   งบกลาง
@@ -541,7 +598,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   </div>
                 </td>
                 <td>
-                  5
+                  6
                 </td>
                 <td>
                   งบบุคลากร
@@ -597,7 +654,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   </div>
                 </td>
                 <td>
-                  6
+                  8
                 </td>
                 <td>
                   ขอคืนเงินรายได้
@@ -653,7 +710,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   </div>
                 </td>
                 <td>
-                  7
+                  8
                 </td>
                 <td>
                   เงินให้กู้ยืม

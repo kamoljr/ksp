@@ -417,7 +417,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 </td>
                 <td>
                  
-                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data" mode='edit'data-toggle="modal" data-target=".default-example-modal-right">
+                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data" mode='edit' data-toggle="modal" data-target=".default-example-modal-right">
                      <i class="fa-solid fa-gear"></i>
                   </a>
                   &nbsp;&nbsp;
@@ -535,7 +535,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 </td>
                 <td>
                   รายกรทดสอบ เงินยืม
-                  <br>&nbsp;&nbsp;&nbsp;&nbsp;(กิจกรรม : การให้บริการด้านอาคารสถานที่)
+                  <br>&nbsp;&nbsp;&nbsp;&nbsp;(กิจกรรม : การให้บริการด้านอาคารสถานที่)<br> &nbsp;&nbsp;&nbsp;&nbsp;<label class = "text-danger">[มีเงินยืมค้าง <a href="#">รหัส 12</a>]</label>
                 </td>
                 <td>
                  
@@ -558,9 +558,8 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <td>
                   
                   
-                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
-                  mode='edit'>
-                    <i class="fa-solid fa-gear"></i>
+                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data" mode='edit' data-toggle="modal" data-target=".default-example-modal-right">
+                     <i class="fa-solid fa-gear"></i>
                   </a>
                   &nbsp;&nbsp;
                   <a href="javascript:void(0);" class="btn btn-outline-danger btn-icon btn-xs rounded-circle waves-effect waves-themed"

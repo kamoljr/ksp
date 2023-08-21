@@ -177,25 +177,52 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                     <option value="2" >
                       79 วรรค 2
                     </option>
-                    <option value="17">
-                      กันวงเงิน(ไม่ผ่านพัสดุ)
-                    </option>
-                    <option value="17">
-                      เบิกกันวงเงิน(ไม่ผ่านพัสดุ)
-                    </option>
-                    <option value="17">
-                      เงินยืม
-                    </option>
-                    <option value="17">
-                      เบิกเงินยืม
-                    </option>
-                    <option value="17">
-                      เหลือมปี(ไม่ผ่านพัสดุ)
-                    </option>
+                 
+                      <optgroup label="กันวงเงินผ่านพัสดุ">
+                        <option value="3">
+                          กันวงเงิน(ผ่านพัสดุ)
+                        </option>
+                        <!-- <option value="4">
+                          เบิกกันวงเงิน(ผ่านพัสดุ)
+                        </option>  -->
+                      </optgroup>
+
+                      <optgroup label="กันวงเงินไม่ผ่านพัสดุ">
+                        <option value="31">
+                          กันวงเงิน(ไม่ผ่านพัสดุ)
+                        </option>
+                        <option value="41">
+                          เบิกกันวงเงิน(ไม่ผ่านพัสดุ)
+                        </option> 
+                      </optgroup>
+
+                     
+                    <optgroup label="เงินยืม">
+                      <option value="5">
+                        เงินยืม
+                      </option>
+                      <option value="6">
+                        เบิกเงินยืม
+                      </option>
+                    </optgroup>
                     
-                    <option value="17">
-                      เบิกกันเหลือมปี(ไม่ผ่านพัสดุ)
-                    </option>
+                    <optgroup label="กันเหลื่อมปีผ่านพัสดุ">
+                        <option value="7">
+                          กันเหลื่อมปี(ผ่านพัสดุ)
+                        </option>
+                        <option value="8">
+                          เบิกกันเหลื่อมปี(ผ่านพัสดุ)
+                        </option> 
+                      </optgroup>
+
+                      <optgroup label="กันเหลื่อมปีไม่ผ่านพัสดุ">
+                        <option value="9">
+                          กันเหลื่อมปี(ไม่ผ่านพัสดุ)
+                        </option>
+                        <option value="10">
+                          เบิกกันเหลื่อมปี(ไม่ผ่านพัสดุ)
+                        </option> 
+                      </optgroup>
                     
                   </select>
                 </div>
@@ -1648,6 +1675,20 @@ $(document).ready(function() {
 
     $(".div_edit").show();
     $(".div_view").hide();
+
+    $("#lblwithdraw_type").text("");
+    if ($("#withdraw_type").val() == "1"){$("#lblwithdraw_type").text("รายการเบิกจ่าย");}
+    if ($("#withdraw_type").val() == "2"){$("#lblwithdraw_type").text(" 79 วรรค 2");}
+    if ($("#withdraw_type").val() == "3"){$("#lblwithdraw_type").text("กันวงเงิน(ผ่านพัสดุ)");}
+    if ($("#withdraw_type").val() == "4"){$("#lblwithdraw_type").text("เบิกกันวงเงิน(ผ่านพัสดุ)");}
+    if ($("#withdraw_type").val() == "31"){$("#lblwithdraw_type").text(" กันวงเงิน(ไม่ผ่านพัสดุ)");}
+    if ($("#withdraw_type").val() == "41"){$("#lblwithdraw_type").text("เบิกกันวงเงิน(ไม่ผ่านพัสดุ)");}
+    if ($("#withdraw_type").val() == "5"){$("#lblwithdraw_type").text("เงินยืม");}
+    if ($("#withdraw_type").val() == "6"){$("#lblwithdraw_type").text("เบิกเงินยืม");}
+    if ($("#withdraw_type").val() == "7"){$("#lblwithdraw_type").text(" กันเหลื่อมปี(ผ่านพัสดุ)");}
+    if ($("#withdraw_type").val() == "8"){$("#lblwithdraw_type").text(" เบิกกันเหลื่อมปี(ผ่านพัสดุ)");}
+    if ($("#withdraw_type").val() == "9"){$("#lblwithdraw_type").text(" กันเหลื่อมปี(ไม่ผ่านพัสดุ)");}
+    if ($("#withdraw_type").val() == "10"){$("#lblwithdraw_type").text("เบิกกันเหลื่อมปี(ไม่ผ่านพัสดุ)");}
 
   });
   $(document).on('click', '.btnview',

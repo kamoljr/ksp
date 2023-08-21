@@ -124,8 +124,11 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 เพิ่ม
               </span>
             </button>
-          </div> -->
-          
+          </div> -->  
+           <div class="custom-control custom-switch text-right">
+            <input type="checkbox" class="custom-control-input" id="customSwitch2" onChange="alert('นำส่งแล้ว')">
+            <label class="custom-control-label" for="customSwitch2">นำส่ง</label>
+          </div>
           <!-- datatable start -->
           <table id="dynamic-table" class="table table-md table-bordered table-hover table-striped w-100">
             <thead class="bg-primary-600">

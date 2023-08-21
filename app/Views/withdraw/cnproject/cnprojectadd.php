@@ -342,6 +342,45 @@
               </div>
 
             </div>
+
+            <div class="panel-content fourd-form-row-b div_status_pay" style = "" >
+              <div class="form-row dialog-data " style = "padding-bottom:0px;">
+                <div class="col-md-2 mb-2" style="padding-top:4px;padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    แนบไฟล์
+                  </label>
+                </div>
+                <div class="col-md-4 mb-4" style="padding-top:5px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
+                  
+                  ชื่อไฟล์แนบ รายการที่ 1
+                  <a href="javascript:void(0);" class="btn btn-success btn-xs btn-icon rounded-circle">
+                      <i class="fal fa-download"></i>
+                  </a>
+                </div>
+                
+            
+               
+              </div>
+            </div>
+            <div class="panel-content fourd-form-row-b div_status_pay" style = "" >
+              <div class="form-row dialog-data " style = "padding-bottom:0px;">
+                <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    
+                  </label>
+                </div>
+                <div class="col-md-4 mb-4" style="padding-top:5px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
+                  
+                  ชื่อไฟล์แนบ รายการที่ 2
+                  <a href="javascript:void(0);" class="btn btn-success btn-xs btn-icon rounded-circle">
+                      <i class="fal fa-download"></i>
+                  </a>
+                </div>
+                
+            
+               
+              </div>
+            </div>
             <!-- <div id = "" class="panel-content fourd-form-row-c" style = "background-color:#e6f8c1b0;padding-bottom:0px;padding-top:0px;margin-bottom:0px;margin-top:0px;line-height:30px;">
               <div class="form-row dialog-data " style = "padding-bottom:15px;padding-top:0px;margin-bottom:0px;margin-top:0px;">
                 <div class="col-sm-6 sm-6" style="padding-top:0px;padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">

@@ -35,7 +35,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <form action="<?=$actual_link?>" method="post" accept-charset="utf-8"
                 id="form-search" name="form-search">
                   <div class="row">
-                    <div class="col-sm-1">
+                    <div class="col-sm-2">
                       <label class="form-label" for="unit_name_search">
                         ปีงบประมาณ
                       </label>
@@ -57,7 +57,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                         
                       </select>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-5">
                       <label class="form-label" for="year_search">
                         โครงการ
                       </label>
@@ -75,7 +75,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                         
                       </select>
                     </div>
-                    <div class="col-sm-2">
+                    <div class="col-sm-5">
                       <label class="form-label" for="act_search" style = "display:block;">
                         กิจกรรม
                       </label>
@@ -97,7 +97,12 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                         
                       </select>
                     </div>
-                    <div class="col-sm-2">
+                    
+                  </div>
+
+                  <div class="row" style = "margin-top:15px;">
+                    
+                    <div class="col-sm-3">
                       <label class="form-label" for="type_search" style = "display:block;">
                         ประเภท
                       </label>
@@ -119,7 +124,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                         
                       </select>
                     </div>
-                    <div class="col-sm-2">
+                    <div class="col-sm-3">
                       <label class="form-label" for="status_search" style = "display:block;">
                         สถานะ
                       </label>
@@ -147,7 +152,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                         
                       </select>
                     </div>
-                    <div class="col-sm-2">
+                    <div class="col-sm-6">
                       <label class="form-label" for="text_search">
                          รหัสรายการ/เรื่อง
                       </label>
@@ -195,31 +200,61 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                     <option value="2" >
                       79 วรรค 2
                     </option>
-                    <option value="17">
-                      กันวงเงิน(ไม่ผ่านพัสดุ)
-                    </option>
-                    <option value="17">
-                      เบิกกันวงเงิน(ไม่ผ่านพัสดุ)
-                    </option>
-                    <option value="17">
-                      เงินยืม
-                    </option>
-                    <option value="17">
-                      เบิกเงินยืม
-                    </option>
-                    <option value="17">
-                      เหลือมปี(ไม่ผ่านพัสดุ)
-                    </option>
+                 
+                      <optgroup label="กันวงเงินผ่านพัสดุ">
+                        <option value="3">
+                          กันวงเงิน(ผ่านพัสดุ)
+                        </option>
+                        <!-- <option value="4">
+                          เบิกกันวงเงิน(ผ่านพัสดุ)
+                        </option>  -->
+                      </optgroup>
+
+                      <optgroup label="กันวงเงินไม่ผ่านพัสดุ">
+                        <option value="31">
+                          กันวงเงิน(ไม่ผ่านพัสดุ)
+                        </option>
+                        <option value="41">
+                          เบิกกันวงเงิน(ไม่ผ่านพัสดุ)
+                        </option> 
+                      </optgroup>
+
+                     
+                    <optgroup label="เงินยืม">
+                      <option value="5">
+                        เงินยืม
+                      </option>
+                      <option value="6">
+                        เบิกเงินยืม
+                      </option>
+                    </optgroup>
                     
-                    <option value="17">
-                      เบิกกันเหลือมปี(ไม่ผ่านพัสดุ)
-                    </option>
+                    <optgroup label="กันเหลื่อมปีผ่านพัสดุ">
+                        <option value="7">
+                          กันเหลื่อมปี(ผ่านพัสดุ)
+                        </option>
+                        <option value="8">
+                          เบิกกันเหลื่อมปี(ผ่านพัสดุ)
+                        </option> 
+                      </optgroup>
+
+                      <optgroup label="กันเหลื่อมปีไม่ผ่านพัสดุ">
+                        <option value="9">
+                          กันเหลื่อมปี(ไม่ผ่านพัสดุ)
+                        </option>
+                        <option value="10">
+                          เบิกกันเหลื่อมปี(ไม่ผ่านพัสดุ)
+                        </option> 
+                      </optgroup>
                     
                   </select>
                 </div>
                 <div class ="col-sm-4" style = "line-height:25px important;">
-                  <button id="btnadd" type="button" class="btn btn-primary" data-toggle="modal"
-                  data-target=".default-example-modal-right" style = "padding-top:3;padding-bottom:6;padding-left:8;padding-right:8;vertical-align: middle;line-height: 25px;">
+                  <button id="btnadd" type="button" class="btn btn-primary" data-toggle="modal" data-target=".default-example-modal-right" style = "padding-top:3;padding-bottom:6;padding-left:8;padding-right:8;vertical-align: middle;line-height: 25px;">
+
+                  <!-- <button id="btnadd" type="button" class="btn btn-primary"  style = "padding-top:3;padding-bottom:6;padding-left:8;padding-right:8;vertical-align: middle;line-height: 25px;"> -->
+
+
                     <span class="ni ni-big-plus fa-2x" style="padding-right:10px;">
                     </span>
                     <span style="">
@@ -325,7 +360,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <th class="text-center" style = "vertical-align:middle;" width="70">
                   แก้ไขล่าสุด
                 </th>
-                <th class="text-center" style = "vertical-align:middle;" width="65">
+                <th class="text-center" style = "vertical-align:middle;" width="70">
                   สถานะ
                 </th>
                 <th width="70">
@@ -1666,6 +1701,41 @@ $(document).ready(function() {
 
     $(".div_edit").show();
     $(".div_view").hide();
+
+    
+    //------กรณีเงินยืมแสดงวันที่เริ่ม และ สิ้นสุดใช้เงิน
+    $("#div_show_date_start_end").hide();
+    if ($("#withdraw_type").val() == "5"){
+      $("#div_show_date_start_end").show();
+      alert("มีรายการเงินยืมค้างอยู่ ไม่สามารถทำรายการเงินยืมได้ ");
+    //}else{
+      //  $('.default-example-modal-right').modal('toggle');
+    }
+    //-----------------------------------
+    
+    //------กรณีเงินยืมแสดงวันที่เริ่ม และ สิ้นสุดใช้เงิน
+    $(".board_name").show();
+    if ($("#withdraw_type").val() == "3"){
+      //$(".board_name").hide();
+     
+    }
+    //-----------------------------------
+    
+
+    $("#lblwithdraw_type").text("");
+    if ($("#withdraw_type").val() == "1"){$("#lblwithdraw_type").text("รายการเบิกจ่าย");}
+    if ($("#withdraw_type").val() == "2"){$("#lblwithdraw_type").text(" 79 วรรค 2");}
+    if ($("#withdraw_type").val() == "3"){$("#lblwithdraw_type").text("กันวงเงิน(ผ่านพัสดุ)");}
+    if ($("#withdraw_type").val() == "4"){$("#lblwithdraw_type").text("เบิกกันวงเงิน(ผ่านพัสดุ)");}
+    if ($("#withdraw_type").val() == "31"){$("#lblwithdraw_type").text(" กันวงเงิน(ไม่ผ่านพัสดุ)");}
+    if ($("#withdraw_type").val() == "41"){$("#lblwithdraw_type").text("เบิกกันวงเงิน(ไม่ผ่านพัสดุ)");}
+    if ($("#withdraw_type").val() == "5"){$("#lblwithdraw_type").text("เงินยืม");}
+    if ($("#withdraw_type").val() == "6"){$("#lblwithdraw_type").text("เบิกเงินยืม");}
+    if ($("#withdraw_type").val() == "7"){$("#lblwithdraw_type").text(" กันเหลื่อมปี(ผ่านพัสดุ)");}
+    if ($("#withdraw_type").val() == "8"){$("#lblwithdraw_type").text(" เบิกกันเหลื่อมปี(ผ่านพัสดุ)");}
+    if ($("#withdraw_type").val() == "9"){$("#lblwithdraw_type").text(" กันเหลื่อมปี(ไม่ผ่านพัสดุ)");}
+    if ($("#withdraw_type").val() == "10"){$("#lblwithdraw_type").text("เบิกกันเหลื่อมปี(ไม่ผ่านพัสดุ)");}
+    
 
   });
   $(document).on('click', '.btnview',

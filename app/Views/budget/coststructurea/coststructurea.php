@@ -83,14 +83,14 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
           <div class="frame-wrap mt-3 mb-0 w-100">
           
             <div class="frame-wrap mt-3 mb-0 w-100">
-            <!-- <button id="btnadd" type="button" class="btn btn-primary" data-toggle="modal"
+            <button id="btnadd" type="button" class="btn btn-primary" data-toggle="modal"
             data-target=".default-example-modal-right" style="display: flex;">
               <span class="ni ni-big-plus fa-2x" style="padding-right:10px;">
               </span>
               <span style="padding-top:5px;">
                 เพิ่ม
               </span>
-            </button> -->
+            </button>
           </div>
           </div>
           <!-- <div class = "row">

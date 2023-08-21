@@ -60,6 +60,17 @@
     <?
     }
     ?>
+
+    <?
+    if ($pages == "revenue"){ 
+    ?>
+    <a href="#" class="menu-item btn "  id  = "btn_show_div_revenue_import" title="นำเข้า Excel" style = "" data-toggle="tooltip" data-placement="left" title="นำเข้า File Excel">
+      
+        <i class="fa-solid fa-file-import"></i>
+    </a>
+    <?
+    }
+    ?>
     <!-- <a href="#" class="menu-item btn" data-action="app-voice" data-toggle="tooltip" data-placement="left"
         title="Voice command">
         <i class="fal fa-microphone"></i>

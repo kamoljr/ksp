@@ -8,7 +8,7 @@
         <!-- <i class="ni ni-pencil fa-2x" id = "icon_edit_form" style = "padding-right:10px;"></i>
         <i class="ni ni-eye fa-2x" id = "icon_view_form" style = "padding-right:10px;"></i> -->
         <label class = "lblmode" style = "padding-top:7px;"></label>
-        <label  style = "padding-top:7px;"> รายการเบิกจ่าย</label>
+       <label  id = "lblwithdraw_type" style = "padding-top:7px;"> </label>
       </h4>
 
 
