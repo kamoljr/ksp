@@ -1257,6 +1257,11 @@ $(document).ready(function() {
     });
   });
   $(document).ready(function() {
+    $('#buffer_code_add0').select2({
+      dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
+    });
+  });
+  $(document).ready(function() {
     $('#businesssub_type_add0').select2({
       dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
     });

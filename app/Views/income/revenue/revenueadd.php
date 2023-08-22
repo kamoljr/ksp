@@ -168,13 +168,13 @@
             <div id = ""class="panel-content fourd-form-row-b div_desposit" style = "background-color:#9acffa;" >
             
               <div class="form-row dialog-data " style = "padding-bottom:0px;">
-                <div class="col-sm-5 sm-5" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+                <div class="col-sm-3 sm-3" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
                   <label class="form-label " style ="font-size:13px;" for="position_name">
                   เงินรับฝาก
                   <span class="text-danger stars"> * </span> 
                   </label>
                   <select id="desposit_type_add0" name="desposit_type_add0" class="selectdialog adddesposit" style = "100%" placeholder="รายการ" onchange="">
-                    <option value="" selected>
+                    <option value="" >
                       -
                     </option>
                     <option value="2">
@@ -186,7 +186,7 @@
                     <option value="4">
                       เงินรับฝาก-ค่าสมัครฝึกอบรมมาตรฐานความรู้วิชาชีพครู
                     </option>
-                    <option value="5">
+                    <option value="5" selected>
                       เงินรับฝาก-ประกันสัญญา (2406)
                     </option>
                     <option value="5">
@@ -195,6 +195,28 @@
                     <option value="5">
                       เงินสะสมของคุรุสภา-วงเงินกู้ (1501)
                     </option>
+                    
+                  </select>
+                </div>
+                <div class="col-sm-2 sm-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+                  <label class="form-label " style ="font-size:13px;" for="position_name">
+                    เลขที่กันวงเงิน
+                  <span class="text-danger stars"> * </span> 
+                  </label>
+                  <select id="buffer_code_add0" name="buffer_code_add0" class="selectdialog adddesposit" style = "100%" placeholder="รายการ" onchange="">
+                    <option value="" selected>
+                      -
+                    </option>
+                    <option value="2">
+                      1/66
+                    </option>
+                    <option value="3">
+                      2/66
+                    </option>
+                    <option value="4">
+                     3/66
+                    </option>
+                   
                     
                   </select>
                 </div>

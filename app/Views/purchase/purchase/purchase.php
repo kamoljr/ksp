@@ -445,21 +445,21 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   <h6>เอกสารคู่สัญญา</h6>	
               </label>
             </div>
-            <div class = "col-sm-2 text-center" style = "cursor:pointer;" onclick="openformadd(9)">
-              <img src="<?= base_url().'/';?>img/boxclose.png" width = "100px;">
+            <!-- <div class = "col-sm-2 text-center" style = "cursor:pointer;" onclick="openformadd(9)">
+              <img src="<?// = base_url().'/';?>img/boxclose.png" width = "100px;">
              
               <label class="form-label" for="" style = "margin:0;padding-top:5px;">
                   <h6>ร่างสัญญา<br>ใบสั่งซื้อ/สั่งจ้าง</h6>	
               </label>
-            </div>
-            <div class = "col-sm-2 text-center" style = "cursor:pointer;" onclick="openformadd(10)">
+            </div> -->
+            <div class = "col-sm-2 text-center" style = "cursor:pointer;" onclick="openformadd(9)">
               <img src="<?= base_url().'/';?>img/boxclose.png" width = "100px;">
              
               <label class="form-label" for="" style = "margin:0;padding-top:5px;">
                   <h6>หลักประกันสัญญา</h6>	
               </label>
             </div>
-            <div class = "col-sm-2 text-center" style = "cursor:pointer;" onclick="openformadd(11)">
+            <div class = "col-sm-2 text-center" style = "cursor:pointer;" onclick="openformadd(10)">
               <img src="<?= base_url().'/';?>img/boxclose.png" width = "100px;">
             
               <label class="form-label" for="" style = "margin:0;padding-top:5px;">
@@ -585,7 +585,32 @@ $(document).ready(function() {
     $('.default-example-modal-right').modal('toggle');
   });
 });
-function openformadd(){
+function openformadd(pp){
+  $(".hidedivpurchase").hide();
   $('.default-example-modal-right').modal('toggle');
+  $("#purchase"+pp).show();
+
+
+  txt1 = '';
+  if (pp==1){txt1 = "กำหนดวิธีการ";}
+  if (pp==2){txt1 = "ตั้งคณะกรรมการ";}
+  if (pp==3){txt1 = "ปรับปรุงใบเสนอราคา";}
+  if (pp==4){txt1 = "ต่อรองราคา";}
+  if (pp==5){txt1 = "กำหนดผู้ที่ได้รับเลือก";}
+  if (pp==6){txt1 = "ทำรายการกันวงเงิน";}
+  if (pp==7){txt1 = "กำหนดส่งมอบ";}
+  if (pp==8){txt1 = "เอกสารคู่สัญญา";}
+  //if (pp==9){txt1 = "ร่างสัญญาใบสั่งซื้อ/สั่งจ้าง";}
+  if (pp==9){txt1 = "หลักประกันสัญญา";}
+  if (pp==10){txt1 = "ออกเลขที่สัญญาและวันที่สัญญา";}
+  $("#lblchangepurchase").text(txt1);
+
+  
 }
+
+$(document).ready(function() {
+  $('.ele_select_add').select2({
+    dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
+  });
+});
 </script>

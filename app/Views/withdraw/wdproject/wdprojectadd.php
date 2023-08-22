@@ -63,13 +63,13 @@
                 <div class="col-md-10 mb-10" style="padding-bottom:0px;font-size:13px;margin-bottom:0px;">
                   <select id="acc_add" name="acc_add" class="" placeholder="กิจกรรม" style = "">
                     <option value="" selected>
-                      งานอาคารสถานที่
+                      อบรมหลักสูตรการฝึกซ้อมดับเพลิง
                     </option>
                     <option value="17">
-                      โครงการจัดหาครุภัณฑ์และปรับปรุงสิ่งก่อสร้าง
+                      การให้บริการห้องประชุม
                     </option>
                     <option value="17">
-                      งานบริหารการพัสดุ
+                      การจัดการพลังงานของสำนักงานเลขาธิการคุรุสภา
                     </option>
                     
                   </select>
