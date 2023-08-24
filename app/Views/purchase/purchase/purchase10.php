@@ -32,6 +32,34 @@
   </div>
 </div>
 <div class="panel-content fourd-form-row-b" >
+  <div class="form-row dialog-data " style = "padding-bottom:0px;">
+    <div class="col-md-3 mb-3" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+      <label class="form-label" for="" style = "margin:0;">
+          ประเภท
+      </label>
+      <span class="text-danger stars"> * </span> 
+    </div>
+    <div class="col-md-9 mb-9" style="padding-top:0px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
+    <select id="purchase10_contract_tyep_add" name="purchase10_contract_tyep_add" class="ele_select_add" placeholder="ประเภท">
+      <option value="17">
+      
+    </option>
+    <option value="17">
+      สัญญา
+    </option>
+    <option value="17">
+      ใบสั่งซื้อ/สั่งจ้าง
+    </option>
+    
+    
+
+    
+  </select>
+      
+    </div>    
+  </div>
+</div> 
+<div class="panel-content fourd-form-row-a" >
   <div class="form-row dialog-data " style = "padding-bottom:5px;line-height:30px;vertical-align: middle;padding-top:5px;">
     
 
@@ -39,6 +67,7 @@
       <label class="form-label" for="" style = "margin:0;">
         สัญญาเลขที่ 
       </label>
+      <span class="text-danger stars"> * </span> 
     </div>
     <div class="col-md-9 mb-9" style="padding-top:0px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
       <!-- <input type="text" class="form-control form-ele clear-element" id="position_name" name="position_name" placeholder="ตำแหน่งชื่อผู้รับเงิน" value=""> -->
@@ -48,7 +77,7 @@
     </div>
   </div>
 </div>
-<div class="panel-content fourd-form-row-a" >
+<div class="panel-content fourd-form-row-b" >
   <div class="form-row dialog-data " style = "padding-bottom:5px;line-height:30px;vertical-align: middle;padding-top:5px;">
     <div class="col-md-3 mb-3" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
       <label class="form-label" for="" style = "margin:0;">

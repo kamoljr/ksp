@@ -132,7 +132,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
 
 
                   <div class="row" style = "padding-top:15px;">
-                    <div class="col-sm-5">
+                    <div class="col-sm-4">
                       <label class="form-label" for="item_type_search">
                         บริษัท
                       </label>
@@ -179,7 +179,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                         
                       </select>
                     </div>
-                    <div class="col-sm-5">
+                    <div class="col-sm-4">
                       <label class="form-label" for="text_search">
                          ชื่อสัญญา
                       </label>
@@ -203,7 +203,28 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                         
                       </select>
                     </div>
-                   
+                    <div class="col-sm-2">
+                      <label class="form-label" for="text_search">
+                         สถานะ
+                      </label>
+                      <select id="status_search" name="status_search" class="select2"
+                      placeholder="รหัสรายการ/เรื่อง">
+                        <option value="" selected>
+                          -
+                        </option>
+                        <option value="">
+                          	คืนแล้ว 
+                        </option>
+                        <option value="">
+                          	ยังไม่คืน
+                        </option>
+                      
+                       
+                        
+                       
+                        
+                      </select>
+                    </div>
                    
 
                     
@@ -275,19 +296,25 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
               <tr>
                 <th width = "20px;">
                 </th>
-                <th class="text-center" width = "100px;" style = "vertical-align: middle;"> 
-                  เลขที่สัญญา/<br>ใบสั่งซื้อ/สั่งจ้าง 
+                <th class="text-center" width = "80px;" style = "vertical-align: middle;"> 
+                  เลขที่สัญญา
                 </th>
                 <th class="text-center" style = "vertical-align: middle;">
-                  ชื่อสัญญา 	
+                  บริษัท 	
                 </th>
-                <th class="text-center" width = "100px;" style = "vertical-align: middle;">
-                  วันที่สัญญา/<br>ใบสั่งซื้อ/สั่งจ้าง 	
+                <th class="text-center" width = "80px;" style = "vertical-align: middle;">
+                  วันที่ตรวจรับงวดสุดท้าย	
                 </th>
-                <th class="text-center" width = "100px;" style = "vertical-align: middle;">
-                  จำนวนเงิน(บาท)
+                <th class="text-center" width = "80px;" style = "vertical-align: middle;">
+                  วันที่ตรวจรับงวดสุดท้าย
                 </th>
-                <th width = "100px;"class="text-center" style = "vertical-align: middle;">
+                <th class="text-center" width = "80px;" style = "vertical-align: middle;">
+                  จำนวนเงิน (บาท) 
+                </th>
+                <th width = "60px;"class="text-center" style = "vertical-align: middle;">
+                  
+                </th>
+                <th width = "60px;"class="text-center" style = "vertical-align: middle;">
                   
                 </th>
                 
@@ -302,30 +329,37 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   1/66
                 </td>
                 <td>
-                   ออกแบบอาร์ตเวิร์คหนังสือที่ระลึกงานวันคล้ายวันสถาปนาสำนักงานเลขาธิการคุรุสภา
+                   บริษัท ออนป้า จำกัด
                 </td>
                 <td>
-                  10 ก.พ. 65	
+                  22 ก.ค. 2562	
                 </td>
                 <td>
-                  20,000.00
+                  21 ก.ค. 2563	
+                </td>
+                <td>
+                  10,000
+                </td>
+                <td>
+                  <div class="custom-control custom-checkbox d-block bg-warning-500" style="padding-left:0px;padding-right:0px;margin:0px;padding-bottom:0px;padding-top:4px;">
+                      <!-- <span class="width-1 height-1 rounded-circle d-block bg-secondary" style = "padding:0px;margin-left:20px;margin-top:0px;margin-bottom:0px;margin-right:0px;"></span> -->
+                      <label><small class="">ยังไม่คืน</small></label>
+                  </div>
                 </td>
                
                 <td>
-                 <div class="btn-group" role="group">
-                      <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">ไปยัง</button>
-                      <div class="dropdown-menu">
-                          <a class="dropdown-item" href="extendcontract">ขอขยายระยะเวลา</a>
-                          <a class="dropdown-item" href="cancelcontract">รายงานความก้าวหน้า</a>
-                          <a class="dropdown-item" href="cancelcontract">ยกเลิกสัญญา</a>
-                          <a class="dropdown-item" href="guarantee">หลักประกันสัญญา</a>
-                          <a class="dropdown-item" href="deliverpurchase">ส่งมอบ</a>
-                          <a class="dropdown-item" href="checkpurchase">ตรวจรับ</a>
-                          <a class="dropdown-item" href="withdwawpurchase">เบิกจ่ายจัดซื้อ/จัดจ้าง</a>
-                          <a class="dropdown-item" href="leavepurchase">ทิ้งงาน</a>
-                         
-                      </div>
-                  </div>
+                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
+                  mode='view'>
+                    <i class="ni ni-eye">
+                    </i>
+                  </a>
+                  &nbsp;&nbsp;
+                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data" mode='edit' data-toggle="modal" data-target=".default-example-modal-right">
+                    <i class="ni ni-pencil">
+                    </i>
+                  </a>
+                 
+                    
                 </td>
               </tr>
               <tr>
@@ -336,66 +370,42 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   2/66
                 </td>
                 <td>
-                   ออกแบบภาพกราฟิกสำหรับประชาสัมพันธ์ทางสื่อสังคมออนไลน์	
+                   อารี เทรดดิ้ง ๑๙๕๐	
                 </td>
                 <td>
-                  20 ก.พ. 65	
+                 27 ม.ค. 2559	
                 </td>
                 <td>
-                  230,000.00
+                 26 ม.ค. 2560	
+                </td>
+                <td>
+                  2,023.00
+                </td>
+                <td>
+                  <div class="custom-control custom-checkbox d-block bg-info-800" style="padding-left:0px;padding-right:0px;margin:0px;padding-bottom:0px;padding-top:4px;">
+                      <!-- <span class="width-1 height-1 rounded-circle d-block bg-secondary" style = "padding:0px;margin-left:20px;margin-top:0px;margin-bottom:0px;margin-right:0px;"></span> -->
+                      <label><small class="">คืนแล้ว</small></label>
+                  </div>
                 </td>
                
                 <td>
-                 <div class="btn-group" role="group">
-                      <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">ไปยัง</button>
-                      <div class="dropdown-menu">
-                          <a class="dropdown-item" href="extendcontract">ขอขยายระยะเวลา</a>
-                          <a class="dropdown-item" href="cancelcontract">รายงานความก้าวหน้า</a>
-                          <a class="dropdown-item" href="cancelcontract">ยกเลิกสัญญา</a>
-                          <a class="dropdown-item" href="guarantee">หลักประกันสัญญา</a>
-                          <a class="dropdown-item" href="deliverpurchase">ส่งมอบ</a>
-                          <a class="dropdown-item" href="checkpurchase">ตรวจรับ</a>
-                          <a class="dropdown-item" href="withdwawpurchase">เบิกจ่ายจัดซื้อ/จัดจ้าง</a>
-                          <a class="dropdown-item" href="leavepurchase">ทิ้งงาน</a>
-                         
-                      </div>
-                  </div>
+                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
+                  mode='view'>
+                    <i class="ni ni-eye">
+                    </i>
+                  </a>
+                  &nbsp;&nbsp;
+                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
+                  mode='edit' mode='edit' data-toggle="modal" data-target=".default-example-modal-right">
+                    <i class="ni ni-pencil">
+                    </i>
+                  </a>
+                  
+                    
+                  
                 </td>
               </tr>
-              <tr>
-                <td>
-                  3
-                </td>
-                <td>
-                  3/66
-                </td>
-                <td>
-                   หนังสือพิมพ์รายวันและรายสัปดาห์	
-                </td>
-                <td>
-                  30 ก.พ. 65	
-                </td>
-                <td>
-                  80,000.00
-                </td>
-               
-                <td>
-                 <div class="btn-group" role="group">
-                      <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">ไปยัง</button>
-                      <div class="dropdown-menu">
-                          <a class="dropdown-item" href="javascript:void(0)">ขอขยายระยะเวลา</a>
-                          <a class="dropdown-item" href="javascript:void(0)">รายงานความก้าวหน้า</a>
-                          <a class="dropdown-item" href="javascript:void(0)">ยกเลิกสัญญา</a>
-                          <a class="dropdown-item" href="javascript:void(0)">หลักประกันสัญญา</a>
-                          <a class="dropdown-item" href="javascript:void(0)">ส่งมอบ</a>
-                          <a class="dropdown-item" href="javascript:void(0)">ตรวจรับ</a>
-                          <a class="dropdown-item" href="javascript:void(0)">เบิกจ่ายจัดซื้อ/จัดจ้าง</a>
-                          <a class="dropdown-item" href="javascript:void(0)">ทิ้งงาน</a>
-                         
-                      </div>
-                  </div>
-                </td>
-              </tr>
+             
             
               
               
@@ -470,15 +480,15 @@ $(document).ready(function() {
     processing: true,
     bPaginate: true,
     columnDefs: [{
-      targets: [2,5],
+      targets: [3,4,6,7],
       orderable: false,
     },
     {
-      targets: [0,1,3],
+      targets: [0,1,3,4,6,7],
       className: "text-center",
     },
     {
-      targets: [4],
+      targets: [5],
       className: "text-right",
     }]
 

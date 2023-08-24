@@ -62,8 +62,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
       <div class="panel-container">
         <div class="panel-content" style="padding-top: 0px;">
           <div class="frame-wrap mt-3 mb-0 w-100">
-            <button id="btnadd" type="button" class="btn btn-primary" data-toggle="modal"
-            data-target=".default-example-modal-right" style="display: flex;">
+            <button id="btnadd" type="button" class="btn btn-primary" data-toggle="modal" data-target=".default-example-modal-right" style="display: flex;">
               <span class="ni ni-big-plus fa-2x" style="padding-right:10px;">
               </span>
               <span style="padding-top:5px;">

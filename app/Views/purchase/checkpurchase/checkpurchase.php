@@ -248,10 +248,109 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
         </div>
       </div>
     </div>
+
+
+
+
+
+
     <div class="alert alert-warning" id='searchresults' name='searchresults'
     style="margin-bottom: 15px;">
-      ค้นหาโดย : ปีงบประมาณ 2566
+     
+      <h5>ค้นหาโดย</h5> 
+      <div class="row" style = "margin-top:15px;">
+          <div class="col-sm-1" >
+            <h6> ปี :</h6>
+          </div>
+          <div class="col-sm-1">
+              2566
+          </div>
+          <div class="col-sm-2">
+            <h6>เลขที่สัญญา </h6>
+          </div>
+          <div class="col-sm-1">
+              1/66
+          </div>
+          
+      </div>
+      <div class="row">
+          <div class="col-sm-1">
+            <h6>ชื่อสัญญา :</h6>
+          </div>
+          <div class="col-sm-11">
+              ออกแบบอาร์ตเวิร์คหนังสือที่ระลึกงานวันคล้ายวันสถาปนาสำนักงานเลขาธิการคุรุสภา	
+          </div>
+          
+          
+      </div>
     </div>
+
+    <div class="alert alert-primary alert-dismissible">
+          <!-- <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">
+                  <i class="fal fa-times"></i>
+              </span>
+          </button> -->
+          <div class="d-flex flex-start w-100">
+              <!-- <div class="mr-2 d-sm-none d-md-block">
+                  <span class="icon-stack icon-stack-lg">
+                      <i class="base base-6 icon-stack-3x opacity-100 color-primary-500"></i>
+                      <i class="base base-10 icon-stack-2x opacity-100 color-primary-300 fa-flip-vertical"></i>
+                      <i class="fal fa-info icon-stack-1x opacity-100 color-white"></i>
+                  </span>
+              </div> -->
+              <div class="d-flex flex-fill">
+                  <div class="flex-fill">
+                      <span class="h5">รายละเอียดสัญญา</span>
+                      <br>
+                      
+                        <div class="row" style = "margin-top:15px;">
+                          <div class="col-sm-2" >
+                            <h6>เลขที่สัญญา	 </h6>
+                          </div>
+                          <div class="col-sm-1">
+                              1/66
+                          </div>
+                          <div class="col-sm-3">
+                            <h6>ชื่อสัญญา	 </h6>
+                          </div>
+                          <div class="col-sm-6">
+                              ออกแบบอาร์ตเวิร์คหนังสือที่ระลึกงานวันคล้ายวันสถาปนาสำนักงานเลขาธิการคุรุสภา
+                          </div>
+                        </div>
+                        <div class="row" style = "margin-top:15px;">
+                          <div class="col-sm-2" >
+                            <h6>วันที่ทำสัญญา 	 </h6>
+                          </div>
+                          <div class="col-sm-1">
+                              28 ต.ค. 65
+                          </div>
+                          <div class="col-sm-3">
+                            <h6>จำนวนวันในสัญญาทั้งหมด	 </h6>
+                          </div>
+                          <div class="col-sm-6">
+                              120 วัน
+                          </div>
+                        </div>
+                        <div class="row" style = "margin-top:15px;">
+                          <div class="col-sm-2" >
+                            <h6>จำนวนเงินทั้งสิ้น 	 </h6>
+                          </div>
+                          <div class="col-sm-10">
+                              230,000 บาท
+                          </div>
+                         
+                        </div>
+
+                  </div>
+              </div>
+          </div>
+        </div>
+
+
+
+
+
   </div>
 </div>
 <div class="row">
@@ -269,6 +368,16 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
               </span>
             </button><br>
           </div> -->
+           <!-- <div class="frame-wrap mt-3 mb-0 w-100">
+            <button id="btnadd" type="button" class="btn btn-primary" data-toggle="modal"
+            data-target=".default-example-modal-right" style="display: flex;">
+              <span class="ni ni-big-plus fa-2x" style="padding-right:10px;">
+              </span>
+              <span style="padding-top:5px;">
+                เพิ่ม
+              </span>
+            </button><br>
+          </div> -->
           <!-- datatable start -->
           <table id="dynamic-table" class="table table-md table-bordered table-hover table-striped w-100">
             <thead class="bg-primary-600">
@@ -276,19 +385,28 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <th width = "20px;">
                 </th>
                 <th class="text-center" width = "100px;" style = "vertical-align: middle;"> 
-                  เลขที่สัญญา/<br>ใบสั่งซื้อ/สั่งจ้าง 
+                  งวด
                 </th>
                 <th class="text-center" style = "vertical-align: middle;">
-                  ชื่อสัญญา 	
+                  จำนวน (วัน) 	
                 </th>
-                <th class="text-center" width = "100px;" style = "vertical-align: middle;">
-                  วันที่สัญญา/<br>ใบสั่งซื้อ/สั่งจ้าง 	
+                <th class="text-center"  width = "100px;"  style = "vertical-align: middle;">
+                  วันที่ครบกำหนด
                 </th>
-                <th class="text-center" width = "100px;" style = "vertical-align: middle;">
-                  จำนวนเงิน(บาท)
+                <th class="text-center"  width = "100px;"  style = "vertical-align: middle;">
+                  วันที่ส่งมอบ
                 </th>
-                <th width = "100px;"class="text-center" style = "vertical-align: middle;">
+                <th class="text-center"  width = "100px;"  style = "vertical-align: middle;">
+                  วันที่ตรวจรับ
+                </th>
+                <th class="text-center"  width = "100px;"  style = "vertical-align: middle;">
+                  จำนวนเงิน (บาท)
+                </th>
+                <th class="text-center"  width = "100px;"  style = "vertical-align: middle;">
                   
+                </th>
+              
+                <th width="60">
                 </th>
                 
               </tr>
@@ -296,106 +414,138 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
             <tbody>
               <tr>
                 <td>
+                  2765
+                </td>
+                <td>
                   1
                 </td>
                 <td>
-                  1/66
+                  30
                 </td>
                 <td>
-                   ออกแบบอาร์ตเวิร์คหนังสือที่ระลึกงานวันคล้ายวันสถาปนาสำนักงานเลขาธิการคุรุสภา
+                  28 ต.ค. 65
                 </td>
                 <td>
-                  10 ก.พ. 65	
+                  27 พ.ย. 65
                 </td>
                 <td>
-                  20,000.00
+                  30 พ.ย. 65
                 </td>
-               
                 <td>
-                 <div class="btn-group" role="group">
-                      <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">ไปยัง</button>
-                      <div class="dropdown-menu">
-                          <a class="dropdown-item" href="extendcontract">ขอขยายระยะเวลา</a>
-                          <a class="dropdown-item" href="cancelcontract">รายงานความก้าวหน้า</a>
-                          <a class="dropdown-item" href="cancelcontract">ยกเลิกสัญญา</a>
-                          <a class="dropdown-item" href="guarantee">หลักประกันสัญญา</a>
-                          <a class="dropdown-item" href="deliverpurchase">ส่งมอบ</a>
-                          <a class="dropdown-item" href="checkpurchase">ตรวจรับ</a>
-                          <a class="dropdown-item" href="withdwawpurchase">เบิกจ่ายจัดซื้อ/จัดจ้าง</a>
-                          <a class="dropdown-item" href="leavepurchase">ทิ้งงาน</a>
-                         
-                      </div>
+                  100,000.00
+                </td>
+                <td>
+                   <div class="custom-control custom-checkbox d-block bg-success-800" style = "padding-left:0px;padding-right:0px;margin:0px;padding-bottom:0px;padding-top:4px;">
+                      <!-- <span class="width-1 height-1 rounded-circle d-block bg-secondary" style = "padding:0px;margin-left:20px;margin-top:0px;margin-bottom:0px;margin-right:0px;"></span> -->
+                      <label ><small class= "">ผ่านการตรวจรับ</small></label>
                   </div>
+                </td>
+              
+               
+                 <td>
+                 
+                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
+                  mode='edit' data-toggle="modal" data-target=".default-example-modal-right" >
+                    <i class="ni ni-pencil">
+                    </i>
+                  </a>&nbsp;&nbsp;
+                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
+                  mode='edit'>
+                    <i class="fa fa-gear">
+                    </i>
+                  </a>
+                 
                 </td>
               </tr>
               <tr>
+                <td>
+                  2766
+                </td>
                 <td>
                   2
                 </td>
                 <td>
-                  2/66
+                  60
                 </td>
                 <td>
-                   ออกแบบภาพกราฟิกสำหรับประชาสัมพันธ์ทางสื่อสังคมออนไลน์	
+                 28 พ.ย. 65
                 </td>
                 <td>
-                  20 ก.พ. 65	
+                  28 ม.ค. 66
                 </td>
                 <td>
-                  230,000.00
+                  30 ม.ค. 66
+                </td>
+                <td>
+                  100,000.00
+                </td>
+                <td>
+                   <div class="custom-control custom-checkbox d-block bg-fusion-100" style = "padding-left:0px;padding-right:0px;margin:0px;padding-bottom:0px;padding-top:4px;">
+                      <!-- <span class="width-1 height-1 rounded-circle d-block bg-secondary" style = "padding:0px;margin-left:20px;margin-top:0px;margin-bottom:0px;margin-right:0px;"></span> -->
+                      <label ><small class= "">ยังไม่พิจารณา</small></label>
+                  </div>
                 </td>
                
-                <td>
-                 <div class="btn-group" role="group">
-                      <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">ไปยัง</button>
-                      <div class="dropdown-menu">
-                          <a class="dropdown-item" href="extendcontract">ขอขยายระยะเวลา</a>
-                          <a class="dropdown-item" href="cancelcontract">รายงานความก้าวหน้า</a>
-                          <a class="dropdown-item" href="cancelcontract">ยกเลิกสัญญา</a>
-                          <a class="dropdown-item" href="guarantee">หลักประกันสัญญา</a>
-                          <a class="dropdown-item" href="deliverpurchase">ส่งมอบ</a>
-                          <a class="dropdown-item" href="checkpurchase">ตรวจรับ</a>
-                          <a class="dropdown-item" href="withdwawpurchase">เบิกจ่ายจัดซื้อ/จัดจ้าง</a>
-                          <a class="dropdown-item" href="leavepurchase">ทิ้งงาน</a>
-                         
-                      </div>
-                  </div>
+                 <td>
+                 
+                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
+                  mode='edit' data-toggle="modal" data-target=".default-example-modal-right" >
+                    <i class="ni ni-pencil">
+                    </i>
+                  </a>&nbsp;&nbsp;
+                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
+                  mode='edit'  >
+                    <i class="fa fa-gear">
+                    </i>
+                  </a>
+                 
                 </td>
               </tr>
               <tr>
                 <td>
+                  2767
+                </td>
+                <td>
                   3
                 </td>
                 <td>
-                  3/66
+                  30
                 </td>
                 <td>
-                   หนังสือพิมพ์รายวันและรายสัปดาห์	
+                 28 ม.ค. 66
                 </td>
                 <td>
-                  30 ก.พ. 65	
+                  02 มี.ค. 66
                 </td>
                 <td>
-                  80,000.00
+                  10 มี.ค. 66
                 </td>
-               
                 <td>
-                 <div class="btn-group" role="group">
-                      <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">ไปยัง</button>
-                      <div class="dropdown-menu">
-                          <a class="dropdown-item" href="javascript:void(0)">ขอขยายระยะเวลา</a>
-                          <a class="dropdown-item" href="javascript:void(0)">รายงานความก้าวหน้า</a>
-                          <a class="dropdown-item" href="javascript:void(0)">ยกเลิกสัญญา</a>
-                          <a class="dropdown-item" href="javascript:void(0)">หลักประกันสัญญา</a>
-                          <a class="dropdown-item" href="javascript:void(0)">ส่งมอบ</a>
-                          <a class="dropdown-item" href="javascript:void(0)">ตรวจรับ</a>
-                          <a class="dropdown-item" href="javascript:void(0)">เบิกจ่ายจัดซื้อ/จัดจ้าง</a>
-                          <a class="dropdown-item" href="javascript:void(0)">ทิ้งงาน</a>
-                         
-                      </div>
+                  30,000.00
+                </td>
+              
+                <td>
+                   <div class="custom-control custom-checkbox d-block bg-warning-500" style = "padding-left:0px;padding-right:0px;margin:0px;padding-bottom:0px;padding-top:4px;">
+                      <!-- <span class="width-1 height-1 rounded-circle d-block bg-secondary" style = "padding:0px;margin-left:20px;margin-top:0px;margin-bottom:0px;margin-right:0px;"></span> -->
+                      <label ><small class= "">ไม่ผ่านการตรวจรับ</small></label>
                   </div>
                 </td>
+                 <td>
+                 
+                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
+                  mode='edit' data-toggle="modal" data-target=".default-example-modal-right" >
+                    <i class="ni ni-pencil">
+                    </i>
+                  </a>&nbsp;&nbsp;
+                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
+                  mode='edit' >
+                    <i class="fa fa-gear">
+                    </i>
+                  </a>
+                 
+                </td>
               </tr>
+              
             
               
               
@@ -460,6 +610,9 @@ $(document).ready(function() {
   $('#province').select2({
     dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
   });
+  $('#board_name_add').select2({
+    dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
+  });
   var table = $("#dynamic-table").DataTable({
     orderCellsTop: true,
     fixedHeader: true,
@@ -470,16 +623,46 @@ $(document).ready(function() {
     processing: true,
     bPaginate: true,
     columnDefs: [{
-      targets: [2,5],
+      targets: [1,2,3,4,5,6,7,8],
       orderable: false,
     },
     {
-      targets: [0,1,3],
+      targets: [0,1,2,3,4,5,7],
       className: "text-center",
     },
     {
-      targets: [4],
+      targets: [6],
       className: "text-right",
+    }]
+
+  });
+  var table = $("#dynamic-table3").DataTable({
+    orderCellsTop: true,
+    fixedHeader: true,
+    bLengthChange: false,
+    searching: false,
+    bAutoWidth: false,
+    bStateSave: true,
+    processing: true,
+    bPaginate: true,
+    orderable:false,
+    "ordering": false,
+    "paging": false,
+    "info":     false,
+    columnDefs: [{
+     
+    },
+    {
+      targets: [0,2,3],
+      className: "text-center",
+    },
+    {
+      targets: [3],
+      className: "text-right",
+    },
+    {
+      targets: [0,1],
+      className: "text-left",
     }]
 
   });
