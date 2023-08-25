@@ -180,17 +180,17 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                         <option value="">
                           ทั้งหมด
                         </option>
-                        <option value="17">
-                          ยังไม่ตรวจสอบ			
+                       <option value="17">
+                          แจ้งส่งคืน			
                         </option>
                         <option value="18">
-                          ระหว่างดำเนินการ	
+                          ไม่รับคืน	
                         </option>
                         <option value="11">
-                          เสร็จสิ้น		
+                          ระหว่างดำเนินการ		
                         </option>
                         <option value="11">
-                          ไม่ซ่อม		
+                          ส่งคืนแล้ว		
                         </option>
                         
                       </select>
@@ -234,14 +234,14 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <th class="text-center" width = "20px;">
                   
                 </th>
-                <th class="text-center" width = "70px;">
-                  วันที่แจ้งซ่อม
+                <th class="text-center" width = "80px;">
+                  วันที่แจ้งส่งคืน
                 </th>
                  <th class="text-center" width = "70px;">
                   สำนัก
                 </th>
                 <th class="text-center" width = "80px;">
-                  กลุ่มงาน
+                  กลุ่ม
                 </th>
                 <th class="text-center">
                   รายการ
@@ -282,11 +282,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                     <div class = "col-sm-8"><strong>เครื่องโทรสาร</strong> : ยี่ห้อ SHARP รุ่น FO-3150		</div>
                     <!-- <div class = "col-sm-4">เปิดไม่ติด</div> -->
                   </div>
-                  <div class = "row">
-                    <div class = "col-sm-4">62-117-202-0356</div>
-                    <div class = "col-sm-8"><strong>เครื่องปรับอากาศ</strong> : FOCUS AFT30S9/CSE30S9 30500 BTU			</div>
-                    <!-- <div class = "col-sm-4">มีน้ำหยดและไม่เย็นมีเสียงดัง</div> -->
-                  </div>
+                 
                 </td>
                   
               
@@ -294,7 +290,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <td>
                   <div class="custom-control custom-checkbox d-block bg-fusion-100" style = "padding-left:0px;padding-right:0px;margin:0px;padding-bottom:0px;padding-top:4px;">
                       <!-- <span class="width-1 height-1 rounded-circle d-block bg-secondary" style = "padding:0px;margin-left:20px;margin-top:0px;margin-bottom:0px;margin-right:0px;"></span> -->
-                      <label ><small class= "">ยังไม่ตรวจสอบ</small></label>
+                      <label ><small class= "">แจ้งส่งคืน</small></label>
                       
                   </div>
                   <label style = "margin:0px;"><small class= "">(9 ส.ค 66)</small></label>
@@ -548,7 +544,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <div class="form-row dialog-data " style = "padding-bottom:5px;padding-top:5px;">
                   <div class="col-md-3 mb-3" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
                     <label class="form-label" for="" style = "margin:0;">
-                             สาเหตุการซ่อม			
+                             สาเหตุการส่งคืน			
                          
                     </label>
                     <span class="text-danger stars"> * </span> 

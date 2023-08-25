@@ -20,63 +20,60 @@
 
            
 
-            <div class="panel-content fourd-form-row-a" >
-              <div class="form-row dialog-data " style = "padding-bottom:0px;">
-                <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
-                  <label class="form-label" for="" style = "margin:0;">
-                    สำนัก
-                  </label>
-                  <span class="text-danger stars">  </span> 
-                </div>
-                <div class="col-md-4 mb-4" style="padding-top:0px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
-                  <label class="form-label" for="" style = "margin:0;">
-                    สำนักนโยบายและแผน
-                  </label>
-                </div>
-                <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
-                  <label class="form-label" for="" style = "margin:0;">
-                    กลุ่ม
-                  </label>
-                  <span class="text-danger stars">  </span> 
-                </div>
-                <div class="col-md-4 mb-4" style="padding-top:0px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
-                  <label class="form-label" for="" style = "margin:0;">
-                   กลุ่มแผนและงบประมาณ
-                  </label>
-                </div>
-               
             
-               
-              </div>
-            </div>
-            <div class="panel-content fourd-form-row-b" >
-              <div class="form-row dialog-data " style = "padding-bottom:0px;">
-                
-                <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
-                  <label class="form-label" for="" style = "margin:0;">
-                    ชื่อผู้แจ้งซ่อม
+            
+            <div class="panel-content fourd-form-row-a">
+              
+             
+              <div class="form-row dialog-data " style = "padding-bottom:0px;margin-top:8px;">
+                <div class="col-md-3 mb-3" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;padding-top:5px;">
+                    ชื่อหน่วยงานที่ขอยืม		
                   </label>
-                  <span class="text-danger stars">  </span> 
                 </div>
-                <div class="col-md-4 mb-4" style="padding-top:0px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
-                  <label class="form-label" for="" style = "margin:0;">
-                    กัญจนพร แสงสว่าง
+                <div class="col-md-9 mb-9" style="padding-top:5px;padding-bottom:15px;font-size:13px;margin-bottom:0px !important;">
+                 <label class="form-label" for="" style = "margin:0;padding-top:0px;">
+                    โรงเรียนวิถีพุทธ		
                   </label>
                 </div>
             
                
               </div>
+
             </div>
+            <div class="panel-content fourd-form-row-b">
+              
+             
+              <div class="form-row dialog-data " style = "padding-bottom:0px;margin-top:8px;">
+                <div class="col-md-3 mb-3" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;padding-top:5px;">
+                    บันทึกรายละเอียด		
+                  </label>
+                </div>
+                <div class="col-md-9 mb-9" style="padding-top:5px;padding-bottom:15px;font-size:13px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;padding-top:0px;">
+                    ให้โรงเรียนยืมเพื่อการศึกษา		
+                  </label>
+                  	
+                </div>
+            
+               
+              </div>
+
+            </div>
+           
+            
             <div class="panel-content fourd-form-row-b" style = "padding-bottom:0px;margin-bottom:0px;">
               <div class="form-row dialog-data " style = "padding-bottom:0px;margin-bottom:0px;">
                 <div class="col-md-12 mb-12 text-center" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;font-weight:550;">
                   <label class="form-label" for="" style = "margin:0;">
-                    รายการซ่อม
+                    รายการครุภัณฑ์
                   </label>
                 </div>
                 
               </div>
             </div>
+
             <!-- <button type="button" class="btn btn-sm btn-default" id = "btn_open_dialog_sub_form" data-toggle="modal" data-target="#dialog_sub_form"><i class="fa-solid fa-plus"></i></button> -->
 
 
@@ -96,9 +93,7 @@
 									<th class="text-center" >
 										รายละเอียด
 									</th>
-									<th class="text-center" >
-										สาเหตุการซ่อม
-									</th>
+								
 								
 								</tr>
 							</thead>
@@ -111,9 +106,7 @@
 									<td>
 										เครื่องโทรสาร : ยี่ห้อ SHARP รุ่น FO-3150
 									</td>
-									<td>
-										เปิดไม่ติด
-									</td>
+							
 									
 									
 								</tr>
@@ -125,31 +118,76 @@
 									<td>
 										เครื่องโทรสาร : ยี่ห้อ SHARP รุ่น FO-3150
 									</td>
-									<td>
-										เปิดไม่ติด
-									</td>
+								
 									
 								
 								</tr>
-								<tr>
-
-									<td>
-										62-117-202-0356
-									</td>
-									<td>
-										เครื่องปรับอากาศ : FOCUS AFT30S9/CSE30S9 30500 BTU
-									</td>
-									<td>
-										มีน้ำหยดและไม่เย็นมีเสียงดัง
-									</td>
-									
-								
-								</tr>
+							
 								
 								
 							</tbody>
 						</table>
 						<!-- datatable end -->
+
+            <!-- <div class="panel-content fourd-form-row-c" style = "background-color:#c4ecd0de !important;">
+              
+             
+              <div class="form-row dialog-data " style = "padding-bottom:0px;margin-top:8px;">
+                <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;padding-top:5px;">
+                    หมายเหตุ
+                  </label>
+                </div>
+                <div class="col-md-10 mb-10" style="padding-top:5px;padding-bottom:15px;font-size:13px;margin-bottom:0px !important;">
+                  <div class="">
+                     <textarea class="form-control" id="example-textarea" rows="2"></textarea>
+                  
+                  </div>
+                </div>
+            
+               
+              </div>
+
+            </div> -->
+
+           <div class="panel-content fourd-form-row-b div_status_pay" style = "" >
+              <div class="form-row dialog-data " style = "padding-bottom:0px;">
+                <div class="col-md-2 mb-2" style="padding-top:4px;padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    แนบไฟล์
+                  </label>
+                </div>
+                <div class="col-md-4 mb-4" style="padding-top:5px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
+                  
+                  ชื่อไฟล์แนบ รายการที่ 1
+                  <a href="javascript:void(0);" class="btn btn-success btn-xs btn-icon rounded-circle">
+                      <i class="fal fa-download"></i>
+                  </a>
+                </div>
+                
+            
+               
+              </div>
+            </div>
+            <div class="panel-content fourd-form-row-b div_status_pay" style = "" >
+              <div class="form-row dialog-data " style = "padding-bottom:0px;">
+                <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    
+                  </label>
+                </div>
+                <div class="col-md-4 mb-4" style="padding-top:5px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
+                  
+                  ชื่อไฟล์แนบ รายการที่ 2
+                  <a href="javascript:void(0);" class="btn btn-success btn-xs btn-icon rounded-circle">
+                      <i class="fal fa-download"></i>
+                  </a>
+                </div>
+                
+            
+               
+              </div>
+            </div>
 
             <div class="panel-content fourd-form-row-c" style = "background-color:#c4ecd0de !important;">
               
@@ -163,20 +201,13 @@
                   <div class="">
                     <div class="custom-control custom-radio custom-control-inline" style ="line-height:25px;vertical-align: middle;">
                         <input type="radio" class="custom-control-input" id="defaultInline1Radio" name="inlineDefaultRadiosExample" style = "margin-top:15px;" checked>
-                        <label class="custom-control-label " for="defaultInline1Radio" >ยังไม่ตรวจสอบ</label>
+                        <label class="custom-control-label " for="defaultInline1Radio" >ให้ยืม</label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline" style ="line-height:25px;vertical-align: middle;">
                         <input type="radio" class="custom-control-input" id="defaultInline2Radio" name="inlineDefaultRadiosExample">
-                        <label class="custom-control-label " for="defaultInline2Radio">ระหว่างดำเนินการ</label>
+                        <label class="custom-control-label " for="defaultInline2Radio">คืนแล้ว</label>
                     </div>
-                    <div class="custom-control custom-radio custom-control-inline" style ="line-height:25px;vertical-align: middle;">
-                        <input type="radio" class="custom-control-input" id="defaultInline4Radio" name="inlineDefaultRadiosExample">
-                        <label class="custom-control-label " for="defaultInline4Radio">เสร็จสิ้น</label>
-                    </div>
-                    <div class="custom-control custom-radio custom-control-inline" style ="line-height:25px;vertical-align: middle;">
-                        <input type="radio" class="custom-control-input" id="defaultInline5Radio" name="inlineDefaultRadiosExample">
-                        <label class="custom-control-label " for="defaultInline5Radio">ไม่ซ่อม</label>
-                    </div>
+                    
                   
                   </div>
                 </div>
@@ -186,7 +217,7 @@
               <div class="form-row dialog-data " style = "padding-bottom:0px;margin-top:8px;">
                 <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
                   <label class="form-label" for="" style = "margin:0;padding-top:5px;">
-                    รายละเอียด
+                    หมายเหตุ
                   </label>
                 </div>
                 <div class="col-md-10 mb-10" style="padding-top:5px;padding-bottom:15px;font-size:13px;margin-bottom:0px !important;">
@@ -201,9 +232,7 @@
 
             </div>
 
-
-
-
+            
 
 
 

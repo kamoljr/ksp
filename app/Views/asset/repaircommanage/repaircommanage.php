@@ -107,37 +107,8 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   </div>
                   <div class="row" style = "padding-top:15px;">
                     
-                    <div class="col-sm-2">
-                      <label class="form-label" for="group_name_search">
-                        ประเภท
-                      </label>
-                      <select id="asset_type_search" name="group_name_search" class="select2"
-                      placeholder="ประเภท">
-                      <option value="">
-                          ทั้งหมด
-                        </option>
-                        <option value="">
-                          ครุภัณฑ์สำนักงาน (12230-00)	
-                        </option>
-                        <option value="17">
-                          ครุภัณฑ์ยานพาหนะและขนส่ง (12250-00)		
-                        </option>
-                        <option value="18">
-                          ครุภัณฑ์ไฟฟ้าและวิทยุ (12233-00)	
-                        </option>
-                        <option value="11">
-                          ครุภัณฑ์โฆษณาและเผยแพร่	
-                        </option>
-                        <option value="11">
-                          ครุภัณฑ์งานบ้านงานครัว		
-                        </option>
-                        <option value="11">
-                          ครุภัณฑ์คอมพิวเตอร์		
-                        </option>
-                        
-                      </select>
-                    </div>
-                    <div class="col-sm-3">
+                    
+                    <div class="col-sm-4">
                       <label class="form-label" for="group_name_search">
                         รายการ
                       </label>
@@ -147,19 +118,25 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                           ทั้งหมด
                         </option>
                         <option value="17">
-                          ชั้นวางของ		
+                          คอมพิวเตอร์ลูกข่าย		
                         </option>
                         <option value="18">
-                          โต๊ะทำงานพร้อมเก้าอี้นวม 8 ห้อง	
+                           คอมพิวเตอร์และอุปกรณ์ประกอบ (ALL in one)	
                         </option>
                         <option value="11">
-                          ตู้ครัว	
+                          คีย์บอร์ด	
+                        </option>
+                        <option value="11">
+                          เครื่องคอมพิวเตอร์ (Notebook)	
+                        </option>
+                        <option value="11">
+                          สแกนเนอร์	
                         </option>
                         
                       </select>
                     </div>
                     
-                    <div class="col-sm-2">
+                    <div class="col-sm-3">
                       <label class="form-label" for="group_name_search">
                         รหัสครุภัณฑ์
                       </label>
@@ -231,13 +208,14 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
             <thead class="bg-primary-600">
               <tr>
              
-                <th class="text-center" width = "20px;">
+                <th class="text-center" width = "15px;">
                   
                 </th>
+                
                 <th class="text-center" width = "70px;">
                   วันที่แจ้งซ่อม
                 </th>
-                 <th class="text-center" width = "70px;">
+                <th class="text-center" width = "80px;">
                   สำนัก
                 </th>
                 <th class="text-center" width = "80px;">
@@ -265,28 +243,24 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <td>
                   06 ก.ย. 65	
                 </td>
-                 <td>
+                <td class="text-center">
                   สำนักนโยบายและแผน
                 </td>
-                <td>
+                <td class="text-center">
                   กลุ่มแผนและงบประมาณ
                 </td>
                 <td>
                   <div class = "row" style = "padding-bottom:10px;">
                     <div class = "col-sm-4">52-117-202-0001</div>
-                    <div class = "col-sm-8"><strong>เครื่องโทรสาร</strong> : ยี่ห้อ SHARP รุ่น FO-3150		</div>
+                    <div class = "col-sm-8"><strong>คอมพิวเตอร์ลูกข่าย</strong> : ยี่ห้อ Dell รุ่น FO-3150		</div>
                     <!-- <div class = "col-sm-4">เปิดไม่ติด</div> -->
                   </div>
                   <div class = "row" style = "padding-bottom:10px;">
                     <div class = "col-sm-4">52-117-202-0002</div>
-                    <div class = "col-sm-8"><strong>เครื่องโทรสาร</strong> : ยี่ห้อ SHARP รุ่น FO-3150		</div>
+                    <div class = "col-sm-8"><strong>คอมพิวเตอร์ลูกข่าย</strong> : ยี่ห้อ HP รุ่น PA100		</div>
                     <!-- <div class = "col-sm-4">เปิดไม่ติด</div> -->
                   </div>
-                  <div class = "row">
-                    <div class = "col-sm-4">62-117-202-0356</div>
-                    <div class = "col-sm-8"><strong>เครื่องปรับอากาศ</strong> : FOCUS AFT30S9/CSE30S9 30500 BTU			</div>
-                    <!-- <div class = "col-sm-4">มีน้ำหยดและไม่เย็นมีเสียงดัง</div> -->
-                  </div>
+                 
                 </td>
                   
               
@@ -335,17 +309,17 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <td>
                   07 ก.ย. 65	
                 </td>
-                 <td>
+                <td class="text-center">
                   สำนักจรรยาบรรณวิชาชีพและนิติการ
                 </td>
-                <td>
+                <td class="text-center">
                   กลุ่มนิติการ	
                 </td>
                 <td>
                   <div class = "row">
-                    <div class = "col-sm-4">62-117-416-0019</div>
-                    <div class = "col-sm-8"><strong>เครื่องปรับอากาศ	</strong> : Tasaki 30000 BTU		</div>
-                    <!-- <div class = "col-sm-4">เปิดไม่ติด</div> -->
+                    <div class = "col-sm-4">62-117-202-0356</div>
+                    <div class = "col-sm-8"><strong>เครื่องคอมพิวเตอร์ (Notebook)		</strong> : DELL โน๊ตบุ๊ค Inspiron 5510 (15.6 นิ้ว,Intel Core i7, RAM 8 GB,512 GB)			</div>
+                    <!-- <div class = "col-sm-4">เสีย</div> -->
                   </div>
                 
                 </td>

@@ -54,7 +54,7 @@
                 
                 <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
                   <label class="form-label" for="" style = "margin:0;">
-                    ชื่อผู้แจ้งซ่อม
+                    ชื่อผู้ส่งคืน
                   </label>
                   <span class="text-danger stars">  </span> 
                 </div>
@@ -71,7 +71,7 @@
               <div class="form-row dialog-data " style = "padding-bottom:0px;margin-bottom:0px;">
                 <div class="col-md-12 mb-12 text-center" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;font-weight:550;">
                   <label class="form-label" for="" style = "margin:0;">
-                    รายการซ่อม
+                    รายการส่งคืน
                   </label>
                 </div>
                 
@@ -97,7 +97,7 @@
 										รายละเอียด
 									</th>
 									<th class="text-center" >
-										สาเหตุการซ่อม
+										สาเหตุการส่งคืน
 									</th>
 								
 								</tr>
@@ -112,7 +112,7 @@
 										เครื่องโทรสาร : ยี่ห้อ SHARP รุ่น FO-3150
 									</td>
 									<td>
-										เปิดไม่ติด
+										ไม่ได้ใช้งาน
 									</td>
 									
 									
@@ -126,25 +126,12 @@
 										เครื่องโทรสาร : ยี่ห้อ SHARP รุ่น FO-3150
 									</td>
 									<td>
-										เปิดไม่ติด
+										ไม่ได้ใช้งาน
 									</td>
 									
 								
 								</tr>
-								<tr>
-
-									<td>
-										62-117-202-0356
-									</td>
-									<td>
-										เครื่องปรับอากาศ : FOCUS AFT30S9/CSE30S9 30500 BTU
-									</td>
-									<td>
-										มีน้ำหยดและไม่เย็นมีเสียงดัง
-									</td>
-									
 								
-								</tr>
 								
 								
 							</tbody>
@@ -163,19 +150,19 @@
                   <div class="">
                     <div class="custom-control custom-radio custom-control-inline" style ="line-height:25px;vertical-align: middle;">
                         <input type="radio" class="custom-control-input" id="defaultInline1Radio" name="inlineDefaultRadiosExample" style = "margin-top:15px;" checked>
-                        <label class="custom-control-label " for="defaultInline1Radio" >ยังไม่ตรวจสอบ</label>
+                        <label class="custom-control-label " for="defaultInline1Radio" >แจ้งส่งคืน</label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline" style ="line-height:25px;vertical-align: middle;">
                         <input type="radio" class="custom-control-input" id="defaultInline2Radio" name="inlineDefaultRadiosExample">
-                        <label class="custom-control-label " for="defaultInline2Radio">ระหว่างดำเนินการ</label>
+                        <label class="custom-control-label " for="defaultInline2Radio">ไม่รับคืน</label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline" style ="line-height:25px;vertical-align: middle;">
                         <input type="radio" class="custom-control-input" id="defaultInline4Radio" name="inlineDefaultRadiosExample">
-                        <label class="custom-control-label " for="defaultInline4Radio">เสร็จสิ้น</label>
+                        <label class="custom-control-label " for="defaultInline4Radio">ระหว่างดำเนินการ</label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline" style ="line-height:25px;vertical-align: middle;">
                         <input type="radio" class="custom-control-input" id="defaultInline5Radio" name="inlineDefaultRadiosExample">
-                        <label class="custom-control-label " for="defaultInline5Radio">ไม่ซ่อม</label>
+                        <label class="custom-control-label " for="defaultInline5Radio">ส่งคืนแล้ว</label>
                     </div>
                   
                   </div>

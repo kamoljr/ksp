@@ -107,7 +107,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   </div>
                   <div class="row" style = "padding-top:15px;">
                     
-                    <div class="col-sm-2">
+                    <div class="col-sm-3">
                       <label class="form-label" for="group_name_search">
                         ประเภท
                       </label>
@@ -159,7 +159,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                       </select>
                     </div>
                     
-                    <div class="col-sm-2">
+                    <div class="col-sm-3">
                       <label class="form-label" for="group_name_search">
                         รหัสครุภัณฑ์
                       </label>
@@ -171,30 +171,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                       </label>
                       <input type="text" class="form-control form-ele clear-element" id="group_name_add" name="group_name_add" placeholder="ยี่ห้อรุ่นขนาดและลักษณะ" value="" >
                     </div>
-                    <div class="col-sm-2">
-                      <label class="form-label" for="group_name_search">
-                        สถานะ
-                      </label>
-                      <select id="repair_status_search" name="repair_status_search" class="select2"
-                      placeholder="รายการ">
-                        <option value="">
-                          ทั้งหมด
-                        </option>
-                        <option value="17">
-                          ยังไม่ตรวจสอบ			
-                        </option>
-                        <option value="18">
-                          ระหว่างดำเนินการ	
-                        </option>
-                        <option value="11">
-                          เสร็จสิ้น		
-                        </option>
-                        <option value="11">
-                          ไม่ซ่อม		
-                        </option>
-                        
-                      </select>
-                    </div>
+                   
                   </div>
 
                 </form>
@@ -216,7 +193,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
     <div id="panel-1" class="panel">
       <div class="panel-container">
         <div class="panel-content" style="padding-top: 0px;">
-          <!-- <div class="frame-wrap mt-3 mb-0 w-100">
+          <div class="frame-wrap mt-3 mb-0 w-100">
             <button id="btnadd" type="button" class="btn btn-primary" data-toggle="modal"
             data-target=".default-example-modal-right" style="display: flex;">
               <span class="ni ni-big-plus fa-2x" style="padding-right:10px;">
@@ -225,7 +202,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 เพิ่ม
               </span>
             </button>
-          </div> -->
+          </div>
           <!-- datatable start -->
           <table id="dynamic-table" class="table table-md table-bordered table-hover table-striped w-100">
             <thead class="bg-primary-600">
@@ -235,7 +212,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   
                 </th>
                 <th class="text-center" width = "70px;">
-                  วันที่แจ้งซ่อม
+                  วันที่เปลี่ยน
                 </th>
                  <th class="text-center" width = "70px;">
                   สำนัก
@@ -247,9 +224,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   รายการ
                 </th>
               
-                <th width = "80px;"class="text-center">
-                 
-                </th>
+                
                 <th width="90">
                 </th>
                 <th width="13">
@@ -275,30 +250,19 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   <div class = "row" style = "padding-bottom:10px;">
                     <div class = "col-sm-4">52-117-202-0001</div>
                     <div class = "col-sm-8"><strong>เครื่องโทรสาร</strong> : ยี่ห้อ SHARP รุ่น FO-3150		</div>
-                    <!-- <div class = "col-sm-4">เปิดไม่ติด</div> -->
+                   
                   </div>
                   <div class = "row" style = "padding-bottom:10px;">
                     <div class = "col-sm-4">52-117-202-0002</div>
                     <div class = "col-sm-8"><strong>เครื่องโทรสาร</strong> : ยี่ห้อ SHARP รุ่น FO-3150		</div>
-                    <!-- <div class = "col-sm-4">เปิดไม่ติด</div> -->
+                  
                   </div>
-                  <div class = "row">
-                    <div class = "col-sm-4">62-117-202-0356</div>
-                    <div class = "col-sm-8"><strong>เครื่องปรับอากาศ</strong> : FOCUS AFT30S9/CSE30S9 30500 BTU			</div>
-                    <!-- <div class = "col-sm-4">มีน้ำหยดและไม่เย็นมีเสียงดัง</div> -->
-                  </div>
+                 
                 </td>
                   
               
 
-                <td>
-                  <div class="custom-control custom-checkbox d-block bg-fusion-100" style = "padding-left:0px;padding-right:0px;margin:0px;padding-bottom:0px;padding-top:4px;">
-                      <!-- <span class="width-1 height-1 rounded-circle d-block bg-secondary" style = "padding:0px;margin-left:20px;margin-top:0px;margin-bottom:0px;margin-right:0px;"></span> -->
-                      <label ><small class= "">ยังไม่ตรวจสอบ</small></label>
-                      
-                  </div>
-                  <label style = "margin:0px;"><small class= "">(9 ส.ค 66)</small></label>
-                </td>
+               
 
                 <td>
                   <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
@@ -308,8 +272,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   </a>
                   &nbsp;&nbsp;
                   <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data" mode='edit' data-toggle="modal" data-target=".default-example-modal-right">
-                    <i class="fa fa-gear">
-                    </i>
+                    <i class="ni ni-pencil"></i>
                   </a>
                   &nbsp;&nbsp;
                   <a href="javascript:void(0);" class="btn btn-outline-danger btn-icon btn-xs rounded-circle waves-effect waves-themed"
@@ -345,20 +308,14 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   <div class = "row">
                     <div class = "col-sm-4">62-117-416-0019</div>
                     <div class = "col-sm-8"><strong>เครื่องปรับอากาศ	</strong> : Tasaki 30000 BTU		</div>
-                    <!-- <div class = "col-sm-4">เปิดไม่ติด</div> -->
+                
                   </div>
                 
                 </td>
                   
               
 
-                <td>
-                  <div class="custom-control custom-checkbox d-block bg-info-800" style = "padding-left:0px;padding-right:0px;margin:0px;padding-bottom:0px;padding-top:4px;">
-                      <!-- <span class="width-1 height-1 rounded-circle d-block bg-secondary" style = "padding:0px;margin-left:20px;margin-top:0px;margin-bottom:0px;margin-right:0px;"></span> -->
-                      <label ><small class= "">ระหว่างดำเนินการ</small></label>
-                  </div>
-                  <label style = "margin:0px;"><small class= "">(8 ส.ค 66)</small></label>
-                </td>
+               
 
                 <td>
                   <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
@@ -369,8 +326,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   &nbsp;&nbsp;
                   <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
                   mode='edit' data-toggle="modal" data-target=".default-example-modal-right">
-                    <i class="fa fa-gear">
-                    </i>
+                   <i class="ni ni-pencil"></i>
                   </a>
                   &nbsp;&nbsp;
                   <a href="javascript:void(0);" class="btn btn-outline-danger btn-icon btn-xs rounded-circle waves-effect waves-themed"
@@ -544,7 +500,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   </div>    
                 </div>
               </div> 
-							<div class="panel-content fourd-form-row-c" >
+							<!-- <div class="panel-content fourd-form-row-c" >
                 <div class="form-row dialog-data " style = "padding-bottom:5px;padding-top:5px;">
                   <div class="col-md-3 mb-3" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
                     <label class="form-label" for="" style = "margin:0;">
@@ -557,7 +513,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
 									<textarea class="form-control" id="example-textarea" rows="2"></textarea>
                   </div>    
                 </div>
-              </div> 
+              </div>  -->
 						
 
 						</div>
@@ -650,7 +606,7 @@ $(document).ready(function() {
     bPaginate: true,
    
     columnDefs: [{
-      targets: [2,3,4,5,6,7],
+      targets: [2,3,4,5,6],
       orderable: false,
     },
     {

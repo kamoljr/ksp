@@ -31,83 +31,10 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
               <div class="card-body">
                 <form action="<?=$actual_link?>" method="post" accept-charset="utf-8"
                 id="form-search" name="form-search">
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <label class="form-label" for="unit_name_search">
-                        ส่วนงาน
-                      </label>
-                      <select id="unit_name_search" name="unit_name_search" class="select2"
-                      placeholder="ส่วนงาน">
-                        <option value="">
-                          ทั้งหมด
-                        </option>
-                        <option value="17">
-                          กลุ่มพัฒนาระบบงาน
-                        </option>
-                        <option value="18">
-                          สถาบันคุรุพัฒนา
-                        </option>
-                        <option value="11">
-                          สำนักจรรยาบรรณวิชาชีพและนิติการ
-                        </option>
-                        <option value="3">
-                          สำนักทะเบียนและใบอนุญาตประกอบวิชาชีพ
-                        </option>
-                        <option value="9">
-                          สำนักเทคโนโลยีสารสนเทศ
-                        </option>
-                        <option value="16">
-                          สำนักเทคโนโลยีสารสนเทศและการสื่อสาร
-                        </option>
-                        <option value="5">
-                          สำนักนโยบายและแผน
-                        </option>
-                        <option value="4">
-                          สำนักพัฒนาและส่งเสริมวิชาชีพ
-                        </option>
-                        <option value="2">
-                          สำนักมาตรฐานวิชาชีพ
-                        </option>
-                        <option value="14">
-                          สำนักยกย่องเชิดชูเกียรติวิชาชีพ
-                        </option>
-                        <option value="12">
-                          สำนักส่งเสริมและพัฒนาคุรุสภาจังหวัด
-                        </option>
-                        <option value="7">
-                          สำนักอำนวยการ
-                        </option>
-                        <option value="8">
-                          หน่วยตรวจสอบภายใน
-                        </option>
-                      </select>
-                    </div>
-                    <div class="col-sm-6">
-                      <label class="form-label" for="group_name_search">
-                        กลุ่มงาน
-                      </label>
-                      <select id="group_name_search" name="group_name_search" class="select2"
-                      placeholder="กลุ่มงาน">
-                        <option value="">
-                          ทั้งหมด
-                        </option>
-                        <option value="17">
-                          กลุ่มการประชุมและประสานงาน	
-                        </option>
-                        <option value="18">
-                          กลุ่มการเงินและบัญชี
-                        </option>
-                        <option value="11">
-                          กลุ่มสวัสดิการ
-                        </option>
-                        
-                      </select>
-                    </div>
-                    
-                  </div>
+                  
                   <div class="row" style = "padding-top:15px;">
                     
-                    <div class="col-sm-2">
+                    <div class="col-sm-3">
                       <label class="form-label" for="group_name_search">
                         ประเภท
                       </label>
@@ -165,7 +92,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                       </label>
                       <input type="text" class="form-control form-ele clear-element" id="group_name_add" name="group_name_add" placeholder="รหัสครุภัณฑ์" value="" >
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-2">
                       <label class="form-label" for="group_name_search">
                          ยี่ห้อรุ่นขนาดและลักษณะ
                       </label>
@@ -173,28 +100,32 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                     </div>
                     <div class="col-sm-2">
                       <label class="form-label" for="group_name_search">
-                        สถานะ
+                        ประเภท
                       </label>
-                      <select id="repair_status_search" name="repair_status_search" class="select2"
-                      placeholder="รายการ">
-                        <option value="">
+                      <select id="dispose_type_search" name="dispose_type_search" class="select2"
+                      placeholder="สถานะ">
+                      <option value="">
                           ทั้งหมด
                         </option>
-                        <option value="17">
-                          ยังไม่ตรวจสอบ			
-                        </option>
-                        <option value="18">
-                          ระหว่างดำเนินการ	
+                       <option value="18">
+                          ขาย
                         </option>
                         <option value="11">
-                          เสร็จสิ้น		
+                          เปลี่ยน
                         </option>
-                        <option value="11">
-                          ไม่ซ่อม		
+                        <option value="3">
+                          เสียหายจากธรรมชาติ
+                        </option>
+                        <option value="9">
+                          สูญหาย
+                        </option>
+                        <option value="16">
+                          บริจาค
                         </option>
                         
                       </select>
                     </div>
+                   
                   </div>
 
                 </form>
@@ -216,7 +147,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
     <div id="panel-1" class="panel">
       <div class="panel-container">
         <div class="panel-content" style="padding-top: 0px;">
-          <!-- <div class="frame-wrap mt-3 mb-0 w-100">
+          <div class="frame-wrap mt-3 mb-0 w-100">
             <button id="btnadd" type="button" class="btn btn-primary" data-toggle="modal"
             data-target=".default-example-modal-right" style="display: flex;">
               <span class="ni ni-big-plus fa-2x" style="padding-right:10px;">
@@ -225,7 +156,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 เพิ่ม
               </span>
             </button>
-          </div> -->
+          </div>
           <!-- datatable start -->
           <table id="dynamic-table" class="table table-md table-bordered table-hover table-striped w-100">
             <thead class="bg-primary-600">
@@ -235,21 +166,14 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   
                 </th>
                 <th class="text-center" width = "70px;">
-                  วันที่แจ้งซ่อม
+                  วันที่จำหน่าย
                 </th>
-                 <th class="text-center" width = "70px;">
-                  สำนัก
-                </th>
-                <th class="text-center" width = "80px;">
-                  กลุ่มงาน
-                </th>
+               
                 <th class="text-center">
-                  รายการ
+                  รายละเอียด
                 </th>
               
-                <th width = "80px;"class="text-center">
-                 
-                </th>
+                
                 <th width="90">
                 </th>
                 <th width="13">
@@ -265,40 +189,15 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <td>
                   06 ก.ย. 65	
                 </td>
-                 <td>
-                  สำนักนโยบายและแผน
-                </td>
+               
                 <td>
-                  กลุ่มแผนและงบประมาณ
-                </td>
-                <td>
-                  <div class = "row" style = "padding-bottom:10px;">
-                    <div class = "col-sm-4">52-117-202-0001</div>
-                    <div class = "col-sm-8"><strong>เครื่องโทรสาร</strong> : ยี่ห้อ SHARP รุ่น FO-3150		</div>
-                    <!-- <div class = "col-sm-4">เปิดไม่ติด</div> -->
-                  </div>
-                  <div class = "row" style = "padding-bottom:10px;">
-                    <div class = "col-sm-4">52-117-202-0002</div>
-                    <div class = "col-sm-8"><strong>เครื่องโทรสาร</strong> : ยี่ห้อ SHARP รุ่น FO-3150		</div>
-                    <!-- <div class = "col-sm-4">เปิดไม่ติด</div> -->
-                  </div>
-                  <div class = "row">
-                    <div class = "col-sm-4">62-117-202-0356</div>
-                    <div class = "col-sm-8"><strong>เครื่องปรับอากาศ</strong> : FOCUS AFT30S9/CSE30S9 30500 BTU			</div>
-                    <!-- <div class = "col-sm-4">มีน้ำหยดและไม่เย็นมีเสียงดัง</div> -->
-                  </div>
+                  บันทึกสำนักอำนวยการ กลุ่มการพัสดุและอาคารสถานที่ ที่ 5107.4/605 ลงวันที่ 9 กรกฎาคม 2564 เรื่องขออนุมัติจำหน่ายครุภัณฑ์คอมพิวเตอร์	
+                 
                 </td>
                   
               
 
-                <td>
-                  <div class="custom-control custom-checkbox d-block bg-fusion-100" style = "padding-left:0px;padding-right:0px;margin:0px;padding-bottom:0px;padding-top:4px;">
-                      <!-- <span class="width-1 height-1 rounded-circle d-block bg-secondary" style = "padding:0px;margin-left:20px;margin-top:0px;margin-bottom:0px;margin-right:0px;"></span> -->
-                      <label ><small class= "">ยังไม่ตรวจสอบ</small></label>
-                      
-                  </div>
-                  <label style = "margin:0px;"><small class= "">(9 ส.ค 66)</small></label>
-                </td>
+               
 
                 <td>
                   <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
@@ -308,8 +207,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   </a>
                   &nbsp;&nbsp;
                   <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data" mode='edit' data-toggle="modal" data-target=".default-example-modal-right">
-                    <i class="fa fa-gear">
-                    </i>
+                    <i class="ni ni-pencil"></i>
                   </a>
                   &nbsp;&nbsp;
                   <a href="javascript:void(0);" class="btn btn-outline-danger btn-icon btn-xs rounded-circle waves-effect waves-themed"
@@ -335,30 +233,15 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <td>
                   07 ก.ย. 65	
                 </td>
-                 <td>
-                  สำนักจรรยาบรรณวิชาชีพและนิติการ
-                </td>
+                
                 <td>
-                  กลุ่มนิติการ	
-                </td>
-                <td>
-                  <div class = "row">
-                    <div class = "col-sm-4">62-117-416-0019</div>
-                    <div class = "col-sm-8"><strong>เครื่องปรับอากาศ	</strong> : Tasaki 30000 BTU		</div>
-                    <!-- <div class = "col-sm-4">เปิดไม่ติด</div> -->
-                  </div>
+                 บันทึกสำนักอำนวยการ กลุ่มการพัสดุและอาคารสถานที่ ที่ 5107.4/163 ลงวันที่ 10 กุมภาพันธ์ 2564 เรื่อง ขออนุมัติจำหน่ายครุภัณฑ์คอมพิวเตอร์และอุปกรณ์คอมพิวเตอร์ (เครื่องสำรองไฟ,เครื่องโทรสารมัลติฟังก์ชั่นเลเซอร์,เครื่องสแกนเนอร์,เครื่องPrinter)	
                 
                 </td>
                   
               
 
-                <td>
-                  <div class="custom-control custom-checkbox d-block bg-info-800" style = "padding-left:0px;padding-right:0px;margin:0px;padding-bottom:0px;padding-top:4px;">
-                      <!-- <span class="width-1 height-1 rounded-circle d-block bg-secondary" style = "padding:0px;margin-left:20px;margin-top:0px;margin-bottom:0px;margin-right:0px;"></span> -->
-                      <label ><small class= "">ระหว่างดำเนินการ</small></label>
-                  </div>
-                  <label style = "margin:0px;"><small class= "">(8 ส.ค 66)</small></label>
-                </td>
+               
 
                 <td>
                   <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
@@ -369,8 +252,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   &nbsp;&nbsp;
                   <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
                   mode='edit' data-toggle="modal" data-target=".default-example-modal-right">
-                    <i class="fa fa-gear">
-                    </i>
+                   <i class="ni ni-pencil"></i>
                   </a>
                   &nbsp;&nbsp;
                   <a href="javascript:void(0);" class="btn btn-outline-danger btn-icon btn-xs rounded-circle waves-effect waves-themed"
@@ -544,7 +426,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   </div>    
                 </div>
               </div> 
-							<div class="panel-content fourd-form-row-c" >
+							<!-- <div class="panel-content fourd-form-row-c" >
                 <div class="form-row dialog-data " style = "padding-bottom:5px;padding-top:5px;">
                   <div class="col-md-3 mb-3" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
                     <label class="form-label" for="" style = "margin:0;">
@@ -557,7 +439,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
 									<textarea class="form-control" id="example-textarea" rows="2"></textarea>
                   </div>    
                 </div>
-              </div> 
+              </div>  -->
 						
 
 						</div>
@@ -650,14 +532,14 @@ $(document).ready(function() {
     bPaginate: true,
    
     columnDefs: [{
-      targets: [2,3,4,5,6,7],
+      targets: [2,3,4],
       orderable: false,
     },
     {
      // "visible": false, "targets": 1
     },
     {
-      targets: [0,3,5],
+      targets: [0,1,3,4],
       className: "text-center",
     },
     {
