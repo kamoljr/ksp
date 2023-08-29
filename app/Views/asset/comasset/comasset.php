@@ -81,17 +81,24 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   <div class="row" style = "padding-top:15px;">
                     
                     
-                    <div class="col-sm-4">
+                    <div class="col-sm-3">
                       <label class="form-label" for="group_name_search">
                         รหัสครุภัณฑ์
                       </label>
                       <input type="text" class="form-control form-ele clear-element" id="group_name_add" name="group_name_add" placeholder="ชื่อบริษัท" value="" >
                     </div>
-                    <div class="col-sm-5">
+                    <div class="col-sm-3">
                       <label class="form-label" for="group_name_search">
                          ยี่ห้อรุ่นขนาดและลักษณะ
                       </label>
                       <input type="text" class="form-control form-ele clear-element" id="group_name_add" name="group_name_add" placeholder="ยี่ห้อรุ่นขนาดและลักษณะ" value="" >
+                    </div>
+                    
+                    <div class="col-sm-3">
+                      <label class="form-label" for="group_name_search">
+                         สถานที่ตั้ง
+                      </label>
+                      <input type="text" class="form-control form-ele clear-element" id="group_name_add" name="group_name_add" placeholder="สถานที่ตั้ง" value="" >
                     </div>
                     <div class="col-sm-3">
                       <label class="form-label" for="group_name_search">
@@ -151,13 +158,19 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <th class="text-center" width = "90px;">
                   รหัสครุภัณฑ์
                 </th>
+                <th class="text-center" width = "70px;">
+                  สำนัก
+                </th>
+                <th class="text-center" width = "80px;">
+                  กลุ่มงาน
+                </th>
                 <th class="text-center" width = "200px;">
                   รายการครุภัณฑ์
                 </th>
                 <th class="text-center">
                   ยี่ห้อรุ่นขนาดและลักษณะ
                 </th>
-                <th class="text-center" width = "200px;">
+                <th class="text-center" width = "100px;">
                   สถานที่ตั้ง
                 </th>
                 <th width = "100px;"class="text-center">
@@ -172,6 +185,12 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
               <tr>
                 <td>
                   57-117-249-0003	
+                </td>
+                <td>
+                  สำนักนโยบายและแผน
+                </td>
+                <td>
+                  กลุ่มแผนและงบประมาณ
                 </td>
                 <td>
                   เครื่องคอมพิวเตอร์(CPU)		
@@ -205,6 +224,12 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
               <tr>
                 <td>
                   57-117-249-0002	
+                </td>
+                <td>
+                  สำนักจรรยาบรรณวิชาชีพและนิติการ
+                </td>
+                <td>
+                  กลุ่มนิติการ	
                 </td>
                 <td>
                  เครื่องคอมพิวเตอร์(CPU)	
@@ -305,7 +330,7 @@ $(document).ready(function() {
     processing: true,
     bPaginate: true,
     columnDefs: [{
-      targets: [1,2,3,4,5],
+      targets: [3,4,5,6,7],
       orderable: false,
     },
     {
@@ -313,7 +338,7 @@ $(document).ready(function() {
       className: "text-center",
     },
     {
-      targets: [4],
+      targets: [6],
       className: "text-right",
     }]
 

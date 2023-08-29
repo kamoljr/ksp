@@ -179,6 +179,26 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                        
                       </select>
                     </div>
+                    
+                    <div class="col-sm-2">
+                      <label class="form-label" for="group_name_search">
+                        รหัสครุภัณฑ์
+                      </label>
+                      <input type="text" class="form-control form-ele clear-element" id="group_name_add" name="group_name_add" placeholder="ชื่อบริษัท" value="" >
+                    </div>
+                    <div class="col-sm-2">
+                      <label class="form-label" for="group_name_search">
+                         ยี่ห้อรุ่นขนาดและลักษณะ
+                      </label>
+                      <input type="text" class="form-control form-ele clear-element" id="group_name_add" name="group_name_add" placeholder="ยี่ห้อรุ่นขนาดและลักษณะ" value="" >
+                    </div>
+
+                     <div class="col-sm-2">
+                      <label class="form-label" for="group_name_search">
+                         สถานที่ตั้ง
+                      </label>
+                      <input type="text" class="form-control form-ele clear-element" id="group_name_add" name="group_name_add" placeholder="สถานที่ตั้ง" value="" >
+                    </div>
                     <div class="col-sm-2">
                       <label class="form-label" for="group_name_search">
                         จำหน่าย
@@ -198,19 +218,12 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                         
                       </select>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-2">
                       <label class="form-label" for="group_name_search">
-                        รหัสครุภัณฑ์
+                        เลขอ้างอิง
                       </label>
-                      <input type="text" class="form-control form-ele clear-element" id="group_name_add" name="group_name_add" placeholder="ชื่อบริษัท" value="" >
+                      <input type="text" class="form-control form-ele clear-element" id="group_name_add" name="group_name_add" placeholder="เลขอ้างอิง" value="" >
                     </div>
-                    <div class="col-sm-4">
-                      <label class="form-label" for="group_name_search">
-                         ยี่ห้อรุ่นขนาดและลักษณะ
-                      </label>
-                      <input type="text" class="form-control form-ele clear-element" id="group_name_add" name="group_name_add" placeholder="ยี่ห้อรุ่นขนาดและลักษณะ" value="" >
-                    </div>
-                    
                     
                   </div>
                 </form>
@@ -247,8 +260,14 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
             <thead class="bg-primary-600">
               <tr>
              
-                <th class="text-center" width = "90px;">
+                <th class="text-center" width = "85px;">
                   รหัสครุภัณฑ์
+                </th>
+                <th class="text-center" width = "70px;">
+                  สำนัก
+                </th>
+                <th class="text-center" width = "80px;">
+                  กลุ่มงาน
                 </th>
                 <th class="text-center" width = "200px;">
                   รายการครุภัณฑ์
@@ -256,10 +275,10 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <th class="text-center">
                   ยี่ห้อรุ่นขนาดและลักษณะ
                 </th>
-                <th class="text-center" width = "200px;">
+                <th class="text-center" width = "100px;">
                   สถานที่ตั้ง
                 </th>
-                <th width = "100px;"class="text-center">
+                <th width = "90px;"class="text-center">
                   จำนวนเงิน (บาท)
                 </th>
                 <th width=60">
@@ -271,6 +290,12 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
               <tr>
                 <td>
                   57-117-249-0003	
+                </td>
+                <td>
+                  สำนักนโยบายและแผน
+                </td>
+                <td>
+                  กลุ่มแผนและงบประมาณ
                 </td>
                 <td>
                   พัดลม/พัดลมระบายอากาศ	
@@ -306,6 +331,12 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   57-117-249-0002	
                 </td>
                 <td>
+                  สำนักนโยบายและแผน
+                </td>
+                <td>
+                  กลุ่มแผนและงบประมาณ
+                </td>
+                <td>
                   พัดลม/พัดลมระบายอากาศ	
                 </td>
                 <td>
@@ -337,6 +368,12 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
               <tr>
                 <td>
                   57-117-249-0001	
+                </td>
+                 <td>
+                  สำนักจรรยาบรรณวิชาชีพและนิติการ
+                </td>
+                <td>
+                  กลุ่มนิติการ	
                 </td>
                 <td>
                   พัดลม/พัดลมระบายอากาศ	
@@ -371,6 +408,12 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <td>
                   56-117-249-0002		
                 </td>
+                 <td>
+                  สำนักจรรยาบรรณวิชาชีพและนิติการ
+                </td>
+                <td>
+                  กลุ่มนิติการ	
+                </td>
                 <td>
                   พัดลม/พัดลมระบายอากาศ	
                 </td>
@@ -403,6 +446,12 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
               <tr>
                 <td>
                  56-117-249-0001	
+                </td>
+                 <td>
+                  สำนักจรรยาบรรณวิชาชีพและนิติการ
+                </td>
+                <td>
+                  กลุ่มนิติการ	
                 </td>
                 <td>
                   พัดลม/พัดลมระบายอากาศ	
@@ -502,7 +551,7 @@ $(document).ready(function() {
     processing: true,
     bPaginate: true,
     columnDefs: [{
-      targets: [1,2,3,4,5],
+      targets: [3,4,5,6,7],
       orderable: false,
     },
     {
@@ -510,7 +559,7 @@ $(document).ready(function() {
       className: "text-center",
     },
     {
-      targets: [4],
+      targets: [6],
       className: "text-right",
     }]
 

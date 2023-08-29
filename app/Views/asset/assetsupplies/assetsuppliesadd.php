@@ -78,13 +78,13 @@
             
                 <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
                   <label class="form-label" for="" style = "margin:0;">
-                    ชื่อผู้บริจาค
+                    ชื่อผู้บริษัท
                   </label>
                   <span class="text-danger stars">  </span> 
                 </div>
                 <div class="col-md-4 mb-4" style="padding-top:0px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
                   <label class="form-label" for="" style = "margin:0;">
-                    กัญจนพร แสงสว่าง 
+                    บริษัท ออนป้า จำกัด	
                   </label>
                 </div>
               </div>
@@ -122,17 +122,15 @@
 
 
             <div class="panel-content fourd-form-row-a" >
-              <div class="form-row dialog-data " style = "padding-bottom:0px;">
+              <div class="form-row dialog-data " style = "padding-top:10px;">
                 <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
                   <label class="form-label" for="" style = "margin:0;">
                     สถานที่ตั้งครุภัณฑ์ 
                   </label>
-                  <span class="text-danger stars">  </span> 
+                  <span class="text-danger stars"> * </span> 
                 </div>
                 <div class="col-md-4 mb-4" style="padding-top:0px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
-                  <label class="form-label" for="" style = "margin:0;">
-                    กลุ่มประสานงานฯ อาคารหอประชุม ชั้น 3
-                  </label>  
+                  <input type="text" class="form-control form-ele clear-element" id="position_name" name="position_name" placeholder="สถานที่ตั้งครุภัณฑ์" value="">
                 </div>
             
                 <!-- <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
@@ -188,7 +186,7 @@
             </div>
 
             <div class="panel-content fourd-form-row-b" >
-              <div class="form-row dialog-data " style = "padding-bottom:0px;line-height:25px;">
+              <div class="form-row dialog-data " style = "padding-bottom:10px;padding-top:10px;line-height:25px;">
                 <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
                   <label class="form-label" for="" style = "margin:0;">
                     ยี่ห้อรุ่นขนาดและลักษณะ 
@@ -223,10 +221,9 @@
                   </label>
                   <span class="text-danger stars">  </span> 
                 </div>
-                <div class="col-md-4 mb-4" style="padding-top:0px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
-                   <label class="form-label" for="" style = "margin:0;">
-                    as0929881
-                  </label>
+                <div class="col-md-4 mb-4" style="padding-top:5px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
+                  
+                   <input type="text" class="form-control form-ele clear-element" id="position_name" name="position_name" placeholder="หมายเลขเครื่อง" value="">
                 </div>
               </div>
             </div>

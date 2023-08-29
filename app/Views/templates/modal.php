@@ -47,7 +47,7 @@
      $dialog_max_width = "1000";
   }
 
-  if ($description_id == '4' || $description_id == '5' || $description_id == '7' || $description_id == '8'){
+  if ($description_id == '4' || $description_id == '5' || $description_id == '7' || $description_id == '8' || $description_id == '9' || $description_id == '12'){
     $dialog_max_width = "1000";
   }
 ?>
