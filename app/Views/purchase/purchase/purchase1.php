@@ -396,6 +396,22 @@
 			
 			<div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:12px;margin-bottom:0px !important;line-height:20px;">
 				<label class="form-label" for="" style = "margin:0;padding-top:5px;">
+					เหตุผลที่ต้องซื้อ/จ้างโดยวิธีนั้น	
+				</label>
+			</div>
+			<div class="col-md-10 mb-10" style="padding-top:5px;padding-bottom:15px;font-size:13px;margin-bottom:0px !important;">
+				
+					<input type="text" class="form-control form-ele clear-element" id="position_name" name="position_name" placeholder="เหตุผลที่ต้องซื้อ/จ้างโดยวิธีนั้น" value="">
+				
+				
+			</div>
+
+			
+		</div>
+		<div class="form-row dialog-data " style = "padding-bottom:0px;margin-top:8px;">
+			
+			<div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:12px;margin-bottom:0px !important;line-height:20px;">
+				<label class="form-label" for="" style = "margin:0;padding-top:5px;">
 					เลขที่คำสั่งคณะกรรมการจัดหา	
 				</label>
 			</div>
@@ -409,7 +425,40 @@
 			
 		</div>
 
+
+
+		<div class="form-row dialog-data " style = "padding-bottom:0px;margin-top:8px;">
+			<div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;line-height:20px;">
+				<label class="form-label" for="" style = "margin:0;padding-top:5px;">
+					หลักเกณฑ์การพิจารณาคัดเลือก
+
+				</label>
+			</div>
+			<div class="col-md-10 mb-10" style="padding-top:5px;padding-bottom:15px;font-size:13px;margin-bottom:0px !important;">
+				
+						<select id="method_selected_add" name="method_selected_add" class="ele_select_add" placeholder="หลักเกณฑ์การพิจารณาคัดเลือก">
+							
+							<option value="17">
+									
+							</option>
+							<option value="17">
+								เกณฑ์ราคา	
+							</option>
+							
+							
+						</select>
+				
+				
+			</div>
+			
+
+			
+		</div>
+
+
+
 	</div>
+	
 
 
 

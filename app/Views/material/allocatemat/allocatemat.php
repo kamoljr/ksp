@@ -232,7 +232,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                         
                       </select>
                     </div>
-                    <div class="col-sm-3">
+                    <!-- <div class="col-sm-3">
                       <label class="form-label" for="group_name_search">
                         สถานะการจอง
                       </label>
@@ -247,7 +247,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                        
                         
                       </select>
-                    </div>
+                    </div> -->
                   </div>
 
                 </form>
@@ -303,9 +303,9 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <th width = "70px;"class="text-center">
                  วันที่ขอเบิก
                 </th>
-                <th width="60" class="text-center">
+                <!-- <th width="60" class="text-center">
                   จอง<BR>(วันที่ใช้)
-                </th>
+                </th> -->
                 <th width="80" class="text-center">
                   สถานะ
                 </th>
@@ -347,9 +347,9 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <td>
                   06 ก.ย. 65	
                 </td>
-                <td>
-                 <!-- <i class="fa-regular fa-hand"></i> -->
-                </td>
+                <!-- <td>
+                 <i class="fa-regular fa-hand"></i>
+                </td> -->
                 <td>
                   <div class="custom-control custom-checkbox d-block bg-fusion-100" style = "padding-left:0px;padding-right:0px;margin:0px;padding-bottom:0px;padding-top:4px;">
                       <label ><small class= "">ยังไม่ตรวจสอบ</small></label>
@@ -406,10 +406,10 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <td>
                   12 ก.ย. 65	
                 </td>
-                <td>
+                <!-- <td>
                  <i class="fa-regular fa-hand"></i>
                   <label style = "margin:0px;"><small class= "">(13 ก.ย. 65)</small></label>
-                </td>
+                </td> -->
                 <td>
                   <div class="custom-control custom-checkbox d-block bg-warning-200" style = "padding-left:0px;padding-right:0px;margin:0px;padding-bottom:0px;padding-top:4px;">
                       <label ><small class= "">ยินยอม</small></label>
@@ -463,11 +463,11 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <td>
                   06 ก.ย. 65	
                 </td>
-                <td>
+                <!-- <td>
                  
                   <i class="fa-regular fa-hand bg-success-300" style = "padding:3px;padding-top:10px;"></i>
                   <label style = "margin:0px;"><small class= "">(13 ก.ย. 65)</small></label>
-                </td>
+                </td> -->
                 <td>
                   <div class="custom-control custom-checkbox d-block bg-info-600" style = "padding-left:0px;padding-right:0px;margin:0px;padding-bottom:0px;padding-top:4px;">
                       <label ><small class= "">อนุมัติ</small></label>
@@ -742,7 +742,7 @@ $(document).ready(function() {
     bPaginate: true,
    
     columnDefs: [{
-      targets: [1,2,,3,4,5,6,7,8,9],
+      targets: [1,2,,3,4,5,6,7,8],
       orderable: false,
     },
     {

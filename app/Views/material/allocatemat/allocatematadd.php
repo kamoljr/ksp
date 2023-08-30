@@ -166,7 +166,7 @@
             </div>
 
 
-			<div class="panel-content fourd-form-row-b" >
+			        <!-- <div class="panel-content fourd-form-row-b" >
                 <div class="form-row dialog-data " style = "padding-bottom:0px;">
                   <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
                     <label class="form-label" for="" style = "margin:0;">
@@ -209,7 +209,7 @@
 
 
                 </div>
-              </div> 
+              </div>  -->
 
               <div class="panel-content fourd-form-row-c" style = "">
               

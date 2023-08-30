@@ -132,7 +132,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
 
 
                   <div class="row" style = "padding-top:15px;">
-                    <div class="col-sm-5">
+                    <div class="col-sm-3">
                       <label class="form-label" for="item_type_search">
                         บริษัท
                       </label>
@@ -157,7 +157,29 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                     
                     <div class="col-sm-2">
                       <label class="form-label" for="text_search">
-                         เลขที่สัญญา
+                         ประเภท
+                      </label>
+                      <select id="agg_type_search" name="agg_type_search" class="select2"
+                      placeholder="รหัสรายการ/เรื่อง">
+                        <option value="" selected>
+                          -
+                        </option>
+                        <option value="">
+                          	สัญญา
+                        </option>
+                        <option value="">
+                            ใบสั่งซื้อ/สั่งจ้าง
+                        </option>
+                       
+                       
+                        
+                       
+                        
+                      </select>
+                    </div>
+                    <div class="col-sm-2">
+                      <label class="form-label" for="text_search">
+                         เลขที่สัญญา/ใบสั่งซื้อ/สั่งจ้าง
                       </label>
                       <select id="agg_code_search" name="agg_code_search" class="select2"
                       placeholder="รหัสรายการ/เรื่อง">
@@ -341,6 +363,84 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                           </div>
                          
                         </div>
+                        <div class="row" style = "margin-top:15px;">
+                          <div class="col-sm-2" >
+                            <h6>รหัสกันวงเงิน</h6>
+                          </div>
+                          <div class="col-sm-1">
+                              33453
+                          </div>
+                          <div class="col-sm-2" >
+                            <h6>จำนวนงวด</h6>
+                          </div>
+                          <div class="col-sm-1">
+                              2 งวด
+                          </div>
+                        </div>
+                        <div class="row" style = "margin-top:15px;">
+                          <div class="col-sm-12" >
+                            <!-- datatable start -->
+                    <table id="dynamic-table2" class="table table-md table-bordered table-hover table-striped w-100">
+                      <thead class="bg-info-600">
+                        <tr>
+                          <th width="60px;" class = "text-center">
+                            งวดที่
+                          </th>
+                          <th class = "text-center">
+                            รายการ
+                          </th>
+                          <th width="100px;" class = "text-center">
+                            ส่งมอบ
+                          </th>
+                          <td width="100px;" class = "text-center">
+                            ตรวจรับ
+                          </th>
+                          <td width="100px;" class = "text-center">
+                            เบิกจ่าย
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            1
+                          </td>
+                          <td>
+                            ต้นฉบับ
+                          </td>
+                          <td>
+                            <i class="fa-solid fa-check"></i>
+                          </td>
+                          <td>
+                            <i class="fa-solid fa-check"></i>
+                          </td>
+                          <td>
+                            <i class="fa-solid fa-check"></i>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            2
+                          </td>
+                          <td>
+                            หนังสือที่ระลึกงานวันคล้ายวันสถาปนาสำนักงานเลขาธิการคุรุสภา จำนวน 100 เล่ม
+                          </td>
+                          <td>
+                            <i class="fa-solid fa-check"></i>
+                          </td>
+                          <td>
+                            
+                          </td>
+                          <td>
+                           
+                          </td>
+                        </tr>
+                        
+                      </tbody>
+                    </table>
+                    <!-- datatable end -->
+                          </div>
+                        </div>
 
                   </div>
               </div>
@@ -523,7 +623,33 @@ $(document).ready(function() {
     }]
 
   });
+  var table = $("#dynamic-table2").DataTable({
+    orderCellsTop: true,
+    fixedHeader: true,
+    bLengthChange: false,
+    searching: false,
+    bAutoWidth: false,
+    bStateSave: true,
+    processing: true,
+    bPaginate: true,
+    orderable:false,
+    "ordering": false,
+    "paging": false,
+    "info":     false,
+    columnDefs: [{
+      targets: [1,2,3,4],
+      orderable: false,
+    },
+    {
+      targets: [0,2,3,4],
+      className: "text-center",
+    },
+    {
+      targets: [1],
+      className: "text-left",
+    }]
 
+  });
   $(document).on('click', '#btnadd',
   function() {
     $("#ids").val('');

@@ -1317,6 +1317,139 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
     </div>
 </div>
 <!-- ----------------- -->
+
+
+
+
+<!-- modal subform -->
+<div class="modal fade" id="dialog_sub_form"  tabindex="-1" aria-hidden="true" data-backdrop="static" style = "z-index:9000 !important;" >
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document" style = "overflow: auto !important;">
+    <div class="modal-content">
+      
+
+            <div class="modal-header bg-primary-800 text-white" style = "padding-top:15px;padding-bottom:15px;">
+								<h5 class="modal-title">กระบวนการจัดซื้อจัดจ้าง</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true"><i class="fal fa-times"></i></span>
+								</button>
+						</div>
+						<div class="modal-body">
+
+			
+							<!-- content start -->
+        <div class="row" style = "margin-top:50px !important;">
+          <div class = "col-sm-2 text-center" style = "cursor:pointer;" onclick="openformadd(1)">
+            <img src="<?= base_url().'/';?>img/boxopen.png" width = "100px;">
+            <label class="form-label" for="" style = "margin:0;padding-top:5px;">
+                <h6>กำหนดวิธีการ</h6>	
+            </label>
+          </div>
+          <div class = "col-sm-2 text-center" style = "cursor:pointer;" onclick="openformadd(11)">
+            <img src="<?= base_url().'/';?>img/boxopen.png" width = "100px;">
+            <label class="form-label" for="" style = "margin:0;padding-top:5px;">
+                <h6>ราคากลาง</h6>	
+            </label>
+          </div>
+          <div class = "col-sm-2 text-center" style = "cursor:pointer;" onclick="openformadd(2)">
+            <img src="<?= base_url().'/';?>img/boxopen.png" width = "100px;">
+            <label class="form-label" for="" style = "margin:0;padding-top:5px;">
+                <h6>ตั้งคณะกรรมการ</h6>	
+            </label>
+          </div>
+          <div class = "col-sm-2 text-center" style = "cursor:pointer;" onclick="openformadd(3)">
+            <img src="<?= base_url().'/';?>img/boxopen.png" width = "100px;">
+            
+            <label class="form-label" for="" style = "margin:0;padding-top:5px;">
+                <h6>ปรับปรุงใบเสนอราคา</h6>	
+            </label>
+          </div>
+          <div class = "col-sm-2 text-center" style = "cursor:pointer;" onclick="openformadd(4)">
+            <img src="<?= base_url().'/';?>img/boxopennottrue.png" width = "100px;">
+            
+            <label class="form-label" for="" style = "margin:0;padding-top:5px;">
+                <h6>ต่อรองราคา</h6>	
+            </label>
+          </div>
+          <div class = "col-sm-2 text-center" style = "cursor:pointer;" onclick="openformadd(5)">
+            <img src="<?= base_url().'/';?>img/boxopennottrue.png" width = "100px;">
+            
+            <label class="form-label" for="" style = "margin:0;padding-top:5px;">
+                <h6>กำหนดผู้ที่ได้รับเลือก</h6>	
+            </label>
+          </div>
+          
+        </div>
+
+
+        <div class="row" style = "margin-top:50px !important;">
+          <div class = "col-sm-2 text-center" style = "cursor:pointer;" onclick="openformadd(6)">
+            <img src="<?= base_url().'/';?>img/boxopennottrue.png" width = "100px;">
+          
+            
+            <label class="form-label" for="" style = "margin:0;padding-top:5px;">
+                <h6>ทำรายการกันวงเงิน</h6>	
+            </label>
+          </div>
+          <div class = "col-sm-2 text-center" style = "cursor:pointer;" onclick="openformadd(7)">
+            <img src="<?= base_url().'/';?>img/boxclose.png" width = "100px;">
+              
+              <label class="form-label" for="" style = "margin:0;padding-top:5px;">
+                  <h6>กำหนดส่งมอบ</h6>	
+              </label>
+            </div>
+            <div class = "col-sm-2 text-center" style = "cursor:pointer;" onclick="openformadd(8)">
+              <img src="<?= base_url().'/';?>img/boxclose.png" width = "100px;">
+            
+              <label class="form-label" for="" style = "margin:0;padding-top:5px;">
+                  <h6>เอกสารคู่สัญญา</h6>	
+              </label>
+            </div>
+            <!-- <div class = "col-sm-2 text-center" style = "cursor:pointer;" onclick="openformadd(9)">
+              <img src="<?// = base_url().'/';?>img/boxclose.png" width = "100px;">
+             
+              <label class="form-label" for="" style = "margin:0;padding-top:5px;">
+                  <h6>ร่างสัญญา<br>ใบสั่งซื้อ/สั่งจ้าง</h6>	
+              </label>
+            </div> -->
+            <div class = "col-sm-2 text-center" style = "cursor:pointer;" onclick="openformadd(9)">
+              <img src="<?= base_url().'/';?>img/boxclose.png" width = "100px;">
+             
+              <label class="form-label" for="" style = "margin:0;padding-top:5px;">
+                  <h6>หลักประกันสัญญา</h6>	
+              </label>
+            </div>
+            <div class = "col-sm-2 text-center" style = "cursor:pointer;" onclick="openformadd(10)">
+              <img src="<?= base_url().'/';?>img/boxclose.png" width = "100px;">
+            
+              <label class="form-label" for="" style = "margin:0;padding-top:5px;">
+                  <h6>ออกเลขที่สัญญา<br>และวันที่สัญญา</h6>	
+              </label>
+            </div>
+            <!-- <div class = "col-sm-2 text-center">
+              <img src="<?//= base_url().'/';?>img/boxopen.png" width = "100px;">
+              <label class="form-label" for="" style = "margin:0;">
+                  	
+              </label>
+            </div> -->
+          </div>
+          <!-- content end -->
+						
+
+						</div>
+						<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" id = "btn_dialog_sub_form_close">Close</button>
+								<!-- <button type="button" class="btn btn-primary">Add Item</button> -->
+						</div>
+				
+
+
+    </div>
+  </div>
+</div>
+<!-- close modal subform -->
+
+
+
 <style>
   
   table.dataTable td {
@@ -1554,6 +1687,25 @@ function renderChartout() {
 }
 
 $(document).ready(function() {
+
+    // -----dialog_sub_form-------
+    let $modal = $("#dialog_sub_form");
+    $modal.draggable({
+      handle: ".modal-header",
+    });
+
+    $(document).on('click', '#btn_dialog_sub_form_close',
+    function() {
+      $('#dialog_sub_form').modal('toggle');
+    });
+
+    $(document).ready(function() {
+      $('.ele_select_sub_add').select2({
+        dropdownParent: $('#dialog_sub_form')
+      });
+    });
+
+    // -----close dialog_sub_form-------
 
   $(".select2").select2();
   $(".div_view").hide();

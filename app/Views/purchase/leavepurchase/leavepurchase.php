@@ -132,7 +132,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
 
 
                   <div class="row" style = "padding-top:15px;">
-                    <div class="col-sm-5">
+                    <div class="col-sm-3">
                       <label class="form-label" for="item_type_search">
                         บริษัท
                       </label>
@@ -157,7 +157,29 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                     
                     <div class="col-sm-2">
                       <label class="form-label" for="text_search">
-                         เลขที่สัญญา
+                         ประเภท
+                      </label>
+                      <select id="agg_type_search" name="agg_type_search" class="select2"
+                      placeholder="รหัสรายการ/เรื่อง">
+                        <option value="" selected>
+                          -
+                        </option>
+                        <option value="">
+                          	สัญญา
+                        </option>
+                        <option value="">
+                            ใบสั่งซื้อ/สั่งจ้าง
+                        </option>
+                       
+                       
+                        
+                       
+                        
+                      </select>
+                    </div>
+                    <div class="col-sm-2">
+                      <label class="form-label" for="text_search">
+                         เลขที่สัญญา/ใบสั่งซื้อ/สั่งจ้าง
                       </label>
                       <select id="agg_code_search" name="agg_code_search" class="select2"
                       placeholder="รหัสรายการ/เรื่อง">
@@ -430,7 +452,60 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
               </div>
 
             </div>
-
+            <div class="panel-content fourd-form-row-b div_status_pay" style = "margin-top:15px !important;" >
+              <div class="form-row dialog-data " style = "padding-bottom:0px;">
+                <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    แนบไฟล์
+                  </label>
+                </div>
+                <div class="col-md-4 mb-4" style="padding-top:5px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
+                  
+                  <div class="custom-file">
+                      <input type="file" class="custom-file-input" id="customFile">
+                      <label class="custom-file-label" for="customFile">เลือกไฟล์</label>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4" style="padding-top:5px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
+                  
+                 
+                </div>
+            
+               
+              </div>
+            </div>
+            <div class="panel-content fourd-form-row-b div_status_pay" style = "" >
+              <div class="form-row dialog-data " style = "padding-bottom:0px;">
+                <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    
+                  </label>
+                </div>
+                <div class="col-md-4 mb-4" style="padding-top:5px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
+                  
+                  ชื่อไฟล์แนบ รายการที่ 1
+                </div>
+                
+            
+               
+              </div>
+            </div>
+            <div class="panel-content fourd-form-row-b div_status_pay" style = "" >
+              <div class="form-row dialog-data " style = "padding-bottom:0px;">
+                <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    
+                  </label>
+                </div>
+                <div class="col-md-4 mb-4" style="padding-top:5px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
+                  
+                  ชื่อไฟล์แนบ รายการที่ 2
+                </div>
+                
+            
+               
+              </div>
+            </div>
 
 
             <div class="modal-footer">
@@ -519,7 +594,7 @@ $(document).ready(function() {
     }]
 
   });
-
+  
   $(document).on('click', '#btnadd',
   function() {
     $("#ids").val('');

@@ -56,6 +56,9 @@
 												<option value="17">
 													คณะกรรมการจัดจ้างโดยวิธีพิเศษ
 												</option>
+												<option value="17">
+													คณะกรรมการกาหนดราคากลาง
+												</option>
 												
 											</select>
                         

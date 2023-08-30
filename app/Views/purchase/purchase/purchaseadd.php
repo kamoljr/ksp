@@ -32,6 +32,7 @@
           <?=view("purchase/purchase/purchase8.php")?>
           <?=view("purchase/purchase/purchase9.php")?>
           <?=view("purchase/purchase/purchase10.php")?>
+          <?=view("purchase/purchase/purchase11.php")?>
              
 
 

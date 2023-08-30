@@ -256,10 +256,8 @@
                     เงินงบประมาณ(บาท)
                   </label>
                 </div>
-                <div class="col-md-4 mb-4" style="padding-top:0px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
-                  <label class="form-label" for="" style = "margin:0;">
-                   350.00 
-                  </label>
+                <div class="col-md-4 mb-4" style="padding-top:5px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
+                  <input type="text" class="form-control form-ele clear-element" id="position_name" name="position_name" placeholder="เงินงบประมาณ" value="">
                 </div>
             
                 <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:12px;margin-bottom:0px !important;">
@@ -267,10 +265,8 @@
                     เงินนอกงบประมาณ(บาท)
                   </label>
                 </div>
-                <div class="col-md-4 mb-4" style="padding-top:0px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
-                  <label class="form-label" for="" style = "margin:0;">
-                    0.00
-                  </label>
+                <div class="col-md-4 mb-4" style="padding-top:5px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
+                  <input type="text" class="form-control form-ele clear-element" id="position_name" name="position_name" placeholder="เงินนอกงบประมาณ" value="">
                 </div>
               </div>
             </div>

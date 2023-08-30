@@ -158,7 +158,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
 
 
                   <div class="row" style = "padding-top:15px;">
-                    <div class="col-sm-2">
+                    <div class="col-sm-3">
                       <label class="form-label" for="budget_year_search">
                         วิธีการได้มาปีงบประมาณ
                       </label>
@@ -180,26 +180,32 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                       </select>
                     </div>
                     
-                    <div class="col-sm-2">
+                    <div class="col-sm-3">
                       <label class="form-label" for="group_name_search">
                         รหัสครุภัณฑ์
                       </label>
                       <input type="text" class="form-control form-ele clear-element" id="group_name_add" name="group_name_add" placeholder="ชื่อบริษัท" value="" >
                     </div>
-                    <div class="col-sm-2">
+                    <div class="col-sm-6">
                       <label class="form-label" for="group_name_search">
                          ยี่ห้อรุ่นขนาดและลักษณะ
                       </label>
                       <input type="text" class="form-control form-ele clear-element" id="group_name_add" name="group_name_add" placeholder="ยี่ห้อรุ่นขนาดและลักษณะ" value="" >
                     </div>
 
-                     <div class="col-sm-2">
+                     
+                    
+                  </div>
+                  <div class="row" style = "padding-top:15px;">
+                    
+
+                     <div class="col-sm-3">
                       <label class="form-label" for="group_name_search">
                          สถานที่ตั้ง
                       </label>
                       <input type="text" class="form-control form-ele clear-element" id="group_name_add" name="group_name_add" placeholder="สถานที่ตั้ง" value="" >
                     </div>
-                    <div class="col-sm-2">
+                    <div class="col-sm-3">
                       <label class="form-label" for="group_name_search">
                         จำหน่าย
                       </label>
@@ -218,7 +224,29 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                         
                       </select>
                     </div>
-                    <div class="col-sm-2">
+                    <div class="col-sm-3">
+                      <label class="form-label" for="group_name_search">
+                        ประเภทลงทะเบียนเพิ่มเติม
+                      </label>
+                      <select id="add_status_search" name="add_status_search" class="select2"
+                      placeholder="จำหน่าย">
+                        <option value="">
+                          
+                        </option>
+                        <option value="17">
+                          รับบริจาค	
+                        </option>
+                        <option value="18">
+                          ตรวจพบ
+                        </option>
+                        <option value="18">
+                          ซื้อทดแทน
+                        </option>
+                        
+                        
+                      </select>
+                    </div>
+                    <div class="col-sm-3">
                       <label class="form-label" for="group_name_search">
                         เลขอ้างอิง
                       </label>

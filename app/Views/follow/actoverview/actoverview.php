@@ -180,7 +180,8 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   1
                 </td>
                 <td>
-                  ประชุมคณะกรรมการจัดทำข้อกำหนดลักษณะและเงื่อนไขการวิจัย (Term of Reference : TOR)	
+                  ประชุมคณะกรรมการจัดทำข้อกำหนดลักษณะและเงื่อนไขการวิจัย (Term of Reference : TOR)<br>
+                  <small>(ชื่อเจ้าของกิจกรรม นายจิรพัฒน์ พงศ์พิไล || ชื่อผู้ทำรายการ นายธาวัน ตั้งทิพย์) </small>
                 </td>
                 <td>
                   2
@@ -209,7 +210,8 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   2
                 </td>
                 <td>
-                  ประสาน กำกับ ติดตามและเข้าร่วมประชุมจัดจ้างและตรวจรับงานวิจัย	
+                  ประสาน กำกับ ติดตามและเข้าร่วมประชุมจัดจ้างและตรวจรับงานวิจัย	<br>
+                  <small>(ชื่อเจ้าของกิจกรรม นายสิระ อุดมเสก  || ชื่อผู้ทำรายการ นายธาวัน ตั้งทิพย์) </small>
                 </td>
                 <td>
                   4
@@ -297,6 +299,9 @@ $(document).ready(function() {
     dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
   });
   $('#year_add').select2({
+    dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
+  });
+  $('#resname').select2({
     dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
   });
 

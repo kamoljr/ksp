@@ -132,7 +132,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
 
 
                   <div class="row" style = "padding-top:15px;">
-                    <div class="col-sm-5">
+                    <div class="col-sm-3">
                       <label class="form-label" for="item_type_search">
                         บริษัท
                       </label>
@@ -157,7 +157,29 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                     
                     <div class="col-sm-2">
                       <label class="form-label" for="text_search">
-                         เลขที่สัญญา
+                         ประเภท
+                      </label>
+                      <select id="agg_type_search" name="agg_type_search" class="select2"
+                      placeholder="รหัสรายการ/เรื่อง">
+                        <option value="" selected>
+                          -
+                        </option>
+                        <option value="">
+                          	สัญญา
+                        </option>
+                        <option value="">
+                            ใบสั่งซื้อ/สั่งจ้าง
+                        </option>
+                       
+                       
+                        
+                       
+                        
+                      </select>
+                    </div>
+                    <div class="col-sm-2">
+                      <label class="form-label" for="text_search">
+                         เลขที่สัญญา/ใบสั่งซื้อ/สั่งจ้าง
                       </label>
                       <select id="agg_code_search" name="agg_code_search" class="select2"
                       placeholder="รหัสรายการ/เรื่อง">

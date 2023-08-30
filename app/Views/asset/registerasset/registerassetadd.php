@@ -49,12 +49,12 @@
               <div class="form-row dialog-data " style = "padding-bottom:0px;">
                 <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
                   <label class="form-label" for="" style = "margin:0;">
-                    เลขที่อ้างอิง
+                    เลขที่สัญญา
                   </label>
                   <span class="text-danger stars"> * </span> 
                 </div>
                 <div class="col-md-4 mb-4" style="padding-top:5px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
-                  <input type="text" class="form-control form-ele clear-element" id="position_name" name="position_name" placeholder="เลขที่อ้างอิง" value="">
+                  <input type="text" class="form-control form-ele clear-element" id="position_name" name="position_name" placeholder="เลขที่สัญญา" value="">
                 </div>
             
                 <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
@@ -73,12 +73,12 @@
               <div class="form-row dialog-data " style = "padding-bottom:0px;">
                 <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
                   <label class="form-label" for="" style = "margin:0;">
-                    ปี
+                    ปีงบประมาณ
                   </label>
                   <span class="text-danger stars"> * </span> 
                 </div>
                 <div class="col-md-4 mb-4" style="padding-top:5px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
-                  <input type="text" class="form-control form-ele clear-element" id="position_name" name="position_name" placeholder="ปี" value="">
+                  <input type="text" class="form-control form-ele clear-element" id="position_name" name="position_name" placeholder="ปีงบประมาณ" value="">
                 </div>
             
                 <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">

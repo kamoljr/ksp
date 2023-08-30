@@ -392,6 +392,12 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <h6>กำหนดวิธีการ</h6>	
             </label>
           </div>
+          <div class = "col-sm-2 text-center" style = "cursor:pointer;" onclick="openformadd(11)">
+            <img src="<?= base_url().'/';?>img/boxopen.png" width = "100px;">
+            <label class="form-label" for="" style = "margin:0;padding-top:5px;">
+                <h6>ราคากลาง</h6>	
+            </label>
+          </div>
           <div class = "col-sm-2 text-center" style = "cursor:pointer;" onclick="openformadd(2)">
             <img src="<?= base_url().'/';?>img/boxopen.png" width = "100px;">
             <label class="form-label" for="" style = "margin:0;padding-top:5px;">
@@ -419,6 +425,11 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <h6>กำหนดผู้ที่ได้รับเลือก</h6>	
             </label>
           </div>
+          
+        </div>
+
+
+        <div class="row" style = "margin-top:50px !important;">
           <div class = "col-sm-2 text-center" style = "cursor:pointer;" onclick="openformadd(6)">
             <img src="<?= base_url().'/';?>img/boxopennottrue.png" width = "100px;">
           
@@ -427,10 +438,6 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <h6>ทำรายการกันวงเงิน</h6>	
             </label>
           </div>
-        </div>
-
-
-        <div class="row" style = "margin-top:50px !important;">
           <div class = "col-sm-2 text-center" style = "cursor:pointer;" onclick="openformadd(7)">
             <img src="<?= base_url().'/';?>img/boxclose.png" width = "100px;">
               
@@ -603,6 +610,7 @@ function openformadd(pp){
   //if (pp==9){txt1 = "ร่างสัญญาใบสั่งซื้อ/สั่งจ้าง";}
   if (pp==9){txt1 = "หลักประกันสัญญา";}
   if (pp==10){txt1 = "ออกเลขที่สัญญาและวันที่สัญญา";}
+  if (pp==11){txt1 = "ราคากลาง";}
   $("#lblchangepurchase").text(txt1);
 
   

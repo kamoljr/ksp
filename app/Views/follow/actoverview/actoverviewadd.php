@@ -142,6 +142,38 @@
 
               </div>
             </div>
+            <div class="panel-content fourd-form-row-c" id = "" >
+              <div class="form-row dialog-data " style = "padding-bottom:0px;">
+
+                <div class="col-sm-4 sm-4" style="padding-top:5px;padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;line-height:22px;">
+                  <label class="form-label" for="" style = "margin:0;">
+                   ชื่อเจ้าของกิจกรรม
+                    <span class="text-danger stars"> * </span> 
+                  </label>
+                  
+                </div>
+                <div class="col-sm-8 sm-8" style="padding-top:5px;padding-bottom:10px;font-size:13px;margin-bottom:0px !important;">
+                  <select id="resname" name="resname" class="" style = "100%" placeholder="ประเภทงบ" onchange="getval(this,0);">
+                    <option value="" selected>
+                      -
+                    </option>
+                    <option value="2">
+                      สุนิศา พัฒนปรีชา 
+                    </option>
+                    <option value="3">
+                      ธนา นันทภักดิ์
+                    </option>
+                    <option value="4">
+                      บุลากร วีระกิตธนา 
+                    </option>
+                    
+                    
+                  </select>
+                </div>
+                
+
+              </div>
+            </div>
 
 
 
