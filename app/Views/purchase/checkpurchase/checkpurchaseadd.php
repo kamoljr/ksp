@@ -81,7 +81,16 @@
               </div>
             </div>
 
-
+            <div class="panel-content fourd-form-row-b" >
+              <div class="form-row dialog-data " style = "padding-bottom:0px;">
+                <div class="col-md-12 mb-12 text-center" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;font-weight:550;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    รายการค่าใช้จ่าย
+                  </label>
+                </div>
+                
+              </div>
+            </div>
             <!-- datatable start -->
 						<table id="dynamic-table3" class="myFormat table table-md table-bordered table-hover table-striped w-100" style = "padding-top:0px !important;margin-top:0px !important;line-height:10px;">
 							<thead class="bg-info-50">
@@ -130,10 +139,71 @@
 								
 							</tbody>
 						</table>
+            <!-- datatable end -->
+            <div class="panel-content fourd-form-row-b" >
+              <div class="form-row dialog-data " style = "padding-bottom:0px;">
+                <div class="col-md-12 mb-12 text-center" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;font-weight:550;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    รายการอื่นๆ
+                  </label>
+                </div>
+                
+              </div>
+            </div>
+
+             <!-- datatable start -->
+						<table id="dynamic-table7" class="myFormat table table-md table-bordered table-hover table-striped w-100" style = "padding-top:0px !important;margin-top:0px !important;line-height:10px;">
+							<thead class="bg-info-50">
+								<tr>
+									
+									<th class="text-center" width="20px;">
+										
+									</th>
+									<th class="text-center" >
+										รายการ	
+									</th>
+									<th class="text-center" width="100px;">
+										จำนวน	
+									</th>
+									<th class="text-center" width="100px;">
+										ส่งมอบจำนวน
+									</th>
+									<th class="text-center" width="100px;">
+										ตรวจรับจำนวน
+									</th>
+									
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+
+									<td>
+										1
+									</td>
+									<td>
+                    คู่มือ
+									</td>
+									<td>
+										1 เล่ม
+									</td>
+									<td>
+										1 เล่ม
+									</td>
+									<td>
+                    <input type="text" class="form-control form-ele clear-element" id="position_name" name="position_name" placeholder="" value="" style = "display:inline !important;width:70% !important;"> <label style = "display:inline !important;">เล่ม</label>
+									</td>
+								
+								</tr>
+								
+								
+								
+							</tbody>
+						</table>
+						<!-- datatable end -->
 						<!-- datatable end -->
               
             
-            <div class="panel-content fourd-form-row-a" >
+            <!-- <div class="panel-content fourd-form-row-a" >
               <div class="form-row dialog-data " style = "padding-bottom:0px;">
                 <div class="col-md-3 mb-3" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
                   <label class="form-label" for="" style = "margin:0;">
@@ -146,32 +216,35 @@
             
                 
               </div>
-            </div>
+            </div> -->
             <div class="panel-content fourd-form-row-b" >
               <div class="form-row dialog-data " style = "padding-bottom:0px;">
                 <div class="col-md-3 mb-3" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
                   <label class="form-label" for="" style = "margin:0;">
-                    ชื่อคณะกรรมการ
+                    ชื่อคณะกรรมการตรวจรับ
                   </label>
                 </div>
-                <div class="col-md-4 mb-4" style="padding-top:5px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
-                <select id="board_name_add" name="board_name_add" class="" placeholder="ชื่อคณะกรรมการ" style = "display:inline !important;">
-                        <option value="">
-                          นางสาวดวงแก้ว อดิศวร
-                        </option>
-                        <option value="17">
-                          นายวีระ เทพทัต	
-                        </option>
-                        <option value="17" selected>
-                          นายสมคิด วงศ์เศวต
-                        </option>
-                      </select>
+                <div class="col-md-4 mb-4" style="padding-top:0px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;line-height:30px;">
+                    1. นางสาวดวงแก้ว อดิศวร<br>
+                    2. นายวีระ เทพทัต	<br>
+                    3. นายสมคิด วงศ์เศวต<br>
+                   <!-- <select id="board_name_add" name="board_name_add" class="" placeholder="ชื่อคณะกรรมการ" style = "display:inline !important;">
+                      <option value="">
+                      นางสาวดวงแก้ว อดิศวร
+                    </option>
+                    <option value="17">
+                      นายวีระ เทพทัต	
+                    </option>
+                    <option value="17" selected>
+                      นายสมคิด วงศ์เศวต
+                    </option>
+                  </select> -->
                             
                 </div>
                 <div class="col-md-5 mb-5" style="padding-top:5px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
                
                             
-                      <button type="button" class="btn btn-sm btn-primary" style = "display:inline !important;"><i class="fa-solid fa-plus"></i></button>
+                      <!-- <button type="button" class="btn btn-sm btn-primary" style = "display:inline !important;"><i class="fa-solid fa-plus"></i></button> -->
                 </div>
             
                
@@ -179,7 +252,7 @@
               </div>
             </div>
 
-            <div class="panel-content fourd-form-row-a" style = "line-height:85px;margin-bottom:15px;">
+            <!-- <div class="panel-content fourd-form-row-a" style = "line-height:85px;margin-bottom:15px;">
               <div class="form-row dialog-data " style = "padding-bottom:0px;">
                 <div class="col-md-3 mb-3" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
                   <label class="form-label" for="" style = "margin:0;">
@@ -190,16 +263,131 @@
                   <textarea class="form-control" id="example-textarea" rows="2"></textarea>
                 </div>
               </div>
-            </div>
-
-            <div class="form-row dialog-data " style = "padding-bottom:0px;margin-top:8px;">
-                <div class="col-md-3 mb-3" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
-                  <label class="form-label" for="" style = "margin:0;padding-top:5px;">
-                    สถานะ
+            </div> -->
+            <div class="panel-content fourd-form-row-b" >
+              <div class="form-row dialog-data " style = "padding-bottom:15px;line-height:30px;vertical-align: middle;padding-top:5px;">
+                <div class="col-md-12 mb-12 text-center" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:px !important;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    ตรวจรับ	
                   </label>
                 </div>
-                <div class="col-md-9 mb-9" style="padding-top:5px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
-                  <div class="">
+              
+              </div>
+            </div>
+            <button type="button" class="btn btn-sm btn-default" id = "btn_open_dialog_sub_form" data-toggle="modal" data-target="#dialog_sub_form"><i class="fa-solid fa-plus"></i></button>
+
+
+           
+            <!-- datatable start -->
+						<table id="dynamic-table6" class="myFormat table table-md table-bordered table-hover table-striped w-100" style = "padding-top:0px !important;margin-top:0px !important;line-height:10px;">
+
+            <!-- Button trigger modal -->
+            
+							<thead class="bg-info-50">
+								<tr>
+									
+									
+									<th class="text-center" width="80px;">
+										ครั้งที่ 
+									</th>
+									<th class="text-center" >
+										รายละเอียดการตรวจ
+									</th>
+									<th class="text-center" width="100px;">
+										วันที่ตรวจ
+									</th>
+									<th class="text-center" width="100px;">
+										
+									</th>
+									<th class="text-center" width="60px;">
+										
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+
+									<td>
+										1
+									</td>
+									<td>
+										ให้แก้ไขข้อความหน้า 20
+									</td>
+									<td>
+										2 ต.ค. 65
+									</td>
+									<td>
+										<div class="custom-control custom-checkbox d-block bg-warning-500" style = "padding-left:0px;padding-right:0px;margin:0px;padding-bottom:0px;padding-top:4px;">
+                      <!-- <span class="width-1 height-1 rounded-circle d-block bg-secondary" style = "padding:0px;margin-left:20px;margin-top:0px;margin-bottom:0px;margin-right:0px;"></span> -->
+                      <label ><small class= "">ให้แก้ไข</small></label>
+                  </div>
+									</td>
+									
+									<td>
+										
+										<a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
+										mode='edit'>
+											<i class="ni ni-pencil">
+											</i>
+										</a>
+										&nbsp;&nbsp;
+										<a href="javascript:void(0);" class="btn btn-outline-danger btn-icon btn-xs rounded-circle waves-effect waves-themed"
+										data-toggle="modal" data-target="#example-modal-alert">
+											<i class="ni ni-trash">
+											</i>
+										</a>
+									</td>
+								</tr>
+								<tr>
+
+									<td>
+										2
+									</td>
+									<td>
+										ให้แก้ไขข้อความหน้า 30 ที่เกี่ยวข้องกันกับหน้า 20
+									</td>
+									<td>
+										9 ต.ค. 65
+									</td>
+									<td>
+										<div class="custom-control custom-checkbox d-block bg-success-800" style = "padding-left:0px;padding-right:0px;margin:0px;padding-bottom:0px;padding-top:4px;">
+                      <!-- <span class="width-1 height-1 rounded-circle d-block bg-secondary" style = "padding:0px;margin-left:20px;margin-top:0px;margin-bottom:0px;margin-right:0px;"></span> -->
+                      <label ><small class= "">ผ่านการตรวจรับ</small></label>
+                  </div>
+									</td>
+									
+									<td>
+									
+										<a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
+										mode='edit'>
+											<i class="ni ni-pencil">
+											</i>
+										</a>
+										&nbsp;&nbsp;
+										<a href="javascript:void(0);" class="btn btn-outline-danger btn-icon btn-xs rounded-circle waves-effect waves-themed"
+										data-toggle="modal" data-target="#example-modal-alert">
+											<i class="ni ni-trash">
+											</i>
+										</a>
+									</td>
+								</tr>
+								
+								
+								
+							</tbody>
+						</table>
+						<!-- datatable end -->
+
+            <div class="form-row dialog-data " style = "padding-bottom:0px;margin-top:8px;">
+                <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;padding-top:5px;">
+                    <h5>สถานะ</h5>
+                  </label>
+                </div>
+                <div class="col-md-10 mb-10" style="padding-top:5px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
+                
+                <h5>ผ่านการตรวจรับ</h5>
+                  <!-- <div class="">
                     <div class="custom-control custom-radio custom-control-inline" style ="line-height:25px;vertical-align: middle;">
                         <input type="radio" class="custom-control-input" id="defaultInline1Radio" name="inlineDefaultRadiosExample" style = "margin-top:15px;" checked>
                         <label class="custom-control-label " for="defaultInline1Radio" >ยังไม่พิจารณา</label>
@@ -213,7 +401,7 @@
                         <label class="custom-control-label " for="defaultInline4Radio">ผ่านการตรวจรับ</label>
                     </div>
                   
-                  </div>
+                  </div> -->
                 </div>
             
                
@@ -282,9 +470,18 @@
               </div>
             </div>
 
-
+            <div class="panel-content fourd-form-row-b" >
+              <div class="form-row dialog-data " style = "padding-bottom:0px;">
+                <div class="col-md-12 mb-12 text-center" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;font-weight:550;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    รายการค่าใช้จ่าย
+                  </label>
+                </div>
+                
+              </div>
+            </div>
             <!-- datatable start -->
-						<table id="dynamic-table4" class="myFormat table table-md table-bordered table-hover table-striped w-100" style = "padding-top:0px !important;margin-top:0px !important;line-height:10px;">
+						<!-- <table id="dynamic-table4" class="myFormat table table-md table-bordered table-hover table-striped w-100" style = "padding-top:0px !important;margin-top:0px !important;line-height:10px;">
 							<thead class="bg-info-50">
 								<tr>
 									
@@ -339,7 +536,7 @@
 								
 								
 							</tbody>
-						</table>
+						</table> -->
 						<!-- datatable end -->
             <!-- datatable start -->
 						<table id="dynamic-table5" class="myFormat table table-md table-bordered table-hover table-striped w-100" style = "padding-top:0px !important;margin-top:0px !important;line-height:10px;">
@@ -361,6 +558,9 @@
 									<th class="text-center" width="200px;">
 										สถานที่ตั้ง
 									</th>
+									<th class="text-center" width="100px;">
+										ประกัน (วัน)
+									</th>
 								
 									
 								</tr>
@@ -369,7 +569,10 @@
 								<tr>
 
 									<td>
-										1
+										<div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="defaultChecked" checked="">
+                        <label class="custom-control-label" for="defaultChecked"></label>
+                    </div>
 									</td>
 									<td>
 										โต๊ะ
@@ -379,6 +582,9 @@
 									</td>
 									<td>
 										<input type="text" class="form-control form-ele clear-element" id="position_name" name="position_name" placeholder="" value="" style = "display:inline !important;width:90% !important;">
+									</td>
+									<td>
+                    <input type="text" class="form-control form-ele clear-element" id="position_name" name="position_name" placeholder="" value="" style = "display:inline !important;width:90% !important;">
 									</td>
 									<td>
                     <input type="text" class="form-control form-ele clear-element" id="position_name" name="position_name" placeholder="" value="" style = "display:inline !important;width:90% !important;">
@@ -393,7 +599,101 @@
 						</table>
 						<!-- datatable end -->
               
-            
+            <!-- datatable end -->
+            <div class="panel-content fourd-form-row-b" >
+              <div class="form-row dialog-data " style = "padding-bottom:0px;">
+                <div class="col-md-12 mb-12 text-center" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;font-weight:550;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    รายการอื่นๆ
+                  </label>
+                </div>
+                
+              </div>
+            </div>
+
+             <!-- datatable start -->
+						<table id="dynamic-table10" class="myFormat table table-md table-bordered table-hover table-striped w-100" style = "padding-top:0px !important;margin-top:0px !important;line-height:10px;">
+							<thead class="bg-info-50">
+								<tr>
+									
+									<th class="text-center" width="20px;">
+										
+									</th>
+									<th class="text-center" width="200px;" >
+										ประเภท
+									</th>
+									<th class="text-center" >
+										รายการ	
+									</th>
+									<th class="text-center" width="100px;">
+										จำนวน	
+									</th>
+									<th class="text-center" width="100px;">
+										ส่งมอบจำนวน
+									</th>
+									<th class="text-center" width="100px;">
+										ตรวจรับจำนวน
+									</th>
+									
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+
+									<td>
+										<div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="defaultChecked1" >
+                        <label class="custom-control-label" for="defaultChecked1"></label>
+                    </div>
+									</td>
+									<td>
+                    <div class="">
+
+                      <div class="custom-control custom-radio custom-control-inline" style ="line-height:25px;vertical-align: middle;">
+                          <input type="radio" class="custom-control-input" id="defaultInline1Radio" name="inlineDefaultRadiosExample" style = "margin-top:15px;" checked>
+                          <label class="custom-control-label " for="defaultInline1Radio" >ครุภัณฑ์</label>
+                      </div>
+                      <div class="custom-control custom-radio custom-control-inline" style ="line-height:25px;vertical-align: middle;">
+                          <input type="radio" class="custom-control-input" id="defaultInline2Radio" name="inlineDefaultRadiosExample">
+                          <label class="custom-control-label " for="defaultInline2Radio">วัสดุ</label>
+                      </div>
+                      
+                           <select id="asset_add" name="asset_add" class="" placeholder="ชื่อคณะกรรมการ" style = "display:inline !important;">
+                            <option value="">
+                              คอมพิวเตอร์
+                            </option>
+                            <option value="17">
+                              notebook	
+                            </option>
+                            <option value="17" selected>
+                              macbook
+                            </option>
+                          </select>
+                    
+                      
+                    </div>
+                    
+									</td>
+                  <td>  
+                  คู่มือ
+                </td>
+									<td>
+										1 เล่ม
+									</td>
+									<td>
+										1 เล่ม
+									</td>
+									<td>
+                    <input type="text" class="form-control form-ele clear-element" id="position_name" name="position_name" placeholder="" value="" style = "display:inline !important;width:70% !important;"> <label style = "display:inline !important;">เล่ม</label>
+									</td>
+								
+								</tr>
+								
+								
+								
+							</tbody>
+						</table>
+						<!-- datatable end -->
             <!-- <div class="panel-content fourd-form-row-a" >
               <div class="form-row dialog-data " style = "padding-bottom:0px;">
                 <div class="col-md-3 mb-3" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">

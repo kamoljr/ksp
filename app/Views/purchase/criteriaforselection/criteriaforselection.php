@@ -44,11 +44,8 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   1
                 </td>
                 <td>
-                  เกณฑ์ราคา
+                  เกณฑ์ราคาขั้นต่ำ
                 </td>
-               
-               
-               
                 <td>
                   <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
                   mode='view'>
@@ -56,9 +53,33 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                     </i>
                   </a>
                   &nbsp;&nbsp;
-                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
-                  mode='edit' data-toggle="modal"
-            data-target=".default-example-modal-right">
+                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data" mode='edit' data-toggle="modal" data-target=".default-example-modal-right">
+                    <i class="ni ni-pencil">
+                    </i>
+                  </a>
+                  &nbsp;&nbsp;
+                   <a href="javascript:void(0);" class="btn btn-outline-danger btn-icon btn-xs rounded-circle waves-effect waves-themed"
+                  data-toggle="modal" data-target="#example-modal-alert">
+                    <i class="ni ni-trash">
+                    </i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  2
+                </td>
+                <td>
+                  เกณฑ์คุณภาพ
+                </td>
+                <td>
+                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
+                  mode='view'>
+                    <i class="ni ni-eye">
+                    </i>
+                  </a>
+                  &nbsp;&nbsp;
+                  <a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data" mode='edit' data-toggle="modal" data-target=".default-example-modal-right">
                     <i class="ni ni-pencil">
                     </i>
                   </a>

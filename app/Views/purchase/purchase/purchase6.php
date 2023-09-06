@@ -257,7 +257,7 @@
                   </label>
                 </div>
                 <div class="col-md-4 mb-4" style="padding-top:5px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
-                  <input type="text" class="form-control form-ele clear-element" id="position_name" name="position_name" placeholder="เงินงบประมาณ" value="">
+                  <input type="text" class="form-control form-ele clear-element" id="position_name" name="position_name" placeholder="เงินงบประมาณ" value="350.00">
                 </div>
             
                 <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:12px;margin-bottom:0px !important;">

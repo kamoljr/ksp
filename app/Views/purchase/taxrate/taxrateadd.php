@@ -22,18 +22,35 @@
 
 
 
+              <div class="panel-content fourd-form-row-b" style = "">
+              <div class="form-row dialog-data " style = "padding-bottom:0px;">
+                <div class="col-md-3 mb-3" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    ประเภท
+                  </label>
+                </div>
+                <div class="col-md-9 mb-9" style="padding-bottom:0px;font-size:13px;margin-bottom:0px;">
+                  <label class="form-label" for="">
+                    งานจ้าง	
+                  </label>
+                </div>
+              </div>
+            </div>
 
               <div class="panel-content fourd-form-row-a" >
                 <div class="form-row dialog-data " style = "padding-bottom:0px;">
-                  <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+                  <div class="col-md-3 mb-3" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
                     <label class="form-label" for="" style = "margin:0;">
-                       อัตราค่าปรับต่อวัน
+                       อัตราค่าปรับสูงสุดต่อวัน
  
                     </label>
                     <span class="text-danger stars"> * </span> 
                   </div>
-                  <div class="col-md-10 mb-10" style="padding-top:5px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
+                  <div class="col-md-1 mb-1" style="padding-top:5px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
                     <input type="text" class="form-control form-ele clear-element" id="position_name" name="position_name" placeholder="อัตราค่าปรับต่อวัน" value="0.1">
+                  </div>
+                  <div class="col-md-7 mb-7" style="padding-top:0px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
+                    % (ไม่ต่ำกว่า <input type="text" class="form-control form-ele clear-element" id="position_name" name="position_name" placeholder="" value="100" style = "width:80px;display:inline;"> บาทต่อวัน)
                   </div>
               
                

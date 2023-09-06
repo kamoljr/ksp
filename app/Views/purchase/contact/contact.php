@@ -250,6 +250,9 @@ $(document).ready(function() {
   $('#province').select2({
     dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
   });
+  $('#purchase2_position_add').select2({
+    dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
+  });
   var table = $("#dynamic-table").DataTable({
     orderCellsTop: true,
     fixedHeader: true,

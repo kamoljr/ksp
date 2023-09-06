@@ -96,12 +96,12 @@
                 <div class="form-row dialog-data " style = "padding-bottom:0px;">
                   <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
                     <label class="form-label" for="" style = "margin:0;">
-                      ชื่อบริษัท 
+                      ชื่อผู้ประกอบการ 
                     </label>
                     <span class="text-danger stars"> * </span> 
                   </div>
                   <div class="col-md-4 mb-4" style="padding-top:5px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
-                    <input type="text" class="form-control form-ele clear-element" id="position_name" name="position_name" placeholder="ชื่อบริษัท" value="">
+                    <input type="text" class="form-control form-ele clear-element" id="position_name" name="position_name" placeholder="ชื่อผู้ประกอบการ" value="">
                   </div>
               
                   <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">

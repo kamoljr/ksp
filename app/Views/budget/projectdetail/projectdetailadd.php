@@ -40,43 +40,137 @@
               </div>
               <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
                 <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;padding-bottom:5px;" for="group_name_add">
+                  ประเภทตัวชี้วัด ผลผลิต/ผลลัพธ์
+                  <span class="text-danger stars"> * </span>
+                </label>
+                <div class="frame-wrap">
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" class="custom-control-input" id="defaultInline1Radioa" name="inlineDefaultRadiosExamplea">
+                        <label class="custom-control-label color-fusion-300" for="defaultInline1Radioa" >ผลผลิต</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" class="custom-control-input" id="defaultInline2Radioa" name="inlineDefaultRadiosExamplea" checked="">
+                        <label class="custom-control-label color-fusion-300" for="defaultInline2Radioa">ผลลัพธ์</label>
+                    </div>
+                   
+                </div>
+              </div> 
+              <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
+                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;padding-bottom:5px;" for="group_name_add">
                   ประเภทตัวชี้วัด
                   <span class="text-danger stars"> * </span>
                 </label>
                 <div class="frame-wrap">
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" class="custom-control-input" id="defaultInline1Radio" name="inlineDefaultRadiosExample">
-                        <label class="custom-control-label color-fusion-300" for="defaultInline1Radio" >ผลผลิต</label>
+                        <input type="radio" class="custom-control-input" id="defaultInline1Radio" name="inlineDefaultRadiosExample" checked=""  onclick = "changindoffice(1);">
+                        <label class="custom-control-label color-fusion-300" for="defaultInline1Radio" >ตัวชี้วัดแผนปฎิบัติ</label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" class="custom-control-input" id="defaultInline2Radio" name="inlineDefaultRadiosExample" checked="">
-                        <label class="custom-control-label color-fusion-300" for="defaultInline2Radio">ผลลัพธ์</label>
+                        <input type="radio" class="custom-control-input" id="defaultInline2Radio" name="inlineDefaultRadiosExample" onclick = "changindoffice(2);">
+                        <label class="custom-control-label color-fusion-300" for="defaultInline2Radio">ตัวชี้วัดสำนักงบ</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" class="custom-control-input" id="defaultInline3Radio" name="inlineDefaultRadiosExample" onclick = "changindoffice(3);">
+                        <label class="custom-control-label color-fusion-300" for="defaultInline3Radio">ตัวชี้วัดสำนักงาน</label>
                     </div>
                    
                 </div>
               </div> 
               
-              <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
+
+
+              <div class="col-md-12 mb-12 showhideindoffice1" style = "padding-bottom:25px;" >
                 <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="group_name_add">
                   ตัวชี้วัด
                   <span class="text-danger stars"> * </span>
                 </label>
                 <input type="text" class="form-control form-ele clear-element" id="group_name_add" name="group_name_add" placeholder="ตัวชี้วัด" value="" >
               </div> 
-              <div class="col-md-3 mb-3" style = "padding-bottom:25px;">
+
+              <div class="col-md-12 mb-12 showhideindoffice2" style = "padding-bottom:25px;" >
                 <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="group_name_add">
-                  จำนวน
+                  ตัวชี้วัดสำนักงาน
                   <span class="text-danger stars"> * </span>
                 </label>
-                <input type="text" class="form-control form-ele clear-element" id="group_name_add" name="group_name_add" placeholder="จำนวน" value="" >
+                <select id="indoffice" name="indoffice" class="" placeholder="เชื่อมตัวชี้วัดแผนยุทธศาสตร์ชาติ">
+                  <option value="17">
+                  ข้อมูลตัวชี้วัดสำนักงาน รายการที่ 1
+                  </option>
+                  <option value="17">
+                  ข้อมูลตัวชี้วัดสำนักงาน รายการที่ 2
+                  </option>
+                  <option value="17">
+                  ข้อมูลตัวชี้วัดสำนักงาน รายการที่ 3
+                  </option>
+                </select>
+              </div> 
+
+
+              <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
+                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="group_name_add">
+                  คำอธิบายตัวชี้วัด
+                  <span class="text-danger stars"> * </span>
+                </label>
+                <input type="text" class="form-control form-ele clear-element" id="group_name_add" name="group_name_add" placeholder="คำอธิบายตัวชี้วัด" value="" >
+              </div> 
+              <div class="col-md-12 mb-12 text-center" style = "padding-bottom:25px;">
+                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="group_name_add">
+                  จำนวน
+                  <span class="text-danger stars">  </span>
+                </label>
+                <!-- <input type="text" class="form-control form-ele clear-element" id="group_name_add" name="group_name_add" placeholder="จำนวน" value="" > -->
               </div> 
               <div class="col-md-3 mb-3" style = "padding-bottom:25px;">
+                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="group_name_add">
+                  ไตรมาส1
+                  <span class="text-danger stars"> * </span>
+                </label>
+                <input type="text" class="form-control form-ele clear-element" id="group_name_add" name="group_name_add" placeholder="หน่วย" value="" >
+              </div> 
+              <div class="col-md-3 mb-3" style = "padding-bottom:25px;">
+                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="group_name_add">
+                  ไตรมาส2
+                  <span class="text-danger stars"> * </span>
+                </label>
+                <input type="text" class="form-control form-ele clear-element" id="group_name_add" name="group_name_add" placeholder="หน่วย" value="" >
+              </div> 
+              <div class="col-md-3 mb-3" style = "padding-bottom:25px;">
+                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="group_name_add">
+                  ไตรมาส3
+                  <span class="text-danger stars"> * </span>
+                </label>
+                <input type="text" class="form-control form-ele clear-element" id="group_name_add" name="group_name_add" placeholder="หน่วย" value="" >
+              </div> 
+              <div class="col-md-3 mb-3" style = "padding-bottom:25px;">
+                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="group_name_add">
+                  ไตรมาส4
+                  <span class="text-danger stars"> * </span>
+                </label>
+                <input type="text" class="form-control form-ele clear-element" id="group_name_add" name="group_name_add" placeholder="หน่วย" value="" >
+              </div> 
+              <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
                 <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="group_name_add">
                   หน่วยนับ
                   <span class="text-danger stars"> * </span>
                 </label>
                 <input type="text" class="form-control form-ele clear-element" id="group_name_add" name="group_name_add" placeholder="หน่วย" value="" >
               </div> 
+             
+              <!-- <div class="col-md-9 mb-9" style = "padding-bottom:25px;">
+                
+                <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="custom-control-input" id="defaultInline1">
+                    <label class="custom-control-label" for="defaultInline1">
+                      <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="group_name_add">
+                         ตัวชี้วัดของสำนักงาน
+                      <span class="text-danger stars">  </span>
+                    </label>
+                    </label>
+                </div>
+              </div>  -->
+
+
+              
             </div>
             <!--ปิด ตัวชี้วัด -->
 

@@ -37,6 +37,9 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                       </label>
                       <select id="unit_name_search" name="unit_name_search" class="select2"
                       placeholder="ปีงบประมาณ">
+                       <option value="">
+                          งบบุคลากร
+                        </option>
                         <option value="">
                           งบดำเนินงาน
                         </option>
@@ -53,7 +56,13 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                         
                       </select>
                     </div>
-                    
+                    <div class="col-sm-6">
+                      <label class="form-label" for="group_name_search">
+                         รายการค่าใช้จ่าย
+                      </label>
+                      <input id="group_name_search" name="group_name_search" class="form-control searchdata"
+                      type="text" placeholder="รายการค่าใช้จ่าย" />
+                    </div>
                   </div>
                 </form>
               </div>

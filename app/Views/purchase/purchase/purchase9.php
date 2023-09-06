@@ -9,7 +9,7 @@
   <div class="form-row dialog-data " style = "padding-bottom:5px;line-height:30px;vertical-align: middle;padding-top:5px;">
     <div class="col-md-3 mb-3" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
       <label class="form-label" for="" style = "margin:0;">
-        เลขที่กันวงเงิน	
+        เลขที่สัญญา
       </label>
     </div>
     <div class="col-md-3 mb-3" style="padding-top:0px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">

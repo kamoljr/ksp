@@ -581,6 +581,89 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
 <!-- this overlay is activated only when mobile menu is triggered -->
 <div class="page-content-overlay" data-action="toggle" data-class="mobile-nav-on"></div>
 <!-- END Page Content -->
+
+<!-- modal subform -->
+<div class="modal fade" id="dialog_sub_form"  tabindex="-1" aria-hidden="true" data-backdrop="static" style = "z-index:9000 !important;" >
+
+		<div class="modal-dialog modal-lg modal-dialog-centered" role="document" style = "overflow: auto !important;">
+				<div class="modal-content">
+						<div class="modal-header bg-primary-600 text-white" style = "padding-top:15px;padding-bottom:15px;">
+								<h5 class="modal-title">ตรวจรับ</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true"><i class="fal fa-times"></i></span>
+								</button>
+						</div>
+						<div class="modal-body">
+
+              <div class="panel-content fourd-form-row-a" >
+                <div class="form-row dialog-data " style = "padding-bottom:5px;padding-top:5px;">
+                  <div class="col-md-3 mb-3" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+                    <label class="form-label" for="" style = "margin:0;">
+                             รายละเอียดการตรวจ				
+                         
+                    </label>
+                    <span class="text-danger stars"> * </span> 
+                  </div>
+                  <div class="col-md-9 mb-9" style="padding-top:0px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
+									<textarea class="form-control" id="example-textarea" rows="2"></textarea>
+                  </div>    
+                </div>
+              </div> 
+              <div class="panel-content fourd-form-row-b" >
+                <div class="form-row dialog-data " style = "padding-bottom:5px;padding-top:5px;">
+                  <div class="col-md-3 mb-3" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+                    <label class="form-label" for="" style = "margin:0;">
+                             วันที่ตรวจ				
+                         
+                    </label>
+                    <span class="text-danger stars"> * </span> 
+                  </div>
+                  <div class="col-md-9 mb-9" style="padding-top:0px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
+                    <input type="text" class="form-control form-ele clear-element datepk" id="position_name" name="position_name" placeholder="วันที่ตรวจ" value="">
+                  </div>    
+                </div>
+              </div> 
+							<div class="panel-content fourd-form-row-a " >
+                <div class="form-row dialog-data " style = "padding-bottom:0px;">
+                  <div class="col-md-3 mb-3" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+                    <label class="form-label" for="" style = "margin:0;">
+                       สถานะ 
+                    </label>
+                    <span class="text-danger stars">  </span> 
+                  </div>
+                  <div class="col-md-9 mb-9" style="padding-top:0px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
+                   <select id="asset_type_sub_add" name="asset_type_sub_add" class="ele_select_sub_add" placeholder="ประเภท"  >
+                      <option value="">
+                          -
+                        </option>
+                        <option value="">
+                          ให้แก้ไข
+                        </option>
+                        <option value="17">
+                          ผ่านตรวจรับ
+                        </option>
+                        <option value="18">
+                          ไม่ผ่านตรวจรับ
+                        </option>
+                       
+                      </select>
+                    
+                  </div>    
+                </div>
+              </div> 
+							
+							
+						
+
+						</div>
+						<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" id = "btn_dialog_sub_form_close">Close</button>
+								<button type="button" class="btn btn-primary">Save</button>
+						</div>
+				</div>
+		</div>
+</div>
+<!-- close modal subform -->
 <style>
 .fourd-form-row-a{
     background-color:#8f73deb0;
@@ -623,6 +706,24 @@ function opendialog(ii){
   $(".dialog_add"+ii).show();
 }
 $(document).ready(function() {
+  // -----dialog_sub_form-------
+  let $modal = $("#dialog_sub_form");
+  $modal.draggable({
+    handle: ".modal-header",
+  });
+
+  $(document).on('click', '#btn_dialog_sub_form_close',
+  function() {
+    $('#dialog_sub_form').modal('toggle');
+  });
+
+  $(document).ready(function() {
+    $('.ele_select_sub_add').select2({
+      dropdownParent: $('#dialog_sub_form')
+    });
+  });
+
+  // -----close dialog_sub_form-------
   $(".select2").select2();
   $('#organizationtype').select2({
     dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
@@ -634,6 +735,9 @@ $(document).ready(function() {
     dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
   });
   $('#board_name_add').select2({
+    dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
+  });
+  $('#asset_add').select2({
     dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
   });
   var table = $("#dynamic-table").DataTable({
@@ -749,7 +853,96 @@ $(document).ready(function() {
     }]
 
   });
+  var table = $("#dynamic-table7").DataTable({
+    orderCellsTop: true,
+    fixedHeader: true,
+    bLengthChange: false,
+    searching: false,
+    bAutoWidth: false,
+    bStateSave: true,
+    processing: true,
+    bPaginate: true,
+    orderable:false,
+    "ordering": false,
+    "paging": false,
+    "info":     false,
+    columnDefs: [{
+     
+    },
+    {
+      targets: [0,2,3],
+      className: "text-center",
+    },
+    {
+      targets: [3],
+      className: "text-right",
+    },
+    {
+      targets: [0,1],
+      className: "text-left",
+    }]
 
+  });
+  var table = $("#dynamic-table6").DataTable({
+    orderCellsTop: true,
+    fixedHeader: true,
+    bLengthChange: false,
+    searching: false,
+    bAutoWidth: false,
+    bStateSave: true,
+    processing: true,
+    bPaginate: true,
+    orderable:false,
+    "ordering": false,
+    "paging": false,
+    "info":     false,
+    columnDefs: [{
+     
+    },
+    {
+      targets: [0,2,3],
+      className: "text-center",
+    },
+    {
+      targets: [3],
+      className: "text-right",
+    },
+    {
+      targets: [1],
+      className: "text-left",
+    }]
+
+  });
+var table = $("#dynamic-table10").DataTable({
+    orderCellsTop: true,
+    fixedHeader: true,
+    bLengthChange: false,
+    searching: false,
+    bAutoWidth: false,
+    bStateSave: true,
+    processing: true,
+    bPaginate: true,
+    orderable:false,
+    "ordering": false,
+    "paging": false,
+    "info":     false,
+    columnDefs: [{
+     
+    },
+    {
+      targets: [0,2,3,4],
+      className: "text-center",
+    },
+    {
+      targets: [3],
+      className: "text-right",
+    },
+    {
+      targets: [0,1],
+      className: "text-left",
+    }]
+
+  });
   $(document).on('click', '#btnadd',
   function() {
     $("#ids").val('');

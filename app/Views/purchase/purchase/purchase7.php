@@ -26,6 +26,9 @@
 									<th class="text-center" >
 										ผู้รับจ้างได้ดำเนินการ	
 									</th>
+									<th class="text-center" >
+										วันที่ครบกำหนด	
+									</th>
 									<th class="text-center" width="150px;">
 										จำนวนเงิน (บาท)
 									</th>
@@ -45,6 +48,9 @@
 									</td>
 									<td>
 										ส่งต้นฉบับ
+									</td>
+									<td>
+										15 ส.ค. 65
 									</td>
 									<td>
 										50,000
@@ -79,6 +85,9 @@
 									</td>
 									<td>
 										พิมพ์และส่งมอบหนังสือ
+									</td>
+									<td>
+										15 ก.ย. 65
 									</td>
 									<td>
 										150,000
@@ -223,6 +232,25 @@
 								
 							</div>
 						</div>
+						<div class="panel-content fourd-form-row-b" >
+							<div class="form-row dialog-data " style = "padding-bottom:5px;line-height:30px;vertical-align: middle;padding-top:5px;">
+								<div class="col-md-3 mb-3" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+									<label class="form-label" for="" style = "margin:0;">
+										วันที่ครบกำหนด
+									</label>
+								</div>
+								<div class="col-md-3 mb-3" style="padding-top:0px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
+									<input type="text" class="form-control form-ele clear-element datepk" id="position_name" name="position_name" placeholder="วันที่ครบกำหนด" value="15-08-2566">
+								</div>
+								<div class="col-md-6 mb-6" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+									<label class="form-label" for="" style = "margin:0;">
+										<!-- นับถัดจากวันลงนามในสัญญา พร้อมจัดส่งเอกสาร  -->
+									</label>
+								</div>
+
+								
+							</div>
+						</div>
 						<!-- <div class="panel-content fourd-form-row-b" >
 							<div class="form-row dialog-data " style = "padding-bottom:5px;line-height:30px;vertical-align: middle;padding-top:5px;">
 								<div class="col-md-7 mb-7" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
@@ -240,7 +268,7 @@
 								
 							</div>
 						</div> -->
-						<div class="panel-content fourd-form-row-b" >
+						<div class="panel-content fourd-form-row-a" >
 							<div class="form-row dialog-data " style = "padding-bottom:5px;line-height:30px;vertical-align: middle;padding-top:5px;">
 								<div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
 									<label class="form-label" for="" style = "margin:0;">
@@ -256,7 +284,7 @@
 							</div>
 						</div>
 
-						<div class="panel-content fourd-form-row-a" >
+						<div class="panel-content fourd-form-row-b" >
               <div class="form-row dialog-data " style = "padding-bottom:0px;">
                 <div class="col-md-12 mb-12 text-center" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;font-weight:550;">
                   <label class="form-label" for="" style = "margin:0;">
@@ -288,7 +316,7 @@
                 </div>
                 
                 
-                <div class="col-sm-5 sm-5" style="padding-top:5px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
+                <div class="col-sm-3 sm-3" style="padding-top:5px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
                   <label class="form-label " style ="font-size:13px;" for="position_name">
                   รายละเอียด
                   <span class="text-danger stars"> * </span>
@@ -296,12 +324,19 @@
                   <textarea class="form-control" id="example-textarea" rows="1"></textarea>
                 </div>
 
-                <div class="col-sm-2 sm-2" style="padding-top:5px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
+                <div class="col-sm-2 sm-2" style="padding-top:0px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
                   <label class="form-label " style ="font-size:13px;" for="position_name">
-                  จำนวน
+                  จำนวน(หน่วย)
                   <span class="text-danger stars"> * </span>
                   </label>
-                  <input type="text" class="form-control form-ele clear-element" id="position_name" name="position_name" placeholder="จำนวน" value="">
+                  <input type="text" class="form-control form-ele clear-element" id="position_name" name="position_name" placeholder="" value="" style = "width:60%;display:inline;"> เล่ม
+                </div>
+                <div class="col-sm-2 sm-2" style="padding-top:5px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
+                  <label class="form-label " style ="font-size:13px;" for="position_name">
+                  จำนวนเงิน (บาท)
+                  <span class="text-danger stars"> * </span>
+                  </label>
+                  <input type="text" class="form-control form-ele clear-element" id="position_name" name="position_name" placeholder="จำนวนเงิน" value="">
                 </div>
             
                 
@@ -309,9 +344,54 @@
             </div>
 
 
+						<div class="panel-content fourd-form-row-b" >
+              <div class="form-row dialog-data " style = "padding-bottom:0px;">
+                <div class="col-md-12 mb-12 text-center" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;font-weight:550;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    รายการอื่นๆ
+                  </label>
+                </div>
+                
+              </div>
+            </div>
 
+						
+						<div id = "expend_row_id0"class="panel-content fourd-form-row-c" style = "background-color:#9acffa;">
+            
+              <div class="form-row dialog-data " style = "padding-bottom:15px;">
+                <div class="col-sm-5 sm-5" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+                  <label class="form-label " style ="font-size:13px;" for="position_name">
+                  รายการ
+                  <span class="text-danger stars"> * </span> 
+                  </label>
+                  <input type="text" class="form-control form-ele clear-element" id="position_name" name="position_name" placeholder="รายการ" value="คู่มือ">
+                </div>
 
+                <div class="col-sm-2 sm-2" style="padding-top:0px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
+                  <label class="form-label " style ="font-size:13px;" for="position_name">
+                  จำนวน
+                  <span class="text-danger stars"> * </span>
+                  </label>
+                  <input type="text" class="form-control form-ele clear-element" id="position_name" name="position_name" placeholder="" value="" style = "1">
+                </div>
 
+                <div class="col-sm-3 sm-3" style="padding-top:0px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
+                  <label class="form-label " style ="font-size:13px;" for="position_name">
+                  หน่วย
+                  <span class="text-danger stars"> * </span>
+                  </label>
+                  <input type="text" class="form-control form-ele clear-element" id="position_name" name="position_name" placeholder="" value="" style = "เล่ม">
+                </div>
+								
+                <div class="col-sm-2 sm-2" style="padding-top:45px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;text-center">
+
+                  <button type="button" class="btn btn-sm btn-primary" style = "display:inline !important;"><i class="fa-solid fa-plus"></i></button>
+									<button type="button" class="btn btn-sm btn-primary" style = "display:inline !important;"><i class="fa-solid fa-trash"></i></button>
+                </div>
+            
+                
+              </div>
+            </div>
 
 
 
@@ -345,11 +425,11 @@
      
     },
     {
-      targets: [0,1],
+      targets: [0,1,3],
       className: "text-center",
     },
     {
-      targets: [3],
+      targets: [4],
       className: "text-right",
     },
     {

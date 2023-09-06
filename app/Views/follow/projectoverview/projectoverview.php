@@ -199,8 +199,8 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   </div>
                 </td>
                 <td>
-                  <a href="javascript:void(0);" class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed"
-                  data-toggle="modal" data-target="#example-modal-alert">
+                  
+                  <a href="javascript:void(0);" class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed" onclick="window.open('http://localhost/report/follow/project_follow.docx', '_blank', 'noopener, noreferrer');">
                     <i class="fal fa-print">
                     </i>
                   </a>
@@ -517,6 +517,36 @@ $(document).ready(function() {
 
   });
   var table = $("#dynamic-table4").DataTable({
+    orderCellsTop: true,
+    fixedHeader: true,
+    bLengthChange: false,
+    searching: false,
+    bAutoWidth: false,
+    bStateSave: true,
+    processing: true,
+    bPaginate: true,
+    orderable:false,
+    "ordering": false,
+    "paging": false,
+    "info":     false,
+    columnDefs: [{
+     
+    },
+    {
+      targets: [0,2,3,4,5],
+      className: "text-center",
+    },
+    {
+      targets: [0],
+      className: "text-right",
+    },
+    {
+      targets: [2,3],
+      className: "text-left",
+    }]
+
+  });
+  var table = $("#dynamic-table6").DataTable({
     orderCellsTop: true,
     fixedHeader: true,
     bLengthChange: false,

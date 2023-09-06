@@ -350,8 +350,14 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                           <div class="col-sm-3">
                             <h6>จำนวนวันในสัญญาทั้งหมด	 </h6>
                           </div>
-                          <div class="col-sm-6">
-                              120 วัน
+                          <div class="col-sm-2">
+                              120 วัน (+15) 
+                          </div>
+                          <div class="col-sm-2">
+                            <h6>วันที่สิ้นสุดสัญญา	 </h6>
+                          </div>
+                          <div class="col-sm-2">
+                              14 พ.ย. 66
                           </div>
                         </div>
                         <div class="row" style = "margin-top:15px;">

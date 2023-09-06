@@ -226,12 +226,15 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                     </div>
                     <div class="col-sm-3">
                       <label class="form-label" for="group_name_search">
-                        ประเภทลงทะเบียนเพิ่มเติม
+                        ประเภทลงทะเบียน
                       </label>
                       <select id="add_status_search" name="add_status_search" class="select2"
-                      placeholder="จำหน่าย">
+                      placeholder="ประเภทลงทะเบียน">
                         <option value="">
                           
+                        </option>
+                        <option value="17">
+                          จัดซื้อ/จัดจ้าง	
                         </option>
                         <option value="17">
                           รับบริจาค	

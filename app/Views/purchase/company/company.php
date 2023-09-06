@@ -33,9 +33,9 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   <div class="row">
                     <div class="col-sm-12">
                       <label class="form-label" for="unit_name_search">
-                        ชื่อบริษัท
+                        ชื่อผู้ประกอบการ
                       </label>
-                      <input type="text" class="form-control form-ele clear-element" id="group_name_add" name="group_name_add" placeholder="ชื่อบริษัท" value="" >
+                      <input type="text" class="form-control form-ele clear-element" id="group_name_add" name="group_name_add" placeholder="ชื่อผู้ประกอบการ" value="" >
                         
                         
                       </select>
@@ -52,7 +52,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
     </div>
     <div class="alert alert-warning" id='searchresults' name='searchresults'
     style="margin-bottom: 15px;">
-      ค้นหาโดย : ชื่อบริษัท ทั้งหมด
+      ค้นหาโดย : ชื่อผู้ประกอบการ ทั้งหมด
     </div>
   </div>
 </div>
@@ -61,15 +61,41 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
     <div id="panel-1" class="panel">
       <div class="panel-container">
         <div class="panel-content" style="padding-top: 0px;">
-          <div class="frame-wrap mt-3 mb-0 w-100">
-            <button id="btnadd" type="button" class="btn btn-primary" data-toggle="modal" data-target=".default-example-modal-right" style="display: flex;">
+          
+          
+
+        <div class="">
+          
+          <div class="d-flex justify-content-between  mb-3" style = "margin-bottom:0px !important;">
+              <div class="p-2">
+                <div class="frame-wrap mt-3 mb-0 w-100">
+                  <!-- <button id="btnadd" type="button" class="btn btn-primary" data-toggle="modal" data-target=".default-example-modal-right" style="display: flex;"> -->
+                  <button id="btnadd" type="button" class="btn btn-primary" data-toggle="modal" data-target=".default-example-modal-right" style="display: flex;">
               <span class="ni ni-big-plus fa-2x" style="padding-right:10px;">
               </span>
               <span style="padding-top:5px;">
                 เพิ่ม
               </span>
-            </button><br>
-          </div>
+            </button>
+                </div>
+              </div>
+              <div class="p-2 "></div>
+              <div class="p-2 "> 
+                <div class="frame-wrap mt-3 mb-0 w-100" >
+                  <!-- <button id="btnadd" type="button" class="btn btn-primary btn_add"  style="display: flex;">
+                    <span class="fa-solid fa-print fa-lg" style="padding-right:10px;padding-top:3px;"></span>
+                    <span style="padding-top:5px;">
+                      รายชื่อคณะกรรมการและผู้ถือหุ้น
+                    </span>
+                  </button> -->
+                </div>
+                </div>
+              </div>
+        
+        </div> 
+
+
+
           <!-- datatable start -->
           <table id="dynamic-table" class="table table-md table-bordered table-hover table-striped w-100">
             <thead class="bg-primary-600">
@@ -77,12 +103,12 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <th width = "20px;">
                 </th>
                 <th class="text-center">
-                  ชื่อบริษัท
+                  ชื่อผู้ประกอบการ
                 </th>
                 <th class="text-center">
                   ที่อยู่
                 </th>
-                <th width = "60px;"class="text-center">
+                <th width = "80px;"class="text-center">
                   ไปยัง
                 </th>
                 
@@ -102,7 +128,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                    88/12 หมู่บ้าน Golden Town 1 บางกรวย-ไทรน้อย บางกรวย บางกรวย 3 11130
                 </td>
                 <td>
-                  <button type="button" class="btn btn-xs btn-primary" onclick="window.location='projectact';">ที่อยู่</button>
+                  <button type="button" class="btn btn-xs btn-primary" onclick="window.location='contact';">ผู้ติดต่อ</button>
                 </td>
                
                 <td>
@@ -135,8 +161,8 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <td>
                    2 พระจันทร์ พระบรมมหาราชวัง พระนคร 1 10200	
                 </td>
-                <td>
-                  <button type="button" class="btn btn-xs btn-primary" onclick="window.location='projectact';">ที่อยู่</button>
+               <td>
+                  <button type="button" class="btn btn-xs btn-primary" onclick="window.location='contact';">ผู้ติดต่อ</button>
                 </td>
                
                 <td>
@@ -169,8 +195,8 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <td>
                    57/1 ซอยประดิพัทธ์ 6 ประดิพัทธ์ พญาไท พญาไท 1 10400	
                 </td>
-                <td>
-                  <button type="button" class="btn btn-xs btn-primary" onclick="window.location='projectact';">ที่อยู่</button>
+               <td>
+                  <button type="button" class="btn btn-xs btn-primary" onclick="window.location='contact';">ผู้ติดต่อ</button>
                 </td>
                
                 <td>
@@ -203,8 +229,8 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <td>
                   2 หมู่ที่ 3 - บ้านนา จะนะ 70 90130	
                 </td>
-                <td>
-                  <button type="button" class="btn btn-xs btn-primary" onclick="window.location='projectact';">ที่อยู่</button>
+               <td>
+                  <button type="button" class="btn btn-xs btn-primary" onclick="window.location='contact';">ผู้ติดต่อ</button>
                 </td>
                
                 <td>
@@ -238,7 +264,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                    169 ลงหาดบางแสน แสนสุข เมืองชลบุรี 11 20131	
                 </td>
                 <td>
-                  <button type="button" class="btn btn-xs btn-primary" onclick="window.location='projectact';">ที่อยู่</button>
+                  <button type="button" class="btn btn-xs btn-primary" onclick="window.location='contact';">ผู้ติดต่อ</button>
                 </td>
                
                 <td>

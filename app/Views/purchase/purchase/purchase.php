@@ -459,18 +459,19 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   <h6>ร่างสัญญา<br>ใบสั่งซื้อ/สั่งจ้าง</h6>	
               </label>
             </div> -->
-            <div class = "col-sm-2 text-center" style = "cursor:pointer;" onclick="openformadd(9)">
-              <img src="<?= base_url().'/';?>img/boxclose.png" width = "100px;">
-             
-              <label class="form-label" for="" style = "margin:0;padding-top:5px;">
-                  <h6>หลักประกันสัญญา</h6>	
-              </label>
-            </div>
+           
             <div class = "col-sm-2 text-center" style = "cursor:pointer;" onclick="openformadd(10)">
               <img src="<?= base_url().'/';?>img/boxclose.png" width = "100px;">
             
               <label class="form-label" for="" style = "margin:0;padding-top:5px;">
                   <h6>ออกเลขที่สัญญา<br>และวันที่สัญญา</h6>	
+              </label>
+            </div>
+             <div class = "col-sm-2 text-center" style = "cursor:pointer;" onclick="openformadd(9)">
+              <img src="<?= base_url().'/';?>img/boxclose.png" width = "100px;">
+             
+              <label class="form-label" for="" style = "margin:0;padding-top:5px;">
+                  <h6>หลักประกันสัญญา</h6>	
               </label>
             </div>
             <!-- <div class = "col-sm-2 text-center">

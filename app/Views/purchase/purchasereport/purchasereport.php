@@ -105,6 +105,23 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
               </div>
             </div>
           </div>
+          <div class="panel-content fourd-form-row-a" style = "">
+            <div class="form-row dialog-data " style = "padding-bottom:0px;">
+              <div class="col-md-10 mb-10" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+                <label class="form-label" for="" style = "margin:0;">
+                  3. รายงานแสดง ผู้รับผิดชอบ กระบวนการจัดซื้อจัดจ้าง และ ส่งมอบ/ตรวจรับ/เบิกจ่าย
+                </label>
+              </div>
+              <div class="col-md-2 mb-2" style="padding-bottom:0px;font-size:13px;margin-bottom:0px;">
+                <label class="form-label" for="">
+                  <button type="button" class="btn btn-sm btn-primary">
+                      <span class="fal fa-print mr-1"></span>
+                      Print
+                  </button>
+                </label>
+              </div>
+            </div>
+          </div>
           
           
           

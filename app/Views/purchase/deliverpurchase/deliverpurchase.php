@@ -639,6 +639,36 @@ $(document).ready(function() {
     }]
 
   });
+  var table = $("#dynamic-table4").DataTable({
+    orderCellsTop: true,
+    fixedHeader: true,
+    bLengthChange: false,
+    searching: false,
+    bAutoWidth: false,
+    bStateSave: true,
+    processing: true,
+    bPaginate: true,
+    orderable:false,
+    "ordering": false,
+    "paging": false,
+    "info":     false,
+    columnDefs: [{
+     
+    },
+    {
+      targets: [0,2,3],
+      className: "text-center",
+    },
+    {
+      targets: [3],
+      className: "text-right",
+    },
+    {
+      targets: [0,1],
+      className: "text-left",
+    }]
+
+  });
 
   $(document).on('click', '#btnadd',
   function() {

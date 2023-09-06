@@ -133,7 +133,7 @@
 							aactive = 'class= "active"';
 						}
 					}
-
+					aactive = 'class= "active open"';
 					str_select = str_select + '<li ' + aactive + '><a href="'+href+'" title="' + app_name + '">';
 					str_select = str_select + plus_circle
 					str_select = str_select + '<span class="nav-link-text"' + nav_tab + '>' + app_name + '</span></a>';

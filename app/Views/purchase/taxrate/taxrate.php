@@ -22,8 +22,8 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <th class="text-center">
                   ประเภท
                 </th>
-                <th width = "150px;" class="text-center">
-                  อัตราค่าปรับต่อวัน
+                <th width = "170px;" class="text-center">
+                  อัตราค่าปรับสูงสุดต่อวัน (%)
                 </th>
                 
                 
@@ -34,7 +34,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
             <tbody>
               <tr>
                 <td>
-                  2
+                  1
                 </td>
                 <td>
                   งานจ้าง

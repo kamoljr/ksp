@@ -46,7 +46,7 @@
                 </div>
                 <div class="col-md-2 mb-2" style="padding-top:0px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
                  <label class="form-label" for="" style = "margin:0;">
-                    1
+                    1 (30วัน)
                   </label>
                 </div>
                 <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
@@ -58,6 +58,7 @@
                  <label class="form-label" for="" style = "margin:0;">
                     28 ต.ค. 65
                   </label>
+                  <!-- <input type="text" class="form-control form-ele clear-element datepk" id="position_name" name="" placeholder="" value="27-11-2565"> -->
                 </div>
               </div>
             </div>
@@ -79,7 +80,16 @@
                
               </div>
             </div>
-
+            <div class="panel-content fourd-form-row-b" >
+              <div class="form-row dialog-data " style = "padding-bottom:0px;">
+                <div class="col-md-12 mb-12 text-center" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;font-weight:550;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    รายการค่าใช้จ่าย
+                  </label>
+                </div>
+                
+              </div>
+            </div>
 
             <!-- datatable start -->
 						<table id="dynamic-table3" class="myFormat table table-md table-bordered table-hover table-striped w-100" style = "padding-top:0px !important;margin-top:0px !important;line-height:10px;">
@@ -124,7 +134,68 @@
 							</tbody>
 						</table>
 						<!-- datatable end -->
-              
+            <div class="panel-content fourd-form-row-b" >
+              <div class="form-row dialog-data " style = "padding-bottom:0px;">
+                <div class="col-md-12 mb-12 text-center" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;font-weight:550;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    รายการอื่นๆ
+                  </label>
+                </div>
+                
+              </div>
+            </div>
+
+             <!-- datatable start -->
+						<table id="dynamic-table4" class="myFormat table table-md table-bordered table-hover table-striped w-100" style = "padding-top:0px !important;margin-top:0px !important;line-height:10px;">
+							<thead class="bg-info-50">
+								<tr>
+									
+									<th class="text-center" width="20px;">
+										
+									</th>
+									<th class="text-center" >
+										รายการ	
+									</th>
+									<th class="text-center" width="100px;">
+										จำนวน	
+									</th>
+									<th class="text-center" width="100px;">
+										ส่งมอบจำนวน
+									</th>
+									
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+
+									<td>
+										1
+									</td>
+									<td>
+                    คู่มือ
+									</td>
+									<td>
+										1 เล่ม
+									</td>
+									<td>
+                    <input type="text" class="form-control form-ele clear-element" id="position_name" name="position_name" placeholder="" value="" style = "display:inline !important;width:70% !important;"> <label style = "display:inline !important;">เล่ม</label>
+									</td>
+								
+								</tr>
+								
+								
+								
+							</tbody>
+						</table>
+						<!-- datatable end -->
+
+
+
+
+
+
+
+
             
             <div class="panel-content fourd-form-row-a" >
               <div class="form-row dialog-data " style = "padding-bottom:0px;">

@@ -422,7 +422,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
 		<div class="modal-dialog modal-lg modal-dialog-centered" role="document" style = "overflow: auto !important;">
 				<div class="modal-content">
 						<div class="modal-header bg-fusion-50 text-white" style = "padding-top:15px;padding-bottom:15px;">
-								<h5 class="modal-title">เลือกครุภัณฑ์</h5>
+								<h5 class="modal-title">รายละเอียดครุภัณฑ์</h5>
 								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 										<span aria-hidden="true"><i class="fal fa-times"></i></span>
 								</button>
@@ -430,140 +430,254 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
 						<div class="modal-body">
 
 			
-							<div class="panel-content fourd-form-row-c " >
-                <div class="form-row dialog-data " style = "padding-bottom:0px;">
-                  <div class="col-md-3 mb-3" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
-                    <label class="form-label" for="" style = "margin:0;">
-                       ประเภท 
-                    </label>
-                    <span class="text-danger stars">  </span> 
-                  </div>
-                  <div class="col-md-9 mb-9" style="padding-top:0px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
-                   <select id="asset_type_sub_add" name="asset_type_sub_add" class="ele_select_sub_add" placeholder="ประเภท"  >
-                      <option value="">
-                          -
-                        </option>
-                        <option value="">
-                          ครุภัณฑ์สำนักงาน (12230-00)	
-                        </option>
-                        <option value="17">
-                          ครุภัณฑ์ยานพาหนะและขนส่ง (12250-00)		
-                        </option>
-                        <option value="18">
-                          ครุภัณฑ์ไฟฟ้าและวิทยุ (12233-00)	
-                        </option>
-                        <option value="11">
-                          ครุภัณฑ์โฆษณาและเผยแพร่	
-                        </option>
-                        <option value="11">
-                          ครุภัณฑ์งานบ้านงานครัว		
-                        </option>
-                        <option value="11">
-                          ครุภัณฑ์คอมพิวเตอร์		
-                        </option>
-                      </select>
-                    
-                  </div>    
+							<div class="panel-content fourd-form-row-a" >
+              <div class="form-row dialog-data " style = "padding-bottom:0px;margin-top:8px;">
+                <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;padding-top:0px;">
+                    รหัสครุภัณฑ์
+                  </label>
                 </div>
-              </div> 
-							<div class="panel-content fourd-form-row-b" >
-                <div class="form-row dialog-data " style = "padding-bottom:0px;">
-                  <div class="col-md-3 mb-3" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
-                    <label class="form-label" for="" style = "margin:0;">
-                        รายการ
-                         
-                    </label>
-                    <span class="text-danger stars"> * </span> 
-                  </div>
-                  <div class="col-md-9 mb-9" style="padding-top:0px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
-									<select id="asset_item_sub_add" name="asset_item_sub_add" class="ele_select_sub_add"
-                      placeholder="รายการ">
-                        <option value="">
-                          -
-                        </option>
-                        <option value="17">
-                          ชั้นวางของ		
-                        </option>
-                        <option value="18">
-                          โต๊ะทำงานพร้อมเก้าอี้นวม 8 ห้อง	
-                        </option>
-                        <option value="11">
-                          ตู้ครัว	
-                        </option>
-                        
-                      </select>
-                    
-                  </div>    
+                <div class="col-md-10 mb-10" style="padding-top:0px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
+                <label class="form-label" for="" style = "margin:0;padding-top:0px;">
+                    57-117-249-0003
+                  </label>
+                  
                 </div>
-              </div> 
-							<div class="panel-content fourd-form-row-c" >
-                <div class="form-row dialog-data " style = "padding-bottom:0px;">
-                  <div class="col-md-3 mb-3" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
-                    <label class="form-label" for="" style = "margin:0;">
-                             รหัสครุภัณฑ์	
-                         
-                    </label>
-                    <span class="text-danger stars"> * </span> 
-                  </div>
-                  <div class="col-md-9 mb-9" style="padding-top:0px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
-									<select id="asset_code_sub_add" name="asset_code_sub_add" class="ele_select_sub_add"
-                      placeholder="รายการ">
-                        <option value="">
-                          -
-                        </option>
-                        <option value="17">
-                          52-117-202-0001
-                        </option>
-                        <option value="18">
-                           62-117-202-0356
-                        </option>
-                        <option value="11">
-                          62-117-202-0358
-                        </option>
-                        <option value="11">
-                          62-117-416-0019
-                        </option>
-                      </select>
-                    
-                  </div>    
+              </div>
+            </div>
+
+            <div class="panel-content fourd-form-row-b" >
+              <div class="form-row dialog-data " style = "padding-bottom:0px;">
+                
+                <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    ปีงบประมาณ
+                  </label>
+                  <span class="text-danger stars">  </span> 
                 </div>
-              </div> 
-							<div class="panel-content fourd-form-row-b" >
-                <div class="form-row dialog-data " style = "padding-top:5px;">
-                  <div class="col-md-3 mb-3" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
-                    <label class="form-label" for="" style = "margin:0;">
-                             ยี่ห้อรุ่นขนาดและลักษณะ		
-                         
-                    </label>
-                    <span class="text-danger stars"> * </span> 
-                  </div>
-                  <div class="col-md-9 mb-9" style="padding-top:0px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
-									<label class="form-label" for="" style = "margin:0;line-height:20px;">
-                             เครื่องปรับอากาศแบบแยกส่วน ชนิดแขวนผนัง (Wall Type) ยี่ห้อ Kent ขนาด 30,000 บีทียู/ชั่วโมง 1200 CFM(FCU-02)			
-                    </label>
-                  </div>    
+                <div class="col-md-4 mb-4" style="padding-top:0px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;padding-top:0px;">
+                    2566
+                  </label>
                 </div>
-              </div> 
-							<div class="panel-content fourd-form-row-c" >
-                <div class="form-row dialog-data " style = "padding-bottom:5px;padding-top:5px;">
-                  <div class="col-md-3 mb-3" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
-                    <label class="form-label" for="" style = "margin:0;">
-                             สาเหตุการซ่อม			
-                         
-                    </label>
-                    <span class="text-danger stars"> * </span> 
-                  </div>
-                  <div class="col-md-9 mb-9" style="padding-top:0px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
-									<textarea class="form-control" id="example-textarea" rows="2"></textarea>
-                  </div>    
+                <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    วัน/เดือน/ปี
+                  </label>
+                  <span class="text-danger stars">  </span> 
                 </div>
-              </div> 
+                <div class="col-md-4 mb-4" style="padding-top:0px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;padding-top:0px;">
+                    2 ส.ค. 66
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="panel-content fourd-form-row-a" >
+              <div class="form-row dialog-data " style = "padding-bottom:0px;">
+                
+                <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    เลขที่สัญญา
+                  </label>
+                  <span class="text-danger stars">  </span> 
+                </div>
+                <div class="col-md-4 mb-4" style="padding-top:0px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
+                   <label class="form-label" for="" style = "margin:0;padding-top:0px;">
+                    20/66
+                  </label>
+                </div>
+                
+              </div>
+            </div>
+            <div class="panel-content fourd-form-row-b" >
+              <div class="form-row dialog-data " style = "padding-bottom:0px;">
+                
+            
+                <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    ชื่อผู้บริษัท
+                  </label>
+                  <span class="text-danger stars">  </span> 
+                </div>
+                <div class="col-md-4 mb-4" style="padding-top:12px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;line-height:25px;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    บริษัท ออนป้า จำกัด	<br> ที่อยู่<br>
+                   ถ. พระรามที่ อาคารนวสร ชั้นที่ 12 111/1  3 แขวงบางคอแหลม เขตบางคอแหลม กรุงเทพมหานคร 10120<br>
+                    เบอร์โทร 02-827-8298
+                  </label>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="panel-content fourd-form-row-a" >
+              <div class="form-row dialog-data " style = "padding-bottom:0px;">
+                <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    ส่วนงานเจ้าของ
+                  </label>
+                  <span class="text-danger stars">  </span> 
+                </div>
+                <div class="col-md-4 mb-4" style="padding-top:0px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;">
+                   สำนักอำนวยการ
+                  </label>  
+               
+                </div>
+            
+                <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    กลุ่มงานเจ้าของ
+                  </label>
+                  <span class="text-danger stars">  </span> 
+                </div>
+                <div class="col-md-4 mb-4" style="padding-top:0px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    กลุ่มการเงินและบัญชี
+                  </label>  
+               
+                </div>
+              </div>
+            </div>
+
+
+            <div class="panel-content fourd-form-row-b" >
+              <div class="form-row dialog-data " style = "padding-top:10px;">
+                <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    สถานที่ตั้งครุภัณฑ์ 
+                  </label>
+                  <span class="text-danger stars"> </span> 
+                </div>
+                <div class="col-md-4 mb-4" style="padding-top:0px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
+                  ห้องประชุมมาลากุล ชั้น 3 อาคาร 1 
+                </div>
+            
+                <!-- <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    ชื่อผู้บริจาค
+                  </label>
+                  <span class="text-danger stars">  </span> 
+                </div>
+                <div class="col-md-4 mb-4" style="padding-top:5px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
+                  <input type="text" class="form-control form-ele clear-element" id="position_name" name="position_name" placeholder="ชื่อผู้บริจาค" value="">
+                </div> -->
+              </div>
+            </div>
+
+            <div class="panel-content fourd-form-row-b" >
+              <div class="form-row dialog-data " style = "padding-bottom:0px;line-height:30px;vertical-align: middle;padding-top:5px;">
+                <div class="col-md-12 mb-12 text-center" style="padding-bottom:0px;font-weight:550;font-size:14px;margin-bottom:0px !important;font-weight:550;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    รายละเอียดครุภัณฑ์	
+                  </label>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="panel-content fourd-form-row-c" >
+              <div class="form-row dialog-data " style = "padding-bottom:0px;">
+                <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    ประเภท
+                  </label>
+                  <span class="text-danger stars">  </span> 
+                </div>
+                <div class="col-md-4 mb-4" style="padding-top:0px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    ครุภัณฑ์สำนักงาน (12230-00)	
+                  </label>  
+                
+                </div>
+            
+                <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    รายการ
+                  </label>
+                  <span class="text-danger stars">  </span> 
+                </div>
+                <div class="col-md-4 mb-4" style="padding-top:0px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    พัดลม/พัดลมระบายอากาศ
+                  </label>  
+                </div>
+              </div>
+            </div>
+
+            <div class="panel-content fourd-form-row-b" >
+              <div class="form-row dialog-data " style = "padding-bottom:10px;padding-top:10px;line-height:25px;">
+                <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    ยี่ห้อรุ่นขนาดและลักษณะ 
+                  </label>
+                  <span class="text-danger stars">  </span> 
+                </div>
+                <div class="col-md-10 mb-10" style="padding-top:5px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
+                   พัดลมระบายอากาศฝังฝ้าเพดาน MITSUBISHI รุ่น EX-20SC7T ขนาด 8 นิ้ว สีขาว
+                </div>
+            
+               
+              </div>
+            </div>
+
+            <div class="panel-content fourd-form-row-c" >
+              <div class="form-row dialog-data " style = "padding-bottom:0px;">
+                <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    ราคาต่อหน่วย (บาท)
+                  </label>
+                  <span class="text-danger stars">  </span> 
+                </div>
+                <div class="col-md-4 mb-4" style="padding-top:0px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
+                 <label class="form-label" for="" style = "margin:0;">
+                    1,790 บาท
+                  </label>
+                </div>
+            
+                <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    หมายเลขเครื่อง
+                  </label>
+                  <span class="text-danger stars">  </span> 
+                </div>
+                <div class="col-md-4 mb-4" style="padding-top:0px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
+                  
+                   ex-1029389890
+                </div>
+              </div>
+            </div>
+
+            <div class="panel-content fourd-form-row-b" >
+              <div class="form-row dialog-data " style = "padding-bottom:0px;">
+                <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    รับประกัน (วัน)
+                  </label>
+                  <span class="text-danger stars"> </span> 
+                </div>
+                <div class="col-md-4 mb-4" style="padding-top:0px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
+                  60
+                </div>
+            
+                <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    <!-- หมายเลขเครื่อง -->
+                  </label>
+                  <span class="text-danger stars">  </span> 
+                </div>
+                <div class="col-md-4 mb-4" style="padding-top:5px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
+                  <!-- <input type="text" class="form-control form-ele clear-element" id="position_name" name="position_name" placeholder="หมายเลขเครื่อง" value=""> -->
+                </div>
+              </div>
+            </div>
 						
 
 						</div>
 						<div class="modal-footer">
 								<button type="button" class="btn btn-secondary" id = "btn_dialog_sub_form_close">Close</button>
-								<button type="button" class="btn btn-primary">Add Item</button>
+								<!-- <button type="button" class="btn btn-primary">Add Item</button> -->
 						</div>
 				</div>
 		</div>

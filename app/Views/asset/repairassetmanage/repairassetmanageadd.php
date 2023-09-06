@@ -106,7 +106,9 @@
 								<tr>
 
 									<td>
+                    <a href="#"  id = "btn_open_dialog_sub_form" data-toggle="modal" data-target="#dialog_sub_form">
 										52-117-202-0001
+                    </a>
 									</td>
 									<td>
 										เครื่องโทรสาร : ยี่ห้อ SHARP รุ่น FO-3150

@@ -35,32 +35,59 @@
                       </label>
                       <select id="board_type_add" name="board_type_add" class="ele_select_add" placeholder="ประเภทคณะกรรมการ">
 							
-												<option value="17">
-													คณะกรรมการตรวจรับพัสดุ
-												</option>
-												<option value="17">
-													คณะกรรมการเปิดซองสอบราคา
-												</option>
-												<option value="17">
-													คณะกรรมการประกวดราคา
-												</option>
-												<option value="17">
-													คณะกรรมการจัดซื้อ
-												</option>
-												<option value="17">
-													คณะกรรมการจัดจ้าง
-												</option>
-												<option value="17">
-													คณะกรรมการตรวจการจ้าง
-												</option>
-												<option value="17">
-													คณะกรรมการจัดจ้างโดยวิธีพิเศษ
-												</option>
-												<option value="17">
-													คณะกรรมการกาหนดราคากลาง
-												</option>
-												
-											</select>
+                      <!-- <option value="17">
+                        คณะกรรมการตรวจรับพัสดุ
+                      </option>
+                      <option value="17">
+                        คณะกรรมการเปิดซองสอบราคา
+                      </option>
+                      <option value="17">
+                        คณะกรรมการประกวดราคา
+                      </option>
+                      <option value="17">
+                        คณะกรรมการจัดซื้อ
+                      </option>
+                      <option value="17">
+                        คณะกรรมการจัดจ้าง
+                      </option>
+                      <option value="17">
+                        คณะกรรมการตรวจการจ้าง
+                      </option>
+                      <option value="17">
+                        คณะกรรมการจัดจ้างโดยวิธีพิเศษ
+                      </option>
+                      <option value="17">
+                        คณะกรรมการกาหนดราคากลาง
+                      </option> -->
+                      <option value="17">
+                        คณะกรรมการเปิดซองสอบราคา
+                      </option>
+                      <option value="17">
+                        คณะกรรมการรับ และเปิดซองประกวดราคา
+                      </option>
+                      <option value="17">
+                        คณะกรรมการพิจารณาผลการประกวดราคา
+                      </option>
+                      <option value="17">
+                        คณะกรรมการจัดซื้อโดยวิธีพิเศษ
+                      </option>
+                      <option value="17">
+                        คณะกรรมการจัดจ้างโดยวิธีพิเศษ
+                      </option>
+                      <option value="17">
+                        คณะกรรมการพิจารณาผลการประกวดราคาอิเล็กทรอนิกส์ (วิธีประกวดราคาอิเล็กทรอนิกส์ (e -bidding)
+                      </option>
+                      <option value="17">
+                        คณะกรรมการตรวจรับพัสดุ
+                      </option>
+                      <option value="17">
+                        คณะกรรมการตรวจการจ้าง /ผู้ควบคุมงาน
+                      </option>
+                      <option value="17">
+                        คณะกรรมการก าหนดราคากลาง (มติคณะรัฐมนตรี)
+                      </option>
+                      
+                    </select>
                         
                         
                       </select>
@@ -102,9 +129,7 @@
 									<th class="text-center" width="200px;">
 										ตำแหน่ง
 									</th>
-									<th class="text-center" width="150px;">
-										พิมพ์หนังสือแต่งตั้ง
-									</th>
+									
 									<th class="text-center" width="90px;">
 										
 									</th>
@@ -120,13 +145,9 @@
 										จิรพนธ์ ศิริพัฒน์ 
 									</td>
 									<td>
-										ประธาน
+										ประธานกรรมการ
 									</td>
-									<td>
-										<a href="javascript:void(0);" class="btn btn-primary btn-xs btn-icon">
-												<i class="fal fa-print"></i>
-										</a>
-									</td>
+								
 									<td>
 										<a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data"
                   mode='view'>
@@ -242,6 +263,31 @@
                 <div class="form-row dialog-data " style = "padding-bottom:0px;">
                   <div class="col-md-4 mb-4" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
                     <label class="form-label" for="" style = "margin:0;">
+                         
+                    </label>
+                    <span class="text-danger stars">  </span> 
+                  </div>
+                  <div class="col-md-8 mb-8" style="padding-top:0px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
+									<div class="">
+                    <div class="custom-control custom-radio custom-control-inline" style ="line-height:25px;vertical-align: middle;">
+                        <input type="radio" class="custom-control-input" id="defaultInline1Radioin1" name="defaultInline1Radioin" style = "margin-top:15px;" value = "1" checked onchange="showhidenamep2(this.value)">
+                        <label class="custom-control-label " for="defaultInline1Radioin1" >ภายใน</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline" style ="line-height:25px;vertical-align: middle;">
+                        <input type="radio" class="custom-control-input" id="defaultInline1Radioin2" name="defaultInline1Radioin" value = "2" onchange="showhidenamep2(this.value)">
+                        <label class="custom-control-label " for="defaultInline1Radioin2">ภายนอก</label>
+                    </div>
+                  
+                  
+                  </div>
+                    
+                  </div>    
+                </div>
+              </div> 
+							<div class="panel-content fourd-form-row-c" id = "divp2name1">
+                <div class="form-row dialog-data " style = "padding-bottom:0px;">
+                  <div class="col-md-4 mb-4" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+                    <label class="form-label" for="" style = "margin:0;">
                          ชื่อ/นามสกุล 
                     </label>
                     <span class="text-danger stars"> * </span> 
@@ -265,7 +311,21 @@
                   </div>    
                 </div>
               </div> 
-							<div class="panel-content fourd-form-row-c" >
+							<div class="panel-content fourd-form-row-c" id = "divp2name2">
+                <div class="form-row dialog-data " style = "padding-bottom:0px;">
+                  <div class="col-md-4 mb-4" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+                    <label class="form-label" for="" style = "margin:0;">
+                         ชื่อ/นามสกุล 
+                    </label>
+                    <span class="text-danger stars"> * </span> 
+                  </div>
+                  <div class="col-md-8 mb-8" style="padding-top:7px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
+									<input type="text" class="form-control form-ele clear-element" id="position_name" name="p2position_name" placeholder=" ชื่อ/นามสกุล " value="">
+                    
+                  </div>    
+                </div>
+              </div> 
+							<div class="panel-content fourd-form-row-b" >
                 <div class="form-row dialog-data " style = "padding-bottom:0px;">
                   <div class="col-md-4 mb-4" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
                     <label class="form-label" for="" style = "margin:0;">
@@ -279,11 +339,11 @@
 									<div class="">
 										<div class="custom-control custom-radio custom-control-inline" style ="line-height:25px;vertical-align: middle;">
 												<input type="radio" class="custom-control-input" id="pp11" name="inlineDefaultRadiosExample" style = "margin-top:15px;" checked>
-												<label class="custom-control-label " for="pp11" >จัดซื้อ</label>
+												<label class="custom-control-label " for="pp11" >ประธานกรรมการ</label>
 										</div>
 										<div class="custom-control custom-radio custom-control-inline" style ="line-height:25px;vertical-align: middle;">
 												<input type="radio" class="custom-control-input" id="pp12" name="inlineDefaultRadiosExample">
-												<label class="custom-control-label " for="pp12">จัดจ้าง</label>
+												<label class="custom-control-label " for="pp12">กรรมการ</label>
 										</div>
 									
 									
@@ -333,7 +393,7 @@
       className: "text-center",
     },
     {
-      targets: [0,4],
+      targets: [0],
       className: "text-right",
     },
     {
@@ -348,4 +408,20 @@
 		function() {
 		$('#purchase2-modal').modal('toggle');
 	});
+
+	$(document).ready(function() {
+		$("#divp2name2").hide();
+	});
+	
+	function showhidenamep2(ii){
+		console.log("ii"+ii);
+		if (ii == 1){
+			$("#divp2name1").show();
+			$("#divp2name2").hide();
+		}
+		if (ii == 2){
+			$("#divp2name1").hide();
+			$("#divp2name2").show();
+		}
+	}
 </script>

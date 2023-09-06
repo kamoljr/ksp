@@ -165,6 +165,9 @@ $(document).ready(function() {
   $('#unit_name2_add').select2({
     dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
   });
+  $('#indoffice').select2({
+    dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
+  });
 
   var table = $("#dynamic-table").DataTable({
     orderCellsTop: true,
@@ -338,4 +341,15 @@ $(function(){
     //     closeOnDateSelect:true,
     // });       
 });
+$(".showhideindoffice2").hide();
+$(".showhideindoffice1").hide();
+function changindoffice(ii){
+  if (ii == 3){
+    $(".showhideindoffice1").hide();
+    $(".showhideindoffice2").show();
+  }else{
+    $(".showhideindoffice1").show();
+    $(".showhideindoffice2").hide();
+  }
+}
 </script>

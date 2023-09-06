@@ -20,6 +20,7 @@
 
            
             <div class = "show_div_project">
+
             <div class="panel-content fourd-form-row-a" >
               <div class="form-row dialog-data " style = "padding-bottom:0px;">
                 <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
@@ -44,11 +45,37 @@
                    พีรดา แสงตะวัน
                   </label>
                 </div>
-               
-            
+              </div>
+            </div>
+            <div class="panel-content fourd-form-row-b" >
+              <div class="form-row dialog-data " style = "padding-top:15px;padding-bottom:10px;line-height:25px;">
+                <div class="col-md-12 mb-12 text-center" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;font-weight:550;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    ผลลัพธ์งาน/โครงการ
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="panel-content fourd-form-row-a" >
+              <div class="form-row dialog-data " style = "padding-top:10px;padding-bottom:10px;">
+                <!-- <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    ผลลัพธ์งาน
+                  </label>
+                  <span class="text-danger stars">  </span> 
+                </div> -->
+                <div class="col-md-12 mb-12" style="padding-top:0px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;line-height:25px;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    1. ผู้ประกอบวิชาชีพทางการศึกษา มีขวัญและกำลังใจ ในการมุ่งมั่นพัฒนาวิชาชีพ<br >
+                    2. วิชาชีพทางการศึกษา ได้รับการพัฒนาให้มีคุณภาพยิ่งขึ้น
+                  </label>
+                </div>
                
               </div>
             </div>
+
+
+
 
 						<div class="panel-content fourd-form-row-b" >
               <div class="form-row dialog-data " style = "padding-top:15px;padding-bottom:0px;line-height:25px;">
@@ -187,6 +214,73 @@
 							<tfoot>
 									<tr>
 											<th colspan="5" style="text-align:right !important;">เป้าหมายเชิงคุณภาพรวมคิดเป็น		:</th>
+											<th>0</th>
+									</tr>
+							</tfoot>
+						</table>
+						<!-- datatable end -->
+            <div class="panel-content fourd-form-row-b" >
+              <div class="form-row dialog-data " style = "padding-top:15px;padding-bottom:0px;line-height:25px;">
+                <div class="col-md-12 mb-12 text-center" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;font-weight:550;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    รายงานผลตัวชี้วัดของสำนักงาน
+                  </label>
+                </div>
+              </div>
+            </div>
+
+						
+						<!-- datatable start -->
+						<table id="dynamic-table6" class="myFormat table table-md table-bordered table-hover table-striped w-100" style = "padding-top:0px !important;margin-top:0px !important;line-height:10px;">
+
+            <!-- Button trigger modal -->
+            
+							<thead class="bg-info-50">
+								<tr>
+									
+									
+									<th class="text-center" width="15px;"></th>
+									<th class="text-center" >เป้าหมายเชิงปริมาณ</th>
+									<th class="text-center" width="60px;">
+										แผน
+									</th>
+									<th class="text-center" width="60px;" >
+										ผลสะสม
+									</th>
+									<th class="text-center" width="60px;">
+										ผล (*)	
+									</th>
+									<th class="text-center" width="60px;">
+										คิดเป็น %
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										3261
+									</td>
+									<td>
+										รายงานการวิจัยเพื่อ การพัฒนาวิชาชีพและ ผู้ประกอบวิชาชีพทาง การศึกษา 2 เรื่อง	
+									</td>
+									<td>
+										2
+									</td>
+									<td>
+										0
+									</td>
+									<td>
+										<input type="text" class="form-control form-ele clear-element" id="position_name" name="position_name" placeholder="ผล" value="" style = "width:40%;display:inline"> ครั้ง
+									</td>
+									<td>
+										0
+									</td>
+								</tr>
+							
+							</tbody>
+							<tfoot>
+									<tr>
+											<th colspan="5" style="text-align:right !important;">เป้าหมายเชิงปริมาณรวมคิดเป็น	:</th>
 											<th>0</th>
 									</tr>
 							</tfoot>

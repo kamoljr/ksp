@@ -71,16 +71,17 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
           
 
           
+          
           <div class="panel-content fourd-form-row-a" style = "">
             <div class="form-row dialog-data " style = "padding-bottom:0px;">
               <div class="col-md-10 mb-10" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
                 <label class="form-label" for="" style = "margin:0;">
-                  1. ผลการดำเนินงานตามแผนงาน	 []
+                  1. ตารางแสดงความก้าวหน้าแผนงาน โครงการ	 [4.3.11.2 (8)]
                 </label>
               </div>
               <div class="col-md-2 mb-2" style="padding-bottom:0px;font-size:13px;margin-bottom:0px;">
                 <label class="form-label" for="">
-                  <button type="button" class="btn btn-sm btn-primary">
+                  <button type="button" class="btn btn-sm btn-primary" onclick="window.open('http://localhost/report/follow/ตารางแสดงความก้าวหน้าแผนงาน.xlsx', '_blank', 'noopener, noreferrer');">
                       <span class="fal fa-print mr-1"></span>
                       Print
                   </button>
@@ -92,12 +93,12 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
             <div class="form-row dialog-data " style = "padding-bottom:0px;">
               <div class="col-md-10 mb-10" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
                 <label class="form-label" for="" style = "margin:0;">
-                  2. ผลการดำเนินงานตามตัวชี้วัดของแผนงาน ไตรมาส 1-3	 [] 
+                  2. สรุปความก้าวหน้าโครงการ
                 </label>
               </div>
               <div class="col-md-2 mb-2" style="padding-bottom:0px;font-size:13px;margin-bottom:0px;">
                 <label class="form-label" for="">
-                  <button type="button" class="btn btn-sm btn-primary">
+                  <button type="button" class="btn btn-sm btn-primary" onclick="window.open('http://localhost/report/follow/สรุปความก้าวหน้าโครงการ.png', '_blank', 'noopener, noreferrer');">
                       <span class="fal fa-print mr-1"></span>
                       Print
                   </button>
@@ -109,12 +110,12 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
             <div class="form-row dialog-data " style = "padding-bottom:0px;">
               <div class="col-md-10 mb-10" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
                 <label class="form-label" for="" style = "margin:0;">
-                  3. รายงานความก้าวหน้าตามแผนงาน งาน โครงการ		 [] 
+                  3. ประมาณการรายจ่ายตามแผน
                 </label>
               </div>
               <div class="col-md-2 mb-2" style="padding-bottom:0px;font-size:13px;margin-bottom:0px;">
                 <label class="form-label" for="">
-                  <button type="button" class="btn btn-sm btn-primary">
+                  <button type="button" class="btn btn-sm btn-primary" onclick="window.open('http://localhost/report/follow/ประมาณการรายจ่ายตามแผน.png', '_blank', 'noopener, noreferrer');">
                       <span class="fal fa-print mr-1"></span>
                       Print
                   </button>
@@ -126,12 +127,118 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
             <div class="form-row dialog-data " style = "padding-bottom:0px;">
               <div class="col-md-10 mb-10" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
                 <label class="form-label" for="" style = "margin:0;">
-                  4. ตารางแสดงความก้าวหน้าแผนงาน โครงการ			 [] 
+                  4. ความก้าวหน้าผลการเบิกจ่ายฃตามแผนงาน		 
                 </label>
               </div>
               <div class="col-md-2 mb-2" style="padding-bottom:0px;font-size:13px;margin-bottom:0px;">
                 <label class="form-label" for="">
-                  <button type="button" class="btn btn-sm btn-primary">
+                  <button type="button" class="btn btn-sm btn-primary" onclick="window.open('http://localhost/report/follow/ความก้าวหน้าผลการเบิกจ่ายฃตามแผนงาน.png', '_blank', 'noopener, noreferrer');">
+                      <span class="fal fa-print mr-1"></span>
+                      Print
+                  </button>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="panel-content fourd-form-row-a" style = "">
+            <div class="form-row dialog-data " style = "padding-bottom:0px;">
+              <div class="col-md-10 mb-10" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+                <label class="form-label" for="" style = "margin:0;">
+                  5. ประมาณการรายจ่ายตามส่วนงาน		 
+                </label>
+              </div>
+              <div class="col-md-2 mb-2" style="padding-bottom:0px;font-size:13px;margin-bottom:0px;">
+                <label class="form-label" for="">
+                  <button type="button" class="btn btn-sm btn-primary" onclick="window.open('http://localhost/report/follow/ประมาณการรายจ่ายตามส่วนงาน.png', '_blank', 'noopener, noreferrer');">
+                      <span class="fal fa-print mr-1"></span>
+                      Print
+                  </button>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="panel-content fourd-form-row-b" style = "">
+            <div class="form-row dialog-data " style = "padding-bottom:0px;">
+              <div class="col-md-10 mb-10" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+                <label class="form-label" for="" style = "margin:0;">
+                  6. ความก้าวหน้าผลการเบิกจ่ายฃตามส่วนงาน		 
+                </label>
+              </div>
+              <div class="col-md-2 mb-2" style="padding-bottom:0px;font-size:13px;margin-bottom:0px;">
+                <label class="form-label" for="">
+                  <button type="button" class="btn btn-sm btn-primary" onclick="window.open('http://localhost/report/follow/ความก้าวหน้าผลการเบิกจ่ายฃตามส่วนงาน.png', '_blank', 'noopener, noreferrer');">
+                      <span class="fal fa-print mr-1"></span>
+                      Print
+                  </button>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="panel-content fourd-form-row-a" style = "">
+            <div class="form-row dialog-data " style = "padding-bottom:0px;">
+              <div class="col-md-10 mb-10" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+                <label class="form-label" for="" style = "margin:0;">
+                  7. รายงานผลการเบิกจ่ายงบประมาณ 	 [4.3.11.2 (7)]
+                </label>
+              </div>
+              <div class="col-md-2 mb-2" style="padding-bottom:0px;font-size:13px;margin-bottom:0px;">
+                <label class="form-label" for="">
+                  <button type="button" class="btn btn-sm btn-primary" onclick="window.open('http://localhost/report/follow/รายงานผลการเบิกจ่ายงบประมาณ.jpg', '_blank', 'noopener, noreferrer');">
+                      <span class="fal fa-print mr-1"></span>
+                      Print
+                  </button>
+                </label>
+              </div>
+            </div>
+          </div>
+
+
+
+          
+          <div class="panel-content fourd-form-row-b" style = "">
+            <div class="form-row dialog-data " style = "padding-bottom:0px;">
+              <div class="col-md-10 mb-10" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+                <label class="form-label" for="" style = "margin:0;">
+                  8. ข้อมูลแผนการดำเนินงานตามตัวชี้วัดของสำนักงานเลขาธิการคุรุสภา แผนงาน ไตรมาส
+                </label>
+              </div>
+              <div class="col-md-2 mb-2" style="padding-bottom:0px;font-size:13px;margin-bottom:0px;">
+                <label class="form-label" for="">
+                  <button type="button" class="btn btn-sm btn-primary" onclick="window.open('http://localhost/report/follow/ข้อมูลแผนการดำเนินงานตามตัวชี้วัดของสำนักงานเลขาธิการคุรุสภา ตัวชี้วัด แผนงาน ไตรมาส.xlsx', '_blank', 'noopener, noreferrer');">
+                      <span class="fal fa-print mr-1"></span>
+                      Print
+                  </button>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="panel-content fourd-form-row-a" style = "">
+            <div class="form-row dialog-data " style = "padding-bottom:0px;">
+              <div class="col-md-10 mb-10" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+                <label class="form-label" for="" style = "margin:0;">
+                  9. ข้อมูลแผนการดำเนินงานตามตัวชี้วัดของสำนักงานเลขาธิการคุรุสภา โครงการ ไตรมาส
+                </label>
+              </div>
+              <div class="col-md-2 mb-2" style="padding-bottom:0px;font-size:13px;margin-bottom:0px;">
+                <label class="form-label" for="">
+                  <button type="button" class="btn btn-sm btn-primary" onclick="window.open('http://localhost/report/follow/ข้อมูลแผนการดำเนินงานตามตัวชี้วัดของสำนักงานเลขาธิการคุรุสภา ประจำปีงบประมาณ.xlsx', '_blank', 'noopener, noreferrer');">
+                      <span class="fal fa-print mr-1"></span>
+                      Print
+                  </button>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="panel-content fourd-form-row-b" style = "">
+            <div class="form-row dialog-data " style = "padding-bottom:0px;">
+              <div class="col-md-10 mb-10" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+                <label class="form-label" for="" style = "margin:0;">
+                  10. ข้อมูลแผนการดำเนินงานตามตัวชี้วัดของสำนักงานเลขาธิการคุรุสภา (แผน/ผลการดำเนินงาน โครงการ ไตรมาส)
+                </label>
+              </div>
+              <div class="col-md-2 mb-2" style="padding-bottom:0px;font-size:13px;margin-bottom:0px;">
+                <label class="form-label" for="">
+                  <button type="button" class="btn btn-sm btn-primary" onclick="window.open('http://localhost/report/follow/ข้อมูลแผนการดำเนินงานตามตัวชี้วัดของสำนักงานเลขาธิการคุรุสภา (แผน ผล).xlsx', '_blank', 'noopener, noreferrer');">
                       <span class="fal fa-print mr-1"></span>
                       Print
                   </button>
@@ -141,8 +248,6 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
           </div>
           
           
-
-
 
 
           

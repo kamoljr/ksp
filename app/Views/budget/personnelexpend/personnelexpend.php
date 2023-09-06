@@ -244,10 +244,17 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   </a>
                 </td>
               </tr>
-             
+
               
               
             </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="3" style="text-align:right !important;">จำนวนเงินทั้งสิ้น		:</th>
+                    <th>153,327,400</th>
+                    <th></th>
+                </tr>
+            </tfoot>
           </table>
           <!-- datatable end -->
         </div>

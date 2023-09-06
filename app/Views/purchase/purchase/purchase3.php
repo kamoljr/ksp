@@ -320,7 +320,7 @@
                         <div class="col-sm-3">
                             <div class=" text-center" style = ""><small>รายการ</small></div>
                         </div>
-                        <div class="col-sm-2">
+                        <div class="col-sm-1">
                           <div class=" text-center td-col-h" style = ""><small>จำนวน</small></div>
                         </div>
                         <div class="col-sm-2">
@@ -329,7 +329,7 @@
                         <div class="col-sm-1">
                           <div class="text-center td-col-h" style = ""><small>ราคาต่อหน่วย<br>รวมภาษี (บาท)</small></div>
                         </div>
-                        <div class="col-sm-1">
+                        <div class="col-sm-2">
                           <div class="text-center td-col-h" style = ""><small>จำนวนเงินรวม<br>(บาท)</small></div>
                         </div>
                         <div class="col-sm-2">
@@ -346,7 +346,7 @@
                         <div class="col-sm-3">
                             <div class=" py-2 px-3 td-col" style = "color:#000;">ค่าจัดพิมพ์หนังสือและอื่น ๆ (54050-00)	</div>
                         </div>
-                        <div class="col-sm-2">
+                        <div class="col-sm-1">
                           <div class="text-muted py-2 px-3 text-center td-col" style = ""><input type="text" class="form-control form-ele clear-element" id="group_name_add" name="group_name_add" placeholder="" value="" style = "font-size:10px;"></div>
                         </div>
                         <div class="col-sm-2 hidden-md-down">
@@ -355,8 +355,10 @@
                         <div class="col-sm-1 hidden-md-down">
                           <div class=" py-2 px-3 text-center td-col" style = "color:#000;">107</div>
                         </div>
-                        <div class="col-sm-1 hidden-md-down">
-                          <div class=" py-2 px-3 text-center td-col" style = "color:#000;">107</div>
+                        <div class="col-sm-2 hidden-md-down">
+                          <div class=" py-2 px-3 text-center td-col" style = "color:#000;">
+                            <input type="text" class="form-control form-ele clear-element text-right" id="group_name_add" name="group_name_add" placeholder="107" value="" style = "font-size:10px;">
+                          </div>
                         </div>
                         <div class="col-sm-2 hidden-md-down">
                           <div class="text-muted py-2 px-3 text-center td-col" style = "">

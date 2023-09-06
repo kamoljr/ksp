@@ -58,7 +58,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                         <option value="17">
                           2
                         </option>
-                        <option value="17">
+                        <option value="17" selected>
                           3
                         </option>
                         <option value="17">
@@ -99,7 +99,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
     </div>
     <div class="alert alert-warning" id='searchresults' name='searchresults'
     style="margin-bottom: 15px;">
-      ค้นหาโดย : <u>ปีงบประมาณ</u> 2566 <u>ไตรมาส</u> 1 <u>โครงการ </u> งานพัฒนาองค์ความรู้เพื่อการพัฒนาวิชาชีพทางการศึกษา
+      ค้นหาโดย : <u>ปีงบประมาณ</u> 2566 <u>ไตรมาส</u> 3 <u>โครงการ </u> งานพัฒนาองค์ความรู้เพื่อการพัฒนาวิชาชีพทางการศึกษา
     </div>
   </div>
 </div>
@@ -147,25 +147,48 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
           <table id="dynamic-table" class="table table-md table-bordered table-hover table-striped w-100">
             <thead class="bg-primary-600">
               <tr>
-                <th width = "20px;">
+                <th rowspan = "2" width = "20px;">
                 </th>
-                <th class="text-center">
+                <th rowspan = "2"  class="text-center">
                   ชื่อกิจกรรม
                 </th>
-                <th class="text-center" width = "70px;">
-                  งาน(แผน)
+                <th colspan = "3" style = "border-bottom:1px solid rgba(0, 0, 0, 0.1) !important;" class="text-center" >
+                  งาน
                 </th>
-                <th width = "70px;"class="text-center">
-                  งาน(ผล)
-                </th>
-                <th width = "70px;"class="text-center">
+               
+                <th width = "60px;" rowspan = "2" class="text-center">
                   หน่วยนับ
                 </th>
-                <th width = "100px;"class="text-center">
-                  งปม.(แผน)(บาท)
+                <th class="text-center" colspan = "3" style = "border-bottom:1px solid rgba(0, 0, 0, 0.1) !important;">
+                  งปม (บาท)
                 </th>
-                <th width = "100px;"class="text-center">
-                  งปม.(ผล)(บาท)
+               
+            
+                <th width="20">
+                </th>
+           
+              </tr>
+              <tr>
+               
+             
+                <th class="text-center" width = "60px;">
+                  แผน/ผลสะสม q(1+2)
+                </th>
+                <th class="text-center" width = "30px;">
+                  แผน q(3)
+                </th>
+                <th width = "30px;"class="text-center">
+                  ผล q(3)
+                </th>
+              
+                <th width = "80px;" class="text-center">
+                  แผน/ผล<br>สะสม q(1+2)
+                </th>
+                <th width = "80px;"class="text-center">
+                  แผน q(3)
+                </th>
+                <th width = "80px;"class="text-center">
+                  ผล q(3)
                 </th>
             
                 <th width="20">
@@ -184,6 +207,9 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   <small>(ชื่อเจ้าของกิจกรรม นายจิรพัฒน์ พงศ์พิไล || ชื่อผู้ทำรายการ นายธาวัน ตั้งทิพย์) </small>
                 </td>
                 <td>
+                  10<br>/6
+                </td>
+                <td>
                   2
                 </td>
                 <td>
@@ -191,6 +217,9 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 </td>
                 <td>
                   ครั้ง
+                </td>
+                <td>
+                  100,000.00<br>/65,000.00	
                 </td>
                 <td>
                   32,100	
@@ -217,10 +246,17 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   4
                 </td>
                 <td>
+                  4
+                </td>
+                
+                <td>
                   10
                 </td>
                 <td>
                   ครั้ง
+                </td>
+                <td>
+                 0
                 </td>
                 <td>
                  0
@@ -315,11 +351,11 @@ $(document).ready(function() {
     processing: true,
     bPaginate: true,
     columnDefs: [{
-      targets: [2,3,4,5,6,7],
+      targets: [2,3,4,5,6,7,8,9],
       orderable: false,
     },
     {
-      targets: [0,2,3,4],
+      targets: [0,2,3,4,5],
       className: "text-center",
     },
     {
@@ -327,7 +363,7 @@ $(document).ready(function() {
       className: "text-left",
     },
     {
-      targets: [5,6],
+      targets: [6,7,8],
       className: "text-right",
     }]
 

@@ -38,8 +38,12 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                       <select id="unit_name_search" name="unit_name_search" class="select2"
                       placeholder="ปีงบประมาณ">
                         <option value="">
+                          งบบุคลากร
+                        </option>
+                        <option value="">
                           งบดำเนินงาน
                         </option>
+                       
                         <option value="17">
                           งบลงทุน
                         </option>
@@ -148,7 +152,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <th class="text-center">
                   รายการค่าใช้จ่าย
                 </th>
-                <th width="90">
+                <th width="130">
                 </th>
               </tr>
             </thead>
@@ -178,6 +182,11 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                     <i class="ni ni-trash">
                     </i>
                   </a>
+                  &nbsp;&nbsp;
+                  <a href="javascript:void(0);" class="btn btn-outline-danger btn-icon btn-xs rounded-circle waves-effect waves-themed"
+                  data-toggle="modal" data-target="#example-modal-alert">
+                    <i class="fa-solid fa-ban"></i>
+                  </a>
                 </td>
               </tr>
               <tr>
@@ -203,6 +212,11 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   data-toggle="modal" data-target="#example-modal-alert">
                     <i class="ni ni-trash">
                     </i>
+                  </a>
+                  &nbsp;&nbsp;
+                  <a href="javascript:void(0);" class="btn btn-outline-danger btn-icon btn-xs rounded-circle waves-effect waves-themed"
+                  data-toggle="modal" data-target="#example-modal-alert">
+                    <i class="fa-solid fa-ban"></i>
                   </a>
                 </td>
               </tr>
@@ -230,6 +244,11 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                     <i class="ni ni-trash">
                     </i>
                   </a>
+                  &nbsp;&nbsp;
+                  <a href="javascript:void(0);" class="btn btn-outline-danger btn-icon btn-xs rounded-circle waves-effect waves-themed"
+                  data-toggle="modal" data-target="#example-modal-alert">
+                    <i class="fa-solid fa-ban"></i>
+                  </a>
                 </td>
               </tr>
               <tr>
@@ -255,6 +274,11 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   data-toggle="modal" data-target="#example-modal-alert">
                     <i class="ni ni-trash">
                     </i>
+                  </a>
+                  &nbsp;&nbsp;
+                  <a href="javascript:void(0);" class="btn btn-outline-danger btn-icon btn-xs rounded-circle waves-effect waves-themed"
+                  data-toggle="modal" data-target="#example-modal-alert">
+                    <i class="fa-solid fa-ban"></i>
                   </a>
                 </td>
               </tr>
@@ -282,6 +306,11 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   data-toggle="modal" data-target="#example-modal-alert">
                     <i class="ni ni-trash">
                     </i>
+                  </a>
+                  &nbsp;&nbsp;
+                  <a href="javascript:void(0);" class="btn btn-outline-danger btn-icon btn-xs rounded-circle waves-effect waves-themed"
+                  data-toggle="modal" data-target="#example-modal-alert">
+                    <i class="fa-solid fa-ban"></i>
                   </a>
                 </td>
               </tr>

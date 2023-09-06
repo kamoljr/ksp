@@ -56,19 +56,49 @@
                       <span class="text-danger stars">  </span> 
                     </div>
                     <div class="col-md-4 mb-4" style="padding-top:5px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
-                      <input type="text" class="form-control form-ele clear-element" id="position_name" name="position_name" placeholder="ตำแหน่ง	" value="">
+                      <!-- <input type="text" class="form-control form-ele clear-element" id="position_name" name="position_name" placeholder="ตำแหน่ง	" value=""> -->
+                      <select id="purchase2_position_add" name="purchase2_position_add" class="ele_select_add" placeholder="ชื่อ/นามสกุล">
+                        <option value="17">
+                          
+                        </option>
+                        <option value="17">
+                          พนักงานขาย
+                        </option>
+                        <option value="17">
+                          ผู้ประสานงาน
+                        </option>
+                        <option value="17">
+                          คณะกรรมการ
+                        </option>
+                        <option value="17">
+                         ผู้ถือหุ้น
+                        </option>
+                        <option value="17">
+                         อื่นๆ
+                        </option>
+                        
+                    
+                        
+                      </select>
                     </div>
               
-                    <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
-                      <label class="form-label" for="" style = "margin:0;">
-                        เบอร์มือถือ	
-                      </label>
-                      <span class="text-danger stars"> * </span> 
-                    </div>
+                    <div class="col-md-2 mb2" style="padding-bottom:0px;font-weight:350;font-size:13px;margin-bottom:0px !important; line-height:25px;vertical-align: middle; padding-top:10px;">
+                      <input type="text" class="form-control form-ele clear-element" id="position_name" name="position_name" placeholder="อื่นๆ	" value="">
+                    </div> 
+                    <!-- <div class="col-md-6 mb-6" style="padding-bottom:0px;font-weight:350;font-size:13px;margin-bottom:0px !important; line-height:25px;vertical-align: middle; padding-top:10px;">
+                      <div class="frame-wrap">
+                          <div class="custom-control custom-checkbox custom-control-inline" style = "line-height:25px;vertical-align: middle;"">
+                              <input type="checkbox" class="custom-control-input" id="defaultInline1"  >
+                              <label class="custom-control-label" for="defaultInline1">คณะกรรมการ</label>
+                          </div>
+                          <div class="custom-control custom-checkbox custom-control-inline">
+                              <input type="checkbox" class="custom-control-input" id="defaultInline2" >
+                              <label class="custom-control-label" for="defaultInline2">ผู้ถือหุ้น</label>
+                          </div>
+                          
+                      </div>
+                    </div> -->
 
-                    <div class="col-md-4 mb-4" style="padding-top:5px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
-                      <input type="text" class="form-control form-ele clear-element" id="position_name" name="position_name" placeholder="เบอร์มือถือ	" value="">
-                    </div>
 
 
 
@@ -89,13 +119,28 @@
               
                   <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
                     <label class="form-label" for="" style = "margin:0;">
-                      E-mail 
+                      เบอร์มือถือ 
                     </label>
                     <span class="text-danger stars"> </span> 
                   </div>
                   <div class="col-md-4 mb-4" style="padding-top:5px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
-                    <input type="text" class="form-control form-ele clear-element" id="position_name" name="position_name" placeholder="E-mail" value="">
+                    <input type="text" class="form-control form-ele clear-element" id="position_name" name="position_name" placeholder="เบอร์มือถือ	" value="">
                   </div>
+                </div>
+              </div> 
+              <div class="panel-content fourd-form-row-b" >
+                <div class="form-row dialog-data " style = "padding-bottom:0px;">
+                  <div class="col-md-2 mb-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+                    <label class="form-label" for="" style = "margin:0;">
+                       E-mail 
+                    </label>
+                    <span class="text-danger stars">  </span> 
+                  </div>
+                  <div class="col-md-4 mb-4" style="padding-top:5px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
+                    <input type="text" class="form-control form-ele clear-element" id="position_name" name="position_name" placeholder="ชื่อ/เบอร์โทร" value="">
+                  </div>
+              
+                 
                 </div>
               </div> 
 

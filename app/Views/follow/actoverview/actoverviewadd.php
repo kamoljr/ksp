@@ -20,25 +20,117 @@
 
 
 
-            <div class="panel-content fourd-form-row-a" id = "" >
+            <div class="panel-content fourd-form-row-a" >
+              <div class="form-row dialog-data " style = "padding-bottom:0px;">
+                <div class="col-md-12 mb-12 text-center" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;font-weight:550;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    แผนทั้งหมด/ผล สะสม (ไตรมาร 1 + ไตรมาส 2)
+                  </label>
+                </div>
+                
+              </div>
+            </div>
+            <div class="panel-content fourd-form-row-b" id = "" >
+              <div class="form-row dialog-data " style = "padding-bottom:0px;">
+
+                <div class="col-sm-2 sm-2" style="padding-top:5px;padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    งานทั้งหมด
+                  </label>
+                </div>
+                <div class="col-sm-2 sm-2" style="padding-top:5px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    แผน 10 ครั้ง
+                  </label>
+                </div>
+                <div class="col-sm-2 sm-2" style="padding-top:5px;padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    ผล q(1+2)
+                  </label>
+                </div>
+                <div class="col-sm-2 sm-2" style="padding-top:5px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    6 ครั้ง
+                  </label>
+                </div>
+                <div class="col-sm-2 sm-2" style="padding-top:5px;padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    คิดเป็น 
+                  </label>
+                </div>
+                <div class="col-sm-2 sm-2" style="padding-top:5px;padding-top:0px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    60%
+                  </label>
+                </div>
+
+              </div>
+            </div>
+            <div class="panel-content fourd-form-row-b" id = "" >
               <div class="form-row dialog-data " style = "padding-bottom:0px;">
 
                 <div class="col-sm-2 sm-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
                   <label class="form-label" for="" style = "margin:0;">
-                    งาน
+                    งบประมาณ
                   </label>
                 </div>
                 <div class="col-sm-2 sm-2" style="padding-top:0px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
                   <label class="form-label" for="" style = "margin:0;">
-                    แผน 2 ครั้ง
+                    แผน 100,000 บาท
                   </label>
                 </div>
                 <div class="col-sm-2 sm-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
                   <label class="form-label" for="" style = "margin:0;">
-                    ผล 
+                    ผล q(1+2)
                   </label>
                 </div>
-                <div class="col-sm-2 sm-2" style="padding-top:5px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
+                <div class="col-sm-2 sm-2" style="padding-top:0px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    65,000 บาท
+                  </label>
+                </div>
+                <div class="col-sm-2 sm-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    คิดเป็น 
+                  </label>
+                </div>
+                <div class="col-sm-2 sm-2" style="padding-top:0px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    65.0%
+                  </label>
+                </div>
+
+              </div>
+            </div>
+            <div class="panel-content fourd-form-row-a" >
+              <div class="form-row dialog-data " style = "padding-bottom:0px;">
+                <div class="col-md-12 mb-12 text-center" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;font-weight:550;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    แผน/ผล สะสม (ไตรมาร 3 )
+                  </label>
+                </div>
+                
+              </div>
+            </div>
+            <div class="panel-content fourd-form-row-b" id = "" >
+              <div class="form-row dialog-data " style = "padding-bottom:0px;">
+
+                <div class="col-sm-2 sm-2" style="padding-top:5px;padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    งาน q(3)
+                  </label>
+                </div>
+                <div class="col-sm-2 sm-2" style="padding-top:5px;padding-top:0px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    แผน 2 ครั้ง
+                  </label>
+                </div>
+                <div class="col-sm-2 sm-2" style="padding-top:5px;padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    ผล q(3)
+                  </label>
+                </div>
+                <div class="col-sm-2 sm-2" style="padding-top:3px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
                   <input type="text" class="form-control form-ele clear-element" id="position_name" name="position_name" placeholder="ครั้ง" value="" style = "width:40%;display:inline"> ครั้ง
                 </div>
                 <div class="col-sm-2 sm-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
@@ -59,7 +151,7 @@
 
                 <div class="col-sm-2 sm-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
                   <label class="form-label" for="" style = "margin:0;">
-                    งบประมาณ
+                    งบประมาณ q(3)
                   </label>
                 </div>
                 <div class="col-sm-2 sm-2" style="padding-top:0px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
@@ -69,7 +161,7 @@
                 </div>
                 <div class="col-sm-2 sm-2" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;">
                   <label class="form-label" for="" style = "margin:0;">
-                    ผล 
+                    ผล q(3)
                   </label>
                 </div>
                 <div class="col-sm-2 sm-2" style="padding-top:0px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
@@ -90,7 +182,16 @@
 
               </div>
             </div>
-
+            <div class="panel-content fourd-form-row-b" >
+              <div class="form-row dialog-data " style = "padding-bottom:0px;">
+                <div class="col-md-12 mb-12 text-center" style="padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;font-weight:550;">
+                  <label class="form-label" for="" style = "margin:0;">
+                    รายละเอียดการดำเนินงาน
+                  </label>
+                </div>
+                
+              </div>
+            </div>
             <div class="panel-content fourd-form-row-c" id = "" >
               <div class="form-row dialog-data " style = "padding-bottom:0px;">
 
@@ -108,6 +209,7 @@
 
               </div>
             </div>
+            
             <div class="panel-content fourd-form-row-c" id = "" >
               <div class="form-row dialog-data " style = "padding-bottom:0px;">
 
@@ -145,7 +247,7 @@
             <div class="panel-content fourd-form-row-c" id = "" >
               <div class="form-row dialog-data " style = "padding-bottom:0px;">
 
-                <div class="col-sm-4 sm-4" style="padding-top:5px;padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;line-height:22px;">
+                <div class="col-sm-4 sm-4" style="padding-top:8px;padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;line-height:22px;">
                   <label class="form-label" for="" style = "margin:0;">
                    ชื่อเจ้าของกิจกรรม
                     <span class="text-danger stars"> * </span> 
@@ -169,6 +271,26 @@
                     
                     
                   </select>
+                </div>
+                
+
+              </div>
+            </div>
+            <div class="panel-content fourd-form-row-c" id = "" >
+              <div class="form-row dialog-data " style = "padding-bottom:0px;">
+
+                <div class="col-sm-4 sm-4" style="padding-top:15px;padding-bottom:0px;font-weight:550;font-size:13px;margin-bottom:0px !important;line-height:22px;">
+                  <label class="form-label" for="" style = "margin:0;">
+                   ผู้ทำรายการ
+                    <span class="text-danger stars"> </span> 
+                  </label>
+                  
+                </div>
+                <div class="col-sm-8 sm-8" style="padding-top:จpx;padding-bottom:10px;font-size:13px;margin-bottom:0px !important;">
+                 <label class="form-label" for="" style = "margin:0;">
+                   นายธาวัน ตั้งทิพย์
+                   
+                  </label>
                 </div>
                 
 
