@@ -37,7 +37,7 @@
         </div>
 
         <div class="card p-4 border-top-left-radius-0 border-top-right-radius-0">
-            <form method="post" action="<?php echo base_url('login') ?>">
+            <form method="post" action="<?php echo base_url('index.php/login') ?>">
                 <div class="form-group">
                     <label class="form-label" for="username">Username</label>
                     <input type="text" id="username" name="username" class="form-control" placeholder="your username"

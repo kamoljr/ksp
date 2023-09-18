@@ -2,7 +2,7 @@ function create_select_budget_year(){
   var aoData = '';
   $.ajax({
     type: "POST",
-    url: "/public/PublicModel_cn/select_budget_year",
+    url: "/public/index.php/PublicModel_cn/select_budget_year",
     dataType: "json",
     async:false,
     data: aoData,
@@ -106,7 +106,7 @@ function deldata() {
   var aoData = 'ids='+$("#ids").val();
   $.ajax({
       type: "POST",
-      url: "/public/member/unit_cn/del_data",
+      url: "/public/index.php/member/unit_cn/del_data",
       dataType: "json",
       beforeSend: function () {
         $("#overlay").fadeIn(200);　
@@ -147,7 +147,7 @@ function editdata(d,mode){
   let aoData = "ids="+d.unit_id;
   $.ajax({
     type: "POST",
-    url: "/public/member/unit_cn/edit_data",
+    url: "/public/index.php/member/unit_cn/edit_data",
     dataType: "json",
     beforeSend: function () {
       $("#overlay").fadeIn(200);　
@@ -201,7 +201,7 @@ function savedata() {
   var aoData = $('#form_save').serialize();
   $.ajax({
     type: "POST",
-    url: "/public/member/unit_cn/save_data",
+    url: "/public/index.php/member/unit_cn/save_data",
     dataType: "json",
     beforeSend: function () {
       $("#overlay").fadeIn(200);　

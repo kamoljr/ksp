@@ -194,7 +194,7 @@
     </div>
     <div class="col-md-3 mb-3" style="padding-top:0px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
      <div class="custom-file">
-        <button type="button" class="btn btn-sm btn-primary waves-effect waves-themed" onclick="window.open('http://localhost/report/purchase/warranty.html', '_blank', 'noopener, noreferrer');">
+        <button type="button" class="btn btn-sm btn-primary waves-effect waves-themed" onclick="window.open('http://<?=$ip_apps;?>/report/purchase/warranty.html', '_blank', 'noopener, noreferrer');">
           <span class="fal fa-print mr-1"></span>
           Print
        </button>

@@ -69,8 +69,8 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
       <div class="panel-container" >
         <div class="panel-content" style="padding-top: 0px;">
           <div class="frame-wrap mt-3 mb-0 w-100" style="padding-bottom: 15px; text-align:right;">
-            <!-- <button id="btnadd" type="button" class="btn btn-info" onclick="window.location.href = 'http://localhost/report/budget/strategicanalysis.htm','_blank'"> -->
-            <button id="btnadd" type="button" class="btn btn-info" onclick="window.open('http://localhost/report/budget/strategicanalysis.htm', '_blank', 'noopener, noreferrer');">
+            <!-- <button id="btnadd" type="button" class="btn btn-info" onclick="window.location.href = 'http://<?=$ip_apps;?>/report/budget/strategicanalysis.htm','_blank'"> -->
+            <button id="btnadd" type="button" class="btn btn-info" onclick="window.open('http://<?=$ip_apps;?>/report/budget/strategicanalysis.htm', '_blank', 'noopener, noreferrer');">
               <span class="fal fa-print fa-2x" style="padding-right:10px;">
               </span>
               <span style="padding-top:5px;">

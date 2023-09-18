@@ -81,7 +81,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
               </div>
               <div class="col-md-2 mb-2" style="padding-bottom:0px;font-size:13px;margin-bottom:0px;">
                 <label class="form-label" for="">
-                  <button type="button" class="btn btn-sm btn-primary" onclick="window.open('http://localhost/report/follow/ตารางแสดงความก้าวหน้าแผนงาน.xlsx', '_blank', 'noopener, noreferrer');">
+                  <button type="button" class="btn btn-sm btn-primary" onclick="window.open('http://<?=$ip_apps;?>/report/follow/ตารางแสดงความก้าวหน้าแผนงาน.xlsx', '_blank', 'noopener, noreferrer');">
                       <span class="fal fa-print mr-1"></span>
                       Print
                   </button>
@@ -98,7 +98,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
               </div>
               <div class="col-md-2 mb-2" style="padding-bottom:0px;font-size:13px;margin-bottom:0px;">
                 <label class="form-label" for="">
-                  <button type="button" class="btn btn-sm btn-primary" onclick="window.open('http://localhost/report/follow/สรุปความก้าวหน้าโครงการ.png', '_blank', 'noopener, noreferrer');">
+                  <button type="button" class="btn btn-sm btn-primary" onclick="window.open('http://<?=$ip_apps;?>/report/follow/สรุปความก้าวหน้าโครงการ.png', '_blank', 'noopener, noreferrer');">
                       <span class="fal fa-print mr-1"></span>
                       Print
                   </button>
@@ -115,7 +115,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
               </div>
               <div class="col-md-2 mb-2" style="padding-bottom:0px;font-size:13px;margin-bottom:0px;">
                 <label class="form-label" for="">
-                  <button type="button" class="btn btn-sm btn-primary" onclick="window.open('http://localhost/report/follow/ประมาณการรายจ่ายตามแผน.png', '_blank', 'noopener, noreferrer');">
+                  <button type="button" class="btn btn-sm btn-primary" onclick="window.open('http://<?=$ip_apps;?>/report/follow/ประมาณการรายจ่ายตามแผน.png', '_blank', 'noopener, noreferrer');">
                       <span class="fal fa-print mr-1"></span>
                       Print
                   </button>
@@ -132,7 +132,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
               </div>
               <div class="col-md-2 mb-2" style="padding-bottom:0px;font-size:13px;margin-bottom:0px;">
                 <label class="form-label" for="">
-                  <button type="button" class="btn btn-sm btn-primary" onclick="window.open('http://localhost/report/follow/ความก้าวหน้าผลการเบิกจ่ายฃตามแผนงาน.png', '_blank', 'noopener, noreferrer');">
+                  <button type="button" class="btn btn-sm btn-primary" onclick="window.open('http://<?=$ip_apps;?>/report/follow/ความก้าวหน้าผลการเบิกจ่ายฃตามแผนงาน.png', '_blank', 'noopener, noreferrer');">
                       <span class="fal fa-print mr-1"></span>
                       Print
                   </button>
@@ -149,7 +149,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
               </div>
               <div class="col-md-2 mb-2" style="padding-bottom:0px;font-size:13px;margin-bottom:0px;">
                 <label class="form-label" for="">
-                  <button type="button" class="btn btn-sm btn-primary" onclick="window.open('http://localhost/report/follow/ประมาณการรายจ่ายตามส่วนงาน.png', '_blank', 'noopener, noreferrer');">
+                  <button type="button" class="btn btn-sm btn-primary" onclick="window.open('http://<?=$ip_apps;?>/report/follow/ประมาณการรายจ่ายตามส่วนงาน.png', '_blank', 'noopener, noreferrer');">
                       <span class="fal fa-print mr-1"></span>
                       Print
                   </button>
@@ -166,7 +166,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
               </div>
               <div class="col-md-2 mb-2" style="padding-bottom:0px;font-size:13px;margin-bottom:0px;">
                 <label class="form-label" for="">
-                  <button type="button" class="btn btn-sm btn-primary" onclick="window.open('http://localhost/report/follow/ความก้าวหน้าผลการเบิกจ่ายฃตามส่วนงาน.png', '_blank', 'noopener, noreferrer');">
+                  <button type="button" class="btn btn-sm btn-primary" onclick="window.open('http://<?=$ip_apps;?>/report/follow/ความก้าวหน้าผลการเบิกจ่ายฃตามส่วนงาน.png', '_blank', 'noopener, noreferrer');">
                       <span class="fal fa-print mr-1"></span>
                       Print
                   </button>
@@ -183,7 +183,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
               </div>
               <div class="col-md-2 mb-2" style="padding-bottom:0px;font-size:13px;margin-bottom:0px;">
                 <label class="form-label" for="">
-                  <button type="button" class="btn btn-sm btn-primary" onclick="window.open('http://localhost/report/follow/รายงานผลการเบิกจ่ายงบประมาณ.jpg', '_blank', 'noopener, noreferrer');">
+                  <button type="button" class="btn btn-sm btn-primary" onclick="window.open('http://<?=$ip_apps;?>/report/follow/รายงานผลการเบิกจ่ายงบประมาณ.jpg', '_blank', 'noopener, noreferrer');">
                       <span class="fal fa-print mr-1"></span>
                       Print
                   </button>
@@ -204,7 +204,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
               </div>
               <div class="col-md-2 mb-2" style="padding-bottom:0px;font-size:13px;margin-bottom:0px;">
                 <label class="form-label" for="">
-                  <button type="button" class="btn btn-sm btn-primary" onclick="window.open('http://localhost/report/follow/ข้อมูลแผนการดำเนินงานตามตัวชี้วัดของสำนักงานเลขาธิการคุรุสภา ตัวชี้วัด แผนงาน ไตรมาส.xlsx', '_blank', 'noopener, noreferrer');">
+                  <button type="button" class="btn btn-sm btn-primary" onclick="window.open('http://<?=$ip_apps;?>/report/follow/ข้อมูลแผนการดำเนินงานตามตัวชี้วัดของสำนักงานเลขาธิการคุรุสภา ตัวชี้วัด แผนงาน ไตรมาส.xlsx', '_blank', 'noopener, noreferrer');">
                       <span class="fal fa-print mr-1"></span>
                       Print
                   </button>
@@ -221,7 +221,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
               </div>
               <div class="col-md-2 mb-2" style="padding-bottom:0px;font-size:13px;margin-bottom:0px;">
                 <label class="form-label" for="">
-                  <button type="button" class="btn btn-sm btn-primary" onclick="window.open('http://localhost/report/follow/ข้อมูลแผนการดำเนินงานตามตัวชี้วัดของสำนักงานเลขาธิการคุรุสภา ประจำปีงบประมาณ.xlsx', '_blank', 'noopener, noreferrer');">
+                  <button type="button" class="btn btn-sm btn-primary" onclick="window.open('http://<?=$ip_apps;?>/report/follow/ข้อมูลแผนการดำเนินงานตามตัวชี้วัดของสำนักงานเลขาธิการคุรุสภา ประจำปีงบประมาณ.xlsx', '_blank', 'noopener, noreferrer');">
                       <span class="fal fa-print mr-1"></span>
                       Print
                   </button>
@@ -238,7 +238,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
               </div>
               <div class="col-md-2 mb-2" style="padding-bottom:0px;font-size:13px;margin-bottom:0px;">
                 <label class="form-label" for="">
-                  <button type="button" class="btn btn-sm btn-primary" onclick="window.open('http://localhost/report/follow/ข้อมูลแผนการดำเนินงานตามตัวชี้วัดของสำนักงานเลขาธิการคุรุสภา (แผน ผล).xlsx', '_blank', 'noopener, noreferrer');">
+                  <button type="button" class="btn btn-sm btn-primary" onclick="window.open('http://<?=$ip_apps;?>/report/follow/ข้อมูลแผนการดำเนินงานตามตัวชี้วัดของสำนักงานเลขาธิการคุรุสภา (แผน ผล).xlsx', '_blank', 'noopener, noreferrer');">
                       <span class="fal fa-print mr-1"></span>
                       Print
                   </button>

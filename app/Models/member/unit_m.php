@@ -4,7 +4,11 @@ use CodeIgniter\Model;
 
 class unit_m extends Model
 {
-  
+  public function index()
+  {
+   
+  }
+
   public function load_select1()
   {
     $sql = "Select budget_year From strategy where del_item = 'N' order by budget_year desc";
@@ -74,58 +78,52 @@ class unit_m extends Model
     //print_r($resData);
     return $resData;
   }
+
   public function chk_del()
   {
     $ids = $_POST["ids"];
 
-    $sql = "Select count(group_id) as count_reccord From group_name where del_item = 'N' and unit_id = " . $ids;// ไม่เจอ return 0
-
+    $sql = "Select count(unit_id) as count_reccord From group_name where del_item = 'N' and unit_id = " . $ids;// ไม่เจอ return 0
     $result = $this->db->query($sql);
     $data = $result->getResultArray();
     $resData = json_encode($data);
-    //print_r($resData);
     return $resData;
   }
-  
+
+
+
   public function save_data()
   {
     $ids = $_POST["ids"];
     $unit_name = $_POST["unit_name"];
-
-    $count_reccord = 0;
-    if ($ids == '') {
-      $sql1 = "Select count(unit_id) as count_reccord From unit_name where del_item = 'N' and unit_name = '".$unit_name."'";
-      
-    } else {
-      $sql1 = "Select count(unit_id) as count_reccord From unit_name where del_item = 'N' and unit_name = '".$unit_name."'";
-    }
-
-    
-    // $result = $this->db->query($sql1);
-    // $data = $result->getResultObject();
-    // $count_reccord = $data[0]->count_reccord;
     
     if ($ids == '') {
-      $sql = "INSERT INTO unit_name (unit_name) VALUES ('$unit_name')";
+      $this->shared_m = model("member/shared_m");
+		  $max_id = $this->shared_m->find_max_id("unit_name","unit_id");
+
+      $sql = "INSERT INTO unit_name (unit_id,unit_name) VALUES ($max_id,'$unit_name')";
     } else {
       $sql = "Update unit_name set unit_name = '$unit_name' Where unit_id = $ids";
     }
-   
-
     $result = $this->db->query($sql);
-
     
     return $result;//succes return 1 not succrs return 0 
   }
 
+
+
   public function del_data()
   {
     $ids = $_POST["ids"];
-
-    $sql = "Update unit_name set del_item = 'Y' Where unit_id = ".$ids;
-    //echo $sql;
-
-    $result = $this->db->query($sql);
-    return $result;
+    $this->shared_m = model("member/shared_m");
+		$count_reccord = $this->shared_m->find_count_reccord("group_name","unit_id",$ids);
+    if ($count_reccord>0){
+      $result = "cannotdel";
+    }else{
+      $ids = $_POST["ids"];
+      $sql = "Update unit_name set del_item = 'Y' Where unit_id = ".$ids;
+      $result = $this->db->query($sql);
+    }
+    return json_encode($result);
   }
 }

@@ -2,7 +2,7 @@ function search_select1() {
   var aoData = "";
   $.ajax({
     type: "POST",
-    url: "/public/user_cn/search_select1",
+    url: "/public/index.php/user_cn/search_select1",
     dataType: "json",
     async: false,
     data: aoData,
@@ -41,7 +41,7 @@ function search_select2() {
   var aoData = `user_id=${user_id}`;
   $.ajax({
     type: "POST",
-    url: "/public/user_cn/search_select2",
+    url: "/public/index.php/user_cn/search_select2",
     dataType: "json",
     async: false,
     data: aoData,
@@ -113,7 +113,7 @@ function deldata() {
   var aoData = "ids=" + $("#RowId").val();
   $.ajax({
     type: "POST",
-    url: "/public/user_cn/del_data",
+    url: "/public/index.php/user_cn/del_data",
     dataType: "json",
     beforeSend: function () {
       $("#overlay").fadeIn(200);
@@ -148,7 +148,7 @@ function editdata_(d, mode) {
   // let aoData = "ids=" + d.user_id;
   // $.ajax({
   //   type: "POST",
-  //   url: "/public/user_cn/edit_data",
+  //   url: "/public/index.php/user_cn/edit_data",
   //   dataType: "json",
   //   beforeSend: function () {
   //     $("#overlay").fadeIn(200);

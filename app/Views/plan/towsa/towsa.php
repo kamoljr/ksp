@@ -80,7 +80,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
           <!-- content start -->
           <div class="frame-wrap mt-3 mb-0 w-100" style="padding-bottom: 15px;padding-left: 60px; text-align:left;display:inline;">
           
-            <button id="btnadd" type="button" class="btn btn-info" onclick="window.open('http://localhost/report/budget/yearstrategy.html', '_blank', 'noopener, noreferrer');
+            <button id="btnadd" type="button" class="btn btn-info" onclick="window.open('http://<?=$ip_apps;?>/report/budget/yearstrategy.html', '_blank', 'noopener, noreferrer');
 ">
               <span class="fal fa-print fa-2x" style="padding-right:10px;">
               </span>
@@ -91,7 +91,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
           </div>
           <div class="frame-wrap mt-3 mb-0 w-100" style="padding-right: 15px;padding-left: 15px; text-align:center;display:inline;">
           
-            <button id="btnadd" type="button" class="btn btn-info" onclick="window.open('http://localhost/report/budget/mission.html', '_blank', 'noopener, noreferrer');
+            <button id="btnadd" type="button" class="btn btn-info" onclick="window.open('http://<?=$ip_apps;?>/report/budget/mission.html', '_blank', 'noopener, noreferrer');
 ">
               <span class="fal fa-print fa-2x" style="padding-right:10px;">
               </span>
@@ -102,7 +102,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
           </div>
           <div class="frame-wrap mt-3 mb-0 w-100" style="padding-bottom: 15px; text-align:right;display:inline;">
           
-            <button id="btnadd" type="button" class="btn btn-info" onclick="window.open('http://localhost/report/budget/comparemission.html', '_blank', 'noopener, noreferrer');
+            <button id="btnadd" type="button" class="btn btn-info" onclick="window.open('http://<?=$ip_apps;?>/report/budget/comparemission.html', '_blank', 'noopener, noreferrer');
 ">
               <span class="fal fa-print fa-2x" style="padding-right:10px;">
               </span>

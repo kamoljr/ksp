@@ -1,0 +1,632 @@
+CRITICAL - 2023-09-14 10:04:57 --> Undefined array key "username"
+in APPPATH\Controllers\Login.php on line 9.
+ 1 APPPATH\Controllers\Login.php(9): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-14 10:10:40 --> Undefined array key "username"
+in APPPATH\Controllers\Login.php on line 9.
+ 1 APPPATH\Controllers\Login.php(9): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-14 10:13:20 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061 in F:\ksp_project\www\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 F:\ksp_project\www\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect()
+#1 F:\ksp_project\www\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 F:\ksp_project\www\app\Models\login_m.php(48): CodeIgniter\Database\BaseConnection->query()
+#3 F:\ksp_project\www\app\Controllers\Login.php(9): App\Models\Login_m->record_count()
+#4 F:\ksp_project\www\system\CodeIgniter.php(934): App\Controllers\Login->index()
+#5 F:\ksp_project\www\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#6 F:\ksp_project\www\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#7 F:\ksp_project\www\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-14 10:13:20 --> Unable to connect to the database.
+Main connection [sqlsrv]: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\login_m.php(48): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH\Controllers\Login.php(9): App\Models\Login_m->record_count()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-14 10:13:36 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061 in F:\ksp_project\www\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 F:\ksp_project\www\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect()
+#1 F:\ksp_project\www\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 F:\ksp_project\www\app\Models\login_m.php(48): CodeIgniter\Database\BaseConnection->query()
+#3 F:\ksp_project\www\app\Controllers\Login.php(9): App\Models\Login_m->record_count()
+#4 F:\ksp_project\www\system\CodeIgniter.php(934): App\Controllers\Login->index()
+#5 F:\ksp_project\www\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#6 F:\ksp_project\www\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#7 F:\ksp_project\www\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-14 10:13:36 --> Unable to connect to the database.
+Main connection [sqlsrv]: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\login_m.php(48): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH\Controllers\Login.php(9): App\Models\Login_m->record_count()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-14 10:16:56 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061 in F:\ksp_project\www\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 F:\ksp_project\www\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect()
+#1 F:\ksp_project\www\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 F:\ksp_project\www\app\Models\login_m.php(48): CodeIgniter\Database\BaseConnection->query()
+#3 F:\ksp_project\www\app\Controllers\Login.php(9): App\Models\Login_m->record_count()
+#4 F:\ksp_project\www\system\CodeIgniter.php(934): App\Controllers\Login->index()
+#5 F:\ksp_project\www\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#6 F:\ksp_project\www\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#7 F:\ksp_project\www\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-14 10:16:56 --> Unable to connect to the database.
+Main connection [sqlsrv]: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\login_m.php(48): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH\Controllers\Login.php(9): App\Models\Login_m->record_count()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-14 10:17:18 --> Undefined array key "username"
+in APPPATH\Controllers\Login.php on line 9.
+ 1 APPPATH\Controllers\Login.php(9): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-14 10:17:39 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061 in F:\ksp_project\www\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 F:\ksp_project\www\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect()
+#1 F:\ksp_project\www\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 F:\ksp_project\www\app\Models\login_m.php(48): CodeIgniter\Database\BaseConnection->query()
+#3 F:\ksp_project\www\app\Controllers\Login.php(9): App\Models\Login_m->record_count()
+#4 F:\ksp_project\www\system\CodeIgniter.php(934): App\Controllers\Login->index()
+#5 F:\ksp_project\www\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#6 F:\ksp_project\www\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#7 F:\ksp_project\www\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-14 10:17:39 --> Unable to connect to the database.
+Main connection [sqlsrv]: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\login_m.php(48): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH\Controllers\Login.php(9): App\Models\Login_m->record_count()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-14 10:18:17 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061 in F:\ksp_project\www\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 F:\ksp_project\www\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect()
+#1 F:\ksp_project\www\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 F:\ksp_project\www\app\Models\login_m.php(48): CodeIgniter\Database\BaseConnection->query()
+#3 F:\ksp_project\www\app\Controllers\Login.php(9): App\Models\Login_m->record_count()
+#4 F:\ksp_project\www\system\CodeIgniter.php(934): App\Controllers\Login->index()
+#5 F:\ksp_project\www\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#6 F:\ksp_project\www\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#7 F:\ksp_project\www\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-14 10:18:17 --> Unable to connect to the database.
+Main connection [sqlsrv]: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\login_m.php(48): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH\Controllers\Login.php(9): App\Models\Login_m->record_count()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-14 10:19:55 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061 in F:\ksp_project\www\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 F:\ksp_project\www\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect()
+#1 F:\ksp_project\www\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 F:\ksp_project\www\app\Models\login_m.php(48): CodeIgniter\Database\BaseConnection->query()
+#3 F:\ksp_project\www\app\Controllers\Login.php(9): App\Models\Login_m->record_count()
+#4 F:\ksp_project\www\system\CodeIgniter.php(934): App\Controllers\Login->index()
+#5 F:\ksp_project\www\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#6 F:\ksp_project\www\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#7 F:\ksp_project\www\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-14 10:19:55 --> Unable to connect to the database.
+Main connection [sqlsrv]: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\login_m.php(48): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH\Controllers\Login.php(9): App\Models\Login_m->record_count()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-14 10:20:38 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061 in F:\ksp_project\www\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 F:\ksp_project\www\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect()
+#1 F:\ksp_project\www\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 F:\ksp_project\www\app\Models\login_m.php(48): CodeIgniter\Database\BaseConnection->query()
+#3 F:\ksp_project\www\app\Controllers\Login.php(9): App\Models\Login_m->record_count()
+#4 F:\ksp_project\www\system\CodeIgniter.php(934): App\Controllers\Login->index()
+#5 F:\ksp_project\www\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#6 F:\ksp_project\www\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#7 F:\ksp_project\www\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-14 10:20:38 --> Unable to connect to the database.
+Main connection [sqlsrv]: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\login_m.php(48): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH\Controllers\Login.php(9): App\Models\Login_m->record_count()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-14 10:25:12 --> Undefined array key "username"
+in APPPATH\Controllers\Login.php on line 9.
+ 1 APPPATH\Controllers\Login.php(9): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-14 10:25:36 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061 in F:\ksp_project\www\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 F:\ksp_project\www\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect()
+#1 F:\ksp_project\www\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 F:\ksp_project\www\app\Models\login_m.php(48): CodeIgniter\Database\BaseConnection->query()
+#3 F:\ksp_project\www\app\Controllers\Login.php(9): App\Models\Login_m->record_count()
+#4 F:\ksp_project\www\system\CodeIgniter.php(934): App\Controllers\Login->index()
+#5 F:\ksp_project\www\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#6 F:\ksp_project\www\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#7 F:\ksp_project\www\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-14 10:25:36 --> Unable to connect to the database.
+Main connection [sqlsrv]: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\login_m.php(48): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH\Controllers\Login.php(9): App\Models\Login_m->record_count()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-14 10:37:12 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061 in F:\ksp_project\www\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 F:\ksp_project\www\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect()
+#1 F:\ksp_project\www\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 F:\ksp_project\www\app\Controllers\Home.php(9): CodeIgniter\Database\BaseConnection->query()
+#3 F:\ksp_project\www\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#4 F:\ksp_project\www\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#5 F:\ksp_project\www\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#6 F:\ksp_project\www\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-09-14 10:37:12 --> Unable to connect to the database.
+Main connection [sqlsrv]: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Home.php(9): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-14 10:38:19 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061 in F:\ksp_project\www\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 F:\ksp_project\www\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect()
+#1 F:\ksp_project\www\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 F:\ksp_project\www\app\Controllers\Home.php(9): CodeIgniter\Database\BaseConnection->query()
+#3 F:\ksp_project\www\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#4 F:\ksp_project\www\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#5 F:\ksp_project\www\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#6 F:\ksp_project\www\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-09-14 10:38:19 --> Unable to connect to the database.
+Main connection [sqlsrv]: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Home.php(9): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-14 10:38:45 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'budget'.
+CRITICAL - 2023-09-14 10:38:45 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'budget'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Controllers\Home.php(9): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-14 10:38:49 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'budget'.
+CRITICAL - 2023-09-14 10:38:49 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'budget'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Controllers\Home.php(9): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-14 10:39:04 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'budget'.
+CRITICAL - 2023-09-14 10:39:04 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'budget'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Controllers\Home.php(9): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-14 10:39:07 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'budget'.
+CRITICAL - 2023-09-14 10:39:07 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'budget'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Controllers\Home.php(9): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-14 10:39:25 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'budget'.
+CRITICAL - 2023-09-14 10:39:25 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'budget'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Controllers\Home.php(9): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-14 10:39:34 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'budget'.
+CRITICAL - 2023-09-14 10:39:34 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'budget'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Controllers\Home.php(9): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-14 10:42:18 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'yyear'.
+CRITICAL - 2023-09-14 10:42:18 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'yyear'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Controllers\Home.php(9): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-14 10:42:22 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'yyear'.
+CRITICAL - 2023-09-14 10:42:22 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'yyear'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Controllers\Home.php(9): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-14 10:42:42 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'yyear'.
+CRITICAL - 2023-09-14 10:42:42 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'yyear'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Controllers\Home.php(9): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-14 10:42:52 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'yyear'.
+CRITICAL - 2023-09-14 10:42:52 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'yyear'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Controllers\Home.php(9): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-14 10:43:00 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'yyear'.
+CRITICAL - 2023-09-14 10:43:00 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'yyear'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Controllers\Home.php(9): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-14 10:45:42 --> Undefined array key "username"
+in APPPATH\Controllers\Login.php on line 9.
+ 1 APPPATH\Controllers\Login.php(9): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-14 11:53:30 --> Invalid file: "/filenotfound/filenotfoundadd.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 3 APPPATH\Views\templates\modal.php(64): view()
+ 4 SYSTEMPATH\View\View.php(213): include('F:\\ksp_project\\www\\app\\Views\\templates\\modal.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 7 APPPATH\Views\templates\pages.php(149): view()
+ 8 SYSTEMPATH\View\View.php(213): include('F:\\ksp_project\\www\\app\\Views\\templates\\pages.php')
+ 9 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+11 APPPATH\Controllers\Pages.php(59): view()
+12 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->view()
+13 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+14 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-14 11:53:30 --> Invalid file: "/filenotfound/filenotfoundadd.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 3 APPPATH\Views\templates\modal.php(64): view()
+ 4 SYSTEMPATH\View\View.php(213): include('F:\\ksp_project\\www\\app\\Views\\templates\\modal.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 7 APPPATH\Views\templates\pages.php(149): view()
+ 8 SYSTEMPATH\View\View.php(213): include('F:\\ksp_project\\www\\app\\Views\\templates\\pages.php')
+ 9 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+11 APPPATH\Controllers\Pages.php(59): view()
+12 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->view()
+13 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+14 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-14 11:53:30 --> Invalid file: "/filenotfound/filenotfoundadd.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 3 APPPATH\Views\templates\modal.php(64): view()
+ 4 SYSTEMPATH\View\View.php(213): include('F:\\ksp_project\\www\\app\\Views\\templates\\modal.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 7 APPPATH\Views\templates\pages.php(149): view()
+ 8 SYSTEMPATH\View\View.php(213): include('F:\\ksp_project\\www\\app\\Views\\templates\\pages.php')
+ 9 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+11 APPPATH\Controllers\Pages.php(59): view()
+12 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->view()
+13 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+14 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-14 11:53:30 --> Invalid file: "/filenotfound/filenotfoundadd.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 3 APPPATH\Views\templates\modal.php(64): view()
+ 4 SYSTEMPATH\View\View.php(213): include('F:\\ksp_project\\www\\app\\Views\\templates\\modal.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 7 APPPATH\Views\templates\pages.php(149): view()
+ 8 SYSTEMPATH\View\View.php(213): include('F:\\ksp_project\\www\\app\\Views\\templates\\pages.php')
+ 9 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+11 APPPATH\Controllers\Pages.php(59): view()
+12 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->view()
+13 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+14 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-14 11:53:30 --> Invalid file: "/filenotfound/filenotfoundadd.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 3 APPPATH\Views\templates\modal.php(64): view()
+ 4 SYSTEMPATH\View\View.php(213): include('F:\\ksp_project\\www\\app\\Views\\templates\\modal.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 7 APPPATH\Views\templates\pages.php(149): view()
+ 8 SYSTEMPATH\View\View.php(213): include('F:\\ksp_project\\www\\app\\Views\\templates\\pages.php')
+ 9 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+11 APPPATH\Controllers\Pages.php(59): view()
+12 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->view()
+13 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+14 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-14 11:53:30 --> Invalid file: "/filenotfound/filenotfoundadd.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 3 APPPATH\Views\templates\modal.php(64): view()
+ 4 SYSTEMPATH\View\View.php(213): include('F:\\ksp_project\\www\\app\\Views\\templates\\modal.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 7 APPPATH\Views\templates\pages.php(149): view()
+ 8 SYSTEMPATH\View\View.php(213): include('F:\\ksp_project\\www\\app\\Views\\templates\\pages.php')
+ 9 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+11 APPPATH\Controllers\Pages.php(59): view()
+12 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->view()
+13 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+14 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-14 11:53:30 --> Invalid file: "/filenotfound/filenotfoundadd.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 3 APPPATH\Views\templates\modal.php(64): view()
+ 4 SYSTEMPATH\View\View.php(213): include('F:\\ksp_project\\www\\app\\Views\\templates\\modal.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 7 APPPATH\Views\templates\pages.php(149): view()
+ 8 SYSTEMPATH\View\View.php(213): include('F:\\ksp_project\\www\\app\\Views\\templates\\pages.php')
+ 9 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+11 APPPATH\Controllers\Pages.php(59): view()
+12 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->view()
+13 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+14 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-14 11:53:30 --> Invalid file: "/filenotfound/filenotfoundadd.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 3 APPPATH\Views\templates\modal.php(64): view()
+ 4 SYSTEMPATH\View\View.php(213): include('F:\\ksp_project\\www\\app\\Views\\templates\\modal.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 7 APPPATH\Views\templates\pages.php(149): view()
+ 8 SYSTEMPATH\View\View.php(213): include('F:\\ksp_project\\www\\app\\Views\\templates\\pages.php')
+ 9 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+11 APPPATH\Controllers\Pages.php(59): view()
+12 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->view()
+13 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+14 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-14 11:53:30 --> Invalid file: "/filenotfound/filenotfoundadd.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 3 APPPATH\Views\templates\modal.php(64): view()
+ 4 SYSTEMPATH\View\View.php(213): include('F:\\ksp_project\\www\\app\\Views\\templates\\modal.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 7 APPPATH\Views\templates\pages.php(149): view()
+ 8 SYSTEMPATH\View\View.php(213): include('F:\\ksp_project\\www\\app\\Views\\templates\\pages.php')
+ 9 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+11 APPPATH\Controllers\Pages.php(59): view()
+12 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->view()
+13 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+14 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-14 11:53:30 --> Invalid file: "/filenotfound/filenotfoundadd.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 3 APPPATH\Views\templates\modal.php(64): view()
+ 4 SYSTEMPATH\View\View.php(213): include('F:\\ksp_project\\www\\app\\Views\\templates\\modal.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 7 APPPATH\Views\templates\pages.php(149): view()
+ 8 SYSTEMPATH\View\View.php(213): include('F:\\ksp_project\\www\\app\\Views\\templates\\pages.php')
+ 9 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+11 APPPATH\Controllers\Pages.php(59): view()
+12 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->view()
+13 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+14 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-14 11:53:30 --> Invalid file: "/filenotfound/filenotfoundadd.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 3 APPPATH\Views\templates\modal.php(64): view()
+ 4 SYSTEMPATH\View\View.php(213): include('F:\\ksp_project\\www\\app\\Views\\templates\\modal.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 7 APPPATH\Views\templates\pages.php(149): view()
+ 8 SYSTEMPATH\View\View.php(213): include('F:\\ksp_project\\www\\app\\Views\\templates\\pages.php')
+ 9 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+11 APPPATH\Controllers\Pages.php(59): view()
+12 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->view()
+13 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+14 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-14 11:53:30 --> Invalid file: "/filenotfound/filenotfoundadd.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 3 APPPATH\Views\templates\modal.php(64): view()
+ 4 SYSTEMPATH\View\View.php(213): include('F:\\ksp_project\\www\\app\\Views\\templates\\modal.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 7 APPPATH\Views\templates\pages.php(149): view()
+ 8 SYSTEMPATH\View\View.php(213): include('F:\\ksp_project\\www\\app\\Views\\templates\\pages.php')
+ 9 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+11 APPPATH\Controllers\Pages.php(59): view()
+12 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->view()
+13 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+14 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-14 11:53:30 --> Invalid file: "/filenotfound/filenotfoundadd.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 3 APPPATH\Views\templates\modal.php(64): view()
+ 4 SYSTEMPATH\View\View.php(213): include('F:\\ksp_project\\www\\app\\Views\\templates\\modal.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 7 APPPATH\Views\templates\pages.php(149): view()
+ 8 SYSTEMPATH\View\View.php(213): include('F:\\ksp_project\\www\\app\\Views\\templates\\pages.php')
+ 9 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+11 APPPATH\Controllers\Pages.php(59): view()
+12 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->view()
+13 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+14 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

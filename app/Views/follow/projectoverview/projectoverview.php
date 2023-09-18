@@ -200,7 +200,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 </td>
                 <td>
                   
-                  <a href="javascript:void(0);" class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed" onclick="window.open('http://localhost/report/follow/project_follow.docx', '_blank', 'noopener, noreferrer');">
+                  <a href="javascript:void(0);" class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed" onclick="window.open('http://<?=$ip_apps;?>/report/follow/project_follow.docx', '_blank', 'noopener, noreferrer');">
                     <i class="fal fa-print">
                     </i>
                   </a>

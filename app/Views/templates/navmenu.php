@@ -99,7 +99,7 @@
 		var aoData = 'user_id=<?= $_SESSION['user_id'] ?>&description_id=<?= $description_id ?>';
 		$.ajax({
 			type: "POST",
-			url: "/public/pages/navigation",
+			url: "/public/index.php/pages/navigation",
 			dataType: "json",
 			async: false,
 			data: aoData,
@@ -144,7 +144,7 @@
 						var aoData = 'user_id=<?= $_SESSION['user_id'] ?>&description_id=<?= $description_id ?>&mom_id='+app_id;
 						$.ajax({
 							type: "POST",
-							url: "/public/pages/navigationsub",
+							url: "/public/index.php/pages/navigationsub",
 							dataType: "json",
 							async: false,
 							data: aoData,

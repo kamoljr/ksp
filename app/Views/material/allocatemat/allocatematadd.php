@@ -203,9 +203,9 @@
                     </div>
                     <span class="text-danger stars">  </span> 
                   </div>
-                  <!-- <div class="col-md-2 mb-2" style="padding-top:0px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
+                  <div class="col-md-2 mb-2" style="padding-top:0px;padding-bottom:0px;font-size:13px;margin-bottom:0px !important;">
                      
-                  </div>  -->
+                  </div> 
 
 
                 </div>
