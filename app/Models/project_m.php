@@ -78,7 +78,7 @@ WHERE tu.DeleteStatus = 'N'";
   }
   public function load_select1()
   {
-    $sql = "Select unit_id,unit_name From unit_name where del_item = 'N'";
+    $sql = "Select unit_id,unit_name From unit_name where del_item = '0'";
 
     $result = $this->db->query($sql);
     $data = $result->getResultArray();
@@ -89,7 +89,7 @@ WHERE tu.DeleteStatus = 'N'";
   public function load_select2()
   {
     $unit_id = $_POST["unit_id"];
-    $sql = "Select group_id,group_name From group_name where del_item = 'N'";
+    $sql = "Select group_id,group_name From group_name where del_item = '0'";
     if ($unit_id != '') {
       $sql = $sql . ' and unit_id = ' . $unit_id;
     }

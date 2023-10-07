@@ -19,6 +19,7 @@ class Login extends BaseController
         'unit_name' => $result[0]->unit_name,
         'group_name' => $result[0]->group_name,
         'displaymode' => $result[0]->displaymode,
+        'structure_id' => $result[0]->structure_id,
       ];
       session()->set($newdata);
       //-------permission------------
@@ -33,6 +34,10 @@ class Login extends BaseController
           $_SESSION['edit_p_'.$obj->app_id] = $obj->edit_p;
           $_SESSION['del_p_'.$obj->app_id] = $obj->del_p;
       }
+
+      $this->login_m->log_login();
+      
+
       return redirect()->to('pages/view/unit');
     } else {
       $_SESSION['message'] = '<p class="color-danger-800">ชื่อผู้ใช้หรือรหัสผ่านผิดพลาด!</p>';
@@ -47,7 +52,10 @@ class Login extends BaseController
     if (!isset($_SESSION['user_name'])){
       return redirect()->to('/');
     }else{
+      
       $this->login_m = model('login_m');
+      $this->login_m->log_logout();
+      
   		$datapermission = $this->login_m->get_permission($_SESSION['user_id']);
   		foreach ($datapermission as $obj) {
   		  // unset($_SESSION['perView_'.$obj->app_id]);
@@ -65,7 +73,7 @@ class Login extends BaseController
   		unset($_SESSION['unit_name']);
   		unset($_SESSION['group_name']);
   		unset($_SESSION['displaymode']);
-
+      
       return redirect()->to('/');
     }
 

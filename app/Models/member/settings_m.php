@@ -2,12 +2,12 @@
 namespace App\Models\member;
 use CodeIgniter\Model;
 
-class unit_m extends Model
+class Settings_m extends Model
 {
   
   public function load_select1()
   {
-    $sql = "Select budget_year From strategy where del_item = 'N' order by budget_year desc";
+    $sql = "Select budget_year From strategy where del_item = '0' order by budget_year desc";
 
     $result = $this->db->query($sql);
     $data = $result->getResultArray();
@@ -28,7 +28,7 @@ class unit_m extends Model
     $query = "SELECT
     tu.unit_id,tu.unit_name
     FROM unit_name as tu
-    WHERE tu.del_item = 'N'";
+    WHERE tu.del_item = '0'";
 
      if ($unit_name != "") {
        $query .= "  and (tu.unit_name like '%$unit_name%' )";
@@ -66,7 +66,7 @@ class unit_m extends Model
   {
     $ids = $_POST["ids"];
 
-    $sql = "Select unit_name From unit_name where unit_id = " . $ids;
+    $sql = "Select timeout From ksp_setting where ksp_setting_id = 1";
 
     $result = $this->db->query($sql);
     $data = $result->getResultArray();
@@ -78,7 +78,7 @@ class unit_m extends Model
   {
     $ids = $_POST["ids"];
 
-    $sql = "Select count(group_id) as count_reccord From group_name where del_item = 'N' and unit_id = " . $ids;// ไม่เจอ return 0
+    $sql = "Select count(group_id) as count_reccord From group_name where del_item = '0' and unit_id = " . $ids;// ไม่เจอ return 0
 
     $result = $this->db->query($sql);
     $data = $result->getResultArray();
@@ -89,31 +89,18 @@ class unit_m extends Model
   
   public function save_data()
   {
-    $ids = $_POST["ids"];
-    $unit_name = $_POST["unit_name"];
-
-    $count_reccord = 0;
-    if ($ids == '') {
-      $sql1 = "Select count(unit_id) as count_reccord From unit_name where del_item = 'N' and unit_name = '".$unit_name."'";
-      
-    } else {
-      $sql1 = "Select count(unit_id) as count_reccord From unit_name where del_item = 'N' and unit_name = '".$unit_name."'";
-    }
-
     
-    // $result = $this->db->query($sql1);
-    // $data = $result->getResultObject();
-    // $count_reccord = $data[0]->count_reccord;
-    
-    if ($ids == '') {
-      $sql = "INSERT INTO unit_name (unit_name) VALUES ('$unit_name')";
-    } else {
-      $sql = "Update unit_name set unit_name = '$unit_name' Where unit_id = $ids";
-    }
+    $time_out_add = $_POST["time_out_add"];
+
+    $sql = "Update ksp_setting set timeout = '$time_out_add' Where ksp_setting_id = 1";
    
-
     $result = $this->db->query($sql);
-
+    $this->shared_m = model("member/shared_m");
+    //------------------log รวมกลุ่มงาน---------------------
+    $max_ids = 1;//แก่  
+    $action_detail = "ตั้งค่าระบบ กำหนด Time out ".$time_out_add." นาที";
+    $this->shared_m->logksp("ตั้งค่าระบบ",$action_detail,$max_ids,19,"ตั้งค่าระบบ");
+    //------------------------------------------ 
     
     return $result;//succes return 1 not succrs return 0 
   }

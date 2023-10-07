@@ -2,9 +2,9 @@
 namespace App\Controllers\member;
 use App\Controllers\BaseController;
 
-class User_cn extends BaseController
+class Settings_cn extends BaseController
 {
-	public $m_name = 'member/user_m';
+	public $m_name = 'member/settings_m';
 
 	// ------------เปิด แก้ไข--------------
 	public function search_select1()

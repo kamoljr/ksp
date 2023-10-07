@@ -1,6 +1,14 @@
 <?
 $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; // get full url
 ?>
+<?
+									// $toDay = mktime(date("H"),date("i"),date("s"),date("m") ,date("d"),date("Y")); 
+									
+									// echo date_default_timezone_get()."<br>";
+									// echo $toDay."<br>";
+									// echo date("H:i:s" , $toDay)."<br>";; 
+									// echo $app_name;
+								?>
 <div class="row">
   <div class="col-xl-12">
     <div id="panel-1" class="panel" style="margin-bottom: 15px;">
@@ -13,6 +21,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <i class="fal fa-search width-2 fs-xl">
                 </i>
                 ค้นหาโดย
+								
                 <span class="ml-auto">
                   <span class="collapsed-reveal">
                     <i class="fal fa-chevron-up fs-xl">
@@ -31,13 +40,21 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <form action="<?=$actual_link?>" method="post" accept-charset="utf-8"
                 id="form-search" name="form-search">
                   <div class="row">
-                    <div class="col-sm">
+
+										<div class="col-sm-3">
+                      <label class="form-label" for="search_structure_name">
+                        โครงสร้างปี
+                      </label>
+											<div id = "div_search_structure_name"></div>
+                    </div>
+                    <div class="col-sm-9">
                       <label class="form-label" for="unit_name_search">
                         ชื่อส่วนงาน
                       </label>
                       <input id="unit_name_search" name="unit_name_search" class="form-control searchdata"
                       type="text" placeholder="ชื่อส่วนงาน" />
                     </div>
+
                   </div>
                 </form>
               </div>
@@ -94,18 +111,35 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
 
 <script src="<?= base_url().'/';?>js/budget/<?=$pages;?>.js"></script>
 <script>
-	
-$(document).ready(function() {
 
-   $(".boss1").hide();
+$(document).ready(function() {
+	
+	searchdata();
+	// ------------------open สร้าง select------------------------
+	create_chift_unit_add("");
+
+	//-------open------
+	const select_var = {ele_name:"search_structure_name", value_edit:"",option_type:"",placeholder:"โครงสร้างปี",classselect:"select2 searchdata"};//option_type:all,"" select2:select2,ele_select_add ,searchdata
+	create_one_select(select_var);
+	//--------close-----
+	// ------------------close สร้าง select ทั้งหมด------------------------
+
+	$(".select2").select2();
+  $(".boss1").hide();
+	
   $(document).on('click', '#btn_boss1', function() {
 	  $(".boss1").show();
   });
   $('#boss1').select2({
     dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
   });
+	$(document).ready(function() {
+		$('.ele_select_add').select2({
+			dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
+		});
+	});
 
-	//create_select_budget_year();
+	// ------------------open datatable------------------------
 	var table = $("#dynamic-table").DataTable({
 			orderCellsTop: true,
 			fixedHeader: true,
@@ -135,8 +169,12 @@ $(document).ready(function() {
 
 				// เปิด แก้ไข ใส่ค่า ตัวค้นหา
 				aoData.push({
-						name: 'unit_name',
-						value: $("#unit_name_search").val()
+						name: 'unit_name_search',
+						value: $("#unit_name_search").val(),
+				});
+				aoData.push({
+						name: 'search_structure_name',
+						value: $("#search_structure_name").val(),
 				});
 				// ปิด แก้ไข ใส่ค่า ตัวค้นหา
 
@@ -144,13 +182,13 @@ $(document).ready(function() {
 			columns: [
 					// เปิด แก้ไข ใส่ค่า ที่แดสง ใน คอลัมภ์
 					{
-						data: "unit_id",
+						data: "structure_unit_id",
 					},
 					{
 						data: "unit_name",
 					},
 					{
-						data: "unit_id",
+						data: "structure_unit_id",
 						render: function(data, type, row) {
 								
 							txtex = 'data-toggle="modal" data-target=".default-example-modal-right-lg"';
@@ -164,7 +202,7 @@ $(document).ready(function() {
 
 							str_btn =
 								str_btn +
-								`<a href="javascript:void(0);" class="btn btn-outline-danger btn-icon btn-xs rounded-circle waves-effect waves-themed"data-toggle="modal" data-target="#example-modal-alert" onclick=set_del_id('${row.unit_id}')><i class="ni ni-trash"></i></a>`;
+								`<a href="javascript:void(0);" class="btn btn-outline-danger btn-icon btn-xs rounded-circle waves-effect waves-themed"data-toggle="modal" data-target="#example-modal-alert" onclick=set_del_id('${row.structure_unit_id}','${row.unit_id}')><i class="ni ni-trash"></i></a>`;
 							return str_btn;
 						},
 					},
@@ -198,6 +236,7 @@ $(document).ready(function() {
 					$("body").css("min-height", $("#table1 tr").length * 50 + 200);
 					$(window).trigger("resize");
 			},
+			// เปิด แก้ไข การเรียง
 			columnDefs: [{
 							targets: [2],
 							orderable: false,
@@ -207,37 +246,118 @@ $(document).ready(function() {
 							className: "text-center",
 					},
 			],
+			// ปิด แก้ไข การเรียง
 	});
-	function create_select_budget_year(){
+// ------------------close datatable------------------------
+	
+// ------------------open ค้าหา จุดที่ 1/2-----------------------
+	$(document).on('change', '.searchdata', function() {
+			searchdata();
+	});
+// ------------------close ค้าหา จุดที่ 1/2-----------------------
+
+
+
+	// ------------------open แกไข จุดที่ 1/2-----------------------
+	$('#dynamic-table tbody').on('click', 'td .edit-data', function() {
+			let mode = $(this).attr("mode");
+			var tr = $(this).closest('tr');
+			var row = table.row(tr);
+			var d = row.data();
+			editdata(d, mode);   
+	});
+	// ------------------close แกไข จุดที่ 1/2-----------------------
+
+
+	// ------------------open เพิ่ม จุดที่ 1/1-----------------------
+	$(document).on('click', '#btnadd', function() {
+		$(".boss1").hide();
+		$("#btn_boss1").show();
+		create_chift_unit_add("");
+		$('#chift_unit_add').select2({
+   	 dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
+  	});
+		$("#ids").val('');
+		$(".lblmode").text("เพิ่ม");
+		$("#icon_add_form").show();
+		$("#icon_edit_form").hide();
+		$("#icon_view_form").hide();
+
+		$(".div_show_rowid").hide();
+
+		$(".clear-element").val('');
+		
+			
+		$('.form-ele').prop('disabled', false);
+
+		$('.stars').show(); // ซ่อนดาวแดง
+
+		$(".dialog-data").show();
+		$(".dialog-success").hide();
+
+		$("#btn_save_change").show();
+		$("#btn_dialog_close").show();
+			
+	});
+	// ------------------close เพิ่ม จุดที่ 1/1-----------------------
+
+
+	//------------------ไม่ต้องแก้------------------
+	$(document).on('click', '#btn_dialog_close', function() {//ปุ่มปิด dialog
+			$('.default-example-modal-right').modal('toggle');
+	});
+	//------------------ปิด ไม่ต้องแก้------------------
+
+	
+	
+	$("#form_save").validate({
+		rules: {
+			unit_name: "required",
+		},
+		messages: {
+			unit_name: "กรุณาป้อนชื่อ ส่วนงาน",
+		},
+		errorPlacement: function(error, element) {
+			if (element.is(":radio")) {
+				error.appendTo(element.parents('.form-group'));
+			} else { // This is the default behavior 
+				error.insertAfter(element);
+			}
+		},
+		submitHandler: function(form) {
+			savedata();
+		}
+	});
+
+});
+
+function create_chift_unit_add(value_select){
 		var aoData = '';
 		$.ajax({
 			type: "POST",
-			url: "/public/index.php/PublicModel_cn/select_budget_year",
+			url: "/public/index.php/<?=$description_en.'/'.$pages?>_cn/create_chift_unit_add",
 			dataType: "json",
 			async:false,
 			data: aoData,
 			success: function(response) {
-				var str_select = '<select class="select2-placeholder form-control searchdata" id="select_budget_year_search" name="select_budget_year_search">';
+				var str_select = '<select class="form-ele clear-element ele_select_add" id="chift_unit_add" name="chift_unit_add">';
+				str_select = str_select+'<option value="" >-</option>';
 				$.each(response,function(i){
 					selected = '';
-					str_select = str_select+'<option value="'+response[i].budget_year+'" '+selected+' >'+response[i].budget_year+'</option>';
-	      });
+					if (value_select == response[i].user_id){selected = 'selected';}
+					str_select = str_select+'<option value="'+response[i].user_id+'" '+selected+' >'+response[i].user_name+'</option>';
+				});
 				str_select = str_select+'</select>';
-				$("#Div_budget_year").html(str_select);
+				$(".boss1").html(str_select);
 
 			},
 			error: function(response) {
 					//console.log(response);
 			}
 		});
-		$(function(){
-
-			$(".select2-placeholder").select2(
-			{
-					allowClear: false
-			});
-		});
 	}
+
+	// ------------------open ค้าหา จุดที่ 2/2-----------------------
 	function searchdata(){
   //text1 = $("#select_budget_year_search option:selected" ).text();
   //if (text1 == '') { text1 = 'ทั้งหมด'; }
@@ -260,28 +380,44 @@ $(document).ready(function() {
 			table.draw();
 		});
 	}
+	// ------------------close ค้าหา จุดที่ 1/2-----------------------
+// ------------------open แกไข จุดที่ 2/2-----------------------
 	function editdata(d, mode) {
+		console.log(d);
 		$('.default-example-modal-right').modal('toggle');
 		$(".dialog-data").show();
 		$(".dialog-success").hide();
-
 		$("#icon_add_form").hide();
-		
-
-		$("#ids").val(d.unit_id);
-		$("#txtid").text(d.unit_id);
 		$("#rowid").show();
-		let aoData = "ids=" + d.unit_id;
+
+		// เปิด แก้ไข ใส่ค่า 
+		$(".boss1").hide();
+		$("#ids").val(d.structure_unit_id);
+		
+		// ปิด แก้ไข ใส่ค่า
+		
+		let aoData = "ids=" + d.structure_unit_id;
 		$.ajax({
 			type: "POST",
-			url: "/public/index.php/member/unit_cn/edit_data",
+			url: "/public/index.php/<?=$description_en.'/'.$pages?>_cn/edit_data",
 			dataType: "json",
 			beforeSend: function () {
 				$("#overlay").fadeIn(200);
 			},
 			data: aoData,
 			success: function (response) {
+
+				if (response[0].unit_chief != 0 && response[0].unit_chief != null){
+					$(".boss1").show();
+					create_chift_unit_add(response[0].unit_chief);
+					$('#chift_unit_add').select2({
+						dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
+					});
+				}
+				
+				
 				$("#unit_name").val(response[0].unit_name);
+				$("#chift_unit_add").val(response[0].unit_chief);
 			},
 			complete: function () {
 				setTimeout(function () {
@@ -297,6 +433,7 @@ $(document).ready(function() {
 		$("#btn_dialog_close").show();
 
 		if (mode == 'edit') {
+			$("#btn_boss1").show();
 			txt = 'แก้ไข';
 			$('.form-ele').prop('disabled', false);
 			$('.stars').show(); // ซ่อนดาวแดง
@@ -307,112 +444,35 @@ $(document).ready(function() {
 
 		} else {
 			txt = 'แสดง';
-			$('.form-ele').prop('disabled', true);
+			setTimeout(function () {
+				$('.form-ele').prop('disabled', true);
+			}, 1000);
+				
+			
+
 			$('.stars').hide(); // ซ่อนดาวแดง
 			$("#btn_save_change").hide();
 
 			$("#icon_view_form").show();
 			$("#icon_edit_form").hide();
+			$("#btn_boss1").hide();
 			
 		}
 
-		$('#lbl_rowid').text("รหัส " + d.unit_id);
+		$('#lbl_rowid').text("รหัส " + d.structure_unit_id);
 
 		$('.div_show_rowid').show();
 		
 		$(".lblmode").text(txt);
 
 	}
-	// ------------- ไม่ต้องแก้จุดกที่ 1 -----------------
-	$(document).on('change', '.searchdata', function() {
-			searchdata();
-	});
+	// ------------------open แกไข จุดที่ 2/2-----------------------
 
-	$('#dynamic-table tbody').on('click', 'td .edit-data', function() {
-			let mode = $(this).attr("mode");
-			var tr = $(this).closest('tr');
-			var row = table.row(tr);
-			var d = row.data();
-			editdata(d, mode);   
-	});
+// ------------------open ลบ จุดที่ 1/1-----------------------
 
-	
-
-
-	$(document).on('click', '#btnadd', function() {
-		$("#ids").val('');
-		$(".lblmode").text("เพิ่ม");
-		$("#icon_add_form").show();
-		$("#icon_edit_form").hide();
-		$("#icon_view_form").hide();
-
-		$(".div_show_rowid").hide();
-
-		$(".clear-element").val('');
-			
-		$('.form-ele').prop('disabled', false);
-
-		$('.stars').show(); // ซ่อนดาวแดง
-
-		$(".dialog-data").show();
-		//$(".dialog-success").hide();
-
-		$("#btn_save_change").show();
-		// $("#btn_dialog_close").show();
-			
-	});
-
-	$(document).on('click', '#btn_dialog_close', function() {
-			$('.default-example-modal-right').modal('toggle');
-	});
-	searchdata();
-	
-
-	// ------------- ปิด ไม่ต้องแก้จุดกที่ 1 -----------------
-});
-
-$(document).ready(function(){
-  
-    
-		$(document).ready(function($) {
-
-  		$("#form_save").validate({
-					rules: {
-						
-						unit_name: "required",
-					
-
-					},
-					messages: {
-						unit_name: "Please enter your Name",
-						
-					},
-					errorPlacement: function(error, element) {
-						if (element.is(":radio")) {
-							error.appendTo(element.parents('.form-group'));
-						} else { // This is the default behavior 
-							error.insertAfter(element);
-						}
-					},
-					submitHandler: function(form) {
-						savedata();
-				
-					}
-
-				});
-			});
-
-  
-})
-// ------------- เปิด ไม่ต้องแก้จุดกที่ 2 -----------------
-function format(d) {
-		$(".dialog-success").hide();
-		return `<?=view("{$description_en}/{$pages}/{$pages}add.php")?>`;
-}
 function deldata() {
-	
 	$("#del_detail").text('');
-	var aoData = 'ids='+$("#ids").val();
+	var aoData = 'ids='+$("#ids").val()+"&for_log_app_id=<?=$app_id?>&for_log_app_name=<?=$app_name?>";
 	$.ajax({
 		type: "POST",
 		url: "/public/index.php/<?=$description_en;?>/<?=$pages;?>_cn/del_data",
@@ -422,8 +482,6 @@ function deldata() {
 		},
 		data: aoData,
 		success: function(response) {
-			
-			console.log("ss"+response);
 			if (response == "cannotdel"){
 				alert("รายการถูกใช้แล้ว ไม่สามารถลบได้");
 			}
@@ -443,55 +501,6 @@ function deldata() {
 	});
 }
 
-function GoCurrentPage(){
-	var table = $('#dynamic-table').DataTable();
-	var info = table.page.info();
-	var CurrentPage = info.page;
-	table.page(CurrentPage).draw(false);
-}
-
-function savedata() {
-
-	var aoData = $('#form_save').serialize()+"&ids="+$("#ids").val();
-	console.log(aoData);
-	$.ajax({
-		type: "POST",
-		url: "/public/index.php/<?=$description_en;?>/<?=$pages;?>_cn/save_data",
-		dataType: "json",
-		beforeSend: function () {
-			$("#overlay").fadeIn(200);　
-		},
-		data: aoData,
-		success: function(response) {
-		
-			$(".dialog-data").hide();
-			$(".dialog-success").show();
-
-
-			$("#btn_save_change").hide();
-			$("#btn_dialog_close").hide();
-			
-			
-			setTimeout(() => {
-				if ($("#ids").val() == "") {
-					table = $('#dynamic-table').DataTable();
-					table.draw();
-				} else { 
-					GoCurrentPage();
-				}
-				
-				$('.default-example-modal-right').modal('toggle');
-			}, "500");
-		},
-		complete: function () {
-			$("#overlay").fadeOut(200);
-		},
-		error: function(response) {
-				//console.log(response);
-		}
-	});
-}
-
 function find_count_reccord(url,aoData) { // not found return 0
 	var aoData = aoData;
 	ans = "";
@@ -500,9 +509,8 @@ function find_count_reccord(url,aoData) { // not found return 0
 			url: url,
 			dataType: "json",
 			async:false,
-			
 			beforeSend: function () {
-			
+
 			},
 			data: aoData,
 			success: function(response) {
@@ -518,13 +526,13 @@ function find_count_reccord(url,aoData) { // not found return 0
 	return ans;
 }
 
-function set_del_id(ids){
+function set_del_id(ids,unit_id){
 	$("#ids").val(ids);
 	$("#del_detail").text('รหัส ' + ids);  
 	url = "/public/index.php/<?=$description_en;?>/<?=$pages;?>_cn/chk_del";
-	aoData = 'ids='+ids;
+	aoData = 'unit_id='+unit_id+'&search_structure_name='+$("#search_structure_name").val();
 	ans = find_count_reccord(url, aoData);
-	
+	//ans = 0;
 	if (ans == 0) {
 		console.log("not found");
 		$("#btn_del_data").show();
@@ -535,7 +543,70 @@ function set_del_id(ids){
 		$("#div_del_detail").show();
 	}
 }
-// ------------- ปิด ไม่ต้องแก้จุดกที่ 2 -----------------
+// ------------------close ลบ จุดที่ 1/1-----------------------
+
+//------------------ไม่ต้องแก้------------------
+function format(d) {
+	//$(".dialog-success").hide();
+	//return `<?//=view("{$description_en}/{$pages}/{$pages}add.php")?>`;
+}
+function GoCurrentPage(){
+	var table = $('#dynamic-table').DataTable();
+	var info = table.page.info();
+	var CurrentPage = info.page;
+	table.page(CurrentPage).draw(false);
+}
+//------------------ปิด ไม่ต้องแก้------------------
+
+
+// ------------------open save จุดที่ 1/1-----------------------
+function savedata() {
+	
+	var aoData = $('#form_save').serialize()+"&search_structure_name="+$("#search_structure_name").val();
+	console.log(aoData);
+	$.ajax({
+		type: "POST",
+		url: "/public/index.php/<?=$description_en;?>/<?=$pages;?>_cn/save_data",
+		dataType: "json",
+		beforeSend: function () {
+			$("#overlay").fadeIn(200);　
+		},
+		data: aoData,
+		success: function(response) {
+			console.log("response=".response);
+			if (response == "duplicatename"){
+				alert("ชื่อรายการนี้มีอยู่แล้ว ไม่สามารถเพิ่มได้");
+			}else{
+				$(".dialog-data").hide();
+				$(".dialog-success").show();
+
+
+				$("#btn_save_change").hide();
+				$("#btn_dialog_close").hide();
+				
+				setTimeout(() => {
+					if ($("#ids").val() == "") {
+						table = $('#dynamic-table').DataTable();
+						table.draw();
+					} else { 
+						GoCurrentPage();
+					}
+					
+					$('.default-example-modal-right').modal('toggle');
+				}, "500");
+			}
+		},
+		complete: function () {
+			$("#overlay").fadeOut(200);
+		},
+		error: function(response) {
+				//console.log(response);
+		}
+	});
+}
+// ------------------close save จุดที่ 1/1-----------------------
+
+
 
 
 </script>

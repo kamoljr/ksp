@@ -1,0 +1,1054 @@
+CRITICAL - 2023-09-21 02:43:00 --> Undefined array key "search_structure_name"
+in APPPATH\Models\member\unit_m.php on line 38.
+ 1 APPPATH\Models\member\unit_m.php(38): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH\Controllers\member\Unit_cn.php(28): App\Models\member\unit_m->get_data()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->load_data()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-21 02:43:00 --> Undefined array key "search_structure_name"
+in APPPATH\Models\member\unit_m.php on line 38.
+ 1 APPPATH\Models\member\unit_m.php(38): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH\Controllers\member\Unit_cn.php(28): App\Models\member\unit_m->get_data()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->load_data()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-21 02:46:54 --> Undefined array key "unit_name_search"
+in APPPATH\Models\member\unit_m.php on line 37.
+ 1 APPPATH\Models\member\unit_m.php(37): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH\Controllers\member\Unit_cn.php(28): App\Models\member\unit_m->get_data()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->load_data()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-21 02:46:54 --> Undefined array key "unit_name_search"
+in APPPATH\Models\member\unit_m.php on line 37.
+ 1 APPPATH\Models\member\unit_m.php(37): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH\Controllers\member\Unit_cn.php(28): App\Models\member\unit_m->get_data()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->load_data()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-21 02:47:26 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'unit_id'.
+CRITICAL - 2023-09-21 02:47:26 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'unit_id'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\member\unit_m.php(56): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\member\Unit_cn.php(28): App\Models\member\unit_m->get_data()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->load_data()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-21 02:47:26 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'unit_id'.
+CRITICAL - 2023-09-21 02:47:26 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'unit_id'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\member\unit_m.php(56): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\member\Unit_cn.php(28): App\Models\member\unit_m->get_data()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->load_data()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-21 03:06:42 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+CRITICAL - 2023-09-21 03:06:42 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\member\unit_m.php(87): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\member\Unit_cn.php(47): App\Models\member\unit_m->edit_data()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->edit_data()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-21 03:06:46 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+CRITICAL - 2023-09-21 03:06:46 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\member\unit_m.php(87): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\member\Unit_cn.php(47): App\Models\member\unit_m->edit_data()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->edit_data()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-21 03:06:51 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+CRITICAL - 2023-09-21 03:06:51 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\member\unit_m.php(87): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\member\Unit_cn.php(47): App\Models\member\unit_m->edit_data()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->edit_data()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-21 03:06:57 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+CRITICAL - 2023-09-21 03:06:57 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\member\unit_m.php(87): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\member\Unit_cn.php(47): App\Models\member\unit_m->edit_data()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->edit_data()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-21 03:16:50 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+CRITICAL - 2023-09-21 03:16:50 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\member\unit_m.php(130): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\member\Unit_cn.php(59): App\Models\member\unit_m->save_data()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->save_data()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-21 03:17:56 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+CRITICAL - 2023-09-21 03:17:56 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\member\unit_m.php(130): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\member\Unit_cn.php(59): App\Models\member\unit_m->save_data()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->save_data()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-21 03:20:29 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+CRITICAL - 2023-09-21 03:20:29 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\member\unit_m.php(130): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\member\Unit_cn.php(59): App\Models\member\unit_m->save_data()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->save_data()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-21 03:27:31 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+CRITICAL - 2023-09-21 03:27:31 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\member\unit_m.php(130): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\member\Unit_cn.php(59): App\Models\member\unit_m->save_data()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->save_data()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-21 03:29:36 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+CRITICAL - 2023-09-21 03:29:36 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\member\unit_m.php(130): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\member\Unit_cn.php(59): App\Models\member\unit_m->save_data()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->save_data()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-21 03:30:32 --> Undefined array key "ids"
+in APPPATH\Models\member\unit_m.php on line 111.
+ 1 APPPATH\Models\member\unit_m.php(111): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH\Controllers\member\Unit_cn.php(59): App\Models\member\unit_m->save_data()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->save_data()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-21 03:30:48 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+CRITICAL - 2023-09-21 03:30:48 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\member\unit_m.php(131): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\member\Unit_cn.php(59): App\Models\member\unit_m->save_data()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->save_data()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-21 03:30:51 --> Undefined array key "ids"
+in APPPATH\Models\member\unit_m.php on line 111.
+ 1 APPPATH\Models\member\unit_m.php(111): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH\Controllers\member\Unit_cn.php(59): App\Models\member\unit_m->save_data()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->save_data()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-21 03:30:59 --> Undefined array key "ids"
+in APPPATH\Models\member\unit_m.php on line 111.
+ 1 APPPATH\Models\member\unit_m.php(111): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH\Controllers\member\Unit_cn.php(59): App\Models\member\unit_m->save_data()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->save_data()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-21 03:31:02 --> Undefined variable $result
+in APPPATH\Models\member\unit_m.php on line 136.
+ 1 APPPATH\Models\member\unit_m.php(136): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH\Controllers\member\Unit_cn.php(59): App\Models\member\unit_m->save_data()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->save_data()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-21 03:31:30 --> syntax error, unexpected token "else", expecting "function" or "const"
+in APPPATH\Models\member\unit_m.php on line 132.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 SYSTEMPATH\Config\Factories.php(129): CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH\Config\Factories.php(86): CodeIgniter\Config\Factories::__callStatic()
+ 5 SYSTEMPATH\Common.php(829): CodeIgniter\Config\Factories::models()
+ 6 APPPATH\Controllers\member\Unit_cn.php(33): model()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->create_chift_unit_add()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-21 03:31:30 --> syntax error, unexpected token "else", expecting "function" or "const"
+in APPPATH\Models\member\unit_m.php on line 132.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 SYSTEMPATH\Config\Factories.php(129): CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH\Config\Factories.php(86): CodeIgniter\Config\Factories::__callStatic()
+ 5 SYSTEMPATH\Common.php(829): CodeIgniter\Config\Factories::models()
+ 6 APPPATH\Controllers\member\Unit_cn.php(39): model()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->search_structure_name()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-21 03:31:30 --> syntax error, unexpected token "else", expecting "function" or "const"
+in APPPATH\Models\member\unit_m.php on line 132.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 SYSTEMPATH\Config\Factories.php(129): CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH\Config\Factories.php(86): CodeIgniter\Config\Factories::__callStatic()
+ 5 SYSTEMPATH\Common.php(829): CodeIgniter\Config\Factories::models()
+ 6 APPPATH\Controllers\member\Unit_cn.php(27): model()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->load_data()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-21 03:31:30 --> syntax error, unexpected token "else", expecting "function" or "const"
+in APPPATH\Models\member\unit_m.php on line 132.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 SYSTEMPATH\Config\Factories.php(129): CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH\Config\Factories.php(86): CodeIgniter\Config\Factories::__callStatic()
+ 5 SYSTEMPATH\Common.php(829): CodeIgniter\Config\Factories::models()
+ 6 APPPATH\Controllers\member\Unit_cn.php(27): model()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->load_data()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-21 03:31:30 --> syntax error, unexpected token "else", expecting "function" or "const"
+in APPPATH\Models\member\unit_m.php on line 132.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 SYSTEMPATH\Config\Factories.php(129): CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH\Config\Factories.php(86): CodeIgniter\Config\Factories::__callStatic()
+ 5 SYSTEMPATH\Common.php(829): CodeIgniter\Config\Factories::models()
+ 6 APPPATH\Controllers\member\Unit_cn.php(33): model()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->create_chift_unit_add()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-21 03:32:07 --> Undefined array key "chift_unit_add"
+in APPPATH\Models\member\unit_m.php on line 113.
+ 1 APPPATH\Models\member\unit_m.php(113): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH\Controllers\member\Unit_cn.php(59): App\Models\member\unit_m->save_data()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->save_data()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-21 03:32:15 --> Undefined array key "chift_unit_add"
+in APPPATH\Models\member\unit_m.php on line 113.
+ 1 APPPATH\Models\member\unit_m.php(113): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH\Controllers\member\Unit_cn.php(59): App\Models\member\unit_m->save_data()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->save_data()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-21 03:32:54 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+CRITICAL - 2023-09-21 03:32:54 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\member\unit_m.php(131): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\member\Unit_cn.php(59): App\Models\member\unit_m->save_data()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->save_data()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-21 03:39:51 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The INSERT statement conflicted with the FOREIGN KEY constraint "FK_structure_unit_unit_name". The conflict occurred in database "budget66", table "dbo.unit_name", column 'unit_id'.
+CRITICAL - 2023-09-21 03:39:51 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The INSERT statement conflicted with the FOREIGN KEY constraint "FK_structure_unit_unit_name". The conflict occurred in database "budget66", table "dbo.unit_name", column 'unit_id'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\member\unit_m.php(131): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\member\Unit_cn.php(59): App\Models\member\unit_m->save_data()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->save_data()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-21 04:07:20 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'unit_nam'.
+CRITICAL - 2023-09-21 04:07:20 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'unit_nam'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\member\unit_m.php(127): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\member\Unit_cn.php(59): App\Models\member\unit_m->save_data()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->save_data()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-21 04:10:14 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'unit_nam'.
+CRITICAL - 2023-09-21 04:10:14 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'unit_nam'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\member\unit_m.php(127): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\member\Unit_cn.php(59): App\Models\member\unit_m->save_data()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->save_data()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-21 04:10:29 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'unit_nam'.
+CRITICAL - 2023-09-21 04:10:29 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'unit_nam'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\member\unit_m.php(127): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\member\Unit_cn.php(59): App\Models\member\unit_m->save_data()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->save_data()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-21 09:47:16 --> Undefined array key "user_name"
+in APPPATH\Views\templates\navmenu.php on line 29.
+ 1 APPPATH\Views\templates\navmenu.php(29): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('F:\\ksp_project\\www\\app\\Views\\templates\\navmenu.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Views\templates\pages.php(119): view()
+ 6 SYSTEMPATH\View\View.php(213): include('F:\\ksp_project\\www\\app\\Views\\templates\\pages.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 9 APPPATH\Controllers\Pages.php(59): view()
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->view()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-21 09:56:23 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+CRITICAL - 2023-09-21 09:56:23 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\member\unit_m.php(87): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\member\Unit_cn.php(47): App\Models\member\unit_m->edit_data()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->edit_data()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-21 09:56:27 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+CRITICAL - 2023-09-21 09:56:27 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\member\unit_m.php(87): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\member\Unit_cn.php(47): App\Models\member\unit_m->edit_data()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->edit_data()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-21 10:31:01 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+CRITICAL - 2023-09-21 10:31:01 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\member\unit_m.php(87): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\member\Unit_cn.php(47): App\Models\member\unit_m->edit_data()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->edit_data()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-21 10:33:08 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+CRITICAL - 2023-09-21 10:33:08 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\member\unit_m.php(87): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\member\Unit_cn.php(47): App\Models\member\unit_m->edit_data()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->edit_data()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-21 10:35:10 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+CRITICAL - 2023-09-21 10:35:10 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\member\unit_m.php(87): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\member\Unit_cn.php(47): App\Models\member\unit_m->edit_data()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->edit_data()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-21 10:35:46 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+CRITICAL - 2023-09-21 10:35:46 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\member\unit_m.php(87): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\member\Unit_cn.php(47): App\Models\member\unit_m->edit_data()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->edit_data()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-21 10:35:56 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+CRITICAL - 2023-09-21 10:35:56 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\member\unit_m.php(87): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\member\Unit_cn.php(47): App\Models\member\unit_m->edit_data()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->edit_data()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-21 10:36:40 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+CRITICAL - 2023-09-21 10:36:40 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\member\unit_m.php(87): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\member\Unit_cn.php(47): App\Models\member\unit_m->edit_data()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->edit_data()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-21 10:37:06 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+CRITICAL - 2023-09-21 10:37:06 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\member\unit_m.php(87): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\member\Unit_cn.php(47): App\Models\member\unit_m->edit_data()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->edit_data()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-21 10:37:17 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+CRITICAL - 2023-09-21 10:37:17 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\member\unit_m.php(87): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\member\Unit_cn.php(47): App\Models\member\unit_m->edit_data()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->edit_data()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-21 10:37:47 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+CRITICAL - 2023-09-21 10:37:47 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\member\unit_m.php(87): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\member\Unit_cn.php(47): App\Models\member\unit_m->edit_data()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->edit_data()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-21 10:38:06 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+CRITICAL - 2023-09-21 10:38:06 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\member\unit_m.php(87): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\member\Unit_cn.php(47): App\Models\member\unit_m->edit_data()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->edit_data()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-21 10:39:01 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+CRITICAL - 2023-09-21 10:39:01 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\member\unit_m.php(87): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\member\Unit_cn.php(47): App\Models\member\unit_m->edit_data()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->edit_data()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-21 10:39:21 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+CRITICAL - 2023-09-21 10:39:21 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\member\unit_m.php(87): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\member\Unit_cn.php(47): App\Models\member\unit_m->edit_data()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->edit_data()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-21 10:39:34 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+CRITICAL - 2023-09-21 10:39:34 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\member\unit_m.php(87): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\member\Unit_cn.php(47): App\Models\member\unit_m->edit_data()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->edit_data()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-21 10:40:24 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+CRITICAL - 2023-09-21 10:40:24 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\member\unit_m.php(87): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\member\Unit_cn.php(47): App\Models\member\unit_m->edit_data()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->edit_data()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-21 10:40:52 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+CRITICAL - 2023-09-21 10:40:52 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\member\unit_m.php(87): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\member\Unit_cn.php(47): App\Models\member\unit_m->edit_data()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->edit_data()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-21 10:42:43 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+CRITICAL - 2023-09-21 10:42:43 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\member\unit_m.php(87): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\member\Unit_cn.php(47): App\Models\member\unit_m->edit_data()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->edit_data()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-21 10:43:02 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+CRITICAL - 2023-09-21 10:43:02 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\member\unit_m.php(87): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\member\Unit_cn.php(47): App\Models\member\unit_m->edit_data()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->edit_data()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-21 10:44:27 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+CRITICAL - 2023-09-21 10:44:27 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\member\unit_m.php(87): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\member\Unit_cn.php(47): App\Models\member\unit_m->edit_data()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->edit_data()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-21 10:45:02 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+CRITICAL - 2023-09-21 10:45:02 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\member\unit_m.php(87): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\member\Unit_cn.php(47): App\Models\member\unit_m->edit_data()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->edit_data()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-21 10:45:20 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+CRITICAL - 2023-09-21 10:45:20 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chift'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\member\unit_m.php(87): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\member\Unit_cn.php(47): App\Models\member\unit_m->edit_data()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->edit_data()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-21 10:58:39 --> Undefined array key "chift_unit_add"
+in APPPATH\Models\member\unit_m.php on line 112.
+ 1 APPPATH\Models\member\unit_m.php(112): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH\Controllers\member\Unit_cn.php(59): App\Models\member\unit_m->save_data()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->save_data()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-21 10:59:47 --> Undefined array key "chift_unit_add"
+in APPPATH\Models\member\unit_m.php on line 112.
+ 1 APPPATH\Models\member\unit_m.php(112): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH\Controllers\member\Unit_cn.php(59): App\Models\member\unit_m->save_data()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->save_data()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-21 10:59:56 --> Undefined array key "chift_unit_add"
+in APPPATH\Models\member\unit_m.php on line 112.
+ 1 APPPATH\Models\member\unit_m.php(112): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH\Controllers\member\Unit_cn.php(59): App\Models\member\unit_m->save_data()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->save_data()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-21 11:00:33 --> Undefined array key "chift_unit_add"
+in APPPATH\Models\member\unit_m.php on line 112.
+ 1 APPPATH\Models\member\unit_m.php(112): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH\Controllers\member\Unit_cn.php(59): App\Models\member\unit_m->save_data()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->save_data()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-21 11:00:35 --> Undefined array key "ids"
+in APPPATH\Models\member\unit_m.php on line 110.
+ 1 APPPATH\Models\member\unit_m.php(110): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH\Controllers\member\Unit_cn.php(59): App\Models\member\unit_m->save_data()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->save_data()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-21 11:01:02 --> Undefined array key "chift_unit_add"
+in APPPATH\Models\member\unit_m.php on line 112.
+ 1 APPPATH\Models\member\unit_m.php(112): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH\Controllers\member\Unit_cn.php(59): App\Models\member\unit_m->save_data()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->save_data()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-21 11:01:30 --> Undefined array key "chift_unit_add"
+in APPPATH\Models\member\unit_m.php on line 112.
+ 1 APPPATH\Models\member\unit_m.php(112): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH\Controllers\member\Unit_cn.php(59): App\Models\member\unit_m->save_data()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->save_data()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-21 11:05:03 --> Undefined variable $chift_unit_add
+in APPPATH\Models\member\unit_m.php on line 118.
+ 1 APPPATH\Models\member\unit_m.php(118): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH\Controllers\member\Unit_cn.php(59): App\Models\member\unit_m->save_data()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->save_data()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-21 11:05:16 --> Undefined array key "chift_unit_add"
+in APPPATH\Models\member\unit_m.php on line 115.
+ 1 APPPATH\Models\member\unit_m.php(115): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH\Controllers\member\Unit_cn.php(59): App\Models\member\unit_m->save_data()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->save_data()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-21 11:06:47 --> Undefined variable $chift_unit_add
+in APPPATH\Models\member\unit_m.php on line 121.
+ 1 APPPATH\Models\member\unit_m.php(121): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH\Controllers\member\Unit_cn.php(59): App\Models\member\unit_m->save_data()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->save_data()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-21 11:07:04 --> Undefined array key "chift_unit_add"
+in APPPATH\Models\member\unit_m.php on line 118.
+ 1 APPPATH\Models\member\unit_m.php(118): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH\Controllers\member\Unit_cn.php(59): App\Models\member\unit_m->save_data()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->save_data()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-21 11:21:05 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '='.
+CRITICAL - 2023-09-21 11:21:05 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '='.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\member\unit_m.php(166): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\member\Unit_cn.php(65): App\Models\member\unit_m->del_data()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->del_data()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-21 11:21:08 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '='.
+CRITICAL - 2023-09-21 11:21:08 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '='.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\member\unit_m.php(166): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\member\Unit_cn.php(65): App\Models\member\unit_m->del_data()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->del_data()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-21 11:21:16 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '='.
+CRITICAL - 2023-09-21 11:21:16 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '='.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\member\unit_m.php(166): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\member\Unit_cn.php(65): App\Models\member\unit_m->del_data()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->del_data()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-21 11:22:57 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '='.
+CRITICAL - 2023-09-21 11:22:57 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '='.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\member\unit_m.php(166): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\member\Unit_cn.php(65): App\Models\member\unit_m->del_data()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->del_data()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-21 11:23:14 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '='.
+CRITICAL - 2023-09-21 11:23:14 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '='.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\member\unit_m.php(166): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\member\Unit_cn.php(65): App\Models\member\unit_m->del_data()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->del_data()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-21 11:30:55 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '='.
+CRITICAL - 2023-09-21 11:30:55 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '='.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\member\unit_m.php(99): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\member\Unit_cn.php(53): App\Models\member\unit_m->chk_del()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->chk_del()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-21 11:31:58 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '='.
+CRITICAL - 2023-09-21 11:31:58 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '='.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\member\unit_m.php(99): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\member\Unit_cn.php(53): App\Models\member\unit_m->chk_del()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->chk_del()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-21 11:32:23 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '='.
+CRITICAL - 2023-09-21 11:32:23 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '='.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\member\unit_m.php(99): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\member\Unit_cn.php(53): App\Models\member\unit_m->chk_del()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->chk_del()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-21 11:40:03 --> Undefined variable $unit_id
+in APPPATH\Models\member\unit_m.php on line 96.
+ 1 APPPATH\Models\member\unit_m.php(96): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH\Controllers\member\Unit_cn.php(53): App\Models\member\unit_m->chk_del()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->chk_del()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-21 11:40:27 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'undefined'.
+CRITICAL - 2023-09-21 11:40:27 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'undefined'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\member\unit_m.php(97): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\member\Unit_cn.php(53): App\Models\member\unit_m->chk_del()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->chk_del()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-21 11:41:20 --> Undefined array key "unit_id"
+in APPPATH\Models\member\unit_m.php on line 94.
+ 1 APPPATH\Models\member\unit_m.php(94): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH\Controllers\member\Unit_cn.php(53): App\Models\member\unit_m->chk_del()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->chk_del()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-21 11:43:41 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '='.
+CRITICAL - 2023-09-21 11:43:41 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '='.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\member\unit_m.php(167): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\member\Unit_cn.php(65): App\Models\member\unit_m->del_data()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->del_data()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-21 12:06:16 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ','.
+CRITICAL - 2023-09-21 12:06:16 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ','.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\member\unit_m.php(139): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\member\Unit_cn.php(59): App\Models\member\unit_m->save_data()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->save_data()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-21 12:07:48 --> syntax error, unexpected token "else", expecting "function" or "const"
+in APPPATH\Models\member\unit_m.php on line 151.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 SYSTEMPATH\Config\Factories.php(129): CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH\Config\Factories.php(86): CodeIgniter\Config\Factories::__callStatic()
+ 5 SYSTEMPATH\Common.php(829): CodeIgniter\Config\Factories::models()
+ 6 APPPATH\Controllers\member\Unit_cn.php(58): model()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->save_data()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-21 12:08:53 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ','.
+CRITICAL - 2023-09-21 12:08:53 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ','.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\member\unit_m.php(139): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\member\Unit_cn.php(59): App\Models\member\unit_m->save_data()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->save_data()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-21 12:17:55 --> Undefined variable $newdata
+in APPPATH\Views\member\unit\unit.php on line 624.
+ 1 APPPATH\Views\member\unit\unit.php(624): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('F:\\ksp_project\\www\\app\\Views\\member\\unit\\unit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Views\templates\pages.php(133): view()
+ 6 SYSTEMPATH\View\View.php(213): include('F:\\ksp_project\\www\\app\\Views\\templates\\pages.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 9 APPPATH\Controllers\Pages.php(59): view()
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->view()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-21 12:18:11 --> Undefined variable $newdata
+in APPPATH\Views\member\unit\unit.php on line 5.
+ 1 APPPATH\Views\member\unit\unit.php(5): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('F:\\ksp_project\\www\\app\\Views\\member\\unit\\unit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Views\templates\pages.php(133): view()
+ 6 SYSTEMPATH\View\View.php(213): include('F:\\ksp_project\\www\\app\\Views\\templates\\pages.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 9 APPPATH\Controllers\Pages.php(59): view()
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->view()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-21 12:19:57 --> Undefined array key "unit_id"
+in APPPATH\Models\member\unit_m.php on line 94.
+ 1 APPPATH\Models\member\unit_m.php(94): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH\Controllers\member\Unit_cn.php(53): App\Models\member\unit_m->chk_del()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->chk_del()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-21 12:20:04 --> Undefined array key "structure_id"
+in APPPATH\Views\templates\logout.php on line 18.
+ 1 APPPATH\Views\templates\logout.php(18): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('F:\\ksp_project\\www\\app\\Views\\templates\\logout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Views\templates\header.php(487): view()
+ 6 SYSTEMPATH\View\View.php(213): include('F:\\ksp_project\\www\\app\\Views\\templates\\header.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 9 APPPATH\Views\templates\pages.php(127): view()
+10 SYSTEMPATH\View\View.php(213): include('F:\\ksp_project\\www\\app\\Views\\templates\\pages.php')
+11 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+13 APPPATH\Controllers\Pages.php(59): view()
+14 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->view()
+15 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+16 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+17 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-21 12:20:54 --> Undefined array key "structure_id"
+in APPPATH\Views\templates\logout.php on line 18.
+ 1 APPPATH\Views\templates\logout.php(18): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('F:\\ksp_project\\www\\app\\Views\\templates\\logout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Views\templates\header.php(487): view()
+ 6 SYSTEMPATH\View\View.php(213): include('F:\\ksp_project\\www\\app\\Views\\templates\\header.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 9 APPPATH\Views\templates\pages.php(127): view()
+10 SYSTEMPATH\View\View.php(213): include('F:\\ksp_project\\www\\app\\Views\\templates\\pages.php')
+11 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+13 APPPATH\Controllers\Pages.php(59): view()
+14 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->view()
+15 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+16 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+17 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-21 12:21:13 --> Undefined array key "structure_id"
+in APPPATH\Views\templates\logout.php on line 18.
+ 1 APPPATH\Views\templates\logout.php(18): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('F:\\ksp_project\\www\\app\\Views\\templates\\logout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Views\templates\header.php(487): view()
+ 6 SYSTEMPATH\View\View.php(213): include('F:\\ksp_project\\www\\app\\Views\\templates\\header.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 9 APPPATH\Views\templates\pages.php(127): view()
+10 SYSTEMPATH\View\View.php(213): include('F:\\ksp_project\\www\\app\\Views\\templates\\pages.php')
+11 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+13 APPPATH\Controllers\Pages.php(59): view()
+14 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->view()
+15 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+16 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+17 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-21 12:37:07 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '25660921'.
+CRITICAL - 2023-09-21 12:37:07 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '25660921'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\member\unit_m.php(133): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\member\Unit_cn.php(59): App\Models\member\unit_m->save_data()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->save_data()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-21 12:46:24 --> Call to undefined function App\Models\member\mktimenow()
+in APPPATH\Models\member\shared_m.php on line 62.
+ 1 APPPATH\Models\member\unit_m.php(135): App\Models\member\shared_m->insert_query()
+ 2 APPPATH\Controllers\member\Unit_cn.php(59): App\Models\member\unit_m->save_data()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->save_data()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-21 12:56:34 --> Undefined variable $modify_id
+in APPPATH\Models\member\unit_m.php on line 148.
+ 1 APPPATH\Models\member\unit_m.php(148): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH\Controllers\member\Unit_cn.php(59): App\Models\member\unit_m->save_data()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->save_data()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-21 12:57:28 --> Undefined variable $modify_id
+in APPPATH\Models\member\unit_m.php on line 148.
+ 1 APPPATH\Models\member\unit_m.php(148): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH\Controllers\member\Unit_cn.php(59): App\Models\member\unit_m->save_data()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->save_data()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-21 13:06:08 --> Undefined variable $make_id
+in APPPATH\Models\member\unit_m.php on line 190.
+ 1 APPPATH\Models\member\unit_m.php(190): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH\Controllers\member\Unit_cn.php(65): App\Models\member\unit_m->del_data()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->del_data()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-21 13:06:14 --> Undefined variable $make_id
+in APPPATH\Models\member\unit_m.php on line 190.
+ 1 APPPATH\Models\member\unit_m.php(190): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH\Controllers\member\Unit_cn.php(65): App\Models\member\unit_m->del_data()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->del_data()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-21 13:06:56 --> Undefined variable $make_id
+in APPPATH\Models\member\unit_m.php on line 190.
+ 1 APPPATH\Models\member\unit_m.php(190): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH\Controllers\member\Unit_cn.php(65): App\Models\member\unit_m->del_data()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->del_data()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-21 13:07:24 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table()
+ 2 SYSTEMPATH\Model.php(803): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\member\unit_m.php(189): CodeIgniter\Model->__get()
+ 4 APPPATH\Controllers\member\Unit_cn.php(65): App\Models\member\unit_m->del_data()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->del_data()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-21 13:08:15 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table()
+ 2 SYSTEMPATH\Model.php(803): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\member\unit_m.php(189): CodeIgniter\Model->__get()
+ 4 APPPATH\Controllers\member\Unit_cn.php(65): App\Models\member\unit_m->del_data()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->del_data()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-21 14:46:01 --> syntax error, unexpected variable "$totalCol", expecting "," or ";"
+in APPPATH\Models\member\group_m.php on line 37.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 SYSTEMPATH\Config\Factories.php(129): CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH\Config\Factories.php(86): CodeIgniter\Config\Factories::__callStatic()
+ 5 SYSTEMPATH\Common.php(829): CodeIgniter\Config\Factories::models()
+ 6 APPPATH\Controllers\member\Group_cn.php(33): model()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Group_cn->create_chift_unit_add()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-21 14:46:01 --> syntax error, unexpected variable "$totalCol", expecting "," or ";"
+in APPPATH\Models\member\group_m.php on line 37.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 SYSTEMPATH\Config\Factories.php(129): CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH\Config\Factories.php(86): CodeIgniter\Config\Factories::__callStatic()
+ 5 SYSTEMPATH\Common.php(829): CodeIgniter\Config\Factories::models()
+ 6 APPPATH\Controllers\member\Group_cn.php(39): model()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Group_cn->search_structure_name()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-21 14:46:01 --> syntax error, unexpected variable "$totalCol", expecting "," or ";"
+in APPPATH\Models\member\group_m.php on line 37.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 SYSTEMPATH\Config\Factories.php(129): CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH\Config\Factories.php(86): CodeIgniter\Config\Factories::__callStatic()
+ 5 SYSTEMPATH\Common.php(829): CodeIgniter\Config\Factories::models()
+ 6 APPPATH\Controllers\member\Group_cn.php(27): model()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Group_cn->load_data()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-21 14:46:01 --> syntax error, unexpected variable "$totalCol", expecting "," or ";"
+in APPPATH\Models\member\group_m.php on line 37.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 SYSTEMPATH\Config\Factories.php(129): CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH\Config\Factories.php(86): CodeIgniter\Config\Factories::__callStatic()
+ 5 SYSTEMPATH\Common.php(829): CodeIgniter\Config\Factories::models()
+ 6 APPPATH\Controllers\member\Group_cn.php(27): model()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Group_cn->load_data()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

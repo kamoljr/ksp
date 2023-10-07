@@ -10,6 +10,7 @@
         window.location.href = "http://<?=$_SERVER['HTTP_HOST']?>/"; 
     <? }?>
     </script>
+    
     <meta charset="utf-8">
     <title>
         สำนักงานเลขาธิการคุรุสภา
@@ -103,13 +104,13 @@
         <div class="page-inner">
             <!-- BEGIN Left Aside -->
             <aside class="page-sidebar">
-                <div class="page-logo">
+                <div class="page-logo" >
                     <!-- <a href="#" class="page-logo-link press-scale-down d-flex align-items-center position-relative" data-toggle="modal" data-target="#modal-shortcut"> -->
                     <a href="#" class="page-logo-link press-scale-down d-flex align-items-center position-relative">
-                        <img src="<?= base_url().'/';?>img/logo.png" alt="KSP WebApp" aria-roledescription="logo"
-                            style='width:50px;'>
+                        <img src="<?= base_url().'/';?>img/logoksp1.png" alt="KSP WebApp" aria-roledescription="logo"
+                            style='height:55px;'>
                         <span class="page-logo-text mr-1 kspname"
-                            style='font-size:14px !important;'>สำนักงานเลขาธิการคุรุสภา</span>
+                            style='font-size:18px !important;'>สำนักงานเลขาธิการคุรุสภา</span>
                         <!-- <span class="position-absolute text-white opacity-50 small pos-top pos-right mr-2 mt-n2"></span> -->
                         <!-- <i class="fal fa-angle-down d-inline-block ml-1 fs-lg color-primary-300"></i> -->
                     </a>
@@ -251,3 +252,93 @@
 
 </style>
 
+<script>
+//------------ ที่เก็บ functon รวม เท่านั้น---------------
+
+//---------------open create_one_select----------------------
+// ใช้สร้าง select 
+// const select_var1 = {
+// 	ele_name:"search_unit_id", // ชื่อ element
+// 	value_edit:"", // ใช้เลื่อกค่า ตอนแก้ไข ใส่ค่าที่ต้องการ
+// 	option_type:"", //แสดงตัวเลือกทั้งหมด หรือไม่ option_type:all,""
+// 	placeholder:"ส่วนงาน",
+// 	classselect:"select2 searchdata", //ใส่ class ที่ต้องการ 
+// 	ctr1:this.value,//เงื่อนไขแสดงข้อมูล
+// };
+// create_one_select(select_var1);
+function create_one_select(select_var){
+
+	var aoData = "a=''";
+	//console.log(select_var.ele_name+"||"+select_var.ctr1);
+	if (select_var.ctr1 != undefined){
+		aoData = aoData+"&ctr1="+select_var.ctr1;
+	}
+	if (select_var.ctr2 != undefined){
+		aoData = aoData+"&ctr2="+select_var.ctr2;
+	}
+	
+	$.ajax({
+		type: "POST",
+		url: "/public/index.php/<?=$description_en.'/'.$pages?>_cn/"+select_var.ele_name,
+		dataType: "json",
+		async:false,
+		data: aoData,
+		success: function(response) {
+			var str_select = '<select class="'+select_var.classselect+'" id="'+select_var.ele_name+'" name="'+select_var.ele_name+'" placeholder="'+select_var.placeholder+'">';
+			if (select_var.option_type == "all"){
+				str_select = str_select+'<option value="" >ทั้งหมด</option>';
+			}
+			if (select_var.option_type == "-"){
+				str_select = str_select+'<option value="" >-</option>';
+			}
+			$.each(response,function(i){
+				selected = '';
+				if (select_var.value_edit == response[i].field_id){selected = 'selected';}
+				str_select = str_select+'<option value="'+response[i].field_id+'" '+selected+' >'+response[i].field_name+'</option>';
+			});
+			str_select = str_select+'</select>';
+			$("#div_"+select_var.ele_name).html(str_select);
+		},
+		error: function(response) {
+				//console.log(response);
+		}
+	});
+}
+	//---------------close create_one_select----------------------
+
+function conventmktimetoddmmyythai(timestamp) { //แปลง mktime =เป็น วันที่ 23/04/2566
+  // Create a Date object and set its time using the Unix timestamp
+  const date = new Date(timestamp * 1000);
+
+  // Get the individual components of the date
+  const year = date.getFullYear()+543;
+  const month = date.getMonth() + 1; // Month is 0-indexed, so add 1
+  const day = date.getDate();
+  const hours = date.getHours();
+  const minutes = date.getMinutes();
+  const seconds = date.getSeconds();
+
+  // You can format the date as a string in any desired way
+  const formattedDate = `${day}/${month}/${year}`;
+  //const formattedDate = `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
+  return formattedDate;
+}
+function conventmktimetotime(timestamp) { //แปลง mktime =เป็น วันที่ 23/04/2566
+  // Create a Date object and set its time using the Unix timestamp
+  const date = new Date(timestamp * 1000);
+
+  // Get the individual components of the date
+  const year = date.getFullYear()+543;
+  const month = date.getMonth() + 1; // Month is 0-indexed, so add 1
+  const day = date.getDate();
+  const hours = date.getHours();
+  const minutes = date.getMinutes();
+  const seconds = date.getSeconds();
+
+  // You can format the date as a string in any desired way
+  const formattedDate = `${hours}:${minutes}:${seconds}`;
+  //const formattedDate = `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
+  return formattedDate;
+}
+
+</script>

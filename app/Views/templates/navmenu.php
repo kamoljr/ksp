@@ -39,10 +39,32 @@
 				</div>
 			</div>
 		</div>
+		
 		<img src="<?= base_url() . '/'; ?>img/card-backgrounds/cover-2-lg.png" class="cover" alt="cover">
 	</div>
+	<div  style = "padding-top:0px;padding-bottom:0px;padding-right:0px;padding-left:15px;height:50px; !important;">
+	
 
+		<a href="wdproject" class="app-list-item" style="width:250px;height:60px;margin-top:5px;padding-top:0px;margin-bottom:0px;" >
+				<!-- <span class="icon-stack" >
+						<i class="base-4 icon-stack-3x color-danger-500"></i>
+						<i class="base-4 icon-stack-1x color-danger-400"></i>
+						<i class="fa-solid fa-money-bill-transfer icon-stack-1x text-white"></i>
+				</span> -->
+				<div style = "display:inline;">
+					<?=$icon_system?>
+				</div>
+				<div style = "display:inline;">
+					<h6 class = "text-white" style ="padding-left:5px;display:inline;margin-top:100px !important;"><?=$description?></h6>
+				</div> 
+				<?//=$description_id;?>
+		</a>
+	
+
+			
+	</div>
 	<!-- <div id = 'Div_nav'></div> -->
+	
 	<ul id="js-nav-menu" class="nav-menu">
 <!-- 		
 		<li><a href="javascript:void(0);" title="จัดการผู้ใช้งานระบบ" class=" waves-effect waves-themed"><span class="icon-stack" style = "padding-right:30px;"><i class=" fal fa-solid fa-user-gear fs-lg text-white"></i></span><span class="nav-link-text">จัดการผู้ใช้งานระบบ</span><b class="collapse-sign"><em class="fal fa-angle-down"></em></b></a></li>
@@ -80,6 +102,7 @@
 	/* body { font-family: 'TH Sarabun New' !important;font-size:20px; !important;font-weight: bold !important;} */
 </style>
 <script src="<?= base_url() . '/'; ?>js/gral.js"></script>
+<script src="<?= base_url() . '/'; ?>js/bootbox.js"></script>
 <script src="<?= base_url() . '/'; ?>js/vendors.bundle.js"></script>
 <script src="<?= base_url() . '/'; ?>js/app.bundle.js"></script>
 <script src="<?= base_url() . '/'; ?>js/datagrid/datatables/datatables.bundle.js"></script>
@@ -134,7 +157,7 @@
 						}
 					}
 					aactive = 'class= "active open"';
-					str_select = str_select + '<li ' + aactive + '><a href="'+href+'" title="' + app_name + '">';
+					str_select = str_select + '<li ' + aactive + '><a href="<?=$link_url?>'+href+'" title="' + app_name + '">';
 					str_select = str_select + plus_circle
 					str_select = str_select + '<span class="nav-link-text"' + nav_tab + '>' + app_name + '</span></a>';
 
@@ -168,7 +191,7 @@
 									href_sub = url_main_sub;
 						
 									nav_tab = 'style="padding-left:32px;"';
-									str_select_sub = str_select_sub + '<li ' + active_sub + '><a href="'+href_sub+'" title="' + app_name_sub + '">';
+									str_select_sub = str_select_sub + '<li ' + active_sub + '><a href="<?=$link_url?>'+href_sub+'" title="' + app_name_sub + '">';
 								
 									str_select_sub = str_select_sub + '<span class="nav-link-text"' + nav_tab_sub + '>' + app_name_sub + '</span></a>';
 

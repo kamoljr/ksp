@@ -32,11 +32,14 @@ class Pages extends BaseController
 			$mom_id = $row['mom_id'];
 			$app_id = $row['app_id'];
 			$url = $row['url'];
-			$app_name = $row['app_name'];
+			$tmp_str = $row['app_name'];
+			$tmp_str = str_replace(" ",'',$tmp_str);
+			$app_name = str_replace("&emsp;",'',$tmp_str);
 			$app_name_des = $row['app_name_des'];
 			$description = $row['description'];
 			$description_id = $row['description_id'];
 			$description_en = $row['description_en'];
+			$icon_system = $row['icon_system'];
 		
 		}
 
@@ -49,8 +52,58 @@ class Pages extends BaseController
 		$data['app_name'] = $app_name;
 		$data['app_name_des'] = $app_name_des;
 		$data['description_en'] = $description_en;
+		$data['icon_system'] = $icon_system;
 
-		$data['ip_apps'] = '191.100.100.77';
+		$data['ip_apps'] = '192.168.1.34';
+
+		$data['link_url'] = "/public/index.php/pages/view/";
+
+		
+		$geturi = new \CodeIgniter\HTTP\URI(current_url());// รับค่า พารามิเตอร์จาก url
+		$segments = $geturi->getSegments();
+		//echo count($segments);
+
+		$para1 = '';
+		$para2 = '';
+		$para3 = '';
+		$para4 = '';
+		$para5 = '';
+		if (count($segments) == 6){
+			$para1 = $geturi->getSegment(6);
+		}
+		if (count($segments) == 7){
+			$para1 = $geturi->getSegment(6);
+			$para2 = $geturi->getSegment(7);
+		}
+		if (count($segments) == 8){
+			$para1 = $geturi->getSegment(6);
+			$para2 = $geturi->getSegment(7);
+			$para3 = $geturi->getSegment(8);
+		}
+		if (count($segments) == 9){
+			$para1 = $geturi->getSegment(6);
+			$para2 = $geturi->getSegment(7);
+			$para3 = $geturi->getSegment(8);
+			$para4 = $geturi->getSegment(9);
+		}
+		if (count($segments) == 10){
+			$para1 = $geturi->getSegment(6);
+			$para2 = $geturi->getSegment(7);
+			$para3 = $geturi->getSegment(8);
+			$para4 = $geturi->getSegment(9);
+			$para5 = $geturi->getSegment(10);
+		}
+		$data['para1'] = $para1;
+		$data['para2'] = $para2;
+		$data['para3'] = $para3;
+		$data['para4'] = $para4;
+		$data['para5'] = $para5;
+
+		// echo "para1=".$para1;
+		// echo "para2=".$para2;
+		// echo "para3=".$para3;
+		// echo "para4=".$para4;
+		// echo "para5=".$para5;
 		
 		//echo APPPATH.'/Views/'.$description_en.'/'.$pages.'/'.$pages.'.phpss';
 		if (!is_file(APPPATH.'/Views/'.$description_en.'/'.$pages.'/'.$pages.'.php')){

@@ -16,6 +16,8 @@
       <div class="panel-container">
         <form id="myform1" name="form1" method="post" action="" novalidate>
         <input id="ids" name="ids" type="hidden" value=""/>
+  <input id="for_log_app_id" name="for_log_app_id" type="hidden" value="<?=$app_id?>"/>
+  <input id="for_log_app_name" name="for_log_app_name" type="hidden" value="<?=$app_name?>"/>
           <div class="panel-content" style="padding-top: 20px;">
             <!-- open row  -->
             <div class="row" id = "rowid" style = 'padding-button:30px;'>

@@ -25,11 +25,22 @@ class Unit_cn extends BaseController
 	public function load_data()
 	{	
 		$this->unit_m = model($this->m_name);
-//$userModel = model('App\Models\UserModel');
-
 		$result = $this->unit_m->get_data();
 		echo $result;
 	}
+	public function create_chift_unit_add()
+	{	
+		$this->unit_m = model($this->m_name);
+		$result = $this->unit_m->create_chift_unit_add();
+		echo $result;
+	}
+	public function search_structure_name()
+	{	
+		$this->unit_m = model($this->m_name);
+		$result = $this->unit_m->search_structure_name();
+		echo $result;
+	}
+
 	public function edit_data()
 	{
 		$this->unit_m = model($this->m_name);

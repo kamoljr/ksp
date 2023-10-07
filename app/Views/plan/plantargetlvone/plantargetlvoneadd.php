@@ -1,12 +1,14 @@
 <div class="modal-body" style="padding-top:0px;padding-left:5px;background: url(<?= base_url().'';?>img/svg/pattern-1.svg) no-repeat right bottom fixed; background-size: cover;" tabindex='-1'">
 <form id="form_save" name="form_save" method="post" action=""  accept-charset="utf-8">
   <input id="ids" name="ids" type="hidden" value=""/>
+  <input id="for_log_app_id" name="for_log_app_id" type="hidden" value="<?=$app_id?>"/>
+  <input id="for_log_app_name" name="for_log_app_name" type="hidden" value="<?=$app_name?>"/>
   <div class="col-xl-12 ml-auto mr-auto" style="padding-top:0px;padding-left:10px;">
     <div class="card p-4 rounded-plus bg-faded" style="padding-top:10px !important;">
       <h5 class="color-primary-500" style = "font-weight:600;display: flex;">
         <i class="ni ni-big-plus fa-2x" id = "icon_add_form" style = "padding-right:10px;"></i>
-        <!-- <i class="ni ni-pencil fa-2x" id = "icon_edit_form" style = "padding-right:10px;"></i>
-        <i class="ni ni-eye fa-2x" id = "icon_view_form" style = "padding-right:10px;"></i> -->
+        <i class="ni ni-pencil fa-2x" id = "icon_edit_form" style = "padding-right:10px;"></i>
+        <i class="ni ni-eye fa-2x" id = "icon_view_form" style = "padding-right:10px;"></i>
         <label class = "lblmode" style = "padding-top:7px;"></label>
         <label  style = "padding-top:7px;"><?= $app_name; ?></label>
       </h5>
@@ -22,8 +24,8 @@
               </div> -->
 
               <div class="col-md-12 mb-12" style = "padding-bottom:10px;padding-right:10px;">
-                <label class="form-label color-fusion-500" style ="" for="unit_name_add">
-                  <h4>แผนยุทธศาสตร์ชาติ : ด้านการพัฒนาและเสริมสร้างศักยภาพทรัพยากรมนุยษ์</h4>
+                <label class="form-label color-fusion-500" style ="" for="">
+                  <h4>แผนยุทธศาสตร์ชาติ : <label id = "form_add_lbl_strategylvone">ด้านการพัฒนาและเสริมสร้างศักยภาพทรัพยากรมนุยษ์</h4>
                   
                 </label>
                 <!-- <select id="unit_name_add" name="unit_name_add" class="select2" placeholder="ส่วนงาน">
@@ -32,25 +34,19 @@
               </div> 
               <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
                 <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="group_name_add">
-                  เป้าหมาย
+                  เป้าหมายแผนยุทธศาสตร์ชาติ
                   <span class="text-danger stars"> * </span>
                 </label>
-                <input type="text" class="form-control form-ele clear-element" id="group_name_add" name="group_name_add" placeholder="เป้าหมาย" value="" >
+                <input type="text" class="form-control form-ele clear-element" id="plantargetlvone_add" name="plantargetlvone_add" placeholder="เป้าหมายแผนยุทธศาสตร์ชาติ" value="" >
               </div> 
               <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
                 <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;padding-left:10px;" for="group_name_add">
                   คำอธิบาย
                   <span class="text-danger stars">  </span>
                 </label>
-                <input type="text" class="form-control form-ele clear-element" id="target_add" name="target_add" placeholder="คำอธิบาย" value="" >
+                <input type="text" class="form-control form-ele clear-element" id="plantargetlvone_comment_add" name="plantargetlvone_comment_add" placeholder="คำอธิบาย" value="" >
               </div> 
-              <!-- <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
-                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="tel_add">
-                  เบอร์โทร
-                  <span class="text-danger stars"> * </span>
-                </label>
-                <input type="text" class="form-control form-ele clear-element" id="tel_add" name="tel_add" placeholder="เบอร์โทร" value="">
-              </div>  -->
+            
 
 
             </div>

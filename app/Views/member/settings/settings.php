@@ -94,7 +94,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
             </div> -->
             <!-- ปิด แก้ส่วนค้นหาโดย -->
             <div class="panel-content">
-
+            <form id="form_save" name="form_save" method="post" action=""  accept-charset="utf-8">
             <div class="form-row dialog-data ">
               
               
@@ -102,10 +102,10 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
               
               <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
                 <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="group_name_add">
-                  กำหนด Time out (วินาที)
+                  กำหนด Time out (นาที)
                   <span class="text-danger stars"> </span>
                 </label>
-                <input type="text" class="form-control form-ele clear-element" id="group_name_add" name="group_name_add" placeholder="กำหนด Time out" value="">
+                <input type="text" class="form-control form-ele clear-element" id="time_out_add" name="time_out_add" placeholder="กำหนด Time out" value="">
               </div> 
               
 
@@ -126,6 +126,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 </div>
               </div>
             </div>
+            </form>
 
             
             <?=view("templates/modalclose.php")?>
@@ -144,10 +145,81 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
 <div class="page-content-overlay" data-action="toggle" data-class="mobile-nav-on"></div>
 <!-- END Page Content -->
 
-<script src="<?= base_url().'/';?>js/budget/<?=$pages;?>.js"></script>
 <script>
+  
+// ------------------open save จุดที่ 1/1-----------------------
+function savedata() {
+	
+	// -----ใส่ค่า--------
+	var aoData = "time_out_add="+$("#time_out_add").val();
+	//----------------
+	console.log(aoData);
+	$.ajax({
+		type: "POST",
+		url: "/public/index.php/<?=$description_en;?>/<?=$pages;?>_cn/save_data",
+		dataType: "json",
+		beforeSend: function () {
+			//$("#overlay").fadeIn(200);　
+		},
+		data: aoData,
+		success: function(response) {
+			bootbox.alert('บันทึกข้อมูลแล้ว');
+		},
+		complete: function () {
+			//$("#overlay").fadeOut(200);
+		},
+		error: function(response) {
+				//console.log(response);
+		}
+	});
+}
+function editdata() { 
+  let aoData = "ids=0";
+  $.ajax({
+    type: "POST",
+    url: "/public/index.php/<?=$description_en.'/'.$pages?>_cn/edit_data",
+    dataType: "json",
+    beforeSend: function () {
     
+    },
+    data: aoData,
+    success: function (response) {
+
+      $("#time_out_add").val(response[0].timeout);
+      
+    },
+    complete: function () {
+      
+    },
+    error: function (response) {
+      //console.log(response);
+    }
+  });
+  let txt = '';
+}
+// ------------------close save จุดที่ 1/1-----------------------
 $(document).ready(function() {
+  editdata();
+
+  $("#form_save").validate({
+		rules: {
+			time_out_add: "required",
+		},
+		messages: {
+			time_out_add: "กรุณาป้อน กำหนด Time out",
+		},
+		errorPlacement: function(error, element) {
+			if (element.is(":radio")) {
+				error.appendTo(element.parents('.form-group'));
+			} else { // This is the default behavior 
+				error.insertAfter(element);
+			}
+		},
+		submitHandler: function(form) {
+			savedata();
+		}
+	});
+  
   $(".select2").select2();
   $('#unit_name_add').select2({
     dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal

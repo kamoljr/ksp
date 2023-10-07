@@ -6,7 +6,7 @@ class unit_name_m extends Model
 
   public function load_select1()
   {
-    $sql = "Select budget_year From strategy where del_item = 'N' order by budget_year desc";
+    $sql = "Select budget_year From strategy where del_item = '0' order by budget_year desc";
 
     $result = $this->db->query($sql);
     $data = $result->getResultArray();
@@ -27,7 +27,7 @@ class unit_name_m extends Model
     $query = "SELECT
     tu.unit_id,tu.unit_name
     FROM unit_name as tu
-    WHERE tu.del_item = 'N'";
+    WHERE tu.del_item = '0'";
 
      if ($unit_name != "") {
        $query .= "  and (tu.unit_name like '%$unit_name%' )";

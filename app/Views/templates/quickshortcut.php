@@ -21,13 +21,6 @@
         <li>
             <a href="strategylvone" class="app-list-item hover-white">
                 <span class="icon-stack">
-                    <!-- <i class="base-2 icon-stack-3x color-primary-600"></i>
-                    <i class="base-3 icon-stack-2x color-primary-700"></i>
-                    <i class="fa-solid fa-chess icon-stack-1x text-white fs-lg"></i> 
-                    <i class="base-2 icon-stack-3x color-primary-400"></i>
-                    <i class="base-10 text-white icon-stack-1x"></i>
-                    <i class="fa-solid fa-chess color-primary-800 icon-stack-1x"></i>-->
-
                     <i class="base-9 icon-stack-3x color-success-400"></i>
                     <i class="base-2 icon-stack-2x color-success-500"></i>
                     <i class="fa-solid fa-chess icon-stack-1x text-white"></i>
@@ -40,10 +33,6 @@
         <li>
             <a href="project" class="app-list-item hover-white">
                 <span class="icon-stack">
-                    <!-- <i class="base-2 icon-stack-3x color-primary-600"></i>
-                    <i class="base-3 icon-stack-2x color-primary-700"></i>
-                    <i class="fa-solid fa-coins icon-stack-1x text-white fs-lg"></i> -->
-
                     <i class="base-7 icon-stack-3x color-info-500"></i>
                     <i class="base-7 icon-stack-2x color-info-700"></i>
                     <i class="fa-solid fa-coins icon-stack-1x text-white"></i>
@@ -56,10 +45,6 @@
         <li>
             <a href="wdproject" class="app-list-item hover-white">
                 <span class="icon-stack">
-                    <!-- <i class="base-2 icon-stack-3x color-primary-600"></i>
-                    <i class="base-3 icon-stack-2x color-primary-700"></i>
-                    <i class="fa-solid fa-money-bill-transfer icon-stack-1x text-white fs-lg"></i> -->
-
                     <i class="base-4 icon-stack-3x color-danger-500"></i>
                     <i class="base-4 icon-stack-1x color-danger-400"></i>
                     <i class="fa-solid fa-money-bill-transfer icon-stack-1x text-white"></i>
@@ -72,9 +57,6 @@
         <li>
             <a href="payproject" class="app-list-item hover-white">
                 <span class="icon-stack">
-                    <!-- <i class="base-2 icon-stack-3x color-primary-600"></i>
-                    <i class="base-3 icon-stack-2x color-primary-700"></i>
-                    <i class="fa-solid fa-receipt icon-stack-1x text-white fs-lg"></i> -->
                     <i class="base-19 icon-stack-3x color-primary-400"></i>
                     <i class="base-7 icon-stack-2x color-primary-300"></i>
                     <i class="base-7 icon-stack-1x fs-xxl color-primary-200"></i>
@@ -89,10 +71,6 @@
         <li>
             <a href="revenue" class="app-list-item hover-white">
                 <span class="icon-stack">
-                    <!-- <i class="base-2 icon-stack-3x color-primary-600"></i>
-                    <i class="base-3 icon-stack-2x color-primary-700"></i>
-                    <i class="fa-solid fa-hand-holding-dollar icon-stack-1x text-white fs-lg"></i> -->
-
                     <i class="base-5 icon-stack-3x color-success-700 opacity-80"></i>
                     <i class="base-12 icon-stack-2x color-success-700 opacity-30"></i>
                     <i class="fa-solid fa-hand-holding-dollar icon-stack-1x text-white"></i>
@@ -105,10 +83,6 @@
         <li>
             <a href="company" class="app-list-item hover-white">
                 <span class="icon-stack">
-                    <!-- <i class="base-2 icon-stack-3x color-primary-600"></i>
-                    <i class="base-3 icon-stack-2x color-primary-700"></i>
-                    <i class="fa-solid fa-file-invoice icon-stack-1x text-white fs-lg"></i> -->
-
                     <i class="base-5 icon-stack-3x color-warning-600"></i>
                     <i class="base-7 icon-stack-2x color-warning-800 opacity-50"></i>
                     <i class="fa-solid fa-file-invoice icon-stack-1x text-white"></i>
@@ -121,9 +95,6 @@
         <li>
             <a href="assetsupplies" class="app-list-item hover-white">
                 <span class="icon-stack">
-                    <!-- <i class="base-2 icon-stack-3x color-primary-600"></i>
-                    <i class="base-3 icon-stack-2x color-primary-700"></i>
-                    <i class="fa-solid fa-people-carry-box icon-stack-1x text-white fs-lg"></i> -->
                     <i class="base-6 icon-stack-3x color-danger-600"></i>
                     <i class="fa-solid fa-people-carry-box icon-stack-1x text-white"></i>
                 </span>
@@ -135,10 +106,6 @@
         <li>
             <a href="itemmat" class="app-list-item hover-white">
                 <span class="icon-stack">
-                    <!-- <i class="base-2 icon-stack-3x color-primary-600"></i>
-                    <i class="base-3 icon-stack-2x color-primary-700"></i>
-                    <i class="fa-solid fa-boxes-packing icon-stack-1x text-white fs-lg"></i> -->
-
                     <i class="base-5 icon-stack-3x color-secondary-600"></i>
                     <i class="base-7 icon-stack-2x color-secondary-800 opacity-50"></i>
                     <i class="fa-solid fa-boxes-packing icon-stack-1x text-white"></i>
@@ -151,9 +118,6 @@
         <li>
             <a href="#" class="app-list-item hover-white">
                 <span class="icon-stack">
-                    <!-- <i class="base-2 icon-stack-3x color-primary-600"></i>
-                    <i class="base-3 icon-stack-2x color-primary-700"></i>
-                    <i class="fa-solid fa-van-shuttle icon-stack-1x text-white fs-lg"></i> -->
                     <i class="base-7 icon-stack-3x color-success-500"></i>
                     <i class="base-7 icon-stack-2x color-success-700"></i>
                     <i class="fa-solid fa-van-shuttle icon-stack-1x text-white"></i>
@@ -166,10 +130,6 @@
         <li>
             <a href="#" class="app-list-item hover-white">
                 <span class="icon-stack">
-                    <!-- <i class="base-2 icon-stack-3x color-primary-600"></i>
-                    <i class="base-3 icon-stack-2x color-primary-700"></i>
-                    <i class="fa-solid fa-calendar-days icon-stack-1x text-white fs-lg"></i> -->
-
                     <i class="base-5 icon-stack-3x color-primary-600"></i>
                     <i class="base-7 icon-stack-2x color-primary-800 opacity-50"></i>
                     <i class="fa-solid fa-calendar-days icon-stack-1x text-white"></i>
@@ -182,10 +142,6 @@
         <li>
             <a href="setevaluation" class="app-list-item hover-white">
                 <span class="icon-stack">
-                    <!-- <i class="base-2 icon-stack-3x color-primary-600"></i>
-                    <i class="base-3 icon-stack-2x color-primary-700"></i>
-                    <i class="fa-solid fa-square-poll-vertical icon-stack-1x text-white fs-lg"></i> -->
-
                     <i class="base-9 icon-stack-3x color-warning-400"></i>
                     <i class="base-2 icon-stack-2x color-warning-500"></i>
                     <i class="fa-solid fa-square-poll-vertical icon-stack-1x text-white"></i>
@@ -198,10 +154,6 @@
         <li>
             <a href="#" class="app-list-item hover-white">
                 <span class="icon-stack">
-                    <!-- <i class="base-2 icon-stack-3x color-primary-600"></i>
-                    <i class="base-3 icon-stack-2x color-primary-700"></i>
-                    <i class="fa-solid fa-money-bill-transfer icon-stack-1x text-white fs-lg"></i> -->
-
                     <i class="base-4 icon-stack-3x color-info-500"></i>
                     <i class="base-4 icon-stack-1x color-info-700"></i>
                     <i class="fa-solid fa-screwdriver-wrench icon-stack-1x text-white"></i>

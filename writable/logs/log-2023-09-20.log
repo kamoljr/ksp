@@ -1,0 +1,404 @@
+CRITICAL - 2023-09-20 11:59:57 --> Undefined array key "user_name"
+in APPPATH\Views\templates\navmenu.php on line 29.
+ 1 APPPATH\Views\templates\navmenu.php(29): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('F:\\ksp_project\\www\\app\\Views\\templates\\navmenu.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Views\templates\pages.php(119): view()
+ 6 SYSTEMPATH\View\View.php(213): include('F:\\ksp_project\\www\\app\\Views\\templates\\pages.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 9 APPPATH\Controllers\Pages.php(59): view()
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->view()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 12:00:04 --> Undefined array key "user_name"
+in APPPATH\Views\templates\navmenu.php on line 29.
+ 1 APPPATH\Views\templates\navmenu.php(29): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('F:\\ksp_project\\www\\app\\Views\\templates\\navmenu.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Views\templates\pages.php(119): view()
+ 6 SYSTEMPATH\View\View.php(213): include('F:\\ksp_project\\www\\app\\Views\\templates\\pages.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 9 APPPATH\Controllers\Pages.php(59): view()
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->view()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-20 12:13:35 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'displaymode'.
+CRITICAL - 2023-09-20 12:13:35 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'displaymode'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\login_m.php(24): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\Login.php(10): App\Models\Login_m->fetch_user_login()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-20 12:16:26 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'displaymode'.
+CRITICAL - 2023-09-20 12:16:26 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'displaymode'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\login_m.php(24): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\Login.php(10): App\Models\Login_m->fetch_user_login()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 12:16:38 --> Undefined array key "username"
+in APPPATH\Controllers\Login.php on line 9.
+ 1 APPPATH\Controllers\Login.php(9): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-20 12:17:42 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'displaymode'.
+CRITICAL - 2023-09-20 12:17:42 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'displaymode'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\login_m.php(24): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\Login.php(10): App\Models\Login_m->fetch_user_login()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-20 12:25:04 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'displaymode'.
+CRITICAL - 2023-09-20 12:25:04 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'displaymode'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\login_m.php(24): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\Login.php(10): App\Models\Login_m->fetch_user_login()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 12:26:02 --> Unclosed '(' on line 8 does not match '}'
+in APPPATH\Controllers\Login.php on line 43.
+ 1 SYSTEMPATH\Router\Router.php(507): CodeIgniter\Router\AutoRouter->getRoute()
+ 2 SYSTEMPATH\Router\Router.php(206): CodeIgniter\Router\Router->autoRoute()
+ 3 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle()
+ 4 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 12:26:28 --> Unclosed '(' on line 8 does not match '}'
+in APPPATH\Controllers\Login.php on line 43.
+ 1 SYSTEMPATH\Router\Router.php(507): CodeIgniter\Router\AutoRouter->getRoute()
+ 2 SYSTEMPATH\Router\Router.php(206): CodeIgniter\Router\Router->autoRoute()
+ 3 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle()
+ 4 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 12:26:40 --> Unclosed '(' on line 8 does not match '}'
+in APPPATH\Controllers\Login.php on line 43.
+ 1 SYSTEMPATH\Router\Router.php(507): CodeIgniter\Router\AutoRouter->getRoute()
+ 2 SYSTEMPATH\Router\Router.php(206): CodeIgniter\Router\Router->autoRoute()
+ 3 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle()
+ 4 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 12:26:41 --> Unclosed '(' on line 8 does not match '}'
+in APPPATH\Controllers\Login.php on line 43.
+ 1 SYSTEMPATH\Router\Router.php(507): CodeIgniter\Router\AutoRouter->getRoute()
+ 2 SYSTEMPATH\Router\Router.php(206): CodeIgniter\Router\Router->autoRoute()
+ 3 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle()
+ 4 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 12:26:41 --> Unclosed '(' on line 8 does not match '}'
+in APPPATH\Controllers\Login.php on line 43.
+ 1 SYSTEMPATH\Router\Router.php(507): CodeIgniter\Router\AutoRouter->getRoute()
+ 2 SYSTEMPATH\Router\Router.php(206): CodeIgniter\Router\Router->autoRoute()
+ 3 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle()
+ 4 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 12:26:41 --> Unclosed '(' on line 8 does not match '}'
+in APPPATH\Controllers\Login.php on line 43.
+ 1 SYSTEMPATH\Router\Router.php(507): CodeIgniter\Router\AutoRouter->getRoute()
+ 2 SYSTEMPATH\Router\Router.php(206): CodeIgniter\Router\Router->autoRoute()
+ 3 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle()
+ 4 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 12:27:24 --> Unclosed '(' on line 8 does not match '}'
+in APPPATH\Controllers\Login.php on line 43.
+ 1 SYSTEMPATH\Router\Router.php(507): CodeIgniter\Router\AutoRouter->getRoute()
+ 2 SYSTEMPATH\Router\Router.php(206): CodeIgniter\Router\Router->autoRoute()
+ 3 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle()
+ 4 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 12:27:45 --> syntax error, unexpected token "echo", expecting ")"
+in APPPATH\Controllers\Login.php on line 9.
+ 1 SYSTEMPATH\Router\Router.php(507): CodeIgniter\Router\AutoRouter->getRoute()
+ 2 SYSTEMPATH\Router\Router.php(206): CodeIgniter\Router\Router->autoRoute()
+ 3 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle()
+ 4 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 12:28:41 --> Unclosed '(' on line 8 does not match '}'
+in APPPATH\Controllers\Login.php on line 44.
+ 1 SYSTEMPATH\Router\Router.php(507): CodeIgniter\Router\AutoRouter->getRoute()
+ 2 SYSTEMPATH\Router\Router.php(206): CodeIgniter\Router\Router->autoRoute()
+ 3 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle()
+ 4 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 12:28:47 --> Unclosed '(' on line 8 does not match '}'
+in APPPATH\Controllers\Login.php on line 44.
+ 1 SYSTEMPATH\Router\Router.php(507): CodeIgniter\Router\AutoRouter->getRoute()
+ 2 SYSTEMPATH\Router\Router.php(206): CodeIgniter\Router\Router->autoRoute()
+ 3 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle()
+ 4 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 12:31:20 --> Unclosed '(' on line 8 does not match '}'
+in APPPATH\Controllers\Login.php on line 44.
+ 1 SYSTEMPATH\Router\Router.php(507): CodeIgniter\Router\AutoRouter->getRoute()
+ 2 SYSTEMPATH\Router\Router.php(206): CodeIgniter\Router\Router->autoRoute()
+ 3 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle()
+ 4 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 12:31:21 --> Unclosed '(' on line 8 does not match '}'
+in APPPATH\Controllers\Login.php on line 44.
+ 1 SYSTEMPATH\Router\Router.php(507): CodeIgniter\Router\AutoRouter->getRoute()
+ 2 SYSTEMPATH\Router\Router.php(206): CodeIgniter\Router\Router->autoRoute()
+ 3 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle()
+ 4 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 12:31:21 --> Unclosed '(' on line 8 does not match '}'
+in APPPATH\Controllers\Login.php on line 44.
+ 1 SYSTEMPATH\Router\Router.php(507): CodeIgniter\Router\AutoRouter->getRoute()
+ 2 SYSTEMPATH\Router\Router.php(206): CodeIgniter\Router\Router->autoRoute()
+ 3 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle()
+ 4 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 12:31:21 --> Unclosed '(' on line 8 does not match '}'
+in APPPATH\Controllers\Login.php on line 44.
+ 1 SYSTEMPATH\Router\Router.php(507): CodeIgniter\Router\AutoRouter->getRoute()
+ 2 SYSTEMPATH\Router\Router.php(206): CodeIgniter\Router\Router->autoRoute()
+ 3 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle()
+ 4 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 12:31:22 --> Unclosed '(' on line 8 does not match '}'
+in APPPATH\Controllers\Login.php on line 44.
+ 1 SYSTEMPATH\Router\Router.php(507): CodeIgniter\Router\AutoRouter->getRoute()
+ 2 SYSTEMPATH\Router\Router.php(206): CodeIgniter\Router\Router->autoRoute()
+ 3 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle()
+ 4 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 12:31:31 --> Undefined array key "user_name"
+in APPPATH\Views\templates\navmenu.php on line 29.
+ 1 APPPATH\Views\templates\navmenu.php(29): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('F:\\ksp_project\\www\\app\\Views\\templates\\navmenu.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Views\templates\pages.php(119): view()
+ 6 SYSTEMPATH\View\View.php(213): include('F:\\ksp_project\\www\\app\\Views\\templates\\pages.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 9 APPPATH\Controllers\Pages.php(59): view()
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->view()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 12:31:43 --> Unclosed '(' on line 8 does not match '}'
+in APPPATH\Controllers\Login.php on line 44.
+ 1 SYSTEMPATH\Router\Router.php(507): CodeIgniter\Router\AutoRouter->getRoute()
+ 2 SYSTEMPATH\Router\Router.php(206): CodeIgniter\Router\Router->autoRoute()
+ 3 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle()
+ 4 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 12:36:00 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\Login.php on line 44.
+ 1 SYSTEMPATH\Router\Router.php(507): CodeIgniter\Router\AutoRouter->getRoute()
+ 2 SYSTEMPATH\Router\Router.php(206): CodeIgniter\Router\Router->autoRoute()
+ 3 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle()
+ 4 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-20 12:38:24 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'displaymode'.
+CRITICAL - 2023-09-20 12:38:24 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'displaymode'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\login_m.php(24): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\Login.php(10): App\Models\Login_m->fetch_user_login()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-20 12:38:58 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'displaymode'.
+CRITICAL - 2023-09-20 12:38:58 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'displaymode'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\login_m.php(24): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\Login.php(10): App\Models\Login_m->fetch_user_login()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-20 12:39:09 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'displaymode'.
+CRITICAL - 2023-09-20 12:39:09 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'displaymode'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\login_m.php(24): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\Login.php(10): App\Models\Login_m->fetch_user_login()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 12:41:16 --> Undefined variable $data
+in APPPATH\Models\login_m.php on line 29.
+ 1 APPPATH\Models\login_m.php(29): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH\Controllers\Login.php(10): App\Models\Login_m->fetch_user_login()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-20 12:44:26 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'displaymode'.
+CRITICAL - 2023-09-20 12:44:26 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'displaymode'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\login_m.php(24): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\Login.php(11): App\Models\Login_m->fetch_user_login()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-20 12:44:47 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'displaymode'.
+CRITICAL - 2023-09-20 12:44:47 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'displaymode'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\login_m.php(24): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\Login.php(11): App\Models\Login_m->fetch_user_login()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-20 12:45:03 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'displaymode'.
+CRITICAL - 2023-09-20 12:45:03 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'displaymode'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\login_m.php(24): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\Login.php(11): App\Models\Login_m->fetch_user_login()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-20 12:45:13 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'displaymode'.
+CRITICAL - 2023-09-20 12:45:13 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'displaymode'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\login_m.php(24): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\Login.php(11): App\Models\Login_m->fetch_user_login()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-20 12:45:14 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'displaymode'.
+CRITICAL - 2023-09-20 12:45:14 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'displaymode'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\login_m.php(24): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\Login.php(11): App\Models\Login_m->fetch_user_login()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-20 12:45:15 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'displaymode'.
+CRITICAL - 2023-09-20 12:45:15 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'displaymode'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\login_m.php(24): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\Login.php(11): App\Models\Login_m->fetch_user_login()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-20 12:45:15 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'displaymode'.
+CRITICAL - 2023-09-20 12:45:15 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'displaymode'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\login_m.php(24): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\Login.php(11): App\Models\Login_m->fetch_user_login()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-20 12:45:25 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'displaymode'.
+CRITICAL - 2023-09-20 12:45:25 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'displaymode'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\login_m.php(24): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\Login.php(11): App\Models\Login_m->fetch_user_login()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-20 12:45:33 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'displaymode'.
+CRITICAL - 2023-09-20 12:45:33 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'displaymode'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\login_m.php(24): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\Login.php(11): App\Models\Login_m->fetch_user_login()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-20 12:45:53 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'displaymode'.
+CRITICAL - 2023-09-20 12:45:53 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'displaymode'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\SQLSRV\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Models\login_m.php(24): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\Login.php(11): App\Models\Login_m->fetch_user_login()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 12:46:32 --> Undefined property: stdClass::$displaymode
+in APPPATH\Controllers\Login.php on line 23.
+ 1 APPPATH\Controllers\Login.php(23): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 13:49:54 --> Undefined array key "username"
+in APPPATH\Controllers\Login.php on line 9.
+ 1 APPPATH\Controllers\Login.php(9): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 14:09:00 --> Undefined property: stdClass::$unit_id
+in APPPATH\Controllers\Login.php on line 14.
+ 1 APPPATH\Controllers\Login.php(14): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

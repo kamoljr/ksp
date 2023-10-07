@@ -31,39 +31,30 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <form action="<?=$actual_link?>" method="post" accept-charset="utf-8"
                 id="form-search" name="form-search">
                   <div class="row">
-                    <div class="col-sm-6">
-                      <label class="form-label" for="unit_name_search">
+                    <div class="col-sm-3">
+                      <label class="form-label" for="search_strategylvone_id">
                         แผนยุทธศาสตร์ชาติ
                       </label>
-                      <select id="unit_name_search" name="unit_name_search" class="select2"
-                      placeholder="แผนแม่บท">
-                        
-                        <option value="17">
-                          ด้านการพัฒนาและเสริมสร้างศักยภาพทรัพยากรมนุยษ์
-                        </option>
-                      
-                        
-                      </select>
+                      <div id = "div_search_strategylvone_id"></div>
                     </div>
-                    <div class="col-sm-6">
-                      <label class="form-label" for="unit_name_search">
+                    <div class="col-sm-3">
+                      <label class="form-label" for="search_strategylvtwo_id">
                         แผนระดับ 2
                       </label>
-                      <select id="group_name_search" name="group_name_search" class="select2"
-                      placeholder="แผนแม่บท">
-                        
-                        <option value="17">
-                          ประเด็น 12 การพัฒนาการเรียนรู้ (พ.ศ. 2561-2580)
-                        </option>
-                        <option value="17">
-                         ประเด็น 20 การบริการประชาชน และประสิทธิภาพภาครัฐ (พ.ศ. 2561-2580)
-                        </option>
-                        <option value="17">
-                         ประเด็น 23 การวิจัยและการพัฒนานวัตกรรม (พ.ศ. 2561-2580)
-                        </option>
-                        
-                        
-                      </select>
+                      <div id = "div_search_strategylvtwo_id"></div>
+                    </div>
+                    <div class="col-sm-3">
+                      <label class="form-label" for="search_plantargetlvtwo_id">
+                        เป้าหมายแผนระดับ 2
+                      </label>
+                      <div id = "div_search_plantargetlvtwo_id"></div>
+                    </div>
+                    <div class="col-sm-3">
+                      <label class="form-label" for="search_indicatorlvtwo">
+                        ตัวชี้วัดแผนระดับ 2
+                      </label>
+                      <input id="search_indicatorlvtwo" name="search_indicatorlvtwo" class="form-control searchdata"
+                      type="text" placeholder="ตัวชี้วัดแผนระดับ 2" />
                     </div>
                   </div>
                 </form>
@@ -75,7 +66,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
       </div>
     </div>
     <div class="alert alert-warning" id='searchresults' name='searchresults' style="margin-bottom: 15px;">
-      ค้นหาโดย : <u>แผนยุทธศาสตร์ชาติ </u>ด้านการพัฒนาและเสริมสร้างศักยภาพทรัพยากรมนุยษ์ <u>แผนระดับ 2</u> ประเด็น 12 การพัฒนาการเรียนรู้ (พ.ศ. 2561-2580)
+      <!-- ค้นหาโดย : <u>แผนยุทธศาสตร์ชาติ </u>ด้านการพัฒนาและเสริมสร้างศักยภาพทรัพยากรมนุยษ์ <u>แผนระดับ 2</u> ประเด็น 12 การพัฒนาการเรียนรู้ (พ.ศ. 2561-2580) -->
     </div>
   </div>
 </div>
@@ -106,13 +97,13 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <th class="text-center">
                   เชื่อมตัวชี้วัดแผนยุทธศาสตร์ชาติ
                 </th>
-                
+              
                 <th width="90">
                 </th>
               </tr>
             </thead>
             <tbody>
-              <tr>
+              <!-- <tr>
                 <td>
                   1
                 </td>
@@ -142,7 +133,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                     </i>
                   </a>
                 </td>
-              </tr>
+              </tr> -->
               
               
             </tbody>
@@ -158,67 +149,605 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
 <div class="page-content-overlay" data-action="toggle" data-class="mobile-nav-on"></div>
 <!-- END Page Content -->
 
-<script src="<?= base_url().'/';?>js/budget/<?=$pages;?>.js"></script>
+
 <script>
-    
+
 $(document).ready(function() {
-  $(".select2").select2();
-  $('#unit_name_add').select2({
-    dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
+	// ------------------open สร้าง select------------------------
+	
+
+	//-------open------
+	const select_var = {
+		ele_name:"search_strategylvone_id",
+		value_edit:"<?=$para2?>",
+		option_type:"",
+		placeholder:"แผนยุทธศาสตร์ชาติ",
+		classselect:"select2 searchdata",
+	};
+	create_one_select(select_var);
+	//--------close-----
+
+  //-------open------
+	const select_var1 = {
+		ele_name:"search_strategylvtwo_id", 
+		value_edit:"<?=$para1?>",
+		option_type:"",
+		placeholder:"แผนระดับ 2",
+		classselect:"select2 searchdata",
+		ctr1:$("#search_strategylvone_id").val(),
+	};
+	create_one_select(select_var1);
+	//--------close-----
+	//--------open-----
+	$(document).on('change', '#search_strategylvone_id', function() {
+		const select_var1 = {
+			ele_name:"search_strategylvtwo_id", // ชื่อ element
+			value_edit:"", // ใช้เลื่อกค่า ตอนแก้ไข ใส่ค่าที่ต้องการ
+			option_type:"", //แสดงตัวเลือกทั้งหมด หรือไม่ option_type:all,""
+			placeholder:"แผนระดับ 2",
+			classselect:"select2 searchdata", //ใส่ class ที่ต้องการ 
+			ctr1:this.value,//เงื่อนไขแสดงข้อมูล
+		};
+		// console.log(this.value);
+	  create_one_select(select_var1);
+		$(".select2").select2();
+
+    //$("#div_search_plantargetlvtwo_id").html("");
+    const select_var10 = {
+			ele_name:"search_plantargetlvtwo_id", // ชื่อ element
+			value_edit:"", // ใช้เลื่อกค่า ตอนแก้ไข ใส่ค่าที่ต้องการ
+			option_type:"", //แสดงตัวเลือกทั้งหมด หรือไม่ option_type:all,""
+			placeholder:"เป้าหมายแผนระดับ 2",
+			classselect:"select2 searchdata", //ใส่ class ที่ต้องการ 
+			ctr1:$("#search_strategylvtwo_id").val(),
+		};
+		// console.log(this.value);
+	  create_one_select(select_var10);
+		$(".select2").select2();
   });
+	//--------close-----
 
-  var table = $("#dynamic-table").DataTable({
-    orderCellsTop: true,
-    fixedHeader: true,
-    bLengthChange: false,
-    searching: false,
-    bAutoWidth: false,
-    bStateSave: true,
-    processing: true,
-    bPaginate: true,
-    columnDefs: [{
-      targets: [3],
-      orderable: false,
-    },
-    {
-      targets: [0],
-      className: "text-center",
-    },
-    {
-      targets: [1, 2],
-      className: "text-left",
-    }]
-
+  //-------open------
+	const select_var3 = {
+		ele_name:"search_plantargetlvtwo_id", 
+		value_edit:"<?//=$para1?>",
+		option_type:"",
+		placeholder:"เป้าหมายแผนระดับ 2",
+		classselect:"select2 searchdata",
+		ctr1:$("#search_strategylvtwo_id").val(),
+	};
+	create_one_select(select_var3);
+	//--------close-----
+	//--------open-----
+	$(document).on('change', '#search_strategylvtwo_id', function() {
+		const select_var4 = {
+			ele_name:"search_plantargetlvtwo_id", // ชื่อ element
+			value_edit:"", // ใช้เลื่อกค่า ตอนแก้ไข ใส่ค่าที่ต้องการ
+			option_type:"", //แสดงตัวเลือกทั้งหมด หรือไม่ option_type:all,""
+			placeholder:"เป้าหมายแผนระดับ 2",
+			classselect:"select2 searchdata", //ใส่ class ที่ต้องการ 
+			ctr1:this.value,//เงื่อนไขแสดงข้อมูล
+		};
+		// console.log(this.value);
+	  create_one_select(select_var4);
+		$(".select2").select2();
   });
+	//--------close-----
+	searchdata();
+	// ------------------close สร้าง select ทั้งหมด------------------------
 
-  $(document).on('click', '#btnadd',
-  function() {
-    $("#ids").val('');
+	$(".select2").select2();
+  
+	
+  
+	$(document).ready(function() {
+		$('.ele_select_add').select2({
+			dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
+		});
+	});
 
-    $(".lblmode").text("เพิ่ม");
+	// ------------------open datatable------------------------
+	var table = $("#dynamic-table").DataTable({
+			orderCellsTop: true,
+			fixedHeader: true,
+			bLengthChange: false,
+			searching: false,
+			bAutoWidth: false,
+			bStateSave: true,
+			processing: true,
+			bPaginate: true,
+			serverSide: true,
+			bProcessing: true,
+			iDisplayLength: 8,
+			bServerSide: true,
+			sAjaxSource: "/public/index.php/<?=$description_en.'/'.$pages?>_cn/load_data",
+			async: false,
+			aaSorting: [],
+			fnServerParams: function(aoData) {
+				var acolumns = this.fnSettings().aoColumns,
+				columns = [];
+				$.each(acolumns, function(i, item) {
+					columns.push(item.data);
+				});
+				aoData.push({
+					name: "columns",
+					value: columns,
+				});
 
-    $("#icon_add_form").show();
-    $("#icon_edit_form").hide();
-    $("#icon_view_form").hide();
+				// เปิด แก้ไข ใส่ค่า ตัวค้นหา
+				aoData.push({
+						name: 'search_strategylvtwo_id',
+						value: $("#search_strategylvtwo_id").val(),
+				});
+				aoData.push({
+						name: 'search_plantargetlvtwo_id',
+						value: $("#search_plantargetlvtwo_id").val(),
+				});
+				aoData.push({
+						name: 'search_indicatorlvtwo',
+						value: $("#search_indicatorlvtwo").val(),
+				});
+				// ปิด แก้ไข ใส่ค่า ตัวค้นหา
 
-    $('.div_show_rowid').css('display', 'none');
+			},
+			columns: [
+					// เปิด แก้ไข ใส่ค่า ที่แดสง ใน คอลัมภ์
+					{
+						data: "indicatorlvtwo_id",
+					},
+					{
+						data: "indicatorlvtwo",
+					},  
+					{
+						data: "indicatorlvone",
+					},
+					{
+						data: "plantargetlvtwo_id",
+						render: function(data, type, row) {
+								
+							txtex = 'data-toggle="modal" data-target=".default-example-modal-right-lg"';
+						
+							str_btn = "";
+							str_btn = str_btn +
+								`<a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data" mode = 'view'><i class="ni ni-eye"></i></a>&nbsp;&nbsp;`;
 
-    $(".clear-element").val('');
+							str_btn = str_btn +
+								`<a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data" mode = 'edit'><i class="ni ni-pencil"></i></a>&nbsp;&nbsp;`;
 
-    $('.form-ele').prop('disabled', false);
-    $('.stars').show(); // ซ่อนดาวแดง
-    $(".dialog-data").show();
-    $(".dialog-success").hide();
+							str_btn =
+								str_btn +
+								`<a href="javascript:void(0);" class="btn btn-outline-danger btn-icon btn-xs rounded-circle waves-effect waves-themed"data-toggle="modal" data-target="#example-modal-alert" onclick=set_del_id('${row.indicatorlvtwo_id}')><i class="ni ni-trash"></i></a>`;
+							return str_btn;
+						},
+					},
+					//ปิด แก้ไข ใส่ค่า ที่แดสง ใน คอลัมภ์
+			],
+			order: [
+					[0, "desc"]
+			],
+			lengthMenu: [
+					[10, 25, 50, 100],
 
-    $("#btn_save_change").show();
-    $("#btn_dialog_close").show();
+					[10, 25, 50, 100],
+			],
+			oLanguage: {
+					sLengthMenu: "_MENU_",
+			},
+			fnInitComplete: function() {
+					//oTable.fnAdjustColumnSizing();
+			},
+			fnServerData: function(sSource, aoData, fnCallback) {
+					$.ajax({
+							dataType: "json",
+							async: true,
+							type: "POST",
+							url: sSource,
+							data: aoData,
+							success: fnCallback,
+					});
+			},
+			fnDrawCallback: function() {
+					$("body").css("min-height", $("#table1 tr").length * 50 + 200);
+					$(window).trigger("resize");
+			},
+			// เปิด แก้ไข การเรียง
+			columnDefs: [{
+							targets: [3],
+							orderable: false,
+					},
+					{
+							targets: [0,3],
+							className: "text-center",
+					},
+			],
+			// ปิด แก้ไข การเรียง
+	});
+// ------------------close datatable------------------------
+	
+// ------------------open ค้าหา จุดที่ 1/2-----------------------
+	$(document).on('change', '.searchdata', function() {
+			searchdata();
+	});
+// ------------------close ค้าหา จุดที่ 1/2-----------------------
 
-  });
 
-  $(document).on('click', '#btn_dialog_close',
-  function() {
-    $('.default-example-modal-right').modal('toggle');
-  });
+
+	// ------------------open แกไข จุดที่ 1/2-----------------------
+	$('#dynamic-table tbody').on('click', 'td .edit-data', function() {
+			let mode = $(this).attr("mode");
+			var tr = $(this).closest('tr');
+			var row = table.row(tr);
+			var d = row.data();
+			editdata(d, mode);   
+	});
+	// ------------------close แกไข จุดที่ 1/2-----------------------
+
+
+	// ------------------open เพิ่ม จุดที่ 1/1-----------------------
+	$(document).on('click', '#btnadd', function() {
+		$("#form_add_lbl_strategylvone").text($("#search_strategylvone_id option:selected" ).text());
+		$("#form_add_lbl_strategylvtwo").text($("#search_strategylvtwo_id option:selected" ).text());
+		$("#form_add_lbl_plantargetlvtwo").text($("#search_plantargetlvtwo_id option:selected" ).text());
+		
+		//-------open------
+    const select_var6 = {
+      ele_name:"indicatorlvone_id_add",
+      value_edit:"",
+      option_type:"",
+      placeholder:"เชื่อมตัวชี้วัดแผนยุทธศาสตร์ชาติ",
+      classselect:"ele_select_add",
+      ctr1:$("#search_plantargetlvtwo_id").val(),
+    };
+    create_one_select(select_var6);
+    $('.ele_select_add').select2({
+			dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
+		});
+    //--------close-----
+
+		$("#ids").val('');
+		$(".lblmode").text("เพิ่ม");
+		$("#icon_add_form").show();
+		$("#icon_edit_form").hide();
+		$("#icon_view_form").hide();
+
+		$(".div_show_rowid").hide();
+
+		$(".clear-element").val('');
+		
+			
+		$('.form-ele').prop('disabled', false);
+
+		$('.stars').show(); // ซ่อนดาวแดง
+
+		$(".dialog-data").show();
+		$(".dialog-success").hide();
+
+		$("#btn_save_change").show();
+		$("#btn_dialog_close").show();
+			
+	});
+	// ------------------close เพิ่ม จุดที่ 1/1-----------------------
+
+
+	//------------------ไม่ต้องแก้------------------
+	$(document).on('click', '#btn_dialog_close', function() {//ปุ่มปิด dialog
+			$('.default-example-modal-right').modal('toggle');
+	});
+	//------------------ปิด ไม่ต้องแก้------------------
+
+	
+	
+	$("#form_save").validate({
+		rules: {
+			indicatorlvtwo_add: "required",
+		},
+		messages: {
+			indicatorlvtwo_add: "กรุณาป้อน ตัวชี้วัดแผนระดับ2",
+		},
+		errorPlacement: function(error, element) {
+			if (element.is(":radio")) {
+				error.appendTo(element.parents('.form-group'));
+			} else { // This is the default behavior 
+				error.insertAfter(element);
+			}
+		},
+		submitHandler: function(form) {
+			savedata();
+		}
+	});
 });
 
+
+	// ------------------open ค้าหา จุดที่ 2/2-----------------------
+	function searchdata(){
+	
+		text1 = "แผนยุทธศาสตร์ชาติ : ";
+		sval1 = $("#search_strategylvone_id option:selected" ).text();
+		if (sval1 == '') { sval1 = 'ทั้งหมด'; }
+		text1 = text1+"<b>"+sval1+"</b>";
+
+		text2 = "แผนระดับ 2 : ";
+		sval2 = $("#search_strategylvtwo_id option:selected" ).text();
+		if (sval2 == '') { sval2 = 'ทั้งหมด'; }
+		text2 = text2+"<b>"+sval2+"</b>";
+
+		text3 = "เป้าหมายแผนระดับ 2 : ";
+		sval3 = $("#search_plantargetlvtwo_id option:selected" ).text();
+		if (sval3 == '') { sval3 = 'ทั้งหมด'; }
+		text3 = text3+"<b>"+sval3+"</b>";
+
+		text4 = "ตัวชี้วัดแผนระดับ 2 : ";
+		sval4 = $("#search_indicatorlvtwo" ).val();
+		if (sval4 == '') { sval4 = 'ทั้งหมด'; }
+		text4 = text4+"<b>"+sval4+"</b>";
+  
+		txt_all = text1+"&ensp;&ensp;&ensp;"+text2+"&ensp;&ensp;&ensp;"+text3+"&ensp;&ensp;&ensp;"+text4;
+		let txt = `
+		<strong>ผลการค้นหา : </strong>
+		${txt_all}
+		`;
+
+		$("#searchresults").html(txt);
+
+		$(function(){
+			table = $('#dynamic-table').DataTable();
+			table.draw();
+		});
+	}
+	// ------------------close ค้าหา จุดที่ 1/2-----------------------
+// ------------------open แกไข จุดที่ 2/2-----------------------
+	function editdata(d, mode) {
+		
+		$("#form_add_lbl_strategylvone").text($("#search_strategylvone_id option:selected" ).text());
+		$("#form_add_lbl_strategylvtwo").text($("#search_strategylvtwo_id option:selected" ).text());
+		$("#form_add_lbl_plantargetlvtwo").text($("#search_plantargetlvtwo_id option:selected" ).text());
+		
+		
+		
+	
+		$('.default-example-modal-right').modal('toggle');
+		$(".dialog-data").show();
+		$(".dialog-success").hide();
+		$("#icon_add_form").hide();
+		$("#rowid").show();
+
+		// เปิด แก้ไข ใส่ค่า 
+		
+		$("#ids").val(d.indicatorlvtwo_id);
+		
+		// ปิด แก้ไข ใส่ค่า
+		
+		let aoData = "ids=" + d.indicatorlvtwo_id;
+		$.ajax({
+			type: "POST",
+			url: "/public/index.php/<?=$description_en.'/'.$pages?>_cn/edit_data",
+			dataType: "json",
+			beforeSend: function () {
+				$("#overlay").fadeIn(200);
+			},
+			data: aoData,
+			success: function (response) {
+
+			
+        //-------open------
+        const select_var7 = {
+          ele_name:"indicatorlvone_id_add",
+          value_edit:response[0].indicatorlvone_id,
+          option_type:"",
+          placeholder:"เชื่อมตัวชี้วัดแผนยุทธศาสตร์ชาติ",
+          classselect:"ele_select_add",
+          ctr1:$("#search_plantargetlvtwo_id").val(),
+        };
+        create_one_select(select_var7);
+        $('.ele_select_add').select2({
+          dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
+        });
+        //--------close-----
+				
+				
+				$("#indicatorlvtwo_add").val(response[0].indicatorlvtwo);
+				$("#indicatorlvtwo_unit_add").val(response[0].indicatorlvtwo_unit);
+
+        
+			},
+			complete: function () {
+				setTimeout(function () {
+					$("#overlay").fadeOut(200);
+				}, 100);
+			},
+			error: function (response) {
+				//console.log(response);
+			}
+		});
+		let txt = '';
+
+		$("#btn_dialog_close").show();
+
+		if (mode == 'edit') {
+		
+			txt = 'แก้ไข';
+			$('.form-ele').prop('disabled', false);
+			$('.stars').show(); // ซ่อนดาวแดง
+			$("#btn_save_change").show();
+
+			$("#icon_edit_form").show();
+			$("#icon_view_form").hide();
+
+		} else {
+			txt = 'แสดง';
+			setTimeout(function () {
+				$('.form-ele').prop('disabled', true);
+			}, 1000);
+				
+			
+
+			$('.stars').hide(); // ซ่อนดาวแดง
+			$("#btn_save_change").hide();
+
+			$("#icon_view_form").show();
+			$("#icon_edit_form").hide();
+			
+			
+		}
+
+		$('#lbl_rowid').text("รหัส " + d.indicatorlvtwo_id);
+
+		$('.div_show_rowid').show();
+		
+		$(".lblmode").text(txt);
+
+	}
+	// ------------------open แกไข จุดที่ 2/2-----------------------
+
+// ------------------open ลบ จุดที่ 1/1-----------------------
+
+function deldata() {
+  
+	$("#del_detail").text('');
+	var aoData = 'ids='+$("#ids").val()+"&for_log_app_id=<?=$app_id?>&for_log_app_name=<?=$app_name?>&";
+	$.ajax({
+		type: "POST",
+		url: "/public/index.php/<?=$description_en;?>/<?=$pages;?>_cn/del_data",
+		dataType: "json",
+		beforeSend: function () {
+			$("#overlay").fadeIn(200);　
+		},
+		data: aoData,
+		success: function(response) {
+			if (response == "cannotdel"){
+				alert("รายการถูกใช้แล้ว ไม่สามารถลบได้");
+			}
+			GoCurrentPage();
+				
+		},
+		complete: function () { // Set our complete callback, adding the .hidden class and hiding the spinner.
+			setTimeout(function(){
+				
+				$("#overlay").fadeOut(200);
+				console.log("ss");
+			},100);
+		},
+		error: function(response) {
+				//console.log(response);
+		}
+	});
+}
+
+function find_count_reccord(url,aoData) { // not found return 0
+	var aoData = aoData;
+	ans = "";
+	$.ajax({
+			type: "POST",
+			url: url,
+			dataType: "json",
+			async:false,
+			beforeSend: function () {
+
+			},
+			data: aoData,
+			success: function(response) {
+				ans = response[0].count_reccord;
+			},
+			complete: function () {
+				
+			},
+			error: function(response) {
+		
+			}
+	});
+	return ans;
+}
+
+function set_del_id(ids){
+	$("#ids").val(ids);
+	$("#del_detail").text('รหัส ' + ids);  
+	url = "/public/index.php/<?=$description_en;?>/<?=$pages;?>_cn/chk_del";
+	aoData = 'ids='+ids;// เงื่อนไขการลบ
+	ans = find_count_reccord(url, aoData);
+	//ans = 0;
+	if (ans == 0) {
+		console.log("not found");
+		$("#btn_del_data").show();
+		$("#div_del_detail").hide();
+	} else { 
+		console.log('found');
+		$("#btn_del_data").hide();
+		$("#div_del_detail").show();
+	}
+}
+// ------------------close ลบ จุดที่ 1/1-----------------------
+
+//------------------ไม่ต้องแก้------------------
+// function format(d) {
+// 	$(".dialog-success").hide();
+// 	return `<?//=view("{$description_en}/{$pages}/{$pages}add.php")?>`;
+// }
+function GoCurrentPage(){
+	var table = $('#dynamic-table').DataTable();
+	var info = table.page.info();
+	var CurrentPage = info.page;
+	table.page(CurrentPage).draw(false);
+}
+//------------------ปิด ไม่ต้องแก้------------------
+
+
+// ------------------open save จุดที่ 1/1-----------------------
+function savedata() {
+	
+	// -----ใส่ค่า--------
+	var aoData = $('#form_save').serialize()+"&search_strategylvone_id="+$("#search_strategylvone_id").val()+"&search_strategylvtwo_id="+$("#search_strategylvtwo_id").val()+"&search_plantargetlvtwo_id="+$("#search_plantargetlvtwo_id").val();
+	//----------------
+	console.log(aoData);
+	$.ajax({
+		type: "POST",
+		url: "/public/index.php/<?=$description_en;?>/<?=$pages;?>_cn/save_data",
+		dataType: "json",
+		beforeSend: function () {
+			$("#overlay").fadeIn(200);　
+		},
+		data: aoData,
+		success: function(response) {
+			//console.log("response=".response);
+			
+				$(".dialog-data").hide();
+				$(".dialog-success").show();
+
+
+				$("#btn_save_change").hide();
+				$("#btn_dialog_close").hide();
+				
+				setTimeout(() => {
+					if ($("#ids").val() == "") {
+						table = $('#dynamic-table').DataTable();
+						table.draw();
+					} else { 
+						GoCurrentPage();
+					}
+					
+					$('.default-example-modal-right').modal('toggle');
+				}, "500");
+			
+		},
+		complete: function () {
+			$("#overlay").fadeOut(200);
+		},
+		error: function(response) {
+				//console.log(response);
+		}
+	});
+}
+// ------------------close save จุดที่ 1/1-----------------------
+
+
+
+
 </script>
+<style>
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+</style>

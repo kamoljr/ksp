@@ -1,0 +1,811 @@
+INFO - 2023-09-30 08:27:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 08:27:05 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->moveunit_save()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-09-30 08:27:05 --> [DEPRECATED] Creation of dynamic property App\Models\member\Mergegroup_m::$shared_m is deprecated in APPPATH\Models\member\mergegroup_m.php on line 46.
+ 1 APPPATH\Controllers\member\Mergegroup_cn.php(52): App\Models\member\Mergegroup_m->moveunit_save()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->moveunit_save()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-30 08:27:05 --> Undefined array key "user_id"
+in APPPATH\Models\member\mergegroup_m.php on line 48.
+ 1 APPPATH\Models\member\mergegroup_m.php(48): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH\Controllers\member\Mergegroup_cn.php(52): App\Models\member\Mergegroup_m->moveunit_save()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->moveunit_save()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:06:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-30 10:06:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:06:39 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH\Controllers\Pages.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->view('unit')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-30 10:06:39 --> Undefined array key "user_name"
+in APPPATH\Views\templates\navmenu.php on line 29.
+ 1 APPPATH\Views\templates\navmenu.php(29): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('F:\\ksp_project\\www\\app\\Views\\templates\\navmenu.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Views\templates\pages.php(119): view()
+ 6 SYSTEMPATH\View\View.php(213): include('F:\\ksp_project\\www\\app\\Views\\templates\\pages.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 9 APPPATH\Controllers\Pages.php(61): view()
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->view()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:06:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-30 10:06:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:06:47 --> [DEPRECATED] Creation of dynamic property App\Controllers\Login::$login_m is deprecated in APPPATH\Controllers\Login.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:06:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:06:47 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH\Controllers\Pages.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->view('unit')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:06:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:06:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Unit_cn::$unit_m is deprecated in APPPATH\Controllers\member\Unit_cn.php on line 33.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->create_chift_unit_add()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Unit_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:06:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:06:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Unit_cn::$unit_m is deprecated in APPPATH\Controllers\member\Unit_cn.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->search_structure_name()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Unit_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:06:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:06:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Unit_cn::$unit_m is deprecated in APPPATH\Controllers\member\Unit_cn.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->load_data()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Unit_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:06:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:06:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH\Controllers\Pages.php on line 69.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->navigation()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:06:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:06:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH\Controllers\Pages.php on line 75.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->navigationsub()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:06:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:06:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Unit_cn::$unit_m is deprecated in APPPATH\Controllers\member\Unit_cn.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->load_data()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Unit_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:06:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:06:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH\Controllers\Pages.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->view('mergegroup')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:06:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:06:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH\Controllers\Pages.php on line 69.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->navigation()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:06:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:06:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH\Controllers\Pages.php on line 75.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->navigationsub()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:06:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:06:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 69.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->search_structure_id()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:06:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:06:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->create_orgchart_unit()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:06:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:06:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->create_orgchart_group()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:06:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:06:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->create_orgchart_group()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:06:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:06:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->create_orgchart_group()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:06:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:06:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->create_orgchart_group()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:06:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:06:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->create_orgchart_group()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:06:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:06:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->create_orgchart_group()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:06:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:06:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->create_orgchart_group()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:06:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:06:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->create_orgchart_group()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:06:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:06:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->create_orgchart_group()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:06:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:06:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->create_orgchart_group()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:06:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:06:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->create_orgchart_group()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:06:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:06:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->create_orgchart_group()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:06:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:06:53 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->create_orgchart_group()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:06:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:06:53 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->create_orgchart_group()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:06:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:06:53 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->create_orgchart_unit()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:06:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:06:53 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->create_orgchart_group()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:06:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:06:53 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->create_orgchart_group()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:06:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:06:53 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->create_orgchart_group()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:06:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:06:53 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->create_orgchart_group()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:06:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:06:53 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->create_orgchart_group()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:06:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:06:53 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->create_orgchart_group()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:06:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:06:53 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->create_orgchart_group()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:06:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:06:54 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->create_orgchart_group()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:06:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:06:54 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->create_orgchart_group()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:06:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:06:54 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->create_orgchart_group()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:06:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:06:54 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->create_orgchart_group()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:06:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:06:54 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->create_orgchart_group()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:06:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:06:54 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->create_orgchart_group()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:06:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:06:54 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->create_orgchart_group()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:08 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH\Controllers\Pages.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->view('mergegroup')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:08 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH\Controllers\Pages.php on line 69.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->navigation()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:08 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH\Controllers\Pages.php on line 75.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->navigationsub()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:08 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 69.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->search_structure_id()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:08 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->create_orgchart_unit()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:08 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->create_orgchart_group()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:08 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->create_orgchart_group()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:08 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->create_orgchart_group()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:09 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->create_orgchart_group()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:09 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->create_orgchart_group()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:09 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->create_orgchart_group()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:09 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->create_orgchart_group()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:09 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->create_orgchart_group()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:09 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->create_orgchart_group()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:09 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->create_orgchart_group()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:09 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->create_orgchart_group()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:09 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->create_orgchart_group()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:09 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->create_orgchart_group()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:10 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->create_orgchart_group()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:10 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->create_orgchart_unit()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:10 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->create_orgchart_group()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:10 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->create_orgchart_group()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:10 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->create_orgchart_group()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:10 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->create_orgchart_group()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:10 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->create_orgchart_group()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:10 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->create_orgchart_group()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:10 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->create_orgchart_group()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:10 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->create_orgchart_group()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:10 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->create_orgchart_group()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->create_orgchart_group()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->create_orgchart_group()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->create_orgchart_group()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->create_orgchart_group()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Mergegroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Mergegroup_cn.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Mergegroup_cn->create_orgchart_group()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Mergegroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:14 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH\Controllers\Pages.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->view('unit')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:14 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH\Controllers\Pages.php on line 69.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->navigation()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:14 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH\Controllers\Pages.php on line 75.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->navigationsub()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:14 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Unit_cn::$unit_m is deprecated in APPPATH\Controllers\member\Unit_cn.php on line 33.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->create_chift_unit_add()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Unit_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:14 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Unit_cn::$unit_m is deprecated in APPPATH\Controllers\member\Unit_cn.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->search_structure_name()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Unit_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:14 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Unit_cn::$unit_m is deprecated in APPPATH\Controllers\member\Unit_cn.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->load_data()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Unit_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:14 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Unit_cn::$unit_m is deprecated in APPPATH\Controllers\member\Unit_cn.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Unit_cn->load_data()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Unit_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:15 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH\Controllers\Pages.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->view('group')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:15 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH\Controllers\Pages.php on line 69.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->navigation()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH\Controllers\Pages.php on line 75.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->navigationsub()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Group_cn::$unit_m is deprecated in APPPATH\Controllers\member\Group_cn.php on line 33.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Group_cn->create_chift_unit_add()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Group_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Group_cn::$unit_m is deprecated in APPPATH\Controllers\member\Group_cn.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Group_cn->search_structure_name()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Group_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Group_cn::$unit_m is deprecated in APPPATH\Controllers\member\Group_cn.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Group_cn->search_unit_id()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Group_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Group_cn::$unit_m is deprecated in APPPATH\Controllers\member\Group_cn.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Group_cn->load_data()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Group_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Group_cn::$unit_m is deprecated in APPPATH\Controllers\member\Group_cn.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Group_cn->load_data()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Group_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH\Controllers\Pages.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->view('appgroup')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH\Controllers\Pages.php on line 69.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->navigation()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH\Controllers\Pages.php on line 75.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->navigationsub()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Appgroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Appgroup_cn.php on line 76.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Appgroup_cn->create_tab()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Appgroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Appgroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Appgroup_cn.php on line 94.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Appgroup_cn->create_permission()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Appgroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Appgroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Appgroup_cn.php on line 82.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Appgroup_cn->create_menu()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Appgroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Appgroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Appgroup_cn.php on line 88.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Appgroup_cn->create_menu_sub()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Appgroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:18 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Appgroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Appgroup_cn.php on line 82.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Appgroup_cn->create_menu()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Appgroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:18 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Appgroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Appgroup_cn.php on line 88.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Appgroup_cn->create_menu_sub()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Appgroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:18 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Appgroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Appgroup_cn.php on line 88.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Appgroup_cn->create_menu_sub()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Appgroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:18 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Appgroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Appgroup_cn.php on line 88.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Appgroup_cn->create_menu_sub()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Appgroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:18 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Appgroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Appgroup_cn.php on line 88.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Appgroup_cn->create_menu_sub()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Appgroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:18 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Appgroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Appgroup_cn.php on line 88.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Appgroup_cn->create_menu_sub()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Appgroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:18 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Appgroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Appgroup_cn.php on line 88.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Appgroup_cn->create_menu_sub()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Appgroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:18 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Appgroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Appgroup_cn.php on line 82.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Appgroup_cn->create_menu()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Appgroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:18 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Appgroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Appgroup_cn.php on line 88.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Appgroup_cn->create_menu_sub()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Appgroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:18 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Appgroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Appgroup_cn.php on line 82.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Appgroup_cn->create_menu()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Appgroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:19 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Appgroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Appgroup_cn.php on line 88.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Appgroup_cn->create_menu_sub()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Appgroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:19 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Appgroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Appgroup_cn.php on line 82.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Appgroup_cn->create_menu()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Appgroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:19 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Appgroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Appgroup_cn.php on line 88.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Appgroup_cn->create_menu_sub()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Appgroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:19 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Appgroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Appgroup_cn.php on line 88.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Appgroup_cn->create_menu_sub()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Appgroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:19 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Appgroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Appgroup_cn.php on line 82.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Appgroup_cn->create_menu()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Appgroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:19 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Appgroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Appgroup_cn.php on line 82.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Appgroup_cn->create_menu()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Appgroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:19 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Appgroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Appgroup_cn.php on line 82.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Appgroup_cn->create_menu()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Appgroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:19 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Appgroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Appgroup_cn.php on line 88.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Appgroup_cn->create_menu_sub()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Appgroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:19 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Appgroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Appgroup_cn.php on line 88.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Appgroup_cn->create_menu_sub()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Appgroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:19 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Appgroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Appgroup_cn.php on line 88.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Appgroup_cn->create_menu_sub()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Appgroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:20 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Appgroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Appgroup_cn.php on line 82.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Appgroup_cn->create_menu()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Appgroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:20 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Appgroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Appgroup_cn.php on line 82.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Appgroup_cn->create_menu()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Appgroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:20 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Appgroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Appgroup_cn.php on line 82.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Appgroup_cn->create_menu()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Appgroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:20 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Appgroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Appgroup_cn.php on line 82.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Appgroup_cn->create_menu()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Appgroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:20 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Appgroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Appgroup_cn.php on line 82.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Appgroup_cn->create_menu()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Appgroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:20 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Appgroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Appgroup_cn.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Appgroup_cn->load_data()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Appgroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:20 --> [DEPRECATED] Creation of dynamic property App\Controllers\member\Appgroup_cn::$unit_m is deprecated in APPPATH\Controllers\member\Appgroup_cn.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\member\Appgroup_cn->load_data()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\member\Appgroup_cn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:25 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH\Controllers\Pages.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->view('settings')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:25 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH\Controllers\Pages.php on line 69.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->navigation()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:09:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:09:25 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH\Controllers\Pages.php on line 75.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->navigationsub()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -7,7 +7,7 @@ class reset_m extends Model
   
   public function load_select1()
   {
-    $sql = "Select budget_year From strategy where del_item = 'N' order by budget_year desc";
+    $sql = "Select budget_year From strategy where del_item = '0' order by budget_year desc";
 
     $result = $this->db->query($sql);
     $data = $result->getResultArray();
@@ -28,7 +28,7 @@ class reset_m extends Model
     $query = "SELECT
     tu.unit_id,tu.unit_name
     FROM unit_name as tu
-    WHERE tu.del_item = 'N'";
+    WHERE tu.del_item = '0'";
 
      if ($unit_name != "") {
        $query .= "  and (tu.unit_name like '%$unit_name%' )";
@@ -78,7 +78,7 @@ class reset_m extends Model
   {
     $ids = $_POST["ids"];
 
-    $sql = "Select count(group_id) as count_reccord From group_name where del_item = 'N' and unit_id = " . $ids;// ไม่เจอ return 0
+    $sql = "Select count(group_id) as count_reccord From group_name where del_item = '0' and unit_id = " . $ids;// ไม่เจอ return 0
 
     $result = $this->db->query($sql);
     $data = $result->getResultArray();
@@ -94,10 +94,10 @@ class reset_m extends Model
 
     $count_reccord = 0;
     if ($ids == '') {
-      $sql1 = "Select count(unit_id) as count_reccord From unit_name where del_item = 'N' and unit_name = '".$unit_name."'";
+      $sql1 = "Select count(unit_id) as count_reccord From unit_name where del_item = '0' and unit_name = '".$unit_name."'";
       
     } else {
-      $sql1 = "Select count(unit_id) as count_reccord From unit_name where del_item = 'N' and unit_name = '".$unit_name."'";
+      $sql1 = "Select count(unit_id) as count_reccord From unit_name where del_item = '0' and unit_name = '".$unit_name."'";
     }
 
     

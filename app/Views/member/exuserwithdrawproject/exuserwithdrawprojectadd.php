@@ -1,6 +1,8 @@
 <div class="modal-body" style="padding-top:0px;padding-left:5px;background: url(<?= base_url().'';?>img/svg/pattern-1.svg) no-repeat right bottom fixed; background-size: cover;" tabindex='-1'">
 <form id="form_save" name="form_save" method="post" action=""  accept-charset="utf-8">
   <input id="ids" name="ids" type="hidden" value=""/>
+  <input id="for_log_app_id" name="for_log_app_id" type="hidden" value="<?=$app_id?>"/>
+  <input id="for_log_app_name" name="for_log_app_name" type="hidden" value="<?=$app_name?>"/>
   <div class="col-xl-12 ml-auto mr-auto" style="padding-top:0px;padding-left:10px;">
     <div class="card p-4 rounded-plus bg-faded" style="padding-top:10px !important;">
       <h5 class="color-primary-500" style = "font-weight:600;display: flex;">
@@ -21,23 +23,33 @@
                 <span><label id = "lbl_rowid"></label></span> 
               </div>
 
+              <div class="col-md-2 mb-2" style = "padding-bottom:15px;padding-left:10px;padding-right:10px;">
+                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="unit_name_add">
+                  ปีงบประมาณ
+                  <span class="text-danger stars">  </span>
+                </label>
+              </div> 
+              <div class="col-md-10 mb-10" style = "padding-bottom:25px;padding-left:10px;padding-right:10px;">
+                <label id = "lbl_budget_year_add" class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="unit_name_add">
+                </label>
+              </div> 
               <div class="col-md-12 mb-12" style = "padding-bottom:25px;padding-left:10px;padding-right:10px;">
                 <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="unit_name_add">
                   ผู้ใช้งาน
                   <span class="text-danger stars"> * </span>
                 </label>
-                <select id="unit_name_add" name="unit_name_add" class="select2" placeholder="ส่วนงาน">
-                    <option value="">เลือกส่วนงาน</option><option value="17">นางสาวดวงแก้ว อดิศวร</option><option value="18">สถาบันคุรุพัฒนา</option><option value="11">นายวีระ เทพทัต</option><option value="3">นายสมคิด วงศ์เศวต</option>
-                </select>
+                <div id = "div_user_id_add"></div>
+                
               </div> 
               <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
                 <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="group_name_add">
-                  โครงการปี 2566
+                  โครงการปี 
                   <span class="text-danger stars"> * </span>
                 </label>
-                <select id="unit_name_add1" name="unit_name_add1" class="select2" placeholder="ส่วนงาน">
+                <div id = "div_project_id_add"></div>
+                <!-- <select id="unit_name_add1" name="unit_name_add1" class="select2" placeholder="ส่วนงาน">
                     <option value="">เลือกโครงการ</option><option value="17">โครงการทดสอบ1</option><option value="18">โครงการทดสอบ2</option><option value="11">โครงการทดสอบ3</option>
-                </select>
+                </select> -->
               </div> 
               
 

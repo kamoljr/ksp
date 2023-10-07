@@ -1,6 +1,8 @@
 <div class="modal-body" style="padding-top:0px;padding-left:5px;background: url(<?= base_url().'';?>img/svg/pattern-1.svg) no-repeat right bottom fixed; background-size: cover;" tabindex='-1'">
-<form id="form_save" name="form_save" method="post" action=""  accept-charset="utf-8">
+
   <input id="ids" name="ids" type="hidden" value=""/>
+  <input id="for_log_app_id" name="for_log_app_id" type="hidden" value="<?=$app_id?>"/>
+  <input id="for_log_app_name" name="for_log_app_name" type="hidden" value="<?=$app_name?>"/>
   <div class="col-xl-12 ml-auto mr-auto" style="padding-top:0px;padding-left:10px;">
     <div class="card p-4 rounded-plus bg-faded" style="padding-top:10px !important;">
       <h5 class="color-primary-500" style = "font-weight:600;display: flex;">
@@ -9,6 +11,8 @@
         <label class = "lblmode" style = "padding-top:7px;"></label>
         <label  style = "padding-top:7px;" id = "ex_name"><?//= $app_name; ?></label>
       </h5>
+
+      <form id="form_save" name="form_save" method="post" action=""  accept-charset="utf-8">
       <div id="panel-2" class="panel deladd">
         <div class="panel-container show">
           <div class="panel-content">
@@ -16,34 +20,33 @@
             <div class="form-row dialog-data ">
               
               
-
+              
+              <div class="col-md-12 mb-12" style = "padding-bottom:25px;padding-left:10px;padding-right:10px;">
+                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="unit_name_add">
+                  <h4>
+                    <label id = "merge_group_view"></label>
+                  </h4>
+                  <input id="merge_old_group_id" name="merge_old_group_id" type="hidden" value=""/>
+                  <span class="text-danger stars">  </span>
+                </label>
+             
+              </div> 
+            
               <div class="col-md-12 mb-12" style = "padding-bottom:25px;padding-left:10px;padding-right:10px;">
                 <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="unit_name_add">
                   ส่วนงาน
                   <span class="text-danger stars"> * </span>
                 </label>
-                <select id="unit_name_add2" name="unit_name_add2" class="" placeholder="ส่วนงาน">
-                    <option value="">เลือกส่วนงาน</option><option value="17">กลุ่มพัฒนาระบบงาน</option><option value="18">สถาบันคุรุพัฒนา</option><option value="11">สำนักจรรยาบรรณวิชาชีพและนิติการ</option><option value="3">สำนักทะเบียนและใบอนุญาตประกอบวิชาชีพ</option><option value="9">สำนักเทคโนโลยีสารสนเทศ</option><option value="16">สำนักเทคโนโลยีสารสนเทศและการสื่อสาร</option><option value="5">สำนักนโยบายและแผน</option><option value="4">สำนักพัฒนาและส่งเสริมวิชาชีพ</option><option value="2">สำนักมาตรฐานวิชาชีพ</option><option value="14">สำนักยกย่องเชิดชูเกียรติวิชาชีพ</option><option value="12">สำนักส่งเสริมและพัฒนาคุรุสภาจังหวัด</option><option value="7">สำนักอำนวยการ</option><option value="8">หน่วยตรวจสอบภายใน</option>
-                </select>
+                <div id = "div_merge_unit_add"></div>
+             
               </div> 
               <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
                 <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="group_name_add">
-                  กลุ่มงาน
+                  กลุ่มงานที่ต้องการรวม
                   <span class="text-danger stars"> * </span>
                 </label>
-                <select id="group_names" name="group_names" class="" placeholder="กลุ่มงาน">
-                        
-                        <option value="17">
-                          กลุ่มการประชุมและประสานงาน	
-                        </option>
-                        <option value="18">
-                          กลุ่มการเงินและบัญชี
-                        </option>
-                        <option value="11">
-                          กลุ่มสวัสดิการ
-                        </option>
-                        
-                      </select>
+                <div id = "div_merge_group_add"></div>
+                
               </div> 
               
 
@@ -54,6 +57,9 @@
           </div>
         </div>
       </div>
+      </form>
+
+      
       <div id="panel-2" class="panel groupadd">
         <div class="panel-container show">
           <div class="panel-content">
@@ -113,6 +119,9 @@
           </div>
         </div>
       </div>
+
+
+
       <div id="panel-2" class="panel unitadd">
         <div class="panel-container">
           <div class="panel-content">
@@ -165,5 +174,5 @@
   <button type="button" class="btn btn-secondary" id = "btn_dialog_close">Close</button>
   <button type="submit" class="btn btn-primary" id ="btn_save_change">Save changes</button>
 </div>
-</form>
+
 

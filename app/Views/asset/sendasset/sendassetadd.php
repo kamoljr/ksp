@@ -1,6 +1,8 @@
 <div class="modal-body" style="padding-top:0px;padding-left:5px;background: url(<?= base_url().'';?>img/svg/pattern-1.svg) no-repeat right bottom fixed; background-size: cover;" tabindex='1000'">
 <form id="form_save" name="form_save" method="post" action=""  accept-charset="utf-8">
   <input id="ids" name="ids" type="hidden" value=""/>
+  <input id="for_log_app_id" name="for_log_app_id" type="hidden" value="<?=$app_id?>"/>
+  <input id="for_log_app_name" name="for_log_app_name" type="hidden" value="<?=$app_name?>"/>
   <div class="col-xl-12 ml-auto mr-auto" style="padding-top:0px;padding-left:10px;">
     <div class="card p-4 rounded-plus bg-faded" style="padding-top:10px !important;">
       <h5 class="color-primary-500" style = "font-weight:600;display: flex;">
