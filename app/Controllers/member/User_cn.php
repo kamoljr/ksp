@@ -46,6 +46,19 @@ class User_cn extends BaseController
 		$result = $this->unit_m->search_unit_id();
 		echo $result;
 	}
+	public function unit_id_add()
+	{	
+		$this->unit_m = model($this->m_name);
+		$result = $this->unit_m->unit_id_add();
+		echo $result;
+	}
+	public function group_id_add()
+	{	
+		$this->unit_m = model($this->m_name);
+		$result = $this->unit_m->group_id_add();
+		echo $result;
+	}
+
 	public function search_group_id()
 	{	
 		$this->unit_m = model($this->m_name);

@@ -31,11 +31,10 @@ class Indicatorlvthree_m extends Model
     //print_r($resData);
     return $resData;
   }
-
-  public function search_plantargetlvtwo_id()
+  public function search_strategylvthree_id()
   {
     $ctr1 = $_POST["ctr1"];
-    $sql = "Select plantargetlvtwo_id as field_id,plantargetlvtwo as field_name From str_plantargetlvtwo where strategylvtwo_id = $ctr1 and del_item = '0' order by plantargetlvtwo_id desc";
+    $sql = "Select strategylvthree_id as field_id,strategylvthree as field_name From str_strategylvthree where strategylvtwo_id = $ctr1 and del_item = '0' order by strategylvthree_id desc";
 
     $result = $this->db->query($sql);
     $data = $result->getResultArray();
@@ -44,13 +43,25 @@ class Indicatorlvthree_m extends Model
     return $resData;
   }
 
-  public function indicatorlvone_id_add()
+  public function search_plantargetlvthree_id()
+  {
+    $ctr1 = $_POST["ctr1"];
+    $sql = "Select plantargetlvthree_id as field_id,plantargetlvthree as field_name From str_plantargetlvthree where strategylvthree_id = $ctr1 and del_item = '0' order by plantargetlvthree_id desc";
+
+    $result = $this->db->query($sql);
+    $data = $result->getResultArray();
+    $resData = json_encode($data);
+    //print_r($resData);
+    return $resData;
+  }
+
+  public function indicatorlvtwo_id_add()
   {
     $ctr1 = $_POST["ctr1"];//plantargetlvtwo_id
-    $sql = "Select str_indicatorlvone.indicatorlvone_id as field_id,str_indicatorlvone.indicatorlvone as field_name 
-    From dbo.str_plantargetlvtwo INNER JOIN
-    dbo.str_indicatorlvone ON dbo.str_plantargetlvtwo.plantargetlvone_id = dbo.str_indicatorlvone.plantargetlvone_id
-    where str_plantargetlvtwo.plantargetlvtwo_id = $ctr1 and str_indicatorlvone.del_item = '0' order by indicatorlvone_id desc";
+    $sql = "Select str_indicatorlvtwo.indicatorlvtwo_id as field_id,str_indicatorlvtwo.indicatorlvtwo as field_name 
+    From dbo.str_plantargetlvthree INNER JOIN
+    dbo.str_indicatorlvtwo ON dbo.str_plantargetlvthree.plantargetlvtwo_id = dbo.str_indicatorlvtwo.plantargetlvtwo_id
+    where str_plantargetlvthree.plantargetlvthree_id = $ctr1 and str_indicatorlvtwo.del_item = '0' order by indicatorlvtwo_id desc";
 
     $result = $this->db->query($sql);
     $data = $result->getResultArray();
@@ -77,9 +88,9 @@ class Indicatorlvthree_m extends Model
     
     //---------ใส่ค่า----------
     // $search_strategylvone_id = $_POST["search_strategylvone_id"];
-    $search_strategylvtwo_id = $_POST["search_strategylvtwo_id"];
-    $search_plantargetlvtwo_id = $_POST["search_plantargetlvtwo_id"];
-    $search_indicatorlvtwo = $_POST["search_indicatorlvtwo"];
+    $search_strategylvthree_id = $_POST["search_strategylvthree_id"];
+    $search_plantargetlvthree_id = $_POST["search_plantargetlvthree_id"];
+    $search_indicatorlvthree = $_POST["search_indicatorlvthree"];
     //-----------------------
 
     $totalCol = $_POST["iColumns"];
@@ -88,22 +99,22 @@ class Indicatorlvthree_m extends Model
     $page_length = $_POST["iDisplayLength"];
 
     //---------แก้ sql----------
-    $query = "SELECT  dbo.str_indicatorlvtwo.indicatorlvtwo, dbo.str_indicatorlvone.indicatorlvone, dbo.str_indicatorlvtwo.indicatorlvtwo_id
+    $query = "SELECT  dbo.str_indicatorlvthree.indicatorlvthree, dbo.str_indicatorlvtwo.indicatorlvtwo, dbo.str_indicatorlvthree.indicatorlvthree_id
 
-    FROM   dbo.str_indicatorlvtwo INNER JOIN
-          dbo.str_indicatorlvone ON dbo.str_indicatorlvtwo.indicatorlvone_id = dbo.str_indicatorlvone.indicatorlvone_id
+    FROM   dbo.str_indicatorlvthree INNER JOIN
+          dbo.str_indicatorlvtwo ON dbo.str_indicatorlvthree.indicatorlvtwo_id = dbo.str_indicatorlvtwo.indicatorlvtwo_id
 
-    WHERE (dbo.str_indicatorlvtwo.del_item = N'0')";
+    WHERE (dbo.str_indicatorlvthree.del_item = N'0')";
 
-    if ($search_strategylvtwo_id != "") {
-       $query .= "  and (dbo.str_indicatorlvtwo.strategylvtwo_id = '$search_strategylvtwo_id')";
+    if ($search_strategylvthree_id != "") {
+       $query .= "  and (dbo.str_indicatorlvthree.strategylvthree_id = '$search_strategylvthree_id')";
     }
-    if ($search_plantargetlvtwo_id != "") {
-       $query .= "  and (dbo.str_indicatorlvtwo.plantargetlvtwo_id = '$search_plantargetlvtwo_id')";
+    if ($search_plantargetlvthree_id != "") {
+       $query .= "  and (dbo.str_indicatorlvthree.plantargetlvthree_id = '$search_plantargetlvthree_id')";
     }
     
-    if ($search_indicatorlvtwo != "") {
-       $query .= "  and (dbo.str_indicatorlvtwo.indicatorlvtwo like '%$search_indicatorlvtwo%' )";
+    if ($search_indicatorlvthree != "") {
+       $query .= "  and (dbo.str_indicatorlvthree.indicatorlvthree like '%$search_indicatorlvthree%' )";
     }
      //-----------------------
     //echo $query;
@@ -138,11 +149,11 @@ class Indicatorlvthree_m extends Model
     $ids = $_POST["ids"];
 
     $sql = "Select 
-    indicatorlvone_id, indicatorlvtwo, indicatorlvtwo_unit
+    indicatorlvtwo_id, indicatorlvthree, indicatorlvthree_unit
 
-    From  dbo.str_indicatorlvtwo
+    From  dbo.str_indicatorlvthree
     
-    where str_indicatorlvtwo.indicatorlvtwo_id = ".$ids;
+    where str_indicatorlvthree.indicatorlvthree_id = ".$ids;
     
     $result = $this->db->query($sql);
     $data = $result->getResultArray();
@@ -161,13 +172,13 @@ class Indicatorlvthree_m extends Model
 
     $ids = $_POST["ids"];
     //----รับค่า------
-    $search_strategylvtwo_id = $this->shared_m->replace_str($_POST["search_strategylvtwo_id"]);
-    $search_plantargetlvtwo_id = $this->shared_m->replace_str($_POST["search_plantargetlvtwo_id"]);
+    $search_strategylvthree_id = $this->shared_m->replace_str($_POST["search_strategylvthree_id"]);
+    $search_plantargetlvthree_id = $this->shared_m->replace_str($_POST["search_plantargetlvthree_id"]);
     
 
-    $indicatorlvone_id_add = $this->shared_m->replace_str($_POST["indicatorlvone_id_add"]);
-    $indicatorlvtwo_add = $this->shared_m->replace_str($_POST["indicatorlvtwo_add"]);
-    $indicatorlvtwo_unit_add = $this->shared_m->replace_str($_POST["indicatorlvtwo_unit_add"]);
+    $indicatorlvtwo_id_add = $this->shared_m->replace_str($_POST["indicatorlvtwo_id_add"]);
+    $indicatorlvthree_add = $this->shared_m->replace_str($_POST["indicatorlvthree_add"]);
+    $indicatorlvthree_unit_add = $this->shared_m->replace_str($_POST["indicatorlvthree_unit_add"]);
     //--------------
 
     
@@ -178,16 +189,16 @@ class Indicatorlvthree_m extends Model
 
     if ($ids == '') {
       
-      $sql = "INSERT INTO str_indicatorlvtwo (strategylvtwo_id,plantargetlvtwo_id,indicatorlvone_id,indicatorlvtwo,indicatorlvtwo_unit,make_id,make_date,make_date_mktime) VALUES ($search_strategylvtwo_id,$search_plantargetlvtwo_id,$indicatorlvone_id_add,'$indicatorlvtwo_add','$indicatorlvtwo_unit_add',$make_id,$make_date,'$make_date_mktime')";
+      $sql = "INSERT INTO str_indicatorlvthree (strategylvthree_id,plantargetlvthree_id,indicatorlvtwo_id,indicatorlvthree,indicatorlvthree_unit,make_id,make_date,make_date_mktime) VALUES ($search_strategylvthree_id,$search_plantargetlvthree_id,$indicatorlvtwo_id_add,'$indicatorlvthree_add','$indicatorlvthree_unit_add',$make_id,$make_date,'$make_date_mktime')";
       //echo $sql;
 
       $result = $this->db->query($sql);
       
 
         //------------------log เพิ่ม---------------------
-      $max_ids = $this->shared_m->find_max_id("str_indicatorlvtwo","indicatorlvtwo_id");//แก่
+      $max_ids = $this->shared_m->find_max_id("str_indicatorlvthree","indicatorlvthree_id");//แก่
 
-      $action_detail = "เพิ่ม ".$_POST["for_log_app_name"]." : ".$indicatorlvtwo_add."<br>";//แก่
+      $action_detail = "เพิ่ม ".$_POST["for_log_app_name"]." : ".$indicatorlvthree_add."<br>";//แก่
       //$action_detail = $action_detail."test : ".$unit_name;
 
       $this->shared_m->logksp("เพิ่ม",$action_detail,$max_ids,$_POST["for_log_app_id"],$_POST["for_log_app_name"]);
@@ -196,13 +207,13 @@ class Indicatorlvthree_m extends Model
 
 
     } else {
-      $sql = "Update str_indicatorlvtwo set indicatorlvone_id = $indicatorlvone_id_add,indicatorlvtwo = '$indicatorlvtwo_add',indicatorlvtwo_unit = '$indicatorlvtwo_unit_add',modify_id=$make_id,modify_date=$make_date,modify_date_mktime='$make_date_mktime' Where indicatorlvtwo_id = $ids";
+      $sql = "Update str_indicatorlvthree set indicatorlvtwo_id = $indicatorlvtwo_id_add,indicatorlvthree = '$indicatorlvthree_add',indicatorlvthree_unit = '$indicatorlvthree_unit_add',modify_id=$make_id,modify_date=$make_date,modify_date_mktime='$make_date_mktime' Where indicatorlvthree_id = $ids";
       //echo $sql;
       $result = $this->db->query($sql);
       //------------------log แก้ไข---------------------
       $max_ids = $ids;
       
-      $action_detail = "แก้ไข ".$_POST["for_log_app_name"]." : ".$indicatorlvtwo_add."<br>";//แก้
+      $action_detail = "แก้ไข ".$_POST["for_log_app_name"]." : ".$indicatorlvthree_add."<br>";//แก้
       //$action_detail = $action_detail."test : ".$unit_name;
 
       $this->shared_m->logksp("แก้ไข",$action_detail,$max_ids,$_POST["for_log_app_id"],$_POST["for_log_app_name"]);
@@ -218,7 +229,7 @@ class Indicatorlvthree_m extends Model
   {
     $ids = $_POST["ids"];
     
-     $sql = "Select count(indicatorlvthree_id) as count_reccord From str_indicatorlvthree where del_item = '0' and indicatorlvtwo_id = " . $ids;
+    $sql = "Select count(indicatorlvfour_id) as count_reccord From str_indicatorlvfour where del_item = '0' and indicatorlvthree_id = " . $ids;
     // echo $sql;
     $result = $this->db->query($sql);
     $data = $result->getResultArray();
@@ -232,7 +243,7 @@ class Indicatorlvthree_m extends Model
 
 
 
-    $sql = "Select count(indicatorlvthree_id) as count_reccord From str_indicatorlvthree where del_item = '0' and indicatorlvtwo_id = " . $ids;
+    $sql = "Select count(indicatorlvfour_id) as count_reccord From str_indicatorlvfour where del_item = '0' and indicatorlvthree_id = " . $ids;
     $result = $this->db->query($sql)->getResultObject();
     $count_reccord = $result[0]->count_reccord;
 
@@ -245,14 +256,14 @@ class Indicatorlvthree_m extends Model
       $make_id = $_SESSION['user_id'];
 
       $ids = $_POST["ids"];
-      $sql = "Update str_indicatorlvtwo set del_item = '1',delete_id=$make_id,delete_date=$make_date Where indicatorlvtwo_id = ".$ids;
+      $sql = "Update str_indicatorlvthree set del_item = '1',delete_id=$make_id,delete_date=$make_date Where indicatorlvthree_id = ".$ids;
       //echo $sql;
       $result = $this->db->query($sql);
 
       //------------------log ลบ---------------------
       $max_ids = $ids;
       
-      $sql = "SELECT indicatorlvtwo as aname FROM str_indicatorlvtwo where indicatorlvtwo_id = ".$ids;// แก้
+      $sql = "SELECT indicatorlvthree as aname FROM str_indicatorlvthree where indicatorlvthree_id = ".$ids;// แก้
       //echo $sql;
       $resultdellog = $this->db->query($sql)->getResultObject();
       $aname = $resultdellog[0]->aname;

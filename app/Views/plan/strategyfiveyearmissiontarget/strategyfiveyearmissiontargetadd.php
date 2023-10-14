@@ -25,60 +25,37 @@
 
               <div class="col-md-12 mb-12" style = "padding-bottom:10px;padding-right:10px;">
                 <label class="form-label color-fusion-500" style ="" for="unit_name_add">
-                  <h4>แผนยุทธศาสตร์คุรุสภา 5 ปี : 2566-2570</h4>
+                  <h4>แผนปฏิบัติการระยะ 5 ปี : <label id = "form_add_lbl_strategylvfour"></label></h4>
                 </label>
               </div> 
               
              
               <div class="col-md-12 mb-12" style = "padding-bottom:10px;padding-right:10px;">
                 <label class="form-label color-fusion-500" style ="" for="unit_name_add">
-                  <h4>พันธกิจ : พัฒนามาตรฐานวิชาชีพและกํากับดูแลการประกอบวิชาชีพ</h4>
+                  <h4>พันธกิจ : <label id = "form_add_lbl_mission"></label></h4>
                 </label>
               </div> 
-              <!-- <div class="col-md-12 mb-12" style = "padding-bottom:25px;padding-left:10px;padding-right:10px;">
-                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="unit_name_add">
-                  เชื่อมตัวชี้วัดแผนงาน
-                  <span class="text-danger stars"> * </span>
-                </label>
-                <select id="unit_name_add" name="unit_name_add" class="select2" placeholder="ส่วนงาน">
-                  
-                    <option value="17">
-                      จํานวนหลักสูตรปริญญาและประกาศนียบัตรทางการศึกษาภายในประเทศได้รับการประเมินมาตรฐานหลักสูตรและมาตรฐานการผลิตจากคุรุสภา 50 หลักสูตร
-                    </option>
-                    <option value="17">
-                      จํานวนผู้รับบริการด้านงานทะเบียนและใบอนุญาตประกอบวิชาชีพทางการศึกษา 182,000 คน
-                    </option>
-                    <option value="17">
-                      จํานวนคดีการประพฤติผิดจรรยาบรรณของวิชาชีพได้รับการสืบสวน/สอบสวนข้อเท็จจริงการประพฤติผิดจรรยาบรรณของวิชาชีพ 60 เรื่อง
-                    </option>
-                    <option value="17">
-                      จํานวนผู้ประกอบวิชาชีพทางการศึกษาที่เข้าร่วมกิจกรรมพัฒนาตามมาตรฐานและจรรยาบรรณของวิชาชีพ 5,000 คน
-                    </option>
-                    <option value="17">
-                      จํานวนผู้ประกอบวิชาชีพทางการศึกษาได้รับการยกย่องเชิดชูเกียรติ 8,878 คน
-                    </option>
-                    <option value="17">
-                      จํานวนผู้เข้าร่วมงานวันครู 220,000 คน
-                    </option>
-                    <option value="17">
-                      ร้อยละของครูและบุคลากรทางการศึกษาทุกระดับและประเภทการศึกษาจากกลุ่มเป้าหมายในแต่ละปีงบประมาณได้รับการส่งเสริมและพัฒนาตามมาตรฐานวิชาชีพ ร้อยละ 80
-                    </option>
-                       
-                </select>
-              </div> -->
+              
               <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
-                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="group_name_add">
-                  ค่าเป้าหมาย
+                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="mission_target_add">
+                  เชื่อมเป้าหมายแผนปฏิบัติการระยะ 5 ปี
                   <span class="text-danger stars"> * </span>
                 </label>
-                <input type="text" class="form-control form-ele clear-element" id="group_name_add" name="group_name_add" placeholder="เป้าประสงค์พันธกิจ" value="" >
+                <div id = "div_plantargetlvfour_id_add"></div>
               </div> 
               <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
-                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="group_name_add">
+                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="mission_target_add">
+                  ค่าเป้าหมายพันธกิจ
+                  <span class="text-danger stars"> * </span>
+                </label>
+                <input type="text" class="form-control form-ele clear-element" id="mission_target_add" name="mission_target_add" placeholder="ค่าเป้าหมายพันธกิจ" value="" >
+              </div> 
+              <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
+                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="mission_target_comment_add">
                   คำอธิบาย
                   <span class="text-danger stars"> * </span>
                 </label>
-                <input type="text" class="form-control form-ele clear-element" id="group_name_add" name="group_name_add" placeholder="คำอธิบาย" value="" >
+                <input type="text" class="form-control form-ele clear-element" id="mission_target_comment_add" name="mission_target_comment_add" placeholder="คำอธิบาย" value="" >
               </div> 
              
 

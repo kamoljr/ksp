@@ -42,10 +42,34 @@ class User_m extends Model
     //print_r($resData);
     return $resData;
   }
+  public function unit_id_add()
+  {
+    $structure_id = $_POST["ctr1"];
+    $sql = "Select unit_id as field_id,unit_name as field_name From structure_unit where del_item = '0' and structure_id = $structure_id order by unit_name desc";
+
+    $result = $this->db->query($sql);
+    $data = $result->getResultArray();
+    $resData = json_encode($data);
+    //print_r($resData);
+    return $resData;
+  }
   public function search_group_id()
   {
     $structure_id = $_POST["ctr1"];
     $unit_id = $_POST["ctr2"];
+    $sql = "Select group_id as field_id,group_name as field_name From structure_group where del_item = '0' and structure_id = $structure_id  and unit_id = $unit_id order by group_name desc";
+
+    $result = $this->db->query($sql);
+    $data = $result->getResultArray();
+    $resData = json_encode($data);
+    //print_r($resData);
+    return $resData;
+  }
+  public function group_id_add()
+  {
+    $unit_id = $_POST["ctr1"];
+    $structure_id = $_POST["ctr2"];
+    
     $sql = "Select group_id as field_id,group_name as field_name From structure_group where del_item = '0' and structure_id = $structure_id  and unit_id = $unit_id order by group_name desc";
 
     $result = $this->db->query($sql);
@@ -125,7 +149,7 @@ class User_m extends Model
   {
     $ids = $_POST["ids"];
 
-    $sql = "SELECT dbo.structure_user.structure_user_id, dbo.structure_user.user_name, dbo.structure_user.email, dbo.users.loginname, dbo.users.password,dbo.users.password, dbo.structure_user.num_of_incorrect, dbo.structure_user.image_user,  dbo.structure_user.position_coment, dbo.structure_user.position_name, dbo.structure_user.chief,structure_user.acting_position
+    $sql = "SELECT dbo.structure_user.structure_user_id, dbo.structure_user.user_name, dbo.structure_user.email, dbo.users.loginname, dbo.users.password,dbo.users.password, dbo.structure_user.num_of_incorrect, dbo.structure_user.image_user,  dbo.structure_user.position_coment, dbo.structure_user.position_name, dbo.structure_user.chief,structure_user.acting_position,structure_user.unit_id,structure_user.group_id
 
     FROM dbo.structure_user INNER JOIN dbo.users ON dbo.structure_user.user_id = dbo.users.user_id
 
@@ -192,8 +216,9 @@ class User_m extends Model
     $ids = $_POST["ids"];
     //----รับค่า------
     $search_structure_name = $this->shared_m->replace_str($_POST["search_structure_name"]);
-    $unit_id_add = $this->shared_m->replace_str($_POST["search_unit_id"]);
-    $group_id_add = $this->shared_m->replace_str($_POST["search_group_id"]);
+
+    $unit_id_add = $this->shared_m->replace_str($_POST["unit_id_add"]);
+    $group_id_add = $this->shared_m->replace_str($_POST["group_id_add"]);
 
 
     $user_name_add = $this->shared_m->replace_str($_POST["user_name_add"]);
@@ -253,7 +278,7 @@ class User_m extends Model
         $max_user_id = $this->shared_m->find_max_id("users","user_id");
 
         $sql = "INSERT INTO structure_user (structure_id,user_id,user_name,unit_id,group_id,position_name,email,num_of_incorrect,chief,acting_position,make_id,make_date,make_date_mktime) VALUES ($search_structure_name,$max_user_id,'$user_name_add',$unit_id_add,$group_id_add,'$position_name_add','$email_add','$num_of_incorrect_add','$chief_add',$chift_unit_add,$make_id,$make_date,'$make_date_mktime')";
-        
+        //echo $sql;
         $result = $this->db->query($sql);
         //------------------log เพิ่ม---------------------
         $max_ids = $this->shared_m->find_max_id("structure_user","structure_user_id");//แก่
@@ -270,7 +295,7 @@ class User_m extends Model
         $result = $this->db->query($sql);
 
       } else {
-        $sql = "Update structure_user set user_name='$user_name_add',position_name='$position_name_add',email='$email_add',num_of_incorrect='$num_of_incorrect_add',chief=$chief_add,acting_position=$chift_unit_add,modify_id=$make_id,modify_date=$make_date,modify_date_mktime='$make_date_mktime' Where structure_user_id = $ids";
+        $sql = "Update structure_user set user_name='$user_name_add',position_name='$position_name_add',unit_id=$unit_id_add,group_id=$group_id_add,email='$email_add',num_of_incorrect='$num_of_incorrect_add',chief=$chief_add,acting_position=$chift_unit_add,modify_id=$make_id,modify_date=$make_date,modify_date_mktime='$make_date_mktime' Where structure_user_id = $ids";
         //echo $sql;
         $result = $this->db->query($sql);
         //------------------log แก้ไข---------------------

@@ -23,58 +23,43 @@
                 <span><label id = "lbl_rowid"></label></span> 
               </div>
 
-              <!-- <div class="col-md-12 mb-12" style = "padding-bottom:25px;padding-left:10px;padding-right:10px;">
-                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="unit_name_add">
-                  ส่วนงาน
-                  <span class="text-danger stars"> * </span>
-                </label>
-                <select id="unit_name_add" name="unit_name_add" class="select2" placeholder="ส่วนงาน">
-                    <option value="">เลือกส่วนงาน</option><option value="17">กลุ่มพัฒนาระบบงาน</option><option value="18">สถาบันคุรุพัฒนา</option><option value="11">สำนักจรรยาบรรณวิชาชีพและนิติการ</option><option value="3">สำนักทะเบียนและใบอนุญาตประกอบวิชาชีพ</option><option value="9">สำนักเทคโนโลยีสารสนเทศ</option><option value="16">สำนักเทคโนโลยีสารสนเทศและการสื่อสาร</option><option value="5">สำนักนโยบายและแผน</option><option value="4">สำนักพัฒนาและส่งเสริมวิชาชีพ</option><option value="2">สำนักมาตรฐานวิชาชีพ</option><option value="14">สำนักยกย่องเชิดชูเกียรติวิชาชีพ</option><option value="12">สำนักส่งเสริมและพัฒนาคุรุสภาจังหวัด</option><option value="7">สำนักอำนวยการ</option><option value="8">หน่วยตรวจสอบภายใน</option>
-                </select>
-              </div>  -->
               <div class="col-md-12 mb-12" style = "padding-bottom:10px;padding-right:10px;">
                 <label class="form-label color-fusion-500" style ="" for="unit_name_add">
-                  <h4>ปีงบประมาณ : 2566</h4>
+                  <h4>ปีงบประมาณ : <label id = "form_add_lbl_strategyyear"></label></h4>
                 </label>
               </div> 
               
               <div class="col-md-12 mb-12" style = "padding-bottom:10px;padding-right:10px;">
                 <label class="form-label color-fusion-500" style ="" for="unit_name_add">
-                  <h4>โครงการนวัตกรรมการพัฒนาจรรยาบรรณวิชาชีพครูผ่านการเรียนรู้ด้วยบอร์ดเกม (Board Game)</h4>
+                  <h4><label id = "form_add_lbl_product"></label></h4>
                 </label>
               </div> 
               <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
-                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;padding-bottom:5px;" for="group_name_add">
+                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;padding-bottom:5px;" for="">
                   ประเภทตัวชี้วัด
                   <span class="text-danger stars"> * </span>
                 </label>
                 <div class="frame-wrap">
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" class="custom-control-input typeb" id="defaultInline1Radio1" name="inlineDefaultRadiosExample1" checked="" value = '1'>
-                        <label class="custom-control-label color-fusion-300" for="defaultInline1Radio1" >ตัวชี้วัดผลผลิต</label>
+                        <input type="radio" class="custom-control-input class_ind_type" id="ind_type1" name="ind_type" value = '1'>
+                        <label class="custom-control-label color-fusion-300" for="ind_type1" >ตัวชี้วัดผลผลิต</label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" class="custom-control-input typeb" id="defaultInline2Radio2" name="inlineDefaultRadiosExample1" value = '2'>
-                        <label class="custom-control-label color-fusion-300" for="defaultInline2Radio2">ตัวชี้วัดผลลัพธ์</label>
+                        <input type="radio" class="custom-control-input class_ind_type" id="ind_type2" name="ind_type" value = '2'>
+                        <label class="custom-control-label color-fusion-300" for="ind_type2">ตัวชี้วัดผลลัพธ์</label>
                     </div>
                    
                    
                 </div>
               </div> 
               <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
-                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="group_name_add">
+                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="product_indicator_add">
                   ตัวชี้วัด
                   <span class="text-danger stars"> * </span>
                 </label>
-                <input type="text" class="form-control form-ele clear-element" id="group_name_add" name="group_name_add" placeholder="ตัวชี้วัด" value="" >
+                <input type="text" class="form-control form-ele clear-element" id="product_indicator_add" name="product_indicator_add" placeholder="ตัวชี้วัด" value="" >
               </div> 
-              <!-- <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
-                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="tel_add">
-                  เบอร์โทร
-                  <span class="text-danger stars"> * </span>
-                </label>
-                <input type="text" class="form-control form-ele clear-element" id="tel_add" name="tel_add" placeholder="เบอร์โทร" value="">
-              </div>  -->
+             
 
 
             </div>

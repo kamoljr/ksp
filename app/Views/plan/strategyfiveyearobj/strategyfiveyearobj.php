@@ -33,11 +33,11 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                   <div class="row">
                     <div class="col-sm-6">
                       <label class="form-label" for="unit_name_search">
-                        แผนยุทธศาสตร์คุรุสภา 5 ปี
+                        แผนปฏิบัติการระยะ 5 ปี
 
                       </label>
                       <select id="unit_name_search" name="unit_name_search" class="select2"
-                      placeholder="แผนยุทธศาสตร์คุรุสภา 5 ปี">
+                      placeholder="แผนปฏิบัติการระยะ 5 ปี">
                         <option value="">
                           2566-2570
                         </option>
@@ -81,7 +81,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
     </div>
     <div class="alert alert-warning" id='searchresults' name='searchresults'
     style="margin-bottom: 15px;">
-      ค้นหาโดย : <u>แผนยุทธศาสตร์คุรุสภา 5 ปี</u> 2566-2570 <u>พันธกิจ</u> พัฒนามาตรฐานวิชาชีพและกํากับดูแลการประกอบวิชาชีพ
+      ค้นหาโดย : <u>แผนปฏิบัติการระยะ 5 ปี</u> 2566-2570 <u>พันธกิจ</u> พัฒนามาตรฐานวิชาชีพและกํากับดูแลการประกอบวิชาชีพ
     </div>
   </div>
 </div>

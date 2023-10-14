@@ -54,7 +54,7 @@ class Pages extends BaseController
 		$data['description_en'] = $description_en;
 		$data['icon_system'] = $icon_system;
 
-		$data['ip_apps'] = '192.168.1.34';
+		$data['ip_apps'] = '192.168.1.44';
 
 		$data['link_url'] = "/public/index.php/pages/view/";
 

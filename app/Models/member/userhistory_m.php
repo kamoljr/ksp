@@ -12,7 +12,13 @@ class userhistory_m extends Model
   public function search_make_id()
   {
     $this->shared_m = model("member/shared_m");
-    $structure_id = $this->shared_m->find_max_id("structure_org","structure_id");
+    // $structure_id = $this->shared_m->find_max_id("structure_org","structure_id");
+
+    $sql = "SELECT max(structure_id) as structure_id FROM structure_org where del_item = '0'";
+    $result = $this->db->query($sql)->getResultObject();
+    $structure_id = $result[0]->structure_id;
+
+
     $sql = "Select user_id as field_id,user_name as field_name From structure_user where del_item = '0' and structure_id = $structure_id order by user_name asc";
     //echo $sql;
     $result = $this->db->query($sql);

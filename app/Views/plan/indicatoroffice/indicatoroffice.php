@@ -35,28 +35,14 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                       <label class="form-label" for="unit_name_search">
                         ปีงบประมาณ
                       </label>
-                      <select id="unit_name_search" name="unit_name_search" class="select2"
-                      placeholder="ปีงบประมาณ">
-                        
-                        <option value="17">
-                          2566
-                        </option>
-                        <option value="17">
-                          2565
-                        </option>
-                        <option value="17">
-                          2564
-                        </option>
-                        
-                        
-                      </select>
+                      <div id = "div_search_strategyyear_id"></div>
                     </div>
                     <div class="col-sm-6">
-                      <label class="form-label" for="group_name_search">
-                         ตัวชี้วัด
+                      <label class="form-label" for="search_org_ind">
+                         ตัวชี้วัดสำนักงาน
                       </label>
-                      <input id="group_name_search" name="group_name_search" class="form-control searchdata"
-                      type="text" placeholder="ตัวชี้วัด" />
+                      <input id="search_org_ind" name="search_org_ind" class="form-control searchdata"
+                      type="text" placeholder="ตัวชี้วัดสำนักงาน" />
                     </div>
                   </div>
                 </form>
@@ -103,7 +89,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
               </tr>
             </thead>
             <tbody>
-              <tr>
+              <!-- <tr>
                 <td>
                   1
                 </td>
@@ -186,7 +172,7 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                     </i>
                   </a>
                 </td>
-              </tr>
+              </tr> -->
               
               
             </tbody>
@@ -202,67 +188,723 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
 <div class="page-content-overlay" data-action="toggle" data-class="mobile-nav-on"></div>
 <!-- END Page Content -->
 
-<script src="<?= base_url().'/';?>js/budget/<?=$pages;?>.js"></script>
 <script>
-    
+
 $(document).ready(function() {
-  $(".select2").select2();
-  $('#unit_name_add').select2({
-    dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
-  });
+	// ------------------open สร้าง select------------------------
+	
 
-  var table = $("#dynamic-table").DataTable({
-    orderCellsTop: true,
-    fixedHeader: true,
-    bLengthChange: false,
-    searching: false,
-    bAutoWidth: false,
-    bStateSave: true,
-    processing: true,
-    bPaginate: true,
-    columnDefs: [{
-      targets: [2],
-      orderable: false,
-    },
-    {
-      targets: [0],
-      className: "text-center",
-    },
-    {
-      targets: [1, 2],
-      className: "text-left",
-    }]
+	//-------open------
+	const select_var1 = {
+		ele_name:"search_strategyyear_id",
+		value_edit:"<?//=$para2?>",
+		option_type:"",
+		placeholder:"ปีงบประมาณ",
+		classselect:"select2 searchdata",
+	};
+	create_one_select(select_var1);
+	//--------close-----
 
-  });
 
-  $(document).on('click', '#btnadd',
-  function() {
-    $("#ids").val('');
+  //-------open------
+	// if ($("#search_strategylvfour_id").val() == ""){
+	// 	$('#search_plantargetlvfour_id').empty()
+  //   $('#search_plantargetlvfour_id').append('<option selected="selected" value="">ไม่พบข้อมูล</option>');
+	// }else{
+	// 	const select_var2 = {
+	// 		ele_name:"search_plantargetlvfour_id", 
+	// 		value_edit:"<?//=$para1?>",
+	// 		option_type:"",
+	// 		placeholder:"เป้าหมายแผนปฏิบัติการระยะ 5 ปี",
+	// 		classselect:"select2 searchdata",
+	// 		ctr1:$("#search_strategylvfour_id").val(),
+	// 	};
+	// 	create_one_select(select_var2);
+	// }
+		
+	//--------close-----
 
-    $(".lblmode").text("เพิ่ม");
 
-    $("#icon_add_form").show();
-    $("#icon_edit_form").hide();
-    $("#icon_view_form").hide();
+  //-------open------
+	// if ($("#search_strategylvtwo_id").val() == ""){
+	// 	$('#search_strategylvthree_id').empty()
+  //   $('#search_strategylvthree_id').append('<option selected="selected" value="">ไม่พบข้อมูล</option>');
+	// }else{
+	// 	const select_var3 = {
+	// 		ele_name:"search_strategylvthree_id", 
+	// 		value_edit:"<?//=$para1?>",
+	// 		option_type:"",
+	// 		placeholder:"แผนระดับ 3",
+	// 		classselect:"select2 searchdata",
+	// 		ctr1:$("#search_strategylvtwo_id").val(),
+	// 	};
+	// 	create_one_select(select_var3);
+	// }
+	
+	
+	//--------close-----
+	//-------open------
+	// if ($("#search_strategylvthree_id").val() == ""){
+	// 	$('#search_plantargetlvthree_id').empty()
+	// 	$('#search_plantargetlvthree_id').append('<option selected="selected" value="">ไม่พบข้อมูล</option>');
+	// }else{
+	// 	const select_var4 = {
+	// 		ele_name:"search_plantargetlvthree_id", 
+	// 		value_edit:"<?//=$para1?>",
+	// 		option_type:"",
+	// 		placeholder:"เป้าหมายแผนระดับ 2",
+	// 		classselect:"select2 searchdata",
+	// 		ctr1:$("#search_strategylvthree_id").val(),
+	// 	};
+	// 	create_one_select(select_var4);
+	// }
+	//--------close-----
 
-    $('.div_show_rowid').css('display', 'none');
 
-    $(".clear-element").val('');
+	//--------open-----
+	// $(document).on('change', '#search_strategylvone_id', function() {
+	// 	if (this.value == ""){
+	// 		$('#search_strategylvtwo_id').empty()
+  //     $('#search_strategylvtwo_id').append('<option selected="selected" value="">ไม่พบข้อมูล</option>');
+	// 	}else{
+	// 		const select_var5 = {
+	// 			ele_name:"search_strategylvtwo_id", // ชื่อ element
+	// 			value_edit:"", // ใช้เลื่อกค่า ตอนแก้ไข ใส่ค่าที่ต้องการ
+	// 			option_type:"", //แสดงตัวเลือกทั้งหมด หรือไม่ option_type:all,""
+	// 			placeholder:"แผนระดับ 2",
+	// 			classselect:"select2 searchdata", //ใส่ class ที่ต้องการ 
+	// 			ctr1:this.value,//เงื่อนไขแสดงข้อมูล
+	// 		};
+	// 		// console.log(this.value);
+	// 		create_one_select(select_var5);
+	// 		$(".select2").select2();
+	// 	}
+		
+	// 	if ($("#search_strategylvtwo_id").val() == ""){
+	// 		$('#search_strategylvthree_id').empty()
+  //     $('#search_strategylvthree_id').append('<option selected="selected" value="">ไม่พบข้อมูล</option>');
+	// 	}else{
+	// 		const select_var6 = {
+	// 			ele_name:"search_strategylvthree_id", // ชื่อ element
+	// 			value_edit:"", // ใช้เลื่อกค่า ตอนแก้ไข ใส่ค่าที่ต้องการ
+	// 			option_type:"", //แสดงตัวเลือกทั้งหมด หรือไม่ option_type:all,""
+	// 			placeholder:"แผนระดับ 2",
+	// 			classselect:"select2 searchdata", //ใส่ class ที่ต้องการ 
+	// 			ctr1:$("#search_strategylvtwo_id").val(),
+	// 		};
+	// 		// console.log(this.value);
+	// 		create_one_select(select_var6);
+	// 		$(".select2").select2();
+	// 	}
+			
 
-    $('.form-ele').prop('disabled', false);
-    $('.stars').show(); // ซ่อนดาวแดง
-    $(".dialog-data").show();
-    $(".dialog-success").hide();
+	// 	if ($("#search_strategylvthree_id").val() == ""){
+		
+			
+	// 		$('#search_plantargetlvthree_id').empty()
+	// 		$('#search_plantargetlvthree_id').append('<option selected="selected" value="">ไม่พบข้อมูล</option>');
 
-    $("#btn_save_change").show();
-    $("#btn_dialog_close").show();
+	// 	}else{
+	// 		const select_var7 = {
+	// 			ele_name:"search_plantargetlvthree_id", // ชื่อ element
+	// 			value_edit:"", // ใช้เลื่อกค่า ตอนแก้ไข ใส่ค่าที่ต้องการ
+	// 			option_type:"", //แสดงตัวเลือกทั้งหมด หรือไม่ option_type:all,""
+	// 			placeholder:"เป้าหมายแผนระดับ 2",
+	// 			classselect:"select2 searchdata", //ใส่ class ที่ต้องการ 
+	// 			ctr1:$("#search_strategylvthree_id").val(),
+	// 		};
+	// 		create_one_select(select_var7);
+	// 		$(".select2").select2();
+	// 	}
 
-  });
+	// });
+	//--------close-----
+	//--------open-----
+	// $(document).on('change', '#search_strategylvtwo_id', function() {
+	// 	if (this.value == ""){
+	// 		$('#search_strategylvthree_id').empty()
+  //     $('#search_strategylvthree_id').append('<option selected="selected" value="">ไม่พบข้อมูล</option>');
+	// 	}else{
+	// 		const select_var8 = {
+	// 			ele_name:"search_strategylvthree_id", // ชื่อ element
+	// 			value_edit:"", // ใช้เลื่อกค่า ตอนแก้ไข ใส่ค่าที่ต้องการ
+	// 			option_type:"", //แสดงตัวเลือกทั้งหมด หรือไม่ option_type:all,""
+	// 			placeholder:"แผนระดับ 3",
+	// 			classselect:"select2 searchdata", //ใส่ class ที่ต้องการ 
+	// 			ctr1:this.value,//เงื่อนไขแสดงข้อมูล
+	// 		};
+	// 		// console.log(this.value);
+	// 		create_one_select(select_var8);
+	// 		$(".select2").select2();	
+	// 	}
+			
+		
+	// 	if ($("#search_strategylvthree_id").val() == ""){
+	// 		$('#search_plantargetlvthree_id').empty()
+  //     $('#search_plantargetlvthree_id').append('<option selected="selected" value="">ไม่พบข้อมูล</option>');
+	// 	}else{
+	// 		const select_var9 = {
+	// 			ele_name:"search_plantargetlvthree_id", // ชื่อ element
+	// 			value_edit:"", // ใช้เลื่อกค่า ตอนแก้ไข ใส่ค่าที่ต้องการ
+	// 			option_type:"", //แสดงตัวเลือกทั้งหมด หรือไม่ option_type:all,""
+	// 			placeholder:"เป้าหมายแผนระดับ 3",
+	// 			classselect:"select2 searchdata", //ใส่ class ที่ต้องการ 
+	// 			ctr1:$("#search_strategylvthree_id").val(),
+	// 		};
+	// 		// console.log(this.value);
+	// 		create_one_select(select_var9);
+	// 		$(".select2").select2();
+	// 	}
+  // });
+	//--------close-----
 
-  $(document).on('click', '#btn_dialog_close',
-  function() {
-    $('.default-example-modal-right').modal('toggle');
-  });
+  
+	//--------open-----
+	// $(document).on('change', '#search_strategylvthree_id', function() {
+	// 	if (this.value == ""){
+	// 		$('#search_plantargetlvthree_id').empty()
+  //     $('#search_plantargetlvthree_id').append('<option selected="selected" value="">ไม่พบข้อมูล</option>');
+	// 	}else{
+	// 		const select_var4 = {
+	// 			ele_name:"search_plantargetlvthree_id", // ชื่อ element
+	// 			value_edit:"", // ใช้เลื่อกค่า ตอนแก้ไข ใส่ค่าที่ต้องการ
+	// 			option_type:"", //แสดงตัวเลือกทั้งหมด หรือไม่ option_type:all,""
+	// 			placeholder:"เป้าหมายแผนระดับ 3",
+	// 			classselect:"select2 searchdata", //ใส่ class ที่ต้องการ 
+	// 			ctr1:this.value,//เงื่อนไขแสดงข้อมูล
+	// 		};
+	// 		// console.log(this.value);
+	// 		create_one_select(select_var4);
+	// 		$(".select2").select2();
+	// 	}
+		
+  // });
+	//--------close-----
+	searchdata();
+	// ------------------close สร้าง select ทั้งหมด------------------------
+
+	$(".select2").select2();
+  
+	
+  
+	$(document).ready(function() {
+		$('.ele_select_add').select2({
+			dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
+		});
+	});
+
+	// ------------------open datatable------------------------
+	var table = $("#dynamic-table").DataTable({
+			orderCellsTop: true,
+			fixedHeader: true,
+			bLengthChange: false,
+			searching: false,
+			bAutoWidth: false,
+			bStateSave: true,
+			processing: true,
+			bPaginate: true,
+			serverSide: true,
+			bProcessing: true,
+			iDisplayLength: 8,
+			bServerSide: true,
+			sAjaxSource: "/public/index.php/<?=$description_en.'/'.$pages?>_cn/load_data",
+			async: false,
+			aaSorting: [],
+			fnServerParams: function(aoData) {
+				var acolumns = this.fnSettings().aoColumns,
+				columns = [];
+				$.each(acolumns, function(i, item) {
+					columns.push(item.data);
+				});
+				aoData.push({
+					name: "columns",
+					value: columns,
+				});
+
+				// เปิด แก้ไข ใส่ค่า ตัวค้นหา
+				aoData.push({
+						name: 'search_strategyyear_id',
+						value: $("#search_strategyyear_id").val(),
+				});
+				// aoData.push({
+				// 		name: 'search_plantargetlvfour_id',
+				// 		value: $("#search_plantargetlvfour_id").val(),
+				// });
+				// aoData.push({
+				// 		name: 'search_indicatorlvthree',
+				// 		value: $("#search_indicatorlvthree").val(),
+				// });
+				// ปิด แก้ไข ใส่ค่า ตัวค้นหา
+
+			},
+			columns: [
+					// เปิด แก้ไข ใส่ค่า ที่แดสง ใน คอลัมภ์
+					{
+						data: "org_ind_id",
+					},
+					{
+						data: "org_ind",
+					},
+					{
+						data: "org_ind_id",
+						render: function(data, type, row) {
+								
+							txtex = 'data-toggle="modal" data-target=".default-example-modal-right-lg"';
+						
+							str_btn = "";
+							str_btn = str_btn +
+								`<a href="javascript:void(0);" ${txtex} class="btn btn-outline-success btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data" mode = 'view'><i class="ni ni-eye"></i></a>&nbsp;&nbsp;`;
+
+							str_btn = str_btn +
+								`<a href="javascript:void(0);" ${txtex} class="btn btn-outline-primary btn-icon btn-xs rounded-circle waves-effect waves-themed edit-data" mode = 'edit'><i class="ni ni-pencil"></i></a>&nbsp;&nbsp;`;
+
+							str_btn =
+								str_btn +
+								`<a href="javascript:void(0);" class="btn btn-outline-danger btn-icon btn-xs rounded-circle waves-effect waves-themed"data-toggle="modal" data-target="#example-modal-alert" onclick=set_del_id('${row.org_ind_id}')><i class="ni ni-trash"></i></a>`;
+							return str_btn;
+						},
+					},
+					//ปิด แก้ไข ใส่ค่า ที่แดสง ใน คอลัมภ์
+			],
+			order: [
+					[0, "desc"]
+			],
+			lengthMenu: [
+					[10, 25, 50, 100],
+
+					[10, 25, 50, 100],
+			],
+			oLanguage: {
+					sLengthMenu: "_MENU_",
+			},
+			fnInitComplete: function() {
+					//oTable.fnAdjustColumnSizing();
+			},
+			fnServerData: function(sSource, aoData, fnCallback) {
+					$.ajax({
+							dataType: "json",
+							async: true,
+							type: "POST",
+							url: sSource,
+							data: aoData,
+							success: fnCallback,
+					});
+			},
+			fnDrawCallback: function() {
+					$("body").css("min-height", $("#table1 tr").length * 50 + 200);
+					$(window).trigger("resize");
+			},
+			// เปิด แก้ไข การเรียง
+			columnDefs: [{
+							targets: [2],
+							orderable: false,
+					},
+					{
+							targets: [0,2],
+							className: "text-center",
+					},
+			],
+			// ปิด แก้ไข การเรียง
+	});
+// ------------------close datatable------------------------
+	
+// ------------------open ค้าหา จุดที่ 1/2-----------------------
+	$(document).on('change', '.searchdata', function() {
+			searchdata();
+	});
+// ------------------close ค้าหา จุดที่ 1/2-----------------------
+
+
+
+	// ------------------open แกไข จุดที่ 1/2-----------------------
+	$('#dynamic-table tbody').on('click', 'td .edit-data', function() {
+			let mode = $(this).attr("mode");
+			var tr = $(this).closest('tr');
+			var row = table.row(tr);
+			var d = row.data();
+			editdata(d, mode);   
+	});
+	// ------------------close แกไข จุดที่ 1/2-----------------------
+
+
+	// ------------------open เพิ่ม จุดที่ 1/1-----------------------
+	$(document).on('click', '#btnadd', function() {
+		$("#form_add_lbl_strategyyear").text($("#search_strategyyear_id option:selected" ).text());
+		// $("#form_add_lbl_plantargetlvfour").text($("#search_plantargetlvfour_id option:selected" ).text());
+	  //-------open------
+		// if ($("#search_plantargetlvfour_id").val() == ""){
+		// 	$('#indicatorlvthree_id_add').empty()
+    //   $('#indicatorlvthree_id_add').append('<option selected="selected" value="">ไม่พบข้อมูล</option>');
+		// }else{
+		// 	const select_var6 = {
+		// 		ele_name:"indicatorlvthree_id_add",
+		// 		value_edit:"",
+		// 		option_type:"",
+		// 		placeholder:"เชื่อมตัวชี้วัดแผนระดับ3",
+		// 		classselect:"ele_select_add",
+		// 		ctr1:$("#search_plantargetlvfour_id").val(),
+		// 	};
+		// 	create_one_select(select_var6);
+		// 	$('.ele_select_add').select2({
+		// 		dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
+		// 	});
+		// }
+    //--------close-----
+
+		$("#ids").val('');
+		$(".lblmode").text("เพิ่ม");
+		$("#icon_add_form").show();
+		$("#icon_edit_form").hide();
+		$("#icon_view_form").hide();
+
+		$(".div_show_rowid").hide();
+
+		$(".clear-element").val('');
+		
+			
+		$('.form-ele').prop('disabled', false);
+
+		$('.stars').show(); // ซ่อนดาวแดง
+
+		$(".dialog-data").show();
+		$(".dialog-success").hide();
+
+		$("#btn_save_change").show();
+		$("#btn_dialog_close").show();
+			
+	});
+	// ------------------close เพิ่ม จุดที่ 1/1-----------------------
+
+
+	//------------------ไม่ต้องแก้------------------
+	$(document).on('click', '#btn_dialog_close', function() {//ปุ่มปิด dialog
+			$('.default-example-modal-right').modal('toggle');
+	});
+	//------------------ปิด ไม่ต้องแก้------------------
+
+	
+	
+	$("#form_save").validate({
+		rules: {
+			org_ind_add: "required",
+			// indicatorlvfour_add: "required",
+			// indicatorlvfour_unit_add: "required",
+		},
+		messages: {
+			org_ind_add: "กรุณาป้อน ตัวชี้วัดสำนักงาน",
+		},
+		errorPlacement: function(error, element) {
+			if (element.is(":radio")) {
+				error.appendTo(element.parents('.form-group'));
+			} else { // This is the default behavior 
+				error.insertAfter(element);
+			}
+		},
+		submitHandler: function(form) {
+			savedata();
+		}
+	});
 });
 
+
+	// ------------------open ค้าหา จุดที่ 2/2-----------------------
+	function searchdata(){
+	
+		text1 = "ปีงบประมาณ : ";
+		sval1 = $("#search_strategyyear_id option:selected" ).text();
+		if (sval1 == '') { sval1 = 'ทั้งหมด'; }
+		text1 = text1+"<b>"+sval1+"</b>";
+
+		// text2 = "แผนระดับ2 : ";
+		// sval2 = $("#search_strategylvtwo_id option:selected" ).text();
+		// if (sval2 == '') { sval2 = 'ทั้งหมด'; }
+		// text2 = text2+"<b>"+sval2+"</b>";
+		
+		// text3 = "แผนระดับ3 : ";
+		// sval3 = $("#search_strategylvthree_id option:selected" ).text();
+		// if (sval3 == '') { sval3 = 'ทั้งหมด'; }
+		// text3 = text3+"<b>"+sval3+"</b>";
+
+		// text4 = "เป้าหมายแผนปฏิบัติการระยะ 5 ปี : ";
+		// sval4 = $("#search_plantargetlvfour_id option:selected" ).text();
+		// if (sval4 == '') { sval4 = 'ทั้งหมด'; }
+		// text4 = text4+"<b>"+sval4+"</b>";
+
+		// text5 = "ตัวชี้วัดแผนระดับ3 : ";
+		// sval5 = $("#search_indicatorlvthree" ).val();
+		// if (sval5 == '') { sval5 = 'ทั้งหมด'; }
+		// text5 = text5+"<b>"+sval5+"</b>";
+  
+		// txt_all = text1+"&ensp;&ensp;&ensp;"+text4;
+		txt_all = text1;
+		let txt = `
+		<strong>ผลการค้นหา : </strong>
+		${txt_all}
+		`;
+
+		$("#searchresults").html(txt);
+
+		$(function(){
+			table = $('#dynamic-table').DataTable();
+			table.draw();
+		});
+	}
+	// ------------------close ค้าหา จุดที่ 1/2-----------------------
+// ------------------open แกไข จุดที่ 2/2-----------------------
+	function editdata(d, mode) {
+    $("#form_add_lbl_strategyyear").text($("#search_strategyyear_id option:selected" ).text());
+		// $("#form_add_lbl_strategylvfour").text($("#search_strategylvfour_id option:selected" ).text());
+		// $("#form_add_lbl_plantargetlvfour").text($("#search_plantargetlvfour_id option:selected" ).text());
+		
+	
+		$('.default-example-modal-right').modal('toggle');
+		$(".dialog-data").show();
+		$(".dialog-success").hide();
+		$("#icon_add_form").hide();
+		$("#rowid").show();
+
+		// เปิด แก้ไข ใส่ค่า 
+		
+		$("#ids").val(d.org_ind_id);
+		
+		// ปิด แก้ไข ใส่ค่า
+		
+		let aoData = "ids=" + d.org_ind_id;
+		$.ajax({
+			type: "POST",
+			url: "/public/index.php/<?=$description_en.'/'.$pages?>_cn/edit_data",
+			dataType: "json",
+			beforeSend: function () {
+				$("#overlay").fadeIn(200);
+			},
+			data: aoData,
+			success: function (response) {
+
+			
+        //-------open------
+        // if ($("#search_plantargetlvfour_id").val() == ""){
+        //   $('#indicatorlvthree_id_add').empty()
+        //   $('#indicatorlvthree_id_add').append('<option selected="selected" value="">ไม่พบข้อมูล</option>');
+        // }else{
+        //   const select_var6 = {
+        //     ele_name:"indicatorlvthree_id_add",
+        //     value_edit:response[0].indicatorlvthree_id,
+        //     option_type:"",
+        //     placeholder:"เชื่อมตัวชี้วัดแผนระดับ3",
+        //     classselect:"ele_select_add",
+        //     ctr1:$("#search_plantargetlvfour_id").val(),
+        //   };
+        //   create_one_select(select_var6);
+        //   $('.ele_select_add').select2({
+        //     dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
+        //   });
+        // }
+        //--------close-----
+				
+				
+				$("#org_ind_add").val(response[0].org_ind);
+				$("#org_ind_unit_add").val(response[0].org_ind_unit);
+
+        
+			},
+			complete: function () {
+				setTimeout(function () {
+					$("#overlay").fadeOut(200);
+				}, 100);
+			},
+			error: function (response) {
+				//console.log(response);
+			}
+		});
+		let txt = '';
+
+		$("#btn_dialog_close").show();
+
+		if (mode == 'edit') {
+		
+			txt = 'แก้ไข';
+			$('.form-ele').prop('disabled', false);
+			$('.stars').show(); // ซ่อนดาวแดง
+			$("#btn_save_change").show();
+
+			$("#icon_edit_form").show();
+			$("#icon_view_form").hide();
+
+		} else {
+			txt = 'แสดง';
+			setTimeout(function () {
+				$('.form-ele').prop('disabled', true);
+			}, 1000);
+				
+			
+
+			$('.stars').hide(); // ซ่อนดาวแดง
+			$("#btn_save_change").hide();
+
+			$("#icon_view_form").show();
+			$("#icon_edit_form").hide();
+			
+			
+		}
+
+		$('#lbl_rowid').text("รหัส " + d.org_ind_id);
+
+		$('.div_show_rowid').show();
+		
+		$(".lblmode").text(txt);
+
+	}
+	// ------------------open แกไข จุดที่ 2/2-----------------------
+
+// ------------------open ลบ จุดที่ 1/1-----------------------
+
+function deldata() {
+  
+	$("#del_detail").text('');
+	var aoData = 'ids='+$("#ids").val()+"&for_log_app_id=<?=$app_id?>&for_log_app_name=<?=$app_name?>&";
+	$.ajax({
+		type: "POST",
+		url: "/public/index.php/<?=$description_en;?>/<?=$pages;?>_cn/del_data",
+		dataType: "json",
+		beforeSend: function () {
+			$("#overlay").fadeIn(200);　
+		},
+		data: aoData,
+		success: function(response) {
+			if (response == "cannotdel"){
+				alert("รายการถูกใช้แล้ว ไม่สามารถลบได้");
+			}
+			GoCurrentPage();
+				
+		},
+		complete: function () { // Set our complete callback, adding the .hidden class and hiding the spinner.
+			setTimeout(function(){
+				
+				$("#overlay").fadeOut(200);
+				console.log("ss");
+			},100);
+		},
+		error: function(response) {
+				//console.log(response);
+		}
+	});
+}
+
+function find_count_reccord(url,aoData) { // not found return 0
+	var aoData = aoData;
+	ans = "";
+	$.ajax({
+			type: "POST",
+			url: url,
+			dataType: "json",
+			async:false,
+			beforeSend: function () {
+
+			},
+			data: aoData,
+			success: function(response) {
+				ans = response[0].count_reccord;
+			},
+			complete: function () {
+				
+			},
+			error: function(response) {
+		
+			}
+	});
+	return ans;
+}
+
+function set_del_id(ids){
+	$("#ids").val(ids);
+	$("#del_detail").text('รหัส ' + ids);  
+	url = "/public/index.php/<?=$description_en;?>/<?=$pages;?>_cn/chk_del";
+	aoData = 'ids='+ids;// เงื่อนไขการลบ
+	ans = find_count_reccord(url, aoData);
+	//ans = 0;
+	if (ans == 0) {
+		console.log("not found");
+		$("#btn_del_data").show();
+		$("#div_del_detail").hide();
+	} else { 
+		console.log('found');
+		$("#btn_del_data").hide();
+		$("#div_del_detail").show();
+	}
+}
+// ------------------close ลบ จุดที่ 1/1-----------------------
+
+//------------------ไม่ต้องแก้------------------
+// function format(d) {
+// 	$(".dialog-success").hide();
+// 	return `<?//=view("{$description_en}/{$pages}/{$pages}add.php")?>`;
+// }
+function GoCurrentPage(){
+	var table = $('#dynamic-table').DataTable();
+	var info = table.page.info();
+	var CurrentPage = info.page;
+	table.page(CurrentPage).draw(false);
+}
+//------------------ปิด ไม่ต้องแก้------------------
+
+
+// ------------------open save จุดที่ 1/1-----------------------
+function savedata() {
+	
+	// -----ใส่ค่า--------
+	var aoData = $('#form_save').serialize()+"&search_strategyyear_id="+$("#search_strategyyear_id").val();
+	//----------------
+	console.log(aoData);
+	$.ajax({
+		type: "POST",
+		url: "/public/index.php/<?=$description_en;?>/<?=$pages;?>_cn/save_data",
+		dataType: "json",
+		beforeSend: function () {
+			$("#overlay").fadeIn(200);　
+		},
+		data: aoData,
+		success: function(response) {
+			//console.log("response=".response);
+			
+				$(".dialog-data").hide();
+				$(".dialog-success").show();
+
+
+				$("#btn_save_change").hide();
+				$("#btn_dialog_close").hide();
+				
+				setTimeout(() => {
+					if ($("#ids").val() == "") {
+						table = $('#dynamic-table').DataTable();
+						table.draw();
+					} else { 
+						GoCurrentPage();
+					}
+					
+					$('.default-example-modal-right').modal('toggle');
+				}, "500");
+			
+		},
+		complete: function () {
+			$("#overlay").fadeOut(200);
+		},
+		error: function(response) {
+				//console.log(response);
+		}
+	});
+}
+// ------------------close save จุดที่ 1/1-----------------------
+
+
+
+
 </script>
+<style>
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+</style>

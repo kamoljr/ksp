@@ -1,4 +1,4 @@
-<div class="modal-body" style="padding-top:0px;padding-left:5px;background: url(<?= base_url().'';?>img/svg/pattern-1.svg) no-repeat right bottom fixed; background-size: cover;" tabindex='-1'">
+<div class="modal-body" style="padding-top:0px;padding-left:5px;background: url(<?= base_url().'';?>img/svg/pattern-1.svg) no-repeat right bottom fixed; background-size: cover;" tabindex='1000'">
 <form id="form_save" name="form_save" method="post" action=""  accept-charset="utf-8" enctype="multipart/form-data">
   <input id="ids" name="ids" type="hidden" value=""/>
   <input id="for_log_app_id" name="for_log_app_id" type="hidden" value="<?=$app_id?>"/>
@@ -100,29 +100,27 @@
                 <div class="col-md-6 mb-6 col_add">
                   <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;">
                     ส่วนงาน : 
-                    <span class="text-danger stars">  </span>
+                    <span class="text-danger stars"> * </span>
                   </label>
-                <label class="form-label color-fusion-500" style="" for="unit_id_add">
-                    <label style ="font-weight:550;font-size:14px;" id = "unit_id_add" id = "unit_id_add"></label>
-                  </label>
+                  
+                  <div id = "div_unit_id_add"></div>
                   
                 </div> 
                 
                 <div class="col-md-6 mb-6 col_add">
                   <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;">
                     กลุ่มงาน : 
-                    <span class="text-danger stars">  </span>
+                    <span class="text-danger stars"> * </span>
                   </label>
-                  <label class="form-label color-fusion-500" style="" for="group_id_add">
-                    <label style ="font-weight:550;font-size:14px;" id = "group_id_add" name = "group_id_add"></label>
-                  </label>
+                  
+                    <div id = "div_group_id_add"></div>
                 </div>
                 <div class="col-md-6 mb-6 col_add">
                   <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;">
                     ตำแหน่ง
                     <span class="text-danger stars"> * </span>
                   </label>
-                  <select id="chief_add" name="chief_add" class="ele_select_add" placeholder="ตำแหน่ง">
+                  <select id="chief_add" name="chief_add" class="" placeholder="ตำแหน่ง">
                     <option value="">
                       เลือกตำแหน่ง
                     </option>
@@ -141,7 +139,7 @@
                 <div class="col-md-6 mb-6 col_add">
                   <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="position_name">
                     คำอธิบายตำแหน่ง
-                    <span class="text-danger stars"> * </span>
+                    <span class="text-danger stars">  </span>
                   </label>
                   <input type="text" class="form-control form-ele clear-element" id="position_name_add" name="position_name_add" placeholder="คำอธิบายตำแหน่ง" value="">
                 </div> 

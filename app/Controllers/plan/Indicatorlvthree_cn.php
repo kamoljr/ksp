@@ -52,16 +52,28 @@ class Indicatorlvthree_cn extends BaseController
 		$result = $this->unit_m->search_strategylvtwo_id();
 		echo $result;
 	}
-	public function search_plantargetlvtwo_id()
+	public function search_strategylvthree_id()
 	{	
 		$this->unit_m = model($this->m_name);
-		$result = $this->unit_m->search_plantargetlvtwo_id();
+		$result = $this->unit_m->search_strategylvthree_id();
+		echo $result;
+	}
+	public function search_plantargetlvthree_id()
+	{	
+		$this->unit_m = model($this->m_name);
+		$result = $this->unit_m->search_plantargetlvthree_id();
 		echo $result;
 	}
 	public function plantargetlvone_id_add()
 	{	
 		$this->unit_m = model($this->m_name);
 		$result = $this->unit_m->plantargetlvone_id_add();
+		echo $result;
+	}
+	public function indicatorlvtwo_id_add()
+	{	
+		$this->unit_m = model($this->m_name);
+		$result = $this->unit_m->indicatorlvtwo_id_add();
 		echo $result;
 	}
 	public function search_unit_id()

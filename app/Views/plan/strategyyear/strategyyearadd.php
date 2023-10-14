@@ -23,75 +23,58 @@
                 <span><label id = "lbl_rowid"></label></span> 
               </div>
 
-              <!-- <div class="col-md-12 mb-12" style = "padding-bottom:25px;padding-left:10px;padding-right:10px;">
-                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="unit_name_add">
-                  ส่วนงาน
-                  <span class="text-danger stars"> * </span>
-                </label>
-                <select id="unit_name_add" name="unit_name_add" class="select2" placeholder="ส่วนงาน">
-                    <option value="">เลือกส่วนงาน</option><option value="17">กลุ่มพัฒนาระบบงาน</option><option value="18">สถาบันคุรุพัฒนา</option><option value="11">สำนักจรรยาบรรณวิชาชีพและนิติการ</option><option value="3">สำนักทะเบียนและใบอนุญาตประกอบวิชาชีพ</option><option value="9">สำนักเทคโนโลยีสารสนเทศ</option><option value="16">สำนักเทคโนโลยีสารสนเทศและการสื่อสาร</option><option value="5">สำนักนโยบายและแผน</option><option value="4">สำนักพัฒนาและส่งเสริมวิชาชีพ</option><option value="2">สำนักมาตรฐานวิชาชีพ</option><option value="14">สำนักยกย่องเชิดชูเกียรติวิชาชีพ</option><option value="12">สำนักส่งเสริมและพัฒนาคุรุสภาจังหวัด</option><option value="7">สำนักอำนวยการ</option><option value="8">หน่วยตรวจสอบภายใน</option>
-                </select>
-              </div>  -->
+             
               <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
-                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="group_name_add">
+                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="budget_year_add">
                   ปีงบประมาณ
                   <span class="text-danger stars"> * </span>
                 </label>
-                <input type="text" class="form-control form-ele clear-element" id="target_add" name="target_add" placeholder="ปีงบประมาณ" value="" >
+                <input type="text" class="form-control form-ele clear-element" id="budget_year_add" name="budget_year_add" placeholder="ปีงบประมาณ" value="" >
               </div>
               <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
-                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="group_name_add">
+                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="vision_add">
                   วิสัยทัศน์(Vision)
                   <span class="text-danger stars"> * </span>
                 </label>
-                <textarea class="form-control" id="validationTextarea3" placeholder="" rows="1"> ดึงข้อมูลวิสัยทัศน์ของแผน 5 ปีมาใส่</textarea>
+                <textarea class="form-control form-ele clear-element" id="vision_add" name="vision_add" placeholder="" rows="1"> ดึงข้อมูลวิสัยทัศน์ของแผน 5 ปีมาใส่</textarea>
               </div>
               
               <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
-                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="group_name_add">
+                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="popularity_add">
                   ค่านิยม(Values)
                   <span class="text-danger stars"> * </span>
                 </label>
-                <textarea class="form-control" id="validationTextarea3" placeholder="" rows="1">ดึงข้อมูลค่านิยมของแผน 5 ปีมาใส่</textarea>
+                <textarea class="form-control form-ele clear-element" id="popularity_add" name="popularity_add" placeholder="" rows="1">ดึงข้อมูลค่านิยมของแผน 5 ปีมาใส่</textarea>
               </div> 
               <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
-                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="group_name_add">
+                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="target_add">
                   เป้าหมายการให้บริการประทรวง
                   <span class="text-danger stars"> * </span>
                 </label>
-                <textarea class="form-control" id="validationTextarea3" placeholder="" rows="1"></textarea>
+                <textarea class="form-control form-ele clear-element" id="target_add" name="target_add" placeholder="" rows="1"></textarea>
               </div> 
               <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
-                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="group_name_add">
+                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="target_ind_add">
                   ตัวชี้วัดเป้าหมายการให้บริการประทรวง
                   <span class="text-danger stars"> * </span>
                 </label>
-                <textarea class="form-control" id="validationTextarea3" placeholder="" rows="1"></textarea>
+                <textarea class="form-control form-ele clear-element" id="target_ind_add" name="target_ind_add" placeholder="" rows="1"></textarea>
               </div> 
               <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
-                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="group_name_add">
+                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="achievement_add">
                   ผลสัมฤทธิ์และประโยชน์ที่คาดว่าจะได้รับ
                   <span class="text-danger stars"> * </span>
                 </label>
-                <textarea class="form-control" id="validationTextarea3" placeholder="" rows="1">ดึงข้อมูลผลสัมฤทธิ์ของแผน 5 ปีมาใส่</textarea>
+                <textarea class="form-control form-ele clear-element" id="achievement_add" name="achievement_add" placeholder="" rows="1">ดึงข้อมูลผลสัมฤทธิ์ของแผน 5 ปีมาใส่</textarea>
               </div> 
               <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
-                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="group_name_add">
+                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="achievement_ind_add">
                   ตัวชี้วัดผลสัมฤทธิ์
                   <span class="text-danger stars"> * </span>
                 </label>
-                <textarea class="form-control" id="validationTextarea3" placeholder="" rows="1">ดึงข้อมูลตัวชี้วัดผลสัมฤทธิ์ของแผน 5 ปีมาใส่</textarea>
+                <textarea class="form-control form-ele clear-element" id="achievement_ind_add" name="achievement_ind_add" placeholder="" rows="1">ดึงข้อมูลตัวชี้วัดผลสัมฤทธิ์ของแผน 5 ปีมาใส่</textarea>
               </div> 
-              
-              <!-- <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
-                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="tel_add">
-                  เบอร์โทร
-                  <span class="text-danger stars"> * </span>
-                </label>
-                <input type="text" class="form-control form-ele clear-element" id="tel_add" name="tel_add" placeholder="เบอร์โทร" value="">
-              </div>  -->
-
-
+           
             </div>
 
             <?=view("templates/modalclose.php")?>

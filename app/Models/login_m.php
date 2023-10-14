@@ -20,7 +20,7 @@ class Login_m extends Model
     // INNER JOIN unit_name as tunit
     // ON tg.unit_id = tunit.unit_id
     // WHERE tu.del_item = '0' and tu.loginname = '".$username."' and tu.password = '".$password."'";
-    $sql = "SELECT MAX(structure_id) AS maxid FROM dbo.structure_org";
+    $sql = "SELECT MAX(structure_id) AS maxid FROM dbo.structure_org where del_item = '0'";
     $result = $this->db->query($sql)->getResultObject();
     $maxid = $result[0]->maxid;
   
@@ -32,6 +32,7 @@ class Login_m extends Model
     dbo.users ON dbo.structure_user.user_id = dbo.users.user_id ON dbo.structure_group.group_id = dbo.structure_user.group_id AND dbo.structure_group.structure_id = dbo.structure_user.structure_id INNER JOIN
     dbo.structure_unit ON dbo.structure_group.unit_id = dbo.structure_unit.unit_id AND dbo.structure_group.structure_id = dbo.structure_unit.structure_id
     WHERE (dbo.structure_user.structure_id = ".$maxid.") and loginname = '".$username."' and password = '".$password."'";
+    //echo $sql;
     
     $result = $this->db->query($sql);
 

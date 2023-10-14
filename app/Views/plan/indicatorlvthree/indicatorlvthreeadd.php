@@ -25,27 +25,27 @@
 
               <div class="col-md-3 mb-3" style = "padding-bottom:0px;padding-left:10px;padding-right:10px;">
                 <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="">
-                  <h5>แผนยุทธศาสตร์ชาติ : </h5>
+                  <h5>แผนระดับ2 : </h5>
                   <span class="text-danger stars">  </span>
                 </label>
               </div> 
               <div class="col-md-9 mb-9 " style = "padding-bottom:0px;padding-left:10px;padding-right:10px;">
-                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="form_add_lbl_strategylvone">
-                  <h5><label id = "form_add_lbl_strategylvone"></label></h5>
+                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="form_add_lbl_strategylvtwo">
+                  <h5><label id = "form_add_lbl_strategylvtwo"></label></h5>
                   <span class="text-danger stars">  </span>
                 </label>
               </div> 
               <div class="col-md-12 mb-12" style = "padding-bottom:25px;padding-left:10px;padding-right:10px;">
                 <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="indicatorlvone_id_add">
-                  เชื่อมตัวชี้วัดแผนยุทธศาสตร์ชาติ
+                  เชื่อมตัวชี้วัดแผนระดับ2
                   <span class="text-danger stars"> * </span>
                 </label>
-                <div id = "div_indicatorlvone_id_add"></div>
+                <div id = "div_indicatorlvtwo_id_add"></div>
               </div>
               <div class="col-md-3 mb-3" style = "padding-bottom:0px;padding-left:10px;padding-right:10px;">
                 <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="">
                   
-                  <h5>แผนระดับ 2 :</h5>
+                  <h5>แผนระดับ3 :</h5>
                   <span class="text-danger stars">  </span>
                 </label>
               </div> 
@@ -58,22 +58,22 @@
               </div> 
               <div class="col-md-12 mb-12" style = "padding-bottom:10px;padding-right:10px;">
                 <label class="form-label color-fusion-500" style ="" for="unit_name_add">
-                  <h5>เป้าหมายแผนระดับ 2 : <label id ="form_add_lbl_plantargetlvtwo"></label></h5>
+                  <h5>เป้าหมายแผนระดับ3 : <label id ="form_add_lbl_plantargetlvthree"></label></h5>
                 </label>
               </div>
               <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
-                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;padding-left:10px;" for="indicatorlvtwo_add">
-                  ตัวชี้วัดแผนระดับ2
+                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;padding-left:10px;" for="indicatorlvthree_add">
+                  ตัวชี้วัดแผนระดับ3
                   <span class="text-danger stars"> * </span>
                 </label>
-                <input type="text" class="form-control form-ele clear-element" id="indicatorlvtwo_add" name="indicatorlvtwo_add" placeholder="ตัวชี้วัดแผนระดับ2" value="" >
+                <input type="text" class="form-control form-ele clear-element" id="indicatorlvthree_add" name="indicatorlvthree_add" placeholder="ตัวชี้วัดแผนระดับ3" value="" >
               </div> 
               <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
-                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;padding-left:10px;" for="indicatorlvtwo_unit_add">
+                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;padding-left:10px;" for="indicatorlvthree_unit_add">
                   หน่วย
                   <span class="text-danger stars"> * </span>
                 </label>
-                <input type="text" class="form-control form-ele clear-element" id="indicatorlvtwo_unit_add" name="indicatorlvtwo_unit_add" placeholder="หน่วย" value="" >
+                <input type="text" class="form-control form-ele clear-element" id="indicatorlvthree_unit_add" name="indicatorlvthree_unit_add" placeholder="หน่วย" value="" >
               </div> 
             </div>
 

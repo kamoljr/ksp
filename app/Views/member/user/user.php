@@ -262,7 +262,7 @@ function dispose_user(structure_user_id,dispose_user,user_id){
 	});
 }
 $(document).ready(function() {
-
+	
   $(document).on('click', '.des_user', function() {
     $(".div_des").show();
     $(".div_add").hide();
@@ -361,11 +361,11 @@ $(document).ready(function() {
   $('#boss1').select2({
     dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
   });
-	$(document).ready(function() {
-		$('.ele_select_add').select2({
-			dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
-		});
-	});
+	// $(document).ready(function() {
+	// 	$('.ele_select_add').select2({
+	// 		dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
+	// 	});
+	// });
 
 	// ------------------open datatable------------------------
 	var table = $("#dynamic-table").DataTable({
@@ -556,6 +556,66 @@ $(document).ready(function() {
 		$('#chift_unit_add').select2({
    	 dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
   	});
+		$('#chief_add').select2({
+   	 dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
+  	});
+
+		//----------------------select add-----------------
+		const select_var3 = {
+			ele_name:"unit_id_add", // ชื่อ element
+			value_edit:$("#search_unit_id").val(), // ใช้เลื่อกค่า ตอนแก้ไข ใส่ค่าที่ต้องการ
+			option_type:"-", //แสดงตัวเลือกทั้งหมด หรือไม่ option_type:all,""
+			placeholder:"ส่วนงาน",
+			classselect:"ele_select_add", //ใส่ class ที่ต้องการ 
+			ctr1:$("#search_structure_name").val(),
+		};
+		create_one_select(select_var3);
+
+		if ($("#unit_id_add").val() == ""){
+			$('#group_id_add').empty()
+      $('#group_id_add').append('<option selected="selected" value="">ไม่พบข้อมูล</option>');
+		}else{
+			const select_var4 = {
+				ele_name:"group_id_add", // ชื่อ element
+				value_edit:$("#search_group_id").val(), // ใช้เลื่อกค่า ตอนแก้ไข ใส่ค่าที่ต้องการ
+				option_type:"-", //แสดงตัวเลือกทั้งหมด หรือไม่ option_type:all,""
+				placeholder:"กลุ่มงาน",
+				classselect:"ele_select_add", //ใส่ class ที่ต้องการ 
+				ctr1:$("#unit_id_add").val(),
+				ctr2:$("#search_structure_name").val(),
+			};
+			create_one_select(select_var4);
+		}
+		
+		$(document).on('change', '#unit_id_add', function() {
+			if (this.value == ""){
+				$('#group_id_add').empty()
+				$('#group_id_add').append('<option selected="selected" value="">ไม่พบข้อมูล</option>');
+			}else{
+				const select_var4 = {
+					ele_name:"group_id_add", // ชื่อ element
+					value_edit:'', // ใช้เลื่อกค่า ตอนแก้ไข ใส่ค่าที่ต้องการ
+					option_type:"-", //แสดงตัวเลือกทั้งหมด หรือไม่ option_type:all,""
+					placeholder:"กลุ่มงาน",
+					classselect:"ele_select_add", //ใส่ class ที่ต้องการ 
+					ctr1:this.value,
+					ctr2:$("#search_structure_name").val(),
+				};
+				create_one_select(select_var4);
+				$(document).ready(function() {
+					$('.ele_select_add').select2({
+						dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
+					});
+				});
+			}
+			$('#chief_add').select2({
+					dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
+			});
+		});
+		//---------------select add---------------------
+
+
+
 		$("#ids").val('');
 		$(".lblmode").text("เพิ่ม");
 		$("#icon_add_form").show();
@@ -576,7 +636,10 @@ $(document).ready(function() {
 
 		$("#btn_save_change").show();
 		$("#btn_dialog_close").show();
-			
+		
+		$('.ele_select_add').select2({
+			dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
+		});
 	});
 	// ------------------close เพิ่ม จุดที่ 1/1-----------------------
 
@@ -591,10 +654,22 @@ $(document).ready(function() {
 	
 	$("#form_save").validate({
 		rules: {
-			user_name: "required",
+			user_name_add: "required",
+			email_add: "required",
+			loginname_add: "required",
+			password_add: "required",
+			unit_id_add: "required",
+			group_id_add: "required",
+			chief_add: "required",
 		},
 		messages: {
-			user_name: "กรุณาป้อนชื่อ กลุ่มงาน",
+			user_name_add: "กรุณาป้อนชื่อ ชื่อ-นามสกุล",
+			email_add: "กรุณาป้อนชื่อ E-mail",
+			loginname_add: "กรุณาป้อนชื่อ Login",
+			password_add: "กรุณาป้อนชื่อ Password",
+			unit_id_add: "กรุณาป้อนชื่อ ส่วนงาน",
+			group_id_add: "กรุณาป้อนชื่อ กลุ่มงาน",
+			chief_add: "กรุณาป้อนชื่อ ตำแหน่ง",
 		},
 		errorPlacement: function(error, element) {
 			if (element.is(":radio")) {
@@ -675,11 +750,13 @@ function create_chift_unit_add(value_select){
 	// ------------------close ค้าหา จุดที่ 1/2-----------------------
 // ------------------open แกไข จุดที่ 2/2-----------------------
 	function editdata(d, mode) {
-		
+		$('#chief_add').select2({
+				dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
+		});
 		$(".div_des").hide();
 		$("#form_add_structure").text($("#search_structure_name option:selected" ).text());
-		$("#unit_id_add").text($("#search_unit_id option:selected" ).text());
-		$("#group_id_add").text($("#search_group_id option:selected" ).text());
+		// $("#unit_id_add").text($("#search_unit_id option:selected" ).text());
+		// $("#group_id_add").text($("#search_group_id option:selected" ).text());
 
 		$('.default-example-modal-right').modal('toggle');
 		$(".dialog-data").show();
@@ -711,7 +788,61 @@ function create_chift_unit_add(value_select){
 						dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
 					});
 				}
+				//----------------------select add-----------------
+				const select_var6 = {
+					ele_name:"unit_id_add", // ชื่อ element
+					value_edit:response[0].unit_id, // ใช้เลื่อกค่า ตอนแก้ไข ใส่ค่าที่ต้องการ
+					option_type:"-", //แสดงตัวเลือกทั้งหมด หรือไม่ option_type:all,""
+					placeholder:"ส่วนงาน",
+					classselect:"ele_select_add", //ใส่ class ที่ต้องการ 
+					ctr1:$("#search_structure_name").val(),
+				};
+				create_one_select(select_var6);
+
+				if ($("#unit_id_add").val() == ""){
+					$('#group_id_add').empty()
+					$('#group_id_add').append('<option selected="selected" value="">ไม่พบข้อมูล</option>');
+				}else{
+					const select_var7 = {
+						ele_name:"group_id_add", // ชื่อ element
+						value_edit:response[0].group_id, // ใช้เลื่อกค่า ตอนแก้ไข ใส่ค่าที่ต้องการ
+						option_type:"-", //แสดงตัวเลือกทั้งหมด หรือไม่ option_type:all,""
+						placeholder:"กลุ่มงาน",
+						classselect:"ele_select_add", //ใส่ class ที่ต้องการ 
+						ctr1:$("#unit_id_add").val(),
+						ctr2:$("#search_structure_name").val(),
+					};
+					create_one_select(select_var7);
+				}
 				
+				$(document).on('change', '#unit_id_add', function() {
+					if (this.value == ""){
+						$('#group_id_add').empty()
+						$('#group_id_add').append('<option selected="selected" value="">ไม่พบข้อมูล</option>');
+					}else{
+						const select_var8 = {
+							ele_name:"group_id_add", // ชื่อ element
+							value_edit:'', // ใช้เลื่อกค่า ตอนแก้ไข ใส่ค่าที่ต้องการ
+							option_type:"-", //แสดงตัวเลือกทั้งหมด หรือไม่ option_type:all,""
+							placeholder:"กลุ่มงาน",
+							classselect:"ele_select_add", //ใส่ class ที่ต้องการ 
+							ctr1:this.value,
+							ctr2:$("#search_structure_name").val(),
+						};
+						create_one_select(select_var8);
+						$(document).ready(function() {
+							$('.ele_select_add').select2({
+								dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
+							});
+						});
+					}
+				});
+				//$(document).ready(function() {
+					$('.ele_select_add').select2({
+						dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
+					});
+				//});
+				//---------------select add---------------------
 				//alert(response[0].chief);
 				$("#user_name_add").val(response[0].user_name);
 				$("#chief_add").val(response[0].chief);
@@ -773,7 +904,9 @@ function create_chift_unit_add(value_select){
 		$('.div_show_rowid').show();
 		
 		$(".lblmode").text(txt);
-
+		$('#chief_add').select2({
+			dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
+		});
 	}
 	// ------------------open แกไข จุดที่ 2/2-----------------------
 

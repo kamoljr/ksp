@@ -291,11 +291,16 @@ function create_one_select(select_var){
 			if (select_var.option_type == "-"){
 				str_select = str_select+'<option value="" >-</option>';
 			}
-			$.each(response,function(i){
-				selected = '';
-				if (select_var.value_edit == response[i].field_id){selected = 'selected';}
-				str_select = str_select+'<option value="'+response[i].field_id+'" '+selected+' >'+response[i].field_name+'</option>';
-			});
+            if (response == ""){
+							str_select = str_select+'<option value="" >ไม่พบข้อมูล</option>';
+            }else{
+							$.each(response,function(i){
+								selected = '';
+								if (select_var.value_edit == response[i].field_id){selected = 'selected';}
+								str_select = str_select+'<option value="'+response[i].field_id+'" '+selected+' >'+response[i].field_name+'</option>';
+							});
+            }
+			
 			str_select = str_select+'</select>';
 			$("#div_"+select_var.ele_name).html(str_select);
 		},

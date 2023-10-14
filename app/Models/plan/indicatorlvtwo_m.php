@@ -51,7 +51,7 @@ class Indicatorlvtwo_m extends Model
     From dbo.str_plantargetlvtwo INNER JOIN
     dbo.str_indicatorlvone ON dbo.str_plantargetlvtwo.plantargetlvone_id = dbo.str_indicatorlvone.plantargetlvone_id
     where str_plantargetlvtwo.plantargetlvtwo_id = $ctr1 and str_indicatorlvone.del_item = '0' order by indicatorlvone_id desc";
-
+    
     $result = $this->db->query($sql);
     $data = $result->getResultArray();
     $resData = json_encode($data);

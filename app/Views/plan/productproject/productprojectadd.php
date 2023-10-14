@@ -22,22 +22,25 @@
                 <i class="ni ni-key"></i>
                 <span><label id = "lbl_rowid"></label></span> 
               </div>
-
-              <!-- <div class="col-md-12 mb-12" style = "padding-bottom:25px;padding-left:10px;padding-right:10px;">
-                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="unit_name_add">
-                  ส่วนงาน
-                  <span class="text-danger stars"> * </span>
+              <div class="col-md-3 mb-3" style = "padding-bottom:0px;padding-left:10px;padding-right:10px;">
+                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="">
+                  <h5>ปีงบประมาณ : </h5>
+                  <span class="text-danger stars">  </span>
                 </label>
-                <select id="unit_name_add" name="unit_name_add" class="select2" placeholder="ส่วนงาน">
-                    <option value="">เลือกส่วนงาน</option><option value="17">กลุ่มพัฒนาระบบงาน</option><option value="18">สถาบันคุรุพัฒนา</option><option value="11">สำนักจรรยาบรรณวิชาชีพและนิติการ</option><option value="3">สำนักทะเบียนและใบอนุญาตประกอบวิชาชีพ</option><option value="9">สำนักเทคโนโลยีสารสนเทศ</option><option value="16">สำนักเทคโนโลยีสารสนเทศและการสื่อสาร</option><option value="5">สำนักนโยบายและแผน</option><option value="4">สำนักพัฒนาและส่งเสริมวิชาชีพ</option><option value="2">สำนักมาตรฐานวิชาชีพ</option><option value="14">สำนักยกย่องเชิดชูเกียรติวิชาชีพ</option><option value="12">สำนักส่งเสริมและพัฒนาคุรุสภาจังหวัด</option><option value="7">สำนักอำนวยการ</option><option value="8">หน่วยตรวจสอบภายใน</option>
-                </select>
-              </div>  -->
+              </div> 
+              <div class="col-md-9 mb-9 " style = "padding-bottom:0px;padding-left:10px;padding-right:10px;">
+                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="form_add_lbl_strategyyear">
+                  <h5> <label id = "form_add_lbl_strategyyear"></label></h5>
+                  <span class="text-danger stars">  </span>
+                </label>
+              </div> 
               <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
                 <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;padding-bottom:5px;" for="group_name_add">
                   แผนงาน
                   <span class="text-danger stars"> * </span>
                 </label>
-                <div class="frame-wrap">
+                <div id = "div_master_plan_id_add"></div>
+                <!-- <div class="frame-wrap">
                     <div class="custom-control custom-radio custom-control-inline">
                         <input type="radio" class="custom-control-input" id="defaultInline1Radio" name="inlineDefaultRadiosExample">
                         <label class="custom-control-label color-fusion-300" for="defaultInline1Radio" >แผนงานบุคลากรภาครัฐ</label>
@@ -56,17 +59,13 @@
                     </div>
                    
                 </div>
-              </div> 
-              <div class="col-md-12 mb-12" style = "padding-bottom:25px;padding-left:10px;padding-right:10px;">
+              </div>  -->
+              <div class="col-md-12 mb-12" style = "padding-bottom:25px;padding-top:25px;padding-left:10px;padding-right:10px;">
                 <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="unit_name_add">
                   ด้าน
                   <span class="text-danger stars"> * </span>
                 </label>
-                <select id="unit_name_add" name="unit_name_add" class="select2" placeholder="ส่วนงาน">
-                   <option>เพื่อสนับสนุนด้านการพัฒนาและเสริมสร้างศักยภาพทรัพยากรมนุษย</option>
-                   <option>ด้านการพัฒนาและเสริมสร้างศักยภาพทรัพยากรมนุษย์</option>
-                  
-                </select>
+                <div id = "div_plan_id_add"></div>
               </div> 
               <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
                 <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;padding-bottom:5px;" for="group_name_add">
@@ -75,46 +74,32 @@
                 </label>
                 <div class="frame-wrap">
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" class="custom-control-input typeb" id="defaultInline1Radio1" name="inlineDefaultRadiosExample1" value = '1'>
-                        <label class="custom-control-label color-fusion-300" for="defaultInline1Radio1" >ผลผลิต</label>
+                        <input type="radio" class="custom-control-input typeb" id="product_type1" name="product_type" value = '1' checked>
+                        <label class="custom-control-label color-fusion-300" for="product_type1" >ผลผลิต</label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" class="custom-control-input typeb" id="defaultInline2Radio2" name="inlineDefaultRadiosExample1" checked=""  value = '2'>
-                        <label class="custom-control-label color-fusion-300" for="defaultInline2Radio2">โครงการระดับผลผลิต</label>
+                        <input type="radio" class="custom-control-input typeb" id="product_type2" name="product_type" value = '2'>
+                        <label class="custom-control-label color-fusion-300" for="product_type2">โครงการระดับผลผลิต</label>
                     </div>
                    
                    
                 </div>
               </div> 
-              <div class="col-md-12 mb-12 divhide1" style = "padding-bottom:25px;">
-                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="group_name_add">
-                  ผลผลิต
+              <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
+                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="product_add">
+                  ผลผลิต/โครงการ
                   <span class="text-danger stars"> * </span>
                 </label>
-                <input type="text" class="form-control form-ele clear-element" id="group_name_add" name="group_name_add" placeholder="ผลผลิต" value="" >
+                <input type="text" class="form-control form-ele clear-element" id="product_add" name="product_add" placeholder="ผลผลิต" value="" >
               </div>
-              <div class="col-md-12 mb-12 divhide1" style = "padding-bottom:25px;">
-                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="group_name_add">
+              <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
+                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="activity_add">
                   กิจกรรม
-                  <span class="text-danger stars"> * </span>
+                  <span class="text-danger stars"> </span>
                 </label>
-                <input type="text" class="form-control form-ele clear-element" id="group_name_add" name="group_name_add" placeholder="กิจกรรม" value="" >
+                <input type="text" class="form-control form-ele clear-element" id="activity_add" name="activity_add" placeholder="กิจกรรม" value="" >
               </div> 
-              <div class="col-md-12 mb-12 divhide2" style = "padding-bottom:25px;">
-                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="group_name_add">
-                  โครงการ
-                  <span class="text-danger stars"> * </span>
-                </label>
-                <input type="text" class="form-control form-ele clear-element" id="group_name_add" name="group_name_add" placeholder="โครงการ" value="" >
-              </div>
-         
-              <!-- <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
-                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="tel_add">
-                  เบอร์โทร
-                  <span class="text-danger stars"> * </span>
-                </label>
-                <input type="text" class="form-control form-ele clear-element" id="tel_add" name="tel_add" placeholder="เบอร์โทร" value="">
-              </div>  -->
+             
 
 
             </div>

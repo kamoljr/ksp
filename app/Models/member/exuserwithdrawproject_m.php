@@ -23,7 +23,12 @@ class Exuserwithdrawproject_m extends Model
   public function user_id_add()
   {
     $this->shared_m = model("member/shared_m");
-    $structure_id = $this->shared_m->find_max_id("structure_org","structure_id");
+    // $structure_id = $this->shared_m->find_max_id("structure_org","structure_id");
+
+    $sql = "SELECT max(structure_id) as structure_id FROM structure_org where del_item = '0'";
+    $result = $this->db->query($sql)->getResultObject();
+    $structure_id = $result[0]->structure_id;
+
     $sql = "Select user_id as field_id,user_name as field_name From structure_user where del_item = '0' and structure_id = $structure_id order by user_name asc";
     //echo $sql;
     $result = $this->db->query($sql);
@@ -149,10 +154,12 @@ class Exuserwithdrawproject_m extends Model
     $make_date_mktime = $this->shared_m->mktimenow();
     $make_id = $_SESSION['user_id'];
     
-
     $count_reccord = 0;
 
-    $structure_id = $this->shared_m->find_max_id("structure_org","structure_id");
+    // $structure_id = $this->shared_m->find_max_id("structure_org","structure_id");
+    $sql = "SELECT max(structure_id) as structure_id FROM structure_org where del_item = '0'";
+    $result = $this->db->query($sql)->getResultObject();
+    $structure_id = $result[0]->structure_id;
 
     if ($count_reccord == 0){
       if ($ids == '') {

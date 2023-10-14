@@ -25,46 +25,41 @@
 
               <div class="col-md-12 mb-12" style = "padding-bottom:10px;padding-right:10px;">
                 <label class="form-label color-fusion-500" style ="" for="unit_name_add">
-                  <h4>ปีงบประมาณ : 2566</h4>
+                  <h4>แผนปฏิบัติการระยะ 5 ปี : <label id = "form_add_lbl_strategylvfour"></label></h4>
                 </label>
               </div> 
               
              
               <div class="col-md-12 mb-12" style = "padding-bottom:10px;padding-right:10px;">
                 <label class="form-label color-fusion-500" style ="" for="unit_name_add">
-                  <h4>พันธกิจ : พัฒนามาตรฐานวิชาชีพและกํากับดูแลการประกอบวิชาชีพ</h4>
+                  <h4>พันธกิจ : <label id = "form_add_lbl_mission"></label></h4>
+                </label>
+              </div> 
+              <div class="col-md-12 mb-12" style = "padding-bottom:10px;padding-right:10px;">
+                <label class="form-label color-fusion-500" style ="" for="unit_name_add">
+                  <h4>ค่าเป้าหมายพันธกิจ : <label id = "form_add_lbl_mission_target"></label></h4>
                 </label>
               </div> 
               <div class="col-md-12 mb-12" style = "padding-bottom:25px;padding-left:10px;padding-right:10px;">
-                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="unit_name_add">
-                  เชื่อมตัวชี้วัดแผนยุทธศาสตร์คุรุสภา 5 ปี
+                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="indicatorlvfour_id_add">
+                  เชื่อมตัวชี้วัดแผนปฏิบัติการระยะ 5 ปี
                   <span class="text-danger stars"> * </span>
                 </label>
-                <select id="unit_name_add" name="unit_name_add" class="select2" placeholder="ส่วนงาน">
-                  
-                    <option value="17">
-                      ข้อมูลตัวชี้วัดแผน 5 ปี รายารที่ 1
-                    </option>
-                    <option value="17">
-                      ข้อมูลตัวชี้วัดแผน 5 ปี รายารที่ 2
-                    </option>
-                    
-                       
-                </select>
+                <div id = "div_indicatorlvfour_id_add"></div>
               </div>
               <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
-                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="group_name_add">
+                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="mission_ind_add">
                   ตัวชี้วัดพันธกิจ
                   <span class="text-danger stars"> * </span>
                 </label>
-                <input type="text" class="form-control form-ele clear-element" id="group_name_add" name="group_name_add" placeholder="ตัวชี้วัดพันธกิจ" value="" >
+                <input type="text" class="form-control form-ele clear-element" id="mission_ind_add" name="mission_ind_add" placeholder="ตัวชี้วัดพันธกิจ" value="" >
               </div> 
               <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
-                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="group_name_add">
+                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="mission_unit_add">
                   หน่วยนับ
                   <span class="text-danger stars"> * </span>
                 </label>
-                <input type="text" class="form-control form-ele clear-element" id="group_name_add" name="group_name_add" placeholder="หน่วยนับ" value="" >
+                <input type="text" class="form-control form-ele clear-element" id="mission_unit_add" name="mission_unit_add" placeholder="หน่วยนับ" value="" >
               </div> 
             
 

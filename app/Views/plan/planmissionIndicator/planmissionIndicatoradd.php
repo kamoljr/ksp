@@ -41,7 +41,7 @@
               </div> 
               <div class="col-md-12 mb-12" style = "padding-bottom:25px;padding-left:10px;padding-right:10px;">
                 <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="unit_name_add">
-                  เชื่อมตัวชี้วัดแผนยุทธศาสตร์คุรุสภา 5 ปี
+                  เชื่อมตัวชี้วัดแผนปฏิบัติการระยะ 5 ปี
                   <span class="text-danger stars"> * </span>
                 </label>
                 <select id="unit_name_add" name="unit_name_add" class="select2" placeholder="ส่วนงาน">

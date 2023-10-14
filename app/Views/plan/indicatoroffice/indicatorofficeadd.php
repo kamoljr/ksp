@@ -7,8 +7,8 @@
     <div class="card p-4 rounded-plus bg-faded" style="padding-top:10px !important;">
       <h5 class="color-primary-500" style = "font-weight:600;display: flex;">
         <i class="ni ni-big-plus fa-2x" id = "icon_add_form" style = "padding-right:10px;"></i>
-        <!-- <i class="ni ni-pencil fa-2x" id = "icon_edit_form" style = "padding-right:10px;"></i>
-        <i class="ni ni-eye fa-2x" id = "icon_view_form" style = "padding-right:10px;"></i> -->
+        <i class="ni ni-pencil fa-2x" id = "icon_edit_form" style = "padding-right:10px;"></i>
+        <i class="ni ni-eye fa-2x" id = "icon_view_form" style = "padding-right:10px;"></i>
         <label class = "lblmode" style = "padding-top:7px;"></label>
         <label  style = "padding-top:7px;"><?= $app_name; ?></label>
       </h5>
@@ -18,33 +18,31 @@
 
             <div class="form-row dialog-data ">
               
-              <!-- <div class="alert alert-primary col-md-12 mb-12 div_show_rowid text-white " style = "padding:10px;margin-bottom:10px;background-color:rgb(223 180 90)">
+              <div class="alert alert-primary col-md-12 mb-12 div_show_rowid text-white " style = "padding:10px;margin-bottom:10px;background-color:rgb(223 180 90)">
                 <i class="ni ni-key"></i>
                 <span><label id = "lbl_rowid"></label></span> 
-              </div> -->
+              </div>
 
               <div class="col-md-12 mb-12" style = "padding-bottom:10px;padding-right:10px;">
-                <label class="form-label color-fusion-500" style ="" for="unit_name_add">
-                  <h4>ปีงบประมาณ : 2566</h4>
+                <label class="form-label color-fusion-500" style ="" for="form_add_lbl_strategyyear">
+                  <h4>ปีงบประมาณ : <label id = "form_add_lbl_strategyyear"></label></h4>
                   
                 </label>
-                <!-- <select id="unit_name_add" name="unit_name_add" class="select2" placeholder="ส่วนงาน">
-                   <option>ด้านการพัฒนาและเสริมสร้างศักยภาพทรัพยากรมนุยษ์</option>
-                </select> -->
+            
               </div> 
               <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
-                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="group_name_add">
+                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="org_ind_add">
                   ตัวชี้วัดสำนักงาน
                   <span class="text-danger stars"> * </span>
                 </label>
-                <input type="text" class="form-control form-ele clear-element" id="group_name_add" name="group_name_add" placeholder="ตัวชี้วัดสำนักงาน" value="" >
+                <input type="text" class="form-control form-ele clear-element" id="org_ind_add" name="org_ind_add" placeholder="ตัวชี้วัดสำนักงาน" value="" >
               </div> 
               <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
-                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;padding-left:10px;" for="group_name_add">
+                <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;padding-left:10px;" for="org_ind_unit_add">
                   หน่วย
                   <span class="text-danger stars"> * </span>
                 </label>
-                <input type="text" class="form-control form-ele clear-element" id="target_add" name="target_add" placeholder="หน่วย" value="" >
+                <input type="text" class="form-control form-ele clear-element" id="org_ind_unit_add" name="org_ind_unit_add" placeholder="หน่วย" value="" >
               </div>
               <!-- <div class="col-md-12 mb-12" style = "padding-bottom:25px;">
                 <label class="form-label color-fusion-500" style ="font-weight:550;font-size:14px;" for="tel_add">

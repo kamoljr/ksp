@@ -34,7 +34,7 @@
               </div>  -->
               <div class="col-md-12 mb-12" style = "padding-bottom:15px;">
                 <label class="form-label color-fusion-500" style ="font-weight:550;" for="group_name_add">
-                    <h4>แผนยุทธศาสตร์คุรุสภา 5 ปี : 2566-2570<h4>
+                    <h4>แผนปฏิบัติการระยะ 5 ปี : 2566-2570<h4>
                   <span class="text-danger stars">  </span>
                 </label>
                 <!-- <input type="text" class="form-control form-ele clear-element" id="group_name_add" name="group_name_add" placeholder="แผนงาน" value="" > -->

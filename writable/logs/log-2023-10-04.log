@@ -11658,7 +11658,7 @@ WARNING - 2023-10-04 07:06:44 --> [DEPRECATED] Creation of dynamic property App\
  4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
 INFO - 2023-10-04 07:06:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 WARNING - 2023-10-04 07:06:57 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pages::$app_m is deprecated in APPPATH\Controllers\Pages.php on line 25.
- 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->view('192.168.1.34', 'public', 'index.php', 'pages', 'view', 'plantargetlvone')
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->view('192.168.1.44', 'public', 'index.php', 'pages', 'view', 'plantargetlvone')
  2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
  3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
@@ -24414,7 +24414,7 @@ WARNING - 2023-10-04 12:10:33 --> [DEPRECATED] Creation of dynamic property App\
  2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
  3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-CRITICAL - 2023-10-04 12:10:33 --> Undefined property: App\Controllers\Pages::$http://192.168.1.34/public/index.php/pages/view/plantargetlvtwo
+CRITICAL - 2023-10-04 12:10:33 --> Undefined property: App\Controllers\Pages::$http://192.168.1.44/public/index.php/pages/view/plantargetlvtwo
 in APPPATH\Controllers\Pages.php on line 64.
  1 APPPATH\Controllers\Pages.php(64): CodeIgniter\Debug\Exceptions->errorHandler()
  2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->view()

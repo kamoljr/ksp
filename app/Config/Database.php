@@ -30,7 +30,7 @@ class Database extends Config
         'username' => 'sa',
         'password' => 'yourStrong(!)Password',
        // 'password' => 'ksp!@4',
-        'database' => 'budget66_2',
+        'database' => 'budget66_3',
         'DBDriver' => 'sqlsrv',
         'DBPrefix' => '',
         'pConnect' => false,

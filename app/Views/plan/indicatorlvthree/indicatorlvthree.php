@@ -31,30 +31,40 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <form action="<?=$actual_link?>" method="post" accept-charset="utf-8"
                 id="form-search" name="form-search">
                   <div class="row">
-                    <div class="col-sm-3">
+                    <div class="col-sm-4">
                       <label class="form-label" for="search_strategylvone_id">
                         แผนยุทธศาสตร์ชาติ
                       </label>
                       <div id = "div_search_strategylvone_id"></div>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-4">
                       <label class="form-label" for="search_strategylvtwo_id">
-                        แผนระดับ 2
+                        แผนระดับ2
                       </label>
                       <div id = "div_search_strategylvtwo_id"></div>
                     </div>
-                    <div class="col-sm-3">
-                      <label class="form-label" for="search_plantargetlvtwo_id">
-                        เป้าหมายแผนระดับ 2
+                    <div class="col-sm-4">
+                      <label class="form-label" for="search_strategylvthree_id">
+                        แผนระดับ3
                       </label>
-                      <div id = "div_search_plantargetlvtwo_id"></div>
+                      <div id = "div_search_strategylvthree_id"></div>
                     </div>
-                    <div class="col-sm-3">
-                      <label class="form-label" for="search_indicatorlvtwo">
-                        ตัวชี้วัดแผนระดับ 2
+                    
+                  </div>
+                  <div class="row" style = "padding-top:15px;">
+                    
+                    <div class="col-sm-4">
+                      <label class="form-label" for="search_plantargetlvthree_id">
+                        เป้าหมายแผนระดับ3
                       </label>
-                      <input id="search_indicatorlvtwo" name="search_indicatorlvtwo" class="form-control searchdata"
-                      type="text" placeholder="ตัวชี้วัดแผนระดับ 2" />
+                      <div id = "div_search_plantargetlvthree_id"></div>
+                    </div>
+                    <div class="col-sm-4">
+                      <label class="form-label" for="search_indicatorlvthree">
+                        ตัวชี้วัดแผนระดับ3
+                      </label>
+                      <input id="search_indicatorlvthree" name="search_indicatorlvthree" class="form-control searchdata"
+                      type="text" placeholder="ตัวชี้วัดแผนระดับ3" />
                     </div>
                   </div>
                 </form>
@@ -92,10 +102,10 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
                 <th width = "20px;">
                 </th>
                 <th class="text-center">
-                  ตัวชี้วัดแผนระดับ2
+                  ตัวชี้วัดแผนระดับ3
                 </th>
                 <th class="text-center">
-                  เชื่อมตัวชี้วัดแผนยุทธศาสตร์ชาติ
+                  เชื่อมตัวชี้วัดแผนระดับ2
                 </th>
               
                 <th width="90">
@@ -157,80 +167,189 @@ $(document).ready(function() {
 	
 
 	//-------open------
-	const select_var = {
+	const select_var1 = {
 		ele_name:"search_strategylvone_id",
 		value_edit:"<?=$para2?>",
 		option_type:"",
 		placeholder:"แผนยุทธศาสตร์ชาติ",
 		classselect:"select2 searchdata",
 	};
-	create_one_select(select_var);
-	//--------close-----
-
-  //-------open------
-	const select_var1 = {
-		ele_name:"search_strategylvtwo_id", 
-		value_edit:"<?=$para1?>",
-		option_type:"",
-		placeholder:"แผนระดับ 2",
-		classselect:"select2 searchdata",
-		ctr1:$("#search_strategylvone_id").val(),
-	};
 	create_one_select(select_var1);
 	//--------close-----
-	//--------open-----
-	$(document).on('change', '#search_strategylvone_id', function() {
-		const select_var1 = {
-			ele_name:"search_strategylvtwo_id", // ชื่อ element
-			value_edit:"", // ใช้เลื่อกค่า ตอนแก้ไข ใส่ค่าที่ต้องการ
-			option_type:"", //แสดงตัวเลือกทั้งหมด หรือไม่ option_type:all,""
-			placeholder:"แผนระดับ 2",
-			classselect:"select2 searchdata", //ใส่ class ที่ต้องการ 
-			ctr1:this.value,//เงื่อนไขแสดงข้อมูล
-		};
-		// console.log(this.value);
-	  create_one_select(select_var1);
-		$(".select2").select2();
 
-    //$("#div_search_plantargetlvtwo_id").html("");
-    const select_var10 = {
-			ele_name:"search_plantargetlvtwo_id", // ชื่อ element
-			value_edit:"", // ใช้เลื่อกค่า ตอนแก้ไข ใส่ค่าที่ต้องการ
-			option_type:"", //แสดงตัวเลือกทั้งหมด หรือไม่ option_type:all,""
-			placeholder:"เป้าหมายแผนระดับ 2",
-			classselect:"select2 searchdata", //ใส่ class ที่ต้องการ 
-			ctr1:$("#search_strategylvtwo_id").val(),
-		};
-		// console.log(this.value);
-	  create_one_select(select_var10);
-		$(".select2").select2();
-  });
-	//--------close-----
 
   //-------open------
-	const select_var3 = {
-		ele_name:"search_plantargetlvtwo_id", 
-		value_edit:"<?//=$para1?>",
-		option_type:"",
-		placeholder:"เป้าหมายแผนระดับ 2",
-		classselect:"select2 searchdata",
-		ctr1:$("#search_strategylvtwo_id").val(),
-	};
-	create_one_select(select_var3);
+	if ($("#search_strategylvone_id").val() == ""){
+		$('#search_strategylvtwo_id').empty()
+    $('#search_strategylvtwo_id').append('<option selected="selected" value="">ไม่พบข้อมูล</option>');
+	}else{
+		const select_var2 = {
+			ele_name:"search_strategylvtwo_id", 
+			value_edit:"<?=$para1?>",
+			option_type:"",
+			placeholder:"แผนระดับ 2",
+			classselect:"select2 searchdata",
+			ctr1:$("#search_strategylvone_id").val(),
+		};
+		create_one_select(select_var2);
+	}
+		
+	//--------close-----
+
+
+  //-------open------
+	if ($("#search_strategylvtwo_id").val() == ""){
+		$('#search_strategylvthree_id').empty()
+    $('#search_strategylvthree_id').append('<option selected="selected" value="">ไม่พบข้อมูล</option>');
+	}else{
+		const select_var3 = {
+			ele_name:"search_strategylvthree_id", 
+			value_edit:"<?=$para1?>",
+			option_type:"",
+			placeholder:"แผนระดับ 3",
+			classselect:"select2 searchdata",
+			ctr1:$("#search_strategylvtwo_id").val(),
+		};
+		create_one_select(select_var3);
+	}
+	
+	
+	//--------close-----
+	//-------open------
+	if ($("#search_strategylvthree_id").val() == ""){
+		$('#search_plantargetlvthree_id').empty()
+		$('#search_plantargetlvthree_id').append('<option selected="selected" value="">ไม่พบข้อมูล</option>');
+	}else{
+		const select_var4 = {
+			ele_name:"search_plantargetlvthree_id", 
+			value_edit:"<?//=$para1?>",
+			option_type:"",
+			placeholder:"เป้าหมายแผนระดับ 2",
+			classselect:"select2 searchdata",
+			ctr1:$("#search_strategylvthree_id").val(),
+		};
+		create_one_select(select_var4);
+	}
+	//--------close-----
+
+
+	//--------open-----
+	$(document).on('change', '#search_strategylvone_id', function() {
+		if (this.value == ""){
+			$('#search_strategylvtwo_id').empty()
+      $('#search_strategylvtwo_id').append('<option selected="selected" value="">ไม่พบข้อมูล</option>');
+		}else{
+			const select_var5 = {
+				ele_name:"search_strategylvtwo_id", // ชื่อ element
+				value_edit:"", // ใช้เลื่อกค่า ตอนแก้ไข ใส่ค่าที่ต้องการ
+				option_type:"", //แสดงตัวเลือกทั้งหมด หรือไม่ option_type:all,""
+				placeholder:"แผนระดับ 2",
+				classselect:"select2 searchdata", //ใส่ class ที่ต้องการ 
+				ctr1:this.value,//เงื่อนไขแสดงข้อมูล
+			};
+			// console.log(this.value);
+			create_one_select(select_var5);
+			$(".select2").select2();
+		}
+		
+		if ($("#search_strategylvtwo_id").val() == ""){
+			$('#search_strategylvthree_id').empty()
+      $('#search_strategylvthree_id').append('<option selected="selected" value="">ไม่พบข้อมูล</option>');
+		}else{
+			const select_var6 = {
+				ele_name:"search_strategylvthree_id", // ชื่อ element
+				value_edit:"", // ใช้เลื่อกค่า ตอนแก้ไข ใส่ค่าที่ต้องการ
+				option_type:"", //แสดงตัวเลือกทั้งหมด หรือไม่ option_type:all,""
+				placeholder:"แผนระดับ 2",
+				classselect:"select2 searchdata", //ใส่ class ที่ต้องการ 
+				ctr1:$("#search_strategylvtwo_id").val(),
+			};
+			// console.log(this.value);
+			create_one_select(select_var6);
+			$(".select2").select2();
+		}
+			
+
+		if ($("#search_strategylvthree_id").val() == ""){
+		
+			
+			$('#search_plantargetlvthree_id').empty()
+			$('#search_plantargetlvthree_id').append('<option selected="selected" value="">ไม่พบข้อมูล</option>');
+
+		}else{
+			const select_var7 = {
+				ele_name:"search_plantargetlvthree_id", // ชื่อ element
+				value_edit:"", // ใช้เลื่อกค่า ตอนแก้ไข ใส่ค่าที่ต้องการ
+				option_type:"", //แสดงตัวเลือกทั้งหมด หรือไม่ option_type:all,""
+				placeholder:"เป้าหมายแผนระดับ 2",
+				classselect:"select2 searchdata", //ใส่ class ที่ต้องการ 
+				ctr1:$("#search_strategylvthree_id").val(),
+			};
+			create_one_select(select_var7);
+			$(".select2").select2();
+		}
+
+	});
 	//--------close-----
 	//--------open-----
 	$(document).on('change', '#search_strategylvtwo_id', function() {
-		const select_var4 = {
-			ele_name:"search_plantargetlvtwo_id", // ชื่อ element
-			value_edit:"", // ใช้เลื่อกค่า ตอนแก้ไข ใส่ค่าที่ต้องการ
-			option_type:"", //แสดงตัวเลือกทั้งหมด หรือไม่ option_type:all,""
-			placeholder:"เป้าหมายแผนระดับ 2",
-			classselect:"select2 searchdata", //ใส่ class ที่ต้องการ 
-			ctr1:this.value,//เงื่อนไขแสดงข้อมูล
-		};
-		// console.log(this.value);
-	  create_one_select(select_var4);
-		$(".select2").select2();
+		if (this.value == ""){
+			$('#search_strategylvthree_id').empty()
+      $('#search_strategylvthree_id').append('<option selected="selected" value="">ไม่พบข้อมูล</option>');
+		}else{
+			const select_var8 = {
+				ele_name:"search_strategylvthree_id", // ชื่อ element
+				value_edit:"", // ใช้เลื่อกค่า ตอนแก้ไข ใส่ค่าที่ต้องการ
+				option_type:"", //แสดงตัวเลือกทั้งหมด หรือไม่ option_type:all,""
+				placeholder:"แผนระดับ 3",
+				classselect:"select2 searchdata", //ใส่ class ที่ต้องการ 
+				ctr1:this.value,//เงื่อนไขแสดงข้อมูล
+			};
+			// console.log(this.value);
+			create_one_select(select_var8);
+			$(".select2").select2();	
+		}
+			
+		
+		if ($("#search_strategylvthree_id").val() == ""){
+			$('#search_plantargetlvthree_id').empty()
+      $('#search_plantargetlvthree_id').append('<option selected="selected" value="">ไม่พบข้อมูล</option>');
+		}else{
+			const select_var9 = {
+				ele_name:"search_plantargetlvthree_id", // ชื่อ element
+				value_edit:"", // ใช้เลื่อกค่า ตอนแก้ไข ใส่ค่าที่ต้องการ
+				option_type:"", //แสดงตัวเลือกทั้งหมด หรือไม่ option_type:all,""
+				placeholder:"เป้าหมายแผนระดับ 3",
+				classselect:"select2 searchdata", //ใส่ class ที่ต้องการ 
+				ctr1:$("#search_strategylvthree_id").val(),
+			};
+			// console.log(this.value);
+			create_one_select(select_var9);
+			$(".select2").select2();
+		}
+  });
+	//--------close-----
+
+  
+	//--------open-----
+	$(document).on('change', '#search_strategylvthree_id', function() {
+		if (this.value == ""){
+			$('#search_plantargetlvthree_id').empty()
+      $('#search_plantargetlvthree_id').append('<option selected="selected" value="">ไม่พบข้อมูล</option>');
+		}else{
+			const select_var4 = {
+				ele_name:"search_plantargetlvthree_id", // ชื่อ element
+				value_edit:"", // ใช้เลื่อกค่า ตอนแก้ไข ใส่ค่าที่ต้องการ
+				option_type:"", //แสดงตัวเลือกทั้งหมด หรือไม่ option_type:all,""
+				placeholder:"เป้าหมายแผนระดับ 3",
+				classselect:"select2 searchdata", //ใส่ class ที่ต้องการ 
+				ctr1:this.value,//เงื่อนไขแสดงข้อมูล
+			};
+			// console.log(this.value);
+			create_one_select(select_var4);
+			$(".select2").select2();
+		}
+		
   });
 	//--------close-----
 	searchdata();
@@ -276,16 +395,16 @@ $(document).ready(function() {
 
 				// เปิด แก้ไข ใส่ค่า ตัวค้นหา
 				aoData.push({
-						name: 'search_strategylvtwo_id',
-						value: $("#search_strategylvtwo_id").val(),
+						name: 'search_strategylvthree_id',
+						value: $("#search_strategylvthree_id").val(),
 				});
 				aoData.push({
-						name: 'search_plantargetlvtwo_id',
-						value: $("#search_plantargetlvtwo_id").val(),
+						name: 'search_plantargetlvthree_id',
+						value: $("#search_plantargetlvthree_id").val(),
 				});
 				aoData.push({
-						name: 'search_indicatorlvtwo',
-						value: $("#search_indicatorlvtwo").val(),
+						name: 'search_indicatorlvthree',
+						value: $("#search_indicatorlvthree").val(),
 				});
 				// ปิด แก้ไข ใส่ค่า ตัวค้นหา
 
@@ -293,16 +412,16 @@ $(document).ready(function() {
 			columns: [
 					// เปิด แก้ไข ใส่ค่า ที่แดสง ใน คอลัมภ์
 					{
-						data: "indicatorlvtwo_id",
+						data: "indicatorlvthree_id",
 					},
 					{
-						data: "indicatorlvtwo",
+						data: "indicatorlvthree",
 					},  
 					{
-						data: "indicatorlvone",
+						data: "indicatorlvtwo",
 					},
 					{
-						data: "plantargetlvtwo_id",
+						data: "indicatorlvthree_id",
 						render: function(data, type, row) {
 								
 							txtex = 'data-toggle="modal" data-target=".default-example-modal-right-lg"';
@@ -316,7 +435,7 @@ $(document).ready(function() {
 
 							str_btn =
 								str_btn +
-								`<a href="javascript:void(0);" class="btn btn-outline-danger btn-icon btn-xs rounded-circle waves-effect waves-themed"data-toggle="modal" data-target="#example-modal-alert" onclick=set_del_id('${row.indicatorlvtwo_id}')><i class="ni ni-trash"></i></a>`;
+								`<a href="javascript:void(0);" class="btn btn-outline-danger btn-icon btn-xs rounded-circle waves-effect waves-themed"data-toggle="modal" data-target="#example-modal-alert" onclick=set_del_id('${row.indicatorlvthree_id}')><i class="ni ni-trash"></i></a>`;
 							return str_btn;
 						},
 					},
@@ -385,23 +504,30 @@ $(document).ready(function() {
 
 	// ------------------open เพิ่ม จุดที่ 1/1-----------------------
 	$(document).on('click', '#btnadd', function() {
-		$("#form_add_lbl_strategylvone").text($("#search_strategylvone_id option:selected" ).text());
 		$("#form_add_lbl_strategylvtwo").text($("#search_strategylvtwo_id option:selected" ).text());
-		$("#form_add_lbl_plantargetlvtwo").text($("#search_plantargetlvtwo_id option:selected" ).text());
+		$("#form_add_lbl_strategylvthree").text($("#search_strategylvthree_id option:selected" ).text());
+		$("#form_add_lbl_plantargetlvthree").text($("#search_plantargetlvthree_id option:selected" ).text());
 		
+		if ($("#search_plantargetlvthree_id").val() == ""){
+			$('#indicatorlvtwo_id_add').empty()
+      $('#indicatorlvtwo_id_add').append('<option selected="selected" value="">ไม่พบข้อมูล</option>');
+		}else{
+			const select_var6 = {
+				ele_name:"indicatorlvtwo_id_add",
+				value_edit:"",
+				option_type:"",
+				placeholder:"เชื่อมตัวชี้วัดแผนระดับ2",
+				classselect:"ele_select_add",
+				ctr1:$("#search_plantargetlvthree_id").val(),
+			};
+			create_one_select(select_var6);
+			$('.ele_select_add').select2({
+				dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
+			});
+		}
 		//-------open------
-    const select_var6 = {
-      ele_name:"indicatorlvone_id_add",
-      value_edit:"",
-      option_type:"",
-      placeholder:"เชื่อมตัวชี้วัดแผนยุทธศาสตร์ชาติ",
-      classselect:"ele_select_add",
-      ctr1:$("#search_plantargetlvtwo_id").val(),
-    };
-    create_one_select(select_var6);
-    $('.ele_select_add').select2({
-			dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
-		});
+    
+
     //--------close-----
 
 		$("#ids").val('');
@@ -439,10 +565,14 @@ $(document).ready(function() {
 	
 	$("#form_save").validate({
 		rules: {
-			indicatorlvtwo_add: "required",
+			indicatorlvtwo_id_add: "required",
+			indicatorlvthree_add: "required",
+			indicatorlvthree_unit_add: "required",
 		},
 		messages: {
-			indicatorlvtwo_add: "กรุณาป้อน ตัวชี้วัดแผนระดับ2",
+			indicatorlvtwo_id_add: "กรุณาป้อน เชื่อมโยงตัวชี้วัดแผนระดับ2",
+			indicatorlvthree_add: "กรุณาป้อน ตัวชี้วัดแผนระดับ3",
+			indicatorlvthree_unit_add: "กรุณาป้อน หน่วย ",
 		},
 		errorPlacement: function(error, element) {
 			if (element.is(":radio")) {
@@ -466,20 +596,25 @@ $(document).ready(function() {
 		if (sval1 == '') { sval1 = 'ทั้งหมด'; }
 		text1 = text1+"<b>"+sval1+"</b>";
 
-		text2 = "แผนระดับ 2 : ";
+		text2 = "แผนระดับ2 : ";
 		sval2 = $("#search_strategylvtwo_id option:selected" ).text();
 		if (sval2 == '') { sval2 = 'ทั้งหมด'; }
 		text2 = text2+"<b>"+sval2+"</b>";
-
-		text3 = "เป้าหมายแผนระดับ 2 : ";
-		sval3 = $("#search_plantargetlvtwo_id option:selected" ).text();
+		
+		text3 = "แผนระดับ3 : ";
+		sval3 = $("#search_strategylvthree_id option:selected" ).text();
 		if (sval3 == '') { sval3 = 'ทั้งหมด'; }
 		text3 = text3+"<b>"+sval3+"</b>";
 
-		text4 = "ตัวชี้วัดแผนระดับ 2 : ";
-		sval4 = $("#search_indicatorlvtwo" ).val();
+		text4 = "เป้าหมายแผนระดับ3 : ";
+		sval4 = $("#search_plantargetlvthree_id option:selected" ).text();
 		if (sval4 == '') { sval4 = 'ทั้งหมด'; }
 		text4 = text4+"<b>"+sval4+"</b>";
+
+		text5 = "ตัวชี้วัดแผนระดับ3 : ";
+		sval5 = $("#search_indicatorlvthree" ).val();
+		if (sval5 == '') { sval5 = 'ทั้งหมด'; }
+		text5 = text5+"<b>"+sval5+"</b>";
   
 		txt_all = text1+"&ensp;&ensp;&ensp;"+text2+"&ensp;&ensp;&ensp;"+text3+"&ensp;&ensp;&ensp;"+text4;
 		let txt = `
@@ -498,12 +633,9 @@ $(document).ready(function() {
 // ------------------open แกไข จุดที่ 2/2-----------------------
 	function editdata(d, mode) {
 		
-		$("#form_add_lbl_strategylvone").text($("#search_strategylvone_id option:selected" ).text());
 		$("#form_add_lbl_strategylvtwo").text($("#search_strategylvtwo_id option:selected" ).text());
-		$("#form_add_lbl_plantargetlvtwo").text($("#search_plantargetlvtwo_id option:selected" ).text());
-		
-		
-		
+		$("#form_add_lbl_strategylvthree").text($("#search_strategylvthree_id option:selected" ).text());
+		$("#form_add_lbl_plantargetlvthree").text($("#search_plantargetlvthree_id option:selected" ).text());
 	
 		$('.default-example-modal-right').modal('toggle');
 		$(".dialog-data").show();
@@ -513,11 +645,11 @@ $(document).ready(function() {
 
 		// เปิด แก้ไข ใส่ค่า 
 		
-		$("#ids").val(d.indicatorlvtwo_id);
+		$("#ids").val(d.indicatorlvthree_id);
 		
 		// ปิด แก้ไข ใส่ค่า
 		
-		let aoData = "ids=" + d.indicatorlvtwo_id;
+		let aoData = "ids=" + d.indicatorlvthree_id;
 		$.ajax({
 			type: "POST",
 			url: "/public/index.php/<?=$description_en.'/'.$pages?>_cn/edit_data",
@@ -529,24 +661,27 @@ $(document).ready(function() {
 			success: function (response) {
 
 			
-        //-------open------
-        const select_var7 = {
-          ele_name:"indicatorlvone_id_add",
-          value_edit:response[0].indicatorlvone_id,
-          option_type:"",
-          placeholder:"เชื่อมตัวชี้วัดแผนยุทธศาสตร์ชาติ",
-          classselect:"ele_select_add",
-          ctr1:$("#search_plantargetlvtwo_id").val(),
-        };
-        create_one_select(select_var7);
-        $('.ele_select_add').select2({
-          dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
-        });
-        //--------close-----
+			if ($("#search_plantargetlvthree_id").val() == ""){
+				$('#indicatorlvtwo_id_add').empty()
+				$('#indicatorlvtwo_id_add').append('<option selected="selected" value="">ไม่พบข้อมูล</option>');
+			}else{
+				const select_var6 = {
+					ele_name:"indicatorlvtwo_id_add",
+					value_edit:response[0].indicatorlvtwo_id,
+					option_type:"",
+					placeholder:"เชื่อมตัวชี้วัดแผนระดับ2",
+					classselect:"ele_select_add",
+					ctr1:$("#search_plantargetlvthree_id").val(),
+				};
+				create_one_select(select_var6);
+				$('.ele_select_add').select2({
+					dropdownParent: $('.default-example-modal-right') // ทำให้ select  แสดงใน modal
+				});
+			}
 				
 				
-				$("#indicatorlvtwo_add").val(response[0].indicatorlvtwo);
-				$("#indicatorlvtwo_unit_add").val(response[0].indicatorlvtwo_unit);
+				$("#indicatorlvthree_add").val(response[0].indicatorlvthree);
+				$("#indicatorlvthree_unit_add").val(response[0].indicatorlvthree_unit);
 
         
 			},
@@ -590,7 +725,7 @@ $(document).ready(function() {
 			
 		}
 
-		$('#lbl_rowid').text("รหัส " + d.indicatorlvtwo_id);
+		$('#lbl_rowid').text("รหัส " + d.indicatorlvthree_id);
 
 		$('.div_show_rowid').show();
 		
@@ -695,7 +830,7 @@ function GoCurrentPage(){
 function savedata() {
 	
 	// -----ใส่ค่า--------
-	var aoData = $('#form_save').serialize()+"&search_strategylvone_id="+$("#search_strategylvone_id").val()+"&search_strategylvtwo_id="+$("#search_strategylvtwo_id").val()+"&search_plantargetlvtwo_id="+$("#search_plantargetlvtwo_id").val();
+	var aoData = $('#form_save').serialize()+"&search_strategylvthree_id="+$("#search_strategylvthree_id").val()+"&search_plantargetlvthree_id="+$("#search_plantargetlvthree_id").val();
 	//----------------
 	console.log(aoData);
 	$.ajax({
